@@ -1,0 +1,39 @@
+total statements: 65
+10-1
+1: statements removed: 6
+2: highest depth level: 2
+20_1
+1: statements removed 8
+2: highest depth level : 2
+
+
+10-2
+1: statements removed: 7
+2: highest depth level: 2
+
+20-2
+1: statements removed : 7
+2: highest depth level: 2
+\hline
+{\tt Jena} & OntlClassImpl & 464 & 60 & 27 & xx\\
+\hline
+
+
+Option:
+10
+1: statements removed : 3
+2: highest depth level 2.
+20:
+1: statements removed: 5
+2: highest depth level 2.
+
+
+10: 
+1: statements removed:6
+2: highest depth level 3
+
+20: statements removed: 
+1: statements removed:8
+2: highest depth level 3
+
+

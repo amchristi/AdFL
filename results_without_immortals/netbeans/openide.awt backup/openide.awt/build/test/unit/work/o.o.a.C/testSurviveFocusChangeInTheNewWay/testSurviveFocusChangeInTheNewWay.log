@@ -1,0 +1,110 @@
+[sun.awt.X11.XToolkit] THREAD: main MSG: In setupModifierMap
+
+[sun.awt.X11.XToolkit] THREAD: main MSG: metaMask = 0
+
+[sun.awt.X11.XToolkit] THREAD: main MSG: altMask = 8
+
+[sun.awt.X11.XToolkit] THREAD: main MSG: numLockMask = 16
+
+[sun.awt.X11.XToolkit] THREAD: main MSG: modeSwitchMask = 128
+
+[sun.awt.X11.XToolkit] THREAD: main MSG: modLockIsShiftLock = 0
+
+[sun.awt.X11.backingStore.XToolkit] THREAD: main MSG: The system property sun.awt.backingStore is not set, by default backingStore=NotUseful
+
+[sun.awt.X11.XNETProtocol] THREAD: main MSG: ### sun.awt.X11.XNETProtocol@6ae40994 is active: true
+
+[sun.awt.X11.XWM] THREAD: main MSG: _NET_WM_NAME is Compiz
+
+[sun.awt.X11.XWINProtocol] THREAD: main MSG: ### sun.awt.X11.XWINProtocol@2b05039f is active: false
+
+[sun.awt.X11.XNETProtocol] THREAD: main MSG: ### WM_NAME = Compiz
+
+[sun.awt.X11.XNETProtocol] THREAD: main MSG: ### WM_NAME = Compiz
+
+[sun.awt.X11.XNETProtocol] THREAD: main MSG: ### WM_NAME = Compiz
+
+[sun.awt.X11.XNETProtocol] THREAD: main MSG: ### WM_NAME = Compiz
+
+[sun.awt.X11.XNETProtocol] THREAD: main MSG: ### WM_NAME = Compiz
+
+[sun.awt.X11.XNETProtocol] THREAD: main MSG: ### WM_NAME = Compiz
+
+[sun.awt.X11.XNETProtocol] THREAD: main MSG: ### WM_NAME = Compiz
+
+[sun.awt.X11.XNETProtocol] THREAD: main MSG: ### WM_NAME = Compiz
+
+[sun.awt.X11.XProtocol] THREAD: main MSG: sun.awt.X11.XNETProtocol@6ae40994:_NET_SUPPORTED:430 supports [320, 448, 449, 450, 451, 453, _NET_SUPPORTING_WM_CHECK:327, 455, _NET_WM_WINDOW_OPACITY:328, 457, 458, 459, 472, 346, 347, 348, 349, _NET_REQUEST_FRAME_EXTENTS:491, 383, 384, 385, 386, 387, 391, UTF8_STRING:275, 277, _NET_ACTIVE_WINDOW:282, 283, _NET_FRAME_EXTENTS:284, _NET_WM_NAME:290, 292, _NET_WM_STATE:293, _NET_WM_STATE_ABOVE:294, _NET_WM_STATE_BELOW:295, _NET_WM_STATE_FULLSCREEN:296, _NET_WM_STATE_HIDDEN:297, _NET_WM_STATE_MODAL:298, _NET_WM_STATE_MAXIMIZED_VERT:299, _NET_WM_STATE_MAXIMIZED_HORZ:300, _NET_WM_STATE_SKIP_TASKBAR:301, _NET_SUPPORTED:430, _NET_WM_STATE_SKIP_PAGER:302, 303, 431, 433, _NET_WM_STATE_SHADED:434, _NET_WM_WINDOW_TYPE:306, 435, _NET_WM_WINDOW_TYPE_DIALOG:308, 437, 438, 439, 311, 440, _NET_WM_WINDOW_TYPE_NORMAL:312, 441, 442, 443, _NET_WM_WINDOW_TYPE_UTILITY:315, 316, 444, 445, 446, 447]
+
+[sun.awt.X11.XWM] THREAD: main MSG: Window manager: Other WM
+
+[TEST-testSurviveFocusChangeInTheNewWay] THREAD: AWT-EventQueue-0 MSG: setUp
+
+[org.openide.util.lookup.implspi.ActiveQueue] THREAD: AWT-EventQueue-0 MSG: starting thread
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: changed map : null
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: previous map: null
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: changed map : javax.swing.ActionMap@25bdd019
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: previous map: null
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: clearActionPerformers
+
+[org.openide.util.lookup.MetaInfServicesLookup] THREAD: AWT-EventQueue-0 MSG: Created: MetaInfServicesLookup[sun.misc.Launcher$AppClassLoader@4b67cf4d]
+
+[org.openide.util.lookup.init] THREAD: AWT-EventQueue-0 MSG: Default lookup initialized ProxyLookup(class=class org.openide.util.Lookup$DefLookup)->[MetaInfServicesLookup[sun.misc.Launcher$AppClassLoader@4b67cf4d], SingletonLookup[sun.misc.Launcher$AppClassLoader@4b67cf4d]]
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: Action for key: somekey is: null
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: changed map : null
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: previous map: javax.swing.ActionMap@7e8a4903
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: clearActionPerformers
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: changed map : javax.swing.ActionMap@71eedcd
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: previous map: javax.swing.ActionMap@5d323e7a
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: clearActionPerformers
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: Action for key: somekey is: org.openide.awt.CallbackSystemActionTest$2MyAction@40adc9c1
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: changed map : null
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: previous map: javax.swing.ActionMap@6cc35286
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: clearActionPerformers
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: changed map : javax.swing.ActionMap@25bdd019
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: previous map: javax.swing.ActionMap@1cc3ba56
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: clearActionPerformers
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: Action for key: somekey is: org.openide.awt.CallbackSystemActionTest$2MyAction@40adc9c1
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: changed map : null
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: previous map: javax.swing.ActionMap@504e865a
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: clearActionPerformers
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: changed map : javax.swing.ActionMap@7e83be53
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: previous map: javax.swing.ActionMap@8229467
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: clearActionPerformers
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: Action for key: somekey is: org.openide.awt.CallbackSystemActionTest$1Disabled@9b28e3f
+
+[org.openide.util.lookup.implspi.ActiveQueue] THREAD: Active Reference Queue Daemon MSG: Got dequeued reference org.openide.util.lookup.AbstractLookup$ReferenceToResult@2e8cb6f7
+
+[org.openide.util.lookup.implspi.ActiveQueue] THREAD: Active Reference Queue Daemon MSG: Got dequeued reference org.openide.awt.GlobalManager$GMReference@204b5d56
+
+[TEST-testSurviveFocusChangeInTheNewWay] THREAD: AWT-EventQueue-0 MSG: tearDown
+
+[TEST-testSurviveFocusChangeInTheNewWay] THREAD: AWT-EventQueue-0 MSG: tearDown super finished
+

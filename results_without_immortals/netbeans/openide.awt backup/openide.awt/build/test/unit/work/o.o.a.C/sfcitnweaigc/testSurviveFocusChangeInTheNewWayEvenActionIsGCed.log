@@ -1,0 +1,82 @@
+[TEST-testSurviveFocusChangeInTheNewWayEvenActionIsGCed] THREAD: AWT-EventQueue-0 MSG: setUp
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: changed map : null
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: previous map: null
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: changed map : javax.swing.ActionMap@39b21c02
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: previous map: null
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: clearActionPerformers
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: Action for key: somekey is: null
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: changed map : null
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: previous map: javax.swing.ActionMap@3591b7a7
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: clearActionPerformers
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: changed map : javax.swing.ActionMap@6775ab52
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: previous map: javax.swing.ActionMap@4e8ee9b2
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: clearActionPerformers
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: Action for key: somekey is: org.openide.awt.CallbackSystemActionTest$2MyAction@5884b86e
+
+[org.openide.util.lookup.implspi.ActiveQueue] THREAD: Active Reference Queue Daemon MSG: Got dequeued reference org.openide.awt.GlobalManager$GMReference@2a866eba
+
+[org.openide.util.lookup.implspi.ActiveQueue] THREAD: Active Reference Queue Daemon MSG: Got dequeued reference org.openide.awt.GlobalManager$GMReference@505d3751
+
+[org.openide.util.lookup.implspi.ActiveQueue] THREAD: Active Reference Queue Daemon MSG: Got dequeued reference org.openide.awt.GlobalManager$GMReference@52475038
+
+[org.openide.util.lookup.implspi.ActiveQueue] THREAD: Active Reference Queue Daemon MSG: Got dequeued reference org.openide.awt.GlobalManager$GMReference@159a822
+
+[org.openide.util.lookup.implspi.ActiveQueue] THREAD: Active Reference Queue Daemon MSG: Got dequeued reference org.openide.awt.GlobalManager$GMReference@1833f50d
+
+[org.openide.util.lookup.implspi.ActiveQueue] THREAD: Active Reference Queue Daemon MSG: Got dequeued reference org.openide.util.lookup.AbstractLookup$ReferenceToResult@21edaee5
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: changed map : javax.swing.ActionMap@6775ab52
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: previous map: null
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: clearActionPerformers
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: changed map : null
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: previous map: javax.swing.ActionMap@2af5082d
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: clearActionPerformers
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: changed map : javax.swing.ActionMap@39b21c02
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: previous map: javax.swing.ActionMap@130fa7b8
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: clearActionPerformers
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: Action for key: somekey is: org.openide.awt.CallbackSystemActionTest$2MyAction@5884b86e
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: changed map : null
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: previous map: javax.swing.ActionMap@6eb53a7f
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: clearActionPerformers
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: changed map : javax.swing.ActionMap@e47154f
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: previous map: javax.swing.ActionMap@cf1c0ca
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: clearActionPerformers
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: Action for key: somekey is: org.openide.awt.CallbackSystemActionTest$1Disabled@622d948b
+
+[org.openide.util.lookup.implspi.ActiveQueue] THREAD: Active Reference Queue Daemon MSG: Got dequeued reference org.openide.util.lookup.AbstractLookup$ReferenceToResult@4943fc70
+
+[org.openide.util.lookup.implspi.ActiveQueue] THREAD: Active Reference Queue Daemon MSG: Got dequeued reference org.openide.awt.GlobalManager$GMReference@51755c2
+
+[TEST-testSurviveFocusChangeInTheNewWayEvenActionIsGCed] THREAD: AWT-EventQueue-0 MSG: tearDown
+
+[TEST-testSurviveFocusChangeInTheNewWayEvenActionIsGCed] THREAD: AWT-EventQueue-0 MSG: tearDown super finished
+

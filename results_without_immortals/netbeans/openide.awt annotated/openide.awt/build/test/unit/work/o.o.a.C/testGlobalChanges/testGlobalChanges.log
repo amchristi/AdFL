@@ -1,0 +1,20 @@
+[TEST-testGlobalChanges] THREAD: AWT-EventQueue-0 MSG: setUp
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: changed map : null
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: previous map: null
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: changed map : javax.swing.ActionMap@392cb7de
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: previous map: null
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: clearActionPerformers
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: Action for key: copy-to-clipboard is: org.openide.awt.CallbackSystemActionTest$3MyAction@6dad1a80
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: Action for key: copy-to-clipboard is: org.openide.awt.CallbackSystemActionTest$3MyAction@6dad1a80
+
+[TEST-testGlobalChanges] THREAD: AWT-EventQueue-0 MSG: tearDown
+
+[TEST-testGlobalChanges] THREAD: AWT-EventQueue-0 MSG: tearDown super finished
+
