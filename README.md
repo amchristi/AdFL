@@ -9,7 +9,7 @@ UrlValidator.java is the original file.
 labeled_ublabeled folder contains labeled and unlabeled tests.
 
 For example:
-UrlValidator,1,10,labeled,1test,2test,unlableled,3test,4test,5test means 1test and 2test are labeled tests and 3test,4test and 5test are unlabled tests.
+UrlValidator,1,10,labeled,1test,2test,unlableled,3test,4test,5test means 1test and 2test are labeled tests and 3test,4test and 5test are unlabled tests for 1st datapoint for 10% labeling scheme. 
 
 We note that currently few _10 and _20 files are missing. They will be soon updated. 
 
