@@ -1,0 +1,15 @@
+OntTools
+~~~
+getLCA
+~~~
+getLCA
+~~~
+findShortestPath
+~~~
+namedHierarchyRoots
+~~~
+lca
+~~~
+checkSolution
+~~~
+partitionByNamed
