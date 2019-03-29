@@ -16,7 +16,7 @@ We note that currently few _10 and _20 files are missing. They will be soon upda
 
 diff files: .java file under diff folder contains statement diff and .diff file contains UUID associated with those diff statements. Helps to compute fault loclaization for removed statements quickly.
 
-annotated files: annotated files contains every statement of the java file annotated. We collect coverage information based on the annotations. We use our own tool for computing fault localizaiton. The reason for such a side track is: It helps us to compare with results with 2 previous papers effortlessly. If we used Gzolator or other tools, it would be difficult for us to compare results with previous paper based on how results for previous papers are maintained. 
+annotated files: annotated files contains every statement of the java file annotated. We collect coverage information based on the annotations. We use our own tool for computing fault localizaiton. The reason for such a side track is: It helps us to compare with results with 2 previous papers effortlessly. If we used Gzolator or other tools, it would be difficult for us to compare results with previous papers based on how results for previous papers are maintained. 
 
 Pristine folder contains pristine java projects that we used for running our tests. These java projects gets updated fast so we recommend using same projects to get exact same results. Some of them may be few years old.
 
