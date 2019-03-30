@@ -1,0 +1,104 @@
+public class org.apache.commons.validator.routines.CurrencyValidator extends org.apache.commons.validator.routines.BigDecimalValidator
+{
+    private static final long serialVersionUID;
+    private static final org.apache.commons.validator.routines.CurrencyValidator VALIDATOR;
+    private static final char CURRENCY_SYMBOL;
+
+    static void <clinit>()
+    {
+        org.apache.commons.validator.routines.CurrencyValidator $r0;
+
+        $r0 = new org.apache.commons.validator.routines.CurrencyValidator;
+        specialinvoke $r0.<org.apache.commons.validator.routines.CurrencyValidator: void <init>()>();
+        <org.apache.commons.validator.routines.CurrencyValidator: org.apache.commons.validator.routines.CurrencyValidator VALIDATOR> = $r0;
+        return;
+    }
+
+    public static org.apache.commons.validator.routines.BigDecimalValidator getInstance()
+    {
+        org.apache.commons.validator.routines.CurrencyValidator $r0;
+
+        $r0 = <org.apache.commons.validator.routines.CurrencyValidator: org.apache.commons.validator.routines.CurrencyValidator VALIDATOR>;
+        return $r0;
+    }
+
+    public void <init>()
+    {
+        org.apache.commons.validator.routines.CurrencyValidator r0;
+
+        r0 := @this: org.apache.commons.validator.routines.CurrencyValidator;
+        specialinvoke r0.<org.apache.commons.validator.routines.CurrencyValidator: void <init>(boolean,boolean)>(1, 1);
+        return;
+    }
+
+    public void <init>(boolean, boolean)
+    {
+        org.apache.commons.validator.routines.CurrencyValidator r0;
+        boolean z0, z1;
+
+        r0 := @this: org.apache.commons.validator.routines.CurrencyValidator;
+        z0 := @parameter0: boolean;
+        z1 := @parameter1: boolean;
+        specialinvoke r0.<org.apache.commons.validator.routines.BigDecimalValidator: void <init>(boolean,int,boolean)>(z0, 1, z1);
+        return;
+    }
+
+    protected java.lang.Object parse(java.lang.String, java.text.Format)
+    {
+        org.apache.commons.validator.routines.CurrencyValidator r0;
+        java.lang.String r1, r5, $r9;
+        java.text.Format r2;
+        java.lang.Object r3;
+        java.text.DecimalFormat r4;
+        java.lang.StringBuilder r6, $r7;
+        int i0, $i1, $i2, $i5;
+        boolean $z0;
+        char $c3, $c4;
+
+        r0 := @this: org.apache.commons.validator.routines.CurrencyValidator;
+        r1 := @parameter0: java.lang.String;
+        r2 := @parameter1: java.text.Format;
+        r3 = specialinvoke r0.<org.apache.commons.validator.routines.BigDecimalValidator: java.lang.Object parse(java.lang.String,java.text.Format)>(r1, r2);
+        if r3 != null goto label0;
+
+        $z0 = r2 instanceof java.text.DecimalFormat;
+        if $z0 != 0 goto label1;
+
+     label0:
+        return r3;
+
+     label1:
+        r4 = (java.text.DecimalFormat) r2;
+        r5 = virtualinvoke r4.<java.text.DecimalFormat: java.lang.String toPattern()>();
+        $i1 = virtualinvoke r5.<java.lang.String: int indexOf(int)>(164);
+        if $i1 < 0 goto label5;
+
+        $r7 = new java.lang.StringBuilder;
+        $i2 = virtualinvoke r5.<java.lang.String: int length()>();
+        specialinvoke $r7.<java.lang.StringBuilder: void <init>(int)>($i2);
+        r6 = $r7;
+        i0 = 0;
+        goto label4;
+
+     label2:
+        $c3 = virtualinvoke r5.<java.lang.String: char charAt(int)>(i0);
+        if $c3 == 164 goto label3;
+
+        $c4 = virtualinvoke r5.<java.lang.String: char charAt(int)>(i0);
+        virtualinvoke r6.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>($c4);
+
+     label3:
+        i0 = i0 + 1;
+
+     label4:
+        $i5 = virtualinvoke r5.<java.lang.String: int length()>();
+        if i0 < $i5 goto label2;
+
+        $r9 = virtualinvoke r6.<java.lang.StringBuilder: java.lang.String toString()>();
+        virtualinvoke r4.<java.text.DecimalFormat: void applyPattern(java.lang.String)>($r9);
+        r3 = specialinvoke r0.<org.apache.commons.validator.routines.BigDecimalValidator: java.lang.Object parse(java.lang.String,java.text.Format)>(r1, r4);
+
+     label5:
+        return r3;
+    }
+}

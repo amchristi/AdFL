@@ -1,0 +1,82 @@
+public class org.apache.commons.validator.ShortTest extends org.apache.commons.validator.AbstractNumberTest
+{
+
+    public void <init>(java.lang.String)
+    {
+        org.apache.commons.validator.ShortTest r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.ShortTest;
+        r1 := @parameter0: java.lang.String;
+        specialinvoke r0.<org.apache.commons.validator.AbstractNumberTest: void <init>(java.lang.String)>(r1);
+        r0.<org.apache.commons.validator.ShortTest: java.lang.String FORM_KEY> = "shortForm";
+        r0.<org.apache.commons.validator.ShortTest: java.lang.String ACTION> = "short";
+        return;
+    }
+
+    public void testShortMin() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.ShortTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+        java.lang.Short $r3;
+        java.lang.String $r4;
+
+        r0 := @this: org.apache.commons.validator.ShortTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        $r3 = new java.lang.Short;
+        specialinvoke $r3.<java.lang.Short: void <init>(short)>(-32768);
+        $r4 = virtualinvoke $r3.<java.lang.Short: java.lang.String toString()>();
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>($r4);
+        virtualinvoke r0.<org.apache.commons.validator.ShortTest: void valueTest(java.lang.Object,boolean)>(r2, 1);
+        return;
+    }
+
+    public void testShortMax() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.ShortTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+        java.lang.Short $r3;
+        java.lang.String $r4;
+
+        r0 := @this: org.apache.commons.validator.ShortTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        $r3 = new java.lang.Short;
+        specialinvoke $r3.<java.lang.Short: void <init>(short)>(32767);
+        $r4 = virtualinvoke $r3.<java.lang.Short: java.lang.String toString()>();
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>($r4);
+        virtualinvoke r0.<org.apache.commons.validator.ShortTest: void valueTest(java.lang.Object,boolean)>(r2, 1);
+        return;
+    }
+
+    public void testShortBeyondMin() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.ShortTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+
+        r0 := @this: org.apache.commons.validator.ShortTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("-327681");
+        virtualinvoke r0.<org.apache.commons.validator.ShortTest: void valueTest(java.lang.Object,boolean)>(r2, 0);
+        return;
+    }
+
+    public void testShortBeyondMax() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.ShortTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+
+        r0 := @this: org.apache.commons.validator.ShortTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("327671");
+        virtualinvoke r0.<org.apache.commons.validator.ShortTest: void valueTest(java.lang.Object,boolean)>(r2, 0);
+        return;
+    }
+}

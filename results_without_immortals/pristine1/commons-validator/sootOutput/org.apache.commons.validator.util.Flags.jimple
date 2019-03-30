@@ -1,0 +1,229 @@
+public class org.apache.commons.validator.util.Flags extends java.lang.Object implements java.io.Serializable, java.lang.Cloneable
+{
+    private static final long serialVersionUID;
+    private long flags;
+
+    public void <init>()
+    {
+        org.apache.commons.validator.util.Flags r0;
+
+        r0 := @this: org.apache.commons.validator.util.Flags;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        r0.<org.apache.commons.validator.util.Flags: long flags> = 0L;
+        return;
+    }
+
+    public void <init>(long)
+    {
+        org.apache.commons.validator.util.Flags r0;
+        long l0;
+
+        r0 := @this: org.apache.commons.validator.util.Flags;
+        l0 := @parameter0: long;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        r0.<org.apache.commons.validator.util.Flags: long flags> = 0L;
+        r0.<org.apache.commons.validator.util.Flags: long flags> = l0;
+        return;
+    }
+
+    public long getFlags()
+    {
+        org.apache.commons.validator.util.Flags r0;
+        long $l0;
+
+        r0 := @this: org.apache.commons.validator.util.Flags;
+        $l0 = r0.<org.apache.commons.validator.util.Flags: long flags>;
+        return $l0;
+    }
+
+    public boolean isOn(long)
+    {
+        org.apache.commons.validator.util.Flags r0;
+        long l0, $l1, $l2;
+        byte $b3;
+
+        r0 := @this: org.apache.commons.validator.util.Flags;
+        l0 := @parameter0: long;
+        $l1 = r0.<org.apache.commons.validator.util.Flags: long flags>;
+        $l2 = $l1 & l0;
+        $b3 = $l2 cmp l0;
+        if $b3 != 0 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public boolean isOff(long)
+    {
+        org.apache.commons.validator.util.Flags r0;
+        long l0, $l1, $l2;
+        byte $b3;
+
+        r0 := @this: org.apache.commons.validator.util.Flags;
+        l0 := @parameter0: long;
+        $l1 = r0.<org.apache.commons.validator.util.Flags: long flags>;
+        $l2 = $l1 & l0;
+        $b3 = $l2 cmp 0L;
+        if $b3 != 0 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public void turnOn(long)
+    {
+        org.apache.commons.validator.util.Flags r0;
+        long l0, $l1, $l2;
+
+        r0 := @this: org.apache.commons.validator.util.Flags;
+        l0 := @parameter0: long;
+        $l1 = r0.<org.apache.commons.validator.util.Flags: long flags>;
+        $l2 = $l1 | l0;
+        r0.<org.apache.commons.validator.util.Flags: long flags> = $l2;
+        return;
+    }
+
+    public void turnOff(long)
+    {
+        org.apache.commons.validator.util.Flags r0;
+        long l0, $l1, $l2, $l3;
+
+        r0 := @this: org.apache.commons.validator.util.Flags;
+        l0 := @parameter0: long;
+        $l1 = r0.<org.apache.commons.validator.util.Flags: long flags>;
+        $l2 = l0 ^ -1L;
+        $l3 = $l1 & $l2;
+        r0.<org.apache.commons.validator.util.Flags: long flags> = $l3;
+        return;
+    }
+
+    public void turnOffAll()
+    {
+        org.apache.commons.validator.util.Flags r0;
+
+        r0 := @this: org.apache.commons.validator.util.Flags;
+        r0.<org.apache.commons.validator.util.Flags: long flags> = 0L;
+        return;
+    }
+
+    public void clear()
+    {
+        org.apache.commons.validator.util.Flags r0;
+
+        r0 := @this: org.apache.commons.validator.util.Flags;
+        r0.<org.apache.commons.validator.util.Flags: long flags> = 0L;
+        return;
+    }
+
+    public void turnOnAll()
+    {
+        org.apache.commons.validator.util.Flags r0;
+
+        r0 := @this: org.apache.commons.validator.util.Flags;
+        r0.<org.apache.commons.validator.util.Flags: long flags> = -1L;
+        return;
+    }
+
+    public java.lang.Object clone()
+    {
+        org.apache.commons.validator.util.Flags r0;
+        java.lang.CloneNotSupportedException r1, $r3;
+        java.lang.Object $r2;
+        java.lang.RuntimeException $r4;
+
+        r0 := @this: org.apache.commons.validator.util.Flags;
+
+     label0:
+        $r2 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>();
+
+     label1:
+        return $r2;
+
+     label2:
+        $r3 := @caughtexception;
+        r1 = $r3;
+        $r4 = new java.lang.RuntimeException;
+        specialinvoke $r4.<java.lang.RuntimeException: void <init>(java.lang.String)>("Couldn\'t clone Flags object.");
+        throw $r4;
+
+        catch java.lang.CloneNotSupportedException from label0 to label1 with label2;
+    }
+
+    public boolean equals(java.lang.Object)
+    {
+        org.apache.commons.validator.util.Flags r0, r2;
+        java.lang.Object r1;
+        boolean $z0;
+        long $l0, $l1;
+        byte $b2;
+
+        r0 := @this: org.apache.commons.validator.util.Flags;
+        r1 := @parameter0: java.lang.Object;
+        $z0 = r1 instanceof org.apache.commons.validator.util.Flags;
+        if $z0 != 0 goto label0;
+
+        return 0;
+
+     label0:
+        if r1 != r0 goto label1;
+
+        return 1;
+
+     label1:
+        r2 = (org.apache.commons.validator.util.Flags) r1;
+        $l0 = r0.<org.apache.commons.validator.util.Flags: long flags>;
+        $l1 = r2.<org.apache.commons.validator.util.Flags: long flags>;
+        $b2 = $l0 cmp $l1;
+        if $b2 != 0 goto label2;
+
+        return 1;
+
+     label2:
+        return 0;
+    }
+
+    public int hashCode()
+    {
+        org.apache.commons.validator.util.Flags r0;
+        long $l0;
+        int $i1;
+
+        r0 := @this: org.apache.commons.validator.util.Flags;
+        $l0 = r0.<org.apache.commons.validator.util.Flags: long flags>;
+        $i1 = (int) $l0;
+        return $i1;
+    }
+
+    public java.lang.String toString()
+    {
+        org.apache.commons.validator.util.Flags r0;
+        java.lang.StringBuilder $r1, r2;
+        int i0, $i2;
+        long $l1;
+        java.lang.String $r3, $r5;
+
+        r0 := @this: org.apache.commons.validator.util.Flags;
+        $r1 = new java.lang.StringBuilder;
+        $l1 = r0.<org.apache.commons.validator.util.Flags: long flags>;
+        $r3 = staticinvoke <java.lang.Long: java.lang.String toBinaryString(long)>($l1);
+        specialinvoke $r1.<java.lang.StringBuilder: void <init>(java.lang.String)>($r3);
+        r2 = $r1;
+        $i2 = virtualinvoke r2.<java.lang.StringBuilder: int length()>();
+        i0 = 64 - $i2;
+        goto label1;
+
+     label0:
+        virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder insert(int,java.lang.String)>(0, "0");
+        i0 = i0 + -1;
+
+     label1:
+        if i0 > 0 goto label0;
+
+        $r5 = virtualinvoke r2.<java.lang.StringBuilder: java.lang.String toString()>();
+        return $r5;
+    }
+}

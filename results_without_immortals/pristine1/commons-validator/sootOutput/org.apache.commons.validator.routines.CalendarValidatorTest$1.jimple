@@ -1,0 +1,34 @@
+class org.apache.commons.validator.routines.CalendarValidatorTest$1 extends org.apache.commons.validator.routines.AbstractCalendarValidator
+{
+    private static final long serialVersionUID;
+    final org.apache.commons.validator.routines.CalendarValidatorTest this$0;
+
+    void <init>(org.apache.commons.validator.routines.CalendarValidatorTest, boolean, int, int)
+    {
+        org.apache.commons.validator.routines.CalendarValidatorTest$1 r0;
+        org.apache.commons.validator.routines.CalendarValidatorTest r1;
+        boolean z0;
+        int i0, i1;
+
+        r0 := @this: org.apache.commons.validator.routines.CalendarValidatorTest$1;
+        r1 := @parameter0: org.apache.commons.validator.routines.CalendarValidatorTest;
+        z0 := @parameter1: boolean;
+        i0 := @parameter2: int;
+        i1 := @parameter3: int;
+        r0.<org.apache.commons.validator.routines.CalendarValidatorTest$1: org.apache.commons.validator.routines.CalendarValidatorTest this$0> = r1;
+        specialinvoke r0.<org.apache.commons.validator.routines.AbstractCalendarValidator: void <init>(boolean,int,int)>(z0, i0, i1);
+        return;
+    }
+
+    protected java.lang.Object processParsedValue(java.lang.Object, java.text.Format)
+    {
+        org.apache.commons.validator.routines.CalendarValidatorTest$1 r0;
+        java.lang.Object r1;
+        java.text.Format r2;
+
+        r0 := @this: org.apache.commons.validator.routines.CalendarValidatorTest$1;
+        r1 := @parameter0: java.lang.Object;
+        r2 := @parameter1: java.text.Format;
+        return r1;
+    }
+}

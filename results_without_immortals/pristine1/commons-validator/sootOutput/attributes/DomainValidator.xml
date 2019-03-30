@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<attributes>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="ConstantValue: -4407125112880174009" aType="LongConstantValueTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="ConstantValue: \p{Alnum}(?>[\p{Alnum}-]{0,61}\p{Alnum})?" aType="StringConstantValueTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="ConstantValue: \p{Alpha}(?>[\p{Alnum}-]{0,61}\p{Alnum})?" aType="StringConstantValueTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="ConstantValue: ^(?:\p{Alnum}(?>[\p{Alnum}-]{0,61}\p{Alnum})?\.)+(\p{Alpha}(?>[\p{Alnum}-]{0,61}\p{Alnum})?)\.?$" aType="StringConstantValueTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[allowLocal]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[allowLocal]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[domain]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[domain]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[tld]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[iTld]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[gTld]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[ccTld]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[lTld]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[str]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[table, tlds]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[input]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[input]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[sortedArray, key]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[name]" aType="ParamNamesTag"/>
+</attribute>
+</attributes>

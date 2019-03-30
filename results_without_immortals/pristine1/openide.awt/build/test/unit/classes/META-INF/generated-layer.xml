@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN"
+                            "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+    <folder name="Actions">
+        <folder name="Tools">
+            <file name="my-test-Always.instance">
+                <!--org.netbeans.modules.openide.awt.ActionProcessorTest.Always-->
+                <attr
+                    bundlevalue="org.netbeans.modules.openide.awt.Bundle#AlwaysOn" name="displayName"/>
+                <attr
+                    methodvalue="org.openide.awt.Actions.alwaysEnabled" name="instanceCreate"/>
+                <attr name="delegate" newvalue="org.netbeans.modules.openide.awt.ActionProcessorTest$Always"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
+            <file name="my-test-AlwaysByMethod.instance">
+                <!--org.netbeans.modules.openide.awt.ActionProcessorTest.AlwaysByMethod.factory()-->
+                <attr
+                    bundlevalue="org.netbeans.modules.openide.awt.Bundle#AlwaysOn" name="displayName"/>
+                <attr
+                    methodvalue="org.openide.awt.Actions.alwaysEnabled" name="instanceCreate"/>
+                <attr
+                    methodvalue="org.netbeans.modules.openide.awt.ActionProcessorTest$AlwaysByMethod.factory" name="delegate"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
+            <file name="my-action.instance">
+                <!--org.netbeans.modules.openide.awt.ActionProcessorTest.Callback-->
+                <attr
+                    bundlevalue="org.netbeans.modules.openide.awt.Bundle#Key" name="displayName"/>
+                <attr methodvalue="org.openide.awt.Actions.callback" name="instanceCreate"/>
+                <attr
+                    methodvalue="org.openide.awt.Actions.alwaysEnabled" name="fallback"/>
+                <attr name="key" stringvalue="klic"/>
+                <attr name="delegate" newvalue="org.netbeans.modules.openide.awt.ActionProcessorTest$Callback"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
+            <file name="on-int.instance">
+                <!--org.netbeans.modules.openide.awt.ActionProcessorTest.Context-->
+                <attr
+                    bundlevalue="org.netbeans.modules.openide.awt.Bundle#OnInt" name="displayName"/>
+                <attr methodvalue="org.openide.awt.Actions.context" name="instanceCreate"/>
+                <attr name="type" stringvalue="org.netbeans.modules.openide.awt.ActionProcessorTest$NumberLike"/>
+                <attr methodvalue="org.openide.awt.Actions.inject" name="delegate"/>
+                <attr name="injectable" stringvalue="org.netbeans.modules.openide.awt.ActionProcessorTest$Context"/>
+                <attr name="selectionType" stringvalue="EXACTLY_ONE"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
+            <file name="on-numbers.instance">
+                <!--org.netbeans.modules.openide.awt.ActionProcessorTest.MultiContext-->
+                <attr
+                    bundlevalue="org.netbeans.modules.openide.awt.Bundle#OnInt" name="displayName"/>
+                <attr methodvalue="org.openide.awt.Actions.context" name="instanceCreate"/>
+                <attr name="type" stringvalue="org.netbeans.modules.openide.awt.ActionProcessorTest$NumberLike"/>
+                <attr methodvalue="org.openide.awt.Actions.inject" name="delegate"/>
+                <attr name="injectable" stringvalue="org.netbeans.modules.openide.awt.ActionProcessorTest$MultiContext"/>
+                <attr name="selectionType" stringvalue="ANY"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
+        </folder>
+        <folder name="eager">
+            <file name="direct-one.instance">
+                <!--org.netbeans.modules.openide.awt.ActionProcessorTest.Direct-->
+                <attr name="displayName" stringvalue="Direct Action"/>
+                <attr name="instanceCreate" newvalue="org.netbeans.modules.openide.awt.ActionProcessorTest$Direct"/>
+            </file>
+            <file name="direct-two.instance">
+                <!--org.netbeans.modules.openide.awt.ActionProcessorTest.Direct2-->
+                <attr name="displayName" stringvalue="Direct Action"/>
+                <attr name="instanceCreate" newvalue="org.netbeans.modules.openide.awt.ActionProcessorTest$Direct2"/>
+            </file>
+            <file name="direct-three.instance">
+                <!--org.netbeans.modules.openide.awt.ActionProcessorTest.Direct3-->
+                <attr name="displayName" stringvalue="Direct Action"/>
+                <attr name="instanceCreate" newvalue="org.netbeans.modules.openide.awt.ActionProcessorTest$Direct3"/>
+            </file>
+            <file name="direct-four.instance">
+                <!--org.netbeans.modules.openide.awt.ActionProcessorTest.Direct4-->
+                <attr name="displayName" stringvalue="Direct Action"/>
+                <attr name="instanceCreate" newvalue="org.netbeans.modules.openide.awt.ActionProcessorTest$Direct4"/>
+            </file>
+            <file name="direct-six.instance">
+                <!--org.netbeans.modules.openide.awt.ActionProcessorTest.Direct6-->
+                <attr name="displayName" stringvalue="Direct Action"/>
+                <attr name="instanceCreate" newvalue="org.netbeans.modules.openide.awt.ActionProcessorTest$Direct6"/>
+            </file>
+            <file name="direct-seven.instance">
+                <!--org.netbeans.modules.openide.awt.ActionProcessorTest.Direct7-->
+                <attr name="displayName" stringvalue="Direct Action"/>
+                <attr name="instanceCreate" newvalue="org.netbeans.modules.openide.awt.ActionProcessorTest$Direct7"/>
+            </file>
+            <file name="direct-eight.instance">
+                <!--org.netbeans.modules.openide.awt.ActionProcessorTest.Direct8-->
+                <attr name="displayName" stringvalue="Direct Action"/>
+                <attr
+                    methodvalue="org.openide.awt.Actions.alwaysEnabled" name="instanceCreate"/>
+                <attr name="delegate" newvalue="org.netbeans.modules.openide.awt.ActionProcessorTest$Direct8"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
+            <file name="direct-five.instance">
+                <!--org.netbeans.modules.openide.awt.ActionProcessorTest.direct5()-->
+                <attr name="displayName" stringvalue="Direct Action"/>
+                <attr
+                    methodvalue="org.netbeans.modules.openide.awt.ActionProcessorTest.direct5" name="instanceCreate"/>
+            </file>
+        </folder>
+        <folder name="menutext">
+            <file name="namedaction.instance">
+                <!--org.netbeans.modules.openide.awt.ActionProcessorTest.NamedAction-->
+                <attr name="displayName" stringvalue="This is an Action"/>
+                <attr name="menuText" stringvalue="This is a Menu Action"/>
+                <attr name="popupText" stringvalue="This is a Popup Action"/>
+                <attr
+                    methodvalue="org.openide.awt.Actions.alwaysEnabled" name="instanceCreate"/>
+                <attr name="delegate" newvalue="org.netbeans.modules.openide.awt.ActionProcessorTest$NamedAction"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
+        </folder>
+        <folder name="Edit">
+            <file name="my-field-action.instance">
+                <!--org.netbeans.modules.openide.awt.ActionProcessorTest.ACTION_MAP_KEY-->
+                <attr
+                    bundlevalue="org.netbeans.modules.openide.awt.Bundle#Key" name="displayName"/>
+                <attr methodvalue="org.openide.awt.Actions.callback" name="instanceCreate"/>
+                <attr name="key" stringvalue="my.action.map.key"/>
+                <attr name="iconBase" stringvalue="org/openide/awt/TestIcon.png"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
+        </folder>
+        <folder name="Windows">
+            <file name="my-survival-action.instance">
+                <!--org.netbeans.modules.openide.awt.ActionProcessorTest.SURVIVE_KEY-->
+                <attr name="displayName" stringvalue="somename"/>
+                <attr methodvalue="org.openide.awt.Actions.callback" name="instanceCreate"/>
+                <attr name="key" stringvalue="somekey"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+                <attr boolvalue="true" name="surviveFocusChange"/>
+            </file>
+        </folder>
+        <folder name="cat">
+            <file name="survive.instance">
+                <!--org.openide.awt.ContextManagerTest.Survival-->
+                <attr name="displayName" stringvalue="Survive"/>
+                <attr methodvalue="org.openide.awt.Actions.context" name="instanceCreate"/>
+                <attr name="type" stringvalue="java.lang.Integer"/>
+                <attr methodvalue="org.openide.awt.Actions.inject" name="delegate"/>
+                <attr name="injectable" stringvalue="org.openide.awt.ContextManagerTest$Survival"/>
+                <attr name="selectionType" stringvalue="EXACTLY_ONE"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+                <attr boolvalue="true" name="surviveFocusChange"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="My">
+        <folder name="Folder">
+            <file name="D-F6.shadow">
+                <!--org.netbeans.modules.openide.awt.ActionProcessorTest.Always-->
+                <attr name="originalFile" stringvalue="Actions/Tools/my-test-Always.instance"/>
+                <attr intvalue="333" name="position"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Kuk">
+        <folder name="buk">
+            <file name="my-test-AlwaysByMethod.shadow">
+                <!--org.netbeans.modules.openide.awt.ActionProcessorTest.AlwaysByMethod.factory()-->
+                <attr name="originalFile" stringvalue="Actions/Tools/my-test-AlwaysByMethod.instance"/>
+                <attr intvalue="1" name="position"/>
+            </file>
+            <file name="my-test-AlwaysByMethod-separatorAfter.instance">
+                <!--org.netbeans.modules.openide.awt.ActionProcessorTest.AlwaysByMethod.factory()-->
+                <attr name="instanceCreate" newvalue="javax.swing.JSeparator"/>
+                <attr intvalue="2" name="position"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Muk">
+        <folder name="luk">
+            <file name="my-test-AlwaysByMethod.shadow">
+                <!--org.netbeans.modules.openide.awt.ActionProcessorTest.AlwaysByMethod.factory()-->
+                <attr name="originalFile" stringvalue="Actions/Tools/my-test-AlwaysByMethod.instance"/>
+                <attr intvalue="11" name="position"/>
+            </file>
+            <file name="my-test-AlwaysByMethod-separatorBefore.instance">
+                <!--org.netbeans.modules.openide.awt.ActionProcessorTest.AlwaysByMethod.factory()-->
+                <attr name="instanceCreate" newvalue="javax.swing.JSeparator"/>
+                <attr intvalue="10" name="position"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Shortcuts">
+        <file name="C-F2 D-A.shadow">
+            <!--org.netbeans.modules.openide.awt.ActionProcessorTest.Direct2-->
+            <attr name="originalFile" stringvalue="Actions/eager/direct-two.instance"/>
+        </file>
+    </folder>
+    <folder name="Loaders">
+        <folder name="text">
+            <folder name="x-my">
+                <folder name="Actions">
+                    <file name="org-openide-actions-OpenAction.shadow">
+                        <!--org.netbeans.modules.openide.awt.ActionProcessorTest.testAlwaysEnabledAction()-->
+                        <attr name="originalFile" stringvalue="Actions/System/org-openide-actions-OpenAction.instance"/>
+                        <attr intvalue="100" name="position"/>
+                    </file>
+                    <file name="org-openide-actions-OpenAction-separatorAfter.instance">
+                        <!--org.netbeans.modules.openide.awt.ActionProcessorTest.testAlwaysEnabledAction()-->
+                        <attr name="instanceCreate" newvalue="javax.swing.JSeparator"/>
+                        <attr intvalue="200" name="position"/>
+                    </file>
+                </folder>
+            </folder>
+        </folder>
+    </folder>
+    <folder name="pkg">
+        <folder name="one">
+            <file name="action-one.shadow">
+                <!--org.netbeans.modules.openide.awt-->
+                <attr name="originalFile" stringvalue="Actions/Fool/action-one.instance"/>
+                <attr intvalue="100" name="position"/>
+            </file>
+        </folder>
+        <folder name="two">
+            <file name="action-two.shadow">
+                <!--org.netbeans.modules.openide.awt-->
+                <attr name="originalFile" stringvalue="Actions/Pool/action-two.instance"/>
+                <attr intvalue="100" name="position"/>
+            </file>
+        </folder>
+    </folder>
+</filesystem>

@@ -1,0 +1,33 @@
+public class org.apache.commons.validator.routines.checkdigit.EAN13CheckDigitTest extends org.apache.commons.validator.routines.checkdigit.AbstractCheckDigitTest
+{
+
+    public void <init>(java.lang.String)
+    {
+        org.apache.commons.validator.routines.checkdigit.EAN13CheckDigitTest r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.routines.checkdigit.EAN13CheckDigitTest;
+        r1 := @parameter0: java.lang.String;
+        specialinvoke r0.<org.apache.commons.validator.routines.checkdigit.AbstractCheckDigitTest: void <init>(java.lang.String)>(r1);
+        return;
+    }
+
+    protected void setUp() throws java.lang.Exception
+    {
+        org.apache.commons.validator.routines.checkdigit.EAN13CheckDigitTest r0;
+        org.apache.commons.validator.routines.checkdigit.CheckDigit $r1;
+        java.lang.String[] $r2;
+
+        r0 := @this: org.apache.commons.validator.routines.checkdigit.EAN13CheckDigitTest;
+        specialinvoke r0.<org.apache.commons.validator.routines.checkdigit.AbstractCheckDigitTest: void setUp()>();
+        $r1 = <org.apache.commons.validator.routines.checkdigit.EAN13CheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit EAN13_CHECK_DIGIT>;
+        r0.<org.apache.commons.validator.routines.checkdigit.EAN13CheckDigitTest: org.apache.commons.validator.routines.checkdigit.CheckDigit routine> = $r1;
+        $r2 = newarray (java.lang.String)[4];
+        $r2[0] = "9780072129519";
+        $r2[1] = "9780764558313";
+        $r2[2] = "4025515373438";
+        $r2[3] = "0095673400332";
+        r0.<org.apache.commons.validator.routines.checkdigit.EAN13CheckDigitTest: java.lang.String[] valid> = $r2;
+        return;
+    }
+}

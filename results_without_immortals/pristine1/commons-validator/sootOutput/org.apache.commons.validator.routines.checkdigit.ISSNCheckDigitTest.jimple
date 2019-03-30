@@ -1,0 +1,50 @@
+public class org.apache.commons.validator.routines.checkdigit.ISSNCheckDigitTest extends org.apache.commons.validator.routines.checkdigit.AbstractCheckDigitTest
+{
+
+    public void <init>(java.lang.String)
+    {
+        org.apache.commons.validator.routines.checkdigit.ISSNCheckDigitTest r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.routines.checkdigit.ISSNCheckDigitTest;
+        r1 := @parameter0: java.lang.String;
+        specialinvoke r0.<org.apache.commons.validator.routines.checkdigit.AbstractCheckDigitTest: void <init>(java.lang.String)>(r1);
+        return;
+    }
+
+    protected void setUp() throws java.lang.Exception
+    {
+        org.apache.commons.validator.routines.checkdigit.ISSNCheckDigitTest r0;
+        org.apache.commons.validator.routines.checkdigit.CheckDigit $r1;
+        java.lang.String[] $r2, $r3;
+
+        r0 := @this: org.apache.commons.validator.routines.checkdigit.ISSNCheckDigitTest;
+        specialinvoke r0.<org.apache.commons.validator.routines.checkdigit.AbstractCheckDigitTest: void setUp()>();
+        $r1 = <org.apache.commons.validator.routines.checkdigit.ISSNCheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit ISSN_CHECK_DIGIT>;
+        r0.<org.apache.commons.validator.routines.checkdigit.ISSNCheckDigitTest: org.apache.commons.validator.routines.checkdigit.CheckDigit routine> = $r1;
+        $r2 = newarray (java.lang.String)[12];
+        $r2[0] = "03178471";
+        $r2[1] = "1050124X";
+        $r2[2] = "15626865";
+        $r2[3] = "10637710";
+        $r2[4] = "17487188";
+        $r2[5] = "02642875";
+        $r2[6] = "17500095";
+        $r2[7] = "11881534";
+        $r2[8] = "19111479";
+        $r2[9] = "19111460";
+        $r2[10] = "00016772";
+        $r2[11] = "1365201X";
+        r0.<org.apache.commons.validator.routines.checkdigit.ISSNCheckDigitTest: java.lang.String[] valid> = $r2;
+        $r3 = newarray (java.lang.String)[5];
+        $r3[0] = "03178472";
+        $r3[1] = "1050-124X";
+        $r3[2] = " 1365201X";
+        $r3[3] = "1365201X ";
+        $r3[4] = " 1365201X ";
+        r0.<org.apache.commons.validator.routines.checkdigit.ISSNCheckDigitTest: java.lang.String[] invalid> = $r3;
+        r0.<org.apache.commons.validator.routines.checkdigit.ISSNCheckDigitTest: java.lang.String missingMessage> = "Code is missing";
+        r0.<org.apache.commons.validator.routines.checkdigit.ISSNCheckDigitTest: java.lang.String zeroSum> = "00000000";
+        return;
+    }
+}

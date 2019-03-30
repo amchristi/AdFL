@@ -1,0 +1,448 @@
+public class org.apache.commons.validator.routines.IBANValidator extends java.lang.Object
+{
+    private final java.util.Map formatValidators;
+    private static final org.apache.commons.validator.routines.IBANValidator$Validator[] DEFAULT_FORMATS;
+    public static final org.apache.commons.validator.routines.IBANValidator DEFAULT_IBAN_VALIDATOR;
+
+    static void <clinit>()
+    {
+        org.apache.commons.validator.routines.IBANValidator$Validator $r0, $r2, $r3, $r4, $r5, $r6, $r7, $r8, $r9, $r10, $r11, $r12, $r13, $r14, $r15, $r16, $r17, $r18, $r19, $r20, $r21, $r22, $r23, $r24, $r25, $r26, $r27, $r28, $r29, $r30, $r31, $r32, $r33, $r34, $r35, $r36, $r37, $r38, $r39, $r40, $r41, $r42, $r43, $r44, $r45, $r46, $r47, $r48, $r49, $r50, $r51, $r52, $r53, $r54, $r55, $r56, $r57, $r58, $r59, $r60, $r61, $r62, $r63, $r64, $r65, $r66, $r67, $r68, $r69, $r70;
+        org.apache.commons.validator.routines.IBANValidator$Validator[] $r1;
+        org.apache.commons.validator.routines.IBANValidator $r71;
+
+        $r1 = newarray (org.apache.commons.validator.routines.IBANValidator$Validator)[70];
+        $r0 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r0.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("AL", 28, "AL\\d{10}[A-Z0-9]{16}");
+        $r1[0] = $r0;
+        $r2 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r2.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("AD", 24, "AD\\d{10}[A-Z0-9]{12}");
+        $r1[1] = $r2;
+        $r3 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r3.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("AT", 20, "AT\\d{18}");
+        $r1[2] = $r3;
+        $r4 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r4.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("AZ", 28, "AZ\\d{2}[A-Z]{4}[A-Z0-9]{20}");
+        $r1[3] = $r4;
+        $r5 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r5.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("BH", 22, "BH\\d{2}[A-Z]{4}[A-Z0-9]{14}");
+        $r1[4] = $r5;
+        $r6 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r6.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("BE", 16, "BE\\d{14}");
+        $r1[5] = $r6;
+        $r7 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r7.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("BA", 20, "BA\\d{18}");
+        $r1[6] = $r7;
+        $r8 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r8.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("BR", 29, "BR\\d{25}[A-Z]{1}[A-Z0-9]{1}");
+        $r1[7] = $r8;
+        $r9 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r9.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("BG", 22, "BG\\d{2}[A-Z]{4}\\d{6}[A-Z0-9]{8}");
+        $r1[8] = $r9;
+        $r10 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r10.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("CR", 21, "CR\\d{19}");
+        $r1[9] = $r10;
+        $r11 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r11.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("HR", 21, "HR\\d{19}");
+        $r1[10] = $r11;
+        $r12 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r12.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("CY", 28, "CY\\d{10}[A-Z0-9]{16}");
+        $r1[11] = $r12;
+        $r13 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r13.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("CZ", 24, "CZ\\d{22}");
+        $r1[12] = $r13;
+        $r14 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r14.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("DK", 18, "DK\\d{16}");
+        $r1[13] = $r14;
+        $r15 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r15.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("FO", 18, "FO\\d{16}");
+        $r1[14] = $r15;
+        $r16 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r16.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("GL", 18, "GL\\d{16}");
+        $r1[15] = $r16;
+        $r17 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r17.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("DO", 28, "DO\\d{2}[A-Z0-9]{4}\\d{20}");
+        $r1[16] = $r17;
+        $r18 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r18.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("EE", 20, "EE\\d{18}");
+        $r1[17] = $r18;
+        $r19 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r19.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("FI", 18, "FI\\d{16}");
+        $r1[18] = $r19;
+        $r20 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r20.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("FR", 27, "FR\\d{12}[A-Z0-9]{11}\\d{2}");
+        $r1[19] = $r20;
+        $r21 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r21.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("GE", 22, "GE\\d{2}[A-Z]{2}\\d{16}");
+        $r1[20] = $r21;
+        $r22 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r22.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("DE", 22, "DE\\d{20}");
+        $r1[21] = $r22;
+        $r23 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r23.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("GI", 23, "GI\\d{2}[A-Z]{4}[A-Z0-9]{15}");
+        $r1[22] = $r23;
+        $r24 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r24.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("GR", 27, "GR\\d{9}[A-Z0-9]{16}");
+        $r1[23] = $r24;
+        $r25 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r25.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("GT", 28, "GT\\d{2}[A-Z0-9]{24}");
+        $r1[24] = $r25;
+        $r26 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r26.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("HU", 28, "HU\\d{26}");
+        $r1[25] = $r26;
+        $r27 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r27.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("IS", 26, "IS\\d{24}");
+        $r1[26] = $r27;
+        $r28 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r28.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("IE", 22, "IE\\d{2}[A-Z]{4}\\d{14}");
+        $r1[27] = $r28;
+        $r29 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r29.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("IL", 23, "IL\\d{21}");
+        $r1[28] = $r29;
+        $r30 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r30.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("IT", 27, "IT\\d{2}[A-Z]{1}\\d{10}[A-Z0-9]{12}");
+        $r1[29] = $r30;
+        $r31 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r31.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("JO", 30, "JO\\d{2}[A-Z]{4}\\d{4}[A-Z0-9]{18}");
+        $r1[30] = $r31;
+        $r32 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r32.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("KZ", 20, "KZ\\d{5}[A-Z0-9]{13}");
+        $r1[31] = $r32;
+        $r33 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r33.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("XK", 20, "XK\\d{18}");
+        $r1[32] = $r33;
+        $r34 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r34.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("KW", 30, "KW\\d{2}[A-Z]{4}[A-Z0-9]{22}");
+        $r1[33] = $r34;
+        $r35 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r35.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("LV", 21, "LV\\d{2}[A-Z]{4}[A-Z0-9]{13}");
+        $r1[34] = $r35;
+        $r36 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r36.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("LB", 28, "LB\\d{6}[A-Z0-9]{20}");
+        $r1[35] = $r36;
+        $r37 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r37.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("LI", 21, "LI\\d{7}[A-Z0-9]{12}");
+        $r1[36] = $r37;
+        $r38 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r38.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("LT", 20, "LT\\d{18}");
+        $r1[37] = $r38;
+        $r39 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r39.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("LU", 20, "LU\\d{5}[A-Z0-9]{13}");
+        $r1[38] = $r39;
+        $r40 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r40.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("MK", 19, "MK\\d{5}[A-Z0-9]{10}\\d{2}");
+        $r1[39] = $r40;
+        $r41 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r41.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("MT", 31, "MT\\d{2}[A-Z]{4}\\d{5}[A-Z0-9]{18}");
+        $r1[40] = $r41;
+        $r42 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r42.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("MR", 27, "MR13\\d{23}");
+        $r1[41] = $r42;
+        $r43 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r43.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("MU", 30, "MU\\d{2}[A-Z]{4}\\d{19}[A-Z]{3}");
+        $r1[42] = $r43;
+        $r44 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r44.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("MD", 24, "MD\\d{2}[A-Z0-9]{20}");
+        $r1[43] = $r44;
+        $r45 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r45.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("MC", 27, "MC\\d{12}[A-Z0-9]{11}\\d{2}");
+        $r1[44] = $r45;
+        $r46 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r46.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("ME", 22, "ME\\d{20}");
+        $r1[45] = $r46;
+        $r47 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r47.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("NL", 18, "NL\\d{2}[A-Z]{4}\\d{10}");
+        $r1[46] = $r47;
+        $r48 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r48.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("NO", 15, "NO\\d{13}");
+        $r1[47] = $r48;
+        $r49 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r49.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("PK", 24, "PK\\d{2}[A-Z]{4}[A-Z0-9]{16}");
+        $r1[48] = $r49;
+        $r50 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r50.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("PS", 29, "PS\\d{2}[A-Z]{4}[A-Z0-9]{21}");
+        $r1[49] = $r50;
+        $r51 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r51.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("PL", 28, "PL\\d{26}");
+        $r1[50] = $r51;
+        $r52 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r52.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("PT", 25, "PT\\d{23}");
+        $r1[51] = $r52;
+        $r53 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r53.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("QA", 29, "QA\\d{2}[A-Z]{4}[A-Z0-9]{21}");
+        $r1[52] = $r53;
+        $r54 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r54.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("RO", 24, "RO\\d{2}[A-Z]{4}[A-Z0-9]{16}");
+        $r1[53] = $r54;
+        $r55 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r55.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("LC", 32, "LC\\d{2}[A-Z]{4}\\d{24}");
+        $r1[54] = $r55;
+        $r56 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r56.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("SM", 27, "SM\\d{2}[A-Z]{1}\\d{10}[A-Z0-9]{12}");
+        $r1[55] = $r56;
+        $r57 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r57.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("ST", 25, "ST\\d{23}");
+        $r1[56] = $r57;
+        $r58 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r58.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("SA", 24, "SA\\d{4}[A-Z0-9]{18}");
+        $r1[57] = $r58;
+        $r59 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r59.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("RS", 22, "RS\\d{20}");
+        $r1[58] = $r59;
+        $r60 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r60.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("SK", 24, "SK\\d{22}");
+        $r1[59] = $r60;
+        $r61 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r61.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("SI", 19, "SI\\d{17}");
+        $r1[60] = $r61;
+        $r62 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r62.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("ES", 24, "ES\\d{22}");
+        $r1[61] = $r62;
+        $r63 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r63.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("SE", 24, "SE\\d{22}");
+        $r1[62] = $r63;
+        $r64 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r64.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("CH", 21, "CH\\d{7}[A-Z0-9]{12}");
+        $r1[63] = $r64;
+        $r65 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r65.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("TL", 23, "TL\\d{21}");
+        $r1[64] = $r65;
+        $r66 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r66.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("TN", 24, "TN59\\d{20}");
+        $r1[65] = $r66;
+        $r67 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r67.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("TR", 26, "TR\\d{8}[A-Z0-9]{16}");
+        $r1[66] = $r67;
+        $r68 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r68.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("AE", 23, "AE\\d{21}");
+        $r1[67] = $r68;
+        $r69 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r69.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("GB", 22, "GB\\d{2}[A-Z]{4}\\d{14}");
+        $r1[68] = $r69;
+        $r70 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r70.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>("VG", 24, "VG\\d{2}[A-Z]{4}\\d{16}");
+        $r1[69] = $r70;
+        <org.apache.commons.validator.routines.IBANValidator: org.apache.commons.validator.routines.IBANValidator$Validator[] DEFAULT_FORMATS> = $r1;
+        $r71 = new org.apache.commons.validator.routines.IBANValidator;
+        specialinvoke $r71.<org.apache.commons.validator.routines.IBANValidator: void <init>()>();
+        <org.apache.commons.validator.routines.IBANValidator: org.apache.commons.validator.routines.IBANValidator DEFAULT_IBAN_VALIDATOR> = $r71;
+        return;
+    }
+
+    public static org.apache.commons.validator.routines.IBANValidator getInstance()
+    {
+        org.apache.commons.validator.routines.IBANValidator $r0;
+
+        $r0 = <org.apache.commons.validator.routines.IBANValidator: org.apache.commons.validator.routines.IBANValidator DEFAULT_IBAN_VALIDATOR>;
+        return $r0;
+    }
+
+    public void <init>()
+    {
+        org.apache.commons.validator.routines.IBANValidator r0;
+        org.apache.commons.validator.routines.IBANValidator$Validator[] $r1;
+
+        r0 := @this: org.apache.commons.validator.routines.IBANValidator;
+        $r1 = <org.apache.commons.validator.routines.IBANValidator: org.apache.commons.validator.routines.IBANValidator$Validator[] DEFAULT_FORMATS>;
+        specialinvoke r0.<org.apache.commons.validator.routines.IBANValidator: void <init>(org.apache.commons.validator.routines.IBANValidator$Validator[])>($r1);
+        return;
+    }
+
+    public void <init>(org.apache.commons.validator.routines.IBANValidator$Validator[])
+    {
+        org.apache.commons.validator.routines.IBANValidator r0;
+        org.apache.commons.validator.routines.IBANValidator$Validator[] r1;
+        java.util.Map $r2;
+
+        r0 := @this: org.apache.commons.validator.routines.IBANValidator;
+        r1 := @parameter0: org.apache.commons.validator.routines.IBANValidator$Validator[];
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        $r2 = specialinvoke r0.<org.apache.commons.validator.routines.IBANValidator: java.util.Map createValidators(org.apache.commons.validator.routines.IBANValidator$Validator[])>(r1);
+        r0.<org.apache.commons.validator.routines.IBANValidator: java.util.Map formatValidators> = $r2;
+        return;
+    }
+
+    private java.util.Map createValidators(org.apache.commons.validator.routines.IBANValidator$Validator[])
+    {
+        org.apache.commons.validator.routines.IBANValidator r0;
+        org.apache.commons.validator.routines.IBANValidator$Validator[] r1, r4;
+        java.util.concurrent.ConcurrentHashMap $r2, r3;
+        int i0, i1;
+        org.apache.commons.validator.routines.IBANValidator$Validator r5;
+        java.lang.String $r7;
+
+        r0 := @this: org.apache.commons.validator.routines.IBANValidator;
+        r1 := @parameter0: org.apache.commons.validator.routines.IBANValidator$Validator[];
+        $r2 = new java.util.concurrent.ConcurrentHashMap;
+        specialinvoke $r2.<java.util.concurrent.ConcurrentHashMap: void <init>()>();
+        r3 = $r2;
+        r4 = r1;
+        i0 = lengthof r1;
+        i1 = 0;
+        goto label1;
+
+     label0:
+        r5 = r4[i1];
+        $r7 = r5.<org.apache.commons.validator.routines.IBANValidator$Validator: java.lang.String countryCode>;
+        interfaceinvoke r3.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($r7, r5);
+        i1 = i1 + 1;
+
+     label1:
+        if i1 < i0 goto label0;
+
+        return r3;
+    }
+
+    public boolean isValid(java.lang.String)
+    {
+        org.apache.commons.validator.routines.IBANValidator r0;
+        java.lang.String r1;
+        org.apache.commons.validator.routines.IBANValidator$Validator r2;
+        int $i0, $i1;
+        org.apache.commons.validator.routines.RegexValidator $r3;
+        boolean $z0, $z1;
+        org.apache.commons.validator.routines.checkdigit.CheckDigit $r4;
+
+        r0 := @this: org.apache.commons.validator.routines.IBANValidator;
+        r1 := @parameter0: java.lang.String;
+        r2 = virtualinvoke r0.<org.apache.commons.validator.routines.IBANValidator: org.apache.commons.validator.routines.IBANValidator$Validator getValidator(java.lang.String)>(r1);
+        if r2 == null goto label0;
+
+        $i0 = virtualinvoke r1.<java.lang.String: int length()>();
+        $i1 = r2.<org.apache.commons.validator.routines.IBANValidator$Validator: int lengthOfIBAN>;
+        if $i0 != $i1 goto label0;
+
+        $r3 = r2.<org.apache.commons.validator.routines.IBANValidator$Validator: org.apache.commons.validator.routines.RegexValidator validator>;
+        $z0 = virtualinvoke $r3.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>(r1);
+        if $z0 != 0 goto label1;
+
+     label0:
+        return 0;
+
+     label1:
+        $r4 = <org.apache.commons.validator.routines.checkdigit.IBANCheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit IBAN_CHECK_DIGIT>;
+        $z1 = interfaceinvoke $r4.<org.apache.commons.validator.routines.checkdigit.CheckDigit: boolean isValid(java.lang.String)>(r1);
+        return $z1;
+    }
+
+    public boolean hasValidator(java.lang.String)
+    {
+        org.apache.commons.validator.routines.IBANValidator r0;
+        java.lang.String r1;
+        org.apache.commons.validator.routines.IBANValidator$Validator $r2;
+
+        r0 := @this: org.apache.commons.validator.routines.IBANValidator;
+        r1 := @parameter0: java.lang.String;
+        $r2 = virtualinvoke r0.<org.apache.commons.validator.routines.IBANValidator: org.apache.commons.validator.routines.IBANValidator$Validator getValidator(java.lang.String)>(r1);
+        if $r2 == null goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public org.apache.commons.validator.routines.IBANValidator$Validator[] getDefaultValidators()
+    {
+        org.apache.commons.validator.routines.IBANValidator r0;
+        org.apache.commons.validator.routines.IBANValidator$Validator[] $r1, $r2, $r4;
+        int $i0;
+        java.lang.Object[] $r3;
+
+        r0 := @this: org.apache.commons.validator.routines.IBANValidator;
+        $r1 = <org.apache.commons.validator.routines.IBANValidator: org.apache.commons.validator.routines.IBANValidator$Validator[] DEFAULT_FORMATS>;
+        $r2 = <org.apache.commons.validator.routines.IBANValidator: org.apache.commons.validator.routines.IBANValidator$Validator[] DEFAULT_FORMATS>;
+        $i0 = lengthof $r2;
+        $r3 = staticinvoke <java.util.Arrays: java.lang.Object[] copyOf(java.lang.Object[],int)>($r1, $i0);
+        $r4 = (org.apache.commons.validator.routines.IBANValidator$Validator[]) $r3;
+        return $r4;
+    }
+
+    public org.apache.commons.validator.routines.IBANValidator$Validator getValidator(java.lang.String)
+    {
+        org.apache.commons.validator.routines.IBANValidator r0;
+        java.lang.String r1, r2;
+        int $i0;
+        java.util.Map $r3;
+        java.lang.Object $r4;
+        org.apache.commons.validator.routines.IBANValidator$Validator $r5;
+
+        r0 := @this: org.apache.commons.validator.routines.IBANValidator;
+        r1 := @parameter0: java.lang.String;
+        if r1 == null goto label0;
+
+        $i0 = virtualinvoke r1.<java.lang.String: int length()>();
+        if $i0 >= 2 goto label1;
+
+     label0:
+        return null;
+
+     label1:
+        r2 = virtualinvoke r1.<java.lang.String: java.lang.String substring(int,int)>(0, 2);
+        $r3 = r0.<org.apache.commons.validator.routines.IBANValidator: java.util.Map formatValidators>;
+        $r4 = interfaceinvoke $r3.<java.util.Map: java.lang.Object get(java.lang.Object)>(r2);
+        $r5 = (org.apache.commons.validator.routines.IBANValidator$Validator) $r4;
+        return $r5;
+    }
+
+    public org.apache.commons.validator.routines.IBANValidator$Validator setValidator(org.apache.commons.validator.routines.IBANValidator$Validator)
+    {
+        org.apache.commons.validator.routines.IBANValidator r0, $r2;
+        org.apache.commons.validator.routines.IBANValidator$Validator r1, $r7;
+        java.lang.IllegalStateException $r3;
+        java.util.Map $r4;
+        java.lang.String $r5;
+        java.lang.Object $r6;
+
+        r0 := @this: org.apache.commons.validator.routines.IBANValidator;
+        r1 := @parameter0: org.apache.commons.validator.routines.IBANValidator$Validator;
+        $r2 = <org.apache.commons.validator.routines.IBANValidator: org.apache.commons.validator.routines.IBANValidator DEFAULT_IBAN_VALIDATOR>;
+        if r0 != $r2 goto label0;
+
+        $r3 = new java.lang.IllegalStateException;
+        specialinvoke $r3.<java.lang.IllegalStateException: void <init>(java.lang.String)>("The singleton validator cannot be modified");
+        throw $r3;
+
+     label0:
+        $r4 = r0.<org.apache.commons.validator.routines.IBANValidator: java.util.Map formatValidators>;
+        $r5 = r1.<org.apache.commons.validator.routines.IBANValidator$Validator: java.lang.String countryCode>;
+        $r6 = interfaceinvoke $r4.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($r5, r1);
+        $r7 = (org.apache.commons.validator.routines.IBANValidator$Validator) $r6;
+        return $r7;
+    }
+
+    public org.apache.commons.validator.routines.IBANValidator$Validator setValidator(java.lang.String, int, java.lang.String)
+    {
+        org.apache.commons.validator.routines.IBANValidator r0, $r3;
+        java.lang.String r1, r2;
+        int i0;
+        java.lang.IllegalStateException $r4;
+        java.util.Map $r5;
+        java.lang.Object $r6;
+        org.apache.commons.validator.routines.IBANValidator$Validator $r7, $r8, $r9;
+
+        r0 := @this: org.apache.commons.validator.routines.IBANValidator;
+        r1 := @parameter0: java.lang.String;
+        i0 := @parameter1: int;
+        r2 := @parameter2: java.lang.String;
+        $r3 = <org.apache.commons.validator.routines.IBANValidator: org.apache.commons.validator.routines.IBANValidator DEFAULT_IBAN_VALIDATOR>;
+        if r0 != $r3 goto label0;
+
+        $r4 = new java.lang.IllegalStateException;
+        specialinvoke $r4.<java.lang.IllegalStateException: void <init>(java.lang.String)>("The singleton validator cannot be modified");
+        throw $r4;
+
+     label0:
+        if i0 >= 0 goto label1;
+
+        $r5 = r0.<org.apache.commons.validator.routines.IBANValidator: java.util.Map formatValidators>;
+        $r6 = interfaceinvoke $r5.<java.util.Map: java.lang.Object remove(java.lang.Object)>(r1);
+        $r7 = (org.apache.commons.validator.routines.IBANValidator$Validator) $r6;
+        return $r7;
+
+     label1:
+        $r8 = new org.apache.commons.validator.routines.IBANValidator$Validator;
+        specialinvoke $r8.<org.apache.commons.validator.routines.IBANValidator$Validator: void <init>(java.lang.String,int,java.lang.String)>(r1, i0, r2);
+        $r9 = virtualinvoke r0.<org.apache.commons.validator.routines.IBANValidator: org.apache.commons.validator.routines.IBANValidator$Validator setValidator(org.apache.commons.validator.routines.IBANValidator$Validator)>($r8);
+        return $r9;
+    }
+}

@@ -1,0 +1,4 @@
+org/apache/commons/digester3/edsl/atom/Main.class
+org/apache/commons/digester3/edsl/atom/Feed.class
+org/apache/commons/digester3/edsl/atom/Entry.class
+org/apache/commons/digester3/edsl/atom/AtomRulesModule.class

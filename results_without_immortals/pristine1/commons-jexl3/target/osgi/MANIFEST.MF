@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1509939380689
+Build-Jdk: 1.8.0_111
+Built-By: root
+Bundle-Description: The Apache Commons JEXL library is an implementation
+  of the JSTL Expression Language with extensions.
+Bundle-DocURL: http://commons.apache.org/jexl/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache Commons JEXL
+Bundle-SymbolicName: org.apache.commons.jexl
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 3.1.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.commons.jexl3;version="3.1",org.apache.common
+ s.jexl3.annotations;version="3.1",org.apache.commons.jexl3.internal;ver
+ sion="3.1",org.apache.commons.jexl3.internal.introspection;version="3.1
+ ",org.apache.commons.jexl3.introspection;version="3.1",org.apache.commo
+ ns.jexl3.parser;version="3.1",org.apache.commons.jexl3.scripting;versio
+ n="3.1"
+Import-Package: javax.script,org.apache.commons.logging
+Include-Resource: META-INF/services/javax.script.ScriptEngineFactory=src
+ /main/resources/META-INF/services/javax.script.ScriptEngineFactory,META
+ -INF/NOTICE.txt=NOTICE.txt,META-INF/LICENSE.txt=LICENSE.txt
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Tool: Bnd-3.0.0.201509101326

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy todir="/home/ubuntu/pristine/commons-digester3-parent/examples/plugins/pipeline/target/apidocs/META-INF">
+    <fileset dir="/home/ubuntu/pristine/commons-digester3-parent/examples/plugins/pipeline">
+      <include name="LICENSE.txt"/>
+      <include name="NOTICE.txt"/>
+    </fileset>
+  </copy>
+</target>
+</project>

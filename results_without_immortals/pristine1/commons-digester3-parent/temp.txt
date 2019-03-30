@@ -1,0 +1,727 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.commons:commons-digester3:jar:3.3-SNAPSHOT
+[WARNING] 'reporting.plugins.plugin.version' for org.apache.maven.plugins:maven-checkstyle-plugin is missing. @ line 209, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Apache Commons Digester
+[INFO] Apache Commons Digester :: Core
+[INFO] Apache Commons Digester :: Examples
+[INFO] Apache Commons Digester :: Examples :: Annotations :: Atom
+[INFO] Apache Commons Digester :: Examples :: API :: Address Book
+[INFO] Apache Commons Digester :: Examples :: API :: Catalog
+[INFO] Apache Commons Digester :: Examples :: API :: DB Insert
+[INFO] Apache Commons Digester :: Examples :: API :: Document Markup
+[INFO] Apache Commons Digester :: Examples :: EDSL :: Atom
+[INFO] Apache Commons Digester :: Examples :: Plugins :: Pipeline
+[INFO] Apache Commons Digester :: Examples :: RSS
+[INFO] Apache Commons Digester :: Examples :: XML Rules :: Address Book
+[INFO] Apache Commons Digester :: Distribution Packages
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Commons Digester 3.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (javadoc.resources) @ commons-digester3-parent ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ commons-digester3-parent ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ commons-digester3-parent ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/pristine/commons-digester3-parent && svn --non-interactive info
+[INFO] Working directory: /home/ubuntu/pristine/commons-digester3-parent
+[INFO] Storing buildNumber: 1806248 at timestamp: 1506302829861
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/pristine/commons-digester3-parent && svn --non-interactive info
+[INFO] Working directory: /home/ubuntu/pristine/commons-digester3-parent
+[INFO] Storing buildScmBranch: trunk
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ commons-digester3-parent ---
+[WARNING] Ignoring project type pom - supportedProjectTypes = [jar, bundle]
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Commons Digester :: Core 3.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (javadoc.resources) @ commons-digester3 ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ commons-digester3 ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ commons-digester3 ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/pristine/commons-digester3-parent/core && svn --non-interactive info
+[INFO] Working directory: /home/ubuntu/pristine/commons-digester3-parent/core
+[INFO] Storing buildNumber: 1806248 at timestamp: 1506302831207
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/pristine/commons-digester3-parent/core && svn --non-interactive info
+[INFO] Working directory: /home/ubuntu/pristine/commons-digester3-parent/core
+[INFO] Storing buildScmBranch: trunk
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ commons-digester3 ---
+[INFO] Using 'iso-8859-1' encoding to copy filtered resources.
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ commons-digester3 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 169 source files to /home/ubuntu/pristine/commons-digester3-parent/core/target/classes
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ commons-digester3 ---
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (shaded-manifest) @ commons-digester3 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ commons-digester3 ---
+[INFO] Using 'iso-8859-1' encoding to copy filtered resources.
+[INFO] Copying 62 resources
+[INFO] Copying 0 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ commons-digester3 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 107 source files to /home/ubuntu/pristine/commons-digester3-parent/core/target/test-classes
+[WARNING] /home/ubuntu/pristine/commons-digester3-parent/core/src/test/java/org/apache/commons/digester3/Digester133TestCase.java: Some input files use unchecked or unsafe operations.
+[WARNING] /home/ubuntu/pristine/commons-digester3-parent/core/src/test/java/org/apache/commons/digester3/Digester133TestCase.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ commons-digester3 ---
+[INFO] Surefire report directory: /home/ubuntu/pristine/commons-digester3-parent/core/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.commons.digester3.Digester133TestCase
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.444 sec
+Running org.apache.commons.digester3.SetNestedPropertiesRuleTestCase
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 sec
+Running org.apache.commons.digester3.RuleTestCase
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.134 sec
+Running org.apache.commons.digester3.TestFactoryCreate
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec
+Running org.apache.commons.digester3.URLTestCase
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec
+Running org.apache.commons.digester3.XIncludeTestCase
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
+Running org.apache.commons.digester3.DTDValidationTestCase
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec
+Running org.apache.commons.digester3.Digester171TestCase
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running org.apache.commons.digester3.CallMethodRuleTestCase
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.142 sec
+Running org.apache.commons.digester3.xmlrules.BeanPropertySetterRuleTestCase
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec
+Running org.apache.commons.digester3.xmlrules.IncludeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.104 sec
+Running org.apache.commons.digester3.xmlrules.DigesterPatternStackTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.commons.digester3.xmlrules.FromXmlRuleSetTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.235 sec
+Running org.apache.commons.digester3.xmlrules.SetNamespaceURITestCase
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.371 sec
+Running org.apache.commons.digester3.RegexRulesTestCase
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running org.apache.commons.digester3.substitution.VariableExpansionTestCase
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec
+Running org.apache.commons.digester3.substitution.CompoundSubstitutorTestCase
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.commons.digester3.BeanPropertySetterRuleTestCase
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec
+Running org.apache.commons.digester3.ObjectParamRuleTestCase
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.commons.digester3.XMLSchemaTestCase
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.138 sec
+Running org.apache.commons.digester3.NamespaceSnapshotTestCase
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Running org.apache.commons.digester3.binder.BinderClassLoaderTestCase
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec
+Running org.apache.commons.digester3.binder.DigesterLoaderTestCase
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec
+Running org.apache.commons.digester3.binder.Digester163TestCase
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 sec
+Running org.apache.commons.digester3.plugins.TestDeclaration
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Running org.apache.commons.digester3.plugins.TestConfigurablePluginAttributes
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec
+Running org.apache.commons.digester3.plugins.TestLocalRules
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running org.apache.commons.digester3.plugins.TestRecursion
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running org.apache.commons.digester3.plugins.TestRuleInfo
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running org.apache.commons.digester3.plugins.TestXmlRuleInfo
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec
+Running org.apache.commons.digester3.plugins.TestDefaultPlugin
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.apache.commons.digester3.plugins.TestInline
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
+Running org.apache.commons.digester3.plugins.TestDelegate
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.commons.digester3.SetPropertyRuleTestCase
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running org.apache.commons.digester3.ExtendedBaseRulesTestCase
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Running org.apache.commons.digester3.DigesterTestCase
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
+Running org.apache.commons.digester3.OverlappingCallMethodRuleTestCase
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running org.apache.commons.digester3.SetPropertiesRuleTestCase
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running org.apache.commons.digester3.Digester162TestCase
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.commons.digester3.LocationTrackerTestCase
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running org.apache.commons.digester3.annotations.person.PersonTestCase
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec
+Running org.apache.commons.digester3.annotations.addressbook.AddressBookTestCase
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
+Running org.apache.commons.digester3.annotations.failingtests.FailingTestCase
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.apache.commons.digester3.annotations.catalog.CatalogTestCase
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec
+Running org.apache.commons.digester3.annotations.servletbean.ServletBeanTestCase
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.apache.commons.digester3.annotations.rss.RssTestCase
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
+Running org.apache.commons.digester3.annotations.employee.EmployeeTestCase
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running org.apache.commons.digester3.AsyncReaderTestCase
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 sec
+Running org.apache.commons.digester3.WithDefaultsRulesWrapperTestCase
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.commons.digester3.RulesBaseTestCase
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.commons.digester3.Digester153TestCase
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.223 sec
+Running org.apache.commons.digester3.TestEntityResolution
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running org.apache.commons.digester3.ErrorHandlerTest
+[FATAL] ErrorHandlerTest$4 - Custom Fatal Error Handler
+[FATAL] ErrorHandlerTest$2 - Custom Fatal Error Handler <org.xml.sax.SAXParseException; systemId: file:/home/ubuntu/pristine/commons-digester3-parent/core/target/test-classes/org/apache/commons/digester3/Test-digester-172-wrong.xml; lineNumber: 20; columnNumber: 3; The element type "employee" must be terminated by the matching end-tag "</employee>".>org.xml.sax.SAXParseException; systemId: file:/home/ubuntu/pristine/commons-digester3-parent/core/target/test-classes/org/apache/commons/digester3/Test-digester-172-wrong.xml; lineNumber: 20; columnNumber: 3; The element type "employee" must be terminated by the matching end-tag "</employee>".
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1749)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2967)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.apache.commons.digester3.Digester.parse(Digester.java:1642)
+	at org.apache.commons.digester3.Digester.parse(Digester.java:1828)
+	at org.apache.commons.digester3.ErrorHandlerTest.customErrorHandlerWithStack(ErrorHandlerTest.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:158)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:86)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+Running org.apache.commons.digester3.NodeCreateRuleTestCase
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 sec
+
+Results :
+
+Tests run: 223, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Commons Digester :: Examples 3.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (javadoc.resources) @ commons-digester3-samples-parent ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ commons-digester3-samples-parent ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ commons-digester3-samples-parent ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/pristine/commons-digester3-parent/examples && svn --non-interactive info
+[INFO] Working directory: /home/ubuntu/pristine/commons-digester3-parent/examples
+[INFO] Storing buildNumber: 1806245 at timestamp: 1506302844259
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/pristine/commons-digester3-parent/examples && svn --non-interactive info
+[INFO] Working directory: /home/ubuntu/pristine/commons-digester3-parent/examples
+[INFO] Storing buildScmBranch: trunk
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ commons-digester3-samples-parent ---
+[WARNING] Ignoring project type pom - supportedProjectTypes = [jar, bundle]
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Commons Digester :: Examples :: Annotations :: Atom 3.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (javadoc.resources) @ commons-digester3-samples-annotations-atom ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ commons-digester3-samples-annotations-atom ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ commons-digester3-samples-annotations-atom ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/pristine/commons-digester3-parent/examples/annotations/atom && svn --non-interactive info
+[INFO] Working directory: /home/ubuntu/pristine/commons-digester3-parent/examples/annotations/atom
+[INFO] Storing buildNumber: 1612154 at timestamp: 1506302844371
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/pristine/commons-digester3-parent/examples/annotations/atom && svn --non-interactive info
+[INFO] Working directory: /home/ubuntu/pristine/commons-digester3-parent/examples/annotations/atom
+[INFO] Storing buildScmBranch: trunk
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ commons-digester3-samples-annotations-atom ---
+[INFO] Using 'iso-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ubuntu/pristine/commons-digester3-parent/examples/annotations/atom/src/main/resources
+[INFO] Copying 0 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ commons-digester3-samples-annotations-atom ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /home/ubuntu/pristine/commons-digester3-parent/examples/annotations/atom/target/classes
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ commons-digester3-samples-annotations-atom ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ commons-digester3-samples-annotations-atom ---
+[INFO] Using 'iso-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ubuntu/pristine/commons-digester3-parent/examples/annotations/atom/src/test/resources
+[INFO] Copying 0 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ commons-digester3-samples-annotations-atom ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ commons-digester3-samples-annotations-atom ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Commons Digester :: Examples :: API :: Address Book 3.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (javadoc.resources) @ commons-digester3-samples-addressbook ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ commons-digester3-samples-addressbook ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ commons-digester3-samples-addressbook ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/pristine/commons-digester3-parent/examples/api/addressbook && svn --non-interactive info
+[INFO] Working directory: /home/ubuntu/pristine/commons-digester3-parent/examples/api/addressbook
+[INFO] Storing buildNumber: 1806244 at timestamp: 1506302844770
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/pristine/commons-digester3-parent/examples/api/addressbook && svn --non-interactive info
+[INFO] Working directory: /home/ubuntu/pristine/commons-digester3-parent/examples/api/addressbook
+[INFO] Storing buildScmBranch: trunk
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ commons-digester3-samples-addressbook ---
+[INFO] Using 'iso-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ubuntu/pristine/commons-digester3-parent/examples/api/addressbook/src/main/resources
+[INFO] Copying 0 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ commons-digester3-samples-addressbook ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /home/ubuntu/pristine/commons-digester3-parent/examples/api/addressbook/target/classes
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ commons-digester3-samples-addressbook ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ commons-digester3-samples-addressbook ---
+[INFO] Using 'iso-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ubuntu/pristine/commons-digester3-parent/examples/api/addressbook/src/test/resources
+[INFO] Copying 0 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ commons-digester3-samples-addressbook ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ commons-digester3-samples-addressbook ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Commons Digester :: Examples :: API :: Catalog 3.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (javadoc.resources) @ commons-digester3-samples-catalog ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ commons-digester3-samples-catalog ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ commons-digester3-samples-catalog ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/pristine/commons-digester3-parent/examples/api/catalog && svn --non-interactive info
+[INFO] Working directory: /home/ubuntu/pristine/commons-digester3-parent/examples/api/catalog
+[INFO] Storing buildNumber: 1806245 at timestamp: 1506302845140
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/pristine/commons-digester3-parent/examples/api/catalog && svn --non-interactive info
+[INFO] Working directory: /home/ubuntu/pristine/commons-digester3-parent/examples/api/catalog
+[INFO] Storing buildScmBranch: trunk
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ commons-digester3-samples-catalog ---
+[INFO] Using 'iso-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ubuntu/pristine/commons-digester3-parent/examples/api/catalog/src/main/resources
+[INFO] Copying 0 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ commons-digester3-samples-catalog ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to /home/ubuntu/pristine/commons-digester3-parent/examples/api/catalog/target/classes
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ commons-digester3-samples-catalog ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ commons-digester3-samples-catalog ---
+[INFO] Using 'iso-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ubuntu/pristine/commons-digester3-parent/examples/api/catalog/src/test/resources
+[INFO] Copying 0 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ commons-digester3-samples-catalog ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ commons-digester3-samples-catalog ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Commons Digester :: Examples :: API :: DB Insert 3.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (javadoc.resources) @ commons-digester3-samples-dbinsert ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ commons-digester3-samples-dbinsert ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ commons-digester3-samples-dbinsert ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/pristine/commons-digester3-parent/examples/api/dbinsert && svn --non-interactive info
+[INFO] Working directory: /home/ubuntu/pristine/commons-digester3-parent/examples/api/dbinsert
+[INFO] Storing buildNumber: 1806245 at timestamp: 1506302845439
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/pristine/commons-digester3-parent/examples/api/dbinsert && svn --non-interactive info
+[INFO] Working directory: /home/ubuntu/pristine/commons-digester3-parent/examples/api/dbinsert
+[INFO] Storing buildScmBranch: trunk
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ commons-digester3-samples-dbinsert ---
+[INFO] Using 'iso-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ubuntu/pristine/commons-digester3-parent/examples/api/dbinsert/src/main/resources
+[INFO] Copying 0 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ commons-digester3-samples-dbinsert ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /home/ubuntu/pristine/commons-digester3-parent/examples/api/dbinsert/target/classes
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ commons-digester3-samples-dbinsert ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ commons-digester3-samples-dbinsert ---
+[INFO] Using 'iso-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ubuntu/pristine/commons-digester3-parent/examples/api/dbinsert/src/test/resources
+[INFO] Copying 0 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ commons-digester3-samples-dbinsert ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ commons-digester3-samples-dbinsert ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Commons Digester :: Examples :: API :: Document Markup 3.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (javadoc.resources) @ commons-digester3-samples-document-markup ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ commons-digester3-samples-document-markup ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ commons-digester3-samples-document-markup ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/pristine/commons-digester3-parent/examples/api/document-markup && svn --non-interactive info
+[INFO] Working directory: /home/ubuntu/pristine/commons-digester3-parent/examples/api/document-markup
+[INFO] Storing buildNumber: 1806241 at timestamp: 1506302845762
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/pristine/commons-digester3-parent/examples/api/document-markup && svn --non-interactive info
+[INFO] Working directory: /home/ubuntu/pristine/commons-digester3-parent/examples/api/document-markup
+[INFO] Storing buildScmBranch: trunk
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ commons-digester3-samples-document-markup ---
+[INFO] Using 'iso-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ubuntu/pristine/commons-digester3-parent/examples/api/document-markup/src/main/resources
+[INFO] Copying 0 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ commons-digester3-samples-document-markup ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /home/ubuntu/pristine/commons-digester3-parent/examples/api/document-markup/target/classes
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ commons-digester3-samples-document-markup ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ commons-digester3-samples-document-markup ---
+[INFO] Using 'iso-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ubuntu/pristine/commons-digester3-parent/examples/api/document-markup/src/test/resources
+[INFO] Copying 0 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ commons-digester3-samples-document-markup ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ commons-digester3-samples-document-markup ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Commons Digester :: Examples :: EDSL :: Atom 3.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (javadoc.resources) @ commons-digester3-samples-edsl-atom ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ commons-digester3-samples-edsl-atom ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ commons-digester3-samples-edsl-atom ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/pristine/commons-digester3-parent/examples/edsl/atom && svn --non-interactive info
+[INFO] Working directory: /home/ubuntu/pristine/commons-digester3-parent/examples/edsl/atom
+[INFO] Storing buildNumber: 1612154 at timestamp: 1506302846067
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/pristine/commons-digester3-parent/examples/edsl/atom && svn --non-interactive info
+[INFO] Working directory: /home/ubuntu/pristine/commons-digester3-parent/examples/edsl/atom
+[INFO] Storing buildScmBranch: trunk
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ commons-digester3-samples-edsl-atom ---
+[INFO] Using 'iso-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ubuntu/pristine/commons-digester3-parent/examples/edsl/atom/src/main/resources
+[INFO] Copying 0 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ commons-digester3-samples-edsl-atom ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /home/ubuntu/pristine/commons-digester3-parent/examples/edsl/atom/target/classes
+[WARNING] /home/ubuntu/pristine/commons-digester3-parent/examples/edsl/atom/src/main/java/org/apache/commons/digester3/edsl/atom/AtomRulesModule.java: /home/ubuntu/pristine/commons-digester3-parent/examples/edsl/atom/src/main/java/org/apache/commons/digester3/edsl/atom/AtomRulesModule.java uses or overrides a deprecated API.
+[WARNING] /home/ubuntu/pristine/commons-digester3-parent/examples/edsl/atom/src/main/java/org/apache/commons/digester3/edsl/atom/AtomRulesModule.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ commons-digester3-samples-edsl-atom ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ commons-digester3-samples-edsl-atom ---
+[INFO] Using 'iso-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ubuntu/pristine/commons-digester3-parent/examples/edsl/atom/src/test/resources
+[INFO] Copying 0 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ commons-digester3-samples-edsl-atom ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ commons-digester3-samples-edsl-atom ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Commons Digester :: Examples :: Plugins :: Pipeline 3.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (javadoc.resources) @ commons-digester3-samples-plugins-pipeline ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ commons-digester3-samples-plugins-pipeline ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ commons-digester3-samples-plugins-pipeline ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/pristine/commons-digester3-parent/examples/plugins/pipeline && svn --non-interactive info
+[INFO] Working directory: /home/ubuntu/pristine/commons-digester3-parent/examples/plugins/pipeline
+[INFO] Storing buildNumber: 1806245 at timestamp: 1506302846367
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/pristine/commons-digester3-parent/examples/plugins/pipeline && svn --non-interactive info
+[INFO] Working directory: /home/ubuntu/pristine/commons-digester3-parent/examples/plugins/pipeline
+[INFO] Storing buildScmBranch: trunk
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ commons-digester3-samples-plugins-pipeline ---
+[INFO] Using 'iso-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ubuntu/pristine/commons-digester3-parent/examples/plugins/pipeline/src/main/resources
+[INFO] Copying 0 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ commons-digester3-samples-plugins-pipeline ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /home/ubuntu/pristine/commons-digester3-parent/examples/plugins/pipeline/target/classes
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ commons-digester3-samples-plugins-pipeline ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ commons-digester3-samples-plugins-pipeline ---
+[INFO] Using 'iso-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ubuntu/pristine/commons-digester3-parent/examples/plugins/pipeline/src/test/resources
+[INFO] Copying 0 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ commons-digester3-samples-plugins-pipeline ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ commons-digester3-samples-plugins-pipeline ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Commons Digester :: Examples :: RSS 3.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (javadoc.resources) @ commons-digester3-samples-rss ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ commons-digester3-samples-rss ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ commons-digester3-samples-rss ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/pristine/commons-digester3-parent/examples/rss && svn --non-interactive info
+[INFO] Working directory: /home/ubuntu/pristine/commons-digester3-parent/examples/rss
+[INFO] Storing buildNumber: 1806244 at timestamp: 1506302846661
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/pristine/commons-digester3-parent/examples/rss && svn --non-interactive info
+[INFO] Working directory: /home/ubuntu/pristine/commons-digester3-parent/examples/rss
+[INFO] Storing buildScmBranch: trunk
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ commons-digester3-samples-rss ---
+[INFO] Using 'iso-8859-1' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 1 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ commons-digester3-samples-rss ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /home/ubuntu/pristine/commons-digester3-parent/examples/rss/target/classes
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ commons-digester3-samples-rss ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ commons-digester3-samples-rss ---
+[INFO] Using 'iso-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ubuntu/pristine/commons-digester3-parent/examples/rss/src/test/resources
+[INFO] Copying 1 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ commons-digester3-samples-rss ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ commons-digester3-samples-rss ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Commons Digester :: Examples :: XML Rules :: Address Book 3.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (javadoc.resources) @ commons-digester3-samples-xmlrules-addressbook ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ commons-digester3-samples-xmlrules-addressbook ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ commons-digester3-samples-xmlrules-addressbook ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/pristine/commons-digester3-parent/examples/xmlrules/addressbook && svn --non-interactive info
+[INFO] Working directory: /home/ubuntu/pristine/commons-digester3-parent/examples/xmlrules/addressbook
+[INFO] Storing buildNumber: 1806245 at timestamp: 1506302847026
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/pristine/commons-digester3-parent/examples/xmlrules/addressbook && svn --non-interactive info
+[INFO] Working directory: /home/ubuntu/pristine/commons-digester3-parent/examples/xmlrules/addressbook
+[INFO] Storing buildScmBranch: trunk
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ commons-digester3-samples-xmlrules-addressbook ---
+[INFO] Using 'iso-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ubuntu/pristine/commons-digester3-parent/examples/xmlrules/addressbook/src/main/resources
+[INFO] Copying 0 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ commons-digester3-samples-xmlrules-addressbook ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /home/ubuntu/pristine/commons-digester3-parent/examples/xmlrules/addressbook/target/classes
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ commons-digester3-samples-xmlrules-addressbook ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ commons-digester3-samples-xmlrules-addressbook ---
+[INFO] Using 'iso-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ubuntu/pristine/commons-digester3-parent/examples/xmlrules/addressbook/src/test/resources
+[INFO] Copying 0 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ commons-digester3-samples-xmlrules-addressbook ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ commons-digester3-samples-xmlrules-addressbook ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Commons Digester :: Distribution Packages 3.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (javadoc.resources) @ commons-digester3-dist ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ commons-digester3-dist ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ commons-digester3-dist ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/pristine/commons-digester3-parent/dist && svn --non-interactive info
+[INFO] Working directory: /home/ubuntu/pristine/commons-digester3-parent/dist
+[INFO] Storing buildNumber: 1747108 at timestamp: 1506302847496
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/pristine/commons-digester3-parent/dist && svn --non-interactive info
+[INFO] Working directory: /home/ubuntu/pristine/commons-digester3-parent/dist
+[INFO] Storing buildScmBranch: trunk
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ commons-digester3-dist ---
+[WARNING] Ignoring project type pom - supportedProjectTypes = [jar, bundle]
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Apache Commons Digester ........................... SUCCESS [3.199s]
+[INFO] Apache Commons Digester :: Core ................... SUCCESS [13.308s]
+[INFO] Apache Commons Digester :: Examples ............... SUCCESS [0.157s]
+[INFO] Apache Commons Digester :: Examples :: Annotations :: Atom  SUCCESS [0.369s]
+[INFO] Apache Commons Digester :: Examples :: API :: Address Book  SUCCESS [0.398s]
+[INFO] Apache Commons Digester :: Examples :: API :: Catalog  SUCCESS [0.284s]
+[INFO] Apache Commons Digester :: Examples :: API :: DB Insert  SUCCESS [0.303s]
+[INFO] Apache Commons Digester :: Examples :: API :: Document Markup  SUCCESS [0.333s]
+[INFO] Apache Commons Digester :: Examples :: EDSL :: Atom  SUCCESS [0.303s]
+[INFO] Apache Commons Digester :: Examples :: Plugins :: Pipeline  SUCCESS [0.285s]
+[INFO] Apache Commons Digester :: Examples :: RSS ........ SUCCESS [0.355s]
+[INFO] Apache Commons Digester :: Examples :: XML Rules :: Address Book  SUCCESS [0.473s]
+[INFO] Apache Commons Digester :: Distribution Packages .. SUCCESS [0.116s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 20.514s
+[INFO] Finished at: Sun Sep 24 18:27:27 PDT 2017
+[INFO] Final Memory: 31M/341M
+[INFO] ------------------------------------------------------------------------

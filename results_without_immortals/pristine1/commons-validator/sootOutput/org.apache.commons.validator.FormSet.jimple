@@ -1,0 +1,483 @@
+public class org.apache.commons.validator.FormSet extends java.lang.Object implements java.io.Serializable
+{
+    private static final long serialVersionUID;
+    private transient org.apache.commons.logging.Log log;
+    private boolean processed;
+    private java.lang.String language;
+    private java.lang.String country;
+    private java.lang.String variant;
+    private final java.util.Map forms;
+    private final java.util.Map constants;
+    protected static final int GLOBAL_FORMSET;
+    protected static final int LANGUAGE_FORMSET;
+    protected static final int COUNTRY_FORMSET;
+    protected static final int VARIANT_FORMSET;
+    private boolean merged;
+
+    public void <init>()
+    {
+        org.apache.commons.validator.FormSet r0;
+        org.apache.commons.logging.Log $r1;
+        java.util.HashMap $r2, $r3;
+
+        r0 := @this: org.apache.commons.validator.FormSet;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        $r1 = staticinvoke <org.apache.commons.logging.LogFactory: org.apache.commons.logging.Log getLog(java.lang.Class)>(class "org/apache/commons/validator/FormSet");
+        r0.<org.apache.commons.validator.FormSet: org.apache.commons.logging.Log log> = $r1;
+        r0.<org.apache.commons.validator.FormSet: boolean processed> = 0;
+        r0.<org.apache.commons.validator.FormSet: java.lang.String language> = null;
+        r0.<org.apache.commons.validator.FormSet: java.lang.String country> = null;
+        r0.<org.apache.commons.validator.FormSet: java.lang.String variant> = null;
+        $r2 = new java.util.HashMap;
+        specialinvoke $r2.<java.util.HashMap: void <init>()>();
+        r0.<org.apache.commons.validator.FormSet: java.util.Map forms> = $r2;
+        $r3 = new java.util.HashMap;
+        specialinvoke $r3.<java.util.HashMap: void <init>()>();
+        r0.<org.apache.commons.validator.FormSet: java.util.Map constants> = $r3;
+        return;
+    }
+
+    protected boolean isMerged()
+    {
+        org.apache.commons.validator.FormSet r0;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.FormSet;
+        $z0 = r0.<org.apache.commons.validator.FormSet: boolean merged>;
+        return $z0;
+    }
+
+    protected int getType()
+    {
+        org.apache.commons.validator.FormSet r0;
+        java.lang.String $r1, $r2, $r3, $r5, $r6, $r8;
+        java.lang.NullPointerException $r4, $r7;
+
+        r0 := @this: org.apache.commons.validator.FormSet;
+        $r1 = virtualinvoke r0.<org.apache.commons.validator.FormSet: java.lang.String getVariant()>();
+        if $r1 == null goto label2;
+
+        $r2 = virtualinvoke r0.<org.apache.commons.validator.FormSet: java.lang.String getLanguage()>();
+        if $r2 == null goto label0;
+
+        $r3 = virtualinvoke r0.<org.apache.commons.validator.FormSet: java.lang.String getCountry()>();
+        if $r3 != null goto label1;
+
+     label0:
+        $r4 = new java.lang.NullPointerException;
+        specialinvoke $r4.<java.lang.NullPointerException: void <init>(java.lang.String)>("When variant is specified, country and language must be specified.");
+        throw $r4;
+
+     label1:
+        return 4;
+
+     label2:
+        $r5 = virtualinvoke r0.<org.apache.commons.validator.FormSet: java.lang.String getCountry()>();
+        if $r5 == null goto label4;
+
+        $r6 = virtualinvoke r0.<org.apache.commons.validator.FormSet: java.lang.String getLanguage()>();
+        if $r6 != null goto label3;
+
+        $r7 = new java.lang.NullPointerException;
+        specialinvoke $r7.<java.lang.NullPointerException: void <init>(java.lang.String)>("When country is specified, language must be specified.");
+        throw $r7;
+
+     label3:
+        return 3;
+
+     label4:
+        $r8 = virtualinvoke r0.<org.apache.commons.validator.FormSet: java.lang.String getLanguage()>();
+        if $r8 == null goto label5;
+
+        return 2;
+
+     label5:
+        return 1;
+    }
+
+    protected void merge(org.apache.commons.validator.FormSet)
+    {
+        org.apache.commons.validator.FormSet r0, r1;
+        java.util.Map r2, r3;
+        java.util.Iterator r4;
+        java.util.Map$Entry r5;
+        java.lang.String r6;
+        org.apache.commons.validator.Form r7, $r13, $r15;
+        java.util.Set $r8;
+        java.lang.Object $r9, $r10, $r11, $r12, $r14;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.FormSet;
+        r1 := @parameter0: org.apache.commons.validator.FormSet;
+        if r1 == null goto label3;
+
+        r2 = virtualinvoke r0.<org.apache.commons.validator.FormSet: java.util.Map getForms()>();
+        r3 = virtualinvoke r1.<org.apache.commons.validator.FormSet: java.util.Map getForms()>();
+        $r8 = interfaceinvoke r3.<java.util.Map: java.util.Set entrySet()>();
+        r4 = interfaceinvoke $r8.<java.util.Set: java.util.Iterator iterator()>();
+        goto label2;
+
+     label0:
+        $r9 = interfaceinvoke r4.<java.util.Iterator: java.lang.Object next()>();
+        r5 = (java.util.Map$Entry) $r9;
+        $r10 = interfaceinvoke r5.<java.util.Map$Entry: java.lang.Object getKey()>();
+        r6 = (java.lang.String) $r10;
+        $r11 = interfaceinvoke r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r6);
+        r7 = (org.apache.commons.validator.Form) $r11;
+        if r7 == null goto label1;
+
+        $r12 = interfaceinvoke r5.<java.util.Map$Entry: java.lang.Object getValue()>();
+        $r13 = (org.apache.commons.validator.Form) $r12;
+        virtualinvoke r7.<org.apache.commons.validator.Form: void merge(org.apache.commons.validator.Form)>($r13);
+        goto label2;
+
+     label1:
+        $r14 = interfaceinvoke r5.<java.util.Map$Entry: java.lang.Object getValue()>();
+        $r15 = (org.apache.commons.validator.Form) $r14;
+        virtualinvoke r0.<org.apache.commons.validator.FormSet: void addForm(org.apache.commons.validator.Form)>($r15);
+
+     label2:
+        $z0 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>();
+        if $z0 != 0 goto label0;
+
+     label3:
+        r0.<org.apache.commons.validator.FormSet: boolean merged> = 1;
+        return;
+    }
+
+    public boolean isProcessed()
+    {
+        org.apache.commons.validator.FormSet r0;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.FormSet;
+        $z0 = r0.<org.apache.commons.validator.FormSet: boolean processed>;
+        return $z0;
+    }
+
+    public java.lang.String getLanguage()
+    {
+        org.apache.commons.validator.FormSet r0;
+        java.lang.String $r1;
+
+        r0 := @this: org.apache.commons.validator.FormSet;
+        $r1 = r0.<org.apache.commons.validator.FormSet: java.lang.String language>;
+        return $r1;
+    }
+
+    public void setLanguage(java.lang.String)
+    {
+        org.apache.commons.validator.FormSet r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.FormSet;
+        r1 := @parameter0: java.lang.String;
+        r0.<org.apache.commons.validator.FormSet: java.lang.String language> = r1;
+        return;
+    }
+
+    public java.lang.String getCountry()
+    {
+        org.apache.commons.validator.FormSet r0;
+        java.lang.String $r1;
+
+        r0 := @this: org.apache.commons.validator.FormSet;
+        $r1 = r0.<org.apache.commons.validator.FormSet: java.lang.String country>;
+        return $r1;
+    }
+
+    public void setCountry(java.lang.String)
+    {
+        org.apache.commons.validator.FormSet r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.FormSet;
+        r1 := @parameter0: java.lang.String;
+        r0.<org.apache.commons.validator.FormSet: java.lang.String country> = r1;
+        return;
+    }
+
+    public java.lang.String getVariant()
+    {
+        org.apache.commons.validator.FormSet r0;
+        java.lang.String $r1;
+
+        r0 := @this: org.apache.commons.validator.FormSet;
+        $r1 = r0.<org.apache.commons.validator.FormSet: java.lang.String variant>;
+        return $r1;
+    }
+
+    public void setVariant(java.lang.String)
+    {
+        org.apache.commons.validator.FormSet r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.FormSet;
+        r1 := @parameter0: java.lang.String;
+        r0.<org.apache.commons.validator.FormSet: java.lang.String variant> = r1;
+        return;
+    }
+
+    public void addConstant(java.lang.String, java.lang.String)
+    {
+        org.apache.commons.validator.FormSet r0;
+        java.lang.String r1, r2, $r8, $r11;
+        java.util.Map $r3, $r12;
+        boolean $z0;
+        org.apache.commons.logging.Log $r4;
+        java.lang.StringBuilder $r5, $r6, $r7, $r9, $r10;
+
+        r0 := @this: org.apache.commons.validator.FormSet;
+        r1 := @parameter0: java.lang.String;
+        r2 := @parameter1: java.lang.String;
+        $r3 = r0.<org.apache.commons.validator.FormSet: java.util.Map constants>;
+        $z0 = interfaceinvoke $r3.<java.util.Map: boolean containsKey(java.lang.Object)>(r1);
+        if $z0 == 0 goto label0;
+
+        $r4 = specialinvoke r0.<org.apache.commons.validator.FormSet: org.apache.commons.logging.Log getLog()>();
+        $r5 = new java.lang.StringBuilder;
+        specialinvoke $r5.<java.lang.StringBuilder: void <init>(java.lang.String)>("Constant \'");
+        $r6 = virtualinvoke $r5.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r1);
+        $r7 = virtualinvoke $r6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' already exists in FormSet[");
+        $r8 = virtualinvoke r0.<org.apache.commons.validator.FormSet: java.lang.String displayKey()>();
+        $r9 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r8);
+        $r10 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("] - ignoring.");
+        $r11 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.String toString()>();
+        interfaceinvoke $r4.<org.apache.commons.logging.Log: void error(java.lang.Object)>($r11);
+        goto label1;
+
+     label0:
+        $r12 = r0.<org.apache.commons.validator.FormSet: java.util.Map constants>;
+        interfaceinvoke $r12.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r2);
+
+     label1:
+        return;
+    }
+
+    public void addForm(org.apache.commons.validator.Form)
+    {
+        org.apache.commons.validator.FormSet r0;
+        org.apache.commons.validator.Form r1;
+        java.lang.String r2, $r8, $r11, $r13;
+        java.util.Map $r3, $r12;
+        boolean $z0;
+        org.apache.commons.logging.Log $r4;
+        java.lang.StringBuilder $r5, $r6, $r7, $r9, $r10;
+
+        r0 := @this: org.apache.commons.validator.FormSet;
+        r1 := @parameter0: org.apache.commons.validator.Form;
+        r2 = virtualinvoke r1.<org.apache.commons.validator.Form: java.lang.String getName()>();
+        $r3 = r0.<org.apache.commons.validator.FormSet: java.util.Map forms>;
+        $z0 = interfaceinvoke $r3.<java.util.Map: boolean containsKey(java.lang.Object)>(r2);
+        if $z0 == 0 goto label0;
+
+        $r4 = specialinvoke r0.<org.apache.commons.validator.FormSet: org.apache.commons.logging.Log getLog()>();
+        $r5 = new java.lang.StringBuilder;
+        specialinvoke $r5.<java.lang.StringBuilder: void <init>(java.lang.String)>("Form \'");
+        $r6 = virtualinvoke $r5.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r2);
+        $r7 = virtualinvoke $r6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' already exists in FormSet[");
+        $r8 = virtualinvoke r0.<org.apache.commons.validator.FormSet: java.lang.String displayKey()>();
+        $r9 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r8);
+        $r10 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("] - ignoring.");
+        $r11 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.String toString()>();
+        interfaceinvoke $r4.<org.apache.commons.logging.Log: void error(java.lang.Object)>($r11);
+        goto label1;
+
+     label0:
+        $r12 = r0.<org.apache.commons.validator.FormSet: java.util.Map forms>;
+        $r13 = virtualinvoke r1.<org.apache.commons.validator.Form: java.lang.String getName()>();
+        interfaceinvoke $r12.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($r13, r1);
+
+     label1:
+        return;
+    }
+
+    public org.apache.commons.validator.Form getForm(java.lang.String)
+    {
+        org.apache.commons.validator.FormSet r0;
+        java.lang.String r1;
+        java.util.Map $r2;
+        java.lang.Object $r3;
+        org.apache.commons.validator.Form $r4;
+
+        r0 := @this: org.apache.commons.validator.FormSet;
+        r1 := @parameter0: java.lang.String;
+        $r2 = r0.<org.apache.commons.validator.FormSet: java.util.Map forms>;
+        $r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1);
+        $r4 = (org.apache.commons.validator.Form) $r3;
+        return $r4;
+    }
+
+    public java.util.Map getForms()
+    {
+        org.apache.commons.validator.FormSet r0;
+        java.util.Map $r1, $r2;
+
+        r0 := @this: org.apache.commons.validator.FormSet;
+        $r1 = r0.<org.apache.commons.validator.FormSet: java.util.Map forms>;
+        $r2 = staticinvoke <java.util.Collections: java.util.Map unmodifiableMap(java.util.Map)>($r1);
+        return $r2;
+    }
+
+    synchronized void process(java.util.Map)
+    {
+        org.apache.commons.validator.FormSet r0;
+        java.util.Map r1, $r4, $r7, $r8;
+        java.util.Iterator r2;
+        org.apache.commons.validator.Form r3;
+        java.util.Collection $r5;
+        java.lang.Object $r6;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.FormSet;
+        r1 := @parameter0: java.util.Map;
+        $r4 = r0.<org.apache.commons.validator.FormSet: java.util.Map forms>;
+        $r5 = interfaceinvoke $r4.<java.util.Map: java.util.Collection values()>();
+        r2 = interfaceinvoke $r5.<java.util.Collection: java.util.Iterator iterator()>();
+        goto label1;
+
+     label0:
+        $r6 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>();
+        r3 = (org.apache.commons.validator.Form) $r6;
+        $r7 = r0.<org.apache.commons.validator.FormSet: java.util.Map constants>;
+        $r8 = r0.<org.apache.commons.validator.FormSet: java.util.Map forms>;
+        virtualinvoke r3.<org.apache.commons.validator.Form: void process(java.util.Map,java.util.Map,java.util.Map)>(r1, $r7, $r8);
+
+     label1:
+        $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>();
+        if $z0 != 0 goto label0;
+
+        r0.<org.apache.commons.validator.FormSet: boolean processed> = 1;
+        return;
+    }
+
+    public java.lang.String displayKey()
+    {
+        org.apache.commons.validator.FormSet r0;
+        java.lang.StringBuilder $r1, r2;
+        java.lang.String $r3, $r4, $r6, $r8, $r9, $r12, $r14, $r15, $r18, $r21;
+        int $i0, $i1, $i2, $i3, $i4, $i5;
+
+        r0 := @this: org.apache.commons.validator.FormSet;
+        $r1 = new java.lang.StringBuilder;
+        specialinvoke $r1.<java.lang.StringBuilder: void <init>()>();
+        r2 = $r1;
+        $r3 = r0.<org.apache.commons.validator.FormSet: java.lang.String language>;
+        if $r3 == null goto label0;
+
+        $r4 = r0.<org.apache.commons.validator.FormSet: java.lang.String language>;
+        $i0 = virtualinvoke $r4.<java.lang.String: int length()>();
+        if $i0 <= 0 goto label0;
+
+        virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("language=");
+        $r6 = r0.<org.apache.commons.validator.FormSet: java.lang.String language>;
+        virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r6);
+
+     label0:
+        $r8 = r0.<org.apache.commons.validator.FormSet: java.lang.String country>;
+        if $r8 == null goto label2;
+
+        $r9 = r0.<org.apache.commons.validator.FormSet: java.lang.String country>;
+        $i1 = virtualinvoke $r9.<java.lang.String: int length()>();
+        if $i1 <= 0 goto label2;
+
+        $i2 = virtualinvoke r2.<java.lang.StringBuilder: int length()>();
+        if $i2 <= 0 goto label1;
+
+        virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", ");
+
+     label1:
+        virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("country=");
+        $r12 = r0.<org.apache.commons.validator.FormSet: java.lang.String country>;
+        virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r12);
+
+     label2:
+        $r14 = r0.<org.apache.commons.validator.FormSet: java.lang.String variant>;
+        if $r14 == null goto label4;
+
+        $r15 = r0.<org.apache.commons.validator.FormSet: java.lang.String variant>;
+        $i3 = virtualinvoke $r15.<java.lang.String: int length()>();
+        if $i3 <= 0 goto label4;
+
+        $i4 = virtualinvoke r2.<java.lang.StringBuilder: int length()>();
+        if $i4 <= 0 goto label3;
+
+        virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", ");
+
+     label3:
+        virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("variant=");
+        $r18 = r0.<org.apache.commons.validator.FormSet: java.lang.String variant>;
+        virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r18);
+
+     label4:
+        $i5 = virtualinvoke r2.<java.lang.StringBuilder: int length()>();
+        if $i5 != 0 goto label5;
+
+        virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("default");
+
+     label5:
+        $r21 = virtualinvoke r2.<java.lang.StringBuilder: java.lang.String toString()>();
+        return $r21;
+    }
+
+    public java.lang.String toString()
+    {
+        org.apache.commons.validator.FormSet r0;
+        java.lang.StringBuilder $r1, r2;
+        java.util.Iterator r3;
+        java.lang.String $r5, $r8, $r11, $r20;
+        java.util.Map $r14;
+        java.util.Collection $r15;
+        java.lang.Object $r17;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.FormSet;
+        $r1 = new java.lang.StringBuilder;
+        specialinvoke $r1.<java.lang.StringBuilder: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("FormSet: language=");
+        $r5 = r0.<org.apache.commons.validator.FormSet: java.lang.String language>;
+        virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r5);
+        virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("  country=");
+        $r8 = r0.<org.apache.commons.validator.FormSet: java.lang.String country>;
+        virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r8);
+        virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("  variant=");
+        $r11 = r0.<org.apache.commons.validator.FormSet: java.lang.String variant>;
+        virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r11);
+        virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\n");
+        $r14 = virtualinvoke r0.<org.apache.commons.validator.FormSet: java.util.Map getForms()>();
+        $r15 = interfaceinvoke $r14.<java.util.Map: java.util.Collection values()>();
+        r3 = interfaceinvoke $r15.<java.util.Collection: java.util.Iterator iterator()>();
+        goto label1;
+
+     label0:
+        virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("   ");
+        $r17 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>();
+        virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>($r17);
+        virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\n");
+
+     label1:
+        $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>();
+        if $z0 != 0 goto label0;
+
+        $r20 = virtualinvoke r2.<java.lang.StringBuilder: java.lang.String toString()>();
+        return $r20;
+    }
+
+    private org.apache.commons.logging.Log getLog()
+    {
+        org.apache.commons.validator.FormSet r0;
+        org.apache.commons.logging.Log $r1, $r2, $r3;
+
+        r0 := @this: org.apache.commons.validator.FormSet;
+        $r1 = r0.<org.apache.commons.validator.FormSet: org.apache.commons.logging.Log log>;
+        if $r1 != null goto label0;
+
+        $r2 = staticinvoke <org.apache.commons.logging.LogFactory: org.apache.commons.logging.Log getLog(java.lang.Class)>(class "org/apache/commons/validator/FormSet");
+        r0.<org.apache.commons.validator.FormSet: org.apache.commons.logging.Log log> = $r2;
+
+     label0:
+        $r3 = r0.<org.apache.commons.validator.FormSet: org.apache.commons.logging.Log log>;
+        return $r3;
+    }
+}

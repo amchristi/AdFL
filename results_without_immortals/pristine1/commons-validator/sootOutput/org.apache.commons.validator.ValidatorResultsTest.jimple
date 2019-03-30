@@ -1,0 +1,191 @@
+public class org.apache.commons.validator.ValidatorResultsTest extends org.apache.commons.validator.AbstractCommonTest
+{
+    private static final java.lang.String FORM_KEY;
+    private static final java.lang.String firstNameField;
+    private static final java.lang.String middleNameField;
+    private static final java.lang.String lastNameField;
+    private java.lang.String firstName;
+    private java.lang.String middleName;
+    private java.lang.String lastName;
+
+    public void <init>(java.lang.String)
+    {
+        org.apache.commons.validator.ValidatorResultsTest r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResultsTest;
+        r1 := @parameter0: java.lang.String;
+        specialinvoke r0.<org.apache.commons.validator.AbstractCommonTest: void <init>(java.lang.String)>(r1);
+        return;
+    }
+
+    protected void setUp() throws java.io.IOException, org.xml.sax.SAXException
+    {
+        org.apache.commons.validator.ValidatorResultsTest r0;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResultsTest;
+        virtualinvoke r0.<org.apache.commons.validator.ValidatorResultsTest: void loadResources(java.lang.String)>("ValidatorResultsTest-config.xml");
+        r0.<org.apache.commons.validator.ValidatorResultsTest: java.lang.String firstName> = "foo";
+        r0.<org.apache.commons.validator.ValidatorResultsTest: java.lang.String middleName> = "123";
+        r0.<org.apache.commons.validator.ValidatorResultsTest: java.lang.String lastName> = "456";
+        return;
+    }
+
+    protected void tearDown()
+    {
+        org.apache.commons.validator.ValidatorResultsTest r0;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResultsTest;
+        return;
+    }
+
+    public void testAllValid() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.ValidatorResultsTest r0;
+        org.apache.commons.validator.NameBean r1;
+        org.apache.commons.validator.ValidatorResults r2;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResultsTest;
+        r1 = specialinvoke r0.<org.apache.commons.validator.ValidatorResultsTest: org.apache.commons.validator.NameBean createNameBean()>();
+        r2 = specialinvoke r0.<org.apache.commons.validator.ValidatorResultsTest: org.apache.commons.validator.ValidatorResults validate(java.lang.Object)>(r1);
+        specialinvoke r0.<org.apache.commons.validator.ValidatorResultsTest: void checkValidatorResult(org.apache.commons.validator.ValidatorResults,java.lang.String,java.lang.String,boolean)>(r2, "firstName", "required", 1);
+        specialinvoke r0.<org.apache.commons.validator.ValidatorResultsTest: void checkValidatorResult(org.apache.commons.validator.ValidatorResults,java.lang.String,java.lang.String,boolean)>(r2, "middleName", "required", 1);
+        specialinvoke r0.<org.apache.commons.validator.ValidatorResultsTest: void checkValidatorResult(org.apache.commons.validator.ValidatorResults,java.lang.String,java.lang.String,boolean)>(r2, "middleName", "int", 1);
+        specialinvoke r0.<org.apache.commons.validator.ValidatorResultsTest: void checkValidatorResult(org.apache.commons.validator.ValidatorResults,java.lang.String,java.lang.String,boolean)>(r2, "middleName", "positive", 1);
+        specialinvoke r0.<org.apache.commons.validator.ValidatorResultsTest: void checkValidatorResult(org.apache.commons.validator.ValidatorResults,java.lang.String,java.lang.String,boolean)>(r2, "lastName", "required", 1);
+        specialinvoke r0.<org.apache.commons.validator.ValidatorResultsTest: void checkValidatorResult(org.apache.commons.validator.ValidatorResults,java.lang.String,java.lang.String,boolean)>(r2, "lastName", "int", 1);
+        return;
+    }
+
+    public void testErrors() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.ValidatorResultsTest r0;
+        org.apache.commons.validator.NameBean r1;
+        org.apache.commons.validator.ValidatorResults r2;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResultsTest;
+        r0.<org.apache.commons.validator.ValidatorResultsTest: java.lang.String middleName> = "XXX";
+        r0.<org.apache.commons.validator.ValidatorResultsTest: java.lang.String lastName> = null;
+        r1 = specialinvoke r0.<org.apache.commons.validator.ValidatorResultsTest: org.apache.commons.validator.NameBean createNameBean()>();
+        r2 = specialinvoke r0.<org.apache.commons.validator.ValidatorResultsTest: org.apache.commons.validator.ValidatorResults validate(java.lang.Object)>(r1);
+        specialinvoke r0.<org.apache.commons.validator.ValidatorResultsTest: void checkValidatorResult(org.apache.commons.validator.ValidatorResults,java.lang.String,java.lang.String,boolean)>(r2, "firstName", "required", 1);
+        specialinvoke r0.<org.apache.commons.validator.ValidatorResultsTest: void checkValidatorResult(org.apache.commons.validator.ValidatorResults,java.lang.String,java.lang.String,boolean)>(r2, "middleName", "required", 1);
+        specialinvoke r0.<org.apache.commons.validator.ValidatorResultsTest: void checkValidatorResult(org.apache.commons.validator.ValidatorResults,java.lang.String,java.lang.String,boolean)>(r2, "middleName", "int", 0);
+        specialinvoke r0.<org.apache.commons.validator.ValidatorResultsTest: void checkNotRun(org.apache.commons.validator.ValidatorResults,java.lang.String,java.lang.String)>(r2, "middleName", "positive");
+        specialinvoke r0.<org.apache.commons.validator.ValidatorResultsTest: void checkValidatorResult(org.apache.commons.validator.ValidatorResults,java.lang.String,java.lang.String,boolean)>(r2, "lastName", "required", 0);
+        specialinvoke r0.<org.apache.commons.validator.ValidatorResultsTest: void checkNotRun(org.apache.commons.validator.ValidatorResults,java.lang.String,java.lang.String)>(r2, "lastName", "int");
+        return;
+    }
+
+    private void checkNotRun(org.apache.commons.validator.ValidatorResults, java.lang.String, java.lang.String)
+    {
+        org.apache.commons.validator.ValidatorResultsTest r0;
+        org.apache.commons.validator.ValidatorResults r1;
+        java.lang.String r2, r3, $r6, $r8, $r10, $r14;
+        org.apache.commons.validator.ValidatorResult r4;
+        java.lang.StringBuilder $r5, $r7, $r9, $r11, $r12, $r13;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResultsTest;
+        r1 := @parameter0: org.apache.commons.validator.ValidatorResults;
+        r2 := @parameter1: java.lang.String;
+        r3 := @parameter2: java.lang.String;
+        r4 = virtualinvoke r1.<org.apache.commons.validator.ValidatorResults: org.apache.commons.validator.ValidatorResult getValidatorResult(java.lang.String)>(r2);
+        $r5 = new java.lang.StringBuilder;
+        $r6 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>(r2);
+        specialinvoke $r5.<java.lang.StringBuilder: void <init>(java.lang.String)>($r6);
+        $r7 = virtualinvoke $r5.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" result");
+        $r8 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.String toString()>();
+        staticinvoke <org.apache.commons.validator.ValidatorResultsTest: void assertNotNull(java.lang.String,java.lang.Object)>($r8, r4);
+        $r9 = new java.lang.StringBuilder;
+        $r10 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>(r2);
+        specialinvoke $r9.<java.lang.StringBuilder: void <init>(java.lang.String)>($r10);
+        $r11 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("[");
+        $r12 = virtualinvoke $r11.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r3);
+        $r13 = virtualinvoke $r12.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("] run");
+        $r14 = virtualinvoke $r13.<java.lang.StringBuilder: java.lang.String toString()>();
+        $z0 = virtualinvoke r4.<org.apache.commons.validator.ValidatorResult: boolean containsAction(java.lang.String)>(r3);
+        staticinvoke <org.apache.commons.validator.ValidatorResultsTest: void assertFalse(java.lang.String,boolean)>($r14, $z0);
+        return;
+    }
+
+    private void checkValidatorResult(org.apache.commons.validator.ValidatorResults, java.lang.String, java.lang.String, boolean)
+    {
+        org.apache.commons.validator.ValidatorResultsTest r0;
+        org.apache.commons.validator.ValidatorResults r1;
+        java.lang.String r2, r3, $r6, $r8, $r10, $r14, $r16, $r20;
+        boolean z0, $z1, $z2;
+        org.apache.commons.validator.ValidatorResult r4;
+        java.lang.StringBuilder $r5, $r7, $r9, $r11, $r12, $r13, $r15, $r17, $r18, $r19;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResultsTest;
+        r1 := @parameter0: org.apache.commons.validator.ValidatorResults;
+        r2 := @parameter1: java.lang.String;
+        r3 := @parameter2: java.lang.String;
+        z0 := @parameter3: boolean;
+        r4 = virtualinvoke r1.<org.apache.commons.validator.ValidatorResults: org.apache.commons.validator.ValidatorResult getValidatorResult(java.lang.String)>(r2);
+        $r5 = new java.lang.StringBuilder;
+        $r6 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>(r2);
+        specialinvoke $r5.<java.lang.StringBuilder: void <init>(java.lang.String)>($r6);
+        $r7 = virtualinvoke $r5.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" result");
+        $r8 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.String toString()>();
+        staticinvoke <org.apache.commons.validator.ValidatorResultsTest: void assertNotNull(java.lang.String,java.lang.Object)>($r8, r4);
+        $r9 = new java.lang.StringBuilder;
+        $r10 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>(r2);
+        specialinvoke $r9.<java.lang.StringBuilder: void <init>(java.lang.String)>($r10);
+        $r11 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("[");
+        $r12 = virtualinvoke $r11.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r3);
+        $r13 = virtualinvoke $r12.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("] not run");
+        $r14 = virtualinvoke $r13.<java.lang.StringBuilder: java.lang.String toString()>();
+        $z1 = virtualinvoke r4.<org.apache.commons.validator.ValidatorResult: boolean containsAction(java.lang.String)>(r3);
+        staticinvoke <org.apache.commons.validator.ValidatorResultsTest: void assertTrue(java.lang.String,boolean)>($r14, $z1);
+        $r15 = new java.lang.StringBuilder;
+        $r16 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>(r2);
+        specialinvoke $r15.<java.lang.StringBuilder: void <init>(java.lang.String)>($r16);
+        $r17 = virtualinvoke $r15.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("[");
+        $r18 = virtualinvoke $r17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r3);
+        $r19 = virtualinvoke $r18.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("] result");
+        $r20 = virtualinvoke $r19.<java.lang.StringBuilder: java.lang.String toString()>();
+        $z2 = virtualinvoke r4.<org.apache.commons.validator.ValidatorResult: boolean isValid(java.lang.String)>(r3);
+        staticinvoke <org.apache.commons.validator.ValidatorResultsTest: void assertEquals(java.lang.String,boolean,boolean)>($r20, z0, $z2);
+        return;
+    }
+
+    private org.apache.commons.validator.NameBean createNameBean()
+    {
+        org.apache.commons.validator.ValidatorResultsTest r0;
+        org.apache.commons.validator.NameBean $r1, r2;
+        java.lang.String $r3, $r4, $r5;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResultsTest;
+        $r1 = new org.apache.commons.validator.NameBean;
+        specialinvoke $r1.<org.apache.commons.validator.NameBean: void <init>()>();
+        r2 = $r1;
+        $r3 = r0.<org.apache.commons.validator.ValidatorResultsTest: java.lang.String firstName>;
+        virtualinvoke r2.<org.apache.commons.validator.NameBean: void setFirstName(java.lang.String)>($r3);
+        $r4 = r0.<org.apache.commons.validator.ValidatorResultsTest: java.lang.String middleName>;
+        virtualinvoke r2.<org.apache.commons.validator.NameBean: void setMiddleName(java.lang.String)>($r4);
+        $r5 = r0.<org.apache.commons.validator.ValidatorResultsTest: java.lang.String lastName>;
+        virtualinvoke r2.<org.apache.commons.validator.NameBean: void setLastName(java.lang.String)>($r5);
+        return r2;
+    }
+
+    private org.apache.commons.validator.ValidatorResults validate(java.lang.Object) throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.ValidatorResultsTest r0;
+        java.lang.Object r1;
+        org.apache.commons.validator.Validator $r2, r3;
+        org.apache.commons.validator.ValidatorResults r4;
+        org.apache.commons.validator.ValidatorResources $r5;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResultsTest;
+        r1 := @parameter0: java.lang.Object;
+        $r2 = new org.apache.commons.validator.Validator;
+        $r5 = r0.<org.apache.commons.validator.ValidatorResultsTest: org.apache.commons.validator.ValidatorResources resources>;
+        specialinvoke $r2.<org.apache.commons.validator.Validator: void <init>(org.apache.commons.validator.ValidatorResources,java.lang.String)>($r5, "nameForm");
+        r3 = $r2;
+        virtualinvoke r3.<org.apache.commons.validator.Validator: void setParameter(java.lang.String,java.lang.Object)>("java.lang.Object", r1);
+        r4 = virtualinvoke r3.<org.apache.commons.validator.Validator: org.apache.commons.validator.ValidatorResults validate()>();
+        return r4;
+    }
+}

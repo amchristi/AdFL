@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1506302846922
+Build-Jdk: 1.8.0_111
+Built-By: root
+Bundle-Description: The Apache Commons Digester package lets you configu
+ re an XML to Java    object mapping module which triggers certain actio
+ ns called rules whenever    a particular pattern of nested XML elements
+  is recognized.
+Bundle-DocURL: http://commons.apache.org/proper/commons-digester/commons
+ -digester3-samples-parent/commons-digester3-samples-rss/
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache Commons Digester :: Examples :: RSS
+Bundle-SymbolicName: org.apache.commons.digester
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 3.3.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.commons.digester3.rss;version="3.3.0.SNAPSHOT
+ "
+Import-Package: org.apache.commons.digester3,org.apache.commons.logging,
+ org.xml.sax
+Include-Resource: org/apache/commons/digester3/rss/package.html=src/main
+ /resources/org/apache/commons/digester3/rss/package.html,org/apache/com
+ mons/digester3/rss/rss-example.xml=src/main/resources/org/apache/common
+ s/digester3/rss/rss-example.xml,META-INF/LICENSE.txt=LICENSE.txt
+Tool: Bnd-1.50.0

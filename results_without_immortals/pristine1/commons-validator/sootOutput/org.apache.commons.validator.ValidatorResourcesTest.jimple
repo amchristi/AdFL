@@ -1,0 +1,40 @@
+public class org.apache.commons.validator.ValidatorResourcesTest extends junit.framework.TestCase
+{
+
+    public void <init>(java.lang.String)
+    {
+        org.apache.commons.validator.ValidatorResourcesTest r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResourcesTest;
+        r1 := @parameter0: java.lang.String;
+        specialinvoke r0.<junit.framework.TestCase: void <init>(java.lang.String)>(r1);
+        return;
+    }
+
+    public void testNullInputStream() throws java.lang.Exception
+    {
+        org.apache.commons.validator.ValidatorResourcesTest r0;
+        org.apache.commons.validator.ValidatorResources $r1;
+        java.lang.IllegalArgumentException r2, $r3;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResourcesTest;
+
+     label0:
+        $r1 = new org.apache.commons.validator.ValidatorResources;
+        specialinvoke $r1.<org.apache.commons.validator.ValidatorResources: void <init>(java.io.InputStream)>(null);
+        staticinvoke <org.apache.commons.validator.ValidatorResourcesTest: void fail(java.lang.String)>("Expected IllegalArgumentException");
+
+     label1:
+        goto label3;
+
+     label2:
+        $r3 := @caughtexception;
+        r2 = $r3;
+
+     label3:
+        return;
+
+        catch java.lang.IllegalArgumentException from label0 to label1 with label2;
+    }
+}

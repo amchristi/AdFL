@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<attributes>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="ConstantValue: -3088817875906765463" aType="LongConstantValueTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="ConstantValue: 0" aType="IntegerConstantValueTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="ConstantValue: 1" aType="IntegerConstantValueTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="ConstantValue: 2" aType="IntegerConstantValueTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[strict, formatType, allowFractions]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[value, pattern, locale]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[value, min, max]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[value, min]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[value, max]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[value, pattern, locale]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[pattern, locale]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[format]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[locale]" aType="ParamNamesTag"/>
+</attribute>
+</attributes>

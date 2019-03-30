@@ -1,0 +1,4 @@
+org/apache/commons/digester3/examples/api/documentmarkup/SetTextSegmentRule.class
+org/apache/commons/digester3/examples/api/documentmarkup/TextSegmentHandler.class
+org/apache/commons/digester3/examples/api/documentmarkup/MarkupDigester.class
+org/apache/commons/digester3/examples/api/documentmarkup/Main.class

@@ -1,0 +1,226 @@
+public class org.apache.commons.validator.example.ValidateBean extends java.lang.Object
+{
+    java.lang.String lastName;
+    java.lang.String firstName;
+    java.lang.String street1;
+    java.lang.String street2;
+    java.lang.String city;
+    java.lang.String state;
+    java.lang.String postalCode;
+    java.lang.String age;
+
+    public void <init>()
+    {
+        org.apache.commons.validator.example.ValidateBean r0;
+
+        r0 := @this: org.apache.commons.validator.example.ValidateBean;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        return;
+    }
+
+    public void setLastName(java.lang.String)
+    {
+        org.apache.commons.validator.example.ValidateBean r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.example.ValidateBean;
+        r1 := @parameter0: java.lang.String;
+        r0.<org.apache.commons.validator.example.ValidateBean: java.lang.String lastName> = r1;
+        return;
+    }
+
+    public void setFirstName(java.lang.String)
+    {
+        org.apache.commons.validator.example.ValidateBean r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.example.ValidateBean;
+        r1 := @parameter0: java.lang.String;
+        r0.<org.apache.commons.validator.example.ValidateBean: java.lang.String firstName> = r1;
+        return;
+    }
+
+    public void setStreet1(java.lang.String)
+    {
+        org.apache.commons.validator.example.ValidateBean r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.example.ValidateBean;
+        r1 := @parameter0: java.lang.String;
+        r0.<org.apache.commons.validator.example.ValidateBean: java.lang.String street1> = r1;
+        return;
+    }
+
+    public void setStreet2(java.lang.String)
+    {
+        org.apache.commons.validator.example.ValidateBean r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.example.ValidateBean;
+        r1 := @parameter0: java.lang.String;
+        r0.<org.apache.commons.validator.example.ValidateBean: java.lang.String street2> = r1;
+        return;
+    }
+
+    public void setCity(java.lang.String)
+    {
+        org.apache.commons.validator.example.ValidateBean r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.example.ValidateBean;
+        r1 := @parameter0: java.lang.String;
+        r0.<org.apache.commons.validator.example.ValidateBean: java.lang.String city> = r1;
+        return;
+    }
+
+    public void setState(java.lang.String)
+    {
+        org.apache.commons.validator.example.ValidateBean r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.example.ValidateBean;
+        r1 := @parameter0: java.lang.String;
+        r0.<org.apache.commons.validator.example.ValidateBean: java.lang.String state> = r1;
+        return;
+    }
+
+    public void setPostalCode(java.lang.String)
+    {
+        org.apache.commons.validator.example.ValidateBean r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.example.ValidateBean;
+        r1 := @parameter0: java.lang.String;
+        r0.<org.apache.commons.validator.example.ValidateBean: java.lang.String postalCode> = r1;
+        return;
+    }
+
+    public void setAge(java.lang.String)
+    {
+        org.apache.commons.validator.example.ValidateBean r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.example.ValidateBean;
+        r1 := @parameter0: java.lang.String;
+        r0.<org.apache.commons.validator.example.ValidateBean: java.lang.String age> = r1;
+        return;
+    }
+
+    public java.lang.String getLastName()
+    {
+        org.apache.commons.validator.example.ValidateBean r0;
+        java.lang.String $r1;
+
+        r0 := @this: org.apache.commons.validator.example.ValidateBean;
+        $r1 = r0.<org.apache.commons.validator.example.ValidateBean: java.lang.String lastName>;
+        return $r1;
+    }
+
+    public java.lang.String getFirstName()
+    {
+        org.apache.commons.validator.example.ValidateBean r0;
+        java.lang.String $r1;
+
+        r0 := @this: org.apache.commons.validator.example.ValidateBean;
+        $r1 = r0.<org.apache.commons.validator.example.ValidateBean: java.lang.String firstName>;
+        return $r1;
+    }
+
+    public java.lang.String getStreet1()
+    {
+        org.apache.commons.validator.example.ValidateBean r0;
+        java.lang.String $r1;
+
+        r0 := @this: org.apache.commons.validator.example.ValidateBean;
+        $r1 = r0.<org.apache.commons.validator.example.ValidateBean: java.lang.String street1>;
+        return $r1;
+    }
+
+    public java.lang.String getStreet2()
+    {
+        org.apache.commons.validator.example.ValidateBean r0;
+        java.lang.String $r1;
+
+        r0 := @this: org.apache.commons.validator.example.ValidateBean;
+        $r1 = r0.<org.apache.commons.validator.example.ValidateBean: java.lang.String street2>;
+        return $r1;
+    }
+
+    public java.lang.String getCity()
+    {
+        org.apache.commons.validator.example.ValidateBean r0;
+        java.lang.String $r1;
+
+        r0 := @this: org.apache.commons.validator.example.ValidateBean;
+        $r1 = r0.<org.apache.commons.validator.example.ValidateBean: java.lang.String city>;
+        return $r1;
+    }
+
+    public java.lang.String getState()
+    {
+        org.apache.commons.validator.example.ValidateBean r0;
+        java.lang.String $r1;
+
+        r0 := @this: org.apache.commons.validator.example.ValidateBean;
+        $r1 = r0.<org.apache.commons.validator.example.ValidateBean: java.lang.String state>;
+        return $r1;
+    }
+
+    public java.lang.String getPostalCode()
+    {
+        org.apache.commons.validator.example.ValidateBean r0;
+        java.lang.String $r1;
+
+        r0 := @this: org.apache.commons.validator.example.ValidateBean;
+        $r1 = r0.<org.apache.commons.validator.example.ValidateBean: java.lang.String postalCode>;
+        return $r1;
+    }
+
+    public java.lang.String getAge()
+    {
+        org.apache.commons.validator.example.ValidateBean r0;
+        java.lang.String $r1;
+
+        r0 := @this: org.apache.commons.validator.example.ValidateBean;
+        $r1 = r0.<org.apache.commons.validator.example.ValidateBean: java.lang.String age>;
+        return $r1;
+    }
+
+    public java.lang.String toString()
+    {
+        org.apache.commons.validator.example.ValidateBean r0;
+        java.lang.StringBuilder $r1, $r3, $r4, $r6, $r7, $r9, $r10, $r12, $r13, $r14, $r16, $r17, $r19, $r20, $r22, $r23, $r25, $r26;
+        java.lang.String $r2, $r5, $r8, $r11, $r15, $r18, $r21, $r24, $r27;
+
+        r0 := @this: org.apache.commons.validator.example.ValidateBean;
+        $r1 = new java.lang.StringBuilder;
+        specialinvoke $r1.<java.lang.StringBuilder: void <init>(java.lang.String)>("{lastname=");
+        $r2 = r0.<org.apache.commons.validator.example.ValidateBean: java.lang.String lastName>;
+        $r3 = virtualinvoke $r1.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r2);
+        $r4 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", firstname=");
+        $r5 = r0.<org.apache.commons.validator.example.ValidateBean: java.lang.String firstName>;
+        $r6 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r5);
+        $r7 = virtualinvoke $r6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", street1=");
+        $r8 = r0.<org.apache.commons.validator.example.ValidateBean: java.lang.String street1>;
+        $r9 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r8);
+        $r10 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(",\n street2=");
+        $r11 = r0.<org.apache.commons.validator.example.ValidateBean: java.lang.String street2>;
+        $r12 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r11);
+        $r13 = virtualinvoke $r12.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", ");
+        $r14 = virtualinvoke $r13.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("city=");
+        $r15 = r0.<org.apache.commons.validator.example.ValidateBean: java.lang.String city>;
+        $r16 = virtualinvoke $r14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r15);
+        $r17 = virtualinvoke $r16.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", state=");
+        $r18 = r0.<org.apache.commons.validator.example.ValidateBean: java.lang.String state>;
+        $r19 = virtualinvoke $r17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r18);
+        $r20 = virtualinvoke $r19.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(",\n postalcode=");
+        $r21 = r0.<org.apache.commons.validator.example.ValidateBean: java.lang.String postalCode>;
+        $r22 = virtualinvoke $r20.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r21);
+        $r23 = virtualinvoke $r22.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", age=");
+        $r24 = r0.<org.apache.commons.validator.example.ValidateBean: java.lang.String age>;
+        $r25 = virtualinvoke $r23.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r24);
+        $r26 = virtualinvoke $r25.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("}");
+        $r27 = virtualinvoke $r26.<java.lang.StringBuilder: java.lang.String toString()>();
+        return $r27;
+    }
+}

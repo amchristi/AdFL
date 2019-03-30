@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.validator.routines.BigDecimalValidatorTest
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec <<< FAILURE! - in org.apache.commons.validator.routines.BigDecimalValidatorTest
+testBigDecimalRangeMinMax(org.apache.commons.validator.routines.BigDecimalValidatorTest)  Time elapsed: 0.009 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: maxValue(A) < max
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.TestCase.assertTrue(TestCase.java:192)
+	at org.apache.commons.validator.routines.BigDecimalValidatorTest.testBigDecimalRangeMinMax(BigDecimalValidatorTest.java:139)
+

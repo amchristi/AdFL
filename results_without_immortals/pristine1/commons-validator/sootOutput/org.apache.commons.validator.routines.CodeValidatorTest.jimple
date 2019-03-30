@@ -1,0 +1,421 @@
+public class org.apache.commons.validator.routines.CodeValidatorTest extends junit.framework.TestCase
+{
+
+    public void <init>(java.lang.String)
+    {
+        org.apache.commons.validator.routines.CodeValidatorTest r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.routines.CodeValidatorTest;
+        r1 := @parameter0: java.lang.String;
+        specialinvoke r0.<junit.framework.TestCase: void <init>(java.lang.String)>(r1);
+        return;
+    }
+
+    protected void setUp() throws java.lang.Exception
+    {
+        org.apache.commons.validator.routines.CodeValidatorTest r0;
+
+        r0 := @this: org.apache.commons.validator.routines.CodeValidatorTest;
+        specialinvoke r0.<junit.framework.TestCase: void setUp()>();
+        return;
+    }
+
+    protected void tearDown() throws java.lang.Exception
+    {
+        org.apache.commons.validator.routines.CodeValidatorTest r0;
+
+        r0 := @this: org.apache.commons.validator.routines.CodeValidatorTest;
+        specialinvoke r0.<junit.framework.TestCase: void tearDown()>();
+        return;
+    }
+
+    public void testCheckDigit()
+    {
+        org.apache.commons.validator.routines.CodeValidatorTest r0;
+        org.apache.commons.validator.routines.CodeValidator $r1, r2, $r8, r10;
+        java.lang.String r3, r4;
+        org.apache.commons.validator.routines.checkdigit.CheckDigit $r5, $r9, $r11;
+        java.lang.Object $r6, $r7, $r12, $r13, $r14;
+        boolean $z0, $z1, $z2, $z3;
+
+        r0 := @this: org.apache.commons.validator.routines.CodeValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.CodeValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.CodeValidator: void <init>(java.lang.String,int,int,org.apache.commons.validator.routines.checkdigit.CheckDigit)>(null, -1, -1, null);
+        r2 = $r1;
+        r3 = "9781930110992";
+        r4 = "9781930110991";
+        $r5 = virtualinvoke r2.<org.apache.commons.validator.routines.CodeValidator: org.apache.commons.validator.routines.checkdigit.CheckDigit getCheckDigit()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertNull(java.lang.String,java.lang.Object)>("No CheckDigit", $r5);
+        $r6 = virtualinvoke r2.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r3);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("No CheckDigit invalid", r3, $r6);
+        $r7 = virtualinvoke r2.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r4);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("No CheckDigit valid", r4, $r7);
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>(r3);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,boolean,boolean)>("No CheckDigit (is) invalid", 1, $z0);
+        $z1 = virtualinvoke r2.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>(r4);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,boolean,boolean)>("No CheckDigit (is) valid", 1, $z1);
+        $r8 = new org.apache.commons.validator.routines.CodeValidator;
+        $r9 = <org.apache.commons.validator.routines.checkdigit.EAN13CheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit EAN13_CHECK_DIGIT>;
+        specialinvoke $r8.<org.apache.commons.validator.routines.CodeValidator: void <init>(java.lang.String,int,org.apache.commons.validator.routines.checkdigit.CheckDigit)>(null, -1, $r9);
+        r10 = $r8;
+        $r11 = virtualinvoke r10.<org.apache.commons.validator.routines.CodeValidator: org.apache.commons.validator.routines.checkdigit.CheckDigit getCheckDigit()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertNotNull(java.lang.String,java.lang.Object)>("EAN CheckDigit", $r11);
+        $r12 = virtualinvoke r10.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r3);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("EAN CheckDigit invalid", null, $r12);
+        $r13 = virtualinvoke r10.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r4);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("EAN CheckDigit valid", r4, $r13);
+        $z2 = virtualinvoke r10.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>(r3);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,boolean,boolean)>("EAN CheckDigit (is) invalid", 0, $z2);
+        $z3 = virtualinvoke r10.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>(r4);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,boolean,boolean)>("EAN CheckDigit (is) valid", 1, $z3);
+        $r14 = virtualinvoke r10.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>("978193011099X");
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("EAN CheckDigit ex", null, $r14);
+        return;
+    }
+
+    public void testLength()
+    {
+        org.apache.commons.validator.routines.CodeValidatorTest r0;
+        org.apache.commons.validator.routines.CodeValidator $r1, r2, $r15, r16, $r23, r24, $r31, r32, $r39, r40;
+        java.lang.String r3, r4, r5, r6, r7, r8;
+        int $i0, $i1, $i2, $i3, $i4, $i5, $i6, $i7, $i8, $i9;
+        java.lang.Object $r9, $r10, $r11, $r12, $r13, $r14, $r17, $r18, $r19, $r20, $r21, $r22, $r25, $r26, $r27, $r28, $r29, $r30, $r33, $r34, $r35, $r36, $r37, $r38, $r41, $r42, $r43;
+
+        r0 := @this: org.apache.commons.validator.routines.CodeValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.CodeValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.CodeValidator: void <init>(java.lang.String,int,int,org.apache.commons.validator.routines.checkdigit.CheckDigit)>(null, -1, -1, null);
+        r2 = $r1;
+        r3 = "1234567890";
+        r4 = "12345678901";
+        r5 = "123456789012";
+        r6 = "12345678901234567890";
+        r7 = "123456789012345678901";
+        r8 = "1234567890123456789012";
+        $i0 = virtualinvoke r2.<org.apache.commons.validator.routines.CodeValidator: int getMinLength()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,int,int)>("No min", -1, $i0);
+        $i1 = virtualinvoke r2.<org.apache.commons.validator.routines.CodeValidator: int getMaxLength()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,int,int)>("No max", -1, $i1);
+        $r9 = virtualinvoke r2.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r3);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("No Length 10", r3, $r9);
+        $r10 = virtualinvoke r2.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r4);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("No Length 11", r4, $r10);
+        $r11 = virtualinvoke r2.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r5);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("No Length 12", r5, $r11);
+        $r12 = virtualinvoke r2.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r6);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("No Length 20", r6, $r12);
+        $r13 = virtualinvoke r2.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r7);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("No Length 21", r7, $r13);
+        $r14 = virtualinvoke r2.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r8);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("No Length 22", r8, $r14);
+        $r15 = new org.apache.commons.validator.routines.CodeValidator;
+        specialinvoke $r15.<org.apache.commons.validator.routines.CodeValidator: void <init>(java.lang.String,int,int,org.apache.commons.validator.routines.checkdigit.CheckDigit)>(null, 11, -1, null);
+        r16 = $r15;
+        $i2 = virtualinvoke r16.<org.apache.commons.validator.routines.CodeValidator: int getMinLength()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,int,int)>("Min 11 - min", 11, $i2);
+        $i3 = virtualinvoke r16.<org.apache.commons.validator.routines.CodeValidator: int getMaxLength()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,int,int)>("Min 11 - max", -1, $i3);
+        $r17 = virtualinvoke r16.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r3);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Min 11 - 10", null, $r17);
+        $r18 = virtualinvoke r16.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r4);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Min 11 - 11", r4, $r18);
+        $r19 = virtualinvoke r16.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r5);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Min 11 - 12", r5, $r19);
+        $r20 = virtualinvoke r16.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r6);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Min 11 - 20", r6, $r20);
+        $r21 = virtualinvoke r16.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r7);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Min 11 - 21", r7, $r21);
+        $r22 = virtualinvoke r16.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r8);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Min 11 - 22", r8, $r22);
+        $r23 = new org.apache.commons.validator.routines.CodeValidator;
+        specialinvoke $r23.<org.apache.commons.validator.routines.CodeValidator: void <init>(java.lang.String,int,int,org.apache.commons.validator.routines.checkdigit.CheckDigit)>(null, -1, 21, null);
+        r24 = $r23;
+        $i4 = virtualinvoke r24.<org.apache.commons.validator.routines.CodeValidator: int getMinLength()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,int,int)>("Max 21 - min", -1, $i4);
+        $i5 = virtualinvoke r24.<org.apache.commons.validator.routines.CodeValidator: int getMaxLength()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,int,int)>("Max 21 - max", 21, $i5);
+        $r25 = virtualinvoke r24.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r3);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Max 21 - 10", r3, $r25);
+        $r26 = virtualinvoke r24.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r4);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Max 21 - 11", r4, $r26);
+        $r27 = virtualinvoke r24.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r5);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Max 21 - 12", r5, $r27);
+        $r28 = virtualinvoke r24.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r6);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Max 21 - 20", r6, $r28);
+        $r29 = virtualinvoke r24.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r7);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Max 21 - 21", r7, $r29);
+        $r30 = virtualinvoke r24.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r8);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Max 21 - 22", null, $r30);
+        $r31 = new org.apache.commons.validator.routines.CodeValidator;
+        specialinvoke $r31.<org.apache.commons.validator.routines.CodeValidator: void <init>(java.lang.String,int,int,org.apache.commons.validator.routines.checkdigit.CheckDigit)>(null, 11, 21, null);
+        r32 = $r31;
+        $i6 = virtualinvoke r32.<org.apache.commons.validator.routines.CodeValidator: int getMinLength()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,int,int)>("Min 11 / Max 21 - min", 11, $i6);
+        $i7 = virtualinvoke r32.<org.apache.commons.validator.routines.CodeValidator: int getMaxLength()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,int,int)>("Min 11 / Max 21 - max", 21, $i7);
+        $r33 = virtualinvoke r32.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r3);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Min 11 / Max 21 - 10", null, $r33);
+        $r34 = virtualinvoke r32.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r4);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Min 11 / Max 21 - 11", r4, $r34);
+        $r35 = virtualinvoke r32.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r5);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Min 11 / Max 21 - 12", r5, $r35);
+        $r36 = virtualinvoke r32.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r6);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Min 11 / Max 21 - 20", r6, $r36);
+        $r37 = virtualinvoke r32.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r7);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Min 11 / Max 21 - 21", r7, $r37);
+        $r38 = virtualinvoke r32.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r8);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Min 11 / Max 21 - 22", null, $r38);
+        $r39 = new org.apache.commons.validator.routines.CodeValidator;
+        specialinvoke $r39.<org.apache.commons.validator.routines.CodeValidator: void <init>(java.lang.String,int,int,org.apache.commons.validator.routines.checkdigit.CheckDigit)>(null, 11, 11, null);
+        r40 = $r39;
+        $i8 = virtualinvoke r40.<org.apache.commons.validator.routines.CodeValidator: int getMinLength()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,int,int)>("Exact 11 - min", 11, $i8);
+        $i9 = virtualinvoke r40.<org.apache.commons.validator.routines.CodeValidator: int getMaxLength()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,int,int)>("Exact 11 - max", 11, $i9);
+        $r41 = virtualinvoke r40.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r3);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Exact 11 - 10", null, $r41);
+        $r42 = virtualinvoke r40.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r4);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Exact 11 - 11", r4, $r42);
+        $r43 = virtualinvoke r40.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r5);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Exact 11 - 12", null, $r43);
+        return;
+    }
+
+    public void testRegex()
+    {
+        org.apache.commons.validator.routines.CodeValidatorTest r0;
+        org.apache.commons.validator.routines.CodeValidator $r1, r2, $r15, r16, $r24, r26, $r32, r34;
+        java.lang.String r3, r4, r5, r6, r7, r8, r23, r31, $r38, $r40;
+        org.apache.commons.validator.routines.RegexValidator $r9, $r17, $r25, $r33, $r39;
+        java.lang.Object $r10, $r11, $r12, $r13, $r14, $r18, $r19, $r20, $r21, $r22, $r27, $r28, $r29, $r30, $r41, $r42, $r43;
+        java.lang.StringBuilder $r35, $r36, $r37;
+
+        r0 := @this: org.apache.commons.validator.routines.CodeValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.CodeValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.CodeValidator: void <init>(java.lang.String,int,int,org.apache.commons.validator.routines.checkdigit.CheckDigit)>(null, -1, -1, null);
+        r2 = $r1;
+        r3 = "12";
+        r4 = "123";
+        r5 = "1234";
+        r6 = "12345";
+        r7 = "12a4";
+        $r9 = virtualinvoke r2.<org.apache.commons.validator.routines.CodeValidator: org.apache.commons.validator.routines.RegexValidator getRegexValidator()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertNull(java.lang.String,java.lang.Object)>("No Regex", $r9);
+        $r10 = virtualinvoke r2.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r3);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("No Regex 2", r3, $r10);
+        $r11 = virtualinvoke r2.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r4);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("No Regex 3", r4, $r11);
+        $r12 = virtualinvoke r2.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r5);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("No Regex 4", r5, $r12);
+        $r13 = virtualinvoke r2.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r6);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("No Regex 5", r6, $r13);
+        $r14 = virtualinvoke r2.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r7);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("No Regex invalid", r7, $r14);
+        r8 = "^([0-9]{3,4})$";
+        $r15 = new org.apache.commons.validator.routines.CodeValidator;
+        specialinvoke $r15.<org.apache.commons.validator.routines.CodeValidator: void <init>(java.lang.String,int,int,org.apache.commons.validator.routines.checkdigit.CheckDigit)>(r8, -1, -1, null);
+        r16 = $r15;
+        $r17 = virtualinvoke r16.<org.apache.commons.validator.routines.CodeValidator: org.apache.commons.validator.routines.RegexValidator getRegexValidator()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertNotNull(java.lang.String,java.lang.Object)>("No Regex", $r17);
+        $r18 = virtualinvoke r16.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r3);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Regex 2", null, $r18);
+        $r19 = virtualinvoke r16.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r4);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Regex 3", r4, $r19);
+        $r20 = virtualinvoke r16.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r5);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Regex 4", r5, $r20);
+        $r21 = virtualinvoke r16.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r6);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Regex 5", null, $r21);
+        $r22 = virtualinvoke r16.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r7);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Regex invalid", null, $r22);
+        r23 = "^([0-9]{3})(?:[-\\s])([0-9]{3})$";
+        $r24 = new org.apache.commons.validator.routines.CodeValidator;
+        $r25 = new org.apache.commons.validator.routines.RegexValidator;
+        specialinvoke $r25.<org.apache.commons.validator.routines.RegexValidator: void <init>(java.lang.String)>(r23);
+        specialinvoke $r24.<org.apache.commons.validator.routines.CodeValidator: void <init>(org.apache.commons.validator.routines.RegexValidator,int,org.apache.commons.validator.routines.checkdigit.CheckDigit)>($r25, 6, null);
+        r26 = $r24;
+        $r27 = virtualinvoke r26.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>("123-456");
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Reformat 123-456", "123456", $r27);
+        $r28 = virtualinvoke r26.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>("123 456");
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Reformat 123 456", "123456", $r28);
+        $r29 = virtualinvoke r26.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>("123456");
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Reformat 123456", null, $r29);
+        $r30 = virtualinvoke r26.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>("123.456");
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Reformat 123.456", null, $r30);
+        r31 = "^(?:([0-9]{3})(?:[-\\s])([0-9]{3}))|([0-9]{6})$";
+        $r32 = new org.apache.commons.validator.routines.CodeValidator;
+        $r33 = new org.apache.commons.validator.routines.RegexValidator;
+        specialinvoke $r33.<org.apache.commons.validator.routines.RegexValidator: void <init>(java.lang.String)>(r31);
+        specialinvoke $r32.<org.apache.commons.validator.routines.CodeValidator: void <init>(org.apache.commons.validator.routines.RegexValidator,int,org.apache.commons.validator.routines.checkdigit.CheckDigit)>($r33, 6, null);
+        r34 = $r32;
+        $r35 = new java.lang.StringBuilder;
+        specialinvoke $r35.<java.lang.StringBuilder: void <init>(java.lang.String)>("RegexValidator{");
+        $r36 = virtualinvoke $r35.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r31);
+        $r37 = virtualinvoke $r36.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("}");
+        $r38 = virtualinvoke $r37.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r39 = virtualinvoke r34.<org.apache.commons.validator.routines.CodeValidator: org.apache.commons.validator.routines.RegexValidator getRegexValidator()>();
+        $r40 = virtualinvoke $r39.<org.apache.commons.validator.routines.RegexValidator: java.lang.String toString()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("Reformat 2 Regex", $r38, $r40);
+        $r41 = virtualinvoke r34.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>("123-456");
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Reformat 2 123-456", "123456", $r41);
+        $r42 = virtualinvoke r34.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>("123 456");
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Reformat 2 123 456", "123456", $r42);
+        $r43 = virtualinvoke r34.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>("123456");
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Reformat 2 123456", "123456", $r43);
+        return;
+    }
+
+    public void testNoInput()
+    {
+        org.apache.commons.validator.routines.CodeValidatorTest r0;
+        org.apache.commons.validator.routines.CodeValidator $r1, r2;
+        java.lang.Object $r3, $r4, $r5, $r6;
+
+        r0 := @this: org.apache.commons.validator.routines.CodeValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.CodeValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.CodeValidator: void <init>(java.lang.String,int,int,org.apache.commons.validator.routines.checkdigit.CheckDigit)>(null, -1, -1, null);
+        r2 = $r1;
+        $r3 = virtualinvoke r2.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(null);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Null", null, $r3);
+        $r4 = virtualinvoke r2.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>("");
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Zero Length", null, $r4);
+        $r5 = virtualinvoke r2.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>("   ");
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Spaces", null, $r5);
+        $r6 = virtualinvoke r2.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(" A  ");
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Trimmed", "A", $r6);
+        return;
+    }
+
+    public void testValidator294_1()
+    {
+        org.apache.commons.validator.routines.CodeValidatorTest r0;
+        org.apache.commons.validator.routines.CodeValidator $r1, r2, $r4, r5;
+        java.lang.Object $r3, $r6;
+
+        r0 := @this: org.apache.commons.validator.routines.CodeValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.CodeValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.CodeValidator: void <init>(java.lang.String,int,int,org.apache.commons.validator.routines.checkdigit.CheckDigit)>(null, 0, -1, null);
+        r2 = $r1;
+        $r3 = virtualinvoke r2.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(null);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Null", null, $r3);
+        $r4 = new org.apache.commons.validator.routines.CodeValidator;
+        specialinvoke $r4.<org.apache.commons.validator.routines.CodeValidator: void <init>(java.lang.String,int,int,org.apache.commons.validator.routines.checkdigit.CheckDigit)>(null, -1, 0, null);
+        r5 = $r4;
+        $r6 = virtualinvoke r5.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(null);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Null", null, $r6);
+        return;
+    }
+
+    public void testValidator294_2()
+    {
+        org.apache.commons.validator.routines.CodeValidatorTest r0;
+        org.apache.commons.validator.routines.CodeValidator $r1, r2;
+        java.lang.Object $r3;
+
+        r0 := @this: org.apache.commons.validator.routines.CodeValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.CodeValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.CodeValidator: void <init>(java.lang.String,int,int,org.apache.commons.validator.routines.checkdigit.CheckDigit)>(null, -1, 0, null);
+        r2 = $r1;
+        $r3 = virtualinvoke r2.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(null);
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Null", null, $r3);
+        return;
+    }
+
+    public void testConstructors()
+    {
+        org.apache.commons.validator.routines.CodeValidatorTest r0;
+        null_type n0;
+        org.apache.commons.validator.routines.RegexValidator r1, $r5, $r8, $r13, $r18, $r24, $r31, $r38;
+        org.apache.commons.validator.routines.checkdigit.CheckDigit $r2, $r3, $r4, $r9, $r10, $r14, $r15, $r19, $r20, $r22, $r26, $r27, $r29, $r33, $r34, $r36, $r40, $r41;
+        org.apache.commons.validator.routines.CodeValidator $r6, r7, $r11, r12, $r16, r17, $r21, r23, $r28, r30, $r35, r37;
+        int $i0, $i1, $i2, $i3, $i4, $i5, $i6, $i7, $i8, $i9, $i10, $i11;
+        java.lang.String $r25, $r32, $r39;
+
+        r0 := @this: org.apache.commons.validator.routines.CodeValidatorTest;
+        n0 = null;
+        $r5 = new org.apache.commons.validator.routines.RegexValidator;
+        specialinvoke $r5.<org.apache.commons.validator.routines.RegexValidator: void <init>(java.lang.String)>("^[0-9]*$");
+        r1 = $r5;
+        $r6 = new org.apache.commons.validator.routines.CodeValidator;
+        $r2 = <org.apache.commons.validator.routines.checkdigit.EAN13CheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit EAN13_CHECK_DIGIT>;
+        specialinvoke $r6.<org.apache.commons.validator.routines.CodeValidator: void <init>(org.apache.commons.validator.routines.RegexValidator,org.apache.commons.validator.routines.checkdigit.CheckDigit)>(r1, $r2);
+        r7 = $r6;
+        $r8 = virtualinvoke r7.<org.apache.commons.validator.routines.CodeValidator: org.apache.commons.validator.routines.RegexValidator getRegexValidator()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Constructor 1 - regex", r1, $r8);
+        $i0 = virtualinvoke r7.<org.apache.commons.validator.routines.CodeValidator: int getMinLength()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,int,int)>("Constructor 1 - min length", -1, $i0);
+        $i1 = virtualinvoke r7.<org.apache.commons.validator.routines.CodeValidator: int getMaxLength()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,int,int)>("Constructor 1 - max length", -1, $i1);
+        $r9 = <org.apache.commons.validator.routines.checkdigit.EAN13CheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit EAN13_CHECK_DIGIT>;
+        $r10 = virtualinvoke r7.<org.apache.commons.validator.routines.CodeValidator: org.apache.commons.validator.routines.checkdigit.CheckDigit getCheckDigit()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Constructor 1 - check digit", $r9, $r10);
+        $r11 = new org.apache.commons.validator.routines.CodeValidator;
+        $r3 = <org.apache.commons.validator.routines.checkdigit.EAN13CheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit EAN13_CHECK_DIGIT>;
+        specialinvoke $r11.<org.apache.commons.validator.routines.CodeValidator: void <init>(org.apache.commons.validator.routines.RegexValidator,int,org.apache.commons.validator.routines.checkdigit.CheckDigit)>(r1, 13, $r3);
+        r12 = $r11;
+        $r13 = virtualinvoke r12.<org.apache.commons.validator.routines.CodeValidator: org.apache.commons.validator.routines.RegexValidator getRegexValidator()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Constructor 2 - regex", r1, $r13);
+        $i2 = virtualinvoke r12.<org.apache.commons.validator.routines.CodeValidator: int getMinLength()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,int,int)>("Constructor 2 - min length", 13, $i2);
+        $i3 = virtualinvoke r12.<org.apache.commons.validator.routines.CodeValidator: int getMaxLength()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,int,int)>("Constructor 2 - max length", 13, $i3);
+        $r14 = <org.apache.commons.validator.routines.checkdigit.EAN13CheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit EAN13_CHECK_DIGIT>;
+        $r15 = virtualinvoke r12.<org.apache.commons.validator.routines.CodeValidator: org.apache.commons.validator.routines.checkdigit.CheckDigit getCheckDigit()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Constructor 2 - check digit", $r14, $r15);
+        $r16 = new org.apache.commons.validator.routines.CodeValidator;
+        $r4 = <org.apache.commons.validator.routines.checkdigit.EAN13CheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit EAN13_CHECK_DIGIT>;
+        specialinvoke $r16.<org.apache.commons.validator.routines.CodeValidator: void <init>(org.apache.commons.validator.routines.RegexValidator,int,int,org.apache.commons.validator.routines.checkdigit.CheckDigit)>(r1, 10, 20, $r4);
+        r17 = $r16;
+        $r18 = virtualinvoke r17.<org.apache.commons.validator.routines.CodeValidator: org.apache.commons.validator.routines.RegexValidator getRegexValidator()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Constructor 3 - regex", r1, $r18);
+        $i4 = virtualinvoke r17.<org.apache.commons.validator.routines.CodeValidator: int getMinLength()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,int,int)>("Constructor 3 - min length", 10, $i4);
+        $i5 = virtualinvoke r17.<org.apache.commons.validator.routines.CodeValidator: int getMaxLength()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,int,int)>("Constructor 3 - max length", 20, $i5);
+        $r19 = <org.apache.commons.validator.routines.checkdigit.EAN13CheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit EAN13_CHECK_DIGIT>;
+        $r20 = virtualinvoke r17.<org.apache.commons.validator.routines.CodeValidator: org.apache.commons.validator.routines.checkdigit.CheckDigit getCheckDigit()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Constructor 3 - check digit", $r19, $r20);
+        $r21 = new org.apache.commons.validator.routines.CodeValidator;
+        $r22 = <org.apache.commons.validator.routines.checkdigit.EAN13CheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit EAN13_CHECK_DIGIT>;
+        specialinvoke $r21.<org.apache.commons.validator.routines.CodeValidator: void <init>(java.lang.String,org.apache.commons.validator.routines.checkdigit.CheckDigit)>("^[0-9]*$", $r22);
+        r23 = $r21;
+        $r24 = virtualinvoke r23.<org.apache.commons.validator.routines.CodeValidator: org.apache.commons.validator.routines.RegexValidator getRegexValidator()>();
+        $r25 = virtualinvoke $r24.<org.apache.commons.validator.routines.RegexValidator: java.lang.String toString()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("Constructor 4 - regex", "RegexValidator{^[0-9]*$}", $r25);
+        $i6 = virtualinvoke r23.<org.apache.commons.validator.routines.CodeValidator: int getMinLength()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,int,int)>("Constructor 4 - min length", -1, $i6);
+        $i7 = virtualinvoke r23.<org.apache.commons.validator.routines.CodeValidator: int getMaxLength()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,int,int)>("Constructor 4 - max length", -1, $i7);
+        $r26 = <org.apache.commons.validator.routines.checkdigit.EAN13CheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit EAN13_CHECK_DIGIT>;
+        $r27 = virtualinvoke r23.<org.apache.commons.validator.routines.CodeValidator: org.apache.commons.validator.routines.checkdigit.CheckDigit getCheckDigit()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Constructor 4 - check digit", $r26, $r27);
+        $r28 = new org.apache.commons.validator.routines.CodeValidator;
+        $r29 = <org.apache.commons.validator.routines.checkdigit.EAN13CheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit EAN13_CHECK_DIGIT>;
+        specialinvoke $r28.<org.apache.commons.validator.routines.CodeValidator: void <init>(java.lang.String,int,org.apache.commons.validator.routines.checkdigit.CheckDigit)>("^[0-9]*$", 13, $r29);
+        r30 = $r28;
+        $r31 = virtualinvoke r30.<org.apache.commons.validator.routines.CodeValidator: org.apache.commons.validator.routines.RegexValidator getRegexValidator()>();
+        $r32 = virtualinvoke $r31.<org.apache.commons.validator.routines.RegexValidator: java.lang.String toString()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("Constructor 5 - regex", "RegexValidator{^[0-9]*$}", $r32);
+        $i8 = virtualinvoke r30.<org.apache.commons.validator.routines.CodeValidator: int getMinLength()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,int,int)>("Constructor 5 - min length", 13, $i8);
+        $i9 = virtualinvoke r30.<org.apache.commons.validator.routines.CodeValidator: int getMaxLength()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,int,int)>("Constructor 5 - max length", 13, $i9);
+        $r33 = <org.apache.commons.validator.routines.checkdigit.EAN13CheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit EAN13_CHECK_DIGIT>;
+        $r34 = virtualinvoke r30.<org.apache.commons.validator.routines.CodeValidator: org.apache.commons.validator.routines.checkdigit.CheckDigit getCheckDigit()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Constructor 5 - check digit", $r33, $r34);
+        $r35 = new org.apache.commons.validator.routines.CodeValidator;
+        $r36 = <org.apache.commons.validator.routines.checkdigit.EAN13CheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit EAN13_CHECK_DIGIT>;
+        specialinvoke $r35.<org.apache.commons.validator.routines.CodeValidator: void <init>(java.lang.String,int,int,org.apache.commons.validator.routines.checkdigit.CheckDigit)>("^[0-9]*$", 10, 20, $r36);
+        r37 = $r35;
+        $r38 = virtualinvoke r37.<org.apache.commons.validator.routines.CodeValidator: org.apache.commons.validator.routines.RegexValidator getRegexValidator()>();
+        $r39 = virtualinvoke $r38.<org.apache.commons.validator.routines.RegexValidator: java.lang.String toString()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("Constructor 6 - regex", "RegexValidator{^[0-9]*$}", $r39);
+        $i10 = virtualinvoke r37.<org.apache.commons.validator.routines.CodeValidator: int getMinLength()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,int,int)>("Constructor 6 - min length", 10, $i10);
+        $i11 = virtualinvoke r37.<org.apache.commons.validator.routines.CodeValidator: int getMaxLength()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,int,int)>("Constructor 6 - max length", 20, $i11);
+        $r40 = <org.apache.commons.validator.routines.checkdigit.EAN13CheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit EAN13_CHECK_DIGIT>;
+        $r41 = virtualinvoke r37.<org.apache.commons.validator.routines.CodeValidator: org.apache.commons.validator.routines.checkdigit.CheckDigit getCheckDigit()>();
+        staticinvoke <org.apache.commons.validator.routines.CodeValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Constructor 6 - check digit", $r40, $r41);
+        return;
+    }
+}

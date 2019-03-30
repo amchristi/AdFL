@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_quicksortapp" default="compile.module.quicksortapp">
+  <dirname property="module.quicksortapp.basedir" file="${ant.file.module_quicksortapp}"/>
+  
+  <property name="module.jdk.home.quicksortapp" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.quicksortapp" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.quicksortapp" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.quicksortapp" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="quicksortapp.output.dir" value="${module.quicksortapp.basedir}/out/production/QuicksortApp"/>
+  <property name="quicksortapp.testoutput.dir" value="${module.quicksortapp.basedir}/out/test/QuicksortApp"/>
+  
+  <path id="quicksortapp.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="quicksortapp.module.production.classpath">
+    <path refid="${module.jdk.classpath.quicksortapp}"/>
+    <path refid="library.log4j-1.2.17.classpath"/>
+    <path refid="library.junit:junit:4.12.classpath"/>
+  </path>
+  
+  <path id="quicksortapp.runtime.production.module.classpath">
+    <pathelement location="${quicksortapp.output.dir}"/>
+    <path refid="library.log4j-1.2.17.classpath"/>
+    <path refid="library.junit:junit:4.12.classpath"/>
+  </path>
+  
+  <path id="quicksortapp.module.classpath">
+    <path refid="${module.jdk.classpath.quicksortapp}"/>
+    <pathelement location="${quicksortapp.output.dir}"/>
+    <path refid="library.log4j-1.2.17.classpath"/>
+    <path refid="library.junit:junit:4.12.classpath"/>
+  </path>
+  
+  <path id="quicksortapp.runtime.module.classpath">
+    <pathelement location="${quicksortapp.testoutput.dir}"/>
+    <pathelement location="${quicksortapp.output.dir}"/>
+    <path refid="library.log4j-1.2.17.classpath"/>
+    <path refid="library.junit:junit:4.12.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.quicksortapp">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.quicksortapp">
+    <patternset refid="excluded.from.module.quicksortapp"/>
+  </patternset>
+  
+  <path id="quicksortapp.module.sourcepath">
+    <dirset dir="${module.quicksortapp.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.quicksortapp" depends="compile.module.quicksortapp.production,compile.module.quicksortapp.tests" description="Compile module QuicksortApp"/>
+  
+  <target name="compile.module.quicksortapp.production" depends="register.custom.compilers" description="Compile module QuicksortApp; production classes">
+    <mkdir dir="${quicksortapp.output.dir}"/>
+    <javac2 destdir="${quicksortapp.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.quicksortapp}/javac">
+      <compilerarg line="${compiler.args.quicksortapp}"/>
+      <bootclasspath refid="quicksortapp.module.bootclasspath"/>
+      <classpath refid="quicksortapp.module.production.classpath"/>
+      <src refid="quicksortapp.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.quicksortapp"/>
+    </javac2>
+    
+    <copy todir="${quicksortapp.output.dir}">
+      <fileset dir="${module.quicksortapp.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.quicksortapp.tests" depends="register.custom.compilers,compile.module.quicksortapp.production" description="compile module QuicksortApp; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.quicksortapp" description="cleanup module">
+    <delete dir="${quicksortapp.output.dir}"/>
+    <delete dir="${quicksortapp.testoutput.dir}"/>
+  </target>
+</project>

@@ -1,0 +1,273 @@
+public class org.apache.commons.validator.routines.ISBNValidator extends java.lang.Object implements java.io.Serializable
+{
+    private static final long serialVersionUID;
+    private static final java.lang.String SEP;
+    private static final java.lang.String GROUP;
+    private static final java.lang.String PUBLISHER;
+    private static final java.lang.String TITLE;
+    static final java.lang.String ISBN10_REGEX;
+    static final java.lang.String ISBN13_REGEX;
+    private static final org.apache.commons.validator.routines.ISBNValidator ISBN_VALIDATOR;
+    private static final org.apache.commons.validator.routines.ISBNValidator ISBN_VALIDATOR_NO_CONVERT;
+    private final org.apache.commons.validator.routines.CodeValidator isbn10Validator;
+    private final org.apache.commons.validator.routines.CodeValidator isbn13Validator;
+    private final boolean convert;
+
+    static void <clinit>()
+    {
+        org.apache.commons.validator.routines.ISBNValidator $r0, $r1;
+
+        $r0 = new org.apache.commons.validator.routines.ISBNValidator;
+        specialinvoke $r0.<org.apache.commons.validator.routines.ISBNValidator: void <init>()>();
+        <org.apache.commons.validator.routines.ISBNValidator: org.apache.commons.validator.routines.ISBNValidator ISBN_VALIDATOR> = $r0;
+        $r1 = new org.apache.commons.validator.routines.ISBNValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.ISBNValidator: void <init>(boolean)>(0);
+        <org.apache.commons.validator.routines.ISBNValidator: org.apache.commons.validator.routines.ISBNValidator ISBN_VALIDATOR_NO_CONVERT> = $r1;
+        return;
+    }
+
+    public static org.apache.commons.validator.routines.ISBNValidator getInstance()
+    {
+        org.apache.commons.validator.routines.ISBNValidator $r0;
+
+        $r0 = <org.apache.commons.validator.routines.ISBNValidator: org.apache.commons.validator.routines.ISBNValidator ISBN_VALIDATOR>;
+        return $r0;
+    }
+
+    public static org.apache.commons.validator.routines.ISBNValidator getInstance(boolean)
+    {
+        boolean z0;
+        org.apache.commons.validator.routines.ISBNValidator $r0;
+
+        z0 := @parameter0: boolean;
+        if z0 == 0 goto label0;
+
+        $r0 = <org.apache.commons.validator.routines.ISBNValidator: org.apache.commons.validator.routines.ISBNValidator ISBN_VALIDATOR>;
+        goto label1;
+
+     label0:
+        $r0 = <org.apache.commons.validator.routines.ISBNValidator: org.apache.commons.validator.routines.ISBNValidator ISBN_VALIDATOR_NO_CONVERT>;
+
+     label1:
+        return $r0;
+    }
+
+    public void <init>()
+    {
+        org.apache.commons.validator.routines.ISBNValidator r0;
+
+        r0 := @this: org.apache.commons.validator.routines.ISBNValidator;
+        specialinvoke r0.<org.apache.commons.validator.routines.ISBNValidator: void <init>(boolean)>(1);
+        return;
+    }
+
+    public void <init>(boolean)
+    {
+        org.apache.commons.validator.routines.ISBNValidator r0;
+        boolean z0;
+        org.apache.commons.validator.routines.CodeValidator $r1, $r3;
+        org.apache.commons.validator.routines.checkdigit.CheckDigit $r2, $r4;
+
+        r0 := @this: org.apache.commons.validator.routines.ISBNValidator;
+        z0 := @parameter0: boolean;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        $r1 = new org.apache.commons.validator.routines.CodeValidator;
+        $r2 = <org.apache.commons.validator.routines.checkdigit.ISBN10CheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit ISBN10_CHECK_DIGIT>;
+        specialinvoke $r1.<org.apache.commons.validator.routines.CodeValidator: void <init>(java.lang.String,int,org.apache.commons.validator.routines.checkdigit.CheckDigit)>("^(?:(\\d{9}[0-9X])|(?:(\\d{1,5})(?:\\-|\\s)(\\d{1,7})(?:\\-|\\s)(\\d{1,6})(?:\\-|\\s)([0-9X])))$", 10, $r2);
+        r0.<org.apache.commons.validator.routines.ISBNValidator: org.apache.commons.validator.routines.CodeValidator isbn10Validator> = $r1;
+        $r3 = new org.apache.commons.validator.routines.CodeValidator;
+        $r4 = <org.apache.commons.validator.routines.checkdigit.EAN13CheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit EAN13_CHECK_DIGIT>;
+        specialinvoke $r3.<org.apache.commons.validator.routines.CodeValidator: void <init>(java.lang.String,int,org.apache.commons.validator.routines.checkdigit.CheckDigit)>("^(978|979)(?:(\\d{10})|(?:(?:\\-|\\s)(\\d{1,5})(?:\\-|\\s)(\\d{1,7})(?:\\-|\\s)(\\d{1,6})(?:\\-|\\s)([0-9])))$", 13, $r4);
+        r0.<org.apache.commons.validator.routines.ISBNValidator: org.apache.commons.validator.routines.CodeValidator isbn13Validator> = $r3;
+        r0.<org.apache.commons.validator.routines.ISBNValidator: boolean convert> = z0;
+        return;
+    }
+
+    public boolean isValid(java.lang.String)
+    {
+        org.apache.commons.validator.routines.ISBNValidator r0;
+        java.lang.String r1;
+        boolean $z0, $z1;
+
+        r0 := @this: org.apache.commons.validator.routines.ISBNValidator;
+        r1 := @parameter0: java.lang.String;
+        $z0 = virtualinvoke r0.<org.apache.commons.validator.routines.ISBNValidator: boolean isValidISBN13(java.lang.String)>(r1);
+        if $z0 != 0 goto label0;
+
+        $z1 = virtualinvoke r0.<org.apache.commons.validator.routines.ISBNValidator: boolean isValidISBN10(java.lang.String)>(r1);
+        if $z1 != 0 goto label0;
+
+        return 0;
+
+     label0:
+        return 1;
+    }
+
+    public boolean isValidISBN10(java.lang.String)
+    {
+        org.apache.commons.validator.routines.ISBNValidator r0;
+        java.lang.String r1;
+        org.apache.commons.validator.routines.CodeValidator $r2;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.routines.ISBNValidator;
+        r1 := @parameter0: java.lang.String;
+        $r2 = r0.<org.apache.commons.validator.routines.ISBNValidator: org.apache.commons.validator.routines.CodeValidator isbn10Validator>;
+        $z0 = virtualinvoke $r2.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>(r1);
+        return $z0;
+    }
+
+    public boolean isValidISBN13(java.lang.String)
+    {
+        org.apache.commons.validator.routines.ISBNValidator r0;
+        java.lang.String r1;
+        org.apache.commons.validator.routines.CodeValidator $r2;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.routines.ISBNValidator;
+        r1 := @parameter0: java.lang.String;
+        $r2 = r0.<org.apache.commons.validator.routines.ISBNValidator: org.apache.commons.validator.routines.CodeValidator isbn13Validator>;
+        $z0 = virtualinvoke $r2.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>(r1);
+        return $z0;
+    }
+
+    public java.lang.String validate(java.lang.String)
+    {
+        org.apache.commons.validator.routines.ISBNValidator r0;
+        java.lang.String r1, r2;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.routines.ISBNValidator;
+        r1 := @parameter0: java.lang.String;
+        r2 = virtualinvoke r0.<org.apache.commons.validator.routines.ISBNValidator: java.lang.String validateISBN13(java.lang.String)>(r1);
+        if r2 != null goto label0;
+
+        r2 = virtualinvoke r0.<org.apache.commons.validator.routines.ISBNValidator: java.lang.String validateISBN10(java.lang.String)>(r1);
+        if r2 == null goto label0;
+
+        $z0 = r0.<org.apache.commons.validator.routines.ISBNValidator: boolean convert>;
+        if $z0 == 0 goto label0;
+
+        r2 = virtualinvoke r0.<org.apache.commons.validator.routines.ISBNValidator: java.lang.String convertToISBN13(java.lang.String)>(r2);
+
+     label0:
+        return r2;
+    }
+
+    public java.lang.String validateISBN10(java.lang.String)
+    {
+        org.apache.commons.validator.routines.ISBNValidator r0;
+        java.lang.String r1, $r4;
+        java.lang.Object r2;
+        org.apache.commons.validator.routines.CodeValidator $r3;
+
+        r0 := @this: org.apache.commons.validator.routines.ISBNValidator;
+        r1 := @parameter0: java.lang.String;
+        $r3 = r0.<org.apache.commons.validator.routines.ISBNValidator: org.apache.commons.validator.routines.CodeValidator isbn10Validator>;
+        r2 = virtualinvoke $r3.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r1);
+        if r2 != null goto label0;
+
+        $r4 = null;
+        goto label1;
+
+     label0:
+        $r4 = virtualinvoke r2.<java.lang.Object: java.lang.String toString()>();
+
+     label1:
+        return $r4;
+    }
+
+    public java.lang.String validateISBN13(java.lang.String)
+    {
+        org.apache.commons.validator.routines.ISBNValidator r0;
+        java.lang.String r1, $r4;
+        java.lang.Object r2;
+        org.apache.commons.validator.routines.CodeValidator $r3;
+
+        r0 := @this: org.apache.commons.validator.routines.ISBNValidator;
+        r1 := @parameter0: java.lang.String;
+        $r3 = r0.<org.apache.commons.validator.routines.ISBNValidator: org.apache.commons.validator.routines.CodeValidator isbn13Validator>;
+        r2 = virtualinvoke $r3.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>(r1);
+        if r2 != null goto label0;
+
+        $r4 = null;
+        goto label1;
+
+     label0:
+        $r4 = virtualinvoke r2.<java.lang.Object: java.lang.String toString()>();
+
+     label1:
+        return $r4;
+    }
+
+    public java.lang.String convertToISBN13(java.lang.String)
+    {
+        org.apache.commons.validator.routines.ISBNValidator r0;
+        java.lang.String r1, r2, r4, r5, $r11, $r13, $r18, r20, $r28, $r30;
+        java.lang.StringBuilder $r3, $r7, $r8, $r9, $r10, $r12, $r14, $r17, $r19, $r25, $r26, $r27, $r29;
+        int $i0, $i1;
+        java.lang.IllegalArgumentException $r6, $r24;
+        org.apache.commons.validator.routines.CodeValidator $r15;
+        org.apache.commons.validator.routines.checkdigit.CheckDigit $r16;
+        org.apache.commons.validator.routines.checkdigit.CheckDigitException $r22, r23;
+
+        r0 := @this: org.apache.commons.validator.routines.ISBNValidator;
+        r1 := @parameter0: java.lang.String;
+        if r1 != null goto label0;
+
+        return null;
+
+     label0:
+        r2 = virtualinvoke r1.<java.lang.String: java.lang.String trim()>();
+        $i0 = virtualinvoke r2.<java.lang.String: int length()>();
+        if $i0 == 10 goto label1;
+
+        $r6 = new java.lang.IllegalArgumentException;
+        $r3 = new java.lang.StringBuilder;
+        specialinvoke $r3.<java.lang.StringBuilder: void <init>(java.lang.String)>("Invalid length ");
+        $i1 = virtualinvoke r2.<java.lang.String: int length()>();
+        $r7 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>($i1);
+        $r8 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" for \'");
+        $r9 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r2);
+        $r10 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\'");
+        $r11 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.String toString()>();
+        specialinvoke $r6.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>($r11);
+        throw $r6;
+
+     label1:
+        $r12 = new java.lang.StringBuilder;
+        specialinvoke $r12.<java.lang.StringBuilder: void <init>(java.lang.String)>("978");
+        $r13 = virtualinvoke r2.<java.lang.String: java.lang.String substring(int,int)>(0, 9);
+        $r14 = virtualinvoke $r12.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r13);
+        r4 = virtualinvoke $r14.<java.lang.StringBuilder: java.lang.String toString()>();
+
+     label2:
+        $r15 = r0.<org.apache.commons.validator.routines.ISBNValidator: org.apache.commons.validator.routines.CodeValidator isbn13Validator>;
+        $r16 = virtualinvoke $r15.<org.apache.commons.validator.routines.CodeValidator: org.apache.commons.validator.routines.checkdigit.CheckDigit getCheckDigit()>();
+        r5 = interfaceinvoke $r16.<org.apache.commons.validator.routines.checkdigit.CheckDigit: java.lang.String calculate(java.lang.String)>(r4);
+        $r17 = new java.lang.StringBuilder;
+        $r18 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>(r4);
+        specialinvoke $r17.<java.lang.StringBuilder: void <init>(java.lang.String)>($r18);
+        $r19 = virtualinvoke $r17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r5);
+        r20 = virtualinvoke $r19.<java.lang.StringBuilder: java.lang.String toString()>();
+
+     label3:
+        return r20;
+
+     label4:
+        $r22 := @caughtexception;
+        r23 = $r22;
+        $r24 = new java.lang.IllegalArgumentException;
+        $r25 = new java.lang.StringBuilder;
+        specialinvoke $r25.<java.lang.StringBuilder: void <init>(java.lang.String)>("Check digit error for \'");
+        $r26 = virtualinvoke $r25.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r2);
+        $r27 = virtualinvoke $r26.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' - ");
+        $r28 = virtualinvoke r23.<org.apache.commons.validator.routines.checkdigit.CheckDigitException: java.lang.String getMessage()>();
+        $r29 = virtualinvoke $r27.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r28);
+        $r30 = virtualinvoke $r29.<java.lang.StringBuilder: java.lang.String toString()>();
+        specialinvoke $r24.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>($r30);
+        throw $r24;
+
+        catch org.apache.commons.validator.routines.checkdigit.CheckDigitException from label2 to label3 with label4;
+    }
+}

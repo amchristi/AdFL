@@ -1,0 +1,5 @@
+public interface  org.apache.commons.validator.CreditCardValidator$CreditCardType extends java.lang.Object
+{
+
+    public abstract boolean matches(java.lang.String);
+}

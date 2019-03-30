@@ -1,0 +1,5 @@
+org/apache/commons/digester3/examples/plugins/pipeline/CaseTransform.class
+org/apache/commons/digester3/examples/plugins/pipeline/Pipeline.class
+org/apache/commons/digester3/examples/plugins/pipeline/SubstituteTransform.class
+org/apache/commons/digester3/examples/plugins/pipeline/CompoundTransform.class
+org/apache/commons/digester3/examples/plugins/pipeline/Transform.class

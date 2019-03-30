@@ -1,0 +1,35 @@
+public class org.apache.commons.validator.ValueBean extends java.lang.Object
+{
+    protected java.lang.String value;
+
+    public void <init>()
+    {
+        org.apache.commons.validator.ValueBean r0;
+
+        r0 := @this: org.apache.commons.validator.ValueBean;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        r0.<org.apache.commons.validator.ValueBean: java.lang.String value> = null;
+        return;
+    }
+
+    public java.lang.String getValue()
+    {
+        org.apache.commons.validator.ValueBean r0;
+        java.lang.String $r1;
+
+        r0 := @this: org.apache.commons.validator.ValueBean;
+        $r1 = r0.<org.apache.commons.validator.ValueBean: java.lang.String value>;
+        return $r1;
+    }
+
+    public void setValue(java.lang.String)
+    {
+        org.apache.commons.validator.ValueBean r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.ValueBean;
+        r1 := @parameter0: java.lang.String;
+        r0.<org.apache.commons.validator.ValueBean: java.lang.String value> = r1;
+        return;
+    }
+}

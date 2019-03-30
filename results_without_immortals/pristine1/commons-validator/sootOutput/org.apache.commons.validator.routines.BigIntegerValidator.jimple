@@ -1,0 +1,190 @@
+public class org.apache.commons.validator.routines.BigIntegerValidator extends org.apache.commons.validator.routines.AbstractNumberValidator
+{
+    private static final long serialVersionUID;
+    private static final org.apache.commons.validator.routines.BigIntegerValidator VALIDATOR;
+
+    static void <clinit>()
+    {
+        org.apache.commons.validator.routines.BigIntegerValidator $r0;
+
+        $r0 = new org.apache.commons.validator.routines.BigIntegerValidator;
+        specialinvoke $r0.<org.apache.commons.validator.routines.BigIntegerValidator: void <init>()>();
+        <org.apache.commons.validator.routines.BigIntegerValidator: org.apache.commons.validator.routines.BigIntegerValidator VALIDATOR> = $r0;
+        return;
+    }
+
+    public static org.apache.commons.validator.routines.BigIntegerValidator getInstance()
+    {
+        org.apache.commons.validator.routines.BigIntegerValidator $r0;
+
+        $r0 = <org.apache.commons.validator.routines.BigIntegerValidator: org.apache.commons.validator.routines.BigIntegerValidator VALIDATOR>;
+        return $r0;
+    }
+
+    public void <init>()
+    {
+        org.apache.commons.validator.routines.BigIntegerValidator r0;
+
+        r0 := @this: org.apache.commons.validator.routines.BigIntegerValidator;
+        specialinvoke r0.<org.apache.commons.validator.routines.BigIntegerValidator: void <init>(boolean,int)>(1, 0);
+        return;
+    }
+
+    public void <init>(boolean, int)
+    {
+        org.apache.commons.validator.routines.BigIntegerValidator r0;
+        boolean z0;
+        int i0;
+
+        r0 := @this: org.apache.commons.validator.routines.BigIntegerValidator;
+        z0 := @parameter0: boolean;
+        i0 := @parameter1: int;
+        specialinvoke r0.<org.apache.commons.validator.routines.AbstractNumberValidator: void <init>(boolean,int,boolean)>(z0, i0, 0);
+        return;
+    }
+
+    public java.math.BigInteger validate(java.lang.String)
+    {
+        org.apache.commons.validator.routines.BigIntegerValidator r0;
+        java.lang.String r1;
+        java.lang.Object $r2;
+        java.math.BigInteger $r3;
+
+        r0 := @this: org.apache.commons.validator.routines.BigIntegerValidator;
+        r1 := @parameter0: java.lang.String;
+        $r2 = virtualinvoke r0.<org.apache.commons.validator.routines.BigIntegerValidator: java.lang.Object parse(java.lang.String,java.lang.String,java.util.Locale)>(r1, null, null);
+        $r3 = (java.math.BigInteger) $r2;
+        return $r3;
+    }
+
+    public java.math.BigInteger validate(java.lang.String, java.lang.String)
+    {
+        org.apache.commons.validator.routines.BigIntegerValidator r0;
+        java.lang.String r1, r2;
+        java.lang.Object $r3;
+        java.math.BigInteger $r4;
+
+        r0 := @this: org.apache.commons.validator.routines.BigIntegerValidator;
+        r1 := @parameter0: java.lang.String;
+        r2 := @parameter1: java.lang.String;
+        $r3 = virtualinvoke r0.<org.apache.commons.validator.routines.BigIntegerValidator: java.lang.Object parse(java.lang.String,java.lang.String,java.util.Locale)>(r1, r2, null);
+        $r4 = (java.math.BigInteger) $r3;
+        return $r4;
+    }
+
+    public java.math.BigInteger validate(java.lang.String, java.util.Locale)
+    {
+        org.apache.commons.validator.routines.BigIntegerValidator r0;
+        java.lang.String r1;
+        java.util.Locale r2;
+        java.lang.Object $r3;
+        java.math.BigInteger $r4;
+
+        r0 := @this: org.apache.commons.validator.routines.BigIntegerValidator;
+        r1 := @parameter0: java.lang.String;
+        r2 := @parameter1: java.util.Locale;
+        $r3 = virtualinvoke r0.<org.apache.commons.validator.routines.BigIntegerValidator: java.lang.Object parse(java.lang.String,java.lang.String,java.util.Locale)>(r1, null, r2);
+        $r4 = (java.math.BigInteger) $r3;
+        return $r4;
+    }
+
+    public java.math.BigInteger validate(java.lang.String, java.lang.String, java.util.Locale)
+    {
+        org.apache.commons.validator.routines.BigIntegerValidator r0;
+        java.lang.String r1, r2;
+        java.util.Locale r3;
+        java.lang.Object $r4;
+        java.math.BigInteger $r5;
+
+        r0 := @this: org.apache.commons.validator.routines.BigIntegerValidator;
+        r1 := @parameter0: java.lang.String;
+        r2 := @parameter1: java.lang.String;
+        r3 := @parameter2: java.util.Locale;
+        $r4 = virtualinvoke r0.<org.apache.commons.validator.routines.BigIntegerValidator: java.lang.Object parse(java.lang.String,java.lang.String,java.util.Locale)>(r1, r2, r3);
+        $r5 = (java.math.BigInteger) $r4;
+        return $r5;
+    }
+
+    public boolean isInRange(java.math.BigInteger, long, long)
+    {
+        org.apache.commons.validator.routines.BigIntegerValidator r0;
+        java.math.BigInteger r1;
+        long l0, l1, $l2, $l4;
+        byte $b3, $b5;
+
+        r0 := @this: org.apache.commons.validator.routines.BigIntegerValidator;
+        r1 := @parameter0: java.math.BigInteger;
+        l0 := @parameter1: long;
+        l1 := @parameter2: long;
+        $l2 = virtualinvoke r1.<java.math.BigInteger: long longValue()>();
+        $b3 = $l2 cmp l0;
+        if $b3 < 0 goto label0;
+
+        $l4 = virtualinvoke r1.<java.math.BigInteger: long longValue()>();
+        $b5 = $l4 cmp l1;
+        if $b5 > 0 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public boolean minValue(java.math.BigInteger, long)
+    {
+        org.apache.commons.validator.routines.BigIntegerValidator r0;
+        java.math.BigInteger r1;
+        long l0, $l1;
+        byte $b2;
+
+        r0 := @this: org.apache.commons.validator.routines.BigIntegerValidator;
+        r1 := @parameter0: java.math.BigInteger;
+        l0 := @parameter1: long;
+        $l1 = virtualinvoke r1.<java.math.BigInteger: long longValue()>();
+        $b2 = $l1 cmp l0;
+        if $b2 < 0 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public boolean maxValue(java.math.BigInteger, long)
+    {
+        org.apache.commons.validator.routines.BigIntegerValidator r0;
+        java.math.BigInteger r1;
+        long l0, $l1;
+        byte $b2;
+
+        r0 := @this: org.apache.commons.validator.routines.BigIntegerValidator;
+        r1 := @parameter0: java.math.BigInteger;
+        l0 := @parameter1: long;
+        $l1 = virtualinvoke r1.<java.math.BigInteger: long longValue()>();
+        $b2 = $l1 cmp l0;
+        if $b2 > 0 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    protected java.lang.Object processParsedValue(java.lang.Object, java.text.Format)
+    {
+        org.apache.commons.validator.routines.BigIntegerValidator r0;
+        java.lang.Object r1;
+        java.text.Format r2;
+        java.lang.Number $r3;
+        long $l0;
+        java.math.BigInteger $r4;
+
+        r0 := @this: org.apache.commons.validator.routines.BigIntegerValidator;
+        r1 := @parameter0: java.lang.Object;
+        r2 := @parameter1: java.text.Format;
+        $r3 = (java.lang.Number) r1;
+        $l0 = virtualinvoke $r3.<java.lang.Number: long longValue()>();
+        $r4 = staticinvoke <java.math.BigInteger: java.math.BigInteger valueOf(long)>($l0);
+        return $r4;
+    }
+}

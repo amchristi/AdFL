@@ -1,0 +1,35 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1506302837246
+Build-Jdk: 1.8.0_111
+Built-By: root
+Bundle-Description: The Apache Commons Digester package lets you configu
+ re an XML to Java    object mapping module which triggers certain actio
+ ns called rules whenever    a particular pattern of nested XML elements
+  is recognized.
+Bundle-DocURL: http://commons.apache.org/proper/commons-digester/commons
+ -digester3/
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache Commons Digester :: Core
+Bundle-SymbolicName: org.apache.commons.digester
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 3.3.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.commons.digester3.binder;version="3.3.0.SNAPS
+ HOT",org.apache.commons.digester3.annotations.utils;version="3.3.0.SNAP
+ SHOT",org.apache.commons.digester3.substitution;version="3.3.0.SNAPSHOT
+ ",org.apache.commons.digester3;version="3.3.0.SNAPSHOT",org.apache.comm
+ ons.digester3.annotations.rules;version="3.3.0.SNAPSHOT",org.apache.com
+ mons.digester3.plugins.strategies;version="3.3.0.SNAPSHOT",org.apache.c
+ ommons.digester3.annotations.handlers;version="3.3.0.SNAPSHOT",org.apac
+ he.commons.digester3.annotations.reflect;version="3.3.0.SNAPSHOT",org.a
+ pache.commons.digester3.annotations;version="3.3.0.SNAPSHOT",org.apache
+ .commons.digester3.xmlrules;version="3.3.0.SNAPSHOT",org.apache.commons
+ .digester3.plugins;version="3.3.0.SNAPSHOT"
+Import-Package: javax.xml.parsers,javax.xml.validation,org.w3c.dom,org.x
+ ml.sax,org.xml.sax.helpers
+Include-Resource: META-INF/NOTICE.txt=../NOTICE.txt,META-INF/LICENSE.txt
+ =../LICENSE.txt,org/apache/commons/digester3/xmlrules/digester-rules.dt
+ d=src/main/resources/org/apache/commons/digester3/xmlrules/digester-rul
+ es.dtd
+Tool: Bnd-1.50.0

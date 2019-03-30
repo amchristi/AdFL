@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<attributes>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="3" eline="3" spos="0" epos="0"/>
+<text info="ConstantValue: -4690687565200568258" aType="LongConstantValueTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="15" eline="15" spos="0" epos="0"/>
+<text info="[strict]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="27" eline="27" spos="0" epos="0"/>
+<text info="[]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="37" eline="37" spos="0" epos="0"/>
+<text info="[value]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="49" eline="49" spos="0" epos="0"/>
+<text info="[value, pattern]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="62" eline="62" spos="0" epos="0"/>
+<text info="[value, locale]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="78" eline="78" spos="0" epos="0"/>
+<text info="[value]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="90" eline="90" spos="0" epos="0"/>
+<text info="[value, pattern]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="103" eline="103" spos="0" epos="0"/>
+<text info="[value, locale]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="117" eline="117" spos="0" epos="0"/>
+<text info="[value, pattern, locale]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="135" eline="135" spos="0" epos="0"/>
+<text info="[value, formatter]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="149" eline="149" spos="0" epos="0"/>
+<text info="[value, formatter]" aType="ParamNamesTag"/>
+</attribute>
+</attributes>

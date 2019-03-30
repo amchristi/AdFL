@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<attributes>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="3" eline="3" spos="0" epos="0"/>
+<text info="ConstantValue: -8203745881446239554" aType="LongConstantValueTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="4" eline="4" spos="0" epos="0"/>
+<text info="ConstantValue: digester-rules.xml" aType="StringConstantValueTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="7" eline="7" spos="0" epos="0"/>
+<text info="Deprecated" aType="DeprecatedTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="8" eline="8" spos="0" epos="0"/>
+<text info="Deprecated" aType="DeprecatedTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="9" eline="9" spos="0" epos="0"/>
+<text info="Deprecated" aType="DeprecatedTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="12" eline="12" spos="0" epos="0"/>
+<text info="ConstantValue: form-validation/formset/form/field/arg" aType="StringConstantValueTag"/>
+</attribute>
+<attribute>
+<srcPos sline="390" eline="390" spos="0" epos="0"/>
+<jmpPos sline="485" eline="485" spos="0" epos="0"/>
+<text info="Signature: ()Ljava/util/Map<Ljava/lang/String;Lorg/apache/commons/validator/ValidatorAction;>;" aType="SignatureTag"/>
+</attribute>
+<attribute>
+<srcPos sline="616" eline="616" spos="0" epos="0"/>
+<jmpPos sline="863" eline="863" spos="0" epos="0"/>
+<text info="Signature: ()Ljava/util/Map<Ljava/lang/String;Lorg/apache/commons/validator/FormSet;>;" aType="SignatureTag"/>
+</attribute>
+<attribute>
+<srcPos sline="626" eline="626" spos="0" epos="0"/>
+<jmpPos sline="873" eline="873" spos="0" epos="0"/>
+<text info="Signature: ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;" aType="SignatureTag"/>
+</attribute>
+<attribute>
+<srcPos sline="636" eline="636" spos="0" epos="0"/>
+<jmpPos sline="883" eline="883" spos="0" epos="0"/>
+<text info="Signature: ()Ljava/util/Map<Ljava/lang/String;Lorg/apache/commons/validator/ValidatorAction;>;" aType="SignatureTag"/>
+</attribute>
+</attributes>

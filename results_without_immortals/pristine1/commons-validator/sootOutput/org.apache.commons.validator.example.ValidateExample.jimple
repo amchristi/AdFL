@@ -1,0 +1,205 @@
+public class org.apache.commons.validator.example.ValidateExample extends java.lang.Object
+{
+    private static java.util.ResourceBundle apps;
+
+    static void <clinit>()
+    {
+        java.util.ResourceBundle $r0;
+
+        $r0 = staticinvoke <java.util.ResourceBundle: java.util.ResourceBundle getBundle(java.lang.String)>("org.apache.commons.validator.example.applicationResources");
+        <org.apache.commons.validator.example.ValidateExample: java.util.ResourceBundle apps> = $r0;
+        return;
+    }
+
+    public void <init>()
+    {
+        org.apache.commons.validator.example.ValidateExample r0;
+
+        r0 := @this: org.apache.commons.validator.example.ValidateExample;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        return;
+    }
+
+    public static void main(java.lang.String[]) throws org.apache.commons.validator.ValidatorException, java.io.IOException, org.xml.sax.SAXException
+    {
+        java.lang.String[] r0;
+        java.io.InputStream r1;
+        null_type n0, n1;
+        java.lang.Throwable r2, $r7;
+        org.apache.commons.validator.Validator r3, $r10;
+        java.lang.Class $r4;
+        org.apache.commons.validator.ValidatorResources $r5, r6;
+        org.apache.commons.validator.example.ValidateBean $r8, r9;
+        org.apache.commons.validator.ValidatorResults r11, r12, r13, r14;
+
+        r0 := @parameter0: java.lang.String[];
+        r1 = null;
+        n0 = null;
+
+     label0:
+        $r4 = class "org/apache/commons/validator/example/ValidateExample";
+        r1 = virtualinvoke $r4.<java.lang.Class: java.io.InputStream getResourceAsStream(java.lang.String)>("validator-example.xml");
+        $r5 = new org.apache.commons.validator.ValidatorResources;
+        specialinvoke $r5.<org.apache.commons.validator.ValidatorResources: void <init>(java.io.InputStream)>(r1);
+        r6 = $r5;
+        goto label3;
+
+     label1:
+        $r7 := @caughtexception;
+        r2 = $r7;
+        if r1 == null goto label2;
+
+        virtualinvoke r1.<java.io.InputStream: void close()>();
+
+     label2:
+        throw r2;
+
+     label3:
+        if r1 == null goto label4;
+
+        virtualinvoke r1.<java.io.InputStream: void close()>();
+
+     label4:
+        $r8 = new org.apache.commons.validator.example.ValidateBean;
+        specialinvoke $r8.<org.apache.commons.validator.example.ValidateBean: void <init>()>();
+        r9 = $r8;
+        $r10 = new org.apache.commons.validator.Validator;
+        specialinvoke $r10.<org.apache.commons.validator.Validator: void <init>(org.apache.commons.validator.ValidatorResources,java.lang.String)>(r6, "ValidateBean");
+        r3 = $r10;
+        virtualinvoke r3.<org.apache.commons.validator.Validator: void setParameter(java.lang.String,java.lang.Object)>("java.lang.Object", r9);
+        n1 = null;
+        r11 = virtualinvoke r3.<org.apache.commons.validator.Validator: org.apache.commons.validator.ValidatorResults validate()>();
+        staticinvoke <org.apache.commons.validator.example.ValidateExample: void printResults(org.apache.commons.validator.example.ValidateBean,org.apache.commons.validator.ValidatorResults,org.apache.commons.validator.ValidatorResources)>(r9, r11, r6);
+        virtualinvoke r9.<org.apache.commons.validator.example.ValidateBean: void setLastName(java.lang.String)>("Tester");
+        virtualinvoke r9.<org.apache.commons.validator.example.ValidateBean: void setFirstName(java.lang.String)>("John");
+        virtualinvoke r9.<org.apache.commons.validator.example.ValidateBean: void setStreet1(java.lang.String)>("1 Test Street");
+        virtualinvoke r9.<org.apache.commons.validator.example.ValidateBean: void setCity(java.lang.String)>("Testville");
+        virtualinvoke r9.<org.apache.commons.validator.example.ValidateBean: void setState(java.lang.String)>("TE");
+        virtualinvoke r9.<org.apache.commons.validator.example.ValidateBean: void setPostalCode(java.lang.String)>("12345");
+        virtualinvoke r9.<org.apache.commons.validator.example.ValidateBean: void setAge(java.lang.String)>("Too Old");
+        r12 = virtualinvoke r3.<org.apache.commons.validator.Validator: org.apache.commons.validator.ValidatorResults validate()>();
+        staticinvoke <org.apache.commons.validator.example.ValidateExample: void printResults(org.apache.commons.validator.example.ValidateBean,org.apache.commons.validator.ValidatorResults,org.apache.commons.validator.ValidatorResources)>(r9, r12, r6);
+        virtualinvoke r3.<org.apache.commons.validator.Validator: void setOnlyReturnErrors(boolean)>(1);
+        r13 = virtualinvoke r3.<org.apache.commons.validator.Validator: org.apache.commons.validator.ValidatorResults validate()>();
+        staticinvoke <org.apache.commons.validator.example.ValidateExample: void printResults(org.apache.commons.validator.example.ValidateBean,org.apache.commons.validator.ValidatorResults,org.apache.commons.validator.ValidatorResources)>(r9, r13, r6);
+        virtualinvoke r3.<org.apache.commons.validator.Validator: void setOnlyReturnErrors(boolean)>(0);
+        virtualinvoke r9.<org.apache.commons.validator.example.ValidateBean: void setAge(java.lang.String)>("123");
+        r14 = virtualinvoke r3.<org.apache.commons.validator.Validator: org.apache.commons.validator.ValidatorResults validate()>();
+        staticinvoke <org.apache.commons.validator.example.ValidateExample: void printResults(org.apache.commons.validator.example.ValidateBean,org.apache.commons.validator.ValidatorResults,org.apache.commons.validator.ValidatorResources)>(r9, r14, r6);
+        return;
+
+        catch java.lang.Throwable from label0 to label1 with label1;
+    }
+
+    public static void printResults(org.apache.commons.validator.example.ValidateBean, org.apache.commons.validator.ValidatorResults, org.apache.commons.validator.ValidatorResources)
+    {
+        org.apache.commons.validator.example.ValidateBean r0;
+        org.apache.commons.validator.ValidatorResults r1;
+        org.apache.commons.validator.ValidatorResources r2;
+        boolean z0, $z1, $z2, $z3, $z4;
+        java.util.Locale $r3;
+        org.apache.commons.validator.Form r4;
+        java.util.Iterator r5, r10;
+        java.lang.String r6, r8, r11, r13, $r21, $r25, $r29, $r32, $r34, $r38, $r40;
+        org.apache.commons.validator.Field r7;
+        org.apache.commons.validator.ValidatorResult r9;
+        org.apache.commons.validator.ValidatorAction r12;
+        java.lang.Object[] r14, $r35;
+        java.io.PrintStream $r15, $r16, $r23, $r36, $r41, $r42;
+        java.util.Set $r17;
+        java.lang.Object $r18, $r22;
+        java.util.ResourceBundle $r19, $r33;
+        org.apache.commons.validator.Arg $r20;
+        java.lang.StringBuilder $r24, $r26, $r27, $r28, $r30, $r31, $r37, $r39;
+
+        r0 := @parameter0: org.apache.commons.validator.example.ValidateBean;
+        r1 := @parameter1: org.apache.commons.validator.ValidatorResults;
+        r2 := @parameter2: org.apache.commons.validator.ValidatorResources;
+        z0 = 1;
+        $r3 = staticinvoke <java.util.Locale: java.util.Locale getDefault()>();
+        r4 = virtualinvoke r2.<org.apache.commons.validator.ValidatorResources: org.apache.commons.validator.Form getForm(java.util.Locale,java.lang.String)>($r3, "ValidateBean");
+        $r15 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke $r15.<java.io.PrintStream: void println(java.lang.String)>("\n\nValidating:");
+        $r16 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke $r16.<java.io.PrintStream: void println(java.lang.Object)>(r0);
+        $r17 = virtualinvoke r1.<org.apache.commons.validator.ValidatorResults: java.util.Set getPropertyNames()>();
+        r5 = interfaceinvoke $r17.<java.util.Set: java.util.Iterator iterator()>();
+        goto label5;
+
+     label0:
+        $r18 = interfaceinvoke r5.<java.util.Iterator: java.lang.Object next()>();
+        r6 = (java.lang.String) $r18;
+        r7 = virtualinvoke r4.<org.apache.commons.validator.Form: org.apache.commons.validator.Field getField(java.lang.String)>(r6);
+        $r19 = <org.apache.commons.validator.example.ValidateExample: java.util.ResourceBundle apps>;
+        $r20 = virtualinvoke r7.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(int)>(0);
+        $r21 = virtualinvoke $r20.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        r8 = virtualinvoke $r19.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>($r21);
+        r9 = virtualinvoke r1.<org.apache.commons.validator.ValidatorResults: org.apache.commons.validator.ValidatorResult getValidatorResult(java.lang.String)>(r6);
+        r10 = virtualinvoke r9.<org.apache.commons.validator.ValidatorResult: java.util.Iterator getActions()>();
+        goto label4;
+
+     label1:
+        $r22 = interfaceinvoke r10.<java.util.Iterator: java.lang.Object next()>();
+        r11 = (java.lang.String) $r22;
+        r12 = virtualinvoke r2.<org.apache.commons.validator.ValidatorResources: org.apache.commons.validator.ValidatorAction getValidatorAction(java.lang.String)>(r11);
+        $r23 = <java.lang.System: java.io.PrintStream out>;
+        $r24 = new java.lang.StringBuilder;
+        $r25 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>(r6);
+        specialinvoke $r24.<java.lang.StringBuilder: void <init>(java.lang.String)>($r25);
+        $r26 = virtualinvoke $r24.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("[");
+        $r27 = virtualinvoke $r26.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r11);
+        $r28 = virtualinvoke $r27.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("] (");
+        $z1 = virtualinvoke r9.<org.apache.commons.validator.ValidatorResult: boolean isValid(java.lang.String)>(r11);
+        if $z1 == 0 goto label2;
+
+        $r29 = "PASSED";
+        goto label3;
+
+     label2:
+        $r29 = "FAILED";
+
+     label3:
+        $r30 = virtualinvoke $r28.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r29);
+        $r31 = virtualinvoke $r30.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(")");
+        $r32 = virtualinvoke $r31.<java.lang.StringBuilder: java.lang.String toString()>();
+        virtualinvoke $r23.<java.io.PrintStream: void println(java.lang.String)>($r32);
+        $z2 = virtualinvoke r9.<org.apache.commons.validator.ValidatorResult: boolean isValid(java.lang.String)>(r11);
+        if $z2 != 0 goto label4;
+
+        z0 = 0;
+        $r33 = <org.apache.commons.validator.example.ValidateExample: java.util.ResourceBundle apps>;
+        $r34 = virtualinvoke r12.<org.apache.commons.validator.ValidatorAction: java.lang.String getMsg()>();
+        r13 = virtualinvoke $r33.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>($r34);
+        $r35 = newarray (java.lang.Object)[1];
+        $r35[0] = r8;
+        r14 = $r35;
+        $r36 = <java.lang.System: java.io.PrintStream out>;
+        $r37 = new java.lang.StringBuilder;
+        specialinvoke $r37.<java.lang.StringBuilder: void <init>(java.lang.String)>("     Error message will be: ");
+        $r38 = staticinvoke <java.text.MessageFormat: java.lang.String format(java.lang.String,java.lang.Object[])>(r13, r14);
+        $r39 = virtualinvoke $r37.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r38);
+        $r40 = virtualinvoke $r39.<java.lang.StringBuilder: java.lang.String toString()>();
+        virtualinvoke $r36.<java.io.PrintStream: void println(java.lang.String)>($r40);
+
+     label4:
+        $z3 = interfaceinvoke r10.<java.util.Iterator: boolean hasNext()>();
+        if $z3 != 0 goto label1;
+
+     label5:
+        $z4 = interfaceinvoke r5.<java.util.Iterator: boolean hasNext()>();
+        if $z4 != 0 goto label0;
+
+        if z0 == 0 goto label6;
+
+        $r41 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke $r41.<java.io.PrintStream: void println(java.lang.String)>("FORM VALIDATION PASSED");
+        goto label7;
+
+     label6:
+        $r42 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke $r42.<java.io.PrintStream: void println(java.lang.String)>("FORM VALIDATION FAILED");
+
+     label7:
+        return;
+    }
+}

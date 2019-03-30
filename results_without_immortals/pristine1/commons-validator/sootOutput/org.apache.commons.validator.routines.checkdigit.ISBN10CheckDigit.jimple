@@ -1,0 +1,75 @@
+public final class org.apache.commons.validator.routines.checkdigit.ISBN10CheckDigit extends org.apache.commons.validator.routines.checkdigit.ModulusCheckDigit
+{
+    private static final long serialVersionUID;
+    public static final org.apache.commons.validator.routines.checkdigit.CheckDigit ISBN10_CHECK_DIGIT;
+
+    static void <clinit>()
+    {
+        org.apache.commons.validator.routines.checkdigit.ISBN10CheckDigit $r0;
+
+        $r0 = new org.apache.commons.validator.routines.checkdigit.ISBN10CheckDigit;
+        specialinvoke $r0.<org.apache.commons.validator.routines.checkdigit.ISBN10CheckDigit: void <init>()>();
+        <org.apache.commons.validator.routines.checkdigit.ISBN10CheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit ISBN10_CHECK_DIGIT> = $r0;
+        return;
+    }
+
+    public void <init>()
+    {
+        org.apache.commons.validator.routines.checkdigit.ISBN10CheckDigit r0;
+
+        r0 := @this: org.apache.commons.validator.routines.checkdigit.ISBN10CheckDigit;
+        specialinvoke r0.<org.apache.commons.validator.routines.checkdigit.ModulusCheckDigit: void <init>(int)>(11);
+        return;
+    }
+
+    protected int weightedValue(int, int, int)
+    {
+        org.apache.commons.validator.routines.checkdigit.ISBN10CheckDigit r0;
+        int i0, i1, i2, $i3;
+
+        r0 := @this: org.apache.commons.validator.routines.checkdigit.ISBN10CheckDigit;
+        i0 := @parameter0: int;
+        i1 := @parameter1: int;
+        i2 := @parameter2: int;
+        $i3 = i0 * i2;
+        return $i3;
+    }
+
+    protected int toInt(char, int, int) throws org.apache.commons.validator.routines.checkdigit.CheckDigitException
+    {
+        org.apache.commons.validator.routines.checkdigit.ISBN10CheckDigit r0;
+        char c0;
+        int i1, i2, $i3;
+
+        r0 := @this: org.apache.commons.validator.routines.checkdigit.ISBN10CheckDigit;
+        c0 := @parameter0: char;
+        i1 := @parameter1: int;
+        i2 := @parameter2: int;
+        if i2 != 1 goto label0;
+
+        if c0 != 88 goto label0;
+
+        return 10;
+
+     label0:
+        $i3 = specialinvoke r0.<org.apache.commons.validator.routines.checkdigit.ModulusCheckDigit: int toInt(char,int,int)>(c0, i1, i2);
+        return $i3;
+    }
+
+    protected java.lang.String toCheckDigit(int) throws org.apache.commons.validator.routines.checkdigit.CheckDigitException
+    {
+        org.apache.commons.validator.routines.checkdigit.ISBN10CheckDigit r0;
+        int i0;
+        java.lang.String $r1;
+
+        r0 := @this: org.apache.commons.validator.routines.checkdigit.ISBN10CheckDigit;
+        i0 := @parameter0: int;
+        if i0 != 10 goto label0;
+
+        return "X";
+
+     label0:
+        $r1 = specialinvoke r0.<org.apache.commons.validator.routines.checkdigit.ModulusCheckDigit: java.lang.String toCheckDigit(int)>(i0);
+        return $r1;
+    }
+}

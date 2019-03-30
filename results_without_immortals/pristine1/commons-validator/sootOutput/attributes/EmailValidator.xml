@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<attributes>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="ConstantValue: 1705927040799295880" aType="LongConstantValueTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="ConstantValue: \p{Cntrl}\(\)<>@,;:'\\\"\.\[\]" aType="StringConstantValueTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="ConstantValue: (\\.)|[^\s\p{Cntrl}\(\)<>@,;:'\\\"\.\[\]]" aType="StringConstantValueTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="ConstantValue: ("[^"]*")" aType="StringConstantValueTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="ConstantValue: (((\\.)|[^\s\p{Cntrl}\(\)<>@,;:'\\\"\.\[\]]|')+|("[^"]*"))" aType="StringConstantValueTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="ConstantValue: ^\s*?(.+)@(.+?)\s*$" aType="StringConstantValueTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="ConstantValue: ^\[(.*)\]$" aType="StringConstantValueTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="ConstantValue: ^\s*(((\\.)|[^\s\p{Cntrl}\(\)<>@,;:'\\\"\.\[\]]|')+|("[^"]*"))(\.(((\\.)|[^\s\p{Cntrl}\(\)<>@,;:'\\\"\.\[\]]|')+|("[^"]*")))*$" aType="StringConstantValueTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[allowLocal, allowTld]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[allowLocal]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[allowLocal, allowTld]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[allowLocal]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[email]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[domain]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[user]" aType="ParamNamesTag"/>
+</attribute>
+</attributes>

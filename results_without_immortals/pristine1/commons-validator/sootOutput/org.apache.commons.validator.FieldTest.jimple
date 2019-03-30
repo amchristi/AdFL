@@ -1,0 +1,545 @@
+public class org.apache.commons.validator.FieldTest extends junit.framework.TestCase
+{
+    protected org.apache.commons.validator.Field field;
+
+    public void <init>()
+    {
+        org.apache.commons.validator.FieldTest r0;
+
+        r0 := @this: org.apache.commons.validator.FieldTest;
+        specialinvoke r0.<junit.framework.TestCase: void <init>()>();
+        return;
+    }
+
+    public void <init>(java.lang.String)
+    {
+        org.apache.commons.validator.FieldTest r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.FieldTest;
+        r1 := @parameter0: java.lang.String;
+        specialinvoke r0.<junit.framework.TestCase: void <init>(java.lang.String)>(r1);
+        return;
+    }
+
+    public void setUp()
+    {
+        org.apache.commons.validator.FieldTest r0;
+        org.apache.commons.validator.Field $r1;
+
+        r0 := @this: org.apache.commons.validator.FieldTest;
+        $r1 = new org.apache.commons.validator.Field;
+        specialinvoke $r1.<org.apache.commons.validator.Field: void <init>()>();
+        r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field> = $r1;
+        return;
+    }
+
+    public void tearDown()
+    {
+        org.apache.commons.validator.FieldTest r0;
+
+        r0 := @this: org.apache.commons.validator.FieldTest;
+        r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field> = null;
+        return;
+    }
+
+    public void testEmptyArgs()
+    {
+        org.apache.commons.validator.FieldTest r0;
+        org.apache.commons.validator.Field $r1;
+        org.apache.commons.validator.Arg[] $r2;
+        int $i0;
+
+        r0 := @this: org.apache.commons.validator.FieldTest;
+        $r1 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r2 = virtualinvoke $r1.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg[] getArgs(java.lang.String)>("required");
+        $i0 = lengthof $r2;
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,int,int)>("Empty Args(1) ", 0, $i0);
+        return;
+    }
+
+    public void testDefaultPositionImplied()
+    {
+        org.apache.commons.validator.FieldTest r0;
+        org.apache.commons.validator.Field $r1, $r3, $r5, $r7, $r9, $r12, $r15;
+        org.apache.commons.validator.Arg $r2, $r4, $r6, $r10, $r13, $r16;
+        org.apache.commons.validator.Arg[] $r8;
+        int $i0;
+        java.lang.String $r11, $r14, $r17;
+
+        r0 := @this: org.apache.commons.validator.FieldTest;
+        $r1 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r2 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String)>("default-position-0");
+        virtualinvoke $r1.<org.apache.commons.validator.Field: void addArg(org.apache.commons.validator.Arg)>($r2);
+        $r3 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r4 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String)>("default-position-1");
+        virtualinvoke $r3.<org.apache.commons.validator.Field: void addArg(org.apache.commons.validator.Arg)>($r4);
+        $r5 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r6 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String)>("default-position-2");
+        virtualinvoke $r5.<org.apache.commons.validator.Field: void addArg(org.apache.commons.validator.Arg)>($r6);
+        $r7 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r8 = virtualinvoke $r7.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg[] getArgs(java.lang.String)>("required");
+        $i0 = lengthof $r8;
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,int,int)>("testDefaultPositionImplied(1) ", 3, $i0);
+        $r9 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r10 = virtualinvoke $r9.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("required", 0);
+        $r11 = virtualinvoke $r10.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testDefaultPositionImplied(2) ", "default-position-0", $r11);
+        $r12 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r13 = virtualinvoke $r12.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("required", 1);
+        $r14 = virtualinvoke $r13.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testDefaultPositionImplied(3) ", "default-position-1", $r14);
+        $r15 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r16 = virtualinvoke $r15.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("required", 2);
+        $r17 = virtualinvoke $r16.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testDefaultPositionImplied(4) ", "default-position-2", $r17);
+        return;
+    }
+
+    public void testDefaultUsingPositions()
+    {
+        org.apache.commons.validator.FieldTest r0;
+        org.apache.commons.validator.Field $r1, $r3, $r5, $r7, $r9, $r12, $r15;
+        org.apache.commons.validator.Arg $r2, $r4, $r6, $r10, $r13, $r16;
+        org.apache.commons.validator.Arg[] $r8;
+        int $i0;
+        java.lang.String $r11, $r14, $r17;
+
+        r0 := @this: org.apache.commons.validator.FieldTest;
+        $r1 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r2 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String,int)>("default-position-1", 1);
+        virtualinvoke $r1.<org.apache.commons.validator.Field: void addArg(org.apache.commons.validator.Arg)>($r2);
+        $r3 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r4 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String,int)>("default-position-0", 0);
+        virtualinvoke $r3.<org.apache.commons.validator.Field: void addArg(org.apache.commons.validator.Arg)>($r4);
+        $r5 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r6 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String,int)>("default-position-2", 2);
+        virtualinvoke $r5.<org.apache.commons.validator.Field: void addArg(org.apache.commons.validator.Arg)>($r6);
+        $r7 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r8 = virtualinvoke $r7.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg[] getArgs(java.lang.String)>("required");
+        $i0 = lengthof $r8;
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,int,int)>("testDefaultUsingPositions(1) ", 3, $i0);
+        $r9 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r10 = virtualinvoke $r9.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("required", 0);
+        $r11 = virtualinvoke $r10.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testDefaultUsingPositions(2) ", "default-position-0", $r11);
+        $r12 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r13 = virtualinvoke $r12.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("required", 1);
+        $r14 = virtualinvoke $r13.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testDefaultUsingPositions(3) ", "default-position-1", $r14);
+        $r15 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r16 = virtualinvoke $r15.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("required", 2);
+        $r17 = virtualinvoke $r16.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testDefaultUsingPositions(4) ", "default-position-2", $r17);
+        return;
+    }
+
+    public void testDefaultOnePosition()
+    {
+        org.apache.commons.validator.FieldTest r0;
+        org.apache.commons.validator.Field $r1, $r3, $r5, $r7, $r9, $r12, $r14, $r17;
+        org.apache.commons.validator.Arg $r2, $r4, $r6, $r10, $r13, $r15, $r18;
+        org.apache.commons.validator.Arg[] $r8;
+        int $i0;
+        java.lang.String $r11, $r16, $r19;
+
+        r0 := @this: org.apache.commons.validator.FieldTest;
+        $r1 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r2 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String)>("default-position-0");
+        virtualinvoke $r1.<org.apache.commons.validator.Field: void addArg(org.apache.commons.validator.Arg)>($r2);
+        $r3 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r4 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String,int)>("default-position-2", 2);
+        virtualinvoke $r3.<org.apache.commons.validator.Field: void addArg(org.apache.commons.validator.Arg)>($r4);
+        $r5 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r6 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String)>("default-position-3");
+        virtualinvoke $r5.<org.apache.commons.validator.Field: void addArg(org.apache.commons.validator.Arg)>($r6);
+        $r7 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r8 = virtualinvoke $r7.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg[] getArgs(java.lang.String)>("required");
+        $i0 = lengthof $r8;
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,int,int)>("testDefaultOnePosition(1) ", 4, $i0);
+        $r9 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r10 = virtualinvoke $r9.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("required", 0);
+        $r11 = virtualinvoke $r10.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testDefaultOnePosition(2) ", "default-position-0", $r11);
+        $r12 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r13 = virtualinvoke $r12.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("required", 1);
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertNull(java.lang.String,java.lang.Object)>("testDefaultOnePosition(3) ", $r13);
+        $r14 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r15 = virtualinvoke $r14.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("required", 2);
+        $r16 = virtualinvoke $r15.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testDefaultOnePosition(4) ", "default-position-2", $r16);
+        $r17 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r18 = virtualinvoke $r17.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("required", 3);
+        $r19 = virtualinvoke $r18.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testDefaultOnePosition(5) ", "default-position-3", $r19);
+        return;
+    }
+
+    public void testDefaultSomePositions()
+    {
+        org.apache.commons.validator.FieldTest r0;
+        org.apache.commons.validator.Field $r1, $r3, $r5, $r7, $r9, $r11, $r14, $r17, $r20;
+        org.apache.commons.validator.Arg $r2, $r4, $r6, $r8, $r12, $r15, $r18, $r21;
+        org.apache.commons.validator.Arg[] $r10;
+        int $i0;
+        java.lang.String $r13, $r16, $r19, $r22;
+
+        r0 := @this: org.apache.commons.validator.FieldTest;
+        $r1 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r2 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String)>("default-position-0");
+        virtualinvoke $r1.<org.apache.commons.validator.Field: void addArg(org.apache.commons.validator.Arg)>($r2);
+        $r3 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r4 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String,int)>("default-position-2", 2);
+        virtualinvoke $r3.<org.apache.commons.validator.Field: void addArg(org.apache.commons.validator.Arg)>($r4);
+        $r5 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r6 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String)>("default-position-3");
+        virtualinvoke $r5.<org.apache.commons.validator.Field: void addArg(org.apache.commons.validator.Arg)>($r6);
+        $r7 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r8 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String,int)>("default-position-1", 1);
+        virtualinvoke $r7.<org.apache.commons.validator.Field: void addArg(org.apache.commons.validator.Arg)>($r8);
+        $r9 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r10 = virtualinvoke $r9.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg[] getArgs(java.lang.String)>("required");
+        $i0 = lengthof $r10;
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,int,int)>("testDefaultSomePositions(1) ", 4, $i0);
+        $r11 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r12 = virtualinvoke $r11.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("required", 0);
+        $r13 = virtualinvoke $r12.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testDefaultSomePositions(2) ", "default-position-0", $r13);
+        $r14 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r15 = virtualinvoke $r14.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("required", 1);
+        $r16 = virtualinvoke $r15.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testDefaultSomePositions(3) ", "default-position-1", $r16);
+        $r17 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r18 = virtualinvoke $r17.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("required", 2);
+        $r19 = virtualinvoke $r18.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testDefaultSomePositions(4) ", "default-position-2", $r19);
+        $r20 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r21 = virtualinvoke $r20.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("required", 3);
+        $r22 = virtualinvoke $r21.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testDefaultSomePositions(5) ", "default-position-3", $r22);
+        return;
+    }
+
+    public void testOverrideUsingPositionA()
+    {
+        org.apache.commons.validator.FieldTest r0;
+        org.apache.commons.validator.Field $r1, $r3, $r5, $r7, $r9, $r11, $r14, $r16, $r19;
+        org.apache.commons.validator.Arg $r2, $r4, $r6, $r8, $r12, $r17, $r20;
+        org.apache.commons.validator.Arg[] $r10, $r15;
+        int $i0, $i1;
+        java.lang.String $r13, $r18, $r21;
+
+        r0 := @this: org.apache.commons.validator.FieldTest;
+        $r1 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r2 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String)>("default-position-0");
+        virtualinvoke $r1.<org.apache.commons.validator.Field: void addArg(org.apache.commons.validator.Arg)>($r2);
+        $r3 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r4 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String)>("default-position-1");
+        virtualinvoke $r3.<org.apache.commons.validator.Field: void addArg(org.apache.commons.validator.Arg)>($r4);
+        $r5 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r6 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String)>("default-position-2");
+        virtualinvoke $r5.<org.apache.commons.validator.Field: void addArg(org.apache.commons.validator.Arg)>($r6);
+        $r7 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r8 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String,java.lang.String,int)>("required-position-1", "required", 1);
+        virtualinvoke $r7.<org.apache.commons.validator.Field: void addArg(org.apache.commons.validator.Arg)>($r8);
+        $r9 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r10 = virtualinvoke $r9.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg[] getArgs(java.lang.String)>("required");
+        $i0 = lengthof $r10;
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,int,int)>("testOverrideUsingPositionA(1) ", 3, $i0);
+        $r11 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r12 = virtualinvoke $r11.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("required", 1);
+        $r13 = virtualinvoke $r12.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testOverrideUsingPositionA(2) ", "required-position-1", $r13);
+        $r14 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r15 = virtualinvoke $r14.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg[] getArgs(java.lang.String)>("mask");
+        $i1 = lengthof $r15;
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,int,int)>("testOverrideUsingPositionA(3) ", 3, $i1);
+        $r16 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r17 = virtualinvoke $r16.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("mask", 1);
+        $r18 = virtualinvoke $r17.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testOverrideUsingPositionA(4) ", "default-position-1", $r18);
+        $r19 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r20 = virtualinvoke $r19.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(int)>(1);
+        $r21 = virtualinvoke $r20.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testOverrideUsingPositionA(5) ", "default-position-1", $r21);
+        return;
+    }
+
+    public void testOverrideUsingPositionB()
+    {
+        org.apache.commons.validator.FieldTest r0;
+        org.apache.commons.validator.Field $r1, $r3, $r5, $r7, $r9, $r11, $r13, $r16, $r19, $r22, $r25, $r27, $r30, $r33, $r36;
+        org.apache.commons.validator.Arg $r2, $r4, $r6, $r8, $r10, $r14, $r17, $r20, $r23, $r28, $r31, $r34, $r37;
+        org.apache.commons.validator.Arg[] $r12, $r26;
+        int $i0, $i1;
+        java.lang.String $r15, $r18, $r21, $r24, $r29, $r32, $r35;
+
+        r0 := @this: org.apache.commons.validator.FieldTest;
+        $r1 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r2 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String,java.lang.String,int)>("required-position-3", "required", 3);
+        virtualinvoke $r1.<org.apache.commons.validator.Field: void addArg(org.apache.commons.validator.Arg)>($r2);
+        $r3 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r4 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String,java.lang.String,int)>("required-position-1", "required", 1);
+        virtualinvoke $r3.<org.apache.commons.validator.Field: void addArg(org.apache.commons.validator.Arg)>($r4);
+        $r5 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r6 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String)>("default-position-0");
+        virtualinvoke $r5.<org.apache.commons.validator.Field: void addArg(org.apache.commons.validator.Arg)>($r6);
+        $r7 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r8 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String)>("default-position-1");
+        virtualinvoke $r7.<org.apache.commons.validator.Field: void addArg(org.apache.commons.validator.Arg)>($r8);
+        $r9 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r10 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String)>("default-position-2");
+        virtualinvoke $r9.<org.apache.commons.validator.Field: void addArg(org.apache.commons.validator.Arg)>($r10);
+        $r11 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r12 = virtualinvoke $r11.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg[] getArgs(java.lang.String)>("required");
+        $i0 = lengthof $r12;
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,int,int)>("testOverrideUsingPositionB(1) ", 4, $i0);
+        $r13 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r14 = virtualinvoke $r13.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("required", 0);
+        $r15 = virtualinvoke $r14.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testOverrideUsingPositionB(2) ", "default-position-0", $r15);
+        $r16 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r17 = virtualinvoke $r16.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("required", 1);
+        $r18 = virtualinvoke $r17.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testOverrideUsingPositionB(3) ", "required-position-1", $r18);
+        $r19 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r20 = virtualinvoke $r19.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("required", 2);
+        $r21 = virtualinvoke $r20.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testOverrideUsingPositionB(4) ", "default-position-2", $r21);
+        $r22 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r23 = virtualinvoke $r22.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("required", 3);
+        $r24 = virtualinvoke $r23.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testOverrideUsingPositionB(5) ", "required-position-3", $r24);
+        $r25 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r26 = virtualinvoke $r25.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg[] getArgs(java.lang.String)>("mask");
+        $i1 = lengthof $r26;
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,int,int)>("testOverrideUsingPositionB(6) ", 4, $i1);
+        $r27 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r28 = virtualinvoke $r27.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("mask", 0);
+        $r29 = virtualinvoke $r28.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testOverrideUsingPositionB(6) ", "default-position-0", $r29);
+        $r30 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r31 = virtualinvoke $r30.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("mask", 1);
+        $r32 = virtualinvoke $r31.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testOverrideUsingPositionB(7) ", "default-position-1", $r32);
+        $r33 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r34 = virtualinvoke $r33.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("mask", 2);
+        $r35 = virtualinvoke $r34.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testOverrideUsingPositionB(8) ", "default-position-2", $r35);
+        $r36 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r37 = virtualinvoke $r36.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("mask", 3);
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertNull(java.lang.String,java.lang.Object)>("testOverrideUsingPositionB(9) ", $r37);
+        return;
+    }
+
+    public void testOverridePositionImplied()
+    {
+        org.apache.commons.validator.FieldTest r0;
+        org.apache.commons.validator.Field $r1, $r3, $r5, $r7, $r9, $r11, $r14, $r17, $r20, $r22, $r25, $r28, $r30, $r33, $r35;
+        org.apache.commons.validator.Arg $r2, $r4, $r6, $r8, $r12, $r15, $r18, $r23, $r26, $r29, $r31, $r34, $r36;
+        org.apache.commons.validator.Arg[] $r10, $r21;
+        int $i0, $i1;
+        java.lang.String $r13, $r16, $r19, $r24, $r27, $r32;
+
+        r0 := @this: org.apache.commons.validator.FieldTest;
+        $r1 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r2 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String)>("default-position-0");
+        virtualinvoke $r1.<org.apache.commons.validator.Field: void addArg(org.apache.commons.validator.Arg)>($r2);
+        $r3 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r4 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String,java.lang.String)>("required-position-1", "required");
+        virtualinvoke $r3.<org.apache.commons.validator.Field: void addArg(org.apache.commons.validator.Arg)>($r4);
+        $r5 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r6 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String,java.lang.String)>("required-position-2", "required");
+        virtualinvoke $r5.<org.apache.commons.validator.Field: void addArg(org.apache.commons.validator.Arg)>($r6);
+        $r7 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r8 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String,java.lang.String)>("mask-position-1", "mask");
+        virtualinvoke $r7.<org.apache.commons.validator.Field: void addArg(org.apache.commons.validator.Arg)>($r8);
+        $r9 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r10 = virtualinvoke $r9.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg[] getArgs(java.lang.String)>("required");
+        $i0 = lengthof $r10;
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,int,int)>("testOverridePositionImplied(1) ", 3, $i0);
+        $r11 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r12 = virtualinvoke $r11.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("required", 0);
+        $r13 = virtualinvoke $r12.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testOverridePositionImplied(2) ", "default-position-0", $r13);
+        $r14 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r15 = virtualinvoke $r14.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("required", 1);
+        $r16 = virtualinvoke $r15.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testOverridePositionImplied(3) ", "required-position-1", $r16);
+        $r17 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r18 = virtualinvoke $r17.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("required", 2);
+        $r19 = virtualinvoke $r18.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testOverridePositionImplied(4) ", "required-position-2", $r19);
+        $r20 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r21 = virtualinvoke $r20.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg[] getArgs(java.lang.String)>("mask");
+        $i1 = lengthof $r21;
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,int,int)>("testOverridePositionImplied(5) ", 3, $i1);
+        $r22 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r23 = virtualinvoke $r22.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("mask", 0);
+        $r24 = virtualinvoke $r23.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testOverridePositionImplied(6) ", "default-position-0", $r24);
+        $r25 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r26 = virtualinvoke $r25.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("mask", 1);
+        $r27 = virtualinvoke $r26.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testOverridePositionImplied(7) ", "mask-position-1", $r27);
+        $r28 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r29 = virtualinvoke $r28.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("mask", 2);
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertNull(java.lang.String,java.lang.Object)>("testOverridePositionImplied(8) ", $r29);
+        $r30 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r31 = virtualinvoke $r30.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(int)>(0);
+        $r32 = virtualinvoke $r31.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testOverridePositionImplied(9) ", "default-position-0", $r32);
+        $r33 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r34 = virtualinvoke $r33.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(int)>(1);
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertNull(java.lang.String,java.lang.Object)>("testOverridePositionImplied(10) ", $r34);
+        $r35 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r36 = virtualinvoke $r35.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(int)>(2);
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertNull(java.lang.String,java.lang.Object)>("testOverridePositionImplied(11) ", $r36);
+        return;
+    }
+
+    public void testOverrideSomePosition()
+    {
+        org.apache.commons.validator.FieldTest r0;
+        org.apache.commons.validator.Field $r1, $r3, $r5, $r7, $r9, $r11, $r13, $r15, $r18, $r21, $r24, $r26, $r28, $r31, $r34, $r37, $r40, $r43, $r46, $r49;
+        org.apache.commons.validator.Arg $r2, $r4, $r6, $r8, $r10, $r12, $r16, $r19, $r22, $r25, $r29, $r32, $r35, $r38, $r41, $r44, $r47, $r50;
+        org.apache.commons.validator.Arg[] $r14, $r27;
+        int $i0, $i1;
+        java.lang.String $r17, $r20, $r23, $r30, $r33, $r36, $r39, $r42, $r45, $r48;
+
+        r0 := @this: org.apache.commons.validator.FieldTest;
+        $r1 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r2 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String)>("default-position-0");
+        virtualinvoke $r1.<org.apache.commons.validator.Field: void addArg(org.apache.commons.validator.Arg)>($r2);
+        $r3 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r4 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String)>("default-position-1");
+        virtualinvoke $r3.<org.apache.commons.validator.Field: void addArg(org.apache.commons.validator.Arg)>($r4);
+        $r5 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r6 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String)>("default-position-2");
+        virtualinvoke $r5.<org.apache.commons.validator.Field: void addArg(org.apache.commons.validator.Arg)>($r6);
+        $r7 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r8 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String,java.lang.String,int)>("required-position-1", "required", 1);
+        virtualinvoke $r7.<org.apache.commons.validator.Field: void addArg(org.apache.commons.validator.Arg)>($r8);
+        $r9 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r10 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String,java.lang.String)>("required-position-2", "required");
+        virtualinvoke $r9.<org.apache.commons.validator.Field: void addArg(org.apache.commons.validator.Arg)>($r10);
+        $r11 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r12 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String,java.lang.String)>("mask-position-3", "mask");
+        virtualinvoke $r11.<org.apache.commons.validator.Field: void addArg(org.apache.commons.validator.Arg)>($r12);
+        $r13 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r14 = virtualinvoke $r13.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg[] getArgs(java.lang.String)>("required");
+        $i0 = lengthof $r14;
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,int,int)>("testOverrideSomePosition(1) ", 4, $i0);
+        $r15 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r16 = virtualinvoke $r15.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("required", 0);
+        $r17 = virtualinvoke $r16.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testOverrideSomePosition(2) ", "default-position-0", $r17);
+        $r18 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r19 = virtualinvoke $r18.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("required", 1);
+        $r20 = virtualinvoke $r19.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testOverrideSomePosition(3) ", "required-position-1", $r20);
+        $r21 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r22 = virtualinvoke $r21.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("required", 2);
+        $r23 = virtualinvoke $r22.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testOverrideSomePosition(4) ", "required-position-2", $r23);
+        $r24 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r25 = virtualinvoke $r24.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("required", 3);
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertNull(java.lang.String,java.lang.Object)>("testOverrideSomePosition(5) ", $r25);
+        $r26 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r27 = virtualinvoke $r26.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg[] getArgs(java.lang.String)>("mask");
+        $i1 = lengthof $r27;
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,int,int)>("testOverrideSomePosition(6) ", 4, $i1);
+        $r28 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r29 = virtualinvoke $r28.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("mask", 0);
+        $r30 = virtualinvoke $r29.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testOverrideSomePosition(7) ", "default-position-0", $r30);
+        $r31 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r32 = virtualinvoke $r31.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("mask", 1);
+        $r33 = virtualinvoke $r32.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testOverrideSomePosition(8) ", "default-position-1", $r33);
+        $r34 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r35 = virtualinvoke $r34.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("mask", 2);
+        $r36 = virtualinvoke $r35.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testOverrideSomePosition(9) ", "default-position-2", $r36);
+        $r37 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r38 = virtualinvoke $r37.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(java.lang.String,int)>("mask", 3);
+        $r39 = virtualinvoke $r38.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testOverrideSomePosition(10) ", "mask-position-3", $r39);
+        $r40 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r41 = virtualinvoke $r40.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(int)>(0);
+        $r42 = virtualinvoke $r41.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testOverrideSomePosition(11) ", "default-position-0", $r42);
+        $r43 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r44 = virtualinvoke $r43.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(int)>(1);
+        $r45 = virtualinvoke $r44.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testOverrideSomePosition(12) ", "default-position-1", $r45);
+        $r46 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r47 = virtualinvoke $r46.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(int)>(2);
+        $r48 = virtualinvoke $r47.<org.apache.commons.validator.Arg: java.lang.String getKey()>();
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("testOverrideSomePosition(13) ", "default-position-2", $r48);
+        $r49 = r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Field field>;
+        $r50 = virtualinvoke $r49.<org.apache.commons.validator.Field: org.apache.commons.validator.Arg getArg(int)>(3);
+        staticinvoke <org.apache.commons.validator.FieldTest: void assertNull(java.lang.String,java.lang.Object)>("testOverrideSomePosition(14) ", $r50);
+        return;
+    }
+
+    private org.apache.commons.validator.Arg createArg(java.lang.String)
+    {
+        org.apache.commons.validator.FieldTest r0;
+        java.lang.String r1;
+        org.apache.commons.validator.Arg $r2, r3;
+
+        r0 := @this: org.apache.commons.validator.FieldTest;
+        r1 := @parameter0: java.lang.String;
+        $r2 = new org.apache.commons.validator.Arg;
+        specialinvoke $r2.<org.apache.commons.validator.Arg: void <init>()>();
+        r3 = $r2;
+        virtualinvoke r3.<org.apache.commons.validator.Arg: void setKey(java.lang.String)>(r1);
+        return r3;
+    }
+
+    private org.apache.commons.validator.Arg createArg(java.lang.String, int)
+    {
+        org.apache.commons.validator.FieldTest r0;
+        java.lang.String r1;
+        int i0;
+        org.apache.commons.validator.Arg r2;
+
+        r0 := @this: org.apache.commons.validator.FieldTest;
+        r1 := @parameter0: java.lang.String;
+        i0 := @parameter1: int;
+        r2 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String)>(r1);
+        virtualinvoke r2.<org.apache.commons.validator.Arg: void setPosition(int)>(i0);
+        return r2;
+    }
+
+    private org.apache.commons.validator.Arg createArg(java.lang.String, java.lang.String)
+    {
+        org.apache.commons.validator.FieldTest r0;
+        java.lang.String r1, r2;
+        org.apache.commons.validator.Arg r3;
+
+        r0 := @this: org.apache.commons.validator.FieldTest;
+        r1 := @parameter0: java.lang.String;
+        r2 := @parameter1: java.lang.String;
+        r3 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String)>(r1);
+        virtualinvoke r3.<org.apache.commons.validator.Arg: void setName(java.lang.String)>(r2);
+        return r3;
+    }
+
+    private org.apache.commons.validator.Arg createArg(java.lang.String, java.lang.String, int)
+    {
+        org.apache.commons.validator.FieldTest r0;
+        java.lang.String r1, r2;
+        int i0;
+        org.apache.commons.validator.Arg r3;
+
+        r0 := @this: org.apache.commons.validator.FieldTest;
+        r1 := @parameter0: java.lang.String;
+        r2 := @parameter1: java.lang.String;
+        i0 := @parameter2: int;
+        r3 = specialinvoke r0.<org.apache.commons.validator.FieldTest: org.apache.commons.validator.Arg createArg(java.lang.String,java.lang.String)>(r1, r2);
+        virtualinvoke r3.<org.apache.commons.validator.Arg: void setPosition(int)>(i0);
+        return r3;
+    }
+}

@@ -1,0 +1,319 @@
+public class org.apache.commons.validator.routines.IBANValidatorTest extends java.lang.Object
+{
+    private final java.lang.String[] validIBANFormat;
+    private final java.lang.String[] invalidIBANFormat;
+    private static final org.apache.commons.validator.routines.IBANValidator VALIDATOR;
+
+    static void <clinit>()
+    {
+        org.apache.commons.validator.routines.IBANValidator $r0;
+
+        $r0 = staticinvoke <org.apache.commons.validator.routines.IBANValidator: org.apache.commons.validator.routines.IBANValidator getInstance()>();
+        <org.apache.commons.validator.routines.IBANValidatorTest: org.apache.commons.validator.routines.IBANValidator VALIDATOR> = $r0;
+        return;
+    }
+
+    public void <init>()
+    {
+        org.apache.commons.validator.routines.IBANValidatorTest r0;
+        java.lang.String[] $r1, $r2;
+
+        r0 := @this: org.apache.commons.validator.routines.IBANValidatorTest;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        $r1 = newarray (java.lang.String)[73];
+        $r1[0] = "AL47212110090000000235698741";
+        $r1[1] = "AD1200012030200359100100";
+        $r1[2] = "AT611904300234573201";
+        $r1[3] = "AZ21NABZ00000000137010001944";
+        $r1[4] = "BH67BMAG00001299123456";
+        $r1[5] = "BE68539007547034";
+        $r1[6] = "BA391290079401028494";
+        $r1[7] = "BR9700360305000010009795493P1";
+        $r1[8] = "BR1800000000141455123924100C2";
+        $r1[9] = "BG80BNBG96611020345678";
+        $r1[10] = "CR0515202001026284066";
+        $r1[11] = "HR1210010051863000160";
+        $r1[12] = "CY17002001280000001200527600";
+        $r1[13] = "CZ6508000000192000145399";
+        $r1[14] = "CZ9455000000001011038930";
+        $r1[15] = "DK5000400440116243";
+        $r1[16] = "FO6264600001631634";
+        $r1[17] = "GL8964710001000206";
+        $r1[18] = "DO28BAGR00000001212453611324";
+        $r1[19] = "EE382200221020145685";
+        $r1[20] = "FI2112345600000785";
+        $r1[21] = "FI5542345670000081";
+        $r1[22] = "FR1420041010050500013M02606";
+        $r1[23] = "GE29NB0000000101904917";
+        $r1[24] = "DE89370400440532013000";
+        $r1[25] = "GI75NWBK000000007099453";
+        $r1[26] = "GR1601101250000000012300695";
+        $r1[27] = "GT82TRAJ01020000001210029690";
+        $r1[28] = "HU42117730161111101800000000";
+        $r1[29] = "IS140159260076545510730339";
+        $r1[30] = "IE29AIBK93115212345678";
+        $r1[31] = "IL620108000000099999999";
+        $r1[32] = "IT60X0542811101000000123456";
+        $r1[33] = "JO94CBJO0010000000000131000302";
+        $r1[34] = "KZ86125KZT5004100100";
+        $r1[35] = "XK051212012345678906";
+        $r1[36] = "KW81CBKU0000000000001234560101";
+        $r1[37] = "LV80BANK0000435195001";
+        $r1[38] = "LB62099900000001001901229114";
+        $r1[39] = "LI21088100002324013AA";
+        $r1[40] = "LT121000011101001000";
+        $r1[41] = "LU280019400644750000";
+        $r1[42] = "MK07250120000058984";
+        $r1[43] = "MT84MALT011000012345MTLCAST001S";
+        $r1[44] = "MR1300020001010000123456753";
+        $r1[45] = "MU17BOMM0101101030300200000MUR";
+        $r1[46] = "MD24AG000225100013104168";
+        $r1[47] = "MC5811222000010123456789030";
+        $r1[48] = "ME25505000012345678951";
+        $r1[49] = "NL91ABNA0417164300";
+        $r1[50] = "NO9386011117947";
+        $r1[51] = "PK36SCBL0000001123456702";
+        $r1[52] = "PS92PALS000000000400123456702";
+        $r1[53] = "PL61109010140000071219812874";
+        $r1[54] = "PT50000201231234567890154";
+        $r1[55] = "QA58DOHB00001234567890ABCDEFG";
+        $r1[56] = "RO49AAAA1B31007593840000";
+        $r1[57] = "LC55HEMM000100010012001200023015";
+        $r1[58] = "SM86U0322509800000000270100";
+        $r1[59] = "ST68000100010051845310112";
+        $r1[60] = "SA0380000000608010167519";
+        $r1[61] = "RS35260005601001611379";
+        $r1[62] = "SK3112000000198742637541";
+        $r1[63] = "SI56191000000123438";
+        $r1[64] = "ES9121000418450200051332";
+        $r1[65] = "SE4550000000058398257466";
+        $r1[66] = "CH9300762011623852957";
+        $r1[67] = "TL380080012345678910157";
+        $r1[68] = "TN5910006035183598478831";
+        $r1[69] = "TR330006100519786457841326";
+        $r1[70] = "AE070331234567890123456";
+        $r1[71] = "GB29NWBK60161331926819";
+        $r1[72] = "VG96VPVG0000012345678901";
+        r0.<org.apache.commons.validator.routines.IBANValidatorTest: java.lang.String[] validIBANFormat> = $r1;
+        $r2 = newarray (java.lang.String)[10];
+        $r2[0] = "";
+        $r2[1] = "   ";
+        $r2[2] = "A";
+        $r2[3] = "AB";
+        $r2[4] = "FR1420041010050500013m02606";
+        $r2[5] = "MT84MALT011000012345mtlcast001s";
+        $r2[6] = "LI21088100002324013aa";
+        $r2[7] = "QA58DOHB00001234567890abcdefg";
+        $r2[8] = "RO49AAAA1b31007593840000";
+        $r2[9] = "LC62HEMM000100010012001200023015";
+        r0.<org.apache.commons.validator.routines.IBANValidatorTest: java.lang.String[] invalidIBANFormat> = $r2;
+        return;
+    }
+
+    public void testValid()
+    {
+        org.apache.commons.validator.routines.IBANValidatorTest r0;
+        java.lang.String[] r1, $r3;
+        int i0, i1;
+        java.lang.String r2, $r6, $r10;
+        java.lang.StringBuilder $r4, $r5, $r8, $r9;
+        org.apache.commons.validator.routines.checkdigit.CheckDigit $r7;
+        boolean $z0, $z1, $z2;
+        org.apache.commons.validator.routines.IBANValidator $r11, $r12;
+
+        r0 := @this: org.apache.commons.validator.routines.IBANValidatorTest;
+        $r3 = r0.<org.apache.commons.validator.routines.IBANValidatorTest: java.lang.String[] validIBANFormat>;
+        r1 = $r3;
+        i0 = lengthof $r3;
+        i1 = 0;
+        goto label1;
+
+     label0:
+        r2 = r1[i1];
+        $r4 = new java.lang.StringBuilder;
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>(java.lang.String)>("Checksum fail: ");
+        $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r2);
+        $r6 = virtualinvoke $r5.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r7 = <org.apache.commons.validator.routines.checkdigit.IBANCheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit IBAN_CHECK_DIGIT>;
+        $z0 = interfaceinvoke $r7.<org.apache.commons.validator.routines.checkdigit.CheckDigit: boolean isValid(java.lang.String)>(r2);
+        staticinvoke <org.junit.Assert: void assertTrue(java.lang.String,boolean)>($r6, $z0);
+        $r8 = new java.lang.StringBuilder;
+        specialinvoke $r8.<java.lang.StringBuilder: void <init>(java.lang.String)>("Missing validator: ");
+        $r9 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r2);
+        $r10 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r11 = <org.apache.commons.validator.routines.IBANValidatorTest: org.apache.commons.validator.routines.IBANValidator VALIDATOR>;
+        $z1 = virtualinvoke $r11.<org.apache.commons.validator.routines.IBANValidator: boolean hasValidator(java.lang.String)>(r2);
+        staticinvoke <org.junit.Assert: void assertTrue(java.lang.String,boolean)>($r10, $z1);
+        $r12 = <org.apache.commons.validator.routines.IBANValidatorTest: org.apache.commons.validator.routines.IBANValidator VALIDATOR>;
+        $z2 = virtualinvoke $r12.<org.apache.commons.validator.routines.IBANValidator: boolean isValid(java.lang.String)>(r2);
+        staticinvoke <org.junit.Assert: void assertTrue(java.lang.String,boolean)>(r2, $z2);
+        i1 = i1 + 1;
+
+     label1:
+        if i1 < i0 goto label0;
+
+        return;
+    }
+
+    public void testInValid()
+    {
+        org.apache.commons.validator.routines.IBANValidatorTest r0;
+        java.lang.String[] r1, $r3;
+        int i0, i1;
+        java.lang.String r2;
+        org.apache.commons.validator.routines.IBANValidator $r4;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.routines.IBANValidatorTest;
+        $r3 = r0.<org.apache.commons.validator.routines.IBANValidatorTest: java.lang.String[] invalidIBANFormat>;
+        r1 = $r3;
+        i0 = lengthof $r3;
+        i1 = 0;
+        goto label1;
+
+     label0:
+        r2 = r1[i1];
+        $r4 = <org.apache.commons.validator.routines.IBANValidatorTest: org.apache.commons.validator.routines.IBANValidator VALIDATOR>;
+        $z0 = virtualinvoke $r4.<org.apache.commons.validator.routines.IBANValidator: boolean isValid(java.lang.String)>(r2);
+        staticinvoke <org.junit.Assert: void assertFalse(java.lang.String,boolean)>(r2, $z0);
+        i1 = i1 + 1;
+
+     label1:
+        if i1 < i0 goto label0;
+
+        return;
+    }
+
+    public void testNull()
+    {
+        org.apache.commons.validator.routines.IBANValidatorTest r0;
+        org.apache.commons.validator.routines.IBANValidator $r1;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.routines.IBANValidatorTest;
+        $r1 = <org.apache.commons.validator.routines.IBANValidatorTest: org.apache.commons.validator.routines.IBANValidator VALIDATOR>;
+        $z0 = virtualinvoke $r1.<org.apache.commons.validator.routines.IBANValidator: boolean isValid(java.lang.String)>(null);
+        staticinvoke <org.junit.Assert: void assertFalse(java.lang.String,boolean)>("isValid(null)", $z0);
+        return;
+    }
+
+    public void testHasValidator()
+    {
+        org.apache.commons.validator.routines.IBANValidatorTest r0;
+        org.apache.commons.validator.routines.IBANValidator $r1, $r2;
+        boolean $z0, $z1;
+
+        r0 := @this: org.apache.commons.validator.routines.IBANValidatorTest;
+        $r1 = <org.apache.commons.validator.routines.IBANValidatorTest: org.apache.commons.validator.routines.IBANValidator VALIDATOR>;
+        $z0 = virtualinvoke $r1.<org.apache.commons.validator.routines.IBANValidator: boolean hasValidator(java.lang.String)>("GB");
+        staticinvoke <org.junit.Assert: void assertTrue(java.lang.String,boolean)>("GB", $z0);
+        $r2 = <org.apache.commons.validator.routines.IBANValidatorTest: org.apache.commons.validator.routines.IBANValidator VALIDATOR>;
+        $z1 = virtualinvoke $r2.<org.apache.commons.validator.routines.IBANValidator: boolean hasValidator(java.lang.String)>("gb");
+        staticinvoke <org.junit.Assert: void assertFalse(java.lang.String,boolean)>("gb", $z1);
+        return;
+    }
+
+    public void testGetValidator()
+    {
+        org.apache.commons.validator.routines.IBANValidatorTest r0;
+        org.apache.commons.validator.routines.IBANValidator $r1, $r3;
+        org.apache.commons.validator.routines.IBANValidator$Validator $r2, $r4;
+
+        r0 := @this: org.apache.commons.validator.routines.IBANValidatorTest;
+        $r1 = <org.apache.commons.validator.routines.IBANValidatorTest: org.apache.commons.validator.routines.IBANValidator VALIDATOR>;
+        $r2 = virtualinvoke $r1.<org.apache.commons.validator.routines.IBANValidator: org.apache.commons.validator.routines.IBANValidator$Validator getValidator(java.lang.String)>("GB");
+        staticinvoke <org.junit.Assert: void assertNotNull(java.lang.String,java.lang.Object)>("GB", $r2);
+        $r3 = <org.apache.commons.validator.routines.IBANValidatorTest: org.apache.commons.validator.routines.IBANValidator VALIDATOR>;
+        $r4 = virtualinvoke $r3.<org.apache.commons.validator.routines.IBANValidator: org.apache.commons.validator.routines.IBANValidator$Validator getValidator(java.lang.String)>("gb");
+        staticinvoke <org.junit.Assert: void assertNull(java.lang.String,java.lang.Object)>("gb", $r4);
+        return;
+    }
+
+    public void testSetDefaultValidator1()
+    {
+        org.apache.commons.validator.routines.IBANValidatorTest r0;
+        org.apache.commons.validator.routines.IBANValidator $r1;
+        org.apache.commons.validator.routines.IBANValidator$Validator $r2;
+
+        r0 := @this: org.apache.commons.validator.routines.IBANValidatorTest;
+        $r1 = <org.apache.commons.validator.routines.IBANValidatorTest: org.apache.commons.validator.routines.IBANValidator VALIDATOR>;
+        $r2 = virtualinvoke $r1.<org.apache.commons.validator.routines.IBANValidator: org.apache.commons.validator.routines.IBANValidator$Validator setValidator(java.lang.String,int,java.lang.String)>("GB", 15, "GB");
+        staticinvoke <org.junit.Assert: void assertNotNull(java.lang.Object)>($r2);
+        return;
+    }
+
+    public void testSetDefaultValidator2()
+    {
+        org.apache.commons.validator.routines.IBANValidatorTest r0;
+        org.apache.commons.validator.routines.IBANValidator $r1;
+        org.apache.commons.validator.routines.IBANValidator$Validator $r2;
+
+        r0 := @this: org.apache.commons.validator.routines.IBANValidatorTest;
+        $r1 = <org.apache.commons.validator.routines.IBANValidatorTest: org.apache.commons.validator.routines.IBANValidator VALIDATOR>;
+        $r2 = virtualinvoke $r1.<org.apache.commons.validator.routines.IBANValidator: org.apache.commons.validator.routines.IBANValidator$Validator setValidator(java.lang.String,int,java.lang.String)>("GB", -1, "GB");
+        staticinvoke <org.junit.Assert: void assertNotNull(java.lang.Object)>($r2);
+        return;
+    }
+
+    public void testSetValidatorLC()
+    {
+        org.apache.commons.validator.routines.IBANValidatorTest r0;
+        org.apache.commons.validator.routines.IBANValidator $r1, r2;
+        org.apache.commons.validator.routines.IBANValidator$Validator $r3;
+
+        r0 := @this: org.apache.commons.validator.routines.IBANValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.IBANValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.IBANValidator: void <init>()>();
+        r2 = $r1;
+        $r3 = virtualinvoke r2.<org.apache.commons.validator.routines.IBANValidator: org.apache.commons.validator.routines.IBANValidator$Validator setValidator(java.lang.String,int,java.lang.String)>("gb", 15, "GB");
+        staticinvoke <org.junit.Assert: void assertNotNull(java.lang.Object)>($r3);
+        return;
+    }
+
+    public void testSetValidatorLen7()
+    {
+        org.apache.commons.validator.routines.IBANValidatorTest r0;
+        org.apache.commons.validator.routines.IBANValidator $r1, r2;
+        org.apache.commons.validator.routines.IBANValidator$Validator $r3;
+
+        r0 := @this: org.apache.commons.validator.routines.IBANValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.IBANValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.IBANValidator: void <init>()>();
+        r2 = $r1;
+        $r3 = virtualinvoke r2.<org.apache.commons.validator.routines.IBANValidator: org.apache.commons.validator.routines.IBANValidator$Validator setValidator(java.lang.String,int,java.lang.String)>("GB", 7, "GB");
+        staticinvoke <org.junit.Assert: void assertNotNull(java.lang.Object)>($r3);
+        return;
+    }
+
+    public void testSetValidatorLen35()
+    {
+        org.apache.commons.validator.routines.IBANValidatorTest r0;
+        org.apache.commons.validator.routines.IBANValidator $r1, r2;
+        org.apache.commons.validator.routines.IBANValidator$Validator $r3;
+
+        r0 := @this: org.apache.commons.validator.routines.IBANValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.IBANValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.IBANValidator: void <init>()>();
+        r2 = $r1;
+        $r3 = virtualinvoke r2.<org.apache.commons.validator.routines.IBANValidator: org.apache.commons.validator.routines.IBANValidator$Validator setValidator(java.lang.String,int,java.lang.String)>("GB", 35, "GB");
+        staticinvoke <org.junit.Assert: void assertNotNull(java.lang.Object)>($r3);
+        return;
+    }
+
+    public void testSetValidatorLen_1()
+    {
+        org.apache.commons.validator.routines.IBANValidatorTest r0;
+        org.apache.commons.validator.routines.IBANValidator $r1, r2;
+        org.apache.commons.validator.routines.IBANValidator$Validator $r3, $r4;
+
+        r0 := @this: org.apache.commons.validator.routines.IBANValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.IBANValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.IBANValidator: void <init>()>();
+        r2 = $r1;
+        $r3 = virtualinvoke r2.<org.apache.commons.validator.routines.IBANValidator: org.apache.commons.validator.routines.IBANValidator$Validator setValidator(java.lang.String,int,java.lang.String)>("GB", -1, "");
+        staticinvoke <org.junit.Assert: void assertNotNull(java.lang.String,java.lang.Object)>("should be present", $r3);
+        $r4 = virtualinvoke r2.<org.apache.commons.validator.routines.IBANValidator: org.apache.commons.validator.routines.IBANValidator$Validator setValidator(java.lang.String,int,java.lang.String)>("GB", -1, "");
+        staticinvoke <org.junit.Assert: void assertNull(java.lang.String,java.lang.Object)>("no longer present", $r4);
+        return;
+    }
+}

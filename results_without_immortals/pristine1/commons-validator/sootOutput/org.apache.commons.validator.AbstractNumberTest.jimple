@@ -1,0 +1,147 @@
+public abstract class org.apache.commons.validator.AbstractNumberTest extends org.apache.commons.validator.AbstractCommonTest
+{
+    protected java.lang.String FORM_KEY;
+    protected java.lang.String ACTION;
+
+    public void <init>(java.lang.String)
+    {
+        org.apache.commons.validator.AbstractNumberTest r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.AbstractNumberTest;
+        r1 := @parameter0: java.lang.String;
+        specialinvoke r0.<org.apache.commons.validator.AbstractCommonTest: void <init>(java.lang.String)>(r1);
+        return;
+    }
+
+    protected void setUp() throws java.io.IOException, org.xml.sax.SAXException
+    {
+        org.apache.commons.validator.AbstractNumberTest r0;
+
+        r0 := @this: org.apache.commons.validator.AbstractNumberTest;
+        virtualinvoke r0.<org.apache.commons.validator.AbstractNumberTest: void loadResources(java.lang.String)>("TestNumber-config.xml");
+        return;
+    }
+
+    protected void tearDown()
+    {
+        org.apache.commons.validator.AbstractNumberTest r0;
+
+        r0 := @this: org.apache.commons.validator.AbstractNumberTest;
+        return;
+    }
+
+    public void testNumber() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.AbstractNumberTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+
+        r0 := @this: org.apache.commons.validator.AbstractNumberTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("0");
+        virtualinvoke r0.<org.apache.commons.validator.AbstractNumberTest: void valueTest(java.lang.Object,boolean)>(r2, 1);
+        return;
+    }
+
+    public void testNumberFailure() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.AbstractNumberTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+
+        r0 := @this: org.apache.commons.validator.AbstractNumberTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r0.<org.apache.commons.validator.AbstractNumberTest: void valueTest(java.lang.Object,boolean)>(r2, 0);
+        return;
+    }
+
+    protected void valueTest(java.lang.Object, boolean) throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.AbstractNumberTest r0;
+        java.lang.Object r1;
+        boolean z0, $z1, $z2, $z3;
+        org.apache.commons.validator.Validator $r2, r3;
+        null_type n0;
+        org.apache.commons.validator.ValidatorResult r4;
+        org.apache.commons.validator.ValidatorResources $r5;
+        java.lang.String $r6, $r9, $r10, $r12, $r14, $r15, $r17, $r20, $r21, $r23, $r24, $r26, $r29, $r32, $r33, $r34;
+        org.apache.commons.validator.ValidatorResults r7;
+        java.lang.StringBuilder $r8, $r11, $r13, $r16, $r18, $r19, $r22, $r25, $r27, $r28, $r30, $r31;
+
+        r0 := @this: org.apache.commons.validator.AbstractNumberTest;
+        r1 := @parameter0: java.lang.Object;
+        z0 := @parameter1: boolean;
+        $r2 = new org.apache.commons.validator.Validator;
+        $r5 = r0.<org.apache.commons.validator.AbstractNumberTest: org.apache.commons.validator.ValidatorResources resources>;
+        $r6 = r0.<org.apache.commons.validator.AbstractNumberTest: java.lang.String FORM_KEY>;
+        specialinvoke $r2.<org.apache.commons.validator.Validator: void <init>(org.apache.commons.validator.ValidatorResources,java.lang.String)>($r5, $r6);
+        r3 = $r2;
+        virtualinvoke r3.<org.apache.commons.validator.Validator: void setParameter(java.lang.String,java.lang.Object)>("java.lang.Object", r1);
+        n0 = null;
+        r7 = virtualinvoke r3.<org.apache.commons.validator.Validator: org.apache.commons.validator.ValidatorResults validate()>();
+        staticinvoke <org.apache.commons.validator.AbstractNumberTest: void assertNotNull(java.lang.String,java.lang.Object)>("Results are null.", r7);
+        r4 = virtualinvoke r7.<org.apache.commons.validator.ValidatorResults: org.apache.commons.validator.ValidatorResult getValidatorResult(java.lang.String)>("value");
+        $r8 = new java.lang.StringBuilder;
+        $r9 = r0.<org.apache.commons.validator.AbstractNumberTest: java.lang.String ACTION>;
+        $r10 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r9);
+        specialinvoke $r8.<java.lang.StringBuilder: void <init>(java.lang.String)>($r10);
+        $r11 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" value ValidatorResult should not be null.");
+        $r12 = virtualinvoke $r11.<java.lang.StringBuilder: java.lang.String toString()>();
+        staticinvoke <org.apache.commons.validator.AbstractNumberTest: void assertNotNull(java.lang.String,java.lang.Object)>($r12, r4);
+        $r13 = new java.lang.StringBuilder;
+        $r14 = r0.<org.apache.commons.validator.AbstractNumberTest: java.lang.String ACTION>;
+        $r15 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r14);
+        specialinvoke $r13.<java.lang.StringBuilder: void <init>(java.lang.String)>($r15);
+        $r16 = virtualinvoke $r13.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" value ValidatorResult should contain the \'");
+        $r17 = r0.<org.apache.commons.validator.AbstractNumberTest: java.lang.String ACTION>;
+        $r18 = virtualinvoke $r16.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r17);
+        $r19 = virtualinvoke $r18.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' action.");
+        $r20 = virtualinvoke $r19.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r21 = r0.<org.apache.commons.validator.AbstractNumberTest: java.lang.String ACTION>;
+        $z1 = virtualinvoke r4.<org.apache.commons.validator.ValidatorResult: boolean containsAction(java.lang.String)>($r21);
+        staticinvoke <org.apache.commons.validator.AbstractNumberTest: void assertTrue(java.lang.String,boolean)>($r20, $z1);
+        $r22 = new java.lang.StringBuilder;
+        $r23 = r0.<org.apache.commons.validator.AbstractNumberTest: java.lang.String ACTION>;
+        $r24 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r23);
+        specialinvoke $r22.<java.lang.StringBuilder: void <init>(java.lang.String)>($r24);
+        $r25 = virtualinvoke $r22.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" value ValidatorResult for the \'");
+        $r26 = r0.<org.apache.commons.validator.AbstractNumberTest: java.lang.String ACTION>;
+        $r27 = virtualinvoke $r25.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r26);
+        $r28 = virtualinvoke $r27.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' action should have ");
+        if z0 == 0 goto label0;
+
+        $r29 = "passed";
+        goto label1;
+
+     label0:
+        $r29 = "failed";
+
+     label1:
+        $r30 = virtualinvoke $r28.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r29);
+        $r31 = virtualinvoke $r30.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(".");
+        $r32 = virtualinvoke $r31.<java.lang.StringBuilder: java.lang.String toString()>();
+        if z0 == 0 goto label2;
+
+        $r33 = r0.<org.apache.commons.validator.AbstractNumberTest: java.lang.String ACTION>;
+        $z2 = virtualinvoke r4.<org.apache.commons.validator.ValidatorResult: boolean isValid(java.lang.String)>($r33);
+        goto label4;
+
+     label2:
+        $r34 = r0.<org.apache.commons.validator.AbstractNumberTest: java.lang.String ACTION>;
+        $z3 = virtualinvoke r4.<org.apache.commons.validator.ValidatorResult: boolean isValid(java.lang.String)>($r34);
+        if $z3 == 0 goto label3;
+
+        $z2 = 0;
+        goto label4;
+
+     label3:
+        $z2 = 1;
+
+     label4:
+        staticinvoke <org.apache.commons.validator.AbstractNumberTest: void assertTrue(java.lang.String,boolean)>($r32, $z2);
+        return;
+    }
+}

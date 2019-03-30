@@ -1,0 +1,47 @@
+public final class org.apache.commons.validator.routines.checkdigit.EAN13CheckDigit extends org.apache.commons.validator.routines.checkdigit.ModulusCheckDigit
+{
+    private static final long serialVersionUID;
+    public static final org.apache.commons.validator.routines.checkdigit.CheckDigit EAN13_CHECK_DIGIT;
+    private static final int[] POSITION_WEIGHT;
+
+    static void <clinit>()
+    {
+        org.apache.commons.validator.routines.checkdigit.EAN13CheckDigit $r0;
+        int[] $r1;
+
+        $r0 = new org.apache.commons.validator.routines.checkdigit.EAN13CheckDigit;
+        specialinvoke $r0.<org.apache.commons.validator.routines.checkdigit.EAN13CheckDigit: void <init>()>();
+        <org.apache.commons.validator.routines.checkdigit.EAN13CheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit EAN13_CHECK_DIGIT> = $r0;
+        $r1 = newarray (int)[2];
+        $r1[0] = 3;
+        $r1[1] = 1;
+        <org.apache.commons.validator.routines.checkdigit.EAN13CheckDigit: int[] POSITION_WEIGHT> = $r1;
+        return;
+    }
+
+    public void <init>()
+    {
+        org.apache.commons.validator.routines.checkdigit.EAN13CheckDigit r0;
+
+        r0 := @this: org.apache.commons.validator.routines.checkdigit.EAN13CheckDigit;
+        specialinvoke r0.<org.apache.commons.validator.routines.checkdigit.ModulusCheckDigit: void <init>(int)>(10);
+        return;
+    }
+
+    protected int weightedValue(int, int, int)
+    {
+        org.apache.commons.validator.routines.checkdigit.EAN13CheckDigit r0;
+        int i0, i1, i2, i3, $i4, $i5;
+        int[] $r1;
+
+        r0 := @this: org.apache.commons.validator.routines.checkdigit.EAN13CheckDigit;
+        i0 := @parameter0: int;
+        i1 := @parameter1: int;
+        i2 := @parameter2: int;
+        $r1 = <org.apache.commons.validator.routines.checkdigit.EAN13CheckDigit: int[] POSITION_WEIGHT>;
+        $i4 = i2 % 2;
+        i3 = $r1[$i4];
+        $i5 = i0 * i3;
+        return $i5;
+    }
+}

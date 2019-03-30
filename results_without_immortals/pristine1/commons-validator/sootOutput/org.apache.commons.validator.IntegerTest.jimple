@@ -1,0 +1,109 @@
+public class org.apache.commons.validator.IntegerTest extends org.apache.commons.validator.AbstractNumberTest
+{
+
+    public void <init>(java.lang.String)
+    {
+        org.apache.commons.validator.IntegerTest r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.IntegerTest;
+        r1 := @parameter0: java.lang.String;
+        specialinvoke r0.<org.apache.commons.validator.AbstractNumberTest: void <init>(java.lang.String)>(r1);
+        r0.<org.apache.commons.validator.IntegerTest: java.lang.String FORM_KEY> = "intForm";
+        r0.<org.apache.commons.validator.IntegerTest: java.lang.String ACTION> = "int";
+        return;
+    }
+
+    public void testInt() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.IntegerTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+
+        r0 := @this: org.apache.commons.validator.IntegerTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("0");
+        virtualinvoke r0.<org.apache.commons.validator.IntegerTest: void valueTest(java.lang.Object,boolean)>(r2, 1);
+        return;
+    }
+
+    public void testIntMin() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.IntegerTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+        java.lang.Integer $r3;
+        java.lang.String $r4;
+
+        r0 := @this: org.apache.commons.validator.IntegerTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        $r3 = new java.lang.Integer;
+        specialinvoke $r3.<java.lang.Integer: void <init>(int)>(-2147483648);
+        $r4 = virtualinvoke $r3.<java.lang.Integer: java.lang.String toString()>();
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>($r4);
+        virtualinvoke r0.<org.apache.commons.validator.IntegerTest: void valueTest(java.lang.Object,boolean)>(r2, 1);
+        return;
+    }
+
+    public void testIntegerMax() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.IntegerTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+        java.lang.Integer $r3;
+        java.lang.String $r4;
+
+        r0 := @this: org.apache.commons.validator.IntegerTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        $r3 = new java.lang.Integer;
+        specialinvoke $r3.<java.lang.Integer: void <init>(int)>(2147483647);
+        $r4 = virtualinvoke $r3.<java.lang.Integer: java.lang.String toString()>();
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>($r4);
+        virtualinvoke r0.<org.apache.commons.validator.IntegerTest: void valueTest(java.lang.Object,boolean)>(r2, 1);
+        return;
+    }
+
+    public void testIntFailure() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.IntegerTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+
+        r0 := @this: org.apache.commons.validator.IntegerTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r0.<org.apache.commons.validator.IntegerTest: void valueTest(java.lang.Object,boolean)>(r2, 0);
+        return;
+    }
+
+    public void testIntBeyondMin() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.IntegerTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+
+        r0 := @this: org.apache.commons.validator.IntegerTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("-21474836481");
+        virtualinvoke r0.<org.apache.commons.validator.IntegerTest: void valueTest(java.lang.Object,boolean)>(r2, 0);
+        return;
+    }
+
+    public void testIntBeyondMax() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.IntegerTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+
+        r0 := @this: org.apache.commons.validator.IntegerTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("21474836471");
+        virtualinvoke r0.<org.apache.commons.validator.IntegerTest: void valueTest(java.lang.Object,boolean)>(r2, 0);
+        return;
+    }
+}

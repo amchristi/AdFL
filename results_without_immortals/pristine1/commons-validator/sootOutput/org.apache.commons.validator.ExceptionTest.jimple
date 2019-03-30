@@ -1,0 +1,163 @@
+public class org.apache.commons.validator.ExceptionTest extends org.apache.commons.validator.AbstractCommonTest
+{
+    protected static java.lang.String FORM_KEY;
+    protected static java.lang.String ACTION;
+
+    static void <clinit>()
+    {
+        <org.apache.commons.validator.ExceptionTest: java.lang.String FORM_KEY> = "exceptionForm";
+        <org.apache.commons.validator.ExceptionTest: java.lang.String ACTION> = "raiseException";
+        return;
+    }
+
+    public void <init>(java.lang.String)
+    {
+        org.apache.commons.validator.ExceptionTest r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.ExceptionTest;
+        r1 := @parameter0: java.lang.String;
+        specialinvoke r0.<org.apache.commons.validator.AbstractCommonTest: void <init>(java.lang.String)>(r1);
+        return;
+    }
+
+    protected void setUp() throws java.io.IOException, org.xml.sax.SAXException
+    {
+        org.apache.commons.validator.ExceptionTest r0;
+
+        r0 := @this: org.apache.commons.validator.ExceptionTest;
+        virtualinvoke r0.<org.apache.commons.validator.ExceptionTest: void loadResources(java.lang.String)>("ExceptionTest-config.xml");
+        return;
+    }
+
+    public void testValidatorException()
+    {
+        org.apache.commons.validator.ExceptionTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+        java.lang.String $r3, $r10, $r11;
+        org.apache.commons.validator.Validator r4, $r6;
+        org.apache.commons.validator.ValidatorException r5, $r9;
+        org.apache.commons.validator.ValidatorResources $r7;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.ExceptionTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("VALIDATOR");
+        $r6 = new org.apache.commons.validator.Validator;
+        $r7 = r0.<org.apache.commons.validator.ExceptionTest: org.apache.commons.validator.ValidatorResources resources>;
+        $r3 = <org.apache.commons.validator.ExceptionTest: java.lang.String FORM_KEY>;
+        specialinvoke $r6.<org.apache.commons.validator.Validator: void <init>(org.apache.commons.validator.ValidatorResources,java.lang.String)>($r7, $r3);
+        r4 = $r6;
+        virtualinvoke r4.<org.apache.commons.validator.Validator: void setParameter(java.lang.String,java.lang.Object)>("java.lang.Object", r2);
+
+     label0:
+        virtualinvoke r4.<org.apache.commons.validator.Validator: org.apache.commons.validator.ValidatorResults validate()>();
+        staticinvoke <org.apache.commons.validator.ExceptionTest: void fail(java.lang.String)>("ValidatorException should occur here!");
+
+     label1:
+        goto label3;
+
+     label2:
+        $r9 := @caughtexception;
+        r5 = $r9;
+        $r10 = "VALIDATOR-EXCEPTION";
+        $r11 = virtualinvoke r5.<org.apache.commons.validator.ValidatorException: java.lang.String getMessage()>();
+        $z0 = virtualinvoke $r10.<java.lang.String: boolean equals(java.lang.Object)>($r11);
+        staticinvoke <org.apache.commons.validator.ExceptionTest: void assertTrue(boolean)>($z0);
+
+     label3:
+        return;
+
+        catch org.apache.commons.validator.ValidatorException from label0 to label1 with label2;
+    }
+
+    public void XtestRuntimeException() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.ExceptionTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+        java.lang.String $r3;
+        org.apache.commons.validator.Validator r4, $r6;
+        java.lang.RuntimeException r5, $r9;
+        org.apache.commons.validator.ValidatorResources $r7;
+
+        r0 := @this: org.apache.commons.validator.ExceptionTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("RUNTIME");
+        $r6 = new org.apache.commons.validator.Validator;
+        $r7 = r0.<org.apache.commons.validator.ExceptionTest: org.apache.commons.validator.ValidatorResources resources>;
+        $r3 = <org.apache.commons.validator.ExceptionTest: java.lang.String FORM_KEY>;
+        specialinvoke $r6.<org.apache.commons.validator.Validator: void <init>(org.apache.commons.validator.ValidatorResources,java.lang.String)>($r7, $r3);
+        r4 = $r6;
+        virtualinvoke r4.<org.apache.commons.validator.Validator: void setParameter(java.lang.String,java.lang.Object)>("java.lang.Object", r2);
+
+     label0:
+        virtualinvoke r4.<org.apache.commons.validator.Validator: org.apache.commons.validator.ValidatorResults validate()>();
+
+     label1:
+        goto label3;
+
+     label2:
+        $r9 := @caughtexception;
+        r5 = $r9;
+        staticinvoke <org.apache.commons.validator.ExceptionTest: void fail(java.lang.String)>("RuntimeExceptions should be treated as validation failures in Validator 1.x.");
+
+     label3:
+        return;
+
+        catch java.lang.RuntimeException from label0 to label1 with label2;
+    }
+
+    public void XtestCheckedException()
+    {
+        org.apache.commons.validator.ExceptionTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+        java.lang.String $r3, $r12, $r13;
+        org.apache.commons.validator.Validator r4, $r6;
+        org.apache.commons.validator.ValidatorException r5, $r9;
+        org.apache.commons.validator.ValidatorResources $r7;
+        java.lang.Exception $r10, r11;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.ExceptionTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("CHECKED");
+        $r6 = new org.apache.commons.validator.Validator;
+        $r7 = r0.<org.apache.commons.validator.ExceptionTest: org.apache.commons.validator.ValidatorResources resources>;
+        $r3 = <org.apache.commons.validator.ExceptionTest: java.lang.String FORM_KEY>;
+        specialinvoke $r6.<org.apache.commons.validator.Validator: void <init>(org.apache.commons.validator.ValidatorResources,java.lang.String)>($r7, $r3);
+        r4 = $r6;
+        virtualinvoke r4.<org.apache.commons.validator.Validator: void setParameter(java.lang.String,java.lang.Object)>("java.lang.Object", r2);
+
+     label0:
+        virtualinvoke r4.<org.apache.commons.validator.Validator: org.apache.commons.validator.ValidatorResults validate()>();
+
+     label1:
+        goto label4;
+
+     label2:
+        $r9 := @caughtexception;
+        r5 = $r9;
+        staticinvoke <org.apache.commons.validator.ExceptionTest: void fail(java.lang.String)>("Checked exceptions are not wrapped in ValidatorException in Validator 1.x.");
+        goto label4;
+
+     label3:
+        $r10 := @caughtexception;
+        r11 = $r10;
+        $r12 = "CHECKED-EXCEPTION";
+        $r13 = virtualinvoke r11.<java.lang.Exception: java.lang.String getMessage()>();
+        $z0 = virtualinvoke $r12.<java.lang.String: boolean equals(java.lang.Object)>($r13);
+        staticinvoke <org.apache.commons.validator.ExceptionTest: void assertTrue(boolean)>($z0);
+
+     label4:
+        return;
+
+        catch org.apache.commons.validator.ValidatorException from label0 to label1 with label2;
+        catch java.lang.Exception from label0 to label1 with label3;
+    }
+}

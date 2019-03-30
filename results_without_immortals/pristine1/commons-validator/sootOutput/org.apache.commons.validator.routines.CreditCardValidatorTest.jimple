@@ -1,0 +1,840 @@
+public class org.apache.commons.validator.routines.CreditCardValidatorTest extends junit.framework.TestCase
+{
+    private static final java.lang.String VALID_VISA;
+    private static final java.lang.String ERROR_VISA;
+    private static final java.lang.String VALID_SHORT_VISA;
+    private static final java.lang.String ERROR_SHORT_VISA;
+    private static final java.lang.String VALID_AMEX;
+    private static final java.lang.String ERROR_AMEX;
+    private static final java.lang.String VALID_MASTERCARD;
+    private static final java.lang.String ERROR_MASTERCARD;
+    private static final java.lang.String VALID_DISCOVER;
+    private static final java.lang.String ERROR_DISCOVER;
+    private static final java.lang.String VALID_DISCOVER65;
+    private static final java.lang.String ERROR_DISCOVER65;
+    private static final java.lang.String VALID_DINERS;
+    private static final java.lang.String ERROR_DINERS;
+    private static final java.lang.String VALID_VPAY;
+    private static final java.lang.String VALID_VPAY2;
+    private static final java.lang.String ERROR_VPAY;
+
+    public void <init>(java.lang.String)
+    {
+        org.apache.commons.validator.routines.CreditCardValidatorTest r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.routines.CreditCardValidatorTest;
+        r1 := @parameter0: java.lang.String;
+        specialinvoke r0.<junit.framework.TestCase: void <init>(java.lang.String)>(r1);
+        return;
+    }
+
+    public void testIsValid()
+    {
+        org.apache.commons.validator.routines.CreditCardValidatorTest r0;
+        org.apache.commons.validator.routines.CreditCardValidator $r1, r2, $r4, r5;
+        java.lang.Object $r3;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10, $z11, $z12, $z13, $z14, $z15, $z16, $z17, $z18;
+
+        r0 := @this: org.apache.commons.validator.routines.CreditCardValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.CreditCardValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.CreditCardValidator: void <init>()>();
+        r2 = $r1;
+        $r3 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: java.lang.Object validate(java.lang.String)>(null);
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertNull(java.lang.Object)>($r3);
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>(null);
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(boolean)>($z0);
+        $z1 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(boolean)>($z1);
+        $z2 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("123456789012");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(boolean)>($z2);
+        $z3 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("12345678901234567890");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(boolean)>($z3);
+        $z4 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("4417123456789112");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(boolean)>($z4);
+        $z5 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("4417q23456w89113");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(boolean)>($z5);
+        $z6 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("4417123456789113");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(boolean)>($z6);
+        $z7 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("4222222222222");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(boolean)>($z7);
+        $z8 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("378282246310005");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(boolean)>($z8);
+        $z9 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("5105105105105100");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(boolean)>($z9);
+        $z10 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("6011000990139424");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(boolean)>($z10);
+        $z11 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("6534567890123458");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(boolean)>($z11);
+        $z12 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("4417123456789112");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(boolean)>($z12);
+        $z13 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("4222222222229");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(boolean)>($z13);
+        $z14 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("378282246310001");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(boolean)>($z14);
+        $z15 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("5105105105105105");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(boolean)>($z15);
+        $z16 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("6011000990139421");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(boolean)>($z16);
+        $z17 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("6534567890123450");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(boolean)>($z17);
+        $r4 = new org.apache.commons.validator.routines.CreditCardValidator;
+        specialinvoke $r4.<org.apache.commons.validator.routines.CreditCardValidator: void <init>(long)>(1L);
+        r5 = $r4;
+        $z18 = virtualinvoke r5.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("4417123456789113");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(boolean)>($z18);
+        return;
+    }
+
+    public void testAddAllowedCardType()
+    {
+        org.apache.commons.validator.routines.CreditCardValidatorTest r0;
+        org.apache.commons.validator.routines.CreditCardValidator $r1, r2;
+        boolean $z0, $z1, $z2, $z3, $z4;
+
+        r0 := @this: org.apache.commons.validator.routines.CreditCardValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.CreditCardValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.CreditCardValidator: void <init>(long)>(0L);
+        r2 = $r1;
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("4417123456789113");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(boolean)>($z0);
+        $z1 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("378282246310005");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(boolean)>($z1);
+        $z2 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("5105105105105100");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(boolean)>($z2);
+        $z3 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("6011000990139424");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(boolean)>($z3);
+        $z4 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("30569309025904");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(boolean)>($z4);
+        return;
+    }
+
+    public void testArrayConstructor()
+    {
+        org.apache.commons.validator.routines.CreditCardValidatorTest r0;
+        org.apache.commons.validator.routines.CreditCardValidator $r1, r3, $r7;
+        org.apache.commons.validator.routines.CodeValidator $r2, $r6;
+        java.lang.IllegalArgumentException r4, $r8;
+        org.apache.commons.validator.routines.CodeValidator[] $r5;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9;
+
+        r0 := @this: org.apache.commons.validator.routines.CreditCardValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.CreditCardValidator;
+        $r5 = newarray (org.apache.commons.validator.routines.CodeValidator)[2];
+        $r2 = <org.apache.commons.validator.routines.CreditCardValidator: org.apache.commons.validator.routines.CodeValidator VISA_VALIDATOR>;
+        $r5[0] = $r2;
+        $r6 = <org.apache.commons.validator.routines.CreditCardValidator: org.apache.commons.validator.routines.CodeValidator AMEX_VALIDATOR>;
+        $r5[1] = $r6;
+        specialinvoke $r1.<org.apache.commons.validator.routines.CreditCardValidator: void <init>(org.apache.commons.validator.routines.CodeValidator[])>($r5);
+        r3 = $r1;
+        $z0 = virtualinvoke r3.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("4417123456789113");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(boolean)>($z0);
+        $z1 = virtualinvoke r3.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("4222222222222");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(boolean)>($z1);
+        $z2 = virtualinvoke r3.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("378282246310005");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(boolean)>($z2);
+        $z3 = virtualinvoke r3.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("5105105105105100");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(boolean)>($z3);
+        $z4 = virtualinvoke r3.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("6011000990139424");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(boolean)>($z4);
+        $z5 = virtualinvoke r3.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("4417123456789112");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(boolean)>($z5);
+        $z6 = virtualinvoke r3.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("4222222222229");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(boolean)>($z6);
+        $z7 = virtualinvoke r3.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("378282246310001");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(boolean)>($z7);
+        $z8 = virtualinvoke r3.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("5105105105105105");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(boolean)>($z8);
+        $z9 = virtualinvoke r3.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("6011000990139421");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(boolean)>($z9);
+
+     label0:
+        $r7 = new org.apache.commons.validator.routines.CreditCardValidator;
+        specialinvoke $r7.<org.apache.commons.validator.routines.CreditCardValidator: void <init>(org.apache.commons.validator.routines.CodeValidator[])>(null);
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void fail(java.lang.String)>("Expected IllegalArgumentException");
+
+     label1:
+        goto label3;
+
+     label2:
+        $r8 := @caughtexception;
+        r4 = $r8;
+
+     label3:
+        return;
+
+        catch java.lang.IllegalArgumentException from label0 to label1 with label2;
+    }
+
+    public void testAmexValidator()
+    {
+        org.apache.commons.validator.routines.CreditCardValidatorTest r0;
+        org.apache.commons.validator.routines.CodeValidator r1;
+        org.apache.commons.validator.routines.RegexValidator r2;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10, $z11, $z12, $z13, $z14, $z15, $z16, $z17, $z18, $z19, $z20, $z21, $z22, $z23, $z24, $z25, $z26;
+        java.lang.Object $r3, $r4;
+
+        r0 := @this: org.apache.commons.validator.routines.CreditCardValidatorTest;
+        r1 = <org.apache.commons.validator.routines.CreditCardValidator: org.apache.commons.validator.routines.CodeValidator AMEX_VALIDATOR>;
+        r2 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: org.apache.commons.validator.routines.RegexValidator getRegexValidator()>();
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("343456789012");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 12", $z0);
+        $z1 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("3434567890123");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 13", $z1);
+        $z2 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("34345678901234");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 14", $z2);
+        $z3 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("343456789012345");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Length 15", $z3);
+        $z4 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("3434567890123456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 16", $z4);
+        $z5 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("34345678901234567");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 17", $z5);
+        $z6 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("343456789012345678");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 18", $z6);
+        $z7 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("333456789012345");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Prefix 33", $z7);
+        $z8 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("343456789012345");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Prefix 34", $z8);
+        $z9 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("353456789012345");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Prefix 35", $z9);
+        $z10 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("363456789012345");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Prefix 36", $z10);
+        $z11 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("373456789012345");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Prefix 37", $z11);
+        $z12 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("383456789012345");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Prefix 38", $z12);
+        $z13 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("413456789012345");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Prefix 41", $z13);
+        $z14 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("3434567x9012345");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Invalid Char", $z14);
+        $z15 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("378282246310001");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Valid regex", $z15);
+        $z16 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("378282246310001");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Invalid", $z16);
+        $r3 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>("378282246310001");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertNull(java.lang.String,java.lang.Object)>("validate()", $r3);
+        $r4 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>("378282246310005");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertEquals(java.lang.Object,java.lang.Object)>("378282246310005", $r4);
+        $z17 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("378282246310005");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Amex", $z17);
+        $z18 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("30569309025904");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Diners", $z18);
+        $z19 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("6011000990139424");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Discover", $z19);
+        $z20 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("5105105105105100");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Mastercard", $z20);
+        $z21 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("4417123456789113");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Visa", $z21);
+        $z22 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("4222222222222");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Visa Short", $z22);
+        $z23 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("371449635398431");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Valid-A", $z23);
+        $z24 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("340000000000009");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Valid-B", $z24);
+        $z25 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("370000000000002");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Valid-C", $z25);
+        $z26 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("378734493671000");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Valid-D", $z26);
+        return;
+    }
+
+    public void testAmexOption()
+    {
+        org.apache.commons.validator.routines.CreditCardValidatorTest r0;
+        org.apache.commons.validator.routines.CreditCardValidator $r1, r2;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6;
+        java.lang.Object $r3, $r4;
+
+        r0 := @this: org.apache.commons.validator.routines.CreditCardValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.CreditCardValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.CreditCardValidator: void <init>(long)>(1L);
+        r2 = $r1;
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("378282246310001");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Invalid", $z0);
+        $r3 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: java.lang.Object validate(java.lang.String)>("378282246310001");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertNull(java.lang.String,java.lang.Object)>("validate()", $r3);
+        $r4 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: java.lang.Object validate(java.lang.String)>("378282246310005");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertEquals(java.lang.Object,java.lang.Object)>("378282246310005", $r4);
+        $z1 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("378282246310005");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Amex", $z1);
+        $z2 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("30569309025904");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Diners", $z2);
+        $z3 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("6011000990139424");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Discover", $z3);
+        $z4 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("5105105105105100");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Mastercard", $z4);
+        $z5 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("4417123456789113");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Visa", $z5);
+        $z6 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("4222222222222");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Visa Short", $z6);
+        return;
+    }
+
+    public void testDinersValidator()
+    {
+        org.apache.commons.validator.routines.CreditCardValidatorTest r0;
+        org.apache.commons.validator.routines.CodeValidator r1;
+        org.apache.commons.validator.routines.RegexValidator r2;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10, $z11, $z12, $z13, $z14, $z15, $z16, $z17, $z18, $z19, $z20, $z21, $z22, $z23, $z24, $z25, $z26, $z27, $z28, $z29, $z30, $z31, $z32, $z33, $z34, $z35, $z36, $z37, $z38, $z39, $z40, $z41;
+        java.lang.Object $r3, $r4;
+
+        r0 := @this: org.apache.commons.validator.routines.CreditCardValidatorTest;
+        r1 = <org.apache.commons.validator.routines.CreditCardValidator: org.apache.commons.validator.routines.CodeValidator DINERS_VALIDATOR>;
+        r2 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: org.apache.commons.validator.routines.RegexValidator getRegexValidator()>();
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("300456789012");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 12-300", $z0);
+        $z1 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("363456789012");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 12-36", $z1);
+        $z2 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("3004567890123");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 13-300", $z2);
+        $z3 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("3634567890123");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 13-36", $z3);
+        $z4 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("30045678901234");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Length 14-300", $z4);
+        $z5 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("36345678901234");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Length 14-36", $z5);
+        $z6 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("300456789012345");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 15-300", $z6);
+        $z7 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("363456789012345");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 15-36", $z7);
+        $z8 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("3004567890123456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 16-300", $z8);
+        $z9 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("3634567890123456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 16-36", $z9);
+        $z10 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("30045678901234567");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 17-300", $z10);
+        $z11 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("36345678901234567");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 17-36", $z11);
+        $z12 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("300456789012345678");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 18-300", $z12);
+        $z13 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("363456789012345678");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 18-36", $z13);
+        $z14 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("30045678901234");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Prefix 300", $z14);
+        $z15 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("30145678901234");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Prefix 301", $z15);
+        $z16 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("30245678901234");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Prefix 302", $z16);
+        $z17 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("30345678901234");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Prefix 303", $z17);
+        $z18 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("30445678901234");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Prefix 304", $z18);
+        $z19 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("30545678901234");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Prefix 305", $z19);
+        $z20 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("30645678901234");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Prefix 306", $z20);
+        $z21 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("30945678901234");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Prefix 3094", $z21);
+        $z22 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("30955678901234");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Prefix 3095", $z22);
+        $z23 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("30965678901234");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Prefix 3096", $z23);
+        $z24 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("35345678901234");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Prefix 35", $z24);
+        $z25 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("36345678901234");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Prefix 36", $z25);
+        $z26 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("37345678901234");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Prefix 37", $z26);
+        $z27 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("38345678901234");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Prefix 38", $z27);
+        $z28 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("39345678901234");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Prefix 39", $z28);
+        $z29 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("3004567x901234");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Invalid Char-A", $z29);
+        $z30 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("3634567x901234");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Invalid Char-B", $z30);
+        $z31 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("30569309025901");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Valid regex", $z31);
+        $z32 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("30569309025901");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Invalid", $z32);
+        $r3 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>("30569309025901");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertNull(java.lang.String,java.lang.Object)>("validate()", $r3);
+        $r4 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>("30569309025904");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertEquals(java.lang.Object,java.lang.Object)>("30569309025904", $r4);
+        $z33 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("378282246310005");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Amex", $z33);
+        $z34 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("30569309025904");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Diners", $z34);
+        $z35 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("6011000990139424");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Discover", $z35);
+        $z36 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("5105105105105100");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Mastercard", $z36);
+        $z37 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("4417123456789113");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Visa", $z37);
+        $z38 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("4222222222222");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Visa Short", $z38);
+        $z39 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("30000000000004");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Valid-A", $z39);
+        $z40 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("30123456789019");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Valid-B", $z40);
+        $z41 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("36432685260294");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Valid-C", $z41);
+        return;
+    }
+
+    public void testDinersOption()
+    {
+        org.apache.commons.validator.routines.CreditCardValidatorTest r0;
+        org.apache.commons.validator.routines.CreditCardValidator $r1, r2;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6;
+        java.lang.Object $r3, $r4;
+
+        r0 := @this: org.apache.commons.validator.routines.CreditCardValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.CreditCardValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.CreditCardValidator: void <init>(long)>(16L);
+        r2 = $r1;
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("30569309025901");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Invalid", $z0);
+        $r3 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: java.lang.Object validate(java.lang.String)>("30569309025901");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertNull(java.lang.String,java.lang.Object)>("validate()", $r3);
+        $r4 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: java.lang.Object validate(java.lang.String)>("30569309025904");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertEquals(java.lang.Object,java.lang.Object)>("30569309025904", $r4);
+        $z1 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("378282246310005");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Amex", $z1);
+        $z2 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("30569309025904");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Diners", $z2);
+        $z3 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("6011000990139424");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Discover", $z3);
+        $z4 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("5105105105105100");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Mastercard", $z4);
+        $z5 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("4417123456789113");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Visa", $z5);
+        $z6 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("4222222222222");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Visa Short", $z6);
+        return;
+    }
+
+    public void testDiscoverValidator()
+    {
+        org.apache.commons.validator.routines.CreditCardValidatorTest r0;
+        org.apache.commons.validator.routines.CodeValidator r1;
+        org.apache.commons.validator.routines.RegexValidator r2;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10, $z11, $z12, $z13, $z14, $z15, $z16, $z17, $z18, $z19, $z20, $z21, $z22, $z23, $z24, $z25, $z26, $z27, $z28, $z29, $z30, $z31, $z32, $z33, $z34, $z35, $z36;
+        java.lang.Object $r3, $r4, $r5;
+
+        r0 := @this: org.apache.commons.validator.routines.CreditCardValidatorTest;
+        r1 = <org.apache.commons.validator.routines.CreditCardValidator: org.apache.commons.validator.routines.CodeValidator DISCOVER_VALIDATOR>;
+        r2 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: org.apache.commons.validator.routines.RegexValidator getRegexValidator()>();
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("601156789012");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 12-6011", $z0);
+        $z1 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("653456789012");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 12-65", $z1);
+        $z2 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("6011567890123");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 13-6011", $z2);
+        $z3 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("6534567890123");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 13-65", $z3);
+        $z4 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("60115678901234");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 14-6011", $z4);
+        $z5 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("65345678901234");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 14-65", $z5);
+        $z6 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("601156789012345");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 15-6011", $z6);
+        $z7 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("653456789012345");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 15-65", $z7);
+        $z8 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("6011567890123456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Length 16-6011", $z8);
+        $z9 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("6444567890123456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Length 16-644", $z9);
+        $z10 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("6484567890123456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Length 16-648", $z10);
+        $z11 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("6534567890123456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Length 16-65", $z11);
+        $z12 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("60115678901234567");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 17-6011", $z12);
+        $z13 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("65345678901234567");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 17-65", $z13);
+        $z14 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("601156789012345678");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 18-6011", $z14);
+        $z15 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("653456789012345678");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 18-65", $z15);
+        $z16 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("6404567890123456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Prefix 640", $z16);
+        $z17 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("6414567890123456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Prefix 641", $z17);
+        $z18 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("6424567890123456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Prefix 642", $z18);
+        $z19 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("6434567890123456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Prefix 643", $z19);
+        $z20 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("6010567890123456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Prefix 6010", $z20);
+        $z21 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("6012567890123456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Prefix 6012", $z21);
+        $z22 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("6011567x90123456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Invalid Char", $z22);
+        $z23 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("6011000990139421");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Valid regex", $z23);
+        $z24 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("6534567890123450");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Valid regex65", $z24);
+        $z25 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("6011000990139421");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Invalid", $z25);
+        $z26 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("6534567890123450");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Invalid65", $z26);
+        $r3 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>("6011000990139421");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertNull(java.lang.String,java.lang.Object)>("validate()", $r3);
+        $r4 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>("6011000990139424");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertEquals(java.lang.Object,java.lang.Object)>("6011000990139424", $r4);
+        $r5 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>("6534567890123458");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertEquals(java.lang.Object,java.lang.Object)>("6534567890123458", $r5);
+        $z27 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("378282246310005");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Amex", $z27);
+        $z28 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("30569309025904");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Diners", $z28);
+        $z29 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("6011000990139424");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Discover", $z29);
+        $z30 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("6534567890123458");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Discover", $z30);
+        $z31 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("5105105105105100");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Mastercard", $z31);
+        $z32 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("4417123456789113");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Visa", $z32);
+        $z33 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("4222222222222");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Visa Short", $z33);
+        $z34 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("6011111111111117");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Valid-A", $z34);
+        $z35 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("6011000000000004");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Valid-B", $z35);
+        $z36 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("6011000000000012");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Valid-C", $z36);
+        return;
+    }
+
+    public void testDiscoverOption()
+    {
+        org.apache.commons.validator.routines.CreditCardValidatorTest r0;
+        org.apache.commons.validator.routines.CreditCardValidator $r1, r2;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8;
+        java.lang.Object $r3, $r4, $r5;
+
+        r0 := @this: org.apache.commons.validator.routines.CreditCardValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.CreditCardValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.CreditCardValidator: void <init>(long)>(8L);
+        r2 = $r1;
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("6011000990139421");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Invalid", $z0);
+        $z1 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("6534567890123450");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Invalid65", $z1);
+        $r3 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: java.lang.Object validate(java.lang.String)>("6011000990139421");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertNull(java.lang.String,java.lang.Object)>("validate()", $r3);
+        $r4 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: java.lang.Object validate(java.lang.String)>("6011000990139424");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertEquals(java.lang.Object,java.lang.Object)>("6011000990139424", $r4);
+        $r5 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: java.lang.Object validate(java.lang.String)>("6534567890123458");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertEquals(java.lang.Object,java.lang.Object)>("6534567890123458", $r5);
+        $z2 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("378282246310005");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Amex", $z2);
+        $z3 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("30569309025904");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Diners", $z3);
+        $z4 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("6011000990139424");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Discover", $z4);
+        $z5 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("6534567890123458");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Discover", $z5);
+        $z6 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("5105105105105100");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Mastercard", $z6);
+        $z7 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("4417123456789113");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Visa", $z7);
+        $z8 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("4222222222222");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Visa Short", $z8);
+        return;
+    }
+
+    public void testMastercardValidator()
+    {
+        org.apache.commons.validator.routines.CreditCardValidatorTest r0;
+        org.apache.commons.validator.routines.CodeValidator r1;
+        org.apache.commons.validator.routines.RegexValidator r2;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10, $z11, $z12, $z13, $z14, $z15, $z16, $z17, $z18, $z19, $z20, $z21, $z22, $z23, $z24, $z25, $z26, $z27, $z28, $z29;
+        java.lang.Object $r3, $r4;
+
+        r0 := @this: org.apache.commons.validator.routines.CreditCardValidatorTest;
+        r1 = <org.apache.commons.validator.routines.CreditCardValidator: org.apache.commons.validator.routines.CodeValidator MASTERCARD_VALIDATOR>;
+        r2 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: org.apache.commons.validator.routines.RegexValidator getRegexValidator()>();
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("513456789012");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 12", $z0);
+        $z1 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("5134567890123");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 13", $z1);
+        $z2 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("51345678901234");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 14", $z2);
+        $z3 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("513456789012345");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 15", $z3);
+        $z4 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("5134567890123456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Length 16", $z4);
+        $z5 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("51345678901234567");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 17", $z5);
+        $z6 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("513456789012345678");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 18", $z6);
+        $z7 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("4134567890123456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Prefix 41", $z7);
+        $z8 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("5034567890123456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Prefix 50", $z8);
+        $z9 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("5134567890123456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Prefix 51", $z9);
+        $z10 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("5234567890123456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Prefix 52", $z10);
+        $z11 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("5334567890123456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Prefix 53", $z11);
+        $z12 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("5434567890123456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Prefix 54", $z12);
+        $z13 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("5534567890123456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Prefix 55", $z13);
+        $z14 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("5634567890123456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Prefix 56", $z14);
+        $z15 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("6134567890123456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Prefix 61", $z15);
+        $z16 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("5134567x90123456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Invalid Char", $z16);
+        $z17 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("5105105105105105");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Valid regex", $z17);
+        $z18 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("5105105105105105");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Invalid", $z18);
+        $r3 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>("5105105105105105");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertNull(java.lang.String,java.lang.Object)>("validate()", $r3);
+        $r4 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>("5105105105105100");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertEquals(java.lang.Object,java.lang.Object)>("5105105105105100", $r4);
+        $z19 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("378282246310005");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Amex", $z19);
+        $z20 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("30569309025904");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Diners", $z20);
+        $z21 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("6011000990139424");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Discover", $z21);
+        $z22 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("5105105105105100");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Mastercard", $z22);
+        $z23 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("4417123456789113");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Visa", $z23);
+        $z24 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("4222222222222");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Visa Short", $z24);
+        $z25 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("5500000000000004");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Valid-A", $z25);
+        $z26 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("5424000000000015");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Valid-B", $z26);
+        $z27 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("5301250070000191");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Valid-C", $z27);
+        $z28 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("5123456789012346");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Valid-D", $z28);
+        $z29 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("5555555555554444");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Valid-E", $z29);
+        return;
+    }
+
+    public void testMastercardOption()
+    {
+        org.apache.commons.validator.routines.CreditCardValidatorTest r0;
+        org.apache.commons.validator.routines.CreditCardValidator $r1, r2;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6;
+        java.lang.Object $r3, $r4;
+
+        r0 := @this: org.apache.commons.validator.routines.CreditCardValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.CreditCardValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.CreditCardValidator: void <init>(long)>(4L);
+        r2 = $r1;
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("5105105105105105");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Invalid", $z0);
+        $r3 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: java.lang.Object validate(java.lang.String)>("5105105105105105");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertNull(java.lang.String,java.lang.Object)>("validate()", $r3);
+        $r4 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: java.lang.Object validate(java.lang.String)>("5105105105105100");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertEquals(java.lang.Object,java.lang.Object)>("5105105105105100", $r4);
+        $z1 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("378282246310005");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Amex", $z1);
+        $z2 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("30569309025904");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Diners", $z2);
+        $z3 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("6011000990139424");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Discover", $z3);
+        $z4 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("5105105105105100");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Mastercard", $z4);
+        $z5 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("4417123456789113");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Visa", $z5);
+        $z6 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("4222222222222");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Visa Short", $z6);
+        return;
+    }
+
+    public void testVisaValidator()
+    {
+        org.apache.commons.validator.routines.CreditCardValidatorTest r0;
+        org.apache.commons.validator.routines.CodeValidator r1;
+        org.apache.commons.validator.routines.RegexValidator r2;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10, $z11, $z12, $z13, $z14, $z15, $z16, $z17, $z18, $z19, $z20, $z21, $z22, $z23, $z24, $z25;
+        java.lang.Object $r3, $r4, $r5;
+
+        r0 := @this: org.apache.commons.validator.routines.CreditCardValidatorTest;
+        r1 = <org.apache.commons.validator.routines.CreditCardValidator: org.apache.commons.validator.routines.CodeValidator VISA_VALIDATOR>;
+        r2 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: org.apache.commons.validator.routines.RegexValidator getRegexValidator()>();
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("423456789012");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 12", $z0);
+        $z1 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("4234567890123");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Length 13", $z1);
+        $z2 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("42345678901234");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 14", $z2);
+        $z3 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("423456789012345");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 15", $z3);
+        $z4 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("4234567890123456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Length 16", $z4);
+        $z5 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("42345678901234567");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 17", $z5);
+        $z6 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("423456789012345678");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Length 18", $z6);
+        $z7 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("3234567890123");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Invalid Pref-A", $z7);
+        $z8 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("3234567890123456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Invalid Pref-B", $z8);
+        $z9 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("4234567x90123");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Invalid Char-A", $z9);
+        $z10 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("4234567x90123456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Invalid Char-B", $z10);
+        $z11 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("4417123456789112");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Valid regex", $z11);
+        $z12 = virtualinvoke r2.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("4222222222229");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Valid regex-S", $z12);
+        $z13 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("4417123456789112");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Invalid", $z13);
+        $z14 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("4222222222229");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Invalid-S", $z14);
+        $r3 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>("4417123456789112");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertNull(java.lang.String,java.lang.Object)>("validate()", $r3);
+        $r4 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>("4417123456789113");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertEquals(java.lang.Object,java.lang.Object)>("4417123456789113", $r4);
+        $r5 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>("4222222222222");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertEquals(java.lang.Object,java.lang.Object)>("4222222222222", $r5);
+        $z15 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("378282246310005");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Amex", $z15);
+        $z16 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("30569309025904");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Diners", $z16);
+        $z17 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("6011000990139424");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Discover", $z17);
+        $z18 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("5105105105105100");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Mastercard", $z18);
+        $z19 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("4417123456789113");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Visa", $z19);
+        $z20 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("4222222222222");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Visa Short", $z20);
+        $z21 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("4111111111111111");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Valid-A", $z21);
+        $z22 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("4543059999999982");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Valid-C", $z22);
+        $z23 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("4462000000000003");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Valid-B", $z23);
+        $z24 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("4508750000000009");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Valid-D", $z24);
+        $z25 = virtualinvoke r1.<org.apache.commons.validator.routines.CodeValidator: boolean isValid(java.lang.String)>("4012888888881881");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Valid-E", $z25);
+        return;
+    }
+
+    public void testVisaOption()
+    {
+        org.apache.commons.validator.routines.CreditCardValidatorTest r0;
+        org.apache.commons.validator.routines.CreditCardValidator $r1, r2;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7;
+        java.lang.Object $r3, $r4, $r5;
+
+        r0 := @this: org.apache.commons.validator.routines.CreditCardValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.CreditCardValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.CreditCardValidator: void <init>(long)>(2L);
+        r2 = $r1;
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("4417123456789112");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Invalid", $z0);
+        $z1 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("4222222222229");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Invalid-S", $z1);
+        $r3 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: java.lang.Object validate(java.lang.String)>("4417123456789112");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertNull(java.lang.String,java.lang.Object)>("validate()", $r3);
+        $r4 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: java.lang.Object validate(java.lang.String)>("4417123456789113");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertEquals(java.lang.Object,java.lang.Object)>("4417123456789113", $r4);
+        $r5 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: java.lang.Object validate(java.lang.String)>("4222222222222");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertEquals(java.lang.Object,java.lang.Object)>("4222222222222", $r5);
+        $z2 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("378282246310005");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Amex", $z2);
+        $z3 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("30569309025904");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Diners", $z3);
+        $z4 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("6011000990139424");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Discover", $z4);
+        $z5 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("5105105105105100");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Mastercard", $z5);
+        $z6 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("4417123456789113");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Visa", $z6);
+        $z7 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("4222222222222");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Visa Short", $z7);
+        return;
+    }
+
+    public void testVPayOption()
+    {
+        org.apache.commons.validator.routines.CreditCardValidatorTest r0;
+        org.apache.commons.validator.routines.CreditCardValidator $r1, r2;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8;
+        java.lang.Object $r3, $r4;
+
+        r0 := @this: org.apache.commons.validator.routines.CreditCardValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.CreditCardValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.CreditCardValidator: void <init>(long)>(32L);
+        r2 = $r1;
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("4370000000000061");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Valid", $z0);
+        $z1 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("4370000000000012");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Valid", $z1);
+        $z2 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("4370000000000069");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Invalid", $z2);
+        $r3 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: java.lang.Object validate(java.lang.String)>("4370000000000061");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertEquals(java.lang.Object,java.lang.Object)>("4370000000000061", $r3);
+        $r4 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: java.lang.Object validate(java.lang.String)>("4370000000000012");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertEquals(java.lang.Object,java.lang.Object)>("4370000000000012", $r4);
+        $z3 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("378282246310005");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Amex", $z3);
+        $z4 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("30569309025904");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Diners", $z4);
+        $z5 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("6011000990139424");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Discover", $z5);
+        $z6 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("5105105105105100");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Mastercard", $z6);
+        $z7 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("4417123456789113");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Visa", $z7);
+        $z8 = virtualinvoke r2.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>("4222222222222");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertTrue(java.lang.String,boolean)>("Visa Short", $z8);
+        return;
+    }
+
+    public void testMastercardUsingSeparators()
+    {
+        org.apache.commons.validator.routines.CreditCardValidatorTest r0;
+        java.lang.String r1, $r6, $r7, $r8, $r9, $r10;
+        org.apache.commons.validator.routines.checkdigit.CheckDigit $r2;
+        org.apache.commons.validator.routines.CodeValidator r3, $r5;
+        org.apache.commons.validator.routines.RegexValidator r4;
+        boolean $z0, $z1, $z2, $z3, $z4;
+        java.lang.Object $r11, $r12, $r13, $r14;
+
+        r0 := @this: org.apache.commons.validator.routines.CreditCardValidatorTest;
+        r1 = "^(5[1-5]\\d{2})(?:[- ])?(\\d{4})(?:[- ])?(\\d{4})(?:[- ])?(\\d{4})$";
+        $r5 = new org.apache.commons.validator.routines.CodeValidator;
+        $r2 = <org.apache.commons.validator.routines.checkdigit.LuhnCheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit LUHN_CHECK_DIGIT>;
+        specialinvoke $r5.<org.apache.commons.validator.routines.CodeValidator: void <init>(java.lang.String,org.apache.commons.validator.routines.checkdigit.CheckDigit)>(r1, $r2);
+        r3 = $r5;
+        r4 = virtualinvoke r3.<org.apache.commons.validator.routines.CodeValidator: org.apache.commons.validator.routines.RegexValidator getRegexValidator()>();
+        $r6 = virtualinvoke r4.<org.apache.commons.validator.routines.RegexValidator: java.lang.String validate(java.lang.String)>("5134567890123456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("Number", "5134567890123456", $r6);
+        $r7 = virtualinvoke r4.<org.apache.commons.validator.routines.RegexValidator: java.lang.String validate(java.lang.String)>("5134-5678-9012-3456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("Hyphen", "5134567890123456", $r7);
+        $r8 = virtualinvoke r4.<org.apache.commons.validator.routines.RegexValidator: java.lang.String validate(java.lang.String)>("5134 5678 9012 3456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("Space", "5134567890123456", $r8);
+        $r9 = virtualinvoke r4.<org.apache.commons.validator.routines.RegexValidator: java.lang.String validate(java.lang.String)>("5134-5678 9012-3456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("MixedA", "5134567890123456", $r9);
+        $r10 = virtualinvoke r4.<org.apache.commons.validator.routines.RegexValidator: java.lang.String validate(java.lang.String)>("5134 5678-9012 3456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("MixedB", "5134567890123456", $r10);
+        $z0 = virtualinvoke r4.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("5134.5678.9012.3456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Invalid Separator A", $z0);
+        $z1 = virtualinvoke r4.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("5134_5678_9012_3456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Invalid Separator B", $z1);
+        $z2 = virtualinvoke r4.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("513-45678-9012-3456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Invalid Grouping A", $z2);
+        $z3 = virtualinvoke r4.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("5134-567-89012-3456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Invalid Grouping B", $z3);
+        $z4 = virtualinvoke r4.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>("5134-5678-901-23456");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertFalse(java.lang.String,boolean)>("Invalid Grouping C", $z4);
+        $r11 = virtualinvoke r3.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>("5500-0000-0000-0004");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Valid-A", "5500000000000004", $r11);
+        $r12 = virtualinvoke r3.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>("5424 0000 0000 0015");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Valid-B", "5424000000000015", $r12);
+        $r13 = virtualinvoke r3.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>("5301-250070000191");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Valid-C", "5301250070000191", $r13);
+        $r14 = virtualinvoke r3.<org.apache.commons.validator.routines.CodeValidator: java.lang.Object validate(java.lang.String)>("5123456789012346");
+        staticinvoke <org.apache.commons.validator.routines.CreditCardValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Valid-D", "5123456789012346", $r14);
+        return;
+    }
+}

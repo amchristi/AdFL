@@ -1,0 +1,213 @@
+public final class org.apache.commons.validator.routines.checkdigit.IBANCheckDigit extends java.lang.Object implements org.apache.commons.validator.routines.checkdigit.CheckDigit, java.io.Serializable
+{
+    private static final long serialVersionUID;
+    public static final org.apache.commons.validator.routines.checkdigit.CheckDigit IBAN_CHECK_DIGIT;
+    private static final long MAX;
+    private static final long MODULUS;
+
+    static void <clinit>()
+    {
+        org.apache.commons.validator.routines.checkdigit.IBANCheckDigit $r0;
+
+        $r0 = new org.apache.commons.validator.routines.checkdigit.IBANCheckDigit;
+        specialinvoke $r0.<org.apache.commons.validator.routines.checkdigit.IBANCheckDigit: void <init>()>();
+        <org.apache.commons.validator.routines.checkdigit.IBANCheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit IBAN_CHECK_DIGIT> = $r0;
+        return;
+    }
+
+    public void <init>()
+    {
+        org.apache.commons.validator.routines.checkdigit.IBANCheckDigit r0;
+
+        r0 := @this: org.apache.commons.validator.routines.checkdigit.IBANCheckDigit;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        return;
+    }
+
+    public boolean isValid(java.lang.String)
+    {
+        org.apache.commons.validator.routines.checkdigit.IBANCheckDigit r0;
+        java.lang.String r1, r2, $r3, $r4, $r5;
+        int i0, $i1;
+        boolean $z0, $z1, $z2, $z3;
+        org.apache.commons.validator.routines.checkdigit.CheckDigitException $r6, r7;
+
+        r0 := @this: org.apache.commons.validator.routines.checkdigit.IBANCheckDigit;
+        r1 := @parameter0: java.lang.String;
+        if r1 == null goto label0;
+
+        $i1 = virtualinvoke r1.<java.lang.String: int length()>();
+        if $i1 >= 5 goto label1;
+
+     label0:
+        return 0;
+
+     label1:
+        r2 = virtualinvoke r1.<java.lang.String: java.lang.String substring(int,int)>(2, 4);
+        $r3 = "00";
+        $z0 = virtualinvoke $r3.<java.lang.String: boolean equals(java.lang.Object)>(r2);
+        if $z0 != 0 goto label2;
+
+        $r4 = "01";
+        $z1 = virtualinvoke $r4.<java.lang.String: boolean equals(java.lang.Object)>(r2);
+        if $z1 != 0 goto label2;
+
+        $r5 = "99";
+        $z2 = virtualinvoke $r5.<java.lang.String: boolean equals(java.lang.Object)>(r2);
+        if $z2 == 0 goto label3;
+
+     label2:
+        return 0;
+
+     label3:
+        i0 = specialinvoke r0.<org.apache.commons.validator.routines.checkdigit.IBANCheckDigit: int calculateModulus(java.lang.String)>(r1);
+        if i0 != 1 goto label4;
+
+        return 1;
+
+     label4:
+        $z3 = 0;
+
+     label5:
+        return $z3;
+
+     label6:
+        $r6 := @caughtexception;
+        r7 = $r6;
+        return 0;
+
+        catch org.apache.commons.validator.routines.checkdigit.CheckDigitException from label3 to label5 with label6;
+    }
+
+    public java.lang.String calculate(java.lang.String) throws org.apache.commons.validator.routines.checkdigit.CheckDigitException
+    {
+        org.apache.commons.validator.routines.checkdigit.IBANCheckDigit r0;
+        java.lang.String r1, r3, $r7, $r9, $r10, $r12, r14, $r15;
+        java.lang.StringBuilder $r2, $r6, $r8, $r11, $r13, $r16, $r17;
+        int i0, i1, $i2, $i3;
+        org.apache.commons.validator.routines.checkdigit.CheckDigitException $r4;
+
+        r0 := @this: org.apache.commons.validator.routines.checkdigit.IBANCheckDigit;
+        r1 := @parameter0: java.lang.String;
+        if r1 == null goto label0;
+
+        $i2 = virtualinvoke r1.<java.lang.String: int length()>();
+        if $i2 >= 5 goto label3;
+
+     label0:
+        $r4 = new org.apache.commons.validator.routines.checkdigit.CheckDigitException;
+        $r2 = new java.lang.StringBuilder;
+        specialinvoke $r2.<java.lang.StringBuilder: void <init>(java.lang.String)>("Invalid Code length=");
+        if r1 != null goto label1;
+
+        $i3 = 0;
+        goto label2;
+
+     label1:
+        $i3 = virtualinvoke r1.<java.lang.String: int length()>();
+
+     label2:
+        $r6 = virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>($i3);
+        $r7 = virtualinvoke $r6.<java.lang.StringBuilder: java.lang.String toString()>();
+        specialinvoke $r4.<org.apache.commons.validator.routines.checkdigit.CheckDigitException: void <init>(java.lang.String)>($r7);
+        throw $r4;
+
+     label3:
+        $r8 = new java.lang.StringBuilder;
+        $r9 = virtualinvoke r1.<java.lang.String: java.lang.String substring(int,int)>(0, 2);
+        $r10 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r9);
+        specialinvoke $r8.<java.lang.StringBuilder: void <init>(java.lang.String)>($r10);
+        $r11 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("00");
+        $r12 = virtualinvoke r1.<java.lang.String: java.lang.String substring(int)>(4);
+        $r13 = virtualinvoke $r11.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r12);
+        r14 = virtualinvoke $r13.<java.lang.StringBuilder: java.lang.String toString()>();
+        i0 = specialinvoke r0.<org.apache.commons.validator.routines.checkdigit.IBANCheckDigit: int calculateModulus(java.lang.String)>(r14);
+        i1 = 98 - i0;
+        r3 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(i1);
+        if i1 <= 9 goto label4;
+
+        $r15 = r3;
+        goto label5;
+
+     label4:
+        $r16 = new java.lang.StringBuilder;
+        specialinvoke $r16.<java.lang.StringBuilder: void <init>(java.lang.String)>("0");
+        $r17 = virtualinvoke $r16.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r3);
+        $r15 = virtualinvoke $r17.<java.lang.StringBuilder: java.lang.String toString()>();
+
+     label5:
+        return $r15;
+    }
+
+    private int calculateModulus(java.lang.String) throws org.apache.commons.validator.routines.checkdigit.CheckDigitException
+    {
+        org.apache.commons.validator.routines.checkdigit.IBANCheckDigit r0;
+        java.lang.String r1, r3, $r4, $r5, $r6, $r14;
+        java.lang.StringBuilder $r2, $r7, $r9, $r10, $r11, $r12, $r13;
+        long l0, $l4, $l5, $l8;
+        int i1, i2, $i7, $i9;
+        char $c3;
+        org.apache.commons.validator.routines.checkdigit.CheckDigitException $r8;
+        byte $b6;
+
+        r0 := @this: org.apache.commons.validator.routines.checkdigit.IBANCheckDigit;
+        r1 := @parameter0: java.lang.String;
+        $r2 = new java.lang.StringBuilder;
+        $r4 = virtualinvoke r1.<java.lang.String: java.lang.String substring(int)>(4);
+        $r5 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r4);
+        specialinvoke $r2.<java.lang.StringBuilder: void <init>(java.lang.String)>($r5);
+        $r6 = virtualinvoke r1.<java.lang.String: java.lang.String substring(int,int)>(0, 4);
+        $r7 = virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r6);
+        r3 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.String toString()>();
+        l0 = 0L;
+        i1 = 0;
+        goto label6;
+
+     label0:
+        $c3 = virtualinvoke r3.<java.lang.String: char charAt(int)>(i1);
+        i2 = staticinvoke <java.lang.Character: int getNumericValue(char)>($c3);
+        if i2 < 0 goto label1;
+
+        if i2 <= 35 goto label2;
+
+     label1:
+        $r8 = new org.apache.commons.validator.routines.checkdigit.CheckDigitException;
+        $r9 = new java.lang.StringBuilder;
+        specialinvoke $r9.<java.lang.StringBuilder: void <init>(java.lang.String)>("Invalid Character[");
+        $r10 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>(i1);
+        $r11 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("] = \'");
+        $r12 = virtualinvoke $r11.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>(i2);
+        $r13 = virtualinvoke $r12.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\'");
+        $r14 = virtualinvoke $r13.<java.lang.StringBuilder: java.lang.String toString()>();
+        specialinvoke $r8.<org.apache.commons.validator.routines.checkdigit.CheckDigitException: void <init>(java.lang.String)>($r14);
+        throw $r8;
+
+     label2:
+        if i2 <= 9 goto label3;
+
+        $l4 = l0 * 100L;
+        goto label4;
+
+     label3:
+        $l4 = l0 * 10L;
+
+     label4:
+        $l5 = (long) i2;
+        l0 = $l4 + $l5;
+        $b6 = l0 cmp 999999999L;
+        if $b6 <= 0 goto label5;
+
+        l0 = l0 % 97L;
+
+     label5:
+        i1 = i1 + 1;
+
+     label6:
+        $i7 = virtualinvoke r3.<java.lang.String: int length()>();
+        if i1 < $i7 goto label0;
+
+        $l8 = l0 % 97L;
+        $i9 = (int) $l8;
+        return $i9;
+    }
+}

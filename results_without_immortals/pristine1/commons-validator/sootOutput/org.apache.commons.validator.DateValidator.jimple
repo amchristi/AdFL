@@ -1,0 +1,133 @@
+public class org.apache.commons.validator.DateValidator extends java.lang.Object
+{
+    private static final org.apache.commons.validator.DateValidator DATE_VALIDATOR;
+
+    static void <clinit>()
+    {
+        org.apache.commons.validator.DateValidator $r0;
+
+        $r0 = new org.apache.commons.validator.DateValidator;
+        specialinvoke $r0.<org.apache.commons.validator.DateValidator: void <init>()>();
+        <org.apache.commons.validator.DateValidator: org.apache.commons.validator.DateValidator DATE_VALIDATOR> = $r0;
+        return;
+    }
+
+    public static org.apache.commons.validator.DateValidator getInstance()
+    {
+        org.apache.commons.validator.DateValidator $r0;
+
+        $r0 = <org.apache.commons.validator.DateValidator: org.apache.commons.validator.DateValidator DATE_VALIDATOR>;
+        return $r0;
+    }
+
+    protected void <init>()
+    {
+        org.apache.commons.validator.DateValidator r0;
+
+        r0 := @this: org.apache.commons.validator.DateValidator;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        return;
+    }
+
+    public boolean isValid(java.lang.String, java.lang.String, boolean)
+    {
+        org.apache.commons.validator.DateValidator r0;
+        java.lang.String r1, r2;
+        boolean z0;
+        java.text.SimpleDateFormat r3, $r5;
+        java.text.ParseException r4, $r7;
+        int $i0, $i1, $i2;
+
+        r0 := @this: org.apache.commons.validator.DateValidator;
+        r1 := @parameter0: java.lang.String;
+        r2 := @parameter1: java.lang.String;
+        z0 := @parameter2: boolean;
+        if r1 == null goto label0;
+
+        if r2 == null goto label0;
+
+        $i0 = virtualinvoke r2.<java.lang.String: int length()>();
+        if $i0 > 0 goto label1;
+
+     label0:
+        return 0;
+
+     label1:
+        $r5 = new java.text.SimpleDateFormat;
+        specialinvoke $r5.<java.text.SimpleDateFormat: void <init>(java.lang.String)>(r2);
+        r3 = $r5;
+        virtualinvoke r3.<java.text.SimpleDateFormat: void setLenient(boolean)>(0);
+
+     label2:
+        virtualinvoke r3.<java.text.SimpleDateFormat: java.util.Date parse(java.lang.String)>(r1);
+
+     label3:
+        goto label5;
+
+     label4:
+        $r7 := @caughtexception;
+        r4 = $r7;
+        return 0;
+
+     label5:
+        if z0 == 0 goto label6;
+
+        $i1 = virtualinvoke r2.<java.lang.String: int length()>();
+        $i2 = virtualinvoke r1.<java.lang.String: int length()>();
+        if $i1 == $i2 goto label6;
+
+        return 0;
+
+     label6:
+        return 1;
+
+        catch java.text.ParseException from label2 to label3 with label4;
+    }
+
+    public boolean isValid(java.lang.String, java.util.Locale)
+    {
+        org.apache.commons.validator.DateValidator r0;
+        java.lang.String r1;
+        java.util.Locale r2, $r5;
+        null_type n0;
+        java.text.ParseException r3, $r7;
+        java.text.DateFormat r4;
+
+        r0 := @this: org.apache.commons.validator.DateValidator;
+        r1 := @parameter0: java.lang.String;
+        r2 := @parameter1: java.util.Locale;
+        if r1 != null goto label0;
+
+        return 0;
+
+     label0:
+        n0 = null;
+        if r2 == null goto label1;
+
+        r4 = staticinvoke <java.text.DateFormat: java.text.DateFormat getDateInstance(int,java.util.Locale)>(3, r2);
+        goto label2;
+
+     label1:
+        $r5 = staticinvoke <java.util.Locale: java.util.Locale getDefault()>();
+        r4 = staticinvoke <java.text.DateFormat: java.text.DateFormat getDateInstance(int,java.util.Locale)>(3, $r5);
+
+     label2:
+        virtualinvoke r4.<java.text.DateFormat: void setLenient(boolean)>(0);
+
+     label3:
+        virtualinvoke r4.<java.text.DateFormat: java.util.Date parse(java.lang.String)>(r1);
+
+     label4:
+        goto label6;
+
+     label5:
+        $r7 := @caughtexception;
+        r3 = $r7;
+        return 0;
+
+     label6:
+        return 1;
+
+        catch java.text.ParseException from label3 to label4 with label5;
+    }
+}

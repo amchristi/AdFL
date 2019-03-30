@@ -1,0 +1,508 @@
+public class org.apache.commons.validator.UrlValidator extends java.lang.Object implements java.io.Serializable
+{
+    private static final long serialVersionUID;
+    public static final int ALLOW_ALL_SCHEMES;
+    public static final int ALLOW_2_SLASHES;
+    public static final int NO_FRAGMENTS;
+    private static final java.lang.String ALPHA_CHARS;
+    private static final java.lang.String SPECIAL_CHARS;
+    private static final java.lang.String VALID_CHARS;
+    private static final java.lang.String AUTHORITY_CHARS_REGEX;
+    private static final java.lang.String ATOM;
+    private static final java.lang.String URL_REGEX;
+    private static final java.util.regex.Pattern URL_PATTERN;
+    private static final int PARSE_URL_SCHEME;
+    private static final int PARSE_URL_AUTHORITY;
+    private static final int PARSE_URL_PATH;
+    private static final int PARSE_URL_QUERY;
+    private static final int PARSE_URL_FRAGMENT;
+    private static final java.util.regex.Pattern SCHEME_PATTERN;
+    private static final java.lang.String AUTHORITY_REGEX;
+    private static final java.util.regex.Pattern AUTHORITY_PATTERN;
+    private static final int PARSE_AUTHORITY_HOST_IP;
+    private static final int PARSE_AUTHORITY_PORT;
+    private static final int PARSE_AUTHORITY_EXTRA;
+    private static final java.util.regex.Pattern PATH_PATTERN;
+    private static final java.util.regex.Pattern QUERY_PATTERN;
+    private static final java.util.regex.Pattern LEGAL_ASCII_PATTERN;
+    private static final java.util.regex.Pattern DOMAIN_PATTERN;
+    private static final java.util.regex.Pattern PORT_PATTERN;
+    private static final java.util.regex.Pattern ATOM_PATTERN;
+    private static final java.util.regex.Pattern ALPHA_PATTERN;
+    private final org.apache.commons.validator.util.Flags options;
+    private final java.util.Set allowedSchemes;
+    protected java.lang.String[] defaultSchemes;
+
+    static void <clinit>()
+    {
+        java.util.regex.Pattern $r0, $r1, $r2, $r3, $r4, $r5, $r6, $r7, $r8, $r9;
+
+        $r0 = staticinvoke <java.util.regex.Pattern: java.util.regex.Pattern compile(java.lang.String)>("^(([^:/?#]+):)?(//([^/?#]*))?([^?#]*)(\\?([^#]*))?(#(.*))?");
+        <org.apache.commons.validator.UrlValidator: java.util.regex.Pattern URL_PATTERN> = $r0;
+        $r1 = staticinvoke <java.util.regex.Pattern: java.util.regex.Pattern compile(java.lang.String)>("^\\p{Alpha}[\\p{Alnum}\\+\\-\\.]*");
+        <org.apache.commons.validator.UrlValidator: java.util.regex.Pattern SCHEME_PATTERN> = $r1;
+        $r2 = staticinvoke <java.util.regex.Pattern: java.util.regex.Pattern compile(java.lang.String)>("^([\\p{Alnum}\\-\\.]*)(:\\d*)?(.*)?");
+        <org.apache.commons.validator.UrlValidator: java.util.regex.Pattern AUTHORITY_PATTERN> = $r2;
+        $r3 = staticinvoke <java.util.regex.Pattern: java.util.regex.Pattern compile(java.lang.String)>("^(/[-\\w:@&?=+,.!/~*\'%$_;]*)?$");
+        <org.apache.commons.validator.UrlValidator: java.util.regex.Pattern PATH_PATTERN> = $r3;
+        $r4 = staticinvoke <java.util.regex.Pattern: java.util.regex.Pattern compile(java.lang.String)>("^(.*)$");
+        <org.apache.commons.validator.UrlValidator: java.util.regex.Pattern QUERY_PATTERN> = $r4;
+        $r5 = staticinvoke <java.util.regex.Pattern: java.util.regex.Pattern compile(java.lang.String)>("^\\p{ASCII}+$");
+        <org.apache.commons.validator.UrlValidator: java.util.regex.Pattern LEGAL_ASCII_PATTERN> = $r5;
+        $r6 = staticinvoke <java.util.regex.Pattern: java.util.regex.Pattern compile(java.lang.String)>("^[^\\s;/@&=,.?:+$]+(\\.[^\\s;/@&=,.?:+$]+)*$");
+        <org.apache.commons.validator.UrlValidator: java.util.regex.Pattern DOMAIN_PATTERN> = $r6;
+        $r7 = staticinvoke <java.util.regex.Pattern: java.util.regex.Pattern compile(java.lang.String)>("^:(\\d{1,5})$");
+        <org.apache.commons.validator.UrlValidator: java.util.regex.Pattern PORT_PATTERN> = $r7;
+        $r8 = staticinvoke <java.util.regex.Pattern: java.util.regex.Pattern compile(java.lang.String)>("^([^\\s;/@&=,.?:+$]+).*?$");
+        <org.apache.commons.validator.UrlValidator: java.util.regex.Pattern ATOM_PATTERN> = $r8;
+        $r9 = staticinvoke <java.util.regex.Pattern: java.util.regex.Pattern compile(java.lang.String)>("^[a-zA-Z]");
+        <org.apache.commons.validator.UrlValidator: java.util.regex.Pattern ALPHA_PATTERN> = $r9;
+        return;
+    }
+
+    public void <init>()
+    {
+        org.apache.commons.validator.UrlValidator r0;
+
+        r0 := @this: org.apache.commons.validator.UrlValidator;
+        specialinvoke r0.<org.apache.commons.validator.UrlValidator: void <init>(java.lang.String[])>(null);
+        return;
+    }
+
+    public void <init>(java.lang.String[])
+    {
+        org.apache.commons.validator.UrlValidator r0;
+        java.lang.String[] r1;
+
+        r0 := @this: org.apache.commons.validator.UrlValidator;
+        r1 := @parameter0: java.lang.String[];
+        specialinvoke r0.<org.apache.commons.validator.UrlValidator: void <init>(java.lang.String[],int)>(r1, 0);
+        return;
+    }
+
+    public void <init>(int)
+    {
+        org.apache.commons.validator.UrlValidator r0;
+        int i0;
+
+        r0 := @this: org.apache.commons.validator.UrlValidator;
+        i0 := @parameter0: int;
+        specialinvoke r0.<org.apache.commons.validator.UrlValidator: void <init>(java.lang.String[],int)>(null, i0);
+        return;
+    }
+
+    public void <init>(java.lang.String[], int)
+    {
+        org.apache.commons.validator.UrlValidator r0;
+        java.lang.String[] r1, $r3;
+        int i0;
+        java.util.HashSet $r2;
+        org.apache.commons.validator.util.Flags $r4, $r5;
+        long $l1;
+        boolean $z0;
+        java.util.Set $r6;
+        java.util.List $r7;
+
+        r0 := @this: org.apache.commons.validator.UrlValidator;
+        r1 := @parameter0: java.lang.String[];
+        i0 := @parameter1: int;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        $r2 = new java.util.HashSet;
+        specialinvoke $r2.<java.util.HashSet: void <init>()>();
+        r0.<org.apache.commons.validator.UrlValidator: java.util.Set allowedSchemes> = $r2;
+        $r3 = newarray (java.lang.String)[3];
+        $r3[0] = "http";
+        $r3[1] = "https";
+        $r3[2] = "ftp";
+        r0.<org.apache.commons.validator.UrlValidator: java.lang.String[] defaultSchemes> = $r3;
+        $r4 = new org.apache.commons.validator.util.Flags;
+        $l1 = (long) i0;
+        specialinvoke $r4.<org.apache.commons.validator.util.Flags: void <init>(long)>($l1);
+        r0.<org.apache.commons.validator.UrlValidator: org.apache.commons.validator.util.Flags options> = $r4;
+        $r5 = r0.<org.apache.commons.validator.UrlValidator: org.apache.commons.validator.util.Flags options>;
+        $z0 = virtualinvoke $r5.<org.apache.commons.validator.util.Flags: boolean isOn(long)>(1L);
+        if $z0 == 0 goto label0;
+
+        return;
+
+     label0:
+        if r1 != null goto label1;
+
+        r1 = r0.<org.apache.commons.validator.UrlValidator: java.lang.String[] defaultSchemes>;
+
+     label1:
+        $r6 = r0.<org.apache.commons.validator.UrlValidator: java.util.Set allowedSchemes>;
+        $r7 = staticinvoke <java.util.Arrays: java.util.List asList(java.lang.Object[])>(r1);
+        interfaceinvoke $r6.<java.util.Set: boolean addAll(java.util.Collection)>($r7);
+        return;
+    }
+
+    public boolean isValid(java.lang.String)
+    {
+        org.apache.commons.validator.UrlValidator r0;
+        java.lang.String r1, $r6, $r7, $r8, $r9, $r10;
+        java.util.regex.Matcher r2, $r4;
+        java.util.regex.Pattern $r3, $r5;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6;
+
+        r0 := @this: org.apache.commons.validator.UrlValidator;
+        r1 := @parameter0: java.lang.String;
+        if r1 != null goto label0;
+
+        return 0;
+
+     label0:
+        $r3 = <org.apache.commons.validator.UrlValidator: java.util.regex.Pattern LEGAL_ASCII_PATTERN>;
+        $r4 = virtualinvoke $r3.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(r1);
+        $z0 = virtualinvoke $r4.<java.util.regex.Matcher: boolean matches()>();
+        if $z0 != 0 goto label1;
+
+        return 0;
+
+     label1:
+        $r5 = <org.apache.commons.validator.UrlValidator: java.util.regex.Pattern URL_PATTERN>;
+        r2 = virtualinvoke $r5.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(r1);
+        $z1 = virtualinvoke r2.<java.util.regex.Matcher: boolean matches()>();
+        if $z1 != 0 goto label2;
+
+        return 0;
+
+     label2:
+        $r6 = virtualinvoke r2.<java.util.regex.Matcher: java.lang.String group(int)>(2);
+        $z2 = virtualinvoke r0.<org.apache.commons.validator.UrlValidator: boolean isValidScheme(java.lang.String)>($r6);
+        if $z2 != 0 goto label3;
+
+        return 0;
+
+     label3:
+        $r7 = virtualinvoke r2.<java.util.regex.Matcher: java.lang.String group(int)>(4);
+        $z3 = virtualinvoke r0.<org.apache.commons.validator.UrlValidator: boolean isValidAuthority(java.lang.String)>($r7);
+        if $z3 != 0 goto label4;
+
+        return 0;
+
+     label4:
+        $r8 = virtualinvoke r2.<java.util.regex.Matcher: java.lang.String group(int)>(5);
+        $z4 = virtualinvoke r0.<org.apache.commons.validator.UrlValidator: boolean isValidPath(java.lang.String)>($r8);
+        if $z4 != 0 goto label5;
+
+        return 0;
+
+     label5:
+        $r9 = virtualinvoke r2.<java.util.regex.Matcher: java.lang.String group(int)>(7);
+        $z5 = virtualinvoke r0.<org.apache.commons.validator.UrlValidator: boolean isValidQuery(java.lang.String)>($r9);
+        if $z5 != 0 goto label6;
+
+        return 0;
+
+     label6:
+        $r10 = virtualinvoke r2.<java.util.regex.Matcher: java.lang.String group(int)>(9);
+        $z6 = virtualinvoke r0.<org.apache.commons.validator.UrlValidator: boolean isValidFragment(java.lang.String)>($r10);
+        if $z6 != 0 goto label7;
+
+        return 0;
+
+     label7:
+        return 1;
+    }
+
+    protected boolean isValidScheme(java.lang.String)
+    {
+        org.apache.commons.validator.UrlValidator r0;
+        java.lang.String r1;
+        java.util.regex.Pattern $r2;
+        java.util.regex.Matcher $r3;
+        boolean $z0, $z1, $z2;
+        org.apache.commons.validator.util.Flags $r4;
+        java.util.Set $r5;
+
+        r0 := @this: org.apache.commons.validator.UrlValidator;
+        r1 := @parameter0: java.lang.String;
+        if r1 != null goto label0;
+
+        return 0;
+
+     label0:
+        $r2 = <org.apache.commons.validator.UrlValidator: java.util.regex.Pattern SCHEME_PATTERN>;
+        $r3 = virtualinvoke $r2.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(r1);
+        $z0 = virtualinvoke $r3.<java.util.regex.Matcher: boolean matches()>();
+        if $z0 != 0 goto label1;
+
+        return 0;
+
+     label1:
+        $r4 = r0.<org.apache.commons.validator.UrlValidator: org.apache.commons.validator.util.Flags options>;
+        $z1 = virtualinvoke $r4.<org.apache.commons.validator.util.Flags: boolean isOff(long)>(1L);
+        if $z1 == 0 goto label2;
+
+        $r5 = r0.<org.apache.commons.validator.UrlValidator: java.util.Set allowedSchemes>;
+        $z2 = interfaceinvoke $r5.<java.util.Set: boolean contains(java.lang.Object)>(r1);
+        if $z2 != 0 goto label2;
+
+        return 0;
+
+     label2:
+        return 1;
+    }
+
+    protected boolean isValidAuthority(java.lang.String)
+    {
+        org.apache.commons.validator.UrlValidator r0;
+        java.lang.String r1, r4, $r12, $r13, $r14, r15, $r17, r19, r22;
+        org.apache.commons.validator.routines.InetAddressValidator r2;
+        java.util.regex.Matcher r3, r6, $r9, $r18, $r21;
+        boolean z0, z1, z2, z3, $z4, $z5, $z6, $z7;
+        char[] r5;
+        int i0, i1, i2, $i4, $i5, i6, $i7, $i8, $i9, $i10;
+        java.util.regex.Pattern $r7, $r8, $r11, $r16, $r20;
+        char $c3;
+        java.lang.String[] r10;
+
+        r0 := @this: org.apache.commons.validator.UrlValidator;
+        r1 := @parameter0: java.lang.String;
+        if r1 != null goto label0;
+
+        return 0;
+
+     label0:
+        r2 = staticinvoke <org.apache.commons.validator.routines.InetAddressValidator: org.apache.commons.validator.routines.InetAddressValidator getInstance()>();
+        $r7 = <org.apache.commons.validator.UrlValidator: java.util.regex.Pattern AUTHORITY_PATTERN>;
+        r3 = virtualinvoke $r7.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(r1);
+        $z4 = virtualinvoke r3.<java.util.regex.Matcher: boolean matches()>();
+        if $z4 != 0 goto label1;
+
+        return 0;
+
+     label1:
+        z0 = 0;
+        r4 = virtualinvoke r3.<java.util.regex.Matcher: java.lang.String group(int)>(1);
+        z1 = virtualinvoke r2.<org.apache.commons.validator.routines.InetAddressValidator: boolean isValid(java.lang.String)>(r4);
+        if z1 != 0 goto label2;
+
+        $r8 = <org.apache.commons.validator.UrlValidator: java.util.regex.Pattern DOMAIN_PATTERN>;
+        $r9 = virtualinvoke $r8.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(r4);
+        z0 = virtualinvoke $r9.<java.util.regex.Matcher: boolean matches()>();
+
+     label2:
+        if z0 == 0 goto label13;
+
+        r5 = virtualinvoke r4.<java.lang.String: char[] toCharArray()>();
+        i0 = 1;
+        i1 = 0;
+        goto label5;
+
+     label3:
+        $c3 = r5[i1];
+        if $c3 != 46 goto label4;
+
+        i0 = i0 + 1;
+
+     label4:
+        i1 = i1 + 1;
+
+     label5:
+        $i4 = lengthof r5;
+        if i1 < $i4 goto label3;
+
+        r10 = newarray (java.lang.String)[i0];
+        z2 = 1;
+        i2 = 0;
+        z3 = 0;
+        goto label9;
+
+     label6:
+        $r11 = <org.apache.commons.validator.UrlValidator: java.util.regex.Pattern ATOM_PATTERN>;
+        r6 = virtualinvoke $r11.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(r4);
+        z2 = virtualinvoke r6.<java.util.regex.Matcher: boolean matches()>();
+        if z2 == 0 goto label9;
+
+        $r12 = virtualinvoke r6.<java.util.regex.Matcher: java.lang.String group(int)>(1);
+        r10[i2] = $r12;
+        $r13 = r10[i2];
+        $i5 = virtualinvoke $r13.<java.lang.String: int length()>();
+        i6 = $i5 + 1;
+        $i7 = virtualinvoke r4.<java.lang.String: int length()>();
+        if i6 < $i7 goto label7;
+
+        $r14 = "";
+        goto label8;
+
+     label7:
+        $r14 = virtualinvoke r4.<java.lang.String: java.lang.String substring(int)>(i6);
+
+     label8:
+        r4 = $r14;
+        i2 = i2 + 1;
+
+     label9:
+        if z2 != 0 goto label6;
+
+        $i8 = i2 - 1;
+        r15 = r10[$i8];
+        $i9 = virtualinvoke r15.<java.lang.String: int length()>();
+        if $i9 < 2 goto label10;
+
+        $i10 = virtualinvoke r15.<java.lang.String: int length()>();
+        if $i10 <= 4 goto label11;
+
+     label10:
+        return 0;
+
+     label11:
+        $r16 = <org.apache.commons.validator.UrlValidator: java.util.regex.Pattern ALPHA_PATTERN>;
+        $r17 = virtualinvoke r15.<java.lang.String: java.lang.String substring(int,int)>(0, 1);
+        $r18 = virtualinvoke $r16.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>($r17);
+        $z5 = virtualinvoke $r18.<java.util.regex.Matcher: boolean matches()>();
+        if $z5 != 0 goto label12;
+
+        return 0;
+
+     label12:
+        if i2 >= 2 goto label13;
+
+        return 0;
+
+     label13:
+        if z0 != 0 goto label14;
+
+        if z1 != 0 goto label14;
+
+        return 0;
+
+     label14:
+        r19 = virtualinvoke r3.<java.util.regex.Matcher: java.lang.String group(int)>(2);
+        if r19 == null goto label15;
+
+        $r20 = <org.apache.commons.validator.UrlValidator: java.util.regex.Pattern PORT_PATTERN>;
+        $r21 = virtualinvoke $r20.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(r19);
+        $z6 = virtualinvoke $r21.<java.util.regex.Matcher: boolean matches()>();
+        if $z6 != 0 goto label15;
+
+        return 0;
+
+     label15:
+        r22 = virtualinvoke r3.<java.util.regex.Matcher: java.lang.String group(int)>(3);
+        $z7 = staticinvoke <org.apache.commons.validator.GenericValidator: boolean isBlankOrNull(java.lang.String)>(r22);
+        if $z7 != 0 goto label16;
+
+        return 0;
+
+     label16:
+        return 1;
+    }
+
+    protected boolean isValidPath(java.lang.String)
+    {
+        org.apache.commons.validator.UrlValidator r0;
+        java.lang.String r1;
+        int i0, i1, i2, $i3, $i4;
+        java.util.regex.Pattern $r2;
+        java.util.regex.Matcher $r3;
+        boolean $z0, $z1;
+        org.apache.commons.validator.util.Flags $r4;
+
+        r0 := @this: org.apache.commons.validator.UrlValidator;
+        r1 := @parameter0: java.lang.String;
+        if r1 != null goto label0;
+
+        return 0;
+
+     label0:
+        $r2 = <org.apache.commons.validator.UrlValidator: java.util.regex.Pattern PATH_PATTERN>;
+        $r3 = virtualinvoke $r2.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(r1);
+        $z0 = virtualinvoke $r3.<java.util.regex.Matcher: boolean matches()>();
+        if $z0 != 0 goto label1;
+
+        return 0;
+
+     label1:
+        i0 = virtualinvoke r0.<org.apache.commons.validator.UrlValidator: int countToken(java.lang.String,java.lang.String)>("//", r1);
+        $r4 = r0.<org.apache.commons.validator.UrlValidator: org.apache.commons.validator.util.Flags options>;
+        $z1 = virtualinvoke $r4.<org.apache.commons.validator.util.Flags: boolean isOff(long)>(2L);
+        if $z1 == 0 goto label2;
+
+        if i0 <= 0 goto label2;
+
+        return 0;
+
+     label2:
+        i1 = virtualinvoke r0.<org.apache.commons.validator.UrlValidator: int countToken(java.lang.String,java.lang.String)>("/", r1);
+        i2 = virtualinvoke r0.<org.apache.commons.validator.UrlValidator: int countToken(java.lang.String,java.lang.String)>("..", r1);
+        if i2 <= 0 goto label3;
+
+        $i3 = i1 - i0;
+        $i4 = $i3 - 1;
+        if $i4 > i2 goto label3;
+
+        return 0;
+
+     label3:
+        return 1;
+    }
+
+    protected boolean isValidQuery(java.lang.String)
+    {
+        org.apache.commons.validator.UrlValidator r0;
+        java.lang.String r1;
+        java.util.regex.Pattern $r2;
+        java.util.regex.Matcher $r3;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.UrlValidator;
+        r1 := @parameter0: java.lang.String;
+        if r1 != null goto label0;
+
+        return 1;
+
+     label0:
+        $r2 = <org.apache.commons.validator.UrlValidator: java.util.regex.Pattern QUERY_PATTERN>;
+        $r3 = virtualinvoke $r2.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(r1);
+        $z0 = virtualinvoke $r3.<java.util.regex.Matcher: boolean matches()>();
+        return $z0;
+    }
+
+    protected boolean isValidFragment(java.lang.String)
+    {
+        org.apache.commons.validator.UrlValidator r0;
+        java.lang.String r1;
+        org.apache.commons.validator.util.Flags $r2;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.UrlValidator;
+        r1 := @parameter0: java.lang.String;
+        if r1 != null goto label0;
+
+        return 1;
+
+     label0:
+        $r2 = r0.<org.apache.commons.validator.UrlValidator: org.apache.commons.validator.util.Flags options>;
+        $z0 = virtualinvoke $r2.<org.apache.commons.validator.util.Flags: boolean isOff(long)>(4L);
+        return $z0;
+    }
+
+    protected int countToken(java.lang.String, java.lang.String)
+    {
+        org.apache.commons.validator.UrlValidator r0;
+        java.lang.String r1, r2;
+        int i0, i1;
+
+        r0 := @this: org.apache.commons.validator.UrlValidator;
+        r1 := @parameter0: java.lang.String;
+        r2 := @parameter1: java.lang.String;
+        i0 = 0;
+        i1 = 0;
+        goto label1;
+
+     label0:
+        i0 = virtualinvoke r2.<java.lang.String: int indexOf(java.lang.String,int)>(r1, i0);
+        if i0 <= -1 goto label1;
+
+        i0 = i0 + 1;
+        i1 = i1 + 1;
+
+     label1:
+        if i0 != -1 goto label0;
+
+        return i1;
+    }
+}

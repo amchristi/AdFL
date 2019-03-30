@@ -1,0 +1,245 @@
+public class org.apache.commons.validator.routines.TimeValidator extends org.apache.commons.validator.routines.AbstractCalendarValidator
+{
+    private static final long serialVersionUID;
+    private static final org.apache.commons.validator.routines.TimeValidator VALIDATOR;
+
+    static void <clinit>()
+    {
+        org.apache.commons.validator.routines.TimeValidator $r0;
+
+        $r0 = new org.apache.commons.validator.routines.TimeValidator;
+        specialinvoke $r0.<org.apache.commons.validator.routines.TimeValidator: void <init>()>();
+        <org.apache.commons.validator.routines.TimeValidator: org.apache.commons.validator.routines.TimeValidator VALIDATOR> = $r0;
+        return;
+    }
+
+    public static org.apache.commons.validator.routines.TimeValidator getInstance()
+    {
+        org.apache.commons.validator.routines.TimeValidator $r0;
+
+        $r0 = <org.apache.commons.validator.routines.TimeValidator: org.apache.commons.validator.routines.TimeValidator VALIDATOR>;
+        return $r0;
+    }
+
+    public void <init>()
+    {
+        org.apache.commons.validator.routines.TimeValidator r0;
+
+        r0 := @this: org.apache.commons.validator.routines.TimeValidator;
+        specialinvoke r0.<org.apache.commons.validator.routines.TimeValidator: void <init>(boolean,int)>(1, 3);
+        return;
+    }
+
+    public void <init>(boolean, int)
+    {
+        org.apache.commons.validator.routines.TimeValidator r0;
+        boolean z0;
+        int i0;
+
+        r0 := @this: org.apache.commons.validator.routines.TimeValidator;
+        z0 := @parameter0: boolean;
+        i0 := @parameter1: int;
+        specialinvoke r0.<org.apache.commons.validator.routines.AbstractCalendarValidator: void <init>(boolean,int,int)>(z0, -1, i0);
+        return;
+    }
+
+    public java.util.Calendar validate(java.lang.String)
+    {
+        org.apache.commons.validator.routines.TimeValidator r0;
+        java.lang.String r1;
+        java.lang.Object $r2;
+        java.util.Calendar $r3;
+
+        r0 := @this: org.apache.commons.validator.routines.TimeValidator;
+        r1 := @parameter0: java.lang.String;
+        $r2 = virtualinvoke r0.<org.apache.commons.validator.routines.TimeValidator: java.lang.Object parse(java.lang.String,java.lang.String,java.util.Locale,java.util.TimeZone)>(r1, null, null, null);
+        $r3 = (java.util.Calendar) $r2;
+        return $r3;
+    }
+
+    public java.util.Calendar validate(java.lang.String, java.util.TimeZone)
+    {
+        org.apache.commons.validator.routines.TimeValidator r0;
+        java.lang.String r1;
+        java.util.TimeZone r2;
+        java.lang.Object $r3;
+        java.util.Calendar $r4;
+
+        r0 := @this: org.apache.commons.validator.routines.TimeValidator;
+        r1 := @parameter0: java.lang.String;
+        r2 := @parameter1: java.util.TimeZone;
+        $r3 = virtualinvoke r0.<org.apache.commons.validator.routines.TimeValidator: java.lang.Object parse(java.lang.String,java.lang.String,java.util.Locale,java.util.TimeZone)>(r1, null, null, r2);
+        $r4 = (java.util.Calendar) $r3;
+        return $r4;
+    }
+
+    public java.util.Calendar validate(java.lang.String, java.lang.String)
+    {
+        org.apache.commons.validator.routines.TimeValidator r0;
+        java.lang.String r1, r2;
+        java.lang.Object $r3;
+        java.util.Calendar $r4;
+
+        r0 := @this: org.apache.commons.validator.routines.TimeValidator;
+        r1 := @parameter0: java.lang.String;
+        r2 := @parameter1: java.lang.String;
+        $r3 = virtualinvoke r0.<org.apache.commons.validator.routines.TimeValidator: java.lang.Object parse(java.lang.String,java.lang.String,java.util.Locale,java.util.TimeZone)>(r1, r2, null, null);
+        $r4 = (java.util.Calendar) $r3;
+        return $r4;
+    }
+
+    public java.util.Calendar validate(java.lang.String, java.lang.String, java.util.TimeZone)
+    {
+        org.apache.commons.validator.routines.TimeValidator r0;
+        java.lang.String r1, r2;
+        java.util.TimeZone r3;
+        java.lang.Object $r4;
+        java.util.Calendar $r5;
+
+        r0 := @this: org.apache.commons.validator.routines.TimeValidator;
+        r1 := @parameter0: java.lang.String;
+        r2 := @parameter1: java.lang.String;
+        r3 := @parameter2: java.util.TimeZone;
+        $r4 = virtualinvoke r0.<org.apache.commons.validator.routines.TimeValidator: java.lang.Object parse(java.lang.String,java.lang.String,java.util.Locale,java.util.TimeZone)>(r1, r2, null, r3);
+        $r5 = (java.util.Calendar) $r4;
+        return $r5;
+    }
+
+    public java.util.Calendar validate(java.lang.String, java.util.Locale)
+    {
+        org.apache.commons.validator.routines.TimeValidator r0;
+        java.lang.String r1;
+        java.util.Locale r2;
+        java.lang.Object $r3;
+        java.util.Calendar $r4;
+
+        r0 := @this: org.apache.commons.validator.routines.TimeValidator;
+        r1 := @parameter0: java.lang.String;
+        r2 := @parameter1: java.util.Locale;
+        $r3 = virtualinvoke r0.<org.apache.commons.validator.routines.TimeValidator: java.lang.Object parse(java.lang.String,java.lang.String,java.util.Locale,java.util.TimeZone)>(r1, null, r2, null);
+        $r4 = (java.util.Calendar) $r3;
+        return $r4;
+    }
+
+    public java.util.Calendar validate(java.lang.String, java.util.Locale, java.util.TimeZone)
+    {
+        org.apache.commons.validator.routines.TimeValidator r0;
+        java.lang.String r1;
+        java.util.Locale r2;
+        java.util.TimeZone r3;
+        java.lang.Object $r4;
+        java.util.Calendar $r5;
+
+        r0 := @this: org.apache.commons.validator.routines.TimeValidator;
+        r1 := @parameter0: java.lang.String;
+        r2 := @parameter1: java.util.Locale;
+        r3 := @parameter2: java.util.TimeZone;
+        $r4 = virtualinvoke r0.<org.apache.commons.validator.routines.TimeValidator: java.lang.Object parse(java.lang.String,java.lang.String,java.util.Locale,java.util.TimeZone)>(r1, null, r2, r3);
+        $r5 = (java.util.Calendar) $r4;
+        return $r5;
+    }
+
+    public java.util.Calendar validate(java.lang.String, java.lang.String, java.util.Locale)
+    {
+        org.apache.commons.validator.routines.TimeValidator r0;
+        java.lang.String r1, r2;
+        java.util.Locale r3;
+        java.lang.Object $r4;
+        java.util.Calendar $r5;
+
+        r0 := @this: org.apache.commons.validator.routines.TimeValidator;
+        r1 := @parameter0: java.lang.String;
+        r2 := @parameter1: java.lang.String;
+        r3 := @parameter2: java.util.Locale;
+        $r4 = virtualinvoke r0.<org.apache.commons.validator.routines.TimeValidator: java.lang.Object parse(java.lang.String,java.lang.String,java.util.Locale,java.util.TimeZone)>(r1, r2, r3, null);
+        $r5 = (java.util.Calendar) $r4;
+        return $r5;
+    }
+
+    public java.util.Calendar validate(java.lang.String, java.lang.String, java.util.Locale, java.util.TimeZone)
+    {
+        org.apache.commons.validator.routines.TimeValidator r0;
+        java.lang.String r1, r2;
+        java.util.Locale r3;
+        java.util.TimeZone r4;
+        java.lang.Object $r5;
+        java.util.Calendar $r6;
+
+        r0 := @this: org.apache.commons.validator.routines.TimeValidator;
+        r1 := @parameter0: java.lang.String;
+        r2 := @parameter1: java.lang.String;
+        r3 := @parameter2: java.util.Locale;
+        r4 := @parameter3: java.util.TimeZone;
+        $r5 = virtualinvoke r0.<org.apache.commons.validator.routines.TimeValidator: java.lang.Object parse(java.lang.String,java.lang.String,java.util.Locale,java.util.TimeZone)>(r1, r2, r3, r4);
+        $r6 = (java.util.Calendar) $r5;
+        return $r6;
+    }
+
+    public int compareTime(java.util.Calendar, java.util.Calendar)
+    {
+        org.apache.commons.validator.routines.TimeValidator r0;
+        java.util.Calendar r1, r2;
+        int $i0;
+
+        r0 := @this: org.apache.commons.validator.routines.TimeValidator;
+        r1 := @parameter0: java.util.Calendar;
+        r2 := @parameter1: java.util.Calendar;
+        $i0 = virtualinvoke r0.<org.apache.commons.validator.routines.TimeValidator: int compareTime(java.util.Calendar,java.util.Calendar,int)>(r1, r2, 14);
+        return $i0;
+    }
+
+    public int compareSeconds(java.util.Calendar, java.util.Calendar)
+    {
+        org.apache.commons.validator.routines.TimeValidator r0;
+        java.util.Calendar r1, r2;
+        int $i0;
+
+        r0 := @this: org.apache.commons.validator.routines.TimeValidator;
+        r1 := @parameter0: java.util.Calendar;
+        r2 := @parameter1: java.util.Calendar;
+        $i0 = virtualinvoke r0.<org.apache.commons.validator.routines.TimeValidator: int compareTime(java.util.Calendar,java.util.Calendar,int)>(r1, r2, 13);
+        return $i0;
+    }
+
+    public int compareMinutes(java.util.Calendar, java.util.Calendar)
+    {
+        org.apache.commons.validator.routines.TimeValidator r0;
+        java.util.Calendar r1, r2;
+        int $i0;
+
+        r0 := @this: org.apache.commons.validator.routines.TimeValidator;
+        r1 := @parameter0: java.util.Calendar;
+        r2 := @parameter1: java.util.Calendar;
+        $i0 = virtualinvoke r0.<org.apache.commons.validator.routines.TimeValidator: int compareTime(java.util.Calendar,java.util.Calendar,int)>(r1, r2, 12);
+        return $i0;
+    }
+
+    public int compareHours(java.util.Calendar, java.util.Calendar)
+    {
+        org.apache.commons.validator.routines.TimeValidator r0;
+        java.util.Calendar r1, r2;
+        int $i0;
+
+        r0 := @this: org.apache.commons.validator.routines.TimeValidator;
+        r1 := @parameter0: java.util.Calendar;
+        r2 := @parameter1: java.util.Calendar;
+        $i0 = virtualinvoke r0.<org.apache.commons.validator.routines.TimeValidator: int compareTime(java.util.Calendar,java.util.Calendar,int)>(r1, r2, 11);
+        return $i0;
+    }
+
+    protected java.lang.Object processParsedValue(java.lang.Object, java.text.Format)
+    {
+        org.apache.commons.validator.routines.TimeValidator r0;
+        java.lang.Object r1;
+        java.text.Format r2;
+        java.text.DateFormat $r3;
+        java.util.Calendar $r4;
+
+        r0 := @this: org.apache.commons.validator.routines.TimeValidator;
+        r1 := @parameter0: java.lang.Object;
+        r2 := @parameter1: java.text.Format;
+        $r3 = (java.text.DateFormat) r2;
+        $r4 = virtualinvoke $r3.<java.text.DateFormat: java.util.Calendar getCalendar()>();
+        return $r4;
+    }
+}

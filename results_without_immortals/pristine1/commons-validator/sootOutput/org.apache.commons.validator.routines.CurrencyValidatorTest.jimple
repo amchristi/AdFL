@@ -1,0 +1,473 @@
+public class org.apache.commons.validator.routines.CurrencyValidatorTest extends junit.framework.TestCase
+{
+    private static final char CURRENCY_SYMBOL;
+    private java.lang.String US_DOLLAR;
+    private java.lang.String UK_POUND;
+
+    public void <init>(java.lang.String)
+    {
+        org.apache.commons.validator.routines.CurrencyValidatorTest r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.routines.CurrencyValidatorTest;
+        r1 := @parameter0: java.lang.String;
+        specialinvoke r0.<junit.framework.TestCase: void <init>(java.lang.String)>(r1);
+        return;
+    }
+
+    protected void setUp() throws java.lang.Exception
+    {
+        org.apache.commons.validator.routines.CurrencyValidatorTest r0;
+        java.text.DecimalFormatSymbols $r1, $r4;
+        java.util.Locale $r2, $r5;
+        java.lang.String $r3, $r6;
+
+        r0 := @this: org.apache.commons.validator.routines.CurrencyValidatorTest;
+        specialinvoke r0.<junit.framework.TestCase: void setUp()>();
+        $r1 = new java.text.DecimalFormatSymbols;
+        $r2 = <java.util.Locale: java.util.Locale US>;
+        specialinvoke $r1.<java.text.DecimalFormatSymbols: void <init>(java.util.Locale)>($r2);
+        $r3 = virtualinvoke $r1.<java.text.DecimalFormatSymbols: java.lang.String getCurrencySymbol()>();
+        r0.<org.apache.commons.validator.routines.CurrencyValidatorTest: java.lang.String US_DOLLAR> = $r3;
+        $r4 = new java.text.DecimalFormatSymbols;
+        $r5 = <java.util.Locale: java.util.Locale UK>;
+        specialinvoke $r4.<java.text.DecimalFormatSymbols: void <init>(java.util.Locale)>($r5);
+        $r6 = virtualinvoke $r4.<java.text.DecimalFormatSymbols: java.lang.String getCurrencySymbol()>();
+        r0.<org.apache.commons.validator.routines.CurrencyValidatorTest: java.lang.String UK_POUND> = $r6;
+        return;
+    }
+
+    protected void tearDown() throws java.lang.Exception
+    {
+        org.apache.commons.validator.routines.CurrencyValidatorTest r0;
+
+        r0 := @this: org.apache.commons.validator.routines.CurrencyValidatorTest;
+        specialinvoke r0.<junit.framework.TestCase: void tearDown()>();
+        return;
+    }
+
+    public void testFormatType()
+    {
+        org.apache.commons.validator.routines.CurrencyValidatorTest r0;
+        org.apache.commons.validator.routines.BigDecimalValidator $r1, $r2;
+        int $i0, $i1;
+
+        r0 := @this: org.apache.commons.validator.routines.CurrencyValidatorTest;
+        $r1 = staticinvoke <org.apache.commons.validator.routines.CurrencyValidator: org.apache.commons.validator.routines.BigDecimalValidator getInstance()>();
+        $i0 = virtualinvoke $r1.<org.apache.commons.validator.routines.BigDecimalValidator: int getFormatType()>();
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertEquals(java.lang.String,int,int)>("Format Type A", 1, $i0);
+        $r2 = staticinvoke <org.apache.commons.validator.routines.CurrencyValidator: org.apache.commons.validator.routines.BigDecimalValidator getInstance()>();
+        $i1 = virtualinvoke $r2.<org.apache.commons.validator.routines.BigDecimalValidator: int getFormatType()>();
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertEquals(java.lang.String,int,int)>("Format Type B", 1, $i1);
+        return;
+    }
+
+    public void testValid()
+    {
+        org.apache.commons.validator.routines.CurrencyValidatorTest r0;
+        java.util.Locale r1, $r8, $r23, $r30, $r37, $r44, $r51, $r53, $r60, $r67, $r74, $r81, $r88, $r90;
+        org.apache.commons.validator.routines.BigDecimalValidator r2;
+        java.math.BigDecimal r3, r4, r5, r6, $r9, $r10, $r11, $r12, $r17, $r24, $r31, $r38, $r45, $r52, $r54, $r61, $r68, $r75, $r82, $r89, $r91;
+        java.lang.StringBuilder $r7, $r15, $r18, $r21, $r25, $r27, $r28, $r32, $r35, $r39, $r42, $r46, $r49, $r55, $r58, $r62, $r64, $r65, $r69, $r72, $r76, $r79, $r83, $r86;
+        java.lang.String $r13, $r14, $r16, $r19, $r20, $r22, $r26, $r29, $r33, $r34, $r36, $r40, $r41, $r43, $r47, $r48, $r50, $r56, $r57, $r59, $r63, $r66, $r70, $r71, $r73, $r77, $r78, $r80, $r84, $r85, $r87;
+
+        r0 := @this: org.apache.commons.validator.routines.CurrencyValidatorTest;
+        r1 = staticinvoke <java.util.Locale: java.util.Locale getDefault()>();
+        $r8 = <java.util.Locale: java.util.Locale UK>;
+        staticinvoke <java.util.Locale: void setDefault(java.util.Locale)>($r8);
+        r2 = staticinvoke <org.apache.commons.validator.routines.CurrencyValidator: org.apache.commons.validator.routines.BigDecimalValidator getInstance()>();
+        $r9 = new java.math.BigDecimal;
+        specialinvoke $r9.<java.math.BigDecimal: void <init>(java.lang.String)>("1234.56");
+        r3 = $r9;
+        $r10 = new java.math.BigDecimal;
+        specialinvoke $r10.<java.math.BigDecimal: void <init>(java.lang.String)>("-1234.56");
+        r4 = $r10;
+        $r11 = new java.math.BigDecimal;
+        specialinvoke $r11.<java.math.BigDecimal: void <init>(java.lang.String)>("1234.00");
+        r5 = $r11;
+        $r12 = new java.math.BigDecimal;
+        specialinvoke $r12.<java.math.BigDecimal: void <init>(java.lang.String)>("1234.50");
+        r6 = $r12;
+        $r7 = new java.lang.StringBuilder;
+        $r13 = r0.<org.apache.commons.validator.routines.CurrencyValidatorTest: java.lang.String UK_POUND>;
+        $r14 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r13);
+        specialinvoke $r7.<java.lang.StringBuilder: void <init>(java.lang.String)>($r14);
+        $r15 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("1,234.56");
+        $r16 = virtualinvoke $r15.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r17 = virtualinvoke r2.<org.apache.commons.validator.routines.BigDecimalValidator: java.math.BigDecimal validate(java.lang.String)>($r16);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Default locale", r3, $r17);
+        $r18 = new java.lang.StringBuilder;
+        $r19 = r0.<org.apache.commons.validator.routines.CurrencyValidatorTest: java.lang.String UK_POUND>;
+        $r20 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r19);
+        specialinvoke $r18.<java.lang.StringBuilder: void <init>(java.lang.String)>($r20);
+        $r21 = virtualinvoke $r18.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("1,234.56");
+        $r22 = virtualinvoke $r21.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r23 = <java.util.Locale: java.util.Locale UK>;
+        $r24 = virtualinvoke r2.<org.apache.commons.validator.routines.BigDecimalValidator: java.math.BigDecimal validate(java.lang.String,java.util.Locale)>($r22, $r23);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("UK locale", r3, $r24);
+        $r25 = new java.lang.StringBuilder;
+        specialinvoke $r25.<java.lang.StringBuilder: void <init>(java.lang.String)>("-");
+        $r26 = r0.<org.apache.commons.validator.routines.CurrencyValidatorTest: java.lang.String UK_POUND>;
+        $r27 = virtualinvoke $r25.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r26);
+        $r28 = virtualinvoke $r27.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("1,234.56");
+        $r29 = virtualinvoke $r28.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r30 = <java.util.Locale: java.util.Locale UK>;
+        $r31 = virtualinvoke r2.<org.apache.commons.validator.routines.BigDecimalValidator: java.math.BigDecimal validate(java.lang.String,java.util.Locale)>($r29, $r30);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("UK negative", r4, $r31);
+        $r32 = new java.lang.StringBuilder;
+        $r33 = r0.<org.apache.commons.validator.routines.CurrencyValidatorTest: java.lang.String UK_POUND>;
+        $r34 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r33);
+        specialinvoke $r32.<java.lang.StringBuilder: void <init>(java.lang.String)>($r34);
+        $r35 = virtualinvoke $r32.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("1,234");
+        $r36 = virtualinvoke $r35.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r37 = <java.util.Locale: java.util.Locale UK>;
+        $r38 = virtualinvoke r2.<org.apache.commons.validator.routines.BigDecimalValidator: java.math.BigDecimal validate(java.lang.String,java.util.Locale)>($r36, $r37);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("UK no decimal", r5, $r38);
+        $r39 = new java.lang.StringBuilder;
+        $r40 = r0.<org.apache.commons.validator.routines.CurrencyValidatorTest: java.lang.String UK_POUND>;
+        $r41 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r40);
+        specialinvoke $r39.<java.lang.StringBuilder: void <init>(java.lang.String)>($r41);
+        $r42 = virtualinvoke $r39.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("1,234.5");
+        $r43 = virtualinvoke $r42.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r44 = <java.util.Locale: java.util.Locale UK>;
+        $r45 = virtualinvoke r2.<org.apache.commons.validator.routines.BigDecimalValidator: java.math.BigDecimal validate(java.lang.String,java.util.Locale)>($r43, $r44);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("UK 1 decimal", r6, $r45);
+        $r46 = new java.lang.StringBuilder;
+        $r47 = r0.<org.apache.commons.validator.routines.CurrencyValidatorTest: java.lang.String UK_POUND>;
+        $r48 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r47);
+        specialinvoke $r46.<java.lang.StringBuilder: void <init>(java.lang.String)>($r48);
+        $r49 = virtualinvoke $r46.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("1,234.567");
+        $r50 = virtualinvoke $r49.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r51 = <java.util.Locale: java.util.Locale UK>;
+        $r52 = virtualinvoke r2.<org.apache.commons.validator.routines.BigDecimalValidator: java.math.BigDecimal validate(java.lang.String,java.util.Locale)>($r50, $r51);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("UK 3 decimal", r3, $r52);
+        $r53 = <java.util.Locale: java.util.Locale UK>;
+        $r54 = virtualinvoke r2.<org.apache.commons.validator.routines.BigDecimalValidator: java.math.BigDecimal validate(java.lang.String,java.util.Locale)>("1,234.56", $r53);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("UK no symbol", r3, $r54);
+        $r55 = new java.lang.StringBuilder;
+        $r56 = r0.<org.apache.commons.validator.routines.CurrencyValidatorTest: java.lang.String US_DOLLAR>;
+        $r57 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r56);
+        specialinvoke $r55.<java.lang.StringBuilder: void <init>(java.lang.String)>($r57);
+        $r58 = virtualinvoke $r55.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("1,234.56");
+        $r59 = virtualinvoke $r58.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r60 = <java.util.Locale: java.util.Locale US>;
+        $r61 = virtualinvoke r2.<org.apache.commons.validator.routines.BigDecimalValidator: java.math.BigDecimal validate(java.lang.String,java.util.Locale)>($r59, $r60);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("US locale", r3, $r61);
+        $r62 = new java.lang.StringBuilder;
+        specialinvoke $r62.<java.lang.StringBuilder: void <init>(java.lang.String)>("(");
+        $r63 = r0.<org.apache.commons.validator.routines.CurrencyValidatorTest: java.lang.String US_DOLLAR>;
+        $r64 = virtualinvoke $r62.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r63);
+        $r65 = virtualinvoke $r64.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("1,234.56)");
+        $r66 = virtualinvoke $r65.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r67 = <java.util.Locale: java.util.Locale US>;
+        $r68 = virtualinvoke r2.<org.apache.commons.validator.routines.BigDecimalValidator: java.math.BigDecimal validate(java.lang.String,java.util.Locale)>($r66, $r67);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("US negative", r4, $r68);
+        $r69 = new java.lang.StringBuilder;
+        $r70 = r0.<org.apache.commons.validator.routines.CurrencyValidatorTest: java.lang.String US_DOLLAR>;
+        $r71 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r70);
+        specialinvoke $r69.<java.lang.StringBuilder: void <init>(java.lang.String)>($r71);
+        $r72 = virtualinvoke $r69.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("1,234");
+        $r73 = virtualinvoke $r72.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r74 = <java.util.Locale: java.util.Locale US>;
+        $r75 = virtualinvoke r2.<org.apache.commons.validator.routines.BigDecimalValidator: java.math.BigDecimal validate(java.lang.String,java.util.Locale)>($r73, $r74);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("US no decimal", r5, $r75);
+        $r76 = new java.lang.StringBuilder;
+        $r77 = r0.<org.apache.commons.validator.routines.CurrencyValidatorTest: java.lang.String US_DOLLAR>;
+        $r78 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r77);
+        specialinvoke $r76.<java.lang.StringBuilder: void <init>(java.lang.String)>($r78);
+        $r79 = virtualinvoke $r76.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("1,234.5");
+        $r80 = virtualinvoke $r79.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r81 = <java.util.Locale: java.util.Locale US>;
+        $r82 = virtualinvoke r2.<org.apache.commons.validator.routines.BigDecimalValidator: java.math.BigDecimal validate(java.lang.String,java.util.Locale)>($r80, $r81);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("US 1 decimal", r6, $r82);
+        $r83 = new java.lang.StringBuilder;
+        $r84 = r0.<org.apache.commons.validator.routines.CurrencyValidatorTest: java.lang.String US_DOLLAR>;
+        $r85 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r84);
+        specialinvoke $r83.<java.lang.StringBuilder: void <init>(java.lang.String)>($r85);
+        $r86 = virtualinvoke $r83.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("1,234.567");
+        $r87 = virtualinvoke $r86.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r88 = <java.util.Locale: java.util.Locale US>;
+        $r89 = virtualinvoke r2.<org.apache.commons.validator.routines.BigDecimalValidator: java.math.BigDecimal validate(java.lang.String,java.util.Locale)>($r87, $r88);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("US 3 decimal", r3, $r89);
+        $r90 = <java.util.Locale: java.util.Locale US>;
+        $r91 = virtualinvoke r2.<org.apache.commons.validator.routines.BigDecimalValidator: java.math.BigDecimal validate(java.lang.String,java.util.Locale)>("1,234.56", $r90);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("US no symbol", r3, $r91);
+        staticinvoke <java.util.Locale: void setDefault(java.util.Locale)>(r1);
+        return;
+    }
+
+    public void testInvalid()
+    {
+        org.apache.commons.validator.routines.CurrencyValidatorTest r0;
+        org.apache.commons.validator.routines.BigDecimalValidator r1;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5;
+        java.math.BigDecimal $r2, $r3;
+        java.lang.StringBuilder $r4, $r7, $r10, $r12, $r13, $r16, $r19, $r22, $r24, $r25;
+        java.lang.String $r5, $r6, $r8, $r11, $r14, $r17, $r18, $r20, $r23, $r26;
+        java.util.Locale $r9, $r15, $r21, $r27;
+
+        r0 := @this: org.apache.commons.validator.routines.CurrencyValidatorTest;
+        r1 = staticinvoke <org.apache.commons.validator.routines.CurrencyValidator: org.apache.commons.validator.routines.BigDecimalValidator getInstance()>();
+        $z0 = virtualinvoke r1.<org.apache.commons.validator.routines.BigDecimalValidator: boolean isValid(java.lang.String)>(null);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertFalse(java.lang.String,boolean)>("isValid() Null Value", $z0);
+        $z1 = virtualinvoke r1.<org.apache.commons.validator.routines.BigDecimalValidator: boolean isValid(java.lang.String)>("");
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertFalse(java.lang.String,boolean)>("isValid() Empty Value", $z1);
+        $r2 = virtualinvoke r1.<org.apache.commons.validator.routines.BigDecimalValidator: java.math.BigDecimal validate(java.lang.String)>(null);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertNull(java.lang.String,java.lang.Object)>("validate() Null Value", $r2);
+        $r3 = virtualinvoke r1.<org.apache.commons.validator.routines.BigDecimalValidator: java.math.BigDecimal validate(java.lang.String)>("");
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertNull(java.lang.String,java.lang.Object)>("validate() Empty Value", $r3);
+        $r4 = new java.lang.StringBuilder;
+        $r5 = r0.<org.apache.commons.validator.routines.CurrencyValidatorTest: java.lang.String US_DOLLAR>;
+        $r6 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r5);
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>(java.lang.String)>($r6);
+        $r7 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("1,234.56");
+        $r8 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r9 = <java.util.Locale: java.util.Locale UK>;
+        $z2 = virtualinvoke r1.<org.apache.commons.validator.routines.BigDecimalValidator: boolean isValid(java.lang.String,java.util.Locale)>($r8, $r9);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertFalse(java.lang.String,boolean)>("UK wrong symbol", $z2);
+        $r10 = new java.lang.StringBuilder;
+        specialinvoke $r10.<java.lang.StringBuilder: void <init>(java.lang.String)>("(");
+        $r11 = r0.<org.apache.commons.validator.routines.CurrencyValidatorTest: java.lang.String UK_POUND>;
+        $r12 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r11);
+        $r13 = virtualinvoke $r12.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("1,234.56)");
+        $r14 = virtualinvoke $r13.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r15 = <java.util.Locale: java.util.Locale UK>;
+        $z3 = virtualinvoke r1.<org.apache.commons.validator.routines.BigDecimalValidator: boolean isValid(java.lang.String,java.util.Locale)>($r14, $r15);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertFalse(java.lang.String,boolean)>("UK wrong negative", $z3);
+        $r16 = new java.lang.StringBuilder;
+        $r17 = r0.<org.apache.commons.validator.routines.CurrencyValidatorTest: java.lang.String UK_POUND>;
+        $r18 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r17);
+        specialinvoke $r16.<java.lang.StringBuilder: void <init>(java.lang.String)>($r18);
+        $r19 = virtualinvoke $r16.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("1,234.56");
+        $r20 = virtualinvoke $r19.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r21 = <java.util.Locale: java.util.Locale US>;
+        $z4 = virtualinvoke r1.<org.apache.commons.validator.routines.BigDecimalValidator: boolean isValid(java.lang.String,java.util.Locale)>($r20, $r21);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertFalse(java.lang.String,boolean)>("US wrong symbol", $z4);
+        $r22 = new java.lang.StringBuilder;
+        specialinvoke $r22.<java.lang.StringBuilder: void <init>(java.lang.String)>("-");
+        $r23 = r0.<org.apache.commons.validator.routines.CurrencyValidatorTest: java.lang.String US_DOLLAR>;
+        $r24 = virtualinvoke $r22.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r23);
+        $r25 = virtualinvoke $r24.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("1,234.56");
+        $r26 = virtualinvoke $r25.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r27 = <java.util.Locale: java.util.Locale US>;
+        $z5 = virtualinvoke r1.<org.apache.commons.validator.routines.BigDecimalValidator: boolean isValid(java.lang.String,java.util.Locale)>($r26, $r27);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertFalse(java.lang.String,boolean)>("US wrong negative", $z5);
+        return;
+    }
+
+    public void testIntegerValid()
+    {
+        org.apache.commons.validator.routines.CurrencyValidatorTest r0;
+        java.util.Locale r1, $r6, $r20, $r27, $r34, $r41;
+        org.apache.commons.validator.routines.CurrencyValidator r2, $r7;
+        java.math.BigDecimal r3, r4, $r8, $r9, $r14, $r21, $r28, $r35, $r42;
+        java.lang.StringBuilder $r5, $r12, $r15, $r18, $r22, $r24, $r25, $r29, $r32, $r36, $r38, $r39;
+        java.lang.String $r10, $r11, $r13, $r16, $r17, $r19, $r23, $r26, $r30, $r31, $r33, $r37, $r40;
+
+        r0 := @this: org.apache.commons.validator.routines.CurrencyValidatorTest;
+        r1 = staticinvoke <java.util.Locale: java.util.Locale getDefault()>();
+        $r6 = <java.util.Locale: java.util.Locale UK>;
+        staticinvoke <java.util.Locale: void setDefault(java.util.Locale)>($r6);
+        $r7 = new org.apache.commons.validator.routines.CurrencyValidator;
+        specialinvoke $r7.<org.apache.commons.validator.routines.CurrencyValidator: void <init>()>();
+        r2 = $r7;
+        $r8 = new java.math.BigDecimal;
+        specialinvoke $r8.<java.math.BigDecimal: void <init>(java.lang.String)>("1234.00");
+        r3 = $r8;
+        $r9 = new java.math.BigDecimal;
+        specialinvoke $r9.<java.math.BigDecimal: void <init>(java.lang.String)>("-1234.00");
+        r4 = $r9;
+        $r5 = new java.lang.StringBuilder;
+        $r10 = r0.<org.apache.commons.validator.routines.CurrencyValidatorTest: java.lang.String UK_POUND>;
+        $r11 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r10);
+        specialinvoke $r5.<java.lang.StringBuilder: void <init>(java.lang.String)>($r11);
+        $r12 = virtualinvoke $r5.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("1,234");
+        $r13 = virtualinvoke $r12.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r14 = virtualinvoke r2.<org.apache.commons.validator.routines.CurrencyValidator: java.math.BigDecimal validate(java.lang.String)>($r13);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("Default locale", r3, $r14);
+        $r15 = new java.lang.StringBuilder;
+        $r16 = r0.<org.apache.commons.validator.routines.CurrencyValidatorTest: java.lang.String UK_POUND>;
+        $r17 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r16);
+        specialinvoke $r15.<java.lang.StringBuilder: void <init>(java.lang.String)>($r17);
+        $r18 = virtualinvoke $r15.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("1,234");
+        $r19 = virtualinvoke $r18.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r20 = <java.util.Locale: java.util.Locale UK>;
+        $r21 = virtualinvoke r2.<org.apache.commons.validator.routines.CurrencyValidator: java.math.BigDecimal validate(java.lang.String,java.util.Locale)>($r19, $r20);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("UK locale", r3, $r21);
+        $r22 = new java.lang.StringBuilder;
+        specialinvoke $r22.<java.lang.StringBuilder: void <init>(java.lang.String)>("-");
+        $r23 = r0.<org.apache.commons.validator.routines.CurrencyValidatorTest: java.lang.String UK_POUND>;
+        $r24 = virtualinvoke $r22.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r23);
+        $r25 = virtualinvoke $r24.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("1,234");
+        $r26 = virtualinvoke $r25.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r27 = <java.util.Locale: java.util.Locale UK>;
+        $r28 = virtualinvoke r2.<org.apache.commons.validator.routines.CurrencyValidator: java.math.BigDecimal validate(java.lang.String,java.util.Locale)>($r26, $r27);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("UK negative", r4, $r28);
+        $r29 = new java.lang.StringBuilder;
+        $r30 = r0.<org.apache.commons.validator.routines.CurrencyValidatorTest: java.lang.String US_DOLLAR>;
+        $r31 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r30);
+        specialinvoke $r29.<java.lang.StringBuilder: void <init>(java.lang.String)>($r31);
+        $r32 = virtualinvoke $r29.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("1,234");
+        $r33 = virtualinvoke $r32.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r34 = <java.util.Locale: java.util.Locale US>;
+        $r35 = virtualinvoke r2.<org.apache.commons.validator.routines.CurrencyValidator: java.math.BigDecimal validate(java.lang.String,java.util.Locale)>($r33, $r34);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("US locale", r3, $r35);
+        $r36 = new java.lang.StringBuilder;
+        specialinvoke $r36.<java.lang.StringBuilder: void <init>(java.lang.String)>("(");
+        $r37 = r0.<org.apache.commons.validator.routines.CurrencyValidatorTest: java.lang.String US_DOLLAR>;
+        $r38 = virtualinvoke $r36.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r37);
+        $r39 = virtualinvoke $r38.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("1,234)");
+        $r40 = virtualinvoke $r39.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r41 = <java.util.Locale: java.util.Locale US>;
+        $r42 = virtualinvoke r2.<org.apache.commons.validator.routines.CurrencyValidator: java.math.BigDecimal validate(java.lang.String,java.util.Locale)>($r40, $r41);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("US negative", r4, $r42);
+        staticinvoke <java.util.Locale: void setDefault(java.util.Locale)>(r1);
+        return;
+    }
+
+    public void testIntegerInvalid()
+    {
+        org.apache.commons.validator.routines.CurrencyValidatorTest r0;
+        org.apache.commons.validator.routines.CurrencyValidator $r1, r2;
+        java.lang.StringBuilder $r3, $r6, $r9, $r11, $r12, $r15, $r18, $r21, $r23, $r24;
+        java.lang.String $r4, $r5, $r7, $r10, $r13, $r16, $r17, $r19, $r22, $r25;
+        java.util.Locale $r8, $r14, $r20, $r26;
+        boolean $z0, $z1, $z2, $z3;
+
+        r0 := @this: org.apache.commons.validator.routines.CurrencyValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.CurrencyValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.CurrencyValidator: void <init>(boolean,boolean)>(1, 0);
+        r2 = $r1;
+        $r3 = new java.lang.StringBuilder;
+        $r4 = r0.<org.apache.commons.validator.routines.CurrencyValidatorTest: java.lang.String UK_POUND>;
+        $r5 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r4);
+        specialinvoke $r3.<java.lang.StringBuilder: void <init>(java.lang.String)>($r5);
+        $r6 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("1,234.56");
+        $r7 = virtualinvoke $r6.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r8 = <java.util.Locale: java.util.Locale UK>;
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.CurrencyValidator: boolean isValid(java.lang.String,java.util.Locale)>($r7, $r8);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertFalse(java.lang.String,boolean)>("UK positive", $z0);
+        $r9 = new java.lang.StringBuilder;
+        specialinvoke $r9.<java.lang.StringBuilder: void <init>(java.lang.String)>("-");
+        $r10 = r0.<org.apache.commons.validator.routines.CurrencyValidatorTest: java.lang.String UK_POUND>;
+        $r11 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r10);
+        $r12 = virtualinvoke $r11.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("1,234.56");
+        $r13 = virtualinvoke $r12.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r14 = <java.util.Locale: java.util.Locale UK>;
+        $z1 = virtualinvoke r2.<org.apache.commons.validator.routines.CurrencyValidator: boolean isValid(java.lang.String,java.util.Locale)>($r13, $r14);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertFalse(java.lang.String,boolean)>("UK negative", $z1);
+        $r15 = new java.lang.StringBuilder;
+        $r16 = r0.<org.apache.commons.validator.routines.CurrencyValidatorTest: java.lang.String US_DOLLAR>;
+        $r17 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r16);
+        specialinvoke $r15.<java.lang.StringBuilder: void <init>(java.lang.String)>($r17);
+        $r18 = virtualinvoke $r15.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("1,234.56");
+        $r19 = virtualinvoke $r18.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r20 = <java.util.Locale: java.util.Locale US>;
+        $z2 = virtualinvoke r2.<org.apache.commons.validator.routines.CurrencyValidator: boolean isValid(java.lang.String,java.util.Locale)>($r19, $r20);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertFalse(java.lang.String,boolean)>("US positive", $z2);
+        $r21 = new java.lang.StringBuilder;
+        specialinvoke $r21.<java.lang.StringBuilder: void <init>(java.lang.String)>("(");
+        $r22 = r0.<org.apache.commons.validator.routines.CurrencyValidatorTest: java.lang.String US_DOLLAR>;
+        $r23 = virtualinvoke $r21.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r22);
+        $r24 = virtualinvoke $r23.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("1,234.56)");
+        $r25 = virtualinvoke $r24.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r26 = <java.util.Locale: java.util.Locale US>;
+        $z3 = virtualinvoke r2.<org.apache.commons.validator.routines.CurrencyValidator: boolean isValid(java.lang.String,java.util.Locale)>($r25, $r26);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertFalse(java.lang.String,boolean)>("US negative", $z3);
+        return;
+    }
+
+    public void testPattern()
+    {
+        org.apache.commons.validator.routines.CurrencyValidatorTest r0;
+        java.util.Locale r1, $r8, $r34, $r41, $r43, $r45, $r57;
+        org.apache.commons.validator.routines.BigDecimalValidator r2;
+        java.lang.String r3, r4, $r10, $r16, $r17, $r19, $r22, $r25, $r30, $r31, $r33, $r37, $r40, $r48, $r49, $r51, $r53, $r54, $r56;
+        java.math.BigDecimal r5, r6, $r14, $r15, $r20, $r26, $r27, $r28, $r35, $r42, $r44, $r46;
+        java.lang.StringBuilder $r7, $r9, $r11, $r12, $r13, $r18, $r21, $r23, $r24, $r29, $r32, $r36, $r38, $r39, $r47, $r50, $r52, $r55;
+        boolean $z0, $z1;
+
+        r0 := @this: org.apache.commons.validator.routines.CurrencyValidatorTest;
+        r1 = staticinvoke <java.util.Locale: java.util.Locale getDefault()>();
+        $r8 = <java.util.Locale: java.util.Locale UK>;
+        staticinvoke <java.util.Locale: void setDefault(java.util.Locale)>($r8);
+        r2 = staticinvoke <org.apache.commons.validator.routines.CurrencyValidator: org.apache.commons.validator.routines.BigDecimalValidator getInstance()>();
+        r3 = "\u00a4#,##0.000";
+        $r9 = new java.lang.StringBuilder;
+        $r10 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>(r3);
+        specialinvoke $r9.<java.lang.StringBuilder: void <init>(java.lang.String)>($r10);
+        $r11 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(";[");
+        $r12 = virtualinvoke $r11.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r3);
+        $r13 = virtualinvoke $r12.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("]");
+        r4 = virtualinvoke $r13.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r14 = new java.math.BigDecimal;
+        specialinvoke $r14.<java.math.BigDecimal: void <init>(java.lang.String)>("1234.567");
+        r5 = $r14;
+        $r15 = new java.math.BigDecimal;
+        specialinvoke $r15.<java.math.BigDecimal: void <init>(java.lang.String)>("-1234.567");
+        r6 = $r15;
+        $r7 = new java.lang.StringBuilder;
+        $r16 = r0.<org.apache.commons.validator.routines.CurrencyValidatorTest: java.lang.String UK_POUND>;
+        $r17 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r16);
+        specialinvoke $r7.<java.lang.StringBuilder: void <init>(java.lang.String)>($r17);
+        $r18 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("1,234.567");
+        $r19 = virtualinvoke $r18.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r20 = virtualinvoke r2.<org.apache.commons.validator.routines.BigDecimalValidator: java.math.BigDecimal validate(java.lang.String,java.lang.String)>($r19, r4);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("default", r5, $r20);
+        $r21 = new java.lang.StringBuilder;
+        specialinvoke $r21.<java.lang.StringBuilder: void <init>(java.lang.String)>("[");
+        $r22 = r0.<org.apache.commons.validator.routines.CurrencyValidatorTest: java.lang.String UK_POUND>;
+        $r23 = virtualinvoke $r21.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r22);
+        $r24 = virtualinvoke $r23.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("1,234.567]");
+        $r25 = virtualinvoke $r24.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r26 = virtualinvoke r2.<org.apache.commons.validator.routines.BigDecimalValidator: java.math.BigDecimal validate(java.lang.String,java.lang.String)>($r25, r4);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("negative", r6, $r26);
+        $r27 = virtualinvoke r2.<org.apache.commons.validator.routines.BigDecimalValidator: java.math.BigDecimal validate(java.lang.String,java.lang.String)>("1,234.567", r4);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("no symbol +ve", r5, $r27);
+        $r28 = virtualinvoke r2.<org.apache.commons.validator.routines.BigDecimalValidator: java.math.BigDecimal validate(java.lang.String,java.lang.String)>("[1,234.567]", r4);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("no symbol -ve", r6, $r28);
+        $r29 = new java.lang.StringBuilder;
+        $r30 = r0.<org.apache.commons.validator.routines.CurrencyValidatorTest: java.lang.String US_DOLLAR>;
+        $r31 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r30);
+        specialinvoke $r29.<java.lang.StringBuilder: void <init>(java.lang.String)>($r31);
+        $r32 = virtualinvoke $r29.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("1,234.567");
+        $r33 = virtualinvoke $r32.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r34 = <java.util.Locale: java.util.Locale US>;
+        $r35 = virtualinvoke r2.<org.apache.commons.validator.routines.BigDecimalValidator: java.math.BigDecimal validate(java.lang.String,java.lang.String,java.util.Locale)>($r33, r4, $r34);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("default", r5, $r35);
+        $r36 = new java.lang.StringBuilder;
+        specialinvoke $r36.<java.lang.StringBuilder: void <init>(java.lang.String)>("[");
+        $r37 = r0.<org.apache.commons.validator.routines.CurrencyValidatorTest: java.lang.String US_DOLLAR>;
+        $r38 = virtualinvoke $r36.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r37);
+        $r39 = virtualinvoke $r38.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("1,234.567]");
+        $r40 = virtualinvoke $r39.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r41 = <java.util.Locale: java.util.Locale US>;
+        $r42 = virtualinvoke r2.<org.apache.commons.validator.routines.BigDecimalValidator: java.math.BigDecimal validate(java.lang.String,java.lang.String,java.util.Locale)>($r40, r4, $r41);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("negative", r6, $r42);
+        $r43 = <java.util.Locale: java.util.Locale US>;
+        $r44 = virtualinvoke r2.<org.apache.commons.validator.routines.BigDecimalValidator: java.math.BigDecimal validate(java.lang.String,java.lang.String,java.util.Locale)>("1,234.567", r4, $r43);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("no symbol +ve", r5, $r44);
+        $r45 = <java.util.Locale: java.util.Locale US>;
+        $r46 = virtualinvoke r2.<org.apache.commons.validator.routines.BigDecimalValidator: java.math.BigDecimal validate(java.lang.String,java.lang.String,java.util.Locale)>("[1,234.567]", r4, $r45);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("no symbol -ve", r6, $r46);
+        $r47 = new java.lang.StringBuilder;
+        $r48 = r0.<org.apache.commons.validator.routines.CurrencyValidatorTest: java.lang.String US_DOLLAR>;
+        $r49 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r48);
+        specialinvoke $r47.<java.lang.StringBuilder: void <init>(java.lang.String)>($r49);
+        $r50 = virtualinvoke $r47.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("1,234.567");
+        $r51 = virtualinvoke $r50.<java.lang.StringBuilder: java.lang.String toString()>();
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.BigDecimalValidator: boolean isValid(java.lang.String,java.lang.String)>($r51, r4);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertFalse(java.lang.String,boolean)>("invalid symbol", $z0);
+        $r52 = new java.lang.StringBuilder;
+        $r53 = r0.<org.apache.commons.validator.routines.CurrencyValidatorTest: java.lang.String UK_POUND>;
+        $r54 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r53);
+        specialinvoke $r52.<java.lang.StringBuilder: void <init>(java.lang.String)>($r54);
+        $r55 = virtualinvoke $r52.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("1,234.567");
+        $r56 = virtualinvoke $r55.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r57 = <java.util.Locale: java.util.Locale US>;
+        $z1 = virtualinvoke r2.<org.apache.commons.validator.routines.BigDecimalValidator: boolean isValid(java.lang.String,java.lang.String,java.util.Locale)>($r56, r4, $r57);
+        staticinvoke <org.apache.commons.validator.routines.CurrencyValidatorTest: void assertFalse(java.lang.String,boolean)>("invalid symbol", $z1);
+        staticinvoke <java.util.Locale: void setDefault(java.util.Locale)>(r1);
+        return;
+    }
+}

@@ -1,0 +1,58 @@
+public abstract class org.apache.commons.validator.AbstractCommonTest extends junit.framework.TestCase
+{
+    protected org.apache.commons.validator.ValidatorResources resources;
+
+    public void <init>(java.lang.String)
+    {
+        org.apache.commons.validator.AbstractCommonTest r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.AbstractCommonTest;
+        r1 := @parameter0: java.lang.String;
+        specialinvoke r0.<junit.framework.TestCase: void <init>(java.lang.String)>(r1);
+        r0.<org.apache.commons.validator.AbstractCommonTest: org.apache.commons.validator.ValidatorResources resources> = null;
+        return;
+    }
+
+    protected void loadResources(java.lang.String) throws java.io.IOException, org.xml.sax.SAXException
+    {
+        org.apache.commons.validator.AbstractCommonTest r0;
+        java.lang.String r1;
+        java.io.InputStream r2;
+        java.lang.Throwable r3, $r6;
+        java.lang.Class $r4;
+        org.apache.commons.validator.ValidatorResources $r5;
+
+        r0 := @this: org.apache.commons.validator.AbstractCommonTest;
+        r1 := @parameter0: java.lang.String;
+        r2 = null;
+
+     label0:
+        $r4 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>();
+        r2 = virtualinvoke $r4.<java.lang.Class: java.io.InputStream getResourceAsStream(java.lang.String)>(r1);
+        $r5 = new org.apache.commons.validator.ValidatorResources;
+        specialinvoke $r5.<org.apache.commons.validator.ValidatorResources: void <init>(java.io.InputStream)>(r2);
+        r0.<org.apache.commons.validator.AbstractCommonTest: org.apache.commons.validator.ValidatorResources resources> = $r5;
+        goto label3;
+
+     label1:
+        $r6 := @caughtexception;
+        r3 = $r6;
+        if r2 == null goto label2;
+
+        virtualinvoke r2.<java.io.InputStream: void close()>();
+
+     label2:
+        throw r3;
+
+     label3:
+        if r2 == null goto label4;
+
+        virtualinvoke r2.<java.io.InputStream: void close()>();
+
+     label4:
+        return;
+
+        catch java.lang.Throwable from label0 to label1 with label1;
+    }
+}

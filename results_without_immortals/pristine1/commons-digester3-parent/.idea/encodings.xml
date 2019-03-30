@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/core" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/dist" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/examples" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/examples/annotations/atom" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/examples/api/addressbook" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/examples/api/catalog" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/examples/api/dbinsert" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/examples/api/document-markup" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/examples/edsl/atom" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/examples/plugins/pipeline" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/examples/rss" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/examples/xmlrules/addressbook" charset="ISO-8859-1" />
+  </component>
+</project>

@@ -1,0 +1,6 @@
+org/apache/commons/digester3/examples/api/catalog/BookFactory.class
+org/apache/commons/digester3/examples/api/catalog/AudioVisual.class
+org/apache/commons/digester3/examples/api/catalog/Catalog.class
+org/apache/commons/digester3/examples/api/catalog/Item.class
+org/apache/commons/digester3/examples/api/catalog/Book.class
+org/apache/commons/digester3/examples/api/catalog/Main.class

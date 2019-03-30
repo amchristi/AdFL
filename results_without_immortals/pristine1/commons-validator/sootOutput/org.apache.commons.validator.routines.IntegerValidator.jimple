@@ -1,0 +1,236 @@
+public class org.apache.commons.validator.routines.IntegerValidator extends org.apache.commons.validator.routines.AbstractNumberValidator
+{
+    private static final long serialVersionUID;
+    private static final org.apache.commons.validator.routines.IntegerValidator VALIDATOR;
+
+    static void <clinit>()
+    {
+        org.apache.commons.validator.routines.IntegerValidator $r0;
+
+        $r0 = new org.apache.commons.validator.routines.IntegerValidator;
+        specialinvoke $r0.<org.apache.commons.validator.routines.IntegerValidator: void <init>()>();
+        <org.apache.commons.validator.routines.IntegerValidator: org.apache.commons.validator.routines.IntegerValidator VALIDATOR> = $r0;
+        return;
+    }
+
+    public static org.apache.commons.validator.routines.IntegerValidator getInstance()
+    {
+        org.apache.commons.validator.routines.IntegerValidator $r0;
+
+        $r0 = <org.apache.commons.validator.routines.IntegerValidator: org.apache.commons.validator.routines.IntegerValidator VALIDATOR>;
+        return $r0;
+    }
+
+    public void <init>()
+    {
+        org.apache.commons.validator.routines.IntegerValidator r0;
+
+        r0 := @this: org.apache.commons.validator.routines.IntegerValidator;
+        specialinvoke r0.<org.apache.commons.validator.routines.IntegerValidator: void <init>(boolean,int)>(1, 0);
+        return;
+    }
+
+    public void <init>(boolean, int)
+    {
+        org.apache.commons.validator.routines.IntegerValidator r0;
+        boolean z0;
+        int i0;
+
+        r0 := @this: org.apache.commons.validator.routines.IntegerValidator;
+        z0 := @parameter0: boolean;
+        i0 := @parameter1: int;
+        specialinvoke r0.<org.apache.commons.validator.routines.AbstractNumberValidator: void <init>(boolean,int,boolean)>(z0, i0, 0);
+        return;
+    }
+
+    public java.lang.Integer validate(java.lang.String)
+    {
+        org.apache.commons.validator.routines.IntegerValidator r0;
+        java.lang.String r1;
+        java.lang.Object $r2;
+        java.lang.Integer $r3;
+
+        r0 := @this: org.apache.commons.validator.routines.IntegerValidator;
+        r1 := @parameter0: java.lang.String;
+        $r2 = virtualinvoke r0.<org.apache.commons.validator.routines.IntegerValidator: java.lang.Object parse(java.lang.String,java.lang.String,java.util.Locale)>(r1, null, null);
+        $r3 = (java.lang.Integer) $r2;
+        return $r3;
+    }
+
+    public java.lang.Integer validate(java.lang.String, java.lang.String)
+    {
+        org.apache.commons.validator.routines.IntegerValidator r0;
+        java.lang.String r1, r2;
+        java.lang.Object $r3;
+        java.lang.Integer $r4;
+
+        r0 := @this: org.apache.commons.validator.routines.IntegerValidator;
+        r1 := @parameter0: java.lang.String;
+        r2 := @parameter1: java.lang.String;
+        $r3 = virtualinvoke r0.<org.apache.commons.validator.routines.IntegerValidator: java.lang.Object parse(java.lang.String,java.lang.String,java.util.Locale)>(r1, r2, null);
+        $r4 = (java.lang.Integer) $r3;
+        return $r4;
+    }
+
+    public java.lang.Integer validate(java.lang.String, java.util.Locale)
+    {
+        org.apache.commons.validator.routines.IntegerValidator r0;
+        java.lang.String r1;
+        java.util.Locale r2;
+        java.lang.Object $r3;
+        java.lang.Integer $r4;
+
+        r0 := @this: org.apache.commons.validator.routines.IntegerValidator;
+        r1 := @parameter0: java.lang.String;
+        r2 := @parameter1: java.util.Locale;
+        $r3 = virtualinvoke r0.<org.apache.commons.validator.routines.IntegerValidator: java.lang.Object parse(java.lang.String,java.lang.String,java.util.Locale)>(r1, null, r2);
+        $r4 = (java.lang.Integer) $r3;
+        return $r4;
+    }
+
+    public java.lang.Integer validate(java.lang.String, java.lang.String, java.util.Locale)
+    {
+        org.apache.commons.validator.routines.IntegerValidator r0;
+        java.lang.String r1, r2;
+        java.util.Locale r3;
+        java.lang.Object $r4;
+        java.lang.Integer $r5;
+
+        r0 := @this: org.apache.commons.validator.routines.IntegerValidator;
+        r1 := @parameter0: java.lang.String;
+        r2 := @parameter1: java.lang.String;
+        r3 := @parameter2: java.util.Locale;
+        $r4 = virtualinvoke r0.<org.apache.commons.validator.routines.IntegerValidator: java.lang.Object parse(java.lang.String,java.lang.String,java.util.Locale)>(r1, r2, r3);
+        $r5 = (java.lang.Integer) $r4;
+        return $r5;
+    }
+
+    public boolean isInRange(int, int, int)
+    {
+        org.apache.commons.validator.routines.IntegerValidator r0;
+        int i0, i1, i2;
+
+        r0 := @this: org.apache.commons.validator.routines.IntegerValidator;
+        i0 := @parameter0: int;
+        i1 := @parameter1: int;
+        i2 := @parameter2: int;
+        if i0 < i1 goto label0;
+
+        if i0 > i2 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public boolean isInRange(java.lang.Integer, int, int)
+    {
+        org.apache.commons.validator.routines.IntegerValidator r0;
+        java.lang.Integer r1;
+        int i0, i1, $i2;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.routines.IntegerValidator;
+        r1 := @parameter0: java.lang.Integer;
+        i0 := @parameter1: int;
+        i1 := @parameter2: int;
+        $i2 = virtualinvoke r1.<java.lang.Integer: int intValue()>();
+        $z0 = virtualinvoke r0.<org.apache.commons.validator.routines.IntegerValidator: boolean isInRange(int,int,int)>($i2, i0, i1);
+        return $z0;
+    }
+
+    public boolean minValue(int, int)
+    {
+        org.apache.commons.validator.routines.IntegerValidator r0;
+        int i0, i1;
+
+        r0 := @this: org.apache.commons.validator.routines.IntegerValidator;
+        i0 := @parameter0: int;
+        i1 := @parameter1: int;
+        if i0 < i1 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public boolean minValue(java.lang.Integer, int)
+    {
+        org.apache.commons.validator.routines.IntegerValidator r0;
+        java.lang.Integer r1;
+        int i0, $i1;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.routines.IntegerValidator;
+        r1 := @parameter0: java.lang.Integer;
+        i0 := @parameter1: int;
+        $i1 = virtualinvoke r1.<java.lang.Integer: int intValue()>();
+        $z0 = virtualinvoke r0.<org.apache.commons.validator.routines.IntegerValidator: boolean minValue(int,int)>($i1, i0);
+        return $z0;
+    }
+
+    public boolean maxValue(int, int)
+    {
+        org.apache.commons.validator.routines.IntegerValidator r0;
+        int i0, i1;
+
+        r0 := @this: org.apache.commons.validator.routines.IntegerValidator;
+        i0 := @parameter0: int;
+        i1 := @parameter1: int;
+        if i0 > i1 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public boolean maxValue(java.lang.Integer, int)
+    {
+        org.apache.commons.validator.routines.IntegerValidator r0;
+        java.lang.Integer r1;
+        int i0, $i1;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.routines.IntegerValidator;
+        r1 := @parameter0: java.lang.Integer;
+        i0 := @parameter1: int;
+        $i1 = virtualinvoke r1.<java.lang.Integer: int intValue()>();
+        $z0 = virtualinvoke r0.<org.apache.commons.validator.routines.IntegerValidator: boolean maxValue(int,int)>($i1, i0);
+        return $z0;
+    }
+
+    protected java.lang.Object processParsedValue(java.lang.Object, java.text.Format)
+    {
+        org.apache.commons.validator.routines.IntegerValidator r0;
+        java.lang.Object r1;
+        java.text.Format r2;
+        long l0;
+        java.lang.Number $r3;
+        byte $b1, $b2;
+        java.lang.Integer $r4;
+        int $i3;
+
+        r0 := @this: org.apache.commons.validator.routines.IntegerValidator;
+        r1 := @parameter0: java.lang.Object;
+        r2 := @parameter1: java.text.Format;
+        $r3 = (java.lang.Number) r1;
+        l0 = virtualinvoke $r3.<java.lang.Number: long longValue()>();
+        $b1 = l0 cmp -2147483648L;
+        if $b1 < 0 goto label0;
+
+        $b2 = l0 cmp 2147483647L;
+        if $b2 <= 0 goto label1;
+
+     label0:
+        return null;
+
+     label1:
+        $r4 = new java.lang.Integer;
+        $i3 = (int) l0;
+        specialinvoke $r4.<java.lang.Integer: void <init>(int)>($i3);
+        return $r4;
+    }
+}

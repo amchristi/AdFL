@@ -1,0 +1,656 @@
+public class org.apache.commons.validator.EmailTest extends org.apache.commons.validator.AbstractCommonTest
+{
+    protected static java.lang.String FORM_KEY;
+    protected static java.lang.String ACTION;
+    org.apache.commons.validator.ResultPair[] testEmailFromPerl;
+
+    static void <clinit>()
+    {
+        <org.apache.commons.validator.EmailTest: java.lang.String FORM_KEY> = "emailForm";
+        <org.apache.commons.validator.EmailTest: java.lang.String ACTION> = "email";
+        return;
+    }
+
+    public void <init>(java.lang.String)
+    {
+        org.apache.commons.validator.EmailTest r0;
+        java.lang.String r1;
+        org.apache.commons.validator.ResultPair $r2, $r4, $r5, $r6, $r7, $r8, $r9, $r10, $r11, $r12, $r13, $r14, $r15, $r16, $r17, $r18, $r19, $r20, $r21, $r22, $r23, $r24, $r25, $r26, $r27, $r28, $r29, $r30, $r31, $r32, $r33, $r34, $r35, $r36, $r37, $r38, $r39, $r40, $r41, $r42, $r43, $r44, $r45, $r46, $r47, $r48, $r49, $r50, $r51, $r52, $r53, $r54, $r55, $r56, $r57, $r58, $r59, $r60, $r61, $r62, $r63, $r64, $r65, $r66, $r67;
+        org.apache.commons.validator.ResultPair[] $r3;
+
+        r0 := @this: org.apache.commons.validator.EmailTest;
+        r1 := @parameter0: java.lang.String;
+        specialinvoke r0.<org.apache.commons.validator.AbstractCommonTest: void <init>(java.lang.String)>(r1);
+        $r3 = newarray (org.apache.commons.validator.ResultPair)[65];
+        $r2 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r2.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("abigail@example.com", 1);
+        $r3[0] = $r2;
+        $r4 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r4.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("abigail@example.com ", 1);
+        $r3[1] = $r4;
+        $r5 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r5.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>(" abigail@example.com", 1);
+        $r3[2] = $r5;
+        $r6 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r6.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("abigail @example.com ", 1);
+        $r3[3] = $r6;
+        $r7 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r7.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("*@example.net", 1);
+        $r3[4] = $r7;
+        $r8 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r8.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("\"\\\"\"@foo.bar", 1);
+        $r3[5] = $r8;
+        $r9 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r9.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("fred&barny@example.com", 1);
+        $r3[6] = $r9;
+        $r10 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r10.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("---@example.com", 1);
+        $r3[7] = $r10;
+        $r11 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r11.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("foo-bar@example.net", 1);
+        $r3[8] = $r11;
+        $r12 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r12.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("\"127.0.0.1\"@[127.0.0.1]", 1);
+        $r3[9] = $r12;
+        $r13 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r13.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("Abigail <abigail@example.com>", 1);
+        $r3[10] = $r13;
+        $r14 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r14.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("Abigail<abigail@example.com>", 1);
+        $r3[11] = $r14;
+        $r15 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r15.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("Abigail<@a,@b,@c:abigail@example.com>", 1);
+        $r3[12] = $r15;
+        $r16 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r16.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("\"This is a phrase\"<abigail@example.com>", 1);
+        $r3[13] = $r16;
+        $r17 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r17.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("\"Abigail \"<abigail@example.com>", 1);
+        $r3[14] = $r17;
+        $r18 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r18.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("\"Joe & J. Harvey\" <example @Org>", 1);
+        $r3[15] = $r18;
+        $r19 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r19.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("Abigail <abigail @ example.com>", 1);
+        $r3[16] = $r19;
+        $r20 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r20.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("Abigail made this <  abigail   @   example  .    com    >", 1);
+        $r3[17] = $r20;
+        $r21 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r21.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("Abigail(the bitch)@example.com", 1);
+        $r3[18] = $r21;
+        $r22 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r22.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("Abigail <abigail @ example . (bar) com >", 1);
+        $r3[19] = $r22;
+        $r23 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r23.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("Abigail < (one)  abigail (two) @(three)example . (bar) com (quz) >", 1);
+        $r3[20] = $r23;
+        $r24 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r24.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("Abigail (foo) (((baz)(nested) (comment)) ! ) < (one)  abigail (two) @(three)example . (bar) com (quz) >", 1);
+        $r3[21] = $r24;
+        $r25 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r25.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("Abigail <abigail(fo\\(o)@example.com>", 1);
+        $r3[22] = $r25;
+        $r26 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r26.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("Abigail <abigail(fo\\)o)@example.com> ", 1);
+        $r3[23] = $r26;
+        $r27 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r27.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("(foo) abigail@example.com", 1);
+        $r3[24] = $r27;
+        $r28 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r28.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("abigail@example.com (foo)", 1);
+        $r3[25] = $r28;
+        $r29 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r29.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("\"Abi\\\"gail\" <abigail@example.com>", 1);
+        $r3[26] = $r29;
+        $r30 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r30.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("abigail@[example.com]", 1);
+        $r3[27] = $r30;
+        $r31 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r31.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("abigail@[exa\\[ple.com]", 1);
+        $r3[28] = $r31;
+        $r32 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r32.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("abigail@[exa\\]ple.com]", 1);
+        $r3[29] = $r32;
+        $r33 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r33.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("\":sysmail\"@  Some-Group. Some-Org", 1);
+        $r3[30] = $r33;
+        $r34 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r34.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("Muhammed.(I am  the greatest) Ali @(the)Vegas.WBA", 1);
+        $r3[31] = $r34;
+        $r35 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r35.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("mailbox.sub1.sub2@this-domain", 1);
+        $r3[32] = $r35;
+        $r36 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r36.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("sub-net.mailbox@sub-domain.domain", 1);
+        $r3[33] = $r36;
+        $r37 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r37.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("name:;", 1);
+        $r3[34] = $r37;
+        $r38 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r38.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("\':;", 1);
+        $r3[35] = $r38;
+        $r39 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r39.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("name:   ;", 1);
+        $r3[36] = $r39;
+        $r40 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r40.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("Alfred Neuman <Neuman@BBN-TENEXA>", 1);
+        $r3[37] = $r40;
+        $r41 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r41.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("Neuman@BBN-TENEXA", 1);
+        $r3[38] = $r41;
+        $r42 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r42.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("\"George, Ted\" <Shared@Group.Arpanet>", 1);
+        $r3[39] = $r42;
+        $r43 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r43.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("Wilt . (the  Stilt) Chamberlain@NBA.US", 1);
+        $r3[40] = $r43;
+        $r44 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r44.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("Cruisers:  Port@Portugal, Jones@SEA;", 1);
+        $r3[41] = $r44;
+        $r45 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r45.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("$@[]", 1);
+        $r3[42] = $r45;
+        $r46 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r46.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("*()@[]", 1);
+        $r3[43] = $r46;
+        $r47 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r47.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("\"quoted ( brackets\" ( a comment )@example.com", 1);
+        $r3[44] = $r47;
+        $r48 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r48.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("\"Joe & J. Harvey\"\\x0D\\x0A     <ddd\\@ Org>", 1);
+        $r3[45] = $r48;
+        $r49 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r49.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("\"Joe &\\x0D\\x0A J. Harvey\" <ddd \\@ Org>", 1);
+        $r3[46] = $r49;
+        $r50 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r50.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("Gourmets:  Pompous Person <WhoZiWhatZit\\@Cordon-Bleu>,\\x0D\\x0A        Childs\\@WGBH.Boston, \"Galloping Gourmet\"\\@\\x0D\\x0A        ANT.Down-Under (Australian National Television),\\x0D\\x0A        Cheapie\\@Discount-Liquors;", 1);
+        $r3[47] = $r50;
+        $r51 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r51.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("   Just a string", 0);
+        $r3[48] = $r51;
+        $r52 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r52.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("string", 0);
+        $r3[49] = $r52;
+        $r53 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r53.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("(comment)", 0);
+        $r3[50] = $r53;
+        $r54 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r54.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("()@example.com", 0);
+        $r3[51] = $r54;
+        $r55 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r55.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("fred(&)barny@example.com", 0);
+        $r3[52] = $r55;
+        $r56 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r56.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("fred\\ barny@example.com", 0);
+        $r3[53] = $r56;
+        $r57 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r57.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("Abigail <abi gail @ example.com>", 0);
+        $r3[54] = $r57;
+        $r58 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r58.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("Abigail <abigail(fo(o)@example.com>", 0);
+        $r3[55] = $r58;
+        $r59 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r59.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("Abigail <abigail(fo)o)@example.com>", 0);
+        $r3[56] = $r59;
+        $r60 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r60.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("\"Abi\"gail\" <abigail@example.com>", 0);
+        $r3[57] = $r60;
+        $r61 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r61.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("abigail@[exa]ple.com]", 0);
+        $r3[58] = $r61;
+        $r62 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r62.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("abigail@[exa[ple.com]", 0);
+        $r3[59] = $r62;
+        $r63 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r63.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("abigail@[exaple].com]", 0);
+        $r3[60] = $r63;
+        $r64 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r64.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("abigail@", 0);
+        $r3[61] = $r64;
+        $r65 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r65.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("@example.com", 0);
+        $r3[62] = $r65;
+        $r66 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r66.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("phrase: abigail@example.com abigail@example.com ;", 0);
+        $r3[63] = $r66;
+        $r67 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r67.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("invalid\ufffdchar@example.com", 0);
+        $r3[64] = $r67;
+        r0.<org.apache.commons.validator.EmailTest: org.apache.commons.validator.ResultPair[] testEmailFromPerl> = $r3;
+        return;
+    }
+
+    protected void setUp() throws java.io.IOException, org.xml.sax.SAXException
+    {
+        org.apache.commons.validator.EmailTest r0;
+
+        r0 := @this: org.apache.commons.validator.EmailTest;
+        virtualinvoke r0.<org.apache.commons.validator.EmailTest: void loadResources(java.lang.String)>("EmailTest-config.xml");
+        return;
+    }
+
+    public void testEmail() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.EmailTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+
+        r0 := @this: org.apache.commons.validator.EmailTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("jsmith@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 1);
+        return;
+    }
+
+    public void testEmailWithNumericAddress() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.EmailTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+
+        r0 := @this: org.apache.commons.validator.EmailTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("someone@[216.109.118.76]");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 1);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("someone@yahoo.com");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 1);
+        return;
+    }
+
+    public void testEmailExtension() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.EmailTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+
+        r0 := @this: org.apache.commons.validator.EmailTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("jsmith@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 1);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("jsmith@apache.com");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 1);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("jsmith@apache.net");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 1);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("jsmith@apache.info");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 1);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("jsmith@apache.");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 0);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("jsmith@apache.c");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 0);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("someone@yahoo.museum");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 1);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("someone@yahoo.mu-seum");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 0);
+        return;
+    }
+
+    public void testEmailWithDash() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.EmailTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+
+        r0 := @this: org.apache.commons.validator.EmailTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("andy.noble@data-workshop.com");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 1);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("andy-noble@data-workshop.-com");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 0);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("andy-noble@data-workshop.c-om");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 0);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("andy-noble@data-workshop.co-m");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 0);
+        return;
+    }
+
+    public void testEmailWithDotEnd() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.EmailTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+
+        r0 := @this: org.apache.commons.validator.EmailTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("andy.noble@data-workshop.com.");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 0);
+        return;
+    }
+
+    public void testEmailWithBogusCharacter() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.EmailTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+
+        r0 := @this: org.apache.commons.validator.EmailTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("andy.noble@\u008fdata-workshop.com");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 0);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("andy.o\'reilly@data-workshop.com");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 1);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("andy@o\'reilly.data-workshop.com");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 0);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("foo+bar@i.am.not.in.us.example.com");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 1);
+        return;
+    }
+
+    public void testEmailWithCommas() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.EmailTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+
+        r0 := @this: org.apache.commons.validator.EmailTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("joeblow@apa,che.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 0);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("joeblow@apache.o,rg");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 0);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("joeblow@apache,org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 0);
+        return;
+    }
+
+    public void testEmailWithSpaces() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.EmailTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+
+        r0 := @this: org.apache.commons.validator.EmailTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("joeblow @apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 0);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("joeblow@ apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 0);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>(" joeblow@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 1);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("joeblow@apache.org ");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 1);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("joe blow@apache.org ");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 0);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("joeblow@apa che.org ");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 0);
+        return;
+    }
+
+    public void testEmailWithControlChars()
+    {
+        org.apache.commons.validator.EmailTest r0;
+        org.apache.commons.validator.EmailValidator $r1, r2;
+        char c0;
+        java.lang.StringBuilder $r3, $r4, $r6, $r7, $r8;
+        java.lang.String $r5, $r9;
+        boolean $z0, $z1;
+        int $i1;
+
+        r0 := @this: org.apache.commons.validator.EmailTest;
+        $r1 = new org.apache.commons.validator.EmailValidator;
+        specialinvoke $r1.<org.apache.commons.validator.EmailValidator: void <init>()>();
+        r2 = $r1;
+        c0 = 0;
+        goto label1;
+
+     label0:
+        $r3 = new java.lang.StringBuilder;
+        specialinvoke $r3.<java.lang.StringBuilder: void <init>(java.lang.String)>("Test control char ");
+        $r4 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>(c0);
+        $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r6 = new java.lang.StringBuilder;
+        specialinvoke $r6.<java.lang.StringBuilder: void <init>(java.lang.String)>("foo");
+        $r7 = virtualinvoke $r6.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(c0);
+        $r8 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("bar@domain.com");
+        $r9 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.String toString()>();
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.EmailValidator: boolean isValid(java.lang.String)>($r9);
+        staticinvoke <org.apache.commons.validator.EmailTest: void assertFalse(java.lang.String,boolean)>($r5, $z0);
+        $i1 = c0 + 1;
+        c0 = (char) $i1;
+
+     label1:
+        if c0 < 32 goto label0;
+
+        $z1 = virtualinvoke r2.<org.apache.commons.validator.EmailValidator: boolean isValid(java.lang.String)>("foo\u007fbar@domain.com");
+        staticinvoke <org.apache.commons.validator.EmailTest: void assertFalse(java.lang.String,boolean)>("Test control char 127", $z1);
+        return;
+    }
+
+    public void testEmailAtTLD() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.EmailTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+        org.apache.commons.validator.routines.EmailValidator r3;
+        boolean z0;
+
+        r0 := @this: org.apache.commons.validator.EmailTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("m@de");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 0);
+        r3 = staticinvoke <org.apache.commons.validator.routines.EmailValidator: org.apache.commons.validator.routines.EmailValidator getInstance(boolean,boolean)>(1, 1);
+        z0 = virtualinvoke r3.<org.apache.commons.validator.routines.EmailValidator: boolean isValid(java.lang.String)>("m@de");
+        staticinvoke <org.apache.commons.validator.EmailTest: void assertTrue(java.lang.String,boolean)>("Result should have been true", z0);
+        return;
+    }
+
+    public void testEmailLocalhost() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.EmailTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+
+        r0 := @this: org.apache.commons.validator.EmailTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("joe@localhost");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 0);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("joe@localhost.localdomain");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 0);
+        return;
+    }
+
+    public void _testEmailUserName() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.EmailTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+
+        r0 := @this: org.apache.commons.validator.EmailTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("joe1blow@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 1);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("joe$blow@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 1);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("joe-@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 1);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("joe_@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 1);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("joe.@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 0);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("joe+@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 0);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("joe!@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 0);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("joe*@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 0);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("joe\'@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 0);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("joe(@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 0);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("joe)@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 0);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("joe,@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 0);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("joe%45@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 0);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("joe;@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 0);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("joe?@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 0);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("joe&@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 0);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("joe=@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 0);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("\"joe.\"@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 1);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("\"joe+\"@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 1);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("\"joe!\"@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 1);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("\"joe*\"@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 1);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("\"joe\'\"@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 1);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("\"joe(\"@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 1);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("\"joe)\"@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 1);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("\"joe,\"@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 1);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("\"joe%45\"@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 1);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("\"joe;\"@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 1);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("\"joe?\"@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 1);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("\"joe&\"@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 1);
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("\"joe=\"@apache.org");
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, 1);
+        return;
+    }
+
+    public void _testEmailFromPerl() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.EmailTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+        int i0, $i1;
+        org.apache.commons.validator.ResultPair[] $r3, $r6, $r8;
+        org.apache.commons.validator.ResultPair $r4, $r7;
+        java.lang.String $r5;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.EmailTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        i0 = 0;
+        goto label1;
+
+     label0:
+        $r3 = r0.<org.apache.commons.validator.EmailTest: org.apache.commons.validator.ResultPair[] testEmailFromPerl>;
+        $r4 = $r3[i0];
+        $r5 = $r4.<org.apache.commons.validator.ResultPair: java.lang.String item>;
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>($r5);
+        $r6 = r0.<org.apache.commons.validator.EmailTest: org.apache.commons.validator.ResultPair[] testEmailFromPerl>;
+        $r7 = $r6[i0];
+        $z0 = $r7.<org.apache.commons.validator.ResultPair: boolean valid>;
+        specialinvoke r0.<org.apache.commons.validator.EmailTest: void valueTest(org.apache.commons.validator.ValueBean,boolean)>(r2, $z0);
+        i0 = i0 + 1;
+
+     label1:
+        $r8 = r0.<org.apache.commons.validator.EmailTest: org.apache.commons.validator.ResultPair[] testEmailFromPerl>;
+        $i1 = lengthof $r8;
+        if i0 < $i1 goto label0;
+
+        return;
+    }
+
+    private void valueTest(org.apache.commons.validator.ValueBean, boolean) throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.EmailTest r0;
+        org.apache.commons.validator.ValueBean r1;
+        boolean z0, $z1, $z2, $z3;
+        org.apache.commons.validator.Validator $r2, r4;
+        java.lang.String $r3, $r9, $r10, $r12, $r14, $r17, $r20, $r21, $r23, $r26, $r29, $r32, $r33, $r34;
+        null_type n0;
+        org.apache.commons.validator.ValidatorResult r5;
+        org.apache.commons.validator.ValidatorResources $r6;
+        org.apache.commons.validator.ValidatorResults r7;
+        java.lang.StringBuilder $r8, $r11, $r13, $r15, $r16, $r18, $r19, $r22, $r24, $r25, $r27, $r28, $r30, $r31;
+
+        r0 := @this: org.apache.commons.validator.EmailTest;
+        r1 := @parameter0: org.apache.commons.validator.ValueBean;
+        z0 := @parameter1: boolean;
+        $r2 = new org.apache.commons.validator.Validator;
+        $r6 = r0.<org.apache.commons.validator.EmailTest: org.apache.commons.validator.ValidatorResources resources>;
+        $r3 = <org.apache.commons.validator.EmailTest: java.lang.String FORM_KEY>;
+        specialinvoke $r2.<org.apache.commons.validator.Validator: void <init>(org.apache.commons.validator.ValidatorResources,java.lang.String)>($r6, $r3);
+        r4 = $r2;
+        virtualinvoke r4.<org.apache.commons.validator.Validator: void setParameter(java.lang.String,java.lang.Object)>("java.lang.Object", r1);
+        n0 = null;
+        r7 = virtualinvoke r4.<org.apache.commons.validator.Validator: org.apache.commons.validator.ValidatorResults validate()>();
+        staticinvoke <org.apache.commons.validator.EmailTest: void assertNotNull(java.lang.String,java.lang.Object)>("Results are null.", r7);
+        r5 = virtualinvoke r7.<org.apache.commons.validator.ValidatorResults: org.apache.commons.validator.ValidatorResult getValidatorResult(java.lang.String)>("value");
+        $r8 = new java.lang.StringBuilder;
+        $r9 = <org.apache.commons.validator.EmailTest: java.lang.String ACTION>;
+        $r10 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r9);
+        specialinvoke $r8.<java.lang.StringBuilder: void <init>(java.lang.String)>($r10);
+        $r11 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" value ValidatorResult should not be null.");
+        $r12 = virtualinvoke $r11.<java.lang.StringBuilder: java.lang.String toString()>();
+        staticinvoke <org.apache.commons.validator.EmailTest: void assertNotNull(java.lang.String,java.lang.Object)>($r12, r5);
+        $r13 = new java.lang.StringBuilder;
+        specialinvoke $r13.<java.lang.StringBuilder: void <init>(java.lang.String)>("Value ");
+        $r14 = virtualinvoke r1.<org.apache.commons.validator.ValueBean: java.lang.String getValue()>();
+        $r15 = virtualinvoke $r13.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r14);
+        $r16 = virtualinvoke $r15.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" ValidatorResult should contain the \'");
+        $r17 = <org.apache.commons.validator.EmailTest: java.lang.String ACTION>;
+        $r18 = virtualinvoke $r16.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r17);
+        $r19 = virtualinvoke $r18.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' action.");
+        $r20 = virtualinvoke $r19.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r21 = <org.apache.commons.validator.EmailTest: java.lang.String ACTION>;
+        $z1 = virtualinvoke r5.<org.apache.commons.validator.ValidatorResult: boolean containsAction(java.lang.String)>($r21);
+        staticinvoke <org.apache.commons.validator.EmailTest: void assertTrue(java.lang.String,boolean)>($r20, $z1);
+        $r22 = new java.lang.StringBuilder;
+        specialinvoke $r22.<java.lang.StringBuilder: void <init>(java.lang.String)>("Value ");
+        $r23 = virtualinvoke r1.<org.apache.commons.validator.ValueBean: java.lang.String getValue()>();
+        $r24 = virtualinvoke $r22.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r23);
+        $r25 = virtualinvoke $r24.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("ValidatorResult for the \'");
+        $r26 = <org.apache.commons.validator.EmailTest: java.lang.String ACTION>;
+        $r27 = virtualinvoke $r25.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r26);
+        $r28 = virtualinvoke $r27.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' action should have ");
+        if z0 == 0 goto label0;
+
+        $r29 = "passed";
+        goto label1;
+
+     label0:
+        $r29 = "failed";
+
+     label1:
+        $r30 = virtualinvoke $r28.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r29);
+        $r31 = virtualinvoke $r30.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(".");
+        $r32 = virtualinvoke $r31.<java.lang.StringBuilder: java.lang.String toString()>();
+        if z0 == 0 goto label2;
+
+        $r33 = <org.apache.commons.validator.EmailTest: java.lang.String ACTION>;
+        $z2 = virtualinvoke r5.<org.apache.commons.validator.ValidatorResult: boolean isValid(java.lang.String)>($r33);
+        goto label4;
+
+     label2:
+        $r34 = <org.apache.commons.validator.EmailTest: java.lang.String ACTION>;
+        $z3 = virtualinvoke r5.<org.apache.commons.validator.ValidatorResult: boolean isValid(java.lang.String)>($r34);
+        if $z3 == 0 goto label3;
+
+        $z2 = 0;
+        goto label4;
+
+     label3:
+        $z2 = 1;
+
+     label4:
+        staticinvoke <org.apache.commons.validator.EmailTest: void assertTrue(java.lang.String,boolean)>($r32, $z2);
+        return;
+    }
+}

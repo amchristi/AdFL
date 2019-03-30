@@ -1,0 +1,237 @@
+public class org.apache.commons.validator.routines.ByteValidator extends org.apache.commons.validator.routines.AbstractNumberValidator
+{
+    private static final long serialVersionUID;
+    private static final org.apache.commons.validator.routines.ByteValidator VALIDATOR;
+
+    static void <clinit>()
+    {
+        org.apache.commons.validator.routines.ByteValidator $r0;
+
+        $r0 = new org.apache.commons.validator.routines.ByteValidator;
+        specialinvoke $r0.<org.apache.commons.validator.routines.ByteValidator: void <init>()>();
+        <org.apache.commons.validator.routines.ByteValidator: org.apache.commons.validator.routines.ByteValidator VALIDATOR> = $r0;
+        return;
+    }
+
+    public static org.apache.commons.validator.routines.ByteValidator getInstance()
+    {
+        org.apache.commons.validator.routines.ByteValidator $r0;
+
+        $r0 = <org.apache.commons.validator.routines.ByteValidator: org.apache.commons.validator.routines.ByteValidator VALIDATOR>;
+        return $r0;
+    }
+
+    public void <init>()
+    {
+        org.apache.commons.validator.routines.ByteValidator r0;
+
+        r0 := @this: org.apache.commons.validator.routines.ByteValidator;
+        specialinvoke r0.<org.apache.commons.validator.routines.ByteValidator: void <init>(boolean,int)>(1, 0);
+        return;
+    }
+
+    public void <init>(boolean, int)
+    {
+        org.apache.commons.validator.routines.ByteValidator r0;
+        boolean z0;
+        int i0;
+
+        r0 := @this: org.apache.commons.validator.routines.ByteValidator;
+        z0 := @parameter0: boolean;
+        i0 := @parameter1: int;
+        specialinvoke r0.<org.apache.commons.validator.routines.AbstractNumberValidator: void <init>(boolean,int,boolean)>(z0, i0, 0);
+        return;
+    }
+
+    public java.lang.Byte validate(java.lang.String)
+    {
+        org.apache.commons.validator.routines.ByteValidator r0;
+        java.lang.String r1;
+        java.lang.Object $r2;
+        java.lang.Byte $r3;
+
+        r0 := @this: org.apache.commons.validator.routines.ByteValidator;
+        r1 := @parameter0: java.lang.String;
+        $r2 = virtualinvoke r0.<org.apache.commons.validator.routines.ByteValidator: java.lang.Object parse(java.lang.String,java.lang.String,java.util.Locale)>(r1, null, null);
+        $r3 = (java.lang.Byte) $r2;
+        return $r3;
+    }
+
+    public java.lang.Byte validate(java.lang.String, java.lang.String)
+    {
+        org.apache.commons.validator.routines.ByteValidator r0;
+        java.lang.String r1, r2;
+        java.lang.Object $r3;
+        java.lang.Byte $r4;
+
+        r0 := @this: org.apache.commons.validator.routines.ByteValidator;
+        r1 := @parameter0: java.lang.String;
+        r2 := @parameter1: java.lang.String;
+        $r3 = virtualinvoke r0.<org.apache.commons.validator.routines.ByteValidator: java.lang.Object parse(java.lang.String,java.lang.String,java.util.Locale)>(r1, r2, null);
+        $r4 = (java.lang.Byte) $r3;
+        return $r4;
+    }
+
+    public java.lang.Byte validate(java.lang.String, java.util.Locale)
+    {
+        org.apache.commons.validator.routines.ByteValidator r0;
+        java.lang.String r1;
+        java.util.Locale r2;
+        java.lang.Object $r3;
+        java.lang.Byte $r4;
+
+        r0 := @this: org.apache.commons.validator.routines.ByteValidator;
+        r1 := @parameter0: java.lang.String;
+        r2 := @parameter1: java.util.Locale;
+        $r3 = virtualinvoke r0.<org.apache.commons.validator.routines.ByteValidator: java.lang.Object parse(java.lang.String,java.lang.String,java.util.Locale)>(r1, null, r2);
+        $r4 = (java.lang.Byte) $r3;
+        return $r4;
+    }
+
+    public java.lang.Byte validate(java.lang.String, java.lang.String, java.util.Locale)
+    {
+        org.apache.commons.validator.routines.ByteValidator r0;
+        java.lang.String r1, r2;
+        java.util.Locale r3;
+        java.lang.Object $r4;
+        java.lang.Byte $r5;
+
+        r0 := @this: org.apache.commons.validator.routines.ByteValidator;
+        r1 := @parameter0: java.lang.String;
+        r2 := @parameter1: java.lang.String;
+        r3 := @parameter2: java.util.Locale;
+        $r4 = virtualinvoke r0.<org.apache.commons.validator.routines.ByteValidator: java.lang.Object parse(java.lang.String,java.lang.String,java.util.Locale)>(r1, r2, r3);
+        $r5 = (java.lang.Byte) $r4;
+        return $r5;
+    }
+
+    public boolean isInRange(byte, byte, byte)
+    {
+        org.apache.commons.validator.routines.ByteValidator r0;
+        byte b0, b1, b2;
+
+        r0 := @this: org.apache.commons.validator.routines.ByteValidator;
+        b0 := @parameter0: byte;
+        b1 := @parameter1: byte;
+        b2 := @parameter2: byte;
+        if b0 < b1 goto label0;
+
+        if b0 > b2 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public boolean isInRange(java.lang.Byte, byte, byte)
+    {
+        org.apache.commons.validator.routines.ByteValidator r0;
+        java.lang.Byte r1;
+        byte b0, b1, $b2;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.routines.ByteValidator;
+        r1 := @parameter0: java.lang.Byte;
+        b0 := @parameter1: byte;
+        b1 := @parameter2: byte;
+        $b2 = virtualinvoke r1.<java.lang.Byte: byte byteValue()>();
+        $z0 = virtualinvoke r0.<org.apache.commons.validator.routines.ByteValidator: boolean isInRange(byte,byte,byte)>($b2, b0, b1);
+        return $z0;
+    }
+
+    public boolean minValue(byte, byte)
+    {
+        org.apache.commons.validator.routines.ByteValidator r0;
+        byte b0, b1;
+
+        r0 := @this: org.apache.commons.validator.routines.ByteValidator;
+        b0 := @parameter0: byte;
+        b1 := @parameter1: byte;
+        if b0 < b1 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public boolean minValue(java.lang.Byte, byte)
+    {
+        org.apache.commons.validator.routines.ByteValidator r0;
+        java.lang.Byte r1;
+        byte b0, $b1;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.routines.ByteValidator;
+        r1 := @parameter0: java.lang.Byte;
+        b0 := @parameter1: byte;
+        $b1 = virtualinvoke r1.<java.lang.Byte: byte byteValue()>();
+        $z0 = virtualinvoke r0.<org.apache.commons.validator.routines.ByteValidator: boolean minValue(byte,byte)>($b1, b0);
+        return $z0;
+    }
+
+    public boolean maxValue(byte, byte)
+    {
+        org.apache.commons.validator.routines.ByteValidator r0;
+        byte b0, b1;
+
+        r0 := @this: org.apache.commons.validator.routines.ByteValidator;
+        b0 := @parameter0: byte;
+        b1 := @parameter1: byte;
+        if b0 > b1 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public boolean maxValue(java.lang.Byte, byte)
+    {
+        org.apache.commons.validator.routines.ByteValidator r0;
+        java.lang.Byte r1;
+        byte b0, $b1;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.routines.ByteValidator;
+        r1 := @parameter0: java.lang.Byte;
+        b0 := @parameter1: byte;
+        $b1 = virtualinvoke r1.<java.lang.Byte: byte byteValue()>();
+        $z0 = virtualinvoke r0.<org.apache.commons.validator.routines.ByteValidator: boolean maxValue(byte,byte)>($b1, b0);
+        return $z0;
+    }
+
+    protected java.lang.Object processParsedValue(java.lang.Object, java.text.Format)
+    {
+        org.apache.commons.validator.routines.ByteValidator r0;
+        java.lang.Object r1;
+        java.text.Format r2;
+        long l0;
+        java.lang.Number $r3;
+        byte $b1, $b2, $b4;
+        java.lang.Byte $r4;
+        int $i3;
+
+        r0 := @this: org.apache.commons.validator.routines.ByteValidator;
+        r1 := @parameter0: java.lang.Object;
+        r2 := @parameter1: java.text.Format;
+        $r3 = (java.lang.Number) r1;
+        l0 = virtualinvoke $r3.<java.lang.Number: long longValue()>();
+        $b1 = l0 cmp -128L;
+        if $b1 < 0 goto label0;
+
+        $b2 = l0 cmp 127L;
+        if $b2 <= 0 goto label1;
+
+     label0:
+        return null;
+
+     label1:
+        $r4 = new java.lang.Byte;
+        $i3 = (int) l0;
+        $b4 = (byte) $i3;
+        specialinvoke $r4.<java.lang.Byte: void <init>(byte)>($b4);
+        return $r4;
+    }
+}

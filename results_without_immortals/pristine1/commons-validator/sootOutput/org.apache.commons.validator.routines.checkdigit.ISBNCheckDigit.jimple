@@ -1,0 +1,113 @@
+public final class org.apache.commons.validator.routines.checkdigit.ISBNCheckDigit extends java.lang.Object implements org.apache.commons.validator.routines.checkdigit.CheckDigit, java.io.Serializable
+{
+    private static final long serialVersionUID;
+    public static final org.apache.commons.validator.routines.checkdigit.CheckDigit ISBN10_CHECK_DIGIT;
+    public static final org.apache.commons.validator.routines.checkdigit.CheckDigit ISBN13_CHECK_DIGIT;
+    public static final org.apache.commons.validator.routines.checkdigit.CheckDigit ISBN_CHECK_DIGIT;
+
+    static void <clinit>()
+    {
+        org.apache.commons.validator.routines.checkdigit.CheckDigit $r0, $r1;
+        org.apache.commons.validator.routines.checkdigit.ISBNCheckDigit $r2;
+
+        $r0 = <org.apache.commons.validator.routines.checkdigit.ISBN10CheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit ISBN10_CHECK_DIGIT>;
+        <org.apache.commons.validator.routines.checkdigit.ISBNCheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit ISBN10_CHECK_DIGIT> = $r0;
+        $r1 = <org.apache.commons.validator.routines.checkdigit.EAN13CheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit EAN13_CHECK_DIGIT>;
+        <org.apache.commons.validator.routines.checkdigit.ISBNCheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit ISBN13_CHECK_DIGIT> = $r1;
+        $r2 = new org.apache.commons.validator.routines.checkdigit.ISBNCheckDigit;
+        specialinvoke $r2.<org.apache.commons.validator.routines.checkdigit.ISBNCheckDigit: void <init>()>();
+        <org.apache.commons.validator.routines.checkdigit.ISBNCheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit ISBN_CHECK_DIGIT> = $r2;
+        return;
+    }
+
+    public void <init>()
+    {
+        org.apache.commons.validator.routines.checkdigit.ISBNCheckDigit r0;
+
+        r0 := @this: org.apache.commons.validator.routines.checkdigit.ISBNCheckDigit;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        return;
+    }
+
+    public java.lang.String calculate(java.lang.String) throws org.apache.commons.validator.routines.checkdigit.CheckDigitException
+    {
+        org.apache.commons.validator.routines.checkdigit.ISBNCheckDigit r0;
+        java.lang.String r1, $r4, $r6, $r10;
+        int $i0, $i1, $i2, $i3;
+        org.apache.commons.validator.routines.checkdigit.CheckDigitException $r2, $r7;
+        org.apache.commons.validator.routines.checkdigit.CheckDigit $r3, $r5;
+        java.lang.StringBuilder $r8, $r9;
+
+        r0 := @this: org.apache.commons.validator.routines.checkdigit.ISBNCheckDigit;
+        r1 := @parameter0: java.lang.String;
+        if r1 == null goto label0;
+
+        $i0 = virtualinvoke r1.<java.lang.String: int length()>();
+        if $i0 != 0 goto label1;
+
+     label0:
+        $r2 = new org.apache.commons.validator.routines.checkdigit.CheckDigitException;
+        specialinvoke $r2.<org.apache.commons.validator.routines.checkdigit.CheckDigitException: void <init>(java.lang.String)>("ISBN Code is missing");
+        throw $r2;
+
+     label1:
+        $i1 = virtualinvoke r1.<java.lang.String: int length()>();
+        if $i1 != 9 goto label2;
+
+        $r3 = <org.apache.commons.validator.routines.checkdigit.ISBNCheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit ISBN10_CHECK_DIGIT>;
+        $r4 = interfaceinvoke $r3.<org.apache.commons.validator.routines.checkdigit.CheckDigit: java.lang.String calculate(java.lang.String)>(r1);
+        return $r4;
+
+     label2:
+        $i2 = virtualinvoke r1.<java.lang.String: int length()>();
+        if $i2 != 12 goto label3;
+
+        $r5 = <org.apache.commons.validator.routines.checkdigit.ISBNCheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit ISBN13_CHECK_DIGIT>;
+        $r6 = interfaceinvoke $r5.<org.apache.commons.validator.routines.checkdigit.CheckDigit: java.lang.String calculate(java.lang.String)>(r1);
+        return $r6;
+
+     label3:
+        $r7 = new org.apache.commons.validator.routines.checkdigit.CheckDigitException;
+        $r8 = new java.lang.StringBuilder;
+        specialinvoke $r8.<java.lang.StringBuilder: void <init>(java.lang.String)>("Invalid ISBN Length = ");
+        $i3 = virtualinvoke r1.<java.lang.String: int length()>();
+        $r9 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>($i3);
+        $r10 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.String toString()>();
+        specialinvoke $r7.<org.apache.commons.validator.routines.checkdigit.CheckDigitException: void <init>(java.lang.String)>($r10);
+        throw $r7;
+    }
+
+    public boolean isValid(java.lang.String)
+    {
+        org.apache.commons.validator.routines.checkdigit.ISBNCheckDigit r0;
+        java.lang.String r1;
+        int $i0, $i1;
+        org.apache.commons.validator.routines.checkdigit.CheckDigit $r2, $r3;
+        boolean $z0, $z1;
+
+        r0 := @this: org.apache.commons.validator.routines.checkdigit.ISBNCheckDigit;
+        r1 := @parameter0: java.lang.String;
+        if r1 != null goto label0;
+
+        return 0;
+
+     label0:
+        $i0 = virtualinvoke r1.<java.lang.String: int length()>();
+        if $i0 != 10 goto label1;
+
+        $r2 = <org.apache.commons.validator.routines.checkdigit.ISBNCheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit ISBN10_CHECK_DIGIT>;
+        $z0 = interfaceinvoke $r2.<org.apache.commons.validator.routines.checkdigit.CheckDigit: boolean isValid(java.lang.String)>(r1);
+        return $z0;
+
+     label1:
+        $i1 = virtualinvoke r1.<java.lang.String: int length()>();
+        if $i1 != 13 goto label2;
+
+        $r3 = <org.apache.commons.validator.routines.checkdigit.ISBNCheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit ISBN13_CHECK_DIGIT>;
+        $z1 = interfaceinvoke $r3.<org.apache.commons.validator.routines.checkdigit.CheckDigit: boolean isValid(java.lang.String)>(r1);
+        return $z1;
+
+     label2:
+        return 0;
+    }
+}

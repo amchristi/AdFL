@@ -1,0 +1,305 @@
+public class org.apache.commons.validator.util.ValidatorUtils extends java.lang.Object
+{
+    private static final org.apache.commons.logging.Log LOG;
+
+    static void <clinit>()
+    {
+        org.apache.commons.logging.Log $r0;
+
+        $r0 = staticinvoke <org.apache.commons.logging.LogFactory: org.apache.commons.logging.Log getLog(java.lang.Class)>(class "org/apache/commons/validator/util/ValidatorUtils");
+        <org.apache.commons.validator.util.ValidatorUtils: org.apache.commons.logging.Log LOG> = $r0;
+        return;
+    }
+
+    public void <init>()
+    {
+        org.apache.commons.validator.util.ValidatorUtils r0;
+
+        r0 := @this: org.apache.commons.validator.util.ValidatorUtils;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        return;
+    }
+
+    public static java.lang.String replace(java.lang.String, java.lang.String, java.lang.String)
+    {
+        java.lang.String r0, r1, r2, r3, $r5, $r6, $r9, $r10, $r12, $r13;
+        int i0, i1, i2, i3, $i4, $i5;
+        java.lang.StringBuilder $r4, $r7, $r8, $r11, $r14;
+
+        r0 := @parameter0: java.lang.String;
+        r1 := @parameter1: java.lang.String;
+        r2 := @parameter2: java.lang.String;
+        if r0 == null goto label0;
+
+        if r1 == null goto label0;
+
+        if r2 != null goto label1;
+
+     label0:
+        return r0;
+
+     label1:
+        i0 = virtualinvoke r0.<java.lang.String: int indexOf(java.lang.String)>(r1);
+        if i0 >= 0 goto label2;
+
+        return r0;
+
+     label2:
+        i1 = virtualinvoke r0.<java.lang.String: int length()>();
+        i2 = i0;
+        $i4 = virtualinvoke r1.<java.lang.String: int length()>();
+        i3 = i0 + $i4;
+        $i5 = virtualinvoke r1.<java.lang.String: int length()>();
+        if i1 != $i5 goto label3;
+
+        r3 = r2;
+        goto label5;
+
+     label3:
+        if i3 != i1 goto label4;
+
+        $r4 = new java.lang.StringBuilder;
+        $r5 = virtualinvoke r0.<java.lang.String: java.lang.String substring(int,int)>(0, i2);
+        $r6 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r5);
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>(java.lang.String)>($r6);
+        $r7 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r2);
+        r3 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.String toString()>();
+        goto label5;
+
+     label4:
+        $r8 = new java.lang.StringBuilder;
+        $r9 = virtualinvoke r0.<java.lang.String: java.lang.String substring(int,int)>(0, i2);
+        $r10 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r9);
+        specialinvoke $r8.<java.lang.StringBuilder: void <init>(java.lang.String)>($r10);
+        $r11 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r2);
+        $r12 = virtualinvoke r0.<java.lang.String: java.lang.String substring(int)>(i3);
+        $r13 = staticinvoke <org.apache.commons.validator.util.ValidatorUtils: java.lang.String replace(java.lang.String,java.lang.String,java.lang.String)>($r12, r1, r2);
+        $r14 = virtualinvoke $r11.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r13);
+        r3 = virtualinvoke $r14.<java.lang.StringBuilder: java.lang.String toString()>();
+
+     label5:
+        return r3;
+    }
+
+    public static java.lang.String getValueAsString(java.lang.Object, java.lang.String)
+    {
+        java.lang.Object r0, r2;
+        java.lang.String r1, $r6, $r10, $r14, $r16, $r18, $r19;
+        java.lang.IllegalAccessException r3, $r4;
+        org.apache.commons.logging.Log $r5, $r9, $r13;
+        java.lang.reflect.InvocationTargetException $r7, r8;
+        java.lang.NoSuchMethodException $r11, r12;
+        boolean $z0, $z1, $z2;
+        java.lang.String[] $r15;
+        int $i0;
+        java.util.Collection $r17;
+
+        r0 := @parameter0: java.lang.Object;
+        r1 := @parameter1: java.lang.String;
+        r2 = null;
+
+     label0:
+        r2 = staticinvoke <org.apache.commons.beanutils.PropertyUtils: java.lang.Object getProperty(java.lang.Object,java.lang.String)>(r0, r1);
+
+     label1:
+        goto label5;
+
+     label2:
+        $r4 := @caughtexception;
+        r3 = $r4;
+        $r5 = <org.apache.commons.validator.util.ValidatorUtils: org.apache.commons.logging.Log LOG>;
+        $r6 = virtualinvoke r3.<java.lang.IllegalAccessException: java.lang.String getMessage()>();
+        interfaceinvoke $r5.<org.apache.commons.logging.Log: void error(java.lang.Object,java.lang.Throwable)>($r6, r3);
+        goto label5;
+
+     label3:
+        $r7 := @caughtexception;
+        r8 = $r7;
+        $r9 = <org.apache.commons.validator.util.ValidatorUtils: org.apache.commons.logging.Log LOG>;
+        $r10 = virtualinvoke r8.<java.lang.reflect.InvocationTargetException: java.lang.String getMessage()>();
+        interfaceinvoke $r9.<org.apache.commons.logging.Log: void error(java.lang.Object,java.lang.Throwable)>($r10, r8);
+        goto label5;
+
+     label4:
+        $r11 := @caughtexception;
+        r12 = $r11;
+        $r13 = <org.apache.commons.validator.util.ValidatorUtils: org.apache.commons.logging.Log LOG>;
+        $r14 = virtualinvoke r12.<java.lang.NoSuchMethodException: java.lang.String getMessage()>();
+        interfaceinvoke $r13.<org.apache.commons.logging.Log: void error(java.lang.Object,java.lang.Throwable)>($r14, r12);
+
+     label5:
+        if r2 != null goto label6;
+
+        return null;
+
+     label6:
+        $z0 = r2 instanceof java.lang.String[];
+        if $z0 == 0 goto label9;
+
+        $r15 = (java.lang.String[]) r2;
+        $i0 = lengthof $r15;
+        if $i0 <= 0 goto label7;
+
+        $r16 = virtualinvoke r2.<java.lang.Object: java.lang.String toString()>();
+        goto label8;
+
+     label7:
+        $r16 = "";
+
+     label8:
+        return $r16;
+
+     label9:
+        $z1 = r2 instanceof java.util.Collection;
+        if $z1 == 0 goto label12;
+
+        $r17 = (java.util.Collection) r2;
+        $z2 = interfaceinvoke $r17.<java.util.Collection: boolean isEmpty()>();
+        if $z2 == 0 goto label10;
+
+        $r18 = "";
+        goto label11;
+
+     label10:
+        $r18 = virtualinvoke r2.<java.lang.Object: java.lang.String toString()>();
+
+     label11:
+        return $r18;
+
+     label12:
+        $r19 = virtualinvoke r2.<java.lang.Object: java.lang.String toString()>();
+        return $r19;
+
+        catch java.lang.IllegalAccessException from label0 to label1 with label2;
+        catch java.lang.reflect.InvocationTargetException from label0 to label1 with label3;
+        catch java.lang.NoSuchMethodException from label0 to label1 with label4;
+    }
+
+    public static org.apache.commons.collections.FastHashMap copyFastHashMap(org.apache.commons.collections.FastHashMap)
+    {
+        org.apache.commons.collections.FastHashMap r0, $r1, r2;
+        java.util.Iterator r3;
+        java.util.Map$Entry r4;
+        java.lang.String r5;
+        java.lang.Object r6, $r8, $r9, $r11, $r14, $r17;
+        java.util.Set $r7;
+        boolean $z0, $z1, $z2, $z3;
+        org.apache.commons.validator.Msg $r10;
+        org.apache.commons.validator.Arg $r13;
+        org.apache.commons.validator.Var $r16;
+
+        r0 := @parameter0: org.apache.commons.collections.FastHashMap;
+        $r1 = new org.apache.commons.collections.FastHashMap;
+        specialinvoke $r1.<org.apache.commons.collections.FastHashMap: void <init>()>();
+        r2 = $r1;
+        $r7 = virtualinvoke r0.<org.apache.commons.collections.FastHashMap: java.util.Set entrySet()>();
+        r3 = interfaceinvoke $r7.<java.util.Set: java.util.Iterator iterator()>();
+        goto label4;
+
+     label0:
+        $r8 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>();
+        r4 = (java.util.Map$Entry) $r8;
+        $r9 = interfaceinvoke r4.<java.util.Map$Entry: java.lang.Object getKey()>();
+        r5 = (java.lang.String) $r9;
+        r6 = interfaceinvoke r4.<java.util.Map$Entry: java.lang.Object getValue()>();
+        $z0 = r6 instanceof org.apache.commons.validator.Msg;
+        if $z0 == 0 goto label1;
+
+        $r10 = (org.apache.commons.validator.Msg) r6;
+        $r11 = virtualinvoke $r10.<org.apache.commons.validator.Msg: java.lang.Object clone()>();
+        virtualinvoke r2.<org.apache.commons.collections.FastHashMap: java.lang.Object put(java.lang.Object,java.lang.Object)>(r5, $r11);
+        goto label4;
+
+     label1:
+        $z1 = r6 instanceof org.apache.commons.validator.Arg;
+        if $z1 == 0 goto label2;
+
+        $r13 = (org.apache.commons.validator.Arg) r6;
+        $r14 = virtualinvoke $r13.<org.apache.commons.validator.Arg: java.lang.Object clone()>();
+        virtualinvoke r2.<org.apache.commons.collections.FastHashMap: java.lang.Object put(java.lang.Object,java.lang.Object)>(r5, $r14);
+        goto label4;
+
+     label2:
+        $z2 = r6 instanceof org.apache.commons.validator.Var;
+        if $z2 == 0 goto label3;
+
+        $r16 = (org.apache.commons.validator.Var) r6;
+        $r17 = virtualinvoke $r16.<org.apache.commons.validator.Var: java.lang.Object clone()>();
+        virtualinvoke r2.<org.apache.commons.collections.FastHashMap: java.lang.Object put(java.lang.Object,java.lang.Object)>(r5, $r17);
+        goto label4;
+
+     label3:
+        virtualinvoke r2.<org.apache.commons.collections.FastHashMap: java.lang.Object put(java.lang.Object,java.lang.Object)>(r5, r6);
+
+     label4:
+        $z3 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>();
+        if $z3 != 0 goto label0;
+
+        virtualinvoke r2.<org.apache.commons.collections.FastHashMap: void setFast(boolean)>(1);
+        return r2;
+    }
+
+    public static java.util.Map copyMap(java.util.Map)
+    {
+        java.util.Map r0;
+        java.util.HashMap $r1, r2;
+        java.util.Iterator r3;
+        java.util.Map$Entry r4;
+        java.lang.String r5;
+        java.lang.Object r6, $r8, $r9, $r11, $r14, $r17;
+        java.util.Set $r7;
+        boolean $z0, $z1, $z2, $z3;
+        org.apache.commons.validator.Msg $r10;
+        org.apache.commons.validator.Arg $r13;
+        org.apache.commons.validator.Var $r16;
+
+        r0 := @parameter0: java.util.Map;
+        $r1 = new java.util.HashMap;
+        specialinvoke $r1.<java.util.HashMap: void <init>()>();
+        r2 = $r1;
+        $r7 = interfaceinvoke r0.<java.util.Map: java.util.Set entrySet()>();
+        r3 = interfaceinvoke $r7.<java.util.Set: java.util.Iterator iterator()>();
+        goto label4;
+
+     label0:
+        $r8 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>();
+        r4 = (java.util.Map$Entry) $r8;
+        $r9 = interfaceinvoke r4.<java.util.Map$Entry: java.lang.Object getKey()>();
+        r5 = (java.lang.String) $r9;
+        r6 = interfaceinvoke r4.<java.util.Map$Entry: java.lang.Object getValue()>();
+        $z0 = r6 instanceof org.apache.commons.validator.Msg;
+        if $z0 == 0 goto label1;
+
+        $r10 = (org.apache.commons.validator.Msg) r6;
+        $r11 = virtualinvoke $r10.<org.apache.commons.validator.Msg: java.lang.Object clone()>();
+        interfaceinvoke r2.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r5, $r11);
+        goto label4;
+
+     label1:
+        $z1 = r6 instanceof org.apache.commons.validator.Arg;
+        if $z1 == 0 goto label2;
+
+        $r13 = (org.apache.commons.validator.Arg) r6;
+        $r14 = virtualinvoke $r13.<org.apache.commons.validator.Arg: java.lang.Object clone()>();
+        interfaceinvoke r2.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r5, $r14);
+        goto label4;
+
+     label2:
+        $z2 = r6 instanceof org.apache.commons.validator.Var;
+        if $z2 == 0 goto label3;
+
+        $r16 = (org.apache.commons.validator.Var) r6;
+        $r17 = virtualinvoke $r16.<org.apache.commons.validator.Var: java.lang.Object clone()>();
+        interfaceinvoke r2.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r5, $r17);
+        goto label4;
+
+     label3:
+        interfaceinvoke r2.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r5, r6);
+
+     label4:
+        $z3 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>();
+        if $z3 != 0 goto label0;
+
+        return r2;
+    }
+}

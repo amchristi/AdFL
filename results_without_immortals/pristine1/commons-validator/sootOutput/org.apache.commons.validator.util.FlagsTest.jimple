@@ -1,0 +1,226 @@
+public class org.apache.commons.validator.util.FlagsTest extends junit.framework.TestCase
+{
+    private static final long LONG_FLAG;
+    private static final long LONG_FLAG_2;
+    private static final int INT_FLAG;
+
+    public void <init>(java.lang.String)
+    {
+        org.apache.commons.validator.util.FlagsTest r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.util.FlagsTest;
+        r1 := @parameter0: java.lang.String;
+        specialinvoke r0.<junit.framework.TestCase: void <init>(java.lang.String)>(r1);
+        return;
+    }
+
+    public void testHashCode()
+    {
+        org.apache.commons.validator.util.FlagsTest r0;
+        org.apache.commons.validator.util.Flags $r1, r2;
+        int $i0;
+
+        r0 := @this: org.apache.commons.validator.util.FlagsTest;
+        $r1 = new org.apache.commons.validator.util.Flags;
+        specialinvoke $r1.<org.apache.commons.validator.util.Flags: void <init>(long)>(45L);
+        r2 = $r1;
+        $i0 = virtualinvoke r2.<org.apache.commons.validator.util.Flags: int hashCode()>();
+        staticinvoke <org.apache.commons.validator.util.FlagsTest: void assertEquals(int,int)>($i0, 45);
+        return;
+    }
+
+    public void testGetFlags()
+    {
+        org.apache.commons.validator.util.FlagsTest r0;
+        org.apache.commons.validator.util.Flags $r1, r2;
+        long $l0;
+
+        r0 := @this: org.apache.commons.validator.util.FlagsTest;
+        $r1 = new org.apache.commons.validator.util.Flags;
+        specialinvoke $r1.<org.apache.commons.validator.util.Flags: void <init>(long)>(45L);
+        r2 = $r1;
+        $l0 = virtualinvoke r2.<org.apache.commons.validator.util.Flags: long getFlags()>();
+        staticinvoke <org.apache.commons.validator.util.FlagsTest: void assertEquals(long,long)>($l0, 45L);
+        return;
+    }
+
+    public void testIsOnOff()
+    {
+        org.apache.commons.validator.util.FlagsTest r0;
+        org.apache.commons.validator.util.Flags $r1, r2;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6;
+
+        r0 := @this: org.apache.commons.validator.util.FlagsTest;
+        $r1 = new org.apache.commons.validator.util.Flags;
+        specialinvoke $r1.<org.apache.commons.validator.util.Flags: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.util.Flags: void turnOn(long)>(1L);
+        virtualinvoke r2.<org.apache.commons.validator.util.Flags: void turnOn(long)>(4L);
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.util.Flags: boolean isOn(long)>(1L);
+        staticinvoke <org.apache.commons.validator.util.FlagsTest: void assertTrue(boolean)>($z0);
+        $z1 = virtualinvoke r2.<org.apache.commons.validator.util.Flags: boolean isOff(long)>(1L);
+        if $z1 == 0 goto label0;
+
+        $z2 = 0;
+        goto label1;
+
+     label0:
+        $z2 = 1;
+
+     label1:
+        staticinvoke <org.apache.commons.validator.util.FlagsTest: void assertTrue(boolean)>($z2);
+        $z3 = virtualinvoke r2.<org.apache.commons.validator.util.Flags: boolean isOn(long)>(4L);
+        staticinvoke <org.apache.commons.validator.util.FlagsTest: void assertTrue(boolean)>($z3);
+        $z4 = virtualinvoke r2.<org.apache.commons.validator.util.Flags: boolean isOff(long)>(4L);
+        if $z4 == 0 goto label2;
+
+        $z5 = 0;
+        goto label3;
+
+     label2:
+        $z5 = 1;
+
+     label3:
+        staticinvoke <org.apache.commons.validator.util.FlagsTest: void assertTrue(boolean)>($z5);
+        $z6 = virtualinvoke r2.<org.apache.commons.validator.util.Flags: boolean isOff(long)>(2L);
+        staticinvoke <org.apache.commons.validator.util.FlagsTest: void assertTrue(boolean)>($z6);
+        return;
+    }
+
+    public void testTurnOnOff()
+    {
+        org.apache.commons.validator.util.FlagsTest r0;
+
+        r0 := @this: org.apache.commons.validator.util.FlagsTest;
+        return;
+    }
+
+    public void testTurnOff()
+    {
+        org.apache.commons.validator.util.FlagsTest r0;
+
+        r0 := @this: org.apache.commons.validator.util.FlagsTest;
+        return;
+    }
+
+    public void testTurnOffAll()
+    {
+        org.apache.commons.validator.util.FlagsTest r0;
+        org.apache.commons.validator.util.Flags $r1, r2;
+        long $l0;
+
+        r0 := @this: org.apache.commons.validator.util.FlagsTest;
+        $r1 = new org.apache.commons.validator.util.Flags;
+        specialinvoke $r1.<org.apache.commons.validator.util.Flags: void <init>(long)>(98432L);
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.util.Flags: void turnOffAll()>();
+        $l0 = virtualinvoke r2.<org.apache.commons.validator.util.Flags: long getFlags()>();
+        staticinvoke <org.apache.commons.validator.util.FlagsTest: void assertEquals(long,long)>(0L, $l0);
+        return;
+    }
+
+    public void testClear()
+    {
+        org.apache.commons.validator.util.FlagsTest r0;
+        org.apache.commons.validator.util.Flags $r1, r2;
+        long $l0;
+
+        r0 := @this: org.apache.commons.validator.util.FlagsTest;
+        $r1 = new org.apache.commons.validator.util.Flags;
+        specialinvoke $r1.<org.apache.commons.validator.util.Flags: void <init>(long)>(98432L);
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.util.Flags: void clear()>();
+        $l0 = virtualinvoke r2.<org.apache.commons.validator.util.Flags: long getFlags()>();
+        staticinvoke <org.apache.commons.validator.util.FlagsTest: void assertEquals(long,long)>(0L, $l0);
+        return;
+    }
+
+    public void testTurnOnAll()
+    {
+        org.apache.commons.validator.util.FlagsTest r0;
+        org.apache.commons.validator.util.Flags $r1, r2;
+        long $l0;
+
+        r0 := @this: org.apache.commons.validator.util.FlagsTest;
+        $r1 = new org.apache.commons.validator.util.Flags;
+        specialinvoke $r1.<org.apache.commons.validator.util.Flags: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.util.Flags: void turnOnAll()>();
+        $l0 = virtualinvoke r2.<org.apache.commons.validator.util.Flags: long getFlags()>();
+        staticinvoke <org.apache.commons.validator.util.FlagsTest: void assertEquals(long,long)>(-1L, $l0);
+        return;
+    }
+
+    public void testIsOn_isFalseWhenNotAllFlagsInArgumentAreOn()
+    {
+        org.apache.commons.validator.util.FlagsTest r0;
+        org.apache.commons.validator.util.Flags $r1, r2;
+        long l0;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.util.FlagsTest;
+        $r1 = new org.apache.commons.validator.util.Flags;
+        specialinvoke $r1.<org.apache.commons.validator.util.Flags: void <init>(long)>(1L);
+        r2 = $r1;
+        l0 = 3L;
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.util.Flags: boolean isOn(long)>(l0);
+        staticinvoke <org.apache.commons.validator.util.FlagsTest: void assertFalse(boolean)>($z0);
+        return;
+    }
+
+    public void testIsOn_isTrueWhenHighOrderBitIsSetAndQueried()
+    {
+        org.apache.commons.validator.util.FlagsTest r0;
+        org.apache.commons.validator.util.Flags $r1, r2;
+        long l0;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.util.FlagsTest;
+        $r1 = new org.apache.commons.validator.util.Flags;
+        specialinvoke $r1.<org.apache.commons.validator.util.Flags: void <init>(long)>(-1L);
+        r2 = $r1;
+        l0 = -9223372036854775808L;
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.util.Flags: boolean isOn(long)>(l0);
+        staticinvoke <org.apache.commons.validator.util.FlagsTest: void assertTrue(boolean)>($z0);
+        return;
+    }
+
+    public void testClone()
+    {
+        org.apache.commons.validator.util.FlagsTest r0;
+
+        r0 := @this: org.apache.commons.validator.util.FlagsTest;
+        return;
+    }
+
+    public void testEqualsObject()
+    {
+        org.apache.commons.validator.util.FlagsTest r0;
+
+        r0 := @this: org.apache.commons.validator.util.FlagsTest;
+        return;
+    }
+
+    public void testToString()
+    {
+        org.apache.commons.validator.util.FlagsTest r0;
+        org.apache.commons.validator.util.Flags $r1, r2;
+        java.lang.String r3, r4;
+        int $i0, $i1;
+
+        r0 := @this: org.apache.commons.validator.util.FlagsTest;
+        $r1 = new org.apache.commons.validator.util.Flags;
+        specialinvoke $r1.<org.apache.commons.validator.util.Flags: void <init>()>();
+        r2 = $r1;
+        r3 = virtualinvoke r2.<org.apache.commons.validator.util.Flags: java.lang.String toString()>();
+        $i0 = virtualinvoke r3.<java.lang.String: int length()>();
+        staticinvoke <org.apache.commons.validator.util.FlagsTest: void assertEquals(int,int)>(64, $i0);
+        virtualinvoke r2.<org.apache.commons.validator.util.Flags: void turnOn(long)>(4L);
+        r4 = virtualinvoke r2.<org.apache.commons.validator.util.Flags: java.lang.String toString()>();
+        $i1 = virtualinvoke r4.<java.lang.String: int length()>();
+        staticinvoke <org.apache.commons.validator.util.FlagsTest: void assertEquals(int,int)>(64, $i1);
+        staticinvoke <org.apache.commons.validator.util.FlagsTest: void assertEquals(java.lang.String,java.lang.String)>("0000000000000000000000000000000000000000000000000000000000000100", r4);
+        return;
+    }
+}

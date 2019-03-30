@@ -1,0 +1,114 @@
+public class org.apache.commons.validator.FormSetFactory extends org.apache.commons.digester.AbstractObjectCreationFactory
+{
+    private transient org.apache.commons.logging.Log log;
+
+    public void <init>()
+    {
+        org.apache.commons.validator.FormSetFactory r0;
+        org.apache.commons.logging.Log $r1;
+
+        r0 := @this: org.apache.commons.validator.FormSetFactory;
+        specialinvoke r0.<org.apache.commons.digester.AbstractObjectCreationFactory: void <init>()>();
+        $r1 = staticinvoke <org.apache.commons.logging.LogFactory: org.apache.commons.logging.Log getLog(java.lang.Class)>(class "org/apache/commons/validator/FormSetFactory");
+        r0.<org.apache.commons.validator.FormSetFactory: org.apache.commons.logging.Log log> = $r1;
+        return;
+    }
+
+    public java.lang.Object createObject(org.xml.sax.Attributes) throws java.lang.Exception
+    {
+        org.apache.commons.validator.FormSetFactory r0;
+        org.xml.sax.Attributes r1;
+        org.apache.commons.validator.ValidatorResources r2;
+        java.lang.String r3, r4, r5;
+        org.apache.commons.digester.Digester $r6;
+        java.lang.Object $r7;
+        org.apache.commons.validator.FormSet $r8;
+
+        r0 := @this: org.apache.commons.validator.FormSetFactory;
+        r1 := @parameter0: org.xml.sax.Attributes;
+        $r6 = r0.<org.apache.commons.validator.FormSetFactory: org.apache.commons.digester.Digester digester>;
+        $r7 = virtualinvoke $r6.<org.apache.commons.digester.Digester: java.lang.Object peek(int)>(0);
+        r2 = (org.apache.commons.validator.ValidatorResources) $r7;
+        r3 = interfaceinvoke r1.<org.xml.sax.Attributes: java.lang.String getValue(java.lang.String)>("language");
+        r4 = interfaceinvoke r1.<org.xml.sax.Attributes: java.lang.String getValue(java.lang.String)>("country");
+        r5 = interfaceinvoke r1.<org.xml.sax.Attributes: java.lang.String getValue(java.lang.String)>("variant");
+        $r8 = specialinvoke r0.<org.apache.commons.validator.FormSetFactory: org.apache.commons.validator.FormSet createFormSet(org.apache.commons.validator.ValidatorResources,java.lang.String,java.lang.String,java.lang.String)>(r2, r3, r4, r5);
+        return $r8;
+    }
+
+    private org.apache.commons.validator.FormSet createFormSet(org.apache.commons.validator.ValidatorResources, java.lang.String, java.lang.String, java.lang.String) throws java.lang.Exception
+    {
+        org.apache.commons.validator.FormSetFactory r0;
+        org.apache.commons.validator.ValidatorResources r1;
+        java.lang.String r2, r3, r4, $r9, $r12, $r18, $r21;
+        org.apache.commons.validator.FormSet r5, $r13, r14;
+        org.apache.commons.logging.Log $r6, $r7, $r15, $r16;
+        boolean $z0, $z1;
+        java.lang.StringBuilder $r8, $r10, $r11, $r17, $r19, $r20;
+
+        r0 := @this: org.apache.commons.validator.FormSetFactory;
+        r1 := @parameter0: org.apache.commons.validator.ValidatorResources;
+        r2 := @parameter1: java.lang.String;
+        r3 := @parameter2: java.lang.String;
+        r4 := @parameter3: java.lang.String;
+        r5 = virtualinvoke r1.<org.apache.commons.validator.ValidatorResources: org.apache.commons.validator.FormSet getFormSet(java.lang.String,java.lang.String,java.lang.String)>(r2, r3, r4);
+        if r5 == null goto label1;
+
+        $r6 = specialinvoke r0.<org.apache.commons.validator.FormSetFactory: org.apache.commons.logging.Log getLog()>();
+        $z0 = interfaceinvoke $r6.<org.apache.commons.logging.Log: boolean isDebugEnabled()>();
+        if $z0 == 0 goto label0;
+
+        $r7 = specialinvoke r0.<org.apache.commons.validator.FormSetFactory: org.apache.commons.logging.Log getLog()>();
+        $r8 = new java.lang.StringBuilder;
+        specialinvoke $r8.<java.lang.StringBuilder: void <init>(java.lang.String)>("FormSet[");
+        $r9 = virtualinvoke r5.<org.apache.commons.validator.FormSet: java.lang.String displayKey()>();
+        $r10 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r9);
+        $r11 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("] found - merging.");
+        $r12 = virtualinvoke $r11.<java.lang.StringBuilder: java.lang.String toString()>();
+        interfaceinvoke $r7.<org.apache.commons.logging.Log: void debug(java.lang.Object)>($r12);
+
+     label0:
+        return r5;
+
+     label1:
+        $r13 = new org.apache.commons.validator.FormSet;
+        specialinvoke $r13.<org.apache.commons.validator.FormSet: void <init>()>();
+        r14 = $r13;
+        virtualinvoke r14.<org.apache.commons.validator.FormSet: void setLanguage(java.lang.String)>(r2);
+        virtualinvoke r14.<org.apache.commons.validator.FormSet: void setCountry(java.lang.String)>(r3);
+        virtualinvoke r14.<org.apache.commons.validator.FormSet: void setVariant(java.lang.String)>(r4);
+        virtualinvoke r1.<org.apache.commons.validator.ValidatorResources: void addFormSet(org.apache.commons.validator.FormSet)>(r14);
+        $r15 = specialinvoke r0.<org.apache.commons.validator.FormSetFactory: org.apache.commons.logging.Log getLog()>();
+        $z1 = interfaceinvoke $r15.<org.apache.commons.logging.Log: boolean isDebugEnabled()>();
+        if $z1 == 0 goto label2;
+
+        $r16 = specialinvoke r0.<org.apache.commons.validator.FormSetFactory: org.apache.commons.logging.Log getLog()>();
+        $r17 = new java.lang.StringBuilder;
+        specialinvoke $r17.<java.lang.StringBuilder: void <init>(java.lang.String)>("FormSet[");
+        $r18 = virtualinvoke r14.<org.apache.commons.validator.FormSet: java.lang.String displayKey()>();
+        $r19 = virtualinvoke $r17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r18);
+        $r20 = virtualinvoke $r19.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("] created.");
+        $r21 = virtualinvoke $r20.<java.lang.StringBuilder: java.lang.String toString()>();
+        interfaceinvoke $r16.<org.apache.commons.logging.Log: void debug(java.lang.Object)>($r21);
+
+     label2:
+        return r14;
+    }
+
+    private org.apache.commons.logging.Log getLog()
+    {
+        org.apache.commons.validator.FormSetFactory r0;
+        org.apache.commons.logging.Log $r1, $r2, $r3;
+
+        r0 := @this: org.apache.commons.validator.FormSetFactory;
+        $r1 = r0.<org.apache.commons.validator.FormSetFactory: org.apache.commons.logging.Log log>;
+        if $r1 != null goto label0;
+
+        $r2 = staticinvoke <org.apache.commons.logging.LogFactory: org.apache.commons.logging.Log getLog(java.lang.Class)>(class "org/apache/commons/validator/FormSetFactory");
+        r0.<org.apache.commons.validator.FormSetFactory: org.apache.commons.logging.Log log> = $r2;
+
+     label0:
+        $r3 = r0.<org.apache.commons.validator.FormSetFactory: org.apache.commons.logging.Log log>;
+        return $r3;
+    }
+}

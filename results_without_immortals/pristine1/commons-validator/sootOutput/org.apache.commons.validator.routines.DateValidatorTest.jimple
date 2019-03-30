@@ -1,0 +1,341 @@
+public class org.apache.commons.validator.routines.DateValidatorTest extends org.apache.commons.validator.routines.AbstractCalendarValidatorTest
+{
+    private org.apache.commons.validator.routines.DateValidator dateValidator;
+
+    public void <init>(java.lang.String)
+    {
+        org.apache.commons.validator.routines.DateValidatorTest r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.routines.DateValidatorTest;
+        r1 := @parameter0: java.lang.String;
+        specialinvoke r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: void <init>(java.lang.String)>(r1);
+        return;
+    }
+
+    protected void setUp() throws java.lang.Exception
+    {
+        org.apache.commons.validator.routines.DateValidatorTest r0;
+        org.apache.commons.validator.routines.DateValidator $r1, $r2;
+
+        r0 := @this: org.apache.commons.validator.routines.DateValidatorTest;
+        specialinvoke r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: void setUp()>();
+        $r1 = new org.apache.commons.validator.routines.DateValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.DateValidator: void <init>()>();
+        r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator> = $r1;
+        $r2 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.AbstractCalendarValidator validator> = $r2;
+        return;
+    }
+
+    public void testDateValidatorMethods()
+    {
+        org.apache.commons.validator.routines.DateValidatorTest r0;
+        java.util.Locale $r1, r2, $r11, $r27, $r35, $r41, $r56;
+        java.lang.String r3, r4, r5, r6, r7, r8, r9, $r48;
+        java.util.Date r10, r13, $r16, $r18, $r20, $r22, $r29, $r31, $r33, $r36, $r50, $r52, $r54, $r57;
+        java.util.TimeZone r12, $r42, $r43, $r44;
+        java.util.Calendar $r14, $r45;
+        org.apache.commons.validator.routines.DateValidator $r15, $r17, $r19, $r21, $r23, $r24, $r25, $r26, $r28, $r30, $r32, $r34, $r37, $r38, $r39, $r40, $r49, $r51, $r53, $r55;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8;
+        int $i0, $i1;
+        java.lang.StringBuilder $r46, $r47;
+        long $l2, $l3;
+        byte $b4;
+
+        r0 := @this: org.apache.commons.validator.routines.DateValidatorTest;
+        $r1 = <java.util.Locale: java.util.Locale US>;
+        staticinvoke <java.util.Locale: void setDefault(java.util.Locale)>($r1);
+        r2 = <java.util.Locale: java.util.Locale GERMAN>;
+        r3 = "yyyy-MM-dd";
+        r4 = "2005-12-31";
+        r5 = "31 Dez 2005";
+        r6 = "dd MMM yyyy";
+        r7 = "31.12.2005";
+        r8 = "12/31/05";
+        r9 = "XXXX";
+        $r14 = staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: java.util.Calendar createCalendar(java.util.TimeZone,int,int)>(null, 20051231, 0);
+        r10 = virtualinvoke $r14.<java.util.Calendar: java.util.Date getTime()>();
+        $r15 = staticinvoke <org.apache.commons.validator.routines.DateValidator: org.apache.commons.validator.routines.DateValidator getInstance()>();
+        $r16 = virtualinvoke $r15.<org.apache.commons.validator.routines.DateValidator: java.util.Date validate(java.lang.String)>(r8);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("validate(A) default", r10, $r16);
+        $r17 = staticinvoke <org.apache.commons.validator.routines.DateValidator: org.apache.commons.validator.routines.DateValidator getInstance()>();
+        $r18 = virtualinvoke $r17.<org.apache.commons.validator.routines.DateValidator: java.util.Date validate(java.lang.String,java.util.Locale)>(r7, r2);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("validate(A) locale ", r10, $r18);
+        $r19 = staticinvoke <org.apache.commons.validator.routines.DateValidator: org.apache.commons.validator.routines.DateValidator getInstance()>();
+        $r20 = virtualinvoke $r19.<org.apache.commons.validator.routines.DateValidator: java.util.Date validate(java.lang.String,java.lang.String)>(r4, r3);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("validate(A) pattern", r10, $r20);
+        $r21 = staticinvoke <org.apache.commons.validator.routines.DateValidator: org.apache.commons.validator.routines.DateValidator getInstance()>();
+        $r11 = <java.util.Locale: java.util.Locale GERMAN>;
+        $r22 = virtualinvoke $r21.<org.apache.commons.validator.routines.DateValidator: java.util.Date validate(java.lang.String,java.lang.String,java.util.Locale)>(r5, r6, $r11);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("validate(A) both", r10, $r22);
+        $r23 = staticinvoke <org.apache.commons.validator.routines.DateValidator: org.apache.commons.validator.routines.DateValidator getInstance()>();
+        $z0 = virtualinvoke $r23.<org.apache.commons.validator.routines.DateValidator: boolean isValid(java.lang.String)>(r8);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertTrue(java.lang.String,boolean)>("isValid(A) default", $z0);
+        $r24 = staticinvoke <org.apache.commons.validator.routines.DateValidator: org.apache.commons.validator.routines.DateValidator getInstance()>();
+        $z1 = virtualinvoke $r24.<org.apache.commons.validator.routines.DateValidator: boolean isValid(java.lang.String,java.util.Locale)>(r7, r2);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertTrue(java.lang.String,boolean)>("isValid(A) locale ", $z1);
+        $r25 = staticinvoke <org.apache.commons.validator.routines.DateValidator: org.apache.commons.validator.routines.DateValidator getInstance()>();
+        $z2 = virtualinvoke $r25.<org.apache.commons.validator.routines.DateValidator: boolean isValid(java.lang.String,java.lang.String)>(r4, r3);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertTrue(java.lang.String,boolean)>("isValid(A) pattern", $z2);
+        $r26 = staticinvoke <org.apache.commons.validator.routines.DateValidator: org.apache.commons.validator.routines.DateValidator getInstance()>();
+        $r27 = <java.util.Locale: java.util.Locale GERMAN>;
+        $z3 = virtualinvoke $r26.<org.apache.commons.validator.routines.DateValidator: boolean isValid(java.lang.String,java.lang.String,java.util.Locale)>(r5, r6, $r27);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertTrue(java.lang.String,boolean)>("isValid(A) both", $z3);
+        $r28 = staticinvoke <org.apache.commons.validator.routines.DateValidator: org.apache.commons.validator.routines.DateValidator getInstance()>();
+        $r29 = virtualinvoke $r28.<org.apache.commons.validator.routines.DateValidator: java.util.Date validate(java.lang.String)>(r9);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertNull(java.lang.String,java.lang.Object)>("validate(B) default", $r29);
+        $r30 = staticinvoke <org.apache.commons.validator.routines.DateValidator: org.apache.commons.validator.routines.DateValidator getInstance()>();
+        $r31 = virtualinvoke $r30.<org.apache.commons.validator.routines.DateValidator: java.util.Date validate(java.lang.String,java.util.Locale)>(r9, r2);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertNull(java.lang.String,java.lang.Object)>("validate(B) locale ", $r31);
+        $r32 = staticinvoke <org.apache.commons.validator.routines.DateValidator: org.apache.commons.validator.routines.DateValidator getInstance()>();
+        $r33 = virtualinvoke $r32.<org.apache.commons.validator.routines.DateValidator: java.util.Date validate(java.lang.String,java.lang.String)>(r9, r3);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertNull(java.lang.String,java.lang.Object)>("validate(B) pattern", $r33);
+        $r34 = staticinvoke <org.apache.commons.validator.routines.DateValidator: org.apache.commons.validator.routines.DateValidator getInstance()>();
+        $r35 = <java.util.Locale: java.util.Locale GERMAN>;
+        $r36 = virtualinvoke $r34.<org.apache.commons.validator.routines.DateValidator: java.util.Date validate(java.lang.String,java.lang.String,java.util.Locale)>("31 Dec 2005", r6, $r35);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertNull(java.lang.String,java.lang.Object)>("validate(B) both", $r36);
+        $r37 = staticinvoke <org.apache.commons.validator.routines.DateValidator: org.apache.commons.validator.routines.DateValidator getInstance()>();
+        $z4 = virtualinvoke $r37.<org.apache.commons.validator.routines.DateValidator: boolean isValid(java.lang.String)>(r9);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertFalse(java.lang.String,boolean)>("isValid(B) default", $z4);
+        $r38 = staticinvoke <org.apache.commons.validator.routines.DateValidator: org.apache.commons.validator.routines.DateValidator getInstance()>();
+        $z5 = virtualinvoke $r38.<org.apache.commons.validator.routines.DateValidator: boolean isValid(java.lang.String,java.util.Locale)>(r9, r2);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertFalse(java.lang.String,boolean)>("isValid(B) locale ", $z5);
+        $r39 = staticinvoke <org.apache.commons.validator.routines.DateValidator: org.apache.commons.validator.routines.DateValidator getInstance()>();
+        $z6 = virtualinvoke $r39.<org.apache.commons.validator.routines.DateValidator: boolean isValid(java.lang.String,java.lang.String)>(r9, r3);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertFalse(java.lang.String,boolean)>("isValid(B) pattern", $z6);
+        $r40 = staticinvoke <org.apache.commons.validator.routines.DateValidator: org.apache.commons.validator.routines.DateValidator getInstance()>();
+        $r41 = <java.util.Locale: java.util.Locale GERMAN>;
+        $z7 = virtualinvoke $r40.<org.apache.commons.validator.routines.DateValidator: boolean isValid(java.lang.String,java.lang.String,java.util.Locale)>("31 Dec 2005", r6, $r41);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertFalse(java.lang.String,boolean)>("isValid(B) both", $z7);
+        $r42 = staticinvoke <java.util.TimeZone: java.util.TimeZone getDefault()>();
+        $i0 = virtualinvoke $r42.<java.util.TimeZone: int getRawOffset()>();
+        $r43 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone EET>;
+        $i1 = virtualinvoke $r43.<java.util.TimeZone: int getRawOffset()>();
+        if $i0 != $i1 goto label0;
+
+        $r44 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone EST>;
+        goto label1;
+
+     label0:
+        $r44 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone EET>;
+
+     label1:
+        r12 = $r44;
+        $r45 = staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: java.util.Calendar createCalendar(java.util.TimeZone,int,int)>(r12, 20051231, 0);
+        r13 = virtualinvoke $r45.<java.util.Calendar: java.util.Date getTime()>();
+        $r46 = new java.lang.StringBuilder;
+        specialinvoke $r46.<java.lang.StringBuilder: void <init>(java.lang.String)>("default/zone same ");
+        $r47 = virtualinvoke $r46.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(r12);
+        $r48 = virtualinvoke $r47.<java.lang.StringBuilder: java.lang.String toString()>();
+        $l2 = virtualinvoke r10.<java.util.Date: long getTime()>();
+        $l3 = virtualinvoke r13.<java.util.Date: long getTime()>();
+        $b4 = $l2 cmp $l3;
+        if $b4 != 0 goto label2;
+
+        $z8 = 1;
+        goto label3;
+
+     label2:
+        $z8 = 0;
+
+     label3:
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertFalse(java.lang.String,boolean)>($r48, $z8);
+        $r49 = staticinvoke <org.apache.commons.validator.routines.DateValidator: org.apache.commons.validator.routines.DateValidator getInstance()>();
+        $r50 = virtualinvoke $r49.<org.apache.commons.validator.routines.DateValidator: java.util.Date validate(java.lang.String,java.util.TimeZone)>(r8, r12);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("validate(C) default", r13, $r50);
+        $r51 = staticinvoke <org.apache.commons.validator.routines.DateValidator: org.apache.commons.validator.routines.DateValidator getInstance()>();
+        $r52 = virtualinvoke $r51.<org.apache.commons.validator.routines.DateValidator: java.util.Date validate(java.lang.String,java.util.Locale,java.util.TimeZone)>(r7, r2, r12);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("validate(C) locale ", r13, $r52);
+        $r53 = staticinvoke <org.apache.commons.validator.routines.DateValidator: org.apache.commons.validator.routines.DateValidator getInstance()>();
+        $r54 = virtualinvoke $r53.<org.apache.commons.validator.routines.DateValidator: java.util.Date validate(java.lang.String,java.lang.String,java.util.TimeZone)>(r4, r3, r12);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("validate(C) pattern", r13, $r54);
+        $r55 = staticinvoke <org.apache.commons.validator.routines.DateValidator: org.apache.commons.validator.routines.DateValidator getInstance()>();
+        $r56 = <java.util.Locale: java.util.Locale GERMAN>;
+        $r57 = virtualinvoke $r55.<org.apache.commons.validator.routines.DateValidator: java.util.Date validate(java.lang.String,java.lang.String,java.util.Locale,java.util.TimeZone)>(r5, r6, $r56, r12);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("validate(C) both", r13, $r57);
+        return;
+    }
+
+    public void testCompare()
+    {
+        org.apache.commons.validator.routines.DateValidatorTest r0;
+        int i0, i1, $i2, $i3, $i4, $i5, $i6, $i7, $i8, $i9, $i10, $i11, $i12, $i13, $i14, $i15, $i16, $i17, $i18, $i19, $i20, $i21, $i22, $i23, $i24, $i25, $i26, $i27, $i28, $i29, $i30, $i31, $i32, $i33, $i34;
+        java.util.Date r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r19;
+        java.util.TimeZone $r18, $r20, $r21, $r22, $r23, $r24, $r25, $r26, $r27, $r28, $r29, $r30, $r31, $r32, $r33, $r34, $r35, $r36, $r39, $r41, $r43, $r45, $r47, $r49, $r51, $r53, $r55, $r57, $r59, $r61, $r63, $r65, $r67, $r69, $r71, $r73, $r75, $r77, $r79, $r81, $r83, $r85, $r87, $r89, $r91, $r93, $r94, $r96, $r98, $r100, $r102;
+        org.apache.commons.validator.routines.DateValidator $r37, $r38, $r40, $r42, $r44, $r46, $r48, $r50, $r52, $r54, $r56, $r58, $r60, $r62, $r64, $r66, $r68, $r70, $r72, $r74, $r76, $r78, $r80, $r82, $r84, $r86, $r88, $r90, $r92, $r95, $r97, $r99, $r101;
+
+        r0 := @this: org.apache.commons.validator.routines.DateValidatorTest;
+        i0 = 124522;
+        i1 = 20050823;
+        $r20 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        r1 = staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: java.util.Date createDate(java.util.TimeZone,int,int)>($r20, i1, 115922);
+        $r21 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        r2 = staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: java.util.Date createDate(java.util.TimeZone,int,int)>($r21, i1, i0);
+        $r22 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        r3 = staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: java.util.Date createDate(java.util.TimeZone,int,int)>($r22, 20050824, i0);
+        $r23 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        r4 = staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: java.util.Date createDate(java.util.TimeZone,int,int)>($r23, 20050822, i0);
+        $r24 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        r5 = staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: java.util.Date createDate(java.util.TimeZone,int,int)>($r24, 20050830, i0);
+        $r25 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        r6 = staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: java.util.Date createDate(java.util.TimeZone,int,int)>($r25, 20050816, i0);
+        $r26 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        r7 = staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: java.util.Date createDate(java.util.TimeZone,int,int)>($r26, 20050901, i0);
+        $r27 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        r8 = staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: java.util.Date createDate(java.util.TimeZone,int,int)>($r27, 20050801, i0);
+        $r28 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        r9 = staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: java.util.Date createDate(java.util.TimeZone,int,int)>($r28, 20050731, i0);
+        $r29 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        r10 = staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: java.util.Date createDate(java.util.TimeZone,int,int)>($r29, 20051101, i0);
+        $r30 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        r11 = staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: java.util.Date createDate(java.util.TimeZone,int,int)>($r30, 20051001, i0);
+        $r31 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        r12 = staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: java.util.Date createDate(java.util.TimeZone,int,int)>($r31, 20050701, i0);
+        $r32 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        r13 = staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: java.util.Date createDate(java.util.TimeZone,int,int)>($r32, 20050630, i0);
+        $r33 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        r14 = staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: java.util.Date createDate(java.util.TimeZone,int,int)>($r33, 20050110, i0);
+        $r34 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        r15 = staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: java.util.Date createDate(java.util.TimeZone,int,int)>($r34, 20060101, i0);
+        $r35 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        r16 = staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: java.util.Date createDate(java.util.TimeZone,int,int)>($r35, 20050101, i0);
+        $r36 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        r17 = staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: java.util.Date createDate(java.util.TimeZone,int,int)>($r36, 20041231, i0);
+        $r37 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r18 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        $i2 = virtualinvoke $r37.<org.apache.commons.validator.routines.DateValidator: int compareDates(java.util.Date,java.util.Date,java.util.TimeZone)>(r2, r3, $r18);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("date LT", -1, $i2);
+        $r38 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r39 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        $i3 = virtualinvoke $r38.<org.apache.commons.validator.routines.DateValidator: int compareDates(java.util.Date,java.util.Date,java.util.TimeZone)>(r2, r1, $r39);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("date EQ", 0, $i3);
+        $r40 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r41 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        $i4 = virtualinvoke $r40.<org.apache.commons.validator.routines.DateValidator: int compareDates(java.util.Date,java.util.Date,java.util.TimeZone)>(r2, r4, $r41);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("date GT", 1, $i4);
+        $r42 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r43 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        $i5 = virtualinvoke $r42.<org.apache.commons.validator.routines.DateValidator: int compareWeeks(java.util.Date,java.util.Date,java.util.TimeZone)>(r2, r5, $r43);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("week LT", -1, $i5);
+        $r44 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r45 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        $i6 = virtualinvoke $r44.<org.apache.commons.validator.routines.DateValidator: int compareWeeks(java.util.Date,java.util.Date,java.util.TimeZone)>(r2, r3, $r45);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("week =1", 0, $i6);
+        $r46 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r47 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        $i7 = virtualinvoke $r46.<org.apache.commons.validator.routines.DateValidator: int compareWeeks(java.util.Date,java.util.Date,java.util.TimeZone)>(r2, r4, $r47);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("week =2", 0, $i7);
+        $r48 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r49 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        $i8 = virtualinvoke $r48.<org.apache.commons.validator.routines.DateValidator: int compareWeeks(java.util.Date,java.util.Date,java.util.TimeZone)>(r2, r4, $r49);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("week =3", 0, $i8);
+        $r50 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r51 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        $i9 = virtualinvoke $r50.<org.apache.commons.validator.routines.DateValidator: int compareWeeks(java.util.Date,java.util.Date,java.util.TimeZone)>(r2, r6, $r51);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("week GT", 1, $i9);
+        $r52 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r53 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        $i10 = virtualinvoke $r52.<org.apache.commons.validator.routines.DateValidator: int compareMonths(java.util.Date,java.util.Date,java.util.TimeZone)>(r2, r7, $r53);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("mnth LT", -1, $i10);
+        $r54 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r55 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        $i11 = virtualinvoke $r54.<org.apache.commons.validator.routines.DateValidator: int compareMonths(java.util.Date,java.util.Date,java.util.TimeZone)>(r2, r5, $r55);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("mnth =1", 0, $i11);
+        $r56 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r57 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        $i12 = virtualinvoke $r56.<org.apache.commons.validator.routines.DateValidator: int compareMonths(java.util.Date,java.util.Date,java.util.TimeZone)>(r2, r8, $r57);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("mnth =2", 0, $i12);
+        $r58 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r59 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        $i13 = virtualinvoke $r58.<org.apache.commons.validator.routines.DateValidator: int compareMonths(java.util.Date,java.util.Date,java.util.TimeZone)>(r2, r6, $r59);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("mnth =3", 0, $i13);
+        $r60 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r61 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        $i14 = virtualinvoke $r60.<org.apache.commons.validator.routines.DateValidator: int compareMonths(java.util.Date,java.util.Date,java.util.TimeZone)>(r2, r9, $r61);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("mnth GT", 1, $i14);
+        $r62 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r63 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        $i15 = virtualinvoke $r62.<org.apache.commons.validator.routines.DateValidator: int compareQuarters(java.util.Date,java.util.Date,java.util.TimeZone)>(r2, r10, $r63);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("qtrA <1", -1, $i15);
+        $r64 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r65 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        $i16 = virtualinvoke $r64.<org.apache.commons.validator.routines.DateValidator: int compareQuarters(java.util.Date,java.util.Date,java.util.TimeZone)>(r2, r11, $r65);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("qtrA <2", -1, $i16);
+        $r66 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r67 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        $i17 = virtualinvoke $r66.<org.apache.commons.validator.routines.DateValidator: int compareQuarters(java.util.Date,java.util.Date,java.util.TimeZone)>(r2, r7, $r67);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("qtrA =1", 0, $i17);
+        $r68 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r69 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        $i18 = virtualinvoke $r68.<org.apache.commons.validator.routines.DateValidator: int compareQuarters(java.util.Date,java.util.Date,java.util.TimeZone)>(r2, r12, $r69);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("qtrA =2", 0, $i18);
+        $r70 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r71 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        $i19 = virtualinvoke $r70.<org.apache.commons.validator.routines.DateValidator: int compareQuarters(java.util.Date,java.util.Date,java.util.TimeZone)>(r2, r9, $r71);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("qtrA =3", 0, $i19);
+        $r72 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r73 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        $i20 = virtualinvoke $r72.<org.apache.commons.validator.routines.DateValidator: int compareQuarters(java.util.Date,java.util.Date,java.util.TimeZone)>(r2, r13, $r73);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("qtrA GT", 1, $i20);
+        $r74 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r75 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        $i21 = virtualinvoke $r74.<org.apache.commons.validator.routines.DateValidator: int compareQuarters(java.util.Date,java.util.Date,java.util.TimeZone,int)>(r2, r10, $r75, 2);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("qtrB LT", -1, $i21);
+        $r76 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r77 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        $i22 = virtualinvoke $r76.<org.apache.commons.validator.routines.DateValidator: int compareQuarters(java.util.Date,java.util.Date,java.util.TimeZone,int)>(r2, r11, $r77, 2);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("qtrB =1", 0, $i22);
+        $r78 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r79 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        $i23 = virtualinvoke $r78.<org.apache.commons.validator.routines.DateValidator: int compareQuarters(java.util.Date,java.util.Date,java.util.TimeZone,int)>(r2, r7, $r79, 2);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("qtrB =2", 0, $i23);
+        $r80 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r81 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        $i24 = virtualinvoke $r80.<org.apache.commons.validator.routines.DateValidator: int compareQuarters(java.util.Date,java.util.Date,java.util.TimeZone,int)>(r2, r12, $r81, 2);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("qtrB =3", 1, $i24);
+        $r82 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r83 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        $i25 = virtualinvoke $r82.<org.apache.commons.validator.routines.DateValidator: int compareQuarters(java.util.Date,java.util.Date,java.util.TimeZone,int)>(r2, r9, $r83, 2);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("qtrB =4", 1, $i25);
+        $r84 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r85 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        $i26 = virtualinvoke $r84.<org.apache.commons.validator.routines.DateValidator: int compareQuarters(java.util.Date,java.util.Date,java.util.TimeZone,int)>(r2, r13, $r85, 2);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("qtrB GT", 1, $i26);
+        $r86 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r87 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        $i27 = virtualinvoke $r86.<org.apache.commons.validator.routines.DateValidator: int compareQuarters(java.util.Date,java.util.Date,java.util.TimeZone,int)>(r2, r14, $r87, 2);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("qtrB prev", 1, $i27);
+        $r88 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r89 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        $i28 = virtualinvoke $r88.<org.apache.commons.validator.routines.DateValidator: int compareYears(java.util.Date,java.util.Date,java.util.TimeZone)>(r2, r15, $r89);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("year LT", -1, $i28);
+        $r90 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r91 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        $i29 = virtualinvoke $r90.<org.apache.commons.validator.routines.DateValidator: int compareYears(java.util.Date,java.util.Date,java.util.TimeZone)>(r2, r16, $r91);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("year EQ", 0, $i29);
+        $r92 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r93 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        $i30 = virtualinvoke $r92.<org.apache.commons.validator.routines.DateValidator: int compareYears(java.util.Date,java.util.Date,java.util.TimeZone)>(r2, r17, $r93);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("year GT", 1, $i30);
+        $r94 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone GMT>;
+        r19 = staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: java.util.Date createDate(java.util.TimeZone,int,int)>($r94, i1, 20000);
+        $r95 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r96 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone EST>;
+        $i31 = virtualinvoke $r95.<org.apache.commons.validator.routines.DateValidator: int compareDates(java.util.Date,java.util.Date,java.util.TimeZone)>(r2, r3, $r96);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("date LT", -1, $i31);
+        $r97 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r98 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone EST>;
+        $i32 = virtualinvoke $r97.<org.apache.commons.validator.routines.DateValidator: int compareDates(java.util.Date,java.util.Date,java.util.TimeZone)>(r2, r1, $r98);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("date EQ", 0, $i32);
+        $r99 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r100 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone EST>;
+        $i33 = virtualinvoke $r99.<org.apache.commons.validator.routines.DateValidator: int compareDates(java.util.Date,java.util.Date,java.util.TimeZone)>(r2, r19, $r100);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("date EQ", 1, $i33);
+        $r101 = r0.<org.apache.commons.validator.routines.DateValidatorTest: org.apache.commons.validator.routines.DateValidator dateValidator>;
+        $r102 = <org.apache.commons.validator.routines.DateValidatorTest: java.util.TimeZone EST>;
+        $i34 = virtualinvoke $r101.<org.apache.commons.validator.routines.DateValidator: int compareDates(java.util.Date,java.util.Date,java.util.TimeZone)>(r2, r4, $r102);
+        staticinvoke <org.apache.commons.validator.routines.DateValidatorTest: void assertEquals(java.lang.String,int,int)>("date GT", 1, $i34);
+        return;
+    }
+}

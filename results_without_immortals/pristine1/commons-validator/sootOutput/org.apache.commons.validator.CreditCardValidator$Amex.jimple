@@ -1,0 +1,52 @@
+class org.apache.commons.validator.CreditCardValidator$Amex extends java.lang.Object implements org.apache.commons.validator.CreditCardValidator$CreditCardType
+{
+    private static final java.lang.String PREFIX;
+
+    private void <init>()
+    {
+        org.apache.commons.validator.CreditCardValidator$Amex r0;
+
+        r0 := @this: org.apache.commons.validator.CreditCardValidator$Amex;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        return;
+    }
+
+    public boolean matches(java.lang.String)
+    {
+        org.apache.commons.validator.CreditCardValidator$Amex r0;
+        java.lang.String r1, r3, $r4, $r5, $r7;
+        java.lang.StringBuilder $r2, $r6;
+        boolean $z0;
+        int $i0;
+
+        r0 := @this: org.apache.commons.validator.CreditCardValidator$Amex;
+        r1 := @parameter0: java.lang.String;
+        $r2 = new java.lang.StringBuilder;
+        $r4 = virtualinvoke r1.<java.lang.String: java.lang.String substring(int,int)>(0, 2);
+        $r5 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r4);
+        specialinvoke $r2.<java.lang.StringBuilder: void <init>(java.lang.String)>($r5);
+        $r6 = virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(",");
+        r3 = virtualinvoke $r6.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r7 = "34,37,";
+        $z0 = virtualinvoke $r7.<java.lang.String: boolean contains(java.lang.CharSequence)>(r3);
+        if $z0 == 0 goto label0;
+
+        $i0 = virtualinvoke r1.<java.lang.String: int length()>();
+        if $i0 != 15 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    void <init>(org.apache.commons.validator.CreditCardValidator$Amex)
+    {
+        org.apache.commons.validator.CreditCardValidator$Amex r0, r1;
+
+        r0 := @this: org.apache.commons.validator.CreditCardValidator$Amex;
+        r1 := @parameter0: org.apache.commons.validator.CreditCardValidator$Amex;
+        specialinvoke r0.<org.apache.commons.validator.CreditCardValidator$Amex: void <init>()>();
+        return;
+    }
+}

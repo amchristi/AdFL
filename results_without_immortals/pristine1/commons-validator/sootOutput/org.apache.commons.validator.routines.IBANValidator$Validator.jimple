@@ -1,0 +1,77 @@
+public class org.apache.commons.validator.routines.IBANValidator$Validator extends java.lang.Object
+{
+    private static final int MIN_LEN;
+    private static final int MAX_LEN;
+    final java.lang.String countryCode;
+    final org.apache.commons.validator.routines.RegexValidator validator;
+    final int lengthOfIBAN;
+
+    public void <init>(java.lang.String, int, java.lang.String)
+    {
+        org.apache.commons.validator.routines.IBANValidator$Validator r0;
+        java.lang.String r1, r2, $r7, $r13;
+        int i0, $i1;
+        char $c2, $c3;
+        boolean $z0, $z1, $z2;
+        java.lang.IllegalArgumentException $r3, $r4, $r8;
+        java.lang.StringBuilder $r5, $r6, $r9, $r10, $r11, $r12;
+        org.apache.commons.validator.routines.RegexValidator $r14;
+
+        r0 := @this: org.apache.commons.validator.routines.IBANValidator$Validator;
+        r1 := @parameter0: java.lang.String;
+        i0 := @parameter1: int;
+        r2 := @parameter2: java.lang.String;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        $i1 = virtualinvoke r1.<java.lang.String: int length()>();
+        if $i1 != 2 goto label0;
+
+        $c2 = virtualinvoke r1.<java.lang.String: char charAt(int)>(0);
+        $z0 = staticinvoke <java.lang.Character: boolean isUpperCase(char)>($c2);
+        if $z0 == 0 goto label0;
+
+        $c3 = virtualinvoke r1.<java.lang.String: char charAt(int)>(1);
+        $z1 = staticinvoke <java.lang.Character: boolean isUpperCase(char)>($c3);
+        if $z1 != 0 goto label1;
+
+     label0:
+        $r3 = new java.lang.IllegalArgumentException;
+        specialinvoke $r3.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("Invalid country Code; must be exactly 2 upper-case characters");
+        throw $r3;
+
+     label1:
+        if i0 > 34 goto label2;
+
+        if i0 >= 8 goto label3;
+
+     label2:
+        $r4 = new java.lang.IllegalArgumentException;
+        $r5 = new java.lang.StringBuilder;
+        specialinvoke $r5.<java.lang.StringBuilder: void <init>(java.lang.String)>("Invalid length parameter, must be in range 8 to 34 inclusive: ");
+        $r6 = virtualinvoke $r5.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>(i0);
+        $r7 = virtualinvoke $r6.<java.lang.StringBuilder: java.lang.String toString()>();
+        specialinvoke $r4.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>($r7);
+        throw $r4;
+
+     label3:
+        $z2 = virtualinvoke r2.<java.lang.String: boolean startsWith(java.lang.String)>(r1);
+        if $z2 != 0 goto label4;
+
+        $r8 = new java.lang.IllegalArgumentException;
+        $r9 = new java.lang.StringBuilder;
+        specialinvoke $r9.<java.lang.StringBuilder: void <init>(java.lang.String)>("countryCode \'");
+        $r10 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r1);
+        $r11 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' does not agree with format: ");
+        $r12 = virtualinvoke $r11.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r2);
+        $r13 = virtualinvoke $r12.<java.lang.StringBuilder: java.lang.String toString()>();
+        specialinvoke $r8.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>($r13);
+        throw $r8;
+
+     label4:
+        r0.<org.apache.commons.validator.routines.IBANValidator$Validator: java.lang.String countryCode> = r1;
+        r0.<org.apache.commons.validator.routines.IBANValidator$Validator: int lengthOfIBAN> = i0;
+        $r14 = new org.apache.commons.validator.routines.RegexValidator;
+        specialinvoke $r14.<org.apache.commons.validator.routines.RegexValidator: void <init>(java.lang.String)>(r2);
+        r0.<org.apache.commons.validator.routines.IBANValidator$Validator: org.apache.commons.validator.routines.RegexValidator validator> = $r14;
+        return;
+    }
+}

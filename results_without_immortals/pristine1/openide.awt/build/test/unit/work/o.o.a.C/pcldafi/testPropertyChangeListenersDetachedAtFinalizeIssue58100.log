@@ -1,0 +1,20 @@
+[TEST-testPropertyChangeListenersDetachedAtFinalizeIssue58100] THREAD: AWT-EventQueue-0 MSG: setUp
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: changed map : null
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: previous map: null
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: changed map : javax.swing.ActionMap@3ecee591
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: previous map: null
+
+[org.openide.awt.GeneralAction] THREAD: AWT-EventQueue-0 MSG: clearActionPerformers
+
+[org.openide.util.lookup.implspi.ActiveQueue] THREAD: Active Reference Queue Daemon MSG: Got dequeued reference org.openide.awt.GlobalManager$GMReference@2474dd87
+
+[org.openide.util.lookup.implspi.ActiveQueue] THREAD: Active Reference Queue Daemon MSG: Got dequeued reference org.openide.awt.GlobalManager$GMReference@6176576d
+
+[TEST-testPropertyChangeListenersDetachedAtFinalizeIssue58100] THREAD: AWT-EventQueue-0 MSG: tearDown
+
+[TEST-testPropertyChangeListenersDetachedAtFinalizeIssue58100] THREAD: AWT-EventQueue-0 MSG: tearDown super finished
+

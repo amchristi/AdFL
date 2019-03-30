@@ -1,0 +1,919 @@
+public class org.apache.commons.validator.ValidatorResources extends java.lang.Object implements java.io.Serializable
+{
+    private static final long serialVersionUID;
+    private static final java.lang.String VALIDATOR_RULES;
+    private static final java.lang.String[] REGISTRATIONS;
+    private transient org.apache.commons.logging.Log log;
+    protected org.apache.commons.collections.FastHashMap hFormSets;
+    protected org.apache.commons.collections.FastHashMap hConstants;
+    protected org.apache.commons.collections.FastHashMap hActions;
+    protected static java.util.Locale defaultLocale;
+    protected org.apache.commons.validator.FormSet defaultFormSet;
+    private static final java.lang.String ARGS_PATTERN;
+
+    static void <clinit>()
+    {
+        java.lang.String[] $r0;
+        java.util.Locale $r1;
+
+        $r0 = newarray (java.lang.String)[14];
+        $r0[0] = "-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.0//EN";
+        $r0[1] = "/org/apache/commons/validator/resources/validator_1_0.dtd";
+        $r0[2] = "-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.0.1//EN";
+        $r0[3] = "/org/apache/commons/validator/resources/validator_1_0_1.dtd";
+        $r0[4] = "-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.1//EN";
+        $r0[5] = "/org/apache/commons/validator/resources/validator_1_1.dtd";
+        $r0[6] = "-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.1.3//EN";
+        $r0[7] = "/org/apache/commons/validator/resources/validator_1_1_3.dtd";
+        $r0[8] = "-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.2.0//EN";
+        $r0[9] = "/org/apache/commons/validator/resources/validator_1_2_0.dtd";
+        $r0[10] = "-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.3.0//EN";
+        $r0[11] = "/org/apache/commons/validator/resources/validator_1_3_0.dtd";
+        $r0[12] = "-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.4.0//EN";
+        $r0[13] = "/org/apache/commons/validator/resources/validator_1_4_0.dtd";
+        <org.apache.commons.validator.ValidatorResources: java.lang.String[] REGISTRATIONS> = $r0;
+        $r1 = staticinvoke <java.util.Locale: java.util.Locale getDefault()>();
+        <org.apache.commons.validator.ValidatorResources: java.util.Locale defaultLocale> = $r1;
+        return;
+    }
+
+    public void <init>()
+    {
+        org.apache.commons.validator.ValidatorResources r0;
+        org.apache.commons.logging.Log $r1;
+        org.apache.commons.collections.FastHashMap $r2, $r3, $r4;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResources;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        $r1 = staticinvoke <org.apache.commons.logging.LogFactory: org.apache.commons.logging.Log getLog(java.lang.Class)>(class "org/apache/commons/validator/ValidatorResources");
+        r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.logging.Log log> = $r1;
+        $r2 = new org.apache.commons.collections.FastHashMap;
+        specialinvoke $r2.<org.apache.commons.collections.FastHashMap: void <init>()>();
+        r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.collections.FastHashMap hFormSets> = $r2;
+        $r3 = new org.apache.commons.collections.FastHashMap;
+        specialinvoke $r3.<org.apache.commons.collections.FastHashMap: void <init>()>();
+        r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.collections.FastHashMap hConstants> = $r3;
+        $r4 = new org.apache.commons.collections.FastHashMap;
+        specialinvoke $r4.<org.apache.commons.collections.FastHashMap: void <init>()>();
+        r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.collections.FastHashMap hActions> = $r4;
+        return;
+    }
+
+    public void <init>(java.io.InputStream) throws java.io.IOException, org.xml.sax.SAXException
+    {
+        org.apache.commons.validator.ValidatorResources r0;
+        java.io.InputStream r1;
+        java.io.InputStream[] $r2;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResources;
+        r1 := @parameter0: java.io.InputStream;
+        $r2 = newarray (java.io.InputStream)[1];
+        $r2[0] = r1;
+        specialinvoke r0.<org.apache.commons.validator.ValidatorResources: void <init>(java.io.InputStream[])>($r2);
+        return;
+    }
+
+    public void <init>(java.io.InputStream[]) throws java.io.IOException, org.xml.sax.SAXException
+    {
+        org.apache.commons.validator.ValidatorResources r0;
+        java.io.InputStream[] r1;
+        org.apache.commons.digester.Digester r2;
+        int i0, $i1;
+        org.apache.commons.logging.Log $r3;
+        org.apache.commons.collections.FastHashMap $r4, $r5, $r6;
+        java.io.InputStream $r7, $r13;
+        java.lang.IllegalArgumentException $r8;
+        java.lang.StringBuilder $r9, $r10, $r11;
+        java.lang.String $r12;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResources;
+        r1 := @parameter0: java.io.InputStream[];
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        $r3 = staticinvoke <org.apache.commons.logging.LogFactory: org.apache.commons.logging.Log getLog(java.lang.Class)>(class "org/apache/commons/validator/ValidatorResources");
+        r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.logging.Log log> = $r3;
+        $r4 = new org.apache.commons.collections.FastHashMap;
+        specialinvoke $r4.<org.apache.commons.collections.FastHashMap: void <init>()>();
+        r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.collections.FastHashMap hFormSets> = $r4;
+        $r5 = new org.apache.commons.collections.FastHashMap;
+        specialinvoke $r5.<org.apache.commons.collections.FastHashMap: void <init>()>();
+        r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.collections.FastHashMap hConstants> = $r5;
+        $r6 = new org.apache.commons.collections.FastHashMap;
+        specialinvoke $r6.<org.apache.commons.collections.FastHashMap: void <init>()>();
+        r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.collections.FastHashMap hActions> = $r6;
+        r2 = specialinvoke r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.digester.Digester initDigester()>();
+        i0 = 0;
+        goto label2;
+
+     label0:
+        $r7 = r1[i0];
+        if $r7 != null goto label1;
+
+        $r8 = new java.lang.IllegalArgumentException;
+        $r9 = new java.lang.StringBuilder;
+        specialinvoke $r9.<java.lang.StringBuilder: void <init>(java.lang.String)>("Stream[");
+        $r10 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>(i0);
+        $r11 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("] is null");
+        $r12 = virtualinvoke $r11.<java.lang.StringBuilder: java.lang.String toString()>();
+        specialinvoke $r8.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>($r12);
+        throw $r8;
+
+     label1:
+        virtualinvoke r2.<org.apache.commons.digester.Digester: void push(java.lang.Object)>(r0);
+        $r13 = r1[i0];
+        virtualinvoke r2.<org.apache.commons.digester.Digester: java.lang.Object parse(java.io.InputStream)>($r13);
+        i0 = i0 + 1;
+
+     label2:
+        $i1 = lengthof r1;
+        if i0 < $i1 goto label0;
+
+        virtualinvoke r0.<org.apache.commons.validator.ValidatorResources: void process()>();
+        return;
+    }
+
+    public void <init>(java.lang.String) throws java.io.IOException, org.xml.sax.SAXException
+    {
+        org.apache.commons.validator.ValidatorResources r0;
+        java.lang.String r1;
+        java.lang.String[] $r2;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResources;
+        r1 := @parameter0: java.lang.String;
+        $r2 = newarray (java.lang.String)[1];
+        $r2[0] = r1;
+        specialinvoke r0.<org.apache.commons.validator.ValidatorResources: void <init>(java.lang.String[])>($r2);
+        return;
+    }
+
+    public void <init>(java.lang.String[]) throws java.io.IOException, org.xml.sax.SAXException
+    {
+        org.apache.commons.validator.ValidatorResources r0;
+        java.lang.String[] r1;
+        org.apache.commons.digester.Digester r2;
+        int i0, $i1;
+        org.apache.commons.logging.Log $r3;
+        org.apache.commons.collections.FastHashMap $r4, $r5, $r6;
+        java.lang.String $r7;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResources;
+        r1 := @parameter0: java.lang.String[];
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        $r3 = staticinvoke <org.apache.commons.logging.LogFactory: org.apache.commons.logging.Log getLog(java.lang.Class)>(class "org/apache/commons/validator/ValidatorResources");
+        r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.logging.Log log> = $r3;
+        $r4 = new org.apache.commons.collections.FastHashMap;
+        specialinvoke $r4.<org.apache.commons.collections.FastHashMap: void <init>()>();
+        r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.collections.FastHashMap hFormSets> = $r4;
+        $r5 = new org.apache.commons.collections.FastHashMap;
+        specialinvoke $r5.<org.apache.commons.collections.FastHashMap: void <init>()>();
+        r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.collections.FastHashMap hConstants> = $r5;
+        $r6 = new org.apache.commons.collections.FastHashMap;
+        specialinvoke $r6.<org.apache.commons.collections.FastHashMap: void <init>()>();
+        r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.collections.FastHashMap hActions> = $r6;
+        r2 = specialinvoke r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.digester.Digester initDigester()>();
+        i0 = 0;
+        goto label1;
+
+     label0:
+        virtualinvoke r2.<org.apache.commons.digester.Digester: void push(java.lang.Object)>(r0);
+        $r7 = r1[i0];
+        virtualinvoke r2.<org.apache.commons.digester.Digester: java.lang.Object parse(java.lang.String)>($r7);
+        i0 = i0 + 1;
+
+     label1:
+        $i1 = lengthof r1;
+        if i0 < $i1 goto label0;
+
+        virtualinvoke r0.<org.apache.commons.validator.ValidatorResources: void process()>();
+        return;
+    }
+
+    public void <init>(java.net.URL) throws java.io.IOException, org.xml.sax.SAXException
+    {
+        org.apache.commons.validator.ValidatorResources r0;
+        java.net.URL r1;
+        java.net.URL[] $r2;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResources;
+        r1 := @parameter0: java.net.URL;
+        $r2 = newarray (java.net.URL)[1];
+        $r2[0] = r1;
+        specialinvoke r0.<org.apache.commons.validator.ValidatorResources: void <init>(java.net.URL[])>($r2);
+        return;
+    }
+
+    public void <init>(java.net.URL[]) throws java.io.IOException, org.xml.sax.SAXException
+    {
+        org.apache.commons.validator.ValidatorResources r0;
+        java.net.URL[] r1;
+        org.apache.commons.digester.Digester r2;
+        int i0, $i1;
+        org.apache.commons.logging.Log $r3;
+        org.apache.commons.collections.FastHashMap $r4, $r5, $r6;
+        java.net.URL $r7;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResources;
+        r1 := @parameter0: java.net.URL[];
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        $r3 = staticinvoke <org.apache.commons.logging.LogFactory: org.apache.commons.logging.Log getLog(java.lang.Class)>(class "org/apache/commons/validator/ValidatorResources");
+        r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.logging.Log log> = $r3;
+        $r4 = new org.apache.commons.collections.FastHashMap;
+        specialinvoke $r4.<org.apache.commons.collections.FastHashMap: void <init>()>();
+        r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.collections.FastHashMap hFormSets> = $r4;
+        $r5 = new org.apache.commons.collections.FastHashMap;
+        specialinvoke $r5.<org.apache.commons.collections.FastHashMap: void <init>()>();
+        r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.collections.FastHashMap hConstants> = $r5;
+        $r6 = new org.apache.commons.collections.FastHashMap;
+        specialinvoke $r6.<org.apache.commons.collections.FastHashMap: void <init>()>();
+        r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.collections.FastHashMap hActions> = $r6;
+        r2 = specialinvoke r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.digester.Digester initDigester()>();
+        i0 = 0;
+        goto label1;
+
+     label0:
+        virtualinvoke r2.<org.apache.commons.digester.Digester: void push(java.lang.Object)>(r0);
+        $r7 = r1[i0];
+        virtualinvoke r2.<org.apache.commons.digester.Digester: java.lang.Object parse(java.net.URL)>($r7);
+        i0 = i0 + 1;
+
+     label1:
+        $i1 = lengthof r1;
+        if i0 < $i1 goto label0;
+
+        virtualinvoke r0.<org.apache.commons.validator.ValidatorResources: void process()>();
+        return;
+    }
+
+    private org.apache.commons.digester.Digester initDigester()
+    {
+        org.apache.commons.validator.ValidatorResources r0;
+        java.net.URL r1, r3;
+        org.apache.commons.digester.Digester r2;
+        int i0, $i1, $i2;
+        java.lang.Class $r4, $r5, $r12;
+        org.apache.commons.logging.Log $r6, $r7;
+        boolean $z0;
+        java.lang.StringBuilder $r8, $r9, $r10;
+        java.lang.String $r11, $r14, $r16, $r17;
+        java.lang.String[] $r13, $r15, $r18;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResources;
+        $r4 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>();
+        r1 = virtualinvoke $r4.<java.lang.Class: java.net.URL getResource(java.lang.String)>("digester-rules.xml");
+        if r1 != null goto label0;
+
+        $r5 = class "org/apache/commons/validator/ValidatorResources";
+        r1 = virtualinvoke $r5.<java.lang.Class: java.net.URL getResource(java.lang.String)>("digester-rules.xml");
+
+     label0:
+        $r6 = specialinvoke r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.logging.Log getLog()>();
+        $z0 = interfaceinvoke $r6.<org.apache.commons.logging.Log: boolean isDebugEnabled()>();
+        if $z0 == 0 goto label1;
+
+        $r7 = specialinvoke r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.logging.Log getLog()>();
+        $r8 = new java.lang.StringBuilder;
+        specialinvoke $r8.<java.lang.StringBuilder: void <init>(java.lang.String)>("Loading rules from \'");
+        $r9 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(r1);
+        $r10 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\'");
+        $r11 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.String toString()>();
+        interfaceinvoke $r7.<org.apache.commons.logging.Log: void debug(java.lang.Object)>($r11);
+
+     label1:
+        r2 = staticinvoke <org.apache.commons.digester.xmlrules.DigesterLoader: org.apache.commons.digester.Digester createDigester(java.net.URL)>(r1);
+        virtualinvoke r2.<org.apache.commons.digester.Digester: void setNamespaceAware(boolean)>(1);
+        virtualinvoke r2.<org.apache.commons.digester.Digester: void setValidating(boolean)>(1);
+        virtualinvoke r2.<org.apache.commons.digester.Digester: void setUseContextClassLoader(boolean)>(1);
+        specialinvoke r0.<org.apache.commons.validator.ValidatorResources: void addOldArgRules(org.apache.commons.digester.Digester)>(r2);
+        i0 = 0;
+        goto label4;
+
+     label2:
+        $r12 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>();
+        $r13 = <org.apache.commons.validator.ValidatorResources: java.lang.String[] REGISTRATIONS>;
+        $i1 = i0 + 1;
+        $r14 = $r13[$i1];
+        r3 = virtualinvoke $r12.<java.lang.Class: java.net.URL getResource(java.lang.String)>($r14);
+        if r3 == null goto label3;
+
+        $r15 = <org.apache.commons.validator.ValidatorResources: java.lang.String[] REGISTRATIONS>;
+        $r16 = $r15[i0];
+        $r17 = virtualinvoke r3.<java.net.URL: java.lang.String toString()>();
+        virtualinvoke r2.<org.apache.commons.digester.Digester: void register(java.lang.String,java.lang.String)>($r16, $r17);
+
+     label3:
+        i0 = i0 + 2;
+
+     label4:
+        $r18 = <org.apache.commons.validator.ValidatorResources: java.lang.String[] REGISTRATIONS>;
+        $i2 = lengthof $r18;
+        if i0 < $i2 goto label2;
+
+        return r2;
+    }
+
+    private void addOldArgRules(org.apache.commons.digester.Digester)
+    {
+        org.apache.commons.validator.ValidatorResources r0;
+        org.apache.commons.digester.Digester r1;
+        org.apache.commons.validator.ValidatorResources$1 $r2, r3;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResources;
+        r1 := @parameter0: org.apache.commons.digester.Digester;
+        $r2 = new org.apache.commons.validator.ValidatorResources$1;
+        specialinvoke $r2.<org.apache.commons.validator.ValidatorResources$1: void <init>(org.apache.commons.validator.ValidatorResources)>(r0);
+        r3 = $r2;
+        virtualinvoke r1.<org.apache.commons.digester.Digester: void addRule(java.lang.String,org.apache.commons.digester.Rule)>("form-validation/formset/form/field/arg0", r3);
+        virtualinvoke r1.<org.apache.commons.digester.Digester: void addRule(java.lang.String,org.apache.commons.digester.Rule)>("form-validation/formset/form/field/arg1", r3);
+        virtualinvoke r1.<org.apache.commons.digester.Digester: void addRule(java.lang.String,org.apache.commons.digester.Rule)>("form-validation/formset/form/field/arg2", r3);
+        virtualinvoke r1.<org.apache.commons.digester.Digester: void addRule(java.lang.String,org.apache.commons.digester.Rule)>("form-validation/formset/form/field/arg3", r3);
+        return;
+    }
+
+    public void addFormSet(org.apache.commons.validator.FormSet)
+    {
+        org.apache.commons.validator.ValidatorResources r0;
+        org.apache.commons.validator.FormSet r1, r3, $r5;
+        java.lang.String r2, $r12, $r15, $r20;
+        int $i0;
+        org.apache.commons.logging.Log $r4, $r6, $r9, $r10, $r16, $r17;
+        boolean $z0, $z1, $z2;
+        java.util.Map $r7, $r21;
+        java.lang.Object $r8;
+        java.lang.StringBuilder $r11, $r13, $r14, $r18, $r19;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResources;
+        r1 := @parameter0: org.apache.commons.validator.FormSet;
+        r2 = virtualinvoke r0.<org.apache.commons.validator.ValidatorResources: java.lang.String buildKey(org.apache.commons.validator.FormSet)>(r1);
+        $i0 = virtualinvoke r2.<java.lang.String: int length()>();
+        if $i0 != 0 goto label1;
+
+        $r4 = specialinvoke r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.logging.Log getLog()>();
+        $z0 = interfaceinvoke $r4.<org.apache.commons.logging.Log: boolean isWarnEnabled()>();
+        if $z0 == 0 goto label0;
+
+        $r5 = r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.validator.FormSet defaultFormSet>;
+        if $r5 == null goto label0;
+
+        $r6 = specialinvoke r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.logging.Log getLog()>();
+        interfaceinvoke $r6.<org.apache.commons.logging.Log: void warn(java.lang.Object)>("Overriding default FormSet definition.");
+
+     label0:
+        r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.validator.FormSet defaultFormSet> = r1;
+        goto label4;
+
+     label1:
+        $r7 = virtualinvoke r0.<org.apache.commons.validator.ValidatorResources: java.util.Map getFormSets()>();
+        $r8 = interfaceinvoke $r7.<java.util.Map: java.lang.Object get(java.lang.Object)>(r2);
+        r3 = (org.apache.commons.validator.FormSet) $r8;
+        if r3 != null goto label2;
+
+        $r9 = specialinvoke r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.logging.Log getLog()>();
+        $z1 = interfaceinvoke $r9.<org.apache.commons.logging.Log: boolean isDebugEnabled()>();
+        if $z1 == 0 goto label3;
+
+        $r10 = specialinvoke r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.logging.Log getLog()>();
+        $r11 = new java.lang.StringBuilder;
+        specialinvoke $r11.<java.lang.StringBuilder: void <init>(java.lang.String)>("Adding FormSet \'");
+        $r12 = virtualinvoke r1.<org.apache.commons.validator.FormSet: java.lang.String toString()>();
+        $r13 = virtualinvoke $r11.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r12);
+        $r14 = virtualinvoke $r13.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\'.");
+        $r15 = virtualinvoke $r14.<java.lang.StringBuilder: java.lang.String toString()>();
+        interfaceinvoke $r10.<org.apache.commons.logging.Log: void debug(java.lang.Object)>($r15);
+        goto label3;
+
+     label2:
+        $r16 = specialinvoke r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.logging.Log getLog()>();
+        $z2 = interfaceinvoke $r16.<org.apache.commons.logging.Log: boolean isWarnEnabled()>();
+        if $z2 == 0 goto label3;
+
+        $r17 = specialinvoke r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.logging.Log getLog()>();
+        $r18 = new java.lang.StringBuilder;
+        specialinvoke $r18.<java.lang.StringBuilder: void <init>(java.lang.String)>("Overriding FormSet definition. Duplicate for locale: ");
+        $r19 = virtualinvoke $r18.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r2);
+        $r20 = virtualinvoke $r19.<java.lang.StringBuilder: java.lang.String toString()>();
+        interfaceinvoke $r17.<org.apache.commons.logging.Log: void warn(java.lang.Object)>($r20);
+
+     label3:
+        $r21 = virtualinvoke r0.<org.apache.commons.validator.ValidatorResources: java.util.Map getFormSets()>();
+        interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r2, r1);
+
+     label4:
+        return;
+    }
+
+    public void addConstant(java.lang.String, java.lang.String)
+    {
+        org.apache.commons.validator.ValidatorResources r0;
+        java.lang.String r1, r2, $r9;
+        java.lang.StringBuilder $r3, $r6, $r7, $r8;
+        org.apache.commons.logging.Log $r4, $r5;
+        boolean $z0;
+        org.apache.commons.collections.FastHashMap $r10;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResources;
+        r1 := @parameter0: java.lang.String;
+        r2 := @parameter1: java.lang.String;
+        $r4 = specialinvoke r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.logging.Log getLog()>();
+        $z0 = interfaceinvoke $r4.<org.apache.commons.logging.Log: boolean isDebugEnabled()>();
+        if $z0 == 0 goto label0;
+
+        $r5 = specialinvoke r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.logging.Log getLog()>();
+        $r3 = new java.lang.StringBuilder;
+        specialinvoke $r3.<java.lang.StringBuilder: void <init>(java.lang.String)>("Adding Global Constant: ");
+        $r6 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r1);
+        $r7 = virtualinvoke $r6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(",");
+        $r8 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r2);
+        $r9 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.String toString()>();
+        interfaceinvoke $r5.<org.apache.commons.logging.Log: void debug(java.lang.Object)>($r9);
+
+     label0:
+        $r10 = r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.collections.FastHashMap hConstants>;
+        virtualinvoke $r10.<org.apache.commons.collections.FastHashMap: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r2);
+        return;
+    }
+
+    public void addValidatorAction(org.apache.commons.validator.ValidatorAction)
+    {
+        org.apache.commons.validator.ValidatorResources r0;
+        org.apache.commons.validator.ValidatorAction r1;
+        java.util.Map $r2;
+        java.lang.String $r3, $r8, $r11, $r13;
+        org.apache.commons.logging.Log $r5, $r6;
+        boolean $z0;
+        java.lang.StringBuilder $r7, $r9, $r10, $r12;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResources;
+        r1 := @parameter0: org.apache.commons.validator.ValidatorAction;
+        virtualinvoke r1.<org.apache.commons.validator.ValidatorAction: void init()>();
+        $r2 = virtualinvoke r0.<org.apache.commons.validator.ValidatorResources: java.util.Map getActions()>();
+        $r3 = virtualinvoke r1.<org.apache.commons.validator.ValidatorAction: java.lang.String getName()>();
+        interfaceinvoke $r2.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($r3, r1);
+        $r5 = specialinvoke r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.logging.Log getLog()>();
+        $z0 = interfaceinvoke $r5.<org.apache.commons.logging.Log: boolean isDebugEnabled()>();
+        if $z0 == 0 goto label0;
+
+        $r6 = specialinvoke r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.logging.Log getLog()>();
+        $r7 = new java.lang.StringBuilder;
+        specialinvoke $r7.<java.lang.StringBuilder: void <init>(java.lang.String)>("Add ValidatorAction: ");
+        $r8 = virtualinvoke r1.<org.apache.commons.validator.ValidatorAction: java.lang.String getName()>();
+        $r9 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r8);
+        $r10 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(",");
+        $r11 = virtualinvoke r1.<org.apache.commons.validator.ValidatorAction: java.lang.String getClassname()>();
+        $r12 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r11);
+        $r13 = virtualinvoke $r12.<java.lang.StringBuilder: java.lang.String toString()>();
+        interfaceinvoke $r6.<org.apache.commons.logging.Log: void debug(java.lang.Object)>($r13);
+
+     label0:
+        return;
+    }
+
+    public org.apache.commons.validator.ValidatorAction getValidatorAction(java.lang.String)
+    {
+        org.apache.commons.validator.ValidatorResources r0;
+        java.lang.String r1;
+        java.util.Map $r2;
+        java.lang.Object $r3;
+        org.apache.commons.validator.ValidatorAction $r4;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResources;
+        r1 := @parameter0: java.lang.String;
+        $r2 = virtualinvoke r0.<org.apache.commons.validator.ValidatorResources: java.util.Map getActions()>();
+        $r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1);
+        $r4 = (org.apache.commons.validator.ValidatorAction) $r3;
+        return $r4;
+    }
+
+    public java.util.Map getValidatorActions()
+    {
+        org.apache.commons.validator.ValidatorResources r0;
+        java.util.Map $r1, $r2;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResources;
+        $r1 = virtualinvoke r0.<org.apache.commons.validator.ValidatorResources: java.util.Map getActions()>();
+        $r2 = staticinvoke <java.util.Collections: java.util.Map unmodifiableMap(java.util.Map)>($r1);
+        return $r2;
+    }
+
+    protected java.lang.String buildKey(org.apache.commons.validator.FormSet)
+    {
+        org.apache.commons.validator.ValidatorResources r0;
+        org.apache.commons.validator.FormSet r1;
+        java.lang.String $r2, $r3, $r4, $r5;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResources;
+        r1 := @parameter0: org.apache.commons.validator.FormSet;
+        $r2 = virtualinvoke r1.<org.apache.commons.validator.FormSet: java.lang.String getLanguage()>();
+        $r3 = virtualinvoke r1.<org.apache.commons.validator.FormSet: java.lang.String getCountry()>();
+        $r4 = virtualinvoke r1.<org.apache.commons.validator.FormSet: java.lang.String getVariant()>();
+        $r5 = specialinvoke r0.<org.apache.commons.validator.ValidatorResources: java.lang.String buildLocale(java.lang.String,java.lang.String,java.lang.String)>($r2, $r3, $r4);
+        return $r5;
+    }
+
+    private java.lang.String buildLocale(java.lang.String, java.lang.String, java.lang.String)
+    {
+        org.apache.commons.validator.ValidatorResources r0;
+        java.lang.String r1, r2, r3, r4, $r5, $r7, $r10, r12, $r14, $r17, r19;
+        int $i0, $i1, $i2;
+        java.lang.StringBuilder $r6, $r8, $r9, $r11, $r13, $r15, $r16, $r18;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResources;
+        r1 := @parameter0: java.lang.String;
+        r2 := @parameter1: java.lang.String;
+        r3 := @parameter2: java.lang.String;
+        if r1 == null goto label0;
+
+        $i0 = virtualinvoke r1.<java.lang.String: int length()>();
+        if $i0 <= 0 goto label0;
+
+        $r5 = r1;
+        goto label1;
+
+     label0:
+        $r5 = "";
+
+     label1:
+        r4 = $r5;
+        $r6 = new java.lang.StringBuilder;
+        $r7 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>(r4);
+        specialinvoke $r6.<java.lang.StringBuilder: void <init>(java.lang.String)>($r7);
+        if r2 == null goto label2;
+
+        $i1 = virtualinvoke r2.<java.lang.String: int length()>();
+        if $i1 <= 0 goto label2;
+
+        $r8 = new java.lang.StringBuilder;
+        specialinvoke $r8.<java.lang.StringBuilder: void <init>(java.lang.String)>("_");
+        $r9 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r2);
+        $r10 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.String toString()>();
+        goto label3;
+
+     label2:
+        $r10 = "";
+
+     label3:
+        $r11 = virtualinvoke $r6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r10);
+        r12 = virtualinvoke $r11.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r13 = new java.lang.StringBuilder;
+        $r14 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>(r12);
+        specialinvoke $r13.<java.lang.StringBuilder: void <init>(java.lang.String)>($r14);
+        if r3 == null goto label4;
+
+        $i2 = virtualinvoke r3.<java.lang.String: int length()>();
+        if $i2 <= 0 goto label4;
+
+        $r15 = new java.lang.StringBuilder;
+        specialinvoke $r15.<java.lang.StringBuilder: void <init>(java.lang.String)>("_");
+        $r16 = virtualinvoke $r15.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r3);
+        $r17 = virtualinvoke $r16.<java.lang.StringBuilder: java.lang.String toString()>();
+        goto label5;
+
+     label4:
+        $r17 = "";
+
+     label5:
+        $r18 = virtualinvoke $r13.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r17);
+        r19 = virtualinvoke $r18.<java.lang.StringBuilder: java.lang.String toString()>();
+        return r19;
+    }
+
+    public org.apache.commons.validator.Form getForm(java.util.Locale, java.lang.String)
+    {
+        org.apache.commons.validator.ValidatorResources r0;
+        java.util.Locale r1;
+        java.lang.String r2, $r3, $r4, $r5;
+        org.apache.commons.validator.Form $r6;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResources;
+        r1 := @parameter0: java.util.Locale;
+        r2 := @parameter1: java.lang.String;
+        $r3 = virtualinvoke r1.<java.util.Locale: java.lang.String getLanguage()>();
+        $r4 = virtualinvoke r1.<java.util.Locale: java.lang.String getCountry()>();
+        $r5 = virtualinvoke r1.<java.util.Locale: java.lang.String getVariant()>();
+        $r6 = virtualinvoke r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.validator.Form getForm(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>($r3, $r4, $r5, r2);
+        return $r6;
+    }
+
+    public org.apache.commons.validator.Form getForm(java.lang.String, java.lang.String, java.lang.String, java.lang.String)
+    {
+        org.apache.commons.validator.ValidatorResources r0;
+        java.lang.String r1, r2, r3, r4, r6, r11, $r25, $r35;
+        org.apache.commons.validator.Form r5;
+        org.apache.commons.validator.FormSet r7, r8, r16, $r17;
+        int $i0, $i1, $i2;
+        java.util.Map $r9, $r12, $r14;
+        java.lang.Object $r10, $r13, $r15;
+        org.apache.commons.logging.Log $r18, $r19, $r26, $r27;
+        boolean $z0, $z1;
+        java.lang.StringBuilder $r20, $r21, $r22, $r23, $r24, $r28, $r29, $r30, $r31, $r32, $r33, $r34;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResources;
+        r1 := @parameter0: java.lang.String;
+        r2 := @parameter1: java.lang.String;
+        r3 := @parameter2: java.lang.String;
+        r4 := @parameter3: java.lang.String;
+        r5 = null;
+        r6 = specialinvoke r0.<org.apache.commons.validator.ValidatorResources: java.lang.String buildLocale(java.lang.String,java.lang.String,java.lang.String)>(r1, r2, r3);
+        $i0 = virtualinvoke r6.<java.lang.String: int length()>();
+        if $i0 <= 0 goto label0;
+
+        $r9 = virtualinvoke r0.<org.apache.commons.validator.ValidatorResources: java.util.Map getFormSets()>();
+        $r10 = interfaceinvoke $r9.<java.util.Map: java.lang.Object get(java.lang.Object)>(r6);
+        r7 = (org.apache.commons.validator.FormSet) $r10;
+        if r7 == null goto label0;
+
+        r5 = virtualinvoke r7.<org.apache.commons.validator.FormSet: org.apache.commons.validator.Form getForm(java.lang.String)>(r4);
+
+     label0:
+        r11 = r6;
+        if r5 != null goto label1;
+
+        r6 = specialinvoke r0.<org.apache.commons.validator.ValidatorResources: java.lang.String buildLocale(java.lang.String,java.lang.String,java.lang.String)>(r1, r2, null);
+        $i1 = virtualinvoke r6.<java.lang.String: int length()>();
+        if $i1 <= 0 goto label1;
+
+        $r12 = virtualinvoke r0.<org.apache.commons.validator.ValidatorResources: java.util.Map getFormSets()>();
+        $r13 = interfaceinvoke $r12.<java.util.Map: java.lang.Object get(java.lang.Object)>(r6);
+        r8 = (org.apache.commons.validator.FormSet) $r13;
+        if r8 == null goto label1;
+
+        r5 = virtualinvoke r8.<org.apache.commons.validator.FormSet: org.apache.commons.validator.Form getForm(java.lang.String)>(r4);
+
+     label1:
+        if r5 != null goto label2;
+
+        r6 = specialinvoke r0.<org.apache.commons.validator.ValidatorResources: java.lang.String buildLocale(java.lang.String,java.lang.String,java.lang.String)>(r1, null, null);
+        $i2 = virtualinvoke r6.<java.lang.String: int length()>();
+        if $i2 <= 0 goto label2;
+
+        $r14 = virtualinvoke r0.<org.apache.commons.validator.ValidatorResources: java.util.Map getFormSets()>();
+        $r15 = interfaceinvoke $r14.<java.util.Map: java.lang.Object get(java.lang.Object)>(r6);
+        r16 = (org.apache.commons.validator.FormSet) $r15;
+        if r16 == null goto label2;
+
+        r5 = virtualinvoke r16.<org.apache.commons.validator.FormSet: org.apache.commons.validator.Form getForm(java.lang.String)>(r4);
+
+     label2:
+        if r5 != null goto label3;
+
+        $r17 = r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.validator.FormSet defaultFormSet>;
+        r5 = virtualinvoke $r17.<org.apache.commons.validator.FormSet: org.apache.commons.validator.Form getForm(java.lang.String)>(r4);
+        r6 = "default";
+
+     label3:
+        if r5 != null goto label4;
+
+        $r18 = specialinvoke r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.logging.Log getLog()>();
+        $z0 = interfaceinvoke $r18.<org.apache.commons.logging.Log: boolean isWarnEnabled()>();
+        if $z0 == 0 goto label5;
+
+        $r19 = specialinvoke r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.logging.Log getLog()>();
+        $r20 = new java.lang.StringBuilder;
+        specialinvoke $r20.<java.lang.StringBuilder: void <init>(java.lang.String)>("Form \'");
+        $r21 = virtualinvoke $r20.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r4);
+        $r22 = virtualinvoke $r21.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' not found for locale \'");
+        $r23 = virtualinvoke $r22.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r11);
+        $r24 = virtualinvoke $r23.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\'");
+        $r25 = virtualinvoke $r24.<java.lang.StringBuilder: java.lang.String toString()>();
+        interfaceinvoke $r19.<org.apache.commons.logging.Log: void warn(java.lang.Object)>($r25);
+        goto label5;
+
+     label4:
+        $r26 = specialinvoke r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.logging.Log getLog()>();
+        $z1 = interfaceinvoke $r26.<org.apache.commons.logging.Log: boolean isDebugEnabled()>();
+        if $z1 == 0 goto label5;
+
+        $r27 = specialinvoke r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.logging.Log getLog()>();
+        $r28 = new java.lang.StringBuilder;
+        specialinvoke $r28.<java.lang.StringBuilder: void <init>(java.lang.String)>("Form \'");
+        $r29 = virtualinvoke $r28.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r4);
+        $r30 = virtualinvoke $r29.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' found in formset \'");
+        $r31 = virtualinvoke $r30.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r6);
+        $r32 = virtualinvoke $r31.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' for locale \'");
+        $r33 = virtualinvoke $r32.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r11);
+        $r34 = virtualinvoke $r33.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\'");
+        $r35 = virtualinvoke $r34.<java.lang.StringBuilder: java.lang.String toString()>();
+        interfaceinvoke $r27.<org.apache.commons.logging.Log: void debug(java.lang.Object)>($r35);
+
+     label5:
+        return r5;
+    }
+
+    public void process()
+    {
+        org.apache.commons.validator.ValidatorResources r0;
+        org.apache.commons.collections.FastHashMap $r1, $r2, $r3;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResources;
+        $r1 = r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.collections.FastHashMap hFormSets>;
+        virtualinvoke $r1.<org.apache.commons.collections.FastHashMap: void setFast(boolean)>(1);
+        $r2 = r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.collections.FastHashMap hConstants>;
+        virtualinvoke $r2.<org.apache.commons.collections.FastHashMap: void setFast(boolean)>(1);
+        $r3 = r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.collections.FastHashMap hActions>;
+        virtualinvoke $r3.<org.apache.commons.collections.FastHashMap: void setFast(boolean)>(1);
+        specialinvoke r0.<org.apache.commons.validator.ValidatorResources: void processForms()>();
+        return;
+    }
+
+    private void processForms()
+    {
+        org.apache.commons.validator.ValidatorResources r0;
+        org.apache.commons.validator.FormSet $r1, r4, $r5, $r6, $r13, r18;
+        java.util.Iterator r2, r16;
+        java.lang.String r3;
+        java.util.Map $r7, $r8, $r11, $r14, $r19;
+        java.util.Set $r9;
+        java.lang.Object $r10, $r12, $r17;
+        boolean $z0, $z1, $z2;
+        java.util.Collection $r15;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResources;
+        $r5 = r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.validator.FormSet defaultFormSet>;
+        if $r5 != null goto label0;
+
+        $r1 = new org.apache.commons.validator.FormSet;
+        specialinvoke $r1.<org.apache.commons.validator.FormSet: void <init>()>();
+        r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.validator.FormSet defaultFormSet> = $r1;
+
+     label0:
+        $r6 = r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.validator.FormSet defaultFormSet>;
+        $r7 = virtualinvoke r0.<org.apache.commons.validator.ValidatorResources: java.util.Map getConstants()>();
+        virtualinvoke $r6.<org.apache.commons.validator.FormSet: void process(java.util.Map)>($r7);
+        $r8 = virtualinvoke r0.<org.apache.commons.validator.ValidatorResources: java.util.Map getFormSets()>();
+        $r9 = interfaceinvoke $r8.<java.util.Map: java.util.Set keySet()>();
+        r2 = interfaceinvoke $r9.<java.util.Set: java.util.Iterator iterator()>();
+        goto label2;
+
+     label1:
+        $r10 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>();
+        r3 = (java.lang.String) $r10;
+        $r11 = virtualinvoke r0.<org.apache.commons.validator.ValidatorResources: java.util.Map getFormSets()>();
+        $r12 = interfaceinvoke $r11.<java.util.Map: java.lang.Object get(java.lang.Object)>(r3);
+        r4 = (org.apache.commons.validator.FormSet) $r12;
+        $r13 = specialinvoke r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.validator.FormSet getParent(org.apache.commons.validator.FormSet)>(r4);
+        virtualinvoke r4.<org.apache.commons.validator.FormSet: void merge(org.apache.commons.validator.FormSet)>($r13);
+
+     label2:
+        $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>();
+        if $z0 != 0 goto label1;
+
+        $r14 = virtualinvoke r0.<org.apache.commons.validator.ValidatorResources: java.util.Map getFormSets()>();
+        $r15 = interfaceinvoke $r14.<java.util.Map: java.util.Collection values()>();
+        r16 = interfaceinvoke $r15.<java.util.Collection: java.util.Iterator iterator()>();
+        goto label4;
+
+     label3:
+        $r17 = interfaceinvoke r16.<java.util.Iterator: java.lang.Object next()>();
+        r18 = (org.apache.commons.validator.FormSet) $r17;
+        $z1 = virtualinvoke r18.<org.apache.commons.validator.FormSet: boolean isProcessed()>();
+        if $z1 != 0 goto label4;
+
+        $r19 = virtualinvoke r0.<org.apache.commons.validator.ValidatorResources: java.util.Map getConstants()>();
+        virtualinvoke r18.<org.apache.commons.validator.FormSet: void process(java.util.Map)>($r19);
+
+     label4:
+        $z2 = interfaceinvoke r16.<java.util.Iterator: boolean hasNext()>();
+        if $z2 != 0 goto label3;
+
+        return;
+    }
+
+    private org.apache.commons.validator.FormSet getParent(org.apache.commons.validator.FormSet)
+    {
+        org.apache.commons.validator.ValidatorResources r0;
+        org.apache.commons.validator.FormSet r1, r2;
+        int $i0, $i1, $i2;
+        java.util.Map $r3, $r7, $r12;
+        java.lang.String $r4, $r5, $r8, $r9, $r10, $r13, $r14;
+        java.lang.Object $r6, $r11, $r15;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResources;
+        r1 := @parameter0: org.apache.commons.validator.FormSet;
+        r2 = null;
+        $i0 = virtualinvoke r1.<org.apache.commons.validator.FormSet: int getType()>();
+        if $i0 != 2 goto label0;
+
+        r2 = r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.validator.FormSet defaultFormSet>;
+        goto label2;
+
+     label0:
+        $i1 = virtualinvoke r1.<org.apache.commons.validator.FormSet: int getType()>();
+        if $i1 != 3 goto label1;
+
+        $r3 = virtualinvoke r0.<org.apache.commons.validator.ValidatorResources: java.util.Map getFormSets()>();
+        $r4 = virtualinvoke r1.<org.apache.commons.validator.FormSet: java.lang.String getLanguage()>();
+        $r5 = specialinvoke r0.<org.apache.commons.validator.ValidatorResources: java.lang.String buildLocale(java.lang.String,java.lang.String,java.lang.String)>($r4, null, null);
+        $r6 = interfaceinvoke $r3.<java.util.Map: java.lang.Object get(java.lang.Object)>($r5);
+        r2 = (org.apache.commons.validator.FormSet) $r6;
+        if r2 != null goto label2;
+
+        r2 = r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.validator.FormSet defaultFormSet>;
+        goto label2;
+
+     label1:
+        $i2 = virtualinvoke r1.<org.apache.commons.validator.FormSet: int getType()>();
+        if $i2 != 4 goto label2;
+
+        $r7 = virtualinvoke r0.<org.apache.commons.validator.ValidatorResources: java.util.Map getFormSets()>();
+        $r8 = virtualinvoke r1.<org.apache.commons.validator.FormSet: java.lang.String getLanguage()>();
+        $r9 = virtualinvoke r1.<org.apache.commons.validator.FormSet: java.lang.String getCountry()>();
+        $r10 = specialinvoke r0.<org.apache.commons.validator.ValidatorResources: java.lang.String buildLocale(java.lang.String,java.lang.String,java.lang.String)>($r8, $r9, null);
+        $r11 = interfaceinvoke $r7.<java.util.Map: java.lang.Object get(java.lang.Object)>($r10);
+        r2 = (org.apache.commons.validator.FormSet) $r11;
+        if r2 != null goto label2;
+
+        $r12 = virtualinvoke r0.<org.apache.commons.validator.ValidatorResources: java.util.Map getFormSets()>();
+        $r13 = virtualinvoke r1.<org.apache.commons.validator.FormSet: java.lang.String getLanguage()>();
+        $r14 = specialinvoke r0.<org.apache.commons.validator.ValidatorResources: java.lang.String buildLocale(java.lang.String,java.lang.String,java.lang.String)>($r13, null, null);
+        $r15 = interfaceinvoke $r12.<java.util.Map: java.lang.Object get(java.lang.Object)>($r14);
+        r2 = (org.apache.commons.validator.FormSet) $r15;
+        if r2 != null goto label2;
+
+        r2 = r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.validator.FormSet defaultFormSet>;
+
+     label2:
+        return r2;
+    }
+
+    org.apache.commons.validator.FormSet getFormSet(java.lang.String, java.lang.String, java.lang.String)
+    {
+        org.apache.commons.validator.ValidatorResources r0;
+        java.lang.String r1, r2, r3, r4;
+        int $i0;
+        org.apache.commons.validator.FormSet $r5, $r8;
+        java.util.Map $r6;
+        java.lang.Object $r7;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResources;
+        r1 := @parameter0: java.lang.String;
+        r2 := @parameter1: java.lang.String;
+        r3 := @parameter2: java.lang.String;
+        r4 = specialinvoke r0.<org.apache.commons.validator.ValidatorResources: java.lang.String buildLocale(java.lang.String,java.lang.String,java.lang.String)>(r1, r2, r3);
+        $i0 = virtualinvoke r4.<java.lang.String: int length()>();
+        if $i0 != 0 goto label0;
+
+        $r5 = r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.validator.FormSet defaultFormSet>;
+        return $r5;
+
+     label0:
+        $r6 = virtualinvoke r0.<org.apache.commons.validator.ValidatorResources: java.util.Map getFormSets()>();
+        $r7 = interfaceinvoke $r6.<java.util.Map: java.lang.Object get(java.lang.Object)>(r4);
+        $r8 = (org.apache.commons.validator.FormSet) $r7;
+        return $r8;
+    }
+
+    protected java.util.Map getFormSets()
+    {
+        org.apache.commons.validator.ValidatorResources r0;
+        org.apache.commons.collections.FastHashMap $r1;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResources;
+        $r1 = r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.collections.FastHashMap hFormSets>;
+        return $r1;
+    }
+
+    protected java.util.Map getConstants()
+    {
+        org.apache.commons.validator.ValidatorResources r0;
+        org.apache.commons.collections.FastHashMap $r1;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResources;
+        $r1 = r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.collections.FastHashMap hConstants>;
+        return $r1;
+    }
+
+    protected java.util.Map getActions()
+    {
+        org.apache.commons.validator.ValidatorResources r0;
+        org.apache.commons.collections.FastHashMap $r1;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResources;
+        $r1 = r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.collections.FastHashMap hActions>;
+        return $r1;
+    }
+
+    private org.apache.commons.logging.Log getLog()
+    {
+        org.apache.commons.validator.ValidatorResources r0;
+        org.apache.commons.logging.Log $r1, $r2, $r3;
+
+        r0 := @this: org.apache.commons.validator.ValidatorResources;
+        $r1 = r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.logging.Log log>;
+        if $r1 != null goto label0;
+
+        $r2 = staticinvoke <org.apache.commons.logging.LogFactory: org.apache.commons.logging.Log getLog(java.lang.Class)>(class "org/apache/commons/validator/ValidatorResources");
+        r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.logging.Log log> = $r2;
+
+     label0:
+        $r3 = r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.logging.Log log>;
+        return $r3;
+    }
+
+    static org.apache.commons.logging.Log access$0(org.apache.commons.validator.ValidatorResources)
+    {
+        org.apache.commons.validator.ValidatorResources r0;
+        org.apache.commons.logging.Log $r1;
+
+        r0 := @parameter0: org.apache.commons.validator.ValidatorResources;
+        $r1 = specialinvoke r0.<org.apache.commons.validator.ValidatorResources: org.apache.commons.logging.Log getLog()>();
+        return $r1;
+    }
+}

@@ -1,0 +1,41 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1506280116465
+Build-Jdk: 1.8.0_111
+Built-By: root
+Bundle-Description: Apache Commons Validator provides the building block
+ s for both client side validation and server side data validation.    I
+ t may be used standalone or with a framework like Struts.
+Bundle-DocURL: http://commons.apache.org/proper/commons-validator/
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache Commons Validator
+Bundle-SymbolicName: org.apache.commons.validator
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 1.5.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.commons.validator;version="1.5.0",org.apache.
+ commons.validator.resources;version="1.5.0",org.apache.commons.validato
+ r.routines;version="1.5.0",org.apache.commons.validator.routines.checkd
+ igit;version="1.5.0",org.apache.commons.validator.util;version="1.5.0"
+Import-Package: org.apache.commons.beanutils,org.apache.commons.collecti
+ ons,org.apache.commons.digester,org.apache.commons.digester.xmlrules,or
+ g.apache.commons.logging,org.xml.sax
+Include-Resource: META-INF/NOTICE.txt=NOTICE.txt,META-INF/LICENSE.txt=LI
+ CENSE.txt,org/apache/commons/validator/digester-rules.xml=src/main/reso
+ urces/org/apache/commons/validator/digester-rules.xml,org/apache/common
+ s/validator/resources/validator_1_0_1.dtd=src/main/resources/org/apache
+ /commons/validator/resources/validator_1_0_1.dtd,org/apache/commons/val
+ idator/resources/validator_1_2_0.dtd=src/main/resources/org/apache/comm
+ ons/validator/resources/validator_1_2_0.dtd,org/apache/commons/validato
+ r/resources/validator_1_0.dtd=src/main/resources/org/apache/commons/val
+ idator/resources/validator_1_0.dtd,org/apache/commons/validator/resourc
+ es/validator_1_1.dtd=src/main/resources/org/apache/commons/validator/re
+ sources/validator_1_1.dtd,org/apache/commons/validator/resources/valida
+ tor_1_3_0.dtd=src/main/resources/org/apache/commons/validator/resources
+ /validator_1_3_0.dtd,org/apache/commons/validator/resources/validator_1
+ _1_3.dtd=src/main/resources/org/apache/commons/validator/resources/vali
+ dator_1_1_3.dtd,org/apache/commons/validator/resources/validator_1_4_0.
+ dtd=src/main/resources/org/apache/commons/validator/resources/validator
+ _1_4_0.dtd
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Tool: Bnd-2.3.0.201405100607

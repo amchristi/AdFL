@@ -1,0 +1,41 @@
+public class org.apache.commons.validator.routines.checkdigit.LuhnCheckDigitTest extends org.apache.commons.validator.routines.checkdigit.AbstractCheckDigitTest
+{
+    private static final java.lang.String VALID_VISA;
+    private static final java.lang.String VALID_SHORT_VISA;
+    private static final java.lang.String VALID_AMEX;
+    private static final java.lang.String VALID_MASTERCARD;
+    private static final java.lang.String VALID_DISCOVER;
+    private static final java.lang.String VALID_DINERS;
+
+    public void <init>(java.lang.String)
+    {
+        org.apache.commons.validator.routines.checkdigit.LuhnCheckDigitTest r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.routines.checkdigit.LuhnCheckDigitTest;
+        r1 := @parameter0: java.lang.String;
+        specialinvoke r0.<org.apache.commons.validator.routines.checkdigit.AbstractCheckDigitTest: void <init>(java.lang.String)>(r1);
+        return;
+    }
+
+    protected void setUp() throws java.lang.Exception
+    {
+        org.apache.commons.validator.routines.checkdigit.LuhnCheckDigitTest r0;
+        org.apache.commons.validator.routines.checkdigit.CheckDigit $r1;
+        java.lang.String[] $r2;
+
+        r0 := @this: org.apache.commons.validator.routines.checkdigit.LuhnCheckDigitTest;
+        specialinvoke r0.<org.apache.commons.validator.routines.checkdigit.AbstractCheckDigitTest: void setUp()>();
+        $r1 = <org.apache.commons.validator.routines.checkdigit.LuhnCheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit LUHN_CHECK_DIGIT>;
+        r0.<org.apache.commons.validator.routines.checkdigit.LuhnCheckDigitTest: org.apache.commons.validator.routines.checkdigit.CheckDigit routine> = $r1;
+        $r2 = newarray (java.lang.String)[6];
+        $r2[0] = "4417123456789113";
+        $r2[1] = "4222222222222";
+        $r2[2] = "378282246310005";
+        $r2[3] = "5105105105105100";
+        $r2[4] = "6011000990139424";
+        $r2[5] = "30569309025904";
+        r0.<org.apache.commons.validator.routines.checkdigit.LuhnCheckDigitTest: java.lang.String[] valid> = $r2;
+        return;
+    }
+}

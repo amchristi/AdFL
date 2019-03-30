@@ -1,0 +1,109 @@
+public class org.apache.commons.validator.LongTest extends org.apache.commons.validator.AbstractNumberTest
+{
+
+    public void <init>(java.lang.String)
+    {
+        org.apache.commons.validator.LongTest r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.LongTest;
+        r1 := @parameter0: java.lang.String;
+        specialinvoke r0.<org.apache.commons.validator.AbstractNumberTest: void <init>(java.lang.String)>(r1);
+        r0.<org.apache.commons.validator.LongTest: java.lang.String FORM_KEY> = "longForm";
+        r0.<org.apache.commons.validator.LongTest: java.lang.String ACTION> = "long";
+        return;
+    }
+
+    public void testLong() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.LongTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+
+        r0 := @this: org.apache.commons.validator.LongTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("0");
+        virtualinvoke r0.<org.apache.commons.validator.LongTest: void valueTest(java.lang.Object,boolean)>(r2, 1);
+        return;
+    }
+
+    public void testLongMin() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.LongTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+        java.lang.Long $r3;
+        java.lang.String $r4;
+
+        r0 := @this: org.apache.commons.validator.LongTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        $r3 = new java.lang.Long;
+        specialinvoke $r3.<java.lang.Long: void <init>(long)>(-9223372036854775808L);
+        $r4 = virtualinvoke $r3.<java.lang.Long: java.lang.String toString()>();
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>($r4);
+        virtualinvoke r0.<org.apache.commons.validator.LongTest: void valueTest(java.lang.Object,boolean)>(r2, 1);
+        return;
+    }
+
+    public void testLongMax() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.LongTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+        java.lang.Long $r3;
+        java.lang.String $r4;
+
+        r0 := @this: org.apache.commons.validator.LongTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        $r3 = new java.lang.Long;
+        specialinvoke $r3.<java.lang.Long: void <init>(long)>(9223372036854775807L);
+        $r4 = virtualinvoke $r3.<java.lang.Long: java.lang.String toString()>();
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>($r4);
+        virtualinvoke r0.<org.apache.commons.validator.LongTest: void valueTest(java.lang.Object,boolean)>(r2, 1);
+        return;
+    }
+
+    public void testLongFailure() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.LongTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+
+        r0 := @this: org.apache.commons.validator.LongTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r0.<org.apache.commons.validator.LongTest: void valueTest(java.lang.Object,boolean)>(r2, 0);
+        return;
+    }
+
+    public void testLongBeyondMin() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.LongTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+
+        r0 := @this: org.apache.commons.validator.LongTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("-92233720368547758081");
+        virtualinvoke r0.<org.apache.commons.validator.LongTest: void valueTest(java.lang.Object,boolean)>(r2, 0);
+        return;
+    }
+
+    public void testLongBeyondMax() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.LongTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+
+        r0 := @this: org.apache.commons.validator.LongTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("92233720368547758071");
+        virtualinvoke r0.<org.apache.commons.validator.LongTest: void valueTest(java.lang.Object,boolean)>(r2, 0);
+        return;
+    }
+}

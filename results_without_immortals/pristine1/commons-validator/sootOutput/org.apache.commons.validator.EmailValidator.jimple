@@ -1,0 +1,278 @@
+public class org.apache.commons.validator.EmailValidator extends java.lang.Object
+{
+    private static final java.lang.String SPECIAL_CHARS;
+    private static final java.lang.String VALID_CHARS;
+    private static final java.lang.String QUOTED_USER;
+    private static final java.lang.String ATOM;
+    private static final java.lang.String WORD;
+    private static final java.util.regex.Pattern IP_DOMAIN_PATTERN;
+    private static final java.util.regex.Pattern TLD_PATTERN;
+    private static final java.util.regex.Pattern USER_PATTERN;
+    private static final java.util.regex.Pattern DOMAIN_PATTERN;
+    private static final java.util.regex.Pattern ATOM_PATTERN;
+    private static final org.apache.commons.validator.EmailValidator EMAIL_VALIDATOR;
+
+    static void <clinit>()
+    {
+        java.util.regex.Pattern $r0, $r1, $r2, $r3, $r4;
+        org.apache.commons.validator.EmailValidator $r5;
+
+        $r0 = staticinvoke <java.util.regex.Pattern: java.util.regex.Pattern compile(java.lang.String)>("^\\[(.*)\\]$");
+        <org.apache.commons.validator.EmailValidator: java.util.regex.Pattern IP_DOMAIN_PATTERN> = $r0;
+        $r1 = staticinvoke <java.util.regex.Pattern: java.util.regex.Pattern compile(java.lang.String)>("^([a-zA-Z]+)$");
+        <org.apache.commons.validator.EmailValidator: java.util.regex.Pattern TLD_PATTERN> = $r1;
+        $r2 = staticinvoke <java.util.regex.Pattern: java.util.regex.Pattern compile(java.lang.String)>("^\\s*(([^\\s\\p{Cntrl}\\(\\)<>@,;:\'\\\\\\\"\\.\\[\\]]|\')+|(\"[^\"]*\"))(\\.(([^\\s\\p{Cntrl}\\(\\)<>@,;:\'\\\\\\\"\\.\\[\\]]|\')+|(\"[^\"]*\")))*$");
+        <org.apache.commons.validator.EmailValidator: java.util.regex.Pattern USER_PATTERN> = $r2;
+        $r3 = staticinvoke <java.util.regex.Pattern: java.util.regex.Pattern compile(java.lang.String)>("^[^\\s\\p{Cntrl}\\(\\)<>@,;:\'\\\\\\\"\\.\\[\\]]+(\\.[^\\s\\p{Cntrl}\\(\\)<>@,;:\'\\\\\\\"\\.\\[\\]]+)*\\s*$");
+        <org.apache.commons.validator.EmailValidator: java.util.regex.Pattern DOMAIN_PATTERN> = $r3;
+        $r4 = staticinvoke <java.util.regex.Pattern: java.util.regex.Pattern compile(java.lang.String)>("([^\\s\\p{Cntrl}\\(\\)<>@,;:\'\\\\\\\"\\.\\[\\]]+)");
+        <org.apache.commons.validator.EmailValidator: java.util.regex.Pattern ATOM_PATTERN> = $r4;
+        $r5 = new org.apache.commons.validator.EmailValidator;
+        specialinvoke $r5.<org.apache.commons.validator.EmailValidator: void <init>()>();
+        <org.apache.commons.validator.EmailValidator: org.apache.commons.validator.EmailValidator EMAIL_VALIDATOR> = $r5;
+        return;
+    }
+
+    public static org.apache.commons.validator.EmailValidator getInstance()
+    {
+        org.apache.commons.validator.EmailValidator $r0;
+
+        $r0 = <org.apache.commons.validator.EmailValidator: org.apache.commons.validator.EmailValidator EMAIL_VALIDATOR>;
+        return $r0;
+    }
+
+    protected void <init>()
+    {
+        org.apache.commons.validator.EmailValidator r0;
+
+        r0 := @this: org.apache.commons.validator.EmailValidator;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        return;
+    }
+
+    public boolean isValid(java.lang.String)
+    {
+        org.apache.commons.validator.EmailValidator r0;
+        java.lang.String r1;
+        org.apache.commons.validator.routines.EmailValidator $r2;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.EmailValidator;
+        r1 := @parameter0: java.lang.String;
+        $r2 = staticinvoke <org.apache.commons.validator.routines.EmailValidator: org.apache.commons.validator.routines.EmailValidator getInstance()>();
+        $z0 = virtualinvoke $r2.<org.apache.commons.validator.routines.EmailValidator: boolean isValid(java.lang.String)>(r1);
+        return $z0;
+    }
+
+    protected boolean isValidDomain(java.lang.String)
+    {
+        org.apache.commons.validator.EmailValidator r0;
+        java.lang.String r1, $r5;
+        boolean z0, $z1, $z2, $z3;
+        java.util.regex.Matcher r2, $r7;
+        org.apache.commons.validator.routines.InetAddressValidator r3;
+        java.util.regex.Pattern $r4, $r6;
+
+        r0 := @this: org.apache.commons.validator.EmailValidator;
+        r1 := @parameter0: java.lang.String;
+        z0 = 0;
+        $r4 = <org.apache.commons.validator.EmailValidator: java.util.regex.Pattern IP_DOMAIN_PATTERN>;
+        r2 = virtualinvoke $r4.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(r1);
+        $z1 = virtualinvoke r2.<java.util.regex.Matcher: boolean matches()>();
+        if $z1 == 0 goto label0;
+
+        r3 = staticinvoke <org.apache.commons.validator.routines.InetAddressValidator: org.apache.commons.validator.routines.InetAddressValidator getInstance()>();
+        $r5 = virtualinvoke r2.<java.util.regex.Matcher: java.lang.String group(int)>(1);
+        $z2 = virtualinvoke r3.<org.apache.commons.validator.routines.InetAddressValidator: boolean isValid(java.lang.String)>($r5);
+        if $z2 == 0 goto label1;
+
+        return 1;
+
+     label0:
+        $r6 = <org.apache.commons.validator.EmailValidator: java.util.regex.Pattern DOMAIN_PATTERN>;
+        $r7 = virtualinvoke $r6.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(r1);
+        z0 = virtualinvoke $r7.<java.util.regex.Matcher: boolean matches()>();
+
+     label1:
+        if z0 == 0 goto label2;
+
+        $z3 = virtualinvoke r0.<org.apache.commons.validator.EmailValidator: boolean isValidSymbolicDomain(java.lang.String)>(r1);
+        if $z3 != 0 goto label3;
+
+        return 0;
+
+     label2:
+        return 0;
+
+     label3:
+        return 1;
+    }
+
+    protected boolean isValidUser(java.lang.String)
+    {
+        org.apache.commons.validator.EmailValidator r0;
+        java.lang.String r1;
+        java.util.regex.Pattern $r2;
+        java.util.regex.Matcher $r3;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.EmailValidator;
+        r1 := @parameter0: java.lang.String;
+        $r2 = <org.apache.commons.validator.EmailValidator: java.util.regex.Pattern USER_PATTERN>;
+        $r3 = virtualinvoke $r2.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(r1);
+        $z0 = virtualinvoke $r3.<java.util.regex.Matcher: boolean matches()>();
+        return $z0;
+    }
+
+    protected boolean isValidIpAddress(java.lang.String)
+    {
+        org.apache.commons.validator.EmailValidator r0;
+        java.lang.String r1, r4;
+        java.util.regex.Pattern $r2;
+        java.util.regex.Matcher r3;
+        int i0, $i1, i2;
+        boolean z0;
+        java.lang.NumberFormatException r5, $r6;
+
+        r0 := @this: org.apache.commons.validator.EmailValidator;
+        r1 := @parameter0: java.lang.String;
+        $r2 = <org.apache.commons.validator.EmailValidator: java.util.regex.Pattern IP_DOMAIN_PATTERN>;
+        r3 = virtualinvoke $r2.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(r1);
+        i0 = 1;
+        goto label8;
+
+     label0:
+        r4 = virtualinvoke r3.<java.util.regex.Matcher: java.lang.String group(int)>(i0);
+        if r4 == null goto label1;
+
+        $i1 = virtualinvoke r4.<java.lang.String: int length()>();
+        if $i1 > 0 goto label2;
+
+     label1:
+        return 0;
+
+     label2:
+        z0 = 0;
+
+     label3:
+        i2 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(r4);
+
+     label4:
+        goto label6;
+
+     label5:
+        $r6 := @caughtexception;
+        r5 = $r6;
+        return 0;
+
+     label6:
+        if i2 <= 255 goto label7;
+
+        return 0;
+
+     label7:
+        i0 = i0 + 1;
+
+     label8:
+        if i0 <= 4 goto label0;
+
+        return 1;
+
+        catch java.lang.NumberFormatException from label3 to label4 with label5;
+    }
+
+    protected boolean isValidSymbolicDomain(java.lang.String)
+    {
+        org.apache.commons.validator.EmailValidator r0;
+        java.lang.String r1, r4, $r6, $r7, $r8;
+        java.lang.String[] r2;
+        boolean z0, $z1;
+        int i0, i1, $i2, $i3, i4, $i5, $i6;
+        java.util.regex.Matcher r3, $r10;
+        java.util.regex.Pattern $r5, $r9;
+
+        r0 := @this: org.apache.commons.validator.EmailValidator;
+        r1 := @parameter0: java.lang.String;
+        r2 = newarray (java.lang.String)[10];
+        z0 = 1;
+        i0 = 0;
+        $r5 = <org.apache.commons.validator.EmailValidator: java.util.regex.Pattern ATOM_PATTERN>;
+        r3 = virtualinvoke $r5.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(r1);
+        goto label3;
+
+     label0:
+        z0 = virtualinvoke r3.<java.util.regex.Matcher: boolean matches()>();
+        if z0 == 0 goto label3;
+
+        $r6 = virtualinvoke r3.<java.util.regex.Matcher: java.lang.String group(int)>(1);
+        r2[i0] = $r6;
+        $r7 = r2[i0];
+        $i2 = virtualinvoke $r7.<java.lang.String: int length()>();
+        i1 = $i2 + 1;
+        $i3 = virtualinvoke r1.<java.lang.String: int length()>();
+        if i1 < $i3 goto label1;
+
+        $r8 = "";
+        goto label2;
+
+     label1:
+        $r8 = virtualinvoke r1.<java.lang.String: java.lang.String substring(int)>(i1);
+
+     label2:
+        r1 = $r8;
+        i0 = i0 + 1;
+
+     label3:
+        if z0 != 0 goto label0;
+
+        i4 = i0;
+        if i4 >= 2 goto label4;
+
+        return 0;
+
+     label4:
+        $i5 = i4 - 1;
+        r4 = r2[$i5];
+        $i6 = virtualinvoke r4.<java.lang.String: int length()>();
+        if $i6 <= 1 goto label5;
+
+        $r9 = <org.apache.commons.validator.EmailValidator: java.util.regex.Pattern TLD_PATTERN>;
+        $r10 = virtualinvoke $r9.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(r4);
+        $z1 = virtualinvoke $r10.<java.util.regex.Matcher: boolean matches()>();
+        if $z1 != 0 goto label6;
+
+        return 0;
+
+     label5:
+        return 0;
+
+     label6:
+        return 1;
+    }
+
+    protected java.lang.String stripComments(java.lang.String)
+    {
+        org.apache.commons.validator.EmailValidator r0;
+        java.lang.String r1, r2, r3;
+        java.util.regex.Pattern r4;
+        java.util.regex.Matcher $r5;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.EmailValidator;
+        r1 := @parameter0: java.lang.String;
+        r2 = r1;
+        r3 = "^((?:[^\"\\\\]|\\\\.)*(?:\"(?:[^\"\\\\]|\\\\.)*\"(?:[^\"\\\\]|I111\\\\.)*)*)\\((?:[^()\\\\]|\\\\.)*\\)/";
+        r4 = staticinvoke <java.util.regex.Pattern: java.util.regex.Pattern compile(java.lang.String)>(r3);
+        goto label1;
+
+     label0:
+        r2 = virtualinvoke r2.<java.lang.String: java.lang.String replaceFirst(java.lang.String,java.lang.String)>(r3, "\u0001 ");
+
+     label1:
+        $r5 = virtualinvoke r4.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(r2);
+        $z0 = virtualinvoke $r5.<java.util.regex.Matcher: boolean matches()>();
+        if $z0 != 0 goto label0;
+
+        return r2;
+    }
+}

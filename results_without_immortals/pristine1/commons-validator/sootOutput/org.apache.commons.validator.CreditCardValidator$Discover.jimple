@@ -1,0 +1,45 @@
+class org.apache.commons.validator.CreditCardValidator$Discover extends java.lang.Object implements org.apache.commons.validator.CreditCardValidator$CreditCardType
+{
+    private static final java.lang.String PREFIX;
+
+    private void <init>()
+    {
+        org.apache.commons.validator.CreditCardValidator$Discover r0;
+
+        r0 := @this: org.apache.commons.validator.CreditCardValidator$Discover;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        return;
+    }
+
+    public boolean matches(java.lang.String)
+    {
+        org.apache.commons.validator.CreditCardValidator$Discover r0;
+        java.lang.String r1, $r2;
+        boolean $z0;
+        int $i0;
+
+        r0 := @this: org.apache.commons.validator.CreditCardValidator$Discover;
+        r1 := @parameter0: java.lang.String;
+        $r2 = virtualinvoke r1.<java.lang.String: java.lang.String substring(int,int)>(0, 4);
+        $z0 = virtualinvoke $r2.<java.lang.String: boolean equals(java.lang.Object)>("6011");
+        if $z0 == 0 goto label0;
+
+        $i0 = virtualinvoke r1.<java.lang.String: int length()>();
+        if $i0 != 16 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    void <init>(org.apache.commons.validator.CreditCardValidator$Discover)
+    {
+        org.apache.commons.validator.CreditCardValidator$Discover r0, r1;
+
+        r0 := @this: org.apache.commons.validator.CreditCardValidator$Discover;
+        r1 := @parameter0: org.apache.commons.validator.CreditCardValidator$Discover;
+        specialinvoke r0.<org.apache.commons.validator.CreditCardValidator$Discover: void <init>()>();
+        return;
+    }
+}

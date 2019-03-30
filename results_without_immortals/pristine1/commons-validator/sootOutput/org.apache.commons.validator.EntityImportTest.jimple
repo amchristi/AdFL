@@ -1,0 +1,58 @@
+public class org.apache.commons.validator.EntityImportTest extends org.apache.commons.validator.AbstractCommonTest
+{
+
+    public void <init>(java.lang.String)
+    {
+        org.apache.commons.validator.EntityImportTest r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.EntityImportTest;
+        r1 := @parameter0: java.lang.String;
+        specialinvoke r0.<org.apache.commons.validator.AbstractCommonTest: void <init>(java.lang.String)>(r1);
+        return;
+    }
+
+    public void testEntityImport() throws java.lang.Exception
+    {
+        org.apache.commons.validator.EntityImportTest r0;
+        java.net.URL r1;
+        org.apache.commons.validator.ValidatorResources r2, $r4;
+        java.lang.Class $r3;
+        java.lang.String $r5;
+        java.util.Locale $r6;
+        org.apache.commons.validator.Form $r7;
+
+        r0 := @this: org.apache.commons.validator.EntityImportTest;
+        $r3 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>();
+        r1 = virtualinvoke $r3.<java.lang.Class: java.net.URL getResource(java.lang.String)>("EntityImportTest-config.xml");
+        $r4 = new org.apache.commons.validator.ValidatorResources;
+        $r5 = virtualinvoke r1.<java.net.URL: java.lang.String toExternalForm()>();
+        specialinvoke $r4.<org.apache.commons.validator.ValidatorResources: void <init>(java.lang.String)>($r5);
+        r2 = $r4;
+        $r6 = staticinvoke <java.util.Locale: java.util.Locale getDefault()>();
+        $r7 = virtualinvoke r2.<org.apache.commons.validator.ValidatorResources: org.apache.commons.validator.Form getForm(java.util.Locale,java.lang.String)>($r6, "byteForm");
+        staticinvoke <org.apache.commons.validator.EntityImportTest: void assertNotNull(java.lang.String,java.lang.Object)>("Form should be found", $r7);
+        return;
+    }
+
+    public void testParseURL() throws java.lang.Exception
+    {
+        org.apache.commons.validator.EntityImportTest r0;
+        java.net.URL r1;
+        org.apache.commons.validator.ValidatorResources r2, $r4;
+        java.lang.Class $r3;
+        java.util.Locale $r5;
+        org.apache.commons.validator.Form $r6;
+
+        r0 := @this: org.apache.commons.validator.EntityImportTest;
+        $r3 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>();
+        r1 = virtualinvoke $r3.<java.lang.Class: java.net.URL getResource(java.lang.String)>("EntityImportTest-config.xml");
+        $r4 = new org.apache.commons.validator.ValidatorResources;
+        specialinvoke $r4.<org.apache.commons.validator.ValidatorResources: void <init>(java.net.URL)>(r1);
+        r2 = $r4;
+        $r5 = staticinvoke <java.util.Locale: java.util.Locale getDefault()>();
+        $r6 = virtualinvoke r2.<org.apache.commons.validator.ValidatorResources: org.apache.commons.validator.Form getForm(java.util.Locale,java.lang.String)>($r5, "byteForm");
+        staticinvoke <org.apache.commons.validator.EntityImportTest: void assertNotNull(java.lang.String,java.lang.Object)>("Form should be found", $r6);
+        return;
+    }
+}

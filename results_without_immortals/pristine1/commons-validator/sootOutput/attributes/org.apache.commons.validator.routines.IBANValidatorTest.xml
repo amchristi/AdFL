@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<attributes>
+<attribute>
+<srcPos sline="128" eline="128" spos="0" epos="0"/>
+<jmpPos sline="113" eline="113" spos="0" epos="0"/>
+<text info="Visibility Annotation: level: RUNTIME (runtime-visible)
+ Annotations:
+Annotation: type: Lorg/junit/Test; num elems: 0 elems: 
+
+" aType="VisibilityAnnotationTag"/>
+</attribute>
+<attribute>
+<srcPos sline="137" eline="137" spos="0" epos="0"/>
+<jmpPos sline="158" eline="158" spos="0" epos="0"/>
+<text info="Visibility Annotation: level: RUNTIME (runtime-visible)
+ Annotations:
+Annotation: type: Lorg/junit/Test; num elems: 0 elems: 
+
+" aType="VisibilityAnnotationTag"/>
+</attribute>
+<attribute>
+<srcPos sline="144" eline="144" spos="0" epos="0"/>
+<jmpPos sline="187" eline="187" spos="0" epos="0"/>
+<text info="Visibility Annotation: level: RUNTIME (runtime-visible)
+ Annotations:
+Annotation: type: Lorg/junit/Test; num elems: 0 elems: 
+
+" aType="VisibilityAnnotationTag"/>
+</attribute>
+<attribute>
+<srcPos sline="149" eline="149" spos="0" epos="0"/>
+<jmpPos sline="200" eline="200" spos="0" epos="0"/>
+<text info="Visibility Annotation: level: RUNTIME (runtime-visible)
+ Annotations:
+Annotation: type: Lorg/junit/Test; num elems: 0 elems: 
+
+" aType="VisibilityAnnotationTag"/>
+</attribute>
+<attribute>
+<srcPos sline="155" eline="155" spos="0" epos="0"/>
+<jmpPos sline="216" eline="216" spos="0" epos="0"/>
+<text info="Visibility Annotation: level: RUNTIME (runtime-visible)
+ Annotations:
+Annotation: type: Lorg/junit/Test; num elems: 0 elems: 
+
+" aType="VisibilityAnnotationTag"/>
+</attribute>
+<attribute>
+<srcPos sline="161" eline="161" spos="0" epos="0"/>
+<jmpPos sline="232" eline="232" spos="0" epos="0"/>
+<text info="Visibility Annotation: level: RUNTIME (runtime-visible)
+ Annotations:
+Annotation: type: Lorg/junit/Test; num elems: 1 elems: 
+Annotation Element: kind: c name: expected decription: Ljava/lang/IllegalStateException;
+
+" aType="VisibilityAnnotationTag"/>
+</attribute>
+<attribute>
+<srcPos sline="166" eline="166" spos="0" epos="0"/>
+<jmpPos sline="245" eline="245" spos="0" epos="0"/>
+<text info="Visibility Annotation: level: RUNTIME (runtime-visible)
+ Annotations:
+Annotation: type: Lorg/junit/Test; num elems: 1 elems: 
+Annotation Element: kind: c name: expected decription: Ljava/lang/IllegalStateException;
+
+" aType="VisibilityAnnotationTag"/>
+</attribute>
+<attribute>
+<srcPos sline="171" eline="171" spos="0" epos="0"/>
+<jmpPos sline="258" eline="258" spos="0" epos="0"/>
+<text info="Visibility Annotation: level: RUNTIME (runtime-visible)
+ Annotations:
+Annotation: type: Lorg/junit/Test; num elems: 1 elems: 
+Annotation Element: kind: c name: expected decription: Ljava/lang/IllegalArgumentException;
+
+" aType="VisibilityAnnotationTag"/>
+</attribute>
+<attribute>
+<srcPos sline="177" eline="177" spos="0" epos="0"/>
+<jmpPos sline="273" eline="273" spos="0" epos="0"/>
+<text info="Visibility Annotation: level: RUNTIME (runtime-visible)
+ Annotations:
+Annotation: type: Lorg/junit/Test; num elems: 1 elems: 
+Annotation Element: kind: c name: expected decription: Ljava/lang/IllegalArgumentException;
+
+" aType="VisibilityAnnotationTag"/>
+</attribute>
+<attribute>
+<srcPos sline="183" eline="183" spos="0" epos="0"/>
+<jmpPos sline="288" eline="288" spos="0" epos="0"/>
+<text info="Visibility Annotation: level: RUNTIME (runtime-visible)
+ Annotations:
+Annotation: type: Lorg/junit/Test; num elems: 1 elems: 
+Annotation Element: kind: c name: expected decription: Ljava/lang/IllegalArgumentException;
+
+" aType="VisibilityAnnotationTag"/>
+</attribute>
+<attribute>
+<srcPos sline="189" eline="189" spos="0" epos="0"/>
+<jmpPos sline="303" eline="303" spos="0" epos="0"/>
+<text info="Visibility Annotation: level: RUNTIME (runtime-visible)
+ Annotations:
+Annotation: type: Lorg/junit/Test; num elems: 0 elems: 
+
+" aType="VisibilityAnnotationTag"/>
+</attribute>
+</attributes>

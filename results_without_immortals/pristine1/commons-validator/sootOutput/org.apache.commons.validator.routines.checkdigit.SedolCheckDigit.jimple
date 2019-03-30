@@ -1,0 +1,129 @@
+public final class org.apache.commons.validator.routines.checkdigit.SedolCheckDigit extends org.apache.commons.validator.routines.checkdigit.ModulusCheckDigit
+{
+    private static final long serialVersionUID;
+    public static final org.apache.commons.validator.routines.checkdigit.CheckDigit SEDOL_CHECK_DIGIT;
+    private static final int[] POSITION_WEIGHT;
+
+    static void <clinit>()
+    {
+        org.apache.commons.validator.routines.checkdigit.SedolCheckDigit $r0;
+        int[] $r1;
+
+        $r0 = new org.apache.commons.validator.routines.checkdigit.SedolCheckDigit;
+        specialinvoke $r0.<org.apache.commons.validator.routines.checkdigit.SedolCheckDigit: void <init>()>();
+        <org.apache.commons.validator.routines.checkdigit.SedolCheckDigit: org.apache.commons.validator.routines.checkdigit.CheckDigit SEDOL_CHECK_DIGIT> = $r0;
+        $r1 = newarray (int)[7];
+        $r1[0] = 1;
+        $r1[1] = 3;
+        $r1[2] = 1;
+        $r1[3] = 7;
+        $r1[4] = 3;
+        $r1[5] = 9;
+        $r1[6] = 1;
+        <org.apache.commons.validator.routines.checkdigit.SedolCheckDigit: int[] POSITION_WEIGHT> = $r1;
+        return;
+    }
+
+    public void <init>()
+    {
+        org.apache.commons.validator.routines.checkdigit.SedolCheckDigit r0;
+
+        r0 := @this: org.apache.commons.validator.routines.checkdigit.SedolCheckDigit;
+        specialinvoke r0.<org.apache.commons.validator.routines.checkdigit.ModulusCheckDigit: void <init>(int)>(10);
+        return;
+    }
+
+    protected int calculateModulus(java.lang.String, boolean) throws org.apache.commons.validator.routines.checkdigit.CheckDigitException
+    {
+        org.apache.commons.validator.routines.checkdigit.SedolCheckDigit r0;
+        java.lang.String r1, $r5;
+        boolean z0;
+        java.lang.StringBuilder $r2, $r4;
+        int $i0, $i1, $i2;
+        org.apache.commons.validator.routines.checkdigit.CheckDigitException $r3;
+
+        r0 := @this: org.apache.commons.validator.routines.checkdigit.SedolCheckDigit;
+        r1 := @parameter0: java.lang.String;
+        z0 := @parameter1: boolean;
+        $i0 = virtualinvoke r1.<java.lang.String: int length()>();
+        if $i0 <= 7 goto label0;
+
+        $r3 = new org.apache.commons.validator.routines.checkdigit.CheckDigitException;
+        $r2 = new java.lang.StringBuilder;
+        specialinvoke $r2.<java.lang.StringBuilder: void <init>(java.lang.String)>("Invalid Code Length = ");
+        $i1 = virtualinvoke r1.<java.lang.String: int length()>();
+        $r4 = virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>($i1);
+        $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+        specialinvoke $r3.<org.apache.commons.validator.routines.checkdigit.CheckDigitException: void <init>(java.lang.String)>($r5);
+        throw $r3;
+
+     label0:
+        $i2 = specialinvoke r0.<org.apache.commons.validator.routines.checkdigit.ModulusCheckDigit: int calculateModulus(java.lang.String,boolean)>(r1, z0);
+        return $i2;
+    }
+
+    protected int weightedValue(int, int, int)
+    {
+        org.apache.commons.validator.routines.checkdigit.SedolCheckDigit r0;
+        int i0, i1, i2, $i3, $i4, $i5;
+        int[] $r1;
+
+        r0 := @this: org.apache.commons.validator.routines.checkdigit.SedolCheckDigit;
+        i0 := @parameter0: int;
+        i1 := @parameter1: int;
+        i2 := @parameter2: int;
+        $r1 = <org.apache.commons.validator.routines.checkdigit.SedolCheckDigit: int[] POSITION_WEIGHT>;
+        $i3 = i1 - 1;
+        $i4 = $r1[$i3];
+        $i5 = i0 * $i4;
+        return $i5;
+    }
+
+    protected int toInt(char, int, int) throws org.apache.commons.validator.routines.checkdigit.CheckDigitException
+    {
+        org.apache.commons.validator.routines.checkdigit.SedolCheckDigit r0;
+        char c0;
+        int i1, i2, i3;
+        byte b4, $b5;
+        java.lang.StringBuilder $r1, $r3, $r4, $r5, $r6, $r7, $r8, $r9;
+        org.apache.commons.validator.routines.checkdigit.CheckDigitException $r2;
+        java.lang.String $r10;
+
+        r0 := @this: org.apache.commons.validator.routines.checkdigit.SedolCheckDigit;
+        c0 := @parameter0: char;
+        i1 := @parameter1: int;
+        i2 := @parameter2: int;
+        i3 = staticinvoke <java.lang.Character: int getNumericValue(char)>(c0);
+        if i2 != 1 goto label0;
+
+        $b5 = 9;
+        goto label1;
+
+     label0:
+        $b5 = 35;
+
+     label1:
+        b4 = $b5;
+        if i3 < 0 goto label2;
+
+        if i3 <= b4 goto label3;
+
+     label2:
+        $r2 = new org.apache.commons.validator.routines.checkdigit.CheckDigitException;
+        $r1 = new java.lang.StringBuilder;
+        specialinvoke $r1.<java.lang.StringBuilder: void <init>(java.lang.String)>("Invalid Character[");
+        $r3 = virtualinvoke $r1.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>(i1);
+        $r4 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(",");
+        $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>(i2);
+        $r6 = virtualinvoke $r5.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("] = \'");
+        $r7 = virtualinvoke $r6.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>(i3);
+        $r8 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' out of range 0 to ");
+        $r9 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>(b4);
+        $r10 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.String toString()>();
+        specialinvoke $r2.<org.apache.commons.validator.routines.checkdigit.CheckDigitException: void <init>(java.lang.String)>($r10);
+        throw $r2;
+
+     label3:
+        return i3;
+    }
+}

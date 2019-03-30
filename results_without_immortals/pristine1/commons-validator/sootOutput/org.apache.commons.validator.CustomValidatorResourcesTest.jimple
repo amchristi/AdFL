@@ -1,0 +1,113 @@
+public class org.apache.commons.validator.CustomValidatorResourcesTest extends junit.framework.TestCase
+{
+
+    public void <init>(java.lang.String)
+    {
+        org.apache.commons.validator.CustomValidatorResourcesTest r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.CustomValidatorResourcesTest;
+        r1 := @parameter0: java.lang.String;
+        specialinvoke r0.<junit.framework.TestCase: void <init>(java.lang.String)>(r1);
+        return;
+    }
+
+    protected void setUp()
+    {
+        org.apache.commons.validator.CustomValidatorResourcesTest r0;
+
+        r0 := @this: org.apache.commons.validator.CustomValidatorResourcesTest;
+        return;
+    }
+
+    protected void tearDown()
+    {
+        org.apache.commons.validator.CustomValidatorResourcesTest r0;
+
+        r0 := @this: org.apache.commons.validator.CustomValidatorResourcesTest;
+        return;
+    }
+
+    public void testCustomResources()
+    {
+        org.apache.commons.validator.CustomValidatorResourcesTest r0;
+        java.io.InputStream r1;
+        java.lang.Exception r2, r3, $r6, $r10, $r12, r13, $r14, r15;
+        java.lang.Throwable r4, $r11;
+        java.lang.Class $r5;
+        java.lang.StringBuilder $r7, $r8;
+        java.lang.String $r9;
+
+        r0 := @this: org.apache.commons.validator.CustomValidatorResourcesTest;
+        r1 = null;
+
+     label0:
+        $r5 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>();
+        r1 = virtualinvoke $r5.<java.lang.Class: java.io.InputStream getResourceAsStream(java.lang.String)>("TestNumber-config.xml");
+
+     label1:
+        goto label11;
+
+     label2:
+        $r6 := @caughtexception;
+        r2 = $r6;
+        $r7 = new java.lang.StringBuilder;
+        specialinvoke $r7.<java.lang.StringBuilder: void <init>(java.lang.String)>("Error loading resources: ");
+        $r8 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(r2);
+        $r9 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.String toString()>();
+        staticinvoke <org.apache.commons.validator.CustomValidatorResourcesTest: void fail(java.lang.String)>($r9);
+
+     label3:
+        if r1 == null goto label14;
+
+        virtualinvoke r1.<java.io.InputStream: void close()>();
+
+     label4:
+        goto label14;
+
+     label5:
+        $r10 := @caughtexception;
+        r3 = $r10;
+        goto label14;
+
+     label6:
+        $r11 := @caughtexception;
+        r4 = $r11;
+
+     label7:
+        if r1 == null goto label10;
+
+        virtualinvoke r1.<java.io.InputStream: void close()>();
+
+     label8:
+        goto label10;
+
+     label9:
+        $r12 := @caughtexception;
+        r13 = $r12;
+
+     label10:
+        throw r4;
+
+     label11:
+        if r1 == null goto label14;
+
+        virtualinvoke r1.<java.io.InputStream: void close()>();
+
+     label12:
+        goto label14;
+
+     label13:
+        $r14 := @caughtexception;
+        r15 = $r14;
+
+     label14:
+        return;
+
+        catch java.lang.Exception from label0 to label1 with label2;
+        catch java.lang.Exception from label3 to label4 with label5;
+        catch java.lang.Throwable from label0 to label3 with label6;
+        catch java.lang.Exception from label7 to label8 with label9;
+        catch java.lang.Exception from label11 to label12 with label13;
+    }
+}

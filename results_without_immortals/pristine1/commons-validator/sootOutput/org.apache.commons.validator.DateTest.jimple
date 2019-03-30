@@ -1,0 +1,145 @@
+public class org.apache.commons.validator.DateTest extends org.apache.commons.validator.AbstractCommonTest
+{
+    protected java.lang.String FORM_KEY;
+    protected java.lang.String ACTION;
+
+    public void <init>(java.lang.String)
+    {
+        org.apache.commons.validator.DateTest r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.DateTest;
+        r1 := @parameter0: java.lang.String;
+        specialinvoke r0.<org.apache.commons.validator.AbstractCommonTest: void <init>(java.lang.String)>(r1);
+        r0.<org.apache.commons.validator.DateTest: java.lang.String FORM_KEY> = "dateForm";
+        r0.<org.apache.commons.validator.DateTest: java.lang.String ACTION> = "date";
+        return;
+    }
+
+    protected void setUp() throws java.io.IOException, org.xml.sax.SAXException
+    {
+        org.apache.commons.validator.DateTest r0;
+
+        r0 := @this: org.apache.commons.validator.DateTest;
+        virtualinvoke r0.<org.apache.commons.validator.DateTest: void loadResources(java.lang.String)>("DateTest-config.xml");
+        return;
+    }
+
+    public void testValidDate() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.DateTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+
+        r0 := @this: org.apache.commons.validator.DateTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("12/01/2005");
+        virtualinvoke r0.<org.apache.commons.validator.DateTest: void valueTest(java.lang.Object,boolean)>(r2, 1);
+        return;
+    }
+
+    public void testInvalidDate() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.DateTest r0;
+        org.apache.commons.validator.ValueBean $r1, r2;
+
+        r0 := @this: org.apache.commons.validator.DateTest;
+        $r1 = new org.apache.commons.validator.ValueBean;
+        specialinvoke $r1.<org.apache.commons.validator.ValueBean: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.ValueBean: void setValue(java.lang.String)>("12/01as/2005");
+        virtualinvoke r0.<org.apache.commons.validator.DateTest: void valueTest(java.lang.Object,boolean)>(r2, 0);
+        return;
+    }
+
+    protected void valueTest(java.lang.Object, boolean) throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.DateTest r0;
+        java.lang.Object r1;
+        boolean z0, $z1, $z2, $z3;
+        org.apache.commons.validator.Validator $r2, r3;
+        null_type n0;
+        org.apache.commons.validator.ValidatorResult r4;
+        org.apache.commons.validator.ValidatorResources $r5;
+        java.lang.String $r6, $r10, $r11, $r13, $r15, $r16, $r18, $r21, $r22, $r24, $r25, $r27, $r30, $r33, $r34, $r35;
+        java.util.Locale $r7;
+        org.apache.commons.validator.ValidatorResults r8;
+        java.lang.StringBuilder $r9, $r12, $r14, $r17, $r19, $r20, $r23, $r26, $r28, $r29, $r31, $r32;
+
+        r0 := @this: org.apache.commons.validator.DateTest;
+        r1 := @parameter0: java.lang.Object;
+        z0 := @parameter1: boolean;
+        $r2 = new org.apache.commons.validator.Validator;
+        $r5 = r0.<org.apache.commons.validator.DateTest: org.apache.commons.validator.ValidatorResources resources>;
+        $r6 = r0.<org.apache.commons.validator.DateTest: java.lang.String FORM_KEY>;
+        specialinvoke $r2.<org.apache.commons.validator.Validator: void <init>(org.apache.commons.validator.ValidatorResources,java.lang.String)>($r5, $r6);
+        r3 = $r2;
+        virtualinvoke r3.<org.apache.commons.validator.Validator: void setParameter(java.lang.String,java.lang.Object)>("java.lang.Object", r1);
+        $r7 = <java.util.Locale: java.util.Locale US>;
+        virtualinvoke r3.<org.apache.commons.validator.Validator: void setParameter(java.lang.String,java.lang.Object)>("java.util.Locale", $r7);
+        n0 = null;
+        r8 = virtualinvoke r3.<org.apache.commons.validator.Validator: org.apache.commons.validator.ValidatorResults validate()>();
+        staticinvoke <org.apache.commons.validator.DateTest: void assertNotNull(java.lang.String,java.lang.Object)>("Results are null.", r8);
+        r4 = virtualinvoke r8.<org.apache.commons.validator.ValidatorResults: org.apache.commons.validator.ValidatorResult getValidatorResult(java.lang.String)>("value");
+        $r9 = new java.lang.StringBuilder;
+        $r10 = r0.<org.apache.commons.validator.DateTest: java.lang.String ACTION>;
+        $r11 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r10);
+        specialinvoke $r9.<java.lang.StringBuilder: void <init>(java.lang.String)>($r11);
+        $r12 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" value ValidatorResult should not be null.");
+        $r13 = virtualinvoke $r12.<java.lang.StringBuilder: java.lang.String toString()>();
+        staticinvoke <org.apache.commons.validator.DateTest: void assertNotNull(java.lang.String,java.lang.Object)>($r13, r4);
+        $r14 = new java.lang.StringBuilder;
+        $r15 = r0.<org.apache.commons.validator.DateTest: java.lang.String ACTION>;
+        $r16 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r15);
+        specialinvoke $r14.<java.lang.StringBuilder: void <init>(java.lang.String)>($r16);
+        $r17 = virtualinvoke $r14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" value ValidatorResult should contain the \'");
+        $r18 = r0.<org.apache.commons.validator.DateTest: java.lang.String ACTION>;
+        $r19 = virtualinvoke $r17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r18);
+        $r20 = virtualinvoke $r19.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' action.");
+        $r21 = virtualinvoke $r20.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r22 = r0.<org.apache.commons.validator.DateTest: java.lang.String ACTION>;
+        $z1 = virtualinvoke r4.<org.apache.commons.validator.ValidatorResult: boolean containsAction(java.lang.String)>($r22);
+        staticinvoke <org.apache.commons.validator.DateTest: void assertTrue(java.lang.String,boolean)>($r21, $z1);
+        $r23 = new java.lang.StringBuilder;
+        $r24 = r0.<org.apache.commons.validator.DateTest: java.lang.String ACTION>;
+        $r25 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r24);
+        specialinvoke $r23.<java.lang.StringBuilder: void <init>(java.lang.String)>($r25);
+        $r26 = virtualinvoke $r23.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" value ValidatorResult for the \'");
+        $r27 = r0.<org.apache.commons.validator.DateTest: java.lang.String ACTION>;
+        $r28 = virtualinvoke $r26.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r27);
+        $r29 = virtualinvoke $r28.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' action should have ");
+        if z0 == 0 goto label0;
+
+        $r30 = "passed";
+        goto label1;
+
+     label0:
+        $r30 = "failed";
+
+     label1:
+        $r31 = virtualinvoke $r29.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r30);
+        $r32 = virtualinvoke $r31.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(".");
+        $r33 = virtualinvoke $r32.<java.lang.StringBuilder: java.lang.String toString()>();
+        if z0 == 0 goto label2;
+
+        $r34 = r0.<org.apache.commons.validator.DateTest: java.lang.String ACTION>;
+        $z2 = virtualinvoke r4.<org.apache.commons.validator.ValidatorResult: boolean isValid(java.lang.String)>($r34);
+        goto label4;
+
+     label2:
+        $r35 = r0.<org.apache.commons.validator.DateTest: java.lang.String ACTION>;
+        $z3 = virtualinvoke r4.<org.apache.commons.validator.ValidatorResult: boolean isValid(java.lang.String)>($r35);
+        if $z3 == 0 goto label3;
+
+        $z2 = 0;
+        goto label4;
+
+     label3:
+        $z2 = 1;
+
+     label4:
+        staticinvoke <org.apache.commons.validator.DateTest: void assertTrue(java.lang.String,boolean)>($r33, $z2);
+        return;
+    }
+}

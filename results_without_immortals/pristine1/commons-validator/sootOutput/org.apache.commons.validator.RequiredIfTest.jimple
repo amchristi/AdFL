@@ -1,0 +1,411 @@
+public class org.apache.commons.validator.RequiredIfTest extends org.apache.commons.validator.AbstractCommonTest
+{
+    protected static java.lang.String FORM_KEY;
+    protected static java.lang.String ACTION;
+
+    static void <clinit>()
+    {
+        <org.apache.commons.validator.RequiredIfTest: java.lang.String FORM_KEY> = "nameForm";
+        <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION> = "requiredif";
+        return;
+    }
+
+    public void <init>(java.lang.String)
+    {
+        org.apache.commons.validator.RequiredIfTest r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.RequiredIfTest;
+        r1 := @parameter0: java.lang.String;
+        specialinvoke r0.<org.apache.commons.validator.AbstractCommonTest: void <init>(java.lang.String)>(r1);
+        return;
+    }
+
+    protected void setUp() throws java.io.IOException, org.xml.sax.SAXException
+    {
+        org.apache.commons.validator.RequiredIfTest r0;
+
+        r0 := @this: org.apache.commons.validator.RequiredIfTest;
+        virtualinvoke r0.<org.apache.commons.validator.RequiredIfTest: void loadResources(java.lang.String)>("RequiredIfTest-config.xml");
+        return;
+    }
+
+    protected void tearDown()
+    {
+        org.apache.commons.validator.RequiredIfTest r0;
+
+        r0 := @this: org.apache.commons.validator.RequiredIfTest;
+        return;
+    }
+
+    public void testRequired() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.RequiredIfTest r0;
+        org.apache.commons.validator.NameBean $r1, r2;
+        java.lang.String $r3, $r11, $r14, $r15, $r17, $r20, $r21, $r23, $r26, $r27, $r29, $r32, $r33;
+        org.apache.commons.validator.Validator r4, $r7;
+        null_type n0;
+        org.apache.commons.validator.ValidatorResult r5, r6;
+        org.apache.commons.validator.ValidatorResources $r8;
+        org.apache.commons.validator.ValidatorResults r9;
+        java.lang.StringBuilder $r10, $r12, $r13, $r16, $r18, $r19, $r22, $r24, $r25, $r28, $r30, $r31;
+        boolean $z0, $z1, $z2, $z3;
+
+        r0 := @this: org.apache.commons.validator.RequiredIfTest;
+        $r1 = new org.apache.commons.validator.NameBean;
+        specialinvoke $r1.<org.apache.commons.validator.NameBean: void <init>()>();
+        r2 = $r1;
+        $r7 = new org.apache.commons.validator.Validator;
+        $r8 = r0.<org.apache.commons.validator.RequiredIfTest: org.apache.commons.validator.ValidatorResources resources>;
+        $r3 = <org.apache.commons.validator.RequiredIfTest: java.lang.String FORM_KEY>;
+        specialinvoke $r7.<org.apache.commons.validator.Validator: void <init>(org.apache.commons.validator.ValidatorResources,java.lang.String)>($r8, $r3);
+        r4 = $r7;
+        virtualinvoke r4.<org.apache.commons.validator.Validator: void setParameter(java.lang.String,java.lang.Object)>("java.lang.Object", r2);
+        n0 = null;
+        r9 = virtualinvoke r4.<org.apache.commons.validator.Validator: org.apache.commons.validator.ValidatorResults validate()>();
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertNotNull(java.lang.String,java.lang.Object)>("Results are null.", r9);
+        r5 = virtualinvoke r9.<org.apache.commons.validator.ValidatorResults: org.apache.commons.validator.ValidatorResult getValidatorResult(java.lang.String)>("firstName");
+        r6 = virtualinvoke r9.<org.apache.commons.validator.ValidatorResults: org.apache.commons.validator.ValidatorResult getValidatorResult(java.lang.String)>("lastName");
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertNotNull(java.lang.String,java.lang.Object)>("First Name ValidatorResult should not be null.", r5);
+        $r10 = new java.lang.StringBuilder;
+        specialinvoke $r10.<java.lang.StringBuilder: void <init>(java.lang.String)>("First Name ValidatorResult should contain the \'");
+        $r11 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $r12 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r11);
+        $r13 = virtualinvoke $r12.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' action.");
+        $r14 = virtualinvoke $r13.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r15 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $z0 = virtualinvoke r5.<org.apache.commons.validator.ValidatorResult: boolean containsAction(java.lang.String)>($r15);
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertTrue(java.lang.String,boolean)>($r14, $z0);
+        $r16 = new java.lang.StringBuilder;
+        specialinvoke $r16.<java.lang.StringBuilder: void <init>(java.lang.String)>("First Name ValidatorResult for the \'");
+        $r17 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $r18 = virtualinvoke $r16.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r17);
+        $r19 = virtualinvoke $r18.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' action should have passed.");
+        $r20 = virtualinvoke $r19.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r21 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $z1 = virtualinvoke r5.<org.apache.commons.validator.ValidatorResult: boolean isValid(java.lang.String)>($r21);
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertTrue(java.lang.String,boolean)>($r20, $z1);
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertNotNull(java.lang.String,java.lang.Object)>("Last Name ValidatorResult should not be null.", r6);
+        $r22 = new java.lang.StringBuilder;
+        specialinvoke $r22.<java.lang.StringBuilder: void <init>(java.lang.String)>("Last Name ValidatorResult should contain the \'");
+        $r23 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $r24 = virtualinvoke $r22.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r23);
+        $r25 = virtualinvoke $r24.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' action.");
+        $r26 = virtualinvoke $r25.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r27 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $z2 = virtualinvoke r6.<org.apache.commons.validator.ValidatorResult: boolean containsAction(java.lang.String)>($r27);
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertTrue(java.lang.String,boolean)>($r26, $z2);
+        $r28 = new java.lang.StringBuilder;
+        specialinvoke $r28.<java.lang.StringBuilder: void <init>(java.lang.String)>("Last Name ValidatorResult for the \'");
+        $r29 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $r30 = virtualinvoke $r28.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r29);
+        $r31 = virtualinvoke $r30.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' action should have passed.");
+        $r32 = virtualinvoke $r31.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r33 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $z3 = virtualinvoke r6.<org.apache.commons.validator.ValidatorResult: boolean isValid(java.lang.String)>($r33);
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertTrue(java.lang.String,boolean)>($r32, $z3);
+        return;
+    }
+
+    public void testRequiredFirstNameBlank() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.RequiredIfTest r0;
+        org.apache.commons.validator.NameBean $r1, r2;
+        java.lang.String $r3, $r11, $r14, $r15, $r17, $r20, $r21, $r23, $r26, $r27, $r29, $r32, $r33;
+        org.apache.commons.validator.Validator r4, $r7;
+        null_type n0;
+        org.apache.commons.validator.ValidatorResult r5, r6;
+        org.apache.commons.validator.ValidatorResources $r8;
+        org.apache.commons.validator.ValidatorResults r9;
+        java.lang.StringBuilder $r10, $r12, $r13, $r16, $r18, $r19, $r22, $r24, $r25, $r28, $r30, $r31;
+        boolean $z0, $z1, $z2, $z3, $z4;
+
+        r0 := @this: org.apache.commons.validator.RequiredIfTest;
+        $r1 = new org.apache.commons.validator.NameBean;
+        specialinvoke $r1.<org.apache.commons.validator.NameBean: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.NameBean: void setFirstName(java.lang.String)>("");
+        virtualinvoke r2.<org.apache.commons.validator.NameBean: void setLastName(java.lang.String)>("Test");
+        $r7 = new org.apache.commons.validator.Validator;
+        $r8 = r0.<org.apache.commons.validator.RequiredIfTest: org.apache.commons.validator.ValidatorResources resources>;
+        $r3 = <org.apache.commons.validator.RequiredIfTest: java.lang.String FORM_KEY>;
+        specialinvoke $r7.<org.apache.commons.validator.Validator: void <init>(org.apache.commons.validator.ValidatorResources,java.lang.String)>($r8, $r3);
+        r4 = $r7;
+        virtualinvoke r4.<org.apache.commons.validator.Validator: void setParameter(java.lang.String,java.lang.Object)>("java.lang.Object", r2);
+        n0 = null;
+        r9 = virtualinvoke r4.<org.apache.commons.validator.Validator: org.apache.commons.validator.ValidatorResults validate()>();
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertNotNull(java.lang.String,java.lang.Object)>("Results are null.", r9);
+        r5 = virtualinvoke r9.<org.apache.commons.validator.ValidatorResults: org.apache.commons.validator.ValidatorResult getValidatorResult(java.lang.String)>("firstName");
+        r6 = virtualinvoke r9.<org.apache.commons.validator.ValidatorResults: org.apache.commons.validator.ValidatorResult getValidatorResult(java.lang.String)>("lastName");
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertNotNull(java.lang.String,java.lang.Object)>("First Name ValidatorResult should not be null.", r5);
+        $r10 = new java.lang.StringBuilder;
+        specialinvoke $r10.<java.lang.StringBuilder: void <init>(java.lang.String)>("First Name ValidatorResult should contain the \'");
+        $r11 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $r12 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r11);
+        $r13 = virtualinvoke $r12.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' action.");
+        $r14 = virtualinvoke $r13.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r15 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $z0 = virtualinvoke r5.<org.apache.commons.validator.ValidatorResult: boolean containsAction(java.lang.String)>($r15);
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertTrue(java.lang.String,boolean)>($r14, $z0);
+        $r16 = new java.lang.StringBuilder;
+        specialinvoke $r16.<java.lang.StringBuilder: void <init>(java.lang.String)>("First Name ValidatorResult for the \'");
+        $r17 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $r18 = virtualinvoke $r16.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r17);
+        $r19 = virtualinvoke $r18.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' action should have failed.");
+        $r20 = virtualinvoke $r19.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r21 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $z1 = virtualinvoke r5.<org.apache.commons.validator.ValidatorResult: boolean isValid(java.lang.String)>($r21);
+        if $z1 == 0 goto label0;
+
+        $z2 = 0;
+        goto label1;
+
+     label0:
+        $z2 = 1;
+
+     label1:
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertTrue(java.lang.String,boolean)>($r20, $z2);
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertNotNull(java.lang.String,java.lang.Object)>("Last Name ValidatorResult should not be null.", r6);
+        $r22 = new java.lang.StringBuilder;
+        specialinvoke $r22.<java.lang.StringBuilder: void <init>(java.lang.String)>("Last Name ValidatorResult should contain the \'");
+        $r23 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $r24 = virtualinvoke $r22.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r23);
+        $r25 = virtualinvoke $r24.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' action.");
+        $r26 = virtualinvoke $r25.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r27 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $z3 = virtualinvoke r6.<org.apache.commons.validator.ValidatorResult: boolean containsAction(java.lang.String)>($r27);
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertTrue(java.lang.String,boolean)>($r26, $z3);
+        $r28 = new java.lang.StringBuilder;
+        specialinvoke $r28.<java.lang.StringBuilder: void <init>(java.lang.String)>("Last Name ValidatorResult for the \'");
+        $r29 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $r30 = virtualinvoke $r28.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r29);
+        $r31 = virtualinvoke $r30.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' action should have passed.");
+        $r32 = virtualinvoke $r31.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r33 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $z4 = virtualinvoke r6.<org.apache.commons.validator.ValidatorResult: boolean isValid(java.lang.String)>($r33);
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertTrue(java.lang.String,boolean)>($r32, $z4);
+        return;
+    }
+
+    public void testRequiredFirstName() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.RequiredIfTest r0;
+        org.apache.commons.validator.NameBean $r1, r2;
+        java.lang.String $r3, $r11, $r14, $r15, $r17, $r20, $r21, $r23, $r26, $r27, $r29, $r32, $r33;
+        org.apache.commons.validator.Validator r4, $r7;
+        null_type n0;
+        org.apache.commons.validator.ValidatorResult r5, r6;
+        org.apache.commons.validator.ValidatorResources $r8;
+        org.apache.commons.validator.ValidatorResults r9;
+        java.lang.StringBuilder $r10, $r12, $r13, $r16, $r18, $r19, $r22, $r24, $r25, $r28, $r30, $r31;
+        boolean $z0, $z1, $z2, $z3;
+
+        r0 := @this: org.apache.commons.validator.RequiredIfTest;
+        $r1 = new org.apache.commons.validator.NameBean;
+        specialinvoke $r1.<org.apache.commons.validator.NameBean: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.NameBean: void setFirstName(java.lang.String)>("Test");
+        virtualinvoke r2.<org.apache.commons.validator.NameBean: void setLastName(java.lang.String)>("Test");
+        $r7 = new org.apache.commons.validator.Validator;
+        $r8 = r0.<org.apache.commons.validator.RequiredIfTest: org.apache.commons.validator.ValidatorResources resources>;
+        $r3 = <org.apache.commons.validator.RequiredIfTest: java.lang.String FORM_KEY>;
+        specialinvoke $r7.<org.apache.commons.validator.Validator: void <init>(org.apache.commons.validator.ValidatorResources,java.lang.String)>($r8, $r3);
+        r4 = $r7;
+        virtualinvoke r4.<org.apache.commons.validator.Validator: void setParameter(java.lang.String,java.lang.Object)>("java.lang.Object", r2);
+        n0 = null;
+        r9 = virtualinvoke r4.<org.apache.commons.validator.Validator: org.apache.commons.validator.ValidatorResults validate()>();
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertNotNull(java.lang.String,java.lang.Object)>("Results are null.", r9);
+        r5 = virtualinvoke r9.<org.apache.commons.validator.ValidatorResults: org.apache.commons.validator.ValidatorResult getValidatorResult(java.lang.String)>("firstName");
+        r6 = virtualinvoke r9.<org.apache.commons.validator.ValidatorResults: org.apache.commons.validator.ValidatorResult getValidatorResult(java.lang.String)>("lastName");
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertNotNull(java.lang.String,java.lang.Object)>("First Name ValidatorResult should not be null.", r5);
+        $r10 = new java.lang.StringBuilder;
+        specialinvoke $r10.<java.lang.StringBuilder: void <init>(java.lang.String)>("First Name ValidatorResult should contain the \'");
+        $r11 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $r12 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r11);
+        $r13 = virtualinvoke $r12.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' action.");
+        $r14 = virtualinvoke $r13.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r15 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $z0 = virtualinvoke r5.<org.apache.commons.validator.ValidatorResult: boolean containsAction(java.lang.String)>($r15);
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertTrue(java.lang.String,boolean)>($r14, $z0);
+        $r16 = new java.lang.StringBuilder;
+        specialinvoke $r16.<java.lang.StringBuilder: void <init>(java.lang.String)>("First Name ValidatorResult for the \'");
+        $r17 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $r18 = virtualinvoke $r16.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r17);
+        $r19 = virtualinvoke $r18.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' action should have passed.");
+        $r20 = virtualinvoke $r19.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r21 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $z1 = virtualinvoke r5.<org.apache.commons.validator.ValidatorResult: boolean isValid(java.lang.String)>($r21);
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertTrue(java.lang.String,boolean)>($r20, $z1);
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertNotNull(java.lang.String,java.lang.Object)>("Last Name ValidatorResult should not be null.", r6);
+        $r22 = new java.lang.StringBuilder;
+        specialinvoke $r22.<java.lang.StringBuilder: void <init>(java.lang.String)>("Last Name ValidatorResult should contain the \'");
+        $r23 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $r24 = virtualinvoke $r22.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r23);
+        $r25 = virtualinvoke $r24.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' action.");
+        $r26 = virtualinvoke $r25.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r27 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $z2 = virtualinvoke r6.<org.apache.commons.validator.ValidatorResult: boolean containsAction(java.lang.String)>($r27);
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertTrue(java.lang.String,boolean)>($r26, $z2);
+        $r28 = new java.lang.StringBuilder;
+        specialinvoke $r28.<java.lang.StringBuilder: void <init>(java.lang.String)>("Last Name ValidatorResult for the \'");
+        $r29 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $r30 = virtualinvoke $r28.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r29);
+        $r31 = virtualinvoke $r30.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' action should have passed.");
+        $r32 = virtualinvoke $r31.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r33 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $z3 = virtualinvoke r6.<org.apache.commons.validator.ValidatorResult: boolean isValid(java.lang.String)>($r33);
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertTrue(java.lang.String,boolean)>($r32, $z3);
+        return;
+    }
+
+    public void testRequiredLastNameBlank() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.RequiredIfTest r0;
+        org.apache.commons.validator.NameBean $r1, r2;
+        java.lang.String $r3, $r11, $r14, $r15, $r17, $r20, $r21, $r23, $r26, $r27, $r29, $r32, $r33;
+        org.apache.commons.validator.Validator r4, $r7;
+        null_type n0;
+        org.apache.commons.validator.ValidatorResult r5, r6;
+        org.apache.commons.validator.ValidatorResources $r8;
+        org.apache.commons.validator.ValidatorResults r9;
+        java.lang.StringBuilder $r10, $r12, $r13, $r16, $r18, $r19, $r22, $r24, $r25, $r28, $r30, $r31;
+        boolean $z0, $z1, $z2, $z3, $z4;
+
+        r0 := @this: org.apache.commons.validator.RequiredIfTest;
+        $r1 = new org.apache.commons.validator.NameBean;
+        specialinvoke $r1.<org.apache.commons.validator.NameBean: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.NameBean: void setFirstName(java.lang.String)>("Joe");
+        virtualinvoke r2.<org.apache.commons.validator.NameBean: void setLastName(java.lang.String)>("");
+        $r7 = new org.apache.commons.validator.Validator;
+        $r8 = r0.<org.apache.commons.validator.RequiredIfTest: org.apache.commons.validator.ValidatorResources resources>;
+        $r3 = <org.apache.commons.validator.RequiredIfTest: java.lang.String FORM_KEY>;
+        specialinvoke $r7.<org.apache.commons.validator.Validator: void <init>(org.apache.commons.validator.ValidatorResources,java.lang.String)>($r8, $r3);
+        r4 = $r7;
+        virtualinvoke r4.<org.apache.commons.validator.Validator: void setParameter(java.lang.String,java.lang.Object)>("java.lang.Object", r2);
+        n0 = null;
+        r9 = virtualinvoke r4.<org.apache.commons.validator.Validator: org.apache.commons.validator.ValidatorResults validate()>();
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertNotNull(java.lang.String,java.lang.Object)>("Results are null.", r9);
+        r5 = virtualinvoke r9.<org.apache.commons.validator.ValidatorResults: org.apache.commons.validator.ValidatorResult getValidatorResult(java.lang.String)>("firstName");
+        r6 = virtualinvoke r9.<org.apache.commons.validator.ValidatorResults: org.apache.commons.validator.ValidatorResult getValidatorResult(java.lang.String)>("lastName");
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertNotNull(java.lang.String,java.lang.Object)>("First Name ValidatorResult should not be null.", r5);
+        $r10 = new java.lang.StringBuilder;
+        specialinvoke $r10.<java.lang.StringBuilder: void <init>(java.lang.String)>("First Name ValidatorResult should contain the \'");
+        $r11 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $r12 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r11);
+        $r13 = virtualinvoke $r12.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' action.");
+        $r14 = virtualinvoke $r13.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r15 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $z0 = virtualinvoke r5.<org.apache.commons.validator.ValidatorResult: boolean containsAction(java.lang.String)>($r15);
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertTrue(java.lang.String,boolean)>($r14, $z0);
+        $r16 = new java.lang.StringBuilder;
+        specialinvoke $r16.<java.lang.StringBuilder: void <init>(java.lang.String)>("First Name ValidatorResult for the \'");
+        $r17 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $r18 = virtualinvoke $r16.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r17);
+        $r19 = virtualinvoke $r18.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' action should have passed.");
+        $r20 = virtualinvoke $r19.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r21 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $z1 = virtualinvoke r5.<org.apache.commons.validator.ValidatorResult: boolean isValid(java.lang.String)>($r21);
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertTrue(java.lang.String,boolean)>($r20, $z1);
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertNotNull(java.lang.String,java.lang.Object)>("Last Name ValidatorResult should not be null.", r6);
+        $r22 = new java.lang.StringBuilder;
+        specialinvoke $r22.<java.lang.StringBuilder: void <init>(java.lang.String)>("Last Name ValidatorResult should contain the \'");
+        $r23 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $r24 = virtualinvoke $r22.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r23);
+        $r25 = virtualinvoke $r24.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' action.");
+        $r26 = virtualinvoke $r25.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r27 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $z2 = virtualinvoke r6.<org.apache.commons.validator.ValidatorResult: boolean containsAction(java.lang.String)>($r27);
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertTrue(java.lang.String,boolean)>($r26, $z2);
+        $r28 = new java.lang.StringBuilder;
+        specialinvoke $r28.<java.lang.StringBuilder: void <init>(java.lang.String)>("Last Name ValidatorResult for the \'");
+        $r29 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $r30 = virtualinvoke $r28.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r29);
+        $r31 = virtualinvoke $r30.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' action should have failed.");
+        $r32 = virtualinvoke $r31.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r33 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $z3 = virtualinvoke r6.<org.apache.commons.validator.ValidatorResult: boolean isValid(java.lang.String)>($r33);
+        if $z3 == 0 goto label0;
+
+        $z4 = 0;
+        goto label1;
+
+     label0:
+        $z4 = 1;
+
+     label1:
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertTrue(java.lang.String,boolean)>($r32, $z4);
+        return;
+    }
+
+    public void testRequiredLastName() throws org.apache.commons.validator.ValidatorException
+    {
+        org.apache.commons.validator.RequiredIfTest r0;
+        org.apache.commons.validator.NameBean $r1, r2;
+        java.lang.String $r3, $r11, $r14, $r15, $r17, $r20, $r21, $r23, $r26, $r27, $r29, $r32, $r33;
+        org.apache.commons.validator.Validator r4, $r7;
+        null_type n0;
+        org.apache.commons.validator.ValidatorResult r5, r6;
+        org.apache.commons.validator.ValidatorResources $r8;
+        org.apache.commons.validator.ValidatorResults r9;
+        java.lang.StringBuilder $r10, $r12, $r13, $r16, $r18, $r19, $r22, $r24, $r25, $r28, $r30, $r31;
+        boolean $z0, $z1, $z2, $z3;
+
+        r0 := @this: org.apache.commons.validator.RequiredIfTest;
+        $r1 = new org.apache.commons.validator.NameBean;
+        specialinvoke $r1.<org.apache.commons.validator.NameBean: void <init>()>();
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.NameBean: void setFirstName(java.lang.String)>("Joe");
+        virtualinvoke r2.<org.apache.commons.validator.NameBean: void setLastName(java.lang.String)>("Smith");
+        $r7 = new org.apache.commons.validator.Validator;
+        $r8 = r0.<org.apache.commons.validator.RequiredIfTest: org.apache.commons.validator.ValidatorResources resources>;
+        $r3 = <org.apache.commons.validator.RequiredIfTest: java.lang.String FORM_KEY>;
+        specialinvoke $r7.<org.apache.commons.validator.Validator: void <init>(org.apache.commons.validator.ValidatorResources,java.lang.String)>($r8, $r3);
+        r4 = $r7;
+        virtualinvoke r4.<org.apache.commons.validator.Validator: void setParameter(java.lang.String,java.lang.Object)>("java.lang.Object", r2);
+        n0 = null;
+        r9 = virtualinvoke r4.<org.apache.commons.validator.Validator: org.apache.commons.validator.ValidatorResults validate()>();
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertNotNull(java.lang.String,java.lang.Object)>("Results are null.", r9);
+        r5 = virtualinvoke r9.<org.apache.commons.validator.ValidatorResults: org.apache.commons.validator.ValidatorResult getValidatorResult(java.lang.String)>("firstName");
+        r6 = virtualinvoke r9.<org.apache.commons.validator.ValidatorResults: org.apache.commons.validator.ValidatorResult getValidatorResult(java.lang.String)>("lastName");
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertNotNull(java.lang.String,java.lang.Object)>("First Name ValidatorResult should not be null.", r5);
+        $r10 = new java.lang.StringBuilder;
+        specialinvoke $r10.<java.lang.StringBuilder: void <init>(java.lang.String)>("First Name ValidatorResult should contain the \'");
+        $r11 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $r12 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r11);
+        $r13 = virtualinvoke $r12.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' action.");
+        $r14 = virtualinvoke $r13.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r15 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $z0 = virtualinvoke r5.<org.apache.commons.validator.ValidatorResult: boolean containsAction(java.lang.String)>($r15);
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertTrue(java.lang.String,boolean)>($r14, $z0);
+        $r16 = new java.lang.StringBuilder;
+        specialinvoke $r16.<java.lang.StringBuilder: void <init>(java.lang.String)>("First Name ValidatorResult for the \'");
+        $r17 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $r18 = virtualinvoke $r16.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r17);
+        $r19 = virtualinvoke $r18.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' action should have passed.");
+        $r20 = virtualinvoke $r19.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r21 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $z1 = virtualinvoke r5.<org.apache.commons.validator.ValidatorResult: boolean isValid(java.lang.String)>($r21);
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertTrue(java.lang.String,boolean)>($r20, $z1);
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertNotNull(java.lang.String,java.lang.Object)>("Last Name ValidatorResult should not be null.", r6);
+        $r22 = new java.lang.StringBuilder;
+        specialinvoke $r22.<java.lang.StringBuilder: void <init>(java.lang.String)>("Last Name ValidatorResult should contain the \'");
+        $r23 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $r24 = virtualinvoke $r22.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r23);
+        $r25 = virtualinvoke $r24.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' action.");
+        $r26 = virtualinvoke $r25.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r27 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $z2 = virtualinvoke r6.<org.apache.commons.validator.ValidatorResult: boolean containsAction(java.lang.String)>($r27);
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertTrue(java.lang.String,boolean)>($r26, $z2);
+        $r28 = new java.lang.StringBuilder;
+        specialinvoke $r28.<java.lang.StringBuilder: void <init>(java.lang.String)>("Last Name ValidatorResult for the \'");
+        $r29 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $r30 = virtualinvoke $r28.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r29);
+        $r31 = virtualinvoke $r30.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' action should have passed.");
+        $r32 = virtualinvoke $r31.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r33 = <org.apache.commons.validator.RequiredIfTest: java.lang.String ACTION>;
+        $z3 = virtualinvoke r6.<org.apache.commons.validator.ValidatorResult: boolean isValid(java.lang.String)>($r33);
+        staticinvoke <org.apache.commons.validator.RequiredIfTest: void assertTrue(java.lang.String,boolean)>($r32, $z3);
+        return;
+    }
+}

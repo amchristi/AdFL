@@ -1,0 +1,1716 @@
+public class org.apache.commons.validator.routines.DomainValidator extends java.lang.Object implements java.io.Serializable
+{
+    private static final java.lang.String[] EMPTY_STRING_ARRAY;
+    private static final long serialVersionUID;
+    private static final java.lang.String DOMAIN_LABEL_REGEX;
+    private static final java.lang.String TOP_LABEL_REGEX;
+    private static final java.lang.String DOMAIN_NAME_REGEX;
+    private final boolean allowLocal;
+    private static final org.apache.commons.validator.routines.DomainValidator DOMAIN_VALIDATOR;
+    private static final org.apache.commons.validator.routines.DomainValidator DOMAIN_VALIDATOR_WITH_LOCAL;
+    private final org.apache.commons.validator.routines.RegexValidator domainRegex;
+    private final org.apache.commons.validator.routines.RegexValidator hostnameRegex;
+    private static final java.lang.String[] INFRASTRUCTURE_TLDS;
+    private static final java.lang.String[] GENERIC_TLDS;
+    private static final java.lang.String[] COUNTRY_CODE_TLDS;
+    private static final java.lang.String[] LOCAL_TLDS;
+    private static boolean inUse;
+    private static volatile java.lang.String[] COUNTRY_CODE_TLDS_PLUS;
+    private static volatile java.lang.String[] GENERIC_TLDS_PLUS;
+    private static volatile java.lang.String[] COUNTRY_CODE_TLDS_MINUS;
+    private static volatile java.lang.String[] GENERIC_TLDS_MINUS;
+    private static int[] $SWITCH_TABLE$org$apache$commons$validator$routines$DomainValidator$ArrayType;
+
+    static void <clinit>()
+    {
+        java.lang.String[] $r0, $r3, $r4, $r5, $r6, $r7, $r8, $r9, $r10;
+        org.apache.commons.validator.routines.DomainValidator $r1, $r2;
+
+        $r0 = newarray (java.lang.String)[0];
+        <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] EMPTY_STRING_ARRAY> = $r0;
+        $r1 = new org.apache.commons.validator.routines.DomainValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.DomainValidator: void <init>(boolean)>(0);
+        <org.apache.commons.validator.routines.DomainValidator: org.apache.commons.validator.routines.DomainValidator DOMAIN_VALIDATOR> = $r1;
+        $r2 = new org.apache.commons.validator.routines.DomainValidator;
+        specialinvoke $r2.<org.apache.commons.validator.routines.DomainValidator: void <init>(boolean)>(1);
+        <org.apache.commons.validator.routines.DomainValidator: org.apache.commons.validator.routines.DomainValidator DOMAIN_VALIDATOR_WITH_LOCAL> = $r2;
+        $r3 = newarray (java.lang.String)[1];
+        $r3[0] = "arpa";
+        <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] INFRASTRUCTURE_TLDS> = $r3;
+        $r4 = newarray (java.lang.String)[808];
+        $r4[0] = "aaa";
+        $r4[1] = "aarp";
+        $r4[2] = "abb";
+        $r4[3] = "abbott";
+        $r4[4] = "abogado";
+        $r4[5] = "academy";
+        $r4[6] = "accenture";
+        $r4[7] = "accountant";
+        $r4[8] = "accountants";
+        $r4[9] = "aco";
+        $r4[10] = "active";
+        $r4[11] = "actor";
+        $r4[12] = "ads";
+        $r4[13] = "adult";
+        $r4[14] = "aeg";
+        $r4[15] = "aero";
+        $r4[16] = "afl";
+        $r4[17] = "agency";
+        $r4[18] = "aig";
+        $r4[19] = "airforce";
+        $r4[20] = "airtel";
+        $r4[21] = "allfinanz";
+        $r4[22] = "alsace";
+        $r4[23] = "amica";
+        $r4[24] = "amsterdam";
+        $r4[25] = "android";
+        $r4[26] = "apartments";
+        $r4[27] = "app";
+        $r4[28] = "apple";
+        $r4[29] = "aquarelle";
+        $r4[30] = "aramco";
+        $r4[31] = "archi";
+        $r4[32] = "army";
+        $r4[33] = "arte";
+        $r4[34] = "asia";
+        $r4[35] = "associates";
+        $r4[36] = "attorney";
+        $r4[37] = "auction";
+        $r4[38] = "audio";
+        $r4[39] = "auto";
+        $r4[40] = "autos";
+        $r4[41] = "axa";
+        $r4[42] = "azure";
+        $r4[43] = "band";
+        $r4[44] = "bank";
+        $r4[45] = "bar";
+        $r4[46] = "barcelona";
+        $r4[47] = "barclaycard";
+        $r4[48] = "barclays";
+        $r4[49] = "bargains";
+        $r4[50] = "bauhaus";
+        $r4[51] = "bayern";
+        $r4[52] = "bbc";
+        $r4[53] = "bbva";
+        $r4[54] = "bcn";
+        $r4[55] = "beats";
+        $r4[56] = "beer";
+        $r4[57] = "bentley";
+        $r4[58] = "berlin";
+        $r4[59] = "best";
+        $r4[60] = "bet";
+        $r4[61] = "bharti";
+        $r4[62] = "bible";
+        $r4[63] = "bid";
+        $r4[64] = "bike";
+        $r4[65] = "bing";
+        $r4[66] = "bingo";
+        $r4[67] = "bio";
+        $r4[68] = "biz";
+        $r4[69] = "black";
+        $r4[70] = "blackfriday";
+        $r4[71] = "bloomberg";
+        $r4[72] = "blue";
+        $r4[73] = "bms";
+        $r4[74] = "bmw";
+        $r4[75] = "bnl";
+        $r4[76] = "bnpparibas";
+        $r4[77] = "boats";
+        $r4[78] = "bom";
+        $r4[79] = "bond";
+        $r4[80] = "boo";
+        $r4[81] = "boots";
+        $r4[82] = "boutique";
+        $r4[83] = "bradesco";
+        $r4[84] = "bridgestone";
+        $r4[85] = "broker";
+        $r4[86] = "brother";
+        $r4[87] = "brussels";
+        $r4[88] = "budapest";
+        $r4[89] = "build";
+        $r4[90] = "builders";
+        $r4[91] = "business";
+        $r4[92] = "buzz";
+        $r4[93] = "bzh";
+        $r4[94] = "cab";
+        $r4[95] = "cafe";
+        $r4[96] = "cal";
+        $r4[97] = "camera";
+        $r4[98] = "camp";
+        $r4[99] = "cancerresearch";
+        $r4[100] = "canon";
+        $r4[101] = "capetown";
+        $r4[102] = "capital";
+        $r4[103] = "car";
+        $r4[104] = "caravan";
+        $r4[105] = "cards";
+        $r4[106] = "care";
+        $r4[107] = "career";
+        $r4[108] = "careers";
+        $r4[109] = "cars";
+        $r4[110] = "cartier";
+        $r4[111] = "casa";
+        $r4[112] = "cash";
+        $r4[113] = "casino";
+        $r4[114] = "cat";
+        $r4[115] = "catering";
+        $r4[116] = "cba";
+        $r4[117] = "cbn";
+        $r4[118] = "ceb";
+        $r4[119] = "center";
+        $r4[120] = "ceo";
+        $r4[121] = "cern";
+        $r4[122] = "cfa";
+        $r4[123] = "cfd";
+        $r4[124] = "chanel";
+        $r4[125] = "channel";
+        $r4[126] = "chat";
+        $r4[127] = "cheap";
+        $r4[128] = "chloe";
+        $r4[129] = "christmas";
+        $r4[130] = "chrome";
+        $r4[131] = "church";
+        $r4[132] = "cipriani";
+        $r4[133] = "cisco";
+        $r4[134] = "citic";
+        $r4[135] = "city";
+        $r4[136] = "claims";
+        $r4[137] = "cleaning";
+        $r4[138] = "click";
+        $r4[139] = "clinic";
+        $r4[140] = "clothing";
+        $r4[141] = "cloud";
+        $r4[142] = "club";
+        $r4[143] = "clubmed";
+        $r4[144] = "coach";
+        $r4[145] = "codes";
+        $r4[146] = "coffee";
+        $r4[147] = "college";
+        $r4[148] = "cologne";
+        $r4[149] = "com";
+        $r4[150] = "commbank";
+        $r4[151] = "community";
+        $r4[152] = "company";
+        $r4[153] = "computer";
+        $r4[154] = "condos";
+        $r4[155] = "construction";
+        $r4[156] = "consulting";
+        $r4[157] = "contractors";
+        $r4[158] = "cooking";
+        $r4[159] = "cool";
+        $r4[160] = "coop";
+        $r4[161] = "corsica";
+        $r4[162] = "country";
+        $r4[163] = "coupons";
+        $r4[164] = "courses";
+        $r4[165] = "credit";
+        $r4[166] = "creditcard";
+        $r4[167] = "cricket";
+        $r4[168] = "crown";
+        $r4[169] = "crs";
+        $r4[170] = "cruises";
+        $r4[171] = "csc";
+        $r4[172] = "cuisinella";
+        $r4[173] = "cymru";
+        $r4[174] = "cyou";
+        $r4[175] = "dabur";
+        $r4[176] = "dad";
+        $r4[177] = "dance";
+        $r4[178] = "date";
+        $r4[179] = "dating";
+        $r4[180] = "datsun";
+        $r4[181] = "day";
+        $r4[182] = "dclk";
+        $r4[183] = "deals";
+        $r4[184] = "degree";
+        $r4[185] = "delivery";
+        $r4[186] = "dell";
+        $r4[187] = "delta";
+        $r4[188] = "democrat";
+        $r4[189] = "dental";
+        $r4[190] = "dentist";
+        $r4[191] = "desi";
+        $r4[192] = "design";
+        $r4[193] = "dev";
+        $r4[194] = "diamonds";
+        $r4[195] = "diet";
+        $r4[196] = "digital";
+        $r4[197] = "direct";
+        $r4[198] = "directory";
+        $r4[199] = "discount";
+        $r4[200] = "dnp";
+        $r4[201] = "docs";
+        $r4[202] = "dog";
+        $r4[203] = "doha";
+        $r4[204] = "domains";
+        $r4[205] = "doosan";
+        $r4[206] = "download";
+        $r4[207] = "drive";
+        $r4[208] = "durban";
+        $r4[209] = "dvag";
+        $r4[210] = "earth";
+        $r4[211] = "eat";
+        $r4[212] = "edu";
+        $r4[213] = "education";
+        $r4[214] = "email";
+        $r4[215] = "emerck";
+        $r4[216] = "energy";
+        $r4[217] = "engineer";
+        $r4[218] = "engineering";
+        $r4[219] = "enterprises";
+        $r4[220] = "epson";
+        $r4[221] = "equipment";
+        $r4[222] = "erni";
+        $r4[223] = "esq";
+        $r4[224] = "estate";
+        $r4[225] = "eurovision";
+        $r4[226] = "eus";
+        $r4[227] = "events";
+        $r4[228] = "everbank";
+        $r4[229] = "exchange";
+        $r4[230] = "expert";
+        $r4[231] = "exposed";
+        $r4[232] = "express";
+        $r4[233] = "fage";
+        $r4[234] = "fail";
+        $r4[235] = "faith";
+        $r4[236] = "family";
+        $r4[237] = "fan";
+        $r4[238] = "fans";
+        $r4[239] = "farm";
+        $r4[240] = "fashion";
+        $r4[241] = "feedback";
+        $r4[242] = "ferrero";
+        $r4[243] = "film";
+        $r4[244] = "final";
+        $r4[245] = "finance";
+        $r4[246] = "financial";
+        $r4[247] = "firmdale";
+        $r4[248] = "fish";
+        $r4[249] = "fishing";
+        $r4[250] = "fit";
+        $r4[251] = "fitness";
+        $r4[252] = "flights";
+        $r4[253] = "florist";
+        $r4[254] = "flowers";
+        $r4[255] = "flsmidth";
+        $r4[256] = "fly";
+        $r4[257] = "foo";
+        $r4[258] = "football";
+        $r4[259] = "forex";
+        $r4[260] = "forsale";
+        $r4[261] = "forum";
+        $r4[262] = "foundation";
+        $r4[263] = "frl";
+        $r4[264] = "frogans";
+        $r4[265] = "fund";
+        $r4[266] = "furniture";
+        $r4[267] = "futbol";
+        $r4[268] = "fyi";
+        $r4[269] = "gal";
+        $r4[270] = "gallery";
+        $r4[271] = "game";
+        $r4[272] = "garden";
+        $r4[273] = "gbiz";
+        $r4[274] = "gdn";
+        $r4[275] = "gea";
+        $r4[276] = "gent";
+        $r4[277] = "genting";
+        $r4[278] = "ggee";
+        $r4[279] = "gift";
+        $r4[280] = "gifts";
+        $r4[281] = "gives";
+        $r4[282] = "giving";
+        $r4[283] = "glass";
+        $r4[284] = "gle";
+        $r4[285] = "global";
+        $r4[286] = "globo";
+        $r4[287] = "gmail";
+        $r4[288] = "gmo";
+        $r4[289] = "gmx";
+        $r4[290] = "gold";
+        $r4[291] = "goldpoint";
+        $r4[292] = "golf";
+        $r4[293] = "goo";
+        $r4[294] = "goog";
+        $r4[295] = "google";
+        $r4[296] = "gop";
+        $r4[297] = "gov";
+        $r4[298] = "graphics";
+        $r4[299] = "gratis";
+        $r4[300] = "green";
+        $r4[301] = "gripe";
+        $r4[302] = "group";
+        $r4[303] = "gucci";
+        $r4[304] = "guge";
+        $r4[305] = "guide";
+        $r4[306] = "guitars";
+        $r4[307] = "guru";
+        $r4[308] = "hamburg";
+        $r4[309] = "hangout";
+        $r4[310] = "haus";
+        $r4[311] = "healthcare";
+        $r4[312] = "help";
+        $r4[313] = "here";
+        $r4[314] = "hermes";
+        $r4[315] = "hiphop";
+        $r4[316] = "hitachi";
+        $r4[317] = "hiv";
+        $r4[318] = "hockey";
+        $r4[319] = "holdings";
+        $r4[320] = "holiday";
+        $r4[321] = "homedepot";
+        $r4[322] = "homes";
+        $r4[323] = "honda";
+        $r4[324] = "horse";
+        $r4[325] = "host";
+        $r4[326] = "hosting";
+        $r4[327] = "hoteles";
+        $r4[328] = "hotmail";
+        $r4[329] = "house";
+        $r4[330] = "how";
+        $r4[331] = "hsbc";
+        $r4[332] = "hyundai";
+        $r4[333] = "ibm";
+        $r4[334] = "icbc";
+        $r4[335] = "ice";
+        $r4[336] = "icu";
+        $r4[337] = "ifm";
+        $r4[338] = "iinet";
+        $r4[339] = "immo";
+        $r4[340] = "immobilien";
+        $r4[341] = "industries";
+        $r4[342] = "infiniti";
+        $r4[343] = "info";
+        $r4[344] = "ing";
+        $r4[345] = "ink";
+        $r4[346] = "institute";
+        $r4[347] = "insure";
+        $r4[348] = "int";
+        $r4[349] = "international";
+        $r4[350] = "investments";
+        $r4[351] = "ipiranga";
+        $r4[352] = "irish";
+        $r4[353] = "ist";
+        $r4[354] = "istanbul";
+        $r4[355] = "itau";
+        $r4[356] = "iwc";
+        $r4[357] = "jaguar";
+        $r4[358] = "java";
+        $r4[359] = "jcb";
+        $r4[360] = "jetzt";
+        $r4[361] = "jewelry";
+        $r4[362] = "jlc";
+        $r4[363] = "jll";
+        $r4[364] = "jobs";
+        $r4[365] = "joburg";
+        $r4[366] = "jprs";
+        $r4[367] = "juegos";
+        $r4[368] = "kaufen";
+        $r4[369] = "kddi";
+        $r4[370] = "kia";
+        $r4[371] = "kim";
+        $r4[372] = "kinder";
+        $r4[373] = "kitchen";
+        $r4[374] = "kiwi";
+        $r4[375] = "koeln";
+        $r4[376] = "komatsu";
+        $r4[377] = "krd";
+        $r4[378] = "kred";
+        $r4[379] = "kyoto";
+        $r4[380] = "lacaixa";
+        $r4[381] = "lancaster";
+        $r4[382] = "land";
+        $r4[383] = "landrover";
+        $r4[384] = "lasalle";
+        $r4[385] = "lat";
+        $r4[386] = "latrobe";
+        $r4[387] = "law";
+        $r4[388] = "lawyer";
+        $r4[389] = "lds";
+        $r4[390] = "lease";
+        $r4[391] = "leclerc";
+        $r4[392] = "legal";
+        $r4[393] = "lexus";
+        $r4[394] = "lgbt";
+        $r4[395] = "liaison";
+        $r4[396] = "lidl";
+        $r4[397] = "life";
+        $r4[398] = "lighting";
+        $r4[399] = "limited";
+        $r4[400] = "limo";
+        $r4[401] = "linde";
+        $r4[402] = "link";
+        $r4[403] = "live";
+        $r4[404] = "lixil";
+        $r4[405] = "loan";
+        $r4[406] = "loans";
+        $r4[407] = "lol";
+        $r4[408] = "london";
+        $r4[409] = "lotte";
+        $r4[410] = "lotto";
+        $r4[411] = "love";
+        $r4[412] = "ltd";
+        $r4[413] = "ltda";
+        $r4[414] = "lupin";
+        $r4[415] = "luxe";
+        $r4[416] = "luxury";
+        $r4[417] = "madrid";
+        $r4[418] = "maif";
+        $r4[419] = "maison";
+        $r4[420] = "man";
+        $r4[421] = "management";
+        $r4[422] = "mango";
+        $r4[423] = "market";
+        $r4[424] = "marketing";
+        $r4[425] = "markets";
+        $r4[426] = "marriott";
+        $r4[427] = "mba";
+        $r4[428] = "media";
+        $r4[429] = "meet";
+        $r4[430] = "melbourne";
+        $r4[431] = "meme";
+        $r4[432] = "memorial";
+        $r4[433] = "men";
+        $r4[434] = "menu";
+        $r4[435] = "meo";
+        $r4[436] = "miami";
+        $r4[437] = "microsoft";
+        $r4[438] = "mil";
+        $r4[439] = "mini";
+        $r4[440] = "mma";
+        $r4[441] = "mobi";
+        $r4[442] = "moda";
+        $r4[443] = "moe";
+        $r4[444] = "moi";
+        $r4[445] = "mom";
+        $r4[446] = "monash";
+        $r4[447] = "money";
+        $r4[448] = "montblanc";
+        $r4[449] = "mormon";
+        $r4[450] = "mortgage";
+        $r4[451] = "moscow";
+        $r4[452] = "motorcycles";
+        $r4[453] = "mov";
+        $r4[454] = "movie";
+        $r4[455] = "movistar";
+        $r4[456] = "mtn";
+        $r4[457] = "mtpc";
+        $r4[458] = "mtr";
+        $r4[459] = "museum";
+        $r4[460] = "mutuelle";
+        $r4[461] = "nadex";
+        $r4[462] = "nagoya";
+        $r4[463] = "name";
+        $r4[464] = "navy";
+        $r4[465] = "nec";
+        $r4[466] = "net";
+        $r4[467] = "netbank";
+        $r4[468] = "network";
+        $r4[469] = "neustar";
+        $r4[470] = "new";
+        $r4[471] = "news";
+        $r4[472] = "nexus";
+        $r4[473] = "ngo";
+        $r4[474] = "nhk";
+        $r4[475] = "nico";
+        $r4[476] = "ninja";
+        $r4[477] = "nissan";
+        $r4[478] = "nokia";
+        $r4[479] = "nra";
+        $r4[480] = "nrw";
+        $r4[481] = "ntt";
+        $r4[482] = "nyc";
+        $r4[483] = "obi";
+        $r4[484] = "office";
+        $r4[485] = "okinawa";
+        $r4[486] = "omega";
+        $r4[487] = "one";
+        $r4[488] = "ong";
+        $r4[489] = "onl";
+        $r4[490] = "online";
+        $r4[491] = "ooo";
+        $r4[492] = "oracle";
+        $r4[493] = "orange";
+        $r4[494] = "org";
+        $r4[495] = "organic";
+        $r4[496] = "osaka";
+        $r4[497] = "otsuka";
+        $r4[498] = "ovh";
+        $r4[499] = "page";
+        $r4[500] = "panerai";
+        $r4[501] = "paris";
+        $r4[502] = "partners";
+        $r4[503] = "parts";
+        $r4[504] = "party";
+        $r4[505] = "pet";
+        $r4[506] = "pharmacy";
+        $r4[507] = "philips";
+        $r4[508] = "photo";
+        $r4[509] = "photography";
+        $r4[510] = "photos";
+        $r4[511] = "physio";
+        $r4[512] = "piaget";
+        $r4[513] = "pics";
+        $r4[514] = "pictet";
+        $r4[515] = "pictures";
+        $r4[516] = "ping";
+        $r4[517] = "pink";
+        $r4[518] = "pizza";
+        $r4[519] = "place";
+        $r4[520] = "play";
+        $r4[521] = "playstation";
+        $r4[522] = "plumbing";
+        $r4[523] = "plus";
+        $r4[524] = "pohl";
+        $r4[525] = "poker";
+        $r4[526] = "porn";
+        $r4[527] = "post";
+        $r4[528] = "praxi";
+        $r4[529] = "press";
+        $r4[530] = "pro";
+        $r4[531] = "prod";
+        $r4[532] = "productions";
+        $r4[533] = "prof";
+        $r4[534] = "properties";
+        $r4[535] = "property";
+        $r4[536] = "protection";
+        $r4[537] = "pub";
+        $r4[538] = "qpon";
+        $r4[539] = "quebec";
+        $r4[540] = "racing";
+        $r4[541] = "realtor";
+        $r4[542] = "realty";
+        $r4[543] = "recipes";
+        $r4[544] = "red";
+        $r4[545] = "redstone";
+        $r4[546] = "rehab";
+        $r4[547] = "reise";
+        $r4[548] = "reisen";
+        $r4[549] = "reit";
+        $r4[550] = "ren";
+        $r4[551] = "rent";
+        $r4[552] = "rentals";
+        $r4[553] = "repair";
+        $r4[554] = "report";
+        $r4[555] = "republican";
+        $r4[556] = "rest";
+        $r4[557] = "restaurant";
+        $r4[558] = "review";
+        $r4[559] = "reviews";
+        $r4[560] = "rich";
+        $r4[561] = "ricoh";
+        $r4[562] = "rio";
+        $r4[563] = "rip";
+        $r4[564] = "rocher";
+        $r4[565] = "rocks";
+        $r4[566] = "rodeo";
+        $r4[567] = "rsvp";
+        $r4[568] = "ruhr";
+        $r4[569] = "run";
+        $r4[570] = "rwe";
+        $r4[571] = "ryukyu";
+        $r4[572] = "saarland";
+        $r4[573] = "sakura";
+        $r4[574] = "sale";
+        $r4[575] = "samsung";
+        $r4[576] = "sandvik";
+        $r4[577] = "sandvikcoromant";
+        $r4[578] = "sanofi";
+        $r4[579] = "sap";
+        $r4[580] = "sapo";
+        $r4[581] = "sarl";
+        $r4[582] = "saxo";
+        $r4[583] = "sbs";
+        $r4[584] = "sca";
+        $r4[585] = "scb";
+        $r4[586] = "schmidt";
+        $r4[587] = "scholarships";
+        $r4[588] = "school";
+        $r4[589] = "schule";
+        $r4[590] = "schwarz";
+        $r4[591] = "science";
+        $r4[592] = "scor";
+        $r4[593] = "scot";
+        $r4[594] = "seat";
+        $r4[595] = "security";
+        $r4[596] = "seek";
+        $r4[597] = "sener";
+        $r4[598] = "services";
+        $r4[599] = "seven";
+        $r4[600] = "sew";
+        $r4[601] = "sex";
+        $r4[602] = "sexy";
+        $r4[603] = "shiksha";
+        $r4[604] = "shoes";
+        $r4[605] = "show";
+        $r4[606] = "shriram";
+        $r4[607] = "singles";
+        $r4[608] = "site";
+        $r4[609] = "ski";
+        $r4[610] = "sky";
+        $r4[611] = "skype";
+        $r4[612] = "sncf";
+        $r4[613] = "soccer";
+        $r4[614] = "social";
+        $r4[615] = "software";
+        $r4[616] = "sohu";
+        $r4[617] = "solar";
+        $r4[618] = "solutions";
+        $r4[619] = "sony";
+        $r4[620] = "soy";
+        $r4[621] = "space";
+        $r4[622] = "spiegel";
+        $r4[623] = "spreadbetting";
+        $r4[624] = "srl";
+        $r4[625] = "stada";
+        $r4[626] = "starhub";
+        $r4[627] = "statoil";
+        $r4[628] = "stc";
+        $r4[629] = "stcgroup";
+        $r4[630] = "stockholm";
+        $r4[631] = "studio";
+        $r4[632] = "study";
+        $r4[633] = "style";
+        $r4[634] = "sucks";
+        $r4[635] = "supplies";
+        $r4[636] = "supply";
+        $r4[637] = "support";
+        $r4[638] = "surf";
+        $r4[639] = "surgery";
+        $r4[640] = "suzuki";
+        $r4[641] = "swatch";
+        $r4[642] = "swiss";
+        $r4[643] = "sydney";
+        $r4[644] = "systems";
+        $r4[645] = "taipei";
+        $r4[646] = "tatamotors";
+        $r4[647] = "tatar";
+        $r4[648] = "tattoo";
+        $r4[649] = "tax";
+        $r4[650] = "taxi";
+        $r4[651] = "team";
+        $r4[652] = "tech";
+        $r4[653] = "technology";
+        $r4[654] = "tel";
+        $r4[655] = "telefonica";
+        $r4[656] = "temasek";
+        $r4[657] = "tennis";
+        $r4[658] = "thd";
+        $r4[659] = "theater";
+        $r4[660] = "theatre";
+        $r4[661] = "tickets";
+        $r4[662] = "tienda";
+        $r4[663] = "tips";
+        $r4[664] = "tires";
+        $r4[665] = "tirol";
+        $r4[666] = "today";
+        $r4[667] = "tokyo";
+        $r4[668] = "tools";
+        $r4[669] = "top";
+        $r4[670] = "toray";
+        $r4[671] = "toshiba";
+        $r4[672] = "tours";
+        $r4[673] = "town";
+        $r4[674] = "toyota";
+        $r4[675] = "toys";
+        $r4[676] = "trade";
+        $r4[677] = "trading";
+        $r4[678] = "training";
+        $r4[679] = "travel";
+        $r4[680] = "trust";
+        $r4[681] = "tui";
+        $r4[682] = "ubs";
+        $r4[683] = "university";
+        $r4[684] = "uno";
+        $r4[685] = "uol";
+        $r4[686] = "vacations";
+        $r4[687] = "vegas";
+        $r4[688] = "ventures";
+        $r4[689] = "versicherung";
+        $r4[690] = "vet";
+        $r4[691] = "viajes";
+        $r4[692] = "video";
+        $r4[693] = "villas";
+        $r4[694] = "vin";
+        $r4[695] = "virgin";
+        $r4[696] = "vision";
+        $r4[697] = "vista";
+        $r4[698] = "vistaprint";
+        $r4[699] = "viva";
+        $r4[700] = "vlaanderen";
+        $r4[701] = "vodka";
+        $r4[702] = "vote";
+        $r4[703] = "voting";
+        $r4[704] = "voto";
+        $r4[705] = "voyage";
+        $r4[706] = "wales";
+        $r4[707] = "walter";
+        $r4[708] = "wang";
+        $r4[709] = "watch";
+        $r4[710] = "webcam";
+        $r4[711] = "website";
+        $r4[712] = "wed";
+        $r4[713] = "wedding";
+        $r4[714] = "weir";
+        $r4[715] = "whoswho";
+        $r4[716] = "wien";
+        $r4[717] = "wiki";
+        $r4[718] = "williamhill";
+        $r4[719] = "win";
+        $r4[720] = "windows";
+        $r4[721] = "wine";
+        $r4[722] = "wme";
+        $r4[723] = "work";
+        $r4[724] = "works";
+        $r4[725] = "world";
+        $r4[726] = "wtc";
+        $r4[727] = "wtf";
+        $r4[728] = "xbox";
+        $r4[729] = "xerox";
+        $r4[730] = "xin";
+        $r4[731] = "xn--11b4c3d";
+        $r4[732] = "xn--1qqw23a";
+        $r4[733] = "xn--30rr7y";
+        $r4[734] = "xn--3bst00m";
+        $r4[735] = "xn--3ds443g";
+        $r4[736] = "xn--3pxu8k";
+        $r4[737] = "xn--42c2d9a";
+        $r4[738] = "xn--45q11c";
+        $r4[739] = "xn--4gbrim";
+        $r4[740] = "xn--55qw42g";
+        $r4[741] = "xn--55qx5d";
+        $r4[742] = "xn--6frz82g";
+        $r4[743] = "xn--6qq986b3xl";
+        $r4[744] = "xn--80adxhks";
+        $r4[745] = "xn--80asehdb";
+        $r4[746] = "xn--80aswg";
+        $r4[747] = "xn--9dbq2a";
+        $r4[748] = "xn--9et52u";
+        $r4[749] = "xn--b4w605ferd";
+        $r4[750] = "xn--c1avg";
+        $r4[751] = "xn--c2br7g";
+        $r4[752] = "xn--cg4bki";
+        $r4[753] = "xn--czr694b";
+        $r4[754] = "xn--czrs0t";
+        $r4[755] = "xn--czru2d";
+        $r4[756] = "xn--d1acj3b";
+        $r4[757] = "xn--efvy88h";
+        $r4[758] = "xn--estv75g";
+        $r4[759] = "xn--fhbei";
+        $r4[760] = "xn--fiq228c5hs";
+        $r4[761] = "xn--fiq64b";
+        $r4[762] = "xn--fjq720a";
+        $r4[763] = "xn--flw351e";
+        $r4[764] = "xn--hxt814e";
+        $r4[765] = "xn--i1b6b1a6a2e";
+        $r4[766] = "xn--imr513n";
+        $r4[767] = "xn--io0a7i";
+        $r4[768] = "xn--j1aef";
+        $r4[769] = "xn--kcrx77d1x4a";
+        $r4[770] = "xn--kput3i";
+        $r4[771] = "xn--mgba3a3ejt";
+        $r4[772] = "xn--mgbab2bd";
+        $r4[773] = "xn--mk1bu44c";
+        $r4[774] = "xn--mxtq1m";
+        $r4[775] = "xn--ngbc5azd";
+        $r4[776] = "xn--nqv7f";
+        $r4[777] = "xn--nqv7fs00ema";
+        $r4[778] = "xn--nyqy26a";
+        $r4[779] = "xn--p1acf";
+        $r4[780] = "xn--pssy2u";
+        $r4[781] = "xn--q9jyb4c";
+        $r4[782] = "xn--qcka1pmc";
+        $r4[783] = "xn--rhqv96g";
+        $r4[784] = "xn--ses554g";
+        $r4[785] = "xn--t60b56a";
+        $r4[786] = "xn--tckwe";
+        $r4[787] = "xn--unup4y";
+        $r4[788] = "xn--vermgensberater-ctb";
+        $r4[789] = "xn--vermgensberatung-pwb";
+        $r4[790] = "xn--vhquv";
+        $r4[791] = "xn--vuq861b";
+        $r4[792] = "xn--xhq521b";
+        $r4[793] = "xn--zfr164b";
+        $r4[794] = "xperia";
+        $r4[795] = "xxx";
+        $r4[796] = "xyz";
+        $r4[797] = "yachts";
+        $r4[798] = "yamaxun";
+        $r4[799] = "yandex";
+        $r4[800] = "yodobashi";
+        $r4[801] = "yoga";
+        $r4[802] = "yokohama";
+        $r4[803] = "youtube";
+        $r4[804] = "zara";
+        $r4[805] = "zip";
+        $r4[806] = "zone";
+        $r4[807] = "zuerich";
+        <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] GENERIC_TLDS> = $r4;
+        $r5 = newarray (java.lang.String)[290];
+        $r5[0] = "ac";
+        $r5[1] = "ad";
+        $r5[2] = "ae";
+        $r5[3] = "af";
+        $r5[4] = "ag";
+        $r5[5] = "ai";
+        $r5[6] = "al";
+        $r5[7] = "am";
+        $r5[8] = "ao";
+        $r5[9] = "aq";
+        $r5[10] = "ar";
+        $r5[11] = "as";
+        $r5[12] = "at";
+        $r5[13] = "au";
+        $r5[14] = "aw";
+        $r5[15] = "ax";
+        $r5[16] = "az";
+        $r5[17] = "ba";
+        $r5[18] = "bb";
+        $r5[19] = "bd";
+        $r5[20] = "be";
+        $r5[21] = "bf";
+        $r5[22] = "bg";
+        $r5[23] = "bh";
+        $r5[24] = "bi";
+        $r5[25] = "bj";
+        $r5[26] = "bm";
+        $r5[27] = "bn";
+        $r5[28] = "bo";
+        $r5[29] = "br";
+        $r5[30] = "bs";
+        $r5[31] = "bt";
+        $r5[32] = "bv";
+        $r5[33] = "bw";
+        $r5[34] = "by";
+        $r5[35] = "bz";
+        $r5[36] = "ca";
+        $r5[37] = "cc";
+        $r5[38] = "cd";
+        $r5[39] = "cf";
+        $r5[40] = "cg";
+        $r5[41] = "ch";
+        $r5[42] = "ci";
+        $r5[43] = "ck";
+        $r5[44] = "cl";
+        $r5[45] = "cm";
+        $r5[46] = "cn";
+        $r5[47] = "co";
+        $r5[48] = "cr";
+        $r5[49] = "cu";
+        $r5[50] = "cv";
+        $r5[51] = "cw";
+        $r5[52] = "cx";
+        $r5[53] = "cy";
+        $r5[54] = "cz";
+        $r5[55] = "de";
+        $r5[56] = "dj";
+        $r5[57] = "dk";
+        $r5[58] = "dm";
+        $r5[59] = "do";
+        $r5[60] = "dz";
+        $r5[61] = "ec";
+        $r5[62] = "ee";
+        $r5[63] = "eg";
+        $r5[64] = "er";
+        $r5[65] = "es";
+        $r5[66] = "et";
+        $r5[67] = "eu";
+        $r5[68] = "fi";
+        $r5[69] = "fj";
+        $r5[70] = "fk";
+        $r5[71] = "fm";
+        $r5[72] = "fo";
+        $r5[73] = "fr";
+        $r5[74] = "ga";
+        $r5[75] = "gb";
+        $r5[76] = "gd";
+        $r5[77] = "ge";
+        $r5[78] = "gf";
+        $r5[79] = "gg";
+        $r5[80] = "gh";
+        $r5[81] = "gi";
+        $r5[82] = "gl";
+        $r5[83] = "gm";
+        $r5[84] = "gn";
+        $r5[85] = "gp";
+        $r5[86] = "gq";
+        $r5[87] = "gr";
+        $r5[88] = "gs";
+        $r5[89] = "gt";
+        $r5[90] = "gu";
+        $r5[91] = "gw";
+        $r5[92] = "gy";
+        $r5[93] = "hk";
+        $r5[94] = "hm";
+        $r5[95] = "hn";
+        $r5[96] = "hr";
+        $r5[97] = "ht";
+        $r5[98] = "hu";
+        $r5[99] = "id";
+        $r5[100] = "ie";
+        $r5[101] = "il";
+        $r5[102] = "im";
+        $r5[103] = "in";
+        $r5[104] = "io";
+        $r5[105] = "iq";
+        $r5[106] = "ir";
+        $r5[107] = "is";
+        $r5[108] = "it";
+        $r5[109] = "je";
+        $r5[110] = "jm";
+        $r5[111] = "jo";
+        $r5[112] = "jp";
+        $r5[113] = "ke";
+        $r5[114] = "kg";
+        $r5[115] = "kh";
+        $r5[116] = "ki";
+        $r5[117] = "km";
+        $r5[118] = "kn";
+        $r5[119] = "kp";
+        $r5[120] = "kr";
+        $r5[121] = "kw";
+        $r5[122] = "ky";
+        $r5[123] = "kz";
+        $r5[124] = "la";
+        $r5[125] = "lb";
+        $r5[126] = "lc";
+        $r5[127] = "li";
+        $r5[128] = "lk";
+        $r5[129] = "lr";
+        $r5[130] = "ls";
+        $r5[131] = "lt";
+        $r5[132] = "lu";
+        $r5[133] = "lv";
+        $r5[134] = "ly";
+        $r5[135] = "ma";
+        $r5[136] = "mc";
+        $r5[137] = "md";
+        $r5[138] = "me";
+        $r5[139] = "mg";
+        $r5[140] = "mh";
+        $r5[141] = "mk";
+        $r5[142] = "ml";
+        $r5[143] = "mm";
+        $r5[144] = "mn";
+        $r5[145] = "mo";
+        $r5[146] = "mp";
+        $r5[147] = "mq";
+        $r5[148] = "mr";
+        $r5[149] = "ms";
+        $r5[150] = "mt";
+        $r5[151] = "mu";
+        $r5[152] = "mv";
+        $r5[153] = "mw";
+        $r5[154] = "mx";
+        $r5[155] = "my";
+        $r5[156] = "mz";
+        $r5[157] = "na";
+        $r5[158] = "nc";
+        $r5[159] = "ne";
+        $r5[160] = "nf";
+        $r5[161] = "ng";
+        $r5[162] = "ni";
+        $r5[163] = "nl";
+        $r5[164] = "no";
+        $r5[165] = "np";
+        $r5[166] = "nr";
+        $r5[167] = "nu";
+        $r5[168] = "nz";
+        $r5[169] = "om";
+        $r5[170] = "pa";
+        $r5[171] = "pe";
+        $r5[172] = "pf";
+        $r5[173] = "pg";
+        $r5[174] = "ph";
+        $r5[175] = "pk";
+        $r5[176] = "pl";
+        $r5[177] = "pm";
+        $r5[178] = "pn";
+        $r5[179] = "pr";
+        $r5[180] = "ps";
+        $r5[181] = "pt";
+        $r5[182] = "pw";
+        $r5[183] = "py";
+        $r5[184] = "qa";
+        $r5[185] = "re";
+        $r5[186] = "ro";
+        $r5[187] = "rs";
+        $r5[188] = "ru";
+        $r5[189] = "rw";
+        $r5[190] = "sa";
+        $r5[191] = "sb";
+        $r5[192] = "sc";
+        $r5[193] = "sd";
+        $r5[194] = "se";
+        $r5[195] = "sg";
+        $r5[196] = "sh";
+        $r5[197] = "si";
+        $r5[198] = "sj";
+        $r5[199] = "sk";
+        $r5[200] = "sl";
+        $r5[201] = "sm";
+        $r5[202] = "sn";
+        $r5[203] = "so";
+        $r5[204] = "sr";
+        $r5[205] = "st";
+        $r5[206] = "su";
+        $r5[207] = "sv";
+        $r5[208] = "sx";
+        $r5[209] = "sy";
+        $r5[210] = "sz";
+        $r5[211] = "tc";
+        $r5[212] = "td";
+        $r5[213] = "tf";
+        $r5[214] = "tg";
+        $r5[215] = "th";
+        $r5[216] = "tj";
+        $r5[217] = "tk";
+        $r5[218] = "tl";
+        $r5[219] = "tm";
+        $r5[220] = "tn";
+        $r5[221] = "to";
+        $r5[222] = "tr";
+        $r5[223] = "tt";
+        $r5[224] = "tv";
+        $r5[225] = "tw";
+        $r5[226] = "tz";
+        $r5[227] = "ua";
+        $r5[228] = "ug";
+        $r5[229] = "uk";
+        $r5[230] = "us";
+        $r5[231] = "uy";
+        $r5[232] = "uz";
+        $r5[233] = "va";
+        $r5[234] = "vc";
+        $r5[235] = "ve";
+        $r5[236] = "vg";
+        $r5[237] = "vi";
+        $r5[238] = "vn";
+        $r5[239] = "vu";
+        $r5[240] = "wf";
+        $r5[241] = "ws";
+        $r5[242] = "xn--3e0b707e";
+        $r5[243] = "xn--45brj9c";
+        $r5[244] = "xn--80ao21a";
+        $r5[245] = "xn--90a3ac";
+        $r5[246] = "xn--90ais";
+        $r5[247] = "xn--clchc0ea0b2g2a9gcd";
+        $r5[248] = "xn--d1alf";
+        $r5[249] = "xn--fiqs8s";
+        $r5[250] = "xn--fiqz9s";
+        $r5[251] = "xn--fpcrj9c3d";
+        $r5[252] = "xn--fzc2c9e2c";
+        $r5[253] = "xn--gecrj9c";
+        $r5[254] = "xn--h2brj9c";
+        $r5[255] = "xn--j1amh";
+        $r5[256] = "xn--j6w193g";
+        $r5[257] = "xn--kprw13d";
+        $r5[258] = "xn--kpry57d";
+        $r5[259] = "xn--l1acc";
+        $r5[260] = "xn--lgbbat1ad8j";
+        $r5[261] = "xn--mgb9awbf";
+        $r5[262] = "xn--mgba3a4f16a";
+        $r5[263] = "xn--mgbaam7a8h";
+        $r5[264] = "xn--mgbayh7gpa";
+        $r5[265] = "xn--mgbbh1a71e";
+        $r5[266] = "xn--mgbc0a9azcg";
+        $r5[267] = "xn--mgberp4a5d4ar";
+        $r5[268] = "xn--mgbpl2fh";
+        $r5[269] = "xn--mgbtx2b";
+        $r5[270] = "xn--mgbx4cd0ab";
+        $r5[271] = "xn--node";
+        $r5[272] = "xn--o3cw4h";
+        $r5[273] = "xn--ogbpf8fl";
+        $r5[274] = "xn--p1ai";
+        $r5[275] = "xn--pgbs0dh";
+        $r5[276] = "xn--qxam";
+        $r5[277] = "xn--s9brj9c";
+        $r5[278] = "xn--wgbh1c";
+        $r5[279] = "xn--wgbl6a";
+        $r5[280] = "xn--xkc2al3hye2a";
+        $r5[281] = "xn--xkc2dl3a5ee0h";
+        $r5[282] = "xn--y9a3aq";
+        $r5[283] = "xn--yfro4i67o";
+        $r5[284] = "xn--ygbi2ammx";
+        $r5[285] = "ye";
+        $r5[286] = "yt";
+        $r5[287] = "za";
+        $r5[288] = "zm";
+        $r5[289] = "zw";
+        <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] COUNTRY_CODE_TLDS> = $r5;
+        $r6 = newarray (java.lang.String)[2];
+        $r6[0] = "localdomain";
+        $r6[1] = "localhost";
+        <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] LOCAL_TLDS> = $r6;
+        <org.apache.commons.validator.routines.DomainValidator: boolean inUse> = 0;
+        $r7 = <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] EMPTY_STRING_ARRAY>;
+        <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] COUNTRY_CODE_TLDS_PLUS> = $r7;
+        $r8 = <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] EMPTY_STRING_ARRAY>;
+        <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] GENERIC_TLDS_PLUS> = $r8;
+        $r9 = <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] EMPTY_STRING_ARRAY>;
+        <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] COUNTRY_CODE_TLDS_MINUS> = $r9;
+        $r10 = <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] EMPTY_STRING_ARRAY>;
+        <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] GENERIC_TLDS_MINUS> = $r10;
+        return;
+    }
+
+    public static synchronized org.apache.commons.validator.routines.DomainValidator getInstance()
+    {
+        org.apache.commons.validator.routines.DomainValidator $r0;
+
+        <org.apache.commons.validator.routines.DomainValidator: boolean inUse> = 1;
+        $r0 = <org.apache.commons.validator.routines.DomainValidator: org.apache.commons.validator.routines.DomainValidator DOMAIN_VALIDATOR>;
+        return $r0;
+    }
+
+    public static synchronized org.apache.commons.validator.routines.DomainValidator getInstance(boolean)
+    {
+        boolean z0;
+        org.apache.commons.validator.routines.DomainValidator $r0, $r1;
+
+        z0 := @parameter0: boolean;
+        <org.apache.commons.validator.routines.DomainValidator: boolean inUse> = 1;
+        if z0 == 0 goto label0;
+
+        $r0 = <org.apache.commons.validator.routines.DomainValidator: org.apache.commons.validator.routines.DomainValidator DOMAIN_VALIDATOR_WITH_LOCAL>;
+        return $r0;
+
+     label0:
+        $r1 = <org.apache.commons.validator.routines.DomainValidator: org.apache.commons.validator.routines.DomainValidator DOMAIN_VALIDATOR>;
+        return $r1;
+    }
+
+    private void <init>(boolean)
+    {
+        org.apache.commons.validator.routines.DomainValidator r0;
+        boolean z0;
+        org.apache.commons.validator.routines.RegexValidator $r1, $r2;
+
+        r0 := @this: org.apache.commons.validator.routines.DomainValidator;
+        z0 := @parameter0: boolean;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        $r1 = new org.apache.commons.validator.routines.RegexValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.RegexValidator: void <init>(java.lang.String)>("^(?:\\p{Alnum}(?>[\\p{Alnum}-]{0,61}\\p{Alnum})?\\.)+(\\p{Alpha}(?>[\\p{Alnum}-]{0,61}\\p{Alnum})?)\\.?$");
+        r0.<org.apache.commons.validator.routines.DomainValidator: org.apache.commons.validator.routines.RegexValidator domainRegex> = $r1;
+        $r2 = new org.apache.commons.validator.routines.RegexValidator;
+        specialinvoke $r2.<org.apache.commons.validator.routines.RegexValidator: void <init>(java.lang.String)>("\\p{Alnum}(?>[\\p{Alnum}-]{0,61}\\p{Alnum})?");
+        r0.<org.apache.commons.validator.routines.DomainValidator: org.apache.commons.validator.routines.RegexValidator hostnameRegex> = $r2;
+        r0.<org.apache.commons.validator.routines.DomainValidator: boolean allowLocal> = z0;
+        return;
+    }
+
+    public boolean isValid(java.lang.String)
+    {
+        org.apache.commons.validator.routines.DomainValidator r0;
+        java.lang.String r1, r3, $r5;
+        java.lang.String[] r2;
+        int $i0, $i1;
+        org.apache.commons.validator.routines.RegexValidator $r4, $r6;
+        boolean $z0, $z1, $z2;
+
+        r0 := @this: org.apache.commons.validator.routines.DomainValidator;
+        r1 := @parameter0: java.lang.String;
+        if r1 != null goto label0;
+
+        return 0;
+
+     label0:
+        r3 = staticinvoke <org.apache.commons.validator.routines.DomainValidator: java.lang.String unicodeToASCII(java.lang.String)>(r1);
+        $i0 = virtualinvoke r3.<java.lang.String: int length()>();
+        if $i0 <= 253 goto label1;
+
+        return 0;
+
+     label1:
+        $r4 = r0.<org.apache.commons.validator.routines.DomainValidator: org.apache.commons.validator.routines.RegexValidator domainRegex>;
+        r2 = virtualinvoke $r4.<org.apache.commons.validator.routines.RegexValidator: java.lang.String[] match(java.lang.String)>(r3);
+        if r2 == null goto label2;
+
+        $i1 = lengthof r2;
+        if $i1 <= 0 goto label2;
+
+        $r5 = r2[0];
+        $z0 = virtualinvoke r0.<org.apache.commons.validator.routines.DomainValidator: boolean isValidTld(java.lang.String)>($r5);
+        return $z0;
+
+     label2:
+        $z1 = r0.<org.apache.commons.validator.routines.DomainValidator: boolean allowLocal>;
+        if $z1 == 0 goto label3;
+
+        $r6 = r0.<org.apache.commons.validator.routines.DomainValidator: org.apache.commons.validator.routines.RegexValidator hostnameRegex>;
+        $z2 = virtualinvoke $r6.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>(r3);
+        if $z2 == 0 goto label3;
+
+        return 1;
+
+     label3:
+        return 0;
+    }
+
+    final boolean isValidDomainSyntax(java.lang.String)
+    {
+        org.apache.commons.validator.routines.DomainValidator r0;
+        java.lang.String r1, r3;
+        java.lang.String[] r2;
+        int $i0, $i1;
+        org.apache.commons.validator.routines.RegexValidator $r4, $r5;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.routines.DomainValidator;
+        r1 := @parameter0: java.lang.String;
+        if r1 != null goto label0;
+
+        return 0;
+
+     label0:
+        r3 = staticinvoke <org.apache.commons.validator.routines.DomainValidator: java.lang.String unicodeToASCII(java.lang.String)>(r1);
+        $i0 = virtualinvoke r3.<java.lang.String: int length()>();
+        if $i0 <= 253 goto label1;
+
+        return 0;
+
+     label1:
+        $r4 = r0.<org.apache.commons.validator.routines.DomainValidator: org.apache.commons.validator.routines.RegexValidator domainRegex>;
+        r2 = virtualinvoke $r4.<org.apache.commons.validator.routines.RegexValidator: java.lang.String[] match(java.lang.String)>(r3);
+        if r2 == null goto label2;
+
+        $i1 = lengthof r2;
+        if $i1 > 0 goto label3;
+
+     label2:
+        $r5 = r0.<org.apache.commons.validator.routines.DomainValidator: org.apache.commons.validator.routines.RegexValidator hostnameRegex>;
+        $z0 = virtualinvoke $r5.<org.apache.commons.validator.routines.RegexValidator: boolean isValid(java.lang.String)>(r3);
+        if $z0 != 0 goto label3;
+
+        return 0;
+
+     label3:
+        return 1;
+    }
+
+    public boolean isValidTld(java.lang.String)
+    {
+        org.apache.commons.validator.routines.DomainValidator r0;
+        java.lang.String r1, r2;
+        boolean $z0, $z1, $z2, $z3, $z4;
+
+        r0 := @this: org.apache.commons.validator.routines.DomainValidator;
+        r1 := @parameter0: java.lang.String;
+        r2 = staticinvoke <org.apache.commons.validator.routines.DomainValidator: java.lang.String unicodeToASCII(java.lang.String)>(r1);
+        $z0 = r0.<org.apache.commons.validator.routines.DomainValidator: boolean allowLocal>;
+        if $z0 == 0 goto label0;
+
+        $z1 = virtualinvoke r0.<org.apache.commons.validator.routines.DomainValidator: boolean isValidLocalTld(java.lang.String)>(r2);
+        if $z1 == 0 goto label0;
+
+        return 1;
+
+     label0:
+        $z2 = virtualinvoke r0.<org.apache.commons.validator.routines.DomainValidator: boolean isValidInfrastructureTld(java.lang.String)>(r2);
+        if $z2 != 0 goto label1;
+
+        $z3 = virtualinvoke r0.<org.apache.commons.validator.routines.DomainValidator: boolean isValidGenericTld(java.lang.String)>(r2);
+        if $z3 != 0 goto label1;
+
+        $z4 = virtualinvoke r0.<org.apache.commons.validator.routines.DomainValidator: boolean isValidCountryCodeTld(java.lang.String)>(r2);
+        if $z4 != 0 goto label1;
+
+        return 0;
+
+     label1:
+        return 1;
+    }
+
+    public boolean isValidInfrastructureTld(java.lang.String)
+    {
+        org.apache.commons.validator.routines.DomainValidator r0;
+        java.lang.String r1, r3, $r4, $r5;
+        java.util.Locale $r2;
+        java.lang.String[] $r6;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.routines.DomainValidator;
+        r1 := @parameter0: java.lang.String;
+        $r4 = staticinvoke <org.apache.commons.validator.routines.DomainValidator: java.lang.String unicodeToASCII(java.lang.String)>(r1);
+        $r2 = <java.util.Locale: java.util.Locale ENGLISH>;
+        $r5 = virtualinvoke $r4.<java.lang.String: java.lang.String toLowerCase(java.util.Locale)>($r2);
+        r3 = specialinvoke r0.<org.apache.commons.validator.routines.DomainValidator: java.lang.String chompLeadingDot(java.lang.String)>($r5);
+        $r6 = <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] INFRASTRUCTURE_TLDS>;
+        $z0 = staticinvoke <org.apache.commons.validator.routines.DomainValidator: boolean arrayContains(java.lang.String[],java.lang.String)>($r6, r3);
+        return $z0;
+    }
+
+    public boolean isValidGenericTld(java.lang.String)
+    {
+        org.apache.commons.validator.routines.DomainValidator r0;
+        java.lang.String r1, r3, $r4, $r5;
+        java.util.Locale $r2;
+        java.lang.String[] $r6, $r7, $r8;
+        boolean $z0, $z1, $z2;
+
+        r0 := @this: org.apache.commons.validator.routines.DomainValidator;
+        r1 := @parameter0: java.lang.String;
+        $r4 = staticinvoke <org.apache.commons.validator.routines.DomainValidator: java.lang.String unicodeToASCII(java.lang.String)>(r1);
+        $r2 = <java.util.Locale: java.util.Locale ENGLISH>;
+        $r5 = virtualinvoke $r4.<java.lang.String: java.lang.String toLowerCase(java.util.Locale)>($r2);
+        r3 = specialinvoke r0.<org.apache.commons.validator.routines.DomainValidator: java.lang.String chompLeadingDot(java.lang.String)>($r5);
+        $r6 = <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] GENERIC_TLDS>;
+        $z0 = staticinvoke <org.apache.commons.validator.routines.DomainValidator: boolean arrayContains(java.lang.String[],java.lang.String)>($r6, r3);
+        if $z0 != 0 goto label0;
+
+        $r7 = <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] GENERIC_TLDS_PLUS>;
+        $z1 = staticinvoke <org.apache.commons.validator.routines.DomainValidator: boolean arrayContains(java.lang.String[],java.lang.String)>($r7, r3);
+        if $z1 == 0 goto label1;
+
+     label0:
+        $r8 = <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] GENERIC_TLDS_MINUS>;
+        $z2 = staticinvoke <org.apache.commons.validator.routines.DomainValidator: boolean arrayContains(java.lang.String[],java.lang.String)>($r8, r3);
+        if $z2 != 0 goto label1;
+
+        return 1;
+
+     label1:
+        return 0;
+    }
+
+    public boolean isValidCountryCodeTld(java.lang.String)
+    {
+        org.apache.commons.validator.routines.DomainValidator r0;
+        java.lang.String r1, r3, $r4, $r5;
+        java.util.Locale $r2;
+        java.lang.String[] $r6, $r7, $r8;
+        boolean $z0, $z1, $z2;
+
+        r0 := @this: org.apache.commons.validator.routines.DomainValidator;
+        r1 := @parameter0: java.lang.String;
+        $r4 = staticinvoke <org.apache.commons.validator.routines.DomainValidator: java.lang.String unicodeToASCII(java.lang.String)>(r1);
+        $r2 = <java.util.Locale: java.util.Locale ENGLISH>;
+        $r5 = virtualinvoke $r4.<java.lang.String: java.lang.String toLowerCase(java.util.Locale)>($r2);
+        r3 = specialinvoke r0.<org.apache.commons.validator.routines.DomainValidator: java.lang.String chompLeadingDot(java.lang.String)>($r5);
+        $r6 = <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] COUNTRY_CODE_TLDS>;
+        $z0 = staticinvoke <org.apache.commons.validator.routines.DomainValidator: boolean arrayContains(java.lang.String[],java.lang.String)>($r6, r3);
+        if $z0 != 0 goto label0;
+
+        $r7 = <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] COUNTRY_CODE_TLDS_PLUS>;
+        $z1 = staticinvoke <org.apache.commons.validator.routines.DomainValidator: boolean arrayContains(java.lang.String[],java.lang.String)>($r7, r3);
+        if $z1 == 0 goto label1;
+
+     label0:
+        $r8 = <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] COUNTRY_CODE_TLDS_MINUS>;
+        $z2 = staticinvoke <org.apache.commons.validator.routines.DomainValidator: boolean arrayContains(java.lang.String[],java.lang.String)>($r8, r3);
+        if $z2 != 0 goto label1;
+
+        return 1;
+
+     label1:
+        return 0;
+    }
+
+    public boolean isValidLocalTld(java.lang.String)
+    {
+        org.apache.commons.validator.routines.DomainValidator r0;
+        java.lang.String r1, r3, $r4, $r5;
+        java.util.Locale $r2;
+        java.lang.String[] $r6;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.routines.DomainValidator;
+        r1 := @parameter0: java.lang.String;
+        $r4 = staticinvoke <org.apache.commons.validator.routines.DomainValidator: java.lang.String unicodeToASCII(java.lang.String)>(r1);
+        $r2 = <java.util.Locale: java.util.Locale ENGLISH>;
+        $r5 = virtualinvoke $r4.<java.lang.String: java.lang.String toLowerCase(java.util.Locale)>($r2);
+        r3 = specialinvoke r0.<org.apache.commons.validator.routines.DomainValidator: java.lang.String chompLeadingDot(java.lang.String)>($r5);
+        $r6 = <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] LOCAL_TLDS>;
+        $z0 = staticinvoke <org.apache.commons.validator.routines.DomainValidator: boolean arrayContains(java.lang.String[],java.lang.String)>($r6, r3);
+        return $z0;
+    }
+
+    private java.lang.String chompLeadingDot(java.lang.String)
+    {
+        org.apache.commons.validator.routines.DomainValidator r0;
+        java.lang.String r1, $r2;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.routines.DomainValidator;
+        r1 := @parameter0: java.lang.String;
+        $z0 = virtualinvoke r1.<java.lang.String: boolean startsWith(java.lang.String)>(".");
+        if $z0 == 0 goto label0;
+
+        $r2 = virtualinvoke r1.<java.lang.String: java.lang.String substring(int)>(1);
+        return $r2;
+
+     label0:
+        return r1;
+    }
+
+    static synchronized void clearTLDOverrides()
+    {
+        java.lang.String[] $r0, $r1, $r2, $r3;
+
+        <org.apache.commons.validator.routines.DomainValidator: boolean inUse> = 0;
+        $r0 = <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] EMPTY_STRING_ARRAY>;
+        <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] COUNTRY_CODE_TLDS_PLUS> = $r0;
+        $r1 = <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] EMPTY_STRING_ARRAY>;
+        <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] COUNTRY_CODE_TLDS_MINUS> = $r1;
+        $r2 = <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] EMPTY_STRING_ARRAY>;
+        <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] GENERIC_TLDS_PLUS> = $r2;
+        $r3 = <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] EMPTY_STRING_ARRAY>;
+        <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] GENERIC_TLDS_MINUS> = $r3;
+        return;
+    }
+
+    public static synchronized void updateTLDOverride(org.apache.commons.validator.routines.DomainValidator$ArrayType, java.lang.String[])
+    {
+        org.apache.commons.validator.routines.DomainValidator$ArrayType r0;
+        java.lang.String[] r1, r2;
+        boolean $z0;
+        int i0, $i1, $i2, $i3, $i4;
+        java.lang.IllegalStateException $r3;
+        java.lang.String $r4, $r6;
+        java.util.Locale $r5;
+        int[] $r7;
+
+        r0 := @parameter0: org.apache.commons.validator.routines.DomainValidator$ArrayType;
+        r1 := @parameter1: java.lang.String[];
+        $z0 = <org.apache.commons.validator.routines.DomainValidator: boolean inUse>;
+        if $z0 == 0 goto label0;
+
+        $r3 = new java.lang.IllegalStateException;
+        specialinvoke $r3.<java.lang.IllegalStateException: void <init>(java.lang.String)>("Can only invoke this method before calling getInstance");
+        throw $r3;
+
+     label0:
+        $i1 = lengthof r1;
+        r2 = newarray (java.lang.String)[$i1];
+        i0 = 0;
+        goto label2;
+
+     label1:
+        $r4 = r1[i0];
+        $r5 = <java.util.Locale: java.util.Locale ENGLISH>;
+        $r6 = virtualinvoke $r4.<java.lang.String: java.lang.String toLowerCase(java.util.Locale)>($r5);
+        r2[i0] = $r6;
+        i0 = i0 + 1;
+
+     label2:
+        $i2 = lengthof r1;
+        if i0 < $i2 goto label1;
+
+        staticinvoke <java.util.Arrays: void sort(java.lang.Object[])>(r2);
+        $r7 = staticinvoke <org.apache.commons.validator.routines.DomainValidator: int[] $SWITCH_TABLE$org$apache$commons$validator$routines$DomainValidator$ArrayType()>();
+        $i3 = virtualinvoke r0.<org.apache.commons.validator.routines.DomainValidator$ArrayType: int ordinal()>();
+        $i4 = $r7[$i3];
+        tableswitch($i4)
+        {
+            case 1: goto label6;
+            case 2: goto label5;
+            case 3: goto label4;
+            case 4: goto label3;
+            default: goto label7;
+        };
+
+     label3:
+        <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] COUNTRY_CODE_TLDS_MINUS> = r2;
+        goto label7;
+
+     label4:
+        <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] COUNTRY_CODE_TLDS_PLUS> = r2;
+        goto label7;
+
+     label5:
+        <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] GENERIC_TLDS_MINUS> = r2;
+        goto label7;
+
+     label6:
+        <org.apache.commons.validator.routines.DomainValidator: java.lang.String[] GENERIC_TLDS_PLUS> = r2;
+
+     label7:
+        return;
+    }
+
+    static java.lang.String unicodeToASCII(java.lang.String)
+    {
+        java.lang.String r0, r1, $r5, $r7;
+        int i0, $i2;
+        char c1;
+        boolean $z0, $z1;
+        java.lang.StringBuilder $r4, $r6;
+        java.lang.IllegalArgumentException $r9, r10;
+
+        r0 := @parameter0: java.lang.String;
+        $z0 = staticinvoke <org.apache.commons.validator.routines.DomainValidator: boolean isOnlyASCII(java.lang.String)>(r0);
+        if $z0 == 0 goto label0;
+
+        return r0;
+
+     label0:
+        r1 = staticinvoke <java.net.IDN: java.lang.String toASCII(java.lang.String)>(r0);
+        $z1 = staticinvoke <org.apache.commons.validator.routines.DomainValidator$IDNBUGHOLDER: boolean access$0()>();
+        if $z1 == 0 goto label2;
+
+     label1:
+        return r1;
+
+     label2:
+        i0 = virtualinvoke r0.<java.lang.String: int length()>();
+        if i0 != 0 goto label4;
+
+     label3:
+        return r0;
+
+     label4:
+        $i2 = i0 - 1;
+        c1 = virtualinvoke r0.<java.lang.String: char charAt(int)>($i2);
+        lookupswitch(c1)
+        {
+            case 46: goto label5;
+            case 12290: goto label5;
+            case 65294: goto label5;
+            case 65377: goto label5;
+            default: goto label7;
+        };
+
+     label5:
+        $r4 = new java.lang.StringBuilder;
+        $r5 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>(r1);
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>(java.lang.String)>($r5);
+        $r6 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(".");
+        $r7 = virtualinvoke $r6.<java.lang.StringBuilder: java.lang.String toString()>();
+
+     label6:
+        return $r7;
+
+     label7:
+        return r1;
+
+     label8:
+        $r9 := @caughtexception;
+        r10 = $r9;
+        return r0;
+
+        catch java.lang.IllegalArgumentException from label0 to label1 with label8;
+        catch java.lang.IllegalArgumentException from label2 to label3 with label8;
+        catch java.lang.IllegalArgumentException from label4 to label6 with label8;
+    }
+
+    private static boolean isOnlyASCII(java.lang.String)
+    {
+        java.lang.String r0;
+        int i0, $i2;
+        char $c1;
+
+        r0 := @parameter0: java.lang.String;
+        if r0 != null goto label0;
+
+        return 1;
+
+     label0:
+        i0 = 0;
+        goto label3;
+
+     label1:
+        $c1 = virtualinvoke r0.<java.lang.String: char charAt(int)>(i0);
+        if $c1 <= 127 goto label2;
+
+        return 0;
+
+     label2:
+        i0 = i0 + 1;
+
+     label3:
+        $i2 = virtualinvoke r0.<java.lang.String: int length()>();
+        if i0 < $i2 goto label1;
+
+        return 1;
+    }
+
+    private static boolean arrayContains(java.lang.String[], java.lang.String)
+    {
+        java.lang.String[] r0;
+        java.lang.String r1;
+        int $i0;
+
+        r0 := @parameter0: java.lang.String[];
+        r1 := @parameter1: java.lang.String;
+        $i0 = staticinvoke <java.util.Arrays: int binarySearch(java.lang.Object[],java.lang.Object)>(r0, r1);
+        if $i0 < 0 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    static int[] $SWITCH_TABLE$org$apache$commons$validator$routines$DomainValidator$ArrayType()
+    {
+        int[] $r0, r1;
+        org.apache.commons.validator.routines.DomainValidator$ArrayType[] $r2;
+        int $i0, $i1, $i2, $i3, $i4;
+        org.apache.commons.validator.routines.DomainValidator$ArrayType $r3, $r5, $r7, $r9;
+        java.lang.NoSuchFieldError $r4, $r6, $r8, $r10;
+
+        $r0 = <org.apache.commons.validator.routines.DomainValidator: int[] $SWITCH_TABLE$org$apache$commons$validator$routines$DomainValidator$ArrayType>;
+        if $r0 == null goto label0;
+
+        return $r0;
+
+     label0:
+        $r2 = staticinvoke <org.apache.commons.validator.routines.DomainValidator$ArrayType: org.apache.commons.validator.routines.DomainValidator$ArrayType[] values()>();
+        $i0 = lengthof $r2;
+        r1 = newarray (int)[$i0];
+
+     label1:
+        $r3 = <org.apache.commons.validator.routines.DomainValidator$ArrayType: org.apache.commons.validator.routines.DomainValidator$ArrayType COUNTRY_CODE_MINUS>;
+        $i1 = virtualinvoke $r3.<org.apache.commons.validator.routines.DomainValidator$ArrayType: int ordinal()>();
+        r1[$i1] = 4;
+
+     label2:
+        goto label4;
+
+     label3:
+        $r4 := @caughtexception;
+
+     label4:
+        $r5 = <org.apache.commons.validator.routines.DomainValidator$ArrayType: org.apache.commons.validator.routines.DomainValidator$ArrayType COUNTRY_CODE_PLUS>;
+        $i2 = virtualinvoke $r5.<org.apache.commons.validator.routines.DomainValidator$ArrayType: int ordinal()>();
+        r1[$i2] = 3;
+
+     label5:
+        goto label7;
+
+     label6:
+        $r6 := @caughtexception;
+
+     label7:
+        $r7 = <org.apache.commons.validator.routines.DomainValidator$ArrayType: org.apache.commons.validator.routines.DomainValidator$ArrayType GENERIC_MINUS>;
+        $i3 = virtualinvoke $r7.<org.apache.commons.validator.routines.DomainValidator$ArrayType: int ordinal()>();
+        r1[$i3] = 2;
+
+     label8:
+        goto label10;
+
+     label9:
+        $r8 := @caughtexception;
+
+     label10:
+        $r9 = <org.apache.commons.validator.routines.DomainValidator$ArrayType: org.apache.commons.validator.routines.DomainValidator$ArrayType GENERIC_PLUS>;
+        $i4 = virtualinvoke $r9.<org.apache.commons.validator.routines.DomainValidator$ArrayType: int ordinal()>();
+        r1[$i4] = 1;
+
+     label11:
+        goto label13;
+
+     label12:
+        $r10 := @caughtexception;
+
+     label13:
+        <org.apache.commons.validator.routines.DomainValidator: int[] $SWITCH_TABLE$org$apache$commons$validator$routines$DomainValidator$ArrayType> = r1;
+        return r1;
+
+        catch java.lang.NoSuchFieldError from label1 to label2 with label3;
+        catch java.lang.NoSuchFieldError from label4 to label5 with label6;
+        catch java.lang.NoSuchFieldError from label7 to label8 with label9;
+        catch java.lang.NoSuchFieldError from label10 to label11 with label12;
+    }
+}

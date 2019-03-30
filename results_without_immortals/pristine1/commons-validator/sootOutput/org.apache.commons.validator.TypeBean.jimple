@@ -1,0 +1,196 @@
+public class org.apache.commons.validator.TypeBean extends java.lang.Object
+{
+    private java.lang.String sByte;
+    private java.lang.String sShort;
+    private java.lang.String sInteger;
+    private java.lang.String sLong;
+    private java.lang.String sFloat;
+    private java.lang.String sDouble;
+    private java.lang.String sDate;
+    private java.lang.String sCreditCard;
+
+    public void <init>()
+    {
+        org.apache.commons.validator.TypeBean r0;
+
+        r0 := @this: org.apache.commons.validator.TypeBean;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        r0.<org.apache.commons.validator.TypeBean: java.lang.String sByte> = null;
+        r0.<org.apache.commons.validator.TypeBean: java.lang.String sShort> = null;
+        r0.<org.apache.commons.validator.TypeBean: java.lang.String sInteger> = null;
+        r0.<org.apache.commons.validator.TypeBean: java.lang.String sLong> = null;
+        r0.<org.apache.commons.validator.TypeBean: java.lang.String sFloat> = null;
+        r0.<org.apache.commons.validator.TypeBean: java.lang.String sDouble> = null;
+        r0.<org.apache.commons.validator.TypeBean: java.lang.String sDate> = null;
+        r0.<org.apache.commons.validator.TypeBean: java.lang.String sCreditCard> = null;
+        return;
+    }
+
+    public java.lang.String getByte()
+    {
+        org.apache.commons.validator.TypeBean r0;
+        java.lang.String $r1;
+
+        r0 := @this: org.apache.commons.validator.TypeBean;
+        $r1 = r0.<org.apache.commons.validator.TypeBean: java.lang.String sByte>;
+        return $r1;
+    }
+
+    public void setByte(java.lang.String)
+    {
+        org.apache.commons.validator.TypeBean r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.TypeBean;
+        r1 := @parameter0: java.lang.String;
+        r0.<org.apache.commons.validator.TypeBean: java.lang.String sByte> = r1;
+        return;
+    }
+
+    public java.lang.String getShort()
+    {
+        org.apache.commons.validator.TypeBean r0;
+        java.lang.String $r1;
+
+        r0 := @this: org.apache.commons.validator.TypeBean;
+        $r1 = r0.<org.apache.commons.validator.TypeBean: java.lang.String sShort>;
+        return $r1;
+    }
+
+    public void setShort(java.lang.String)
+    {
+        org.apache.commons.validator.TypeBean r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.TypeBean;
+        r1 := @parameter0: java.lang.String;
+        r0.<org.apache.commons.validator.TypeBean: java.lang.String sShort> = r1;
+        return;
+    }
+
+    public java.lang.String getInteger()
+    {
+        org.apache.commons.validator.TypeBean r0;
+        java.lang.String $r1;
+
+        r0 := @this: org.apache.commons.validator.TypeBean;
+        $r1 = r0.<org.apache.commons.validator.TypeBean: java.lang.String sInteger>;
+        return $r1;
+    }
+
+    public void setInteger(java.lang.String)
+    {
+        org.apache.commons.validator.TypeBean r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.TypeBean;
+        r1 := @parameter0: java.lang.String;
+        r0.<org.apache.commons.validator.TypeBean: java.lang.String sInteger> = r1;
+        return;
+    }
+
+    public java.lang.String getLong()
+    {
+        org.apache.commons.validator.TypeBean r0;
+        java.lang.String $r1;
+
+        r0 := @this: org.apache.commons.validator.TypeBean;
+        $r1 = r0.<org.apache.commons.validator.TypeBean: java.lang.String sLong>;
+        return $r1;
+    }
+
+    public void setLong(java.lang.String)
+    {
+        org.apache.commons.validator.TypeBean r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.TypeBean;
+        r1 := @parameter0: java.lang.String;
+        r0.<org.apache.commons.validator.TypeBean: java.lang.String sLong> = r1;
+        return;
+    }
+
+    public java.lang.String getFloat()
+    {
+        org.apache.commons.validator.TypeBean r0;
+        java.lang.String $r1;
+
+        r0 := @this: org.apache.commons.validator.TypeBean;
+        $r1 = r0.<org.apache.commons.validator.TypeBean: java.lang.String sFloat>;
+        return $r1;
+    }
+
+    public void setFloat(java.lang.String)
+    {
+        org.apache.commons.validator.TypeBean r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.TypeBean;
+        r1 := @parameter0: java.lang.String;
+        r0.<org.apache.commons.validator.TypeBean: java.lang.String sFloat> = r1;
+        return;
+    }
+
+    public java.lang.String getDouble()
+    {
+        org.apache.commons.validator.TypeBean r0;
+        java.lang.String $r1;
+
+        r0 := @this: org.apache.commons.validator.TypeBean;
+        $r1 = r0.<org.apache.commons.validator.TypeBean: java.lang.String sDouble>;
+        return $r1;
+    }
+
+    public void setDouble(java.lang.String)
+    {
+        org.apache.commons.validator.TypeBean r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.TypeBean;
+        r1 := @parameter0: java.lang.String;
+        r0.<org.apache.commons.validator.TypeBean: java.lang.String sDouble> = r1;
+        return;
+    }
+
+    public java.lang.String getDate()
+    {
+        org.apache.commons.validator.TypeBean r0;
+        java.lang.String $r1;
+
+        r0 := @this: org.apache.commons.validator.TypeBean;
+        $r1 = r0.<org.apache.commons.validator.TypeBean: java.lang.String sDate>;
+        return $r1;
+    }
+
+    public void setDate(java.lang.String)
+    {
+        org.apache.commons.validator.TypeBean r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.TypeBean;
+        r1 := @parameter0: java.lang.String;
+        r0.<org.apache.commons.validator.TypeBean: java.lang.String sDate> = r1;
+        return;
+    }
+
+    public java.lang.String getCreditCard()
+    {
+        org.apache.commons.validator.TypeBean r0;
+        java.lang.String $r1;
+
+        r0 := @this: org.apache.commons.validator.TypeBean;
+        $r1 = r0.<org.apache.commons.validator.TypeBean: java.lang.String sCreditCard>;
+        return $r1;
+    }
+
+    public void setCreditCard(java.lang.String)
+    {
+        org.apache.commons.validator.TypeBean r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.TypeBean;
+        r1 := @parameter0: java.lang.String;
+        r0.<org.apache.commons.validator.TypeBean: java.lang.String sCreditCard> = r1;
+        return;
+    }
+}

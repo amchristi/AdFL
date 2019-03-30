@@ -1,0 +1,1113 @@
+public class org.apache.commons.validator.routines.UrlValidatorTest extends junit.framework.TestCase
+{
+    private final boolean printStatus;
+    private final boolean printIndex;
+    org.apache.commons.validator.ResultPair[] testUrlScheme;
+    org.apache.commons.validator.ResultPair[] testUrlAuthority;
+    org.apache.commons.validator.ResultPair[] testUrlPort;
+    org.apache.commons.validator.ResultPair[] testPath;
+    org.apache.commons.validator.ResultPair[] testUrlPathOptions;
+    org.apache.commons.validator.ResultPair[] testUrlQuery;
+    java.lang.Object[] testUrlParts;
+    java.lang.Object[] testUrlPartsOptions;
+    int[] testPartsIndex;
+    private final java.lang.String[] schemes;
+    org.apache.commons.validator.ResultPair[] testScheme;
+
+    public void <init>(java.lang.String)
+    {
+        org.apache.commons.validator.routines.UrlValidatorTest r0;
+        java.lang.String r1;
+        org.apache.commons.validator.ResultPair $r2, $r4, $r5, $r6, $r7, $r8, $r9, $r10, $r11, $r13, $r14, $r15, $r16, $r17, $r18, $r19, $r20, $r21, $r22, $r23, $r24, $r25, $r26, $r27, $r28, $r29, $r30, $r31, $r33, $r34, $r35, $r36, $r37, $r38, $r39, $r41, $r42, $r43, $r44, $r45, $r46, $r47, $r48, $r49, $r50, $r52, $r53, $r54, $r55, $r56, $r57, $r58, $r59, $r60, $r61, $r62, $r63, $r64, $r65, $r66, $r68, $r69, $r70, $r86, $r87, $r88, $r89, $r90, $r91, $r92, $r93;
+        org.apache.commons.validator.ResultPair[] $r3, $r12, $r32, $r40, $r51, $r67, $r72, $r73, $r74, $r75, $r76, $r78, $r79, $r80, $r81, $r82, $r85;
+        java.lang.Object[] $r71, $r77;
+        int[] $r83;
+        java.lang.String[] $r84;
+
+        r0 := @this: org.apache.commons.validator.routines.UrlValidatorTest;
+        r1 := @parameter0: java.lang.String;
+        specialinvoke r0.<junit.framework.TestCase: void <init>(java.lang.String)>(r1);
+        r0.<org.apache.commons.validator.routines.UrlValidatorTest: boolean printStatus> = 0;
+        r0.<org.apache.commons.validator.routines.UrlValidatorTest: boolean printIndex> = 0;
+        $r3 = newarray (org.apache.commons.validator.ResultPair)[9];
+        $r2 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r2.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("http://", 1);
+        $r3[0] = $r2;
+        $r4 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r4.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("ftp://", 1);
+        $r3[1] = $r4;
+        $r5 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r5.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("h3t://", 1);
+        $r3[2] = $r5;
+        $r6 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r6.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("3ht://", 0);
+        $r3[3] = $r6;
+        $r7 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r7.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("http:/", 0);
+        $r3[4] = $r7;
+        $r8 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r8.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("http:", 0);
+        $r3[5] = $r8;
+        $r9 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r9.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("http/", 0);
+        $r3[6] = $r9;
+        $r10 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r10.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("://", 0);
+        $r3[7] = $r10;
+        $r11 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r11.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("", 1);
+        $r3[8] = $r11;
+        r0.<org.apache.commons.validator.routines.UrlValidatorTest: org.apache.commons.validator.ResultPair[] testUrlScheme> = $r3;
+        $r12 = newarray (org.apache.commons.validator.ResultPair)[19];
+        $r13 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r13.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("www.google.com", 1);
+        $r12[0] = $r13;
+        $r14 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r14.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("go.com", 1);
+        $r12[1] = $r14;
+        $r15 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r15.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("go.au", 1);
+        $r12[2] = $r15;
+        $r16 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r16.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("0.0.0.0", 1);
+        $r12[3] = $r16;
+        $r17 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r17.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("255.255.255.255", 1);
+        $r12[4] = $r17;
+        $r18 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r18.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("256.256.256.256", 0);
+        $r12[5] = $r18;
+        $r19 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r19.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("255.com", 1);
+        $r12[6] = $r19;
+        $r20 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r20.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("1.2.3.4.5", 0);
+        $r12[7] = $r20;
+        $r21 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r21.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("1.2.3.4.", 0);
+        $r12[8] = $r21;
+        $r22 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r22.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("1.2.3", 0);
+        $r12[9] = $r22;
+        $r23 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r23.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>(".1.2.3.4", 0);
+        $r12[10] = $r23;
+        $r24 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r24.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("go.a", 0);
+        $r12[11] = $r24;
+        $r25 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r25.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("go.a1a", 0);
+        $r12[12] = $r25;
+        $r26 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r26.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("go.cc", 1);
+        $r12[13] = $r26;
+        $r27 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r27.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("go.1aa", 0);
+        $r12[14] = $r27;
+        $r28 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r28.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("aaa.", 0);
+        $r12[15] = $r28;
+        $r29 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r29.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>(".aaa", 0);
+        $r12[16] = $r29;
+        $r30 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r30.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("aaa", 0);
+        $r12[17] = $r30;
+        $r31 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r31.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("", 0);
+        $r12[18] = $r31;
+        r0.<org.apache.commons.validator.routines.UrlValidatorTest: org.apache.commons.validator.ResultPair[] testUrlAuthority> = $r12;
+        $r32 = newarray (org.apache.commons.validator.ResultPair)[7];
+        $r33 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r33.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>(":80", 1);
+        $r32[0] = $r33;
+        $r34 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r34.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>(":65535", 1);
+        $r32[1] = $r34;
+        $r35 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r35.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>(":0", 1);
+        $r32[2] = $r35;
+        $r36 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r36.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("", 1);
+        $r32[3] = $r36;
+        $r37 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r37.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>(":-1", 0);
+        $r32[4] = $r37;
+        $r38 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r38.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>(":65636", 1);
+        $r32[5] = $r38;
+        $r39 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r39.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>(":65a", 0);
+        $r32[6] = $r39;
+        r0.<org.apache.commons.validator.routines.UrlValidatorTest: org.apache.commons.validator.ResultPair[] testUrlPort> = $r32;
+        $r40 = newarray (org.apache.commons.validator.ResultPair)[10];
+        $r41 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r41.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("/test1", 1);
+        $r40[0] = $r41;
+        $r42 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r42.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("/t123", 1);
+        $r40[1] = $r42;
+        $r43 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r43.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("/$23", 1);
+        $r40[2] = $r43;
+        $r44 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r44.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("/..", 0);
+        $r40[3] = $r44;
+        $r45 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r45.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("/../", 0);
+        $r40[4] = $r45;
+        $r46 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r46.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("/test1/", 1);
+        $r40[5] = $r46;
+        $r47 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r47.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("", 1);
+        $r40[6] = $r47;
+        $r48 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r48.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("/test1/file", 1);
+        $r40[7] = $r48;
+        $r49 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r49.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("/..//file", 0);
+        $r40[8] = $r49;
+        $r50 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r50.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("/test1//file", 0);
+        $r40[9] = $r50;
+        r0.<org.apache.commons.validator.routines.UrlValidatorTest: org.apache.commons.validator.ResultPair[] testPath> = $r40;
+        $r51 = newarray (org.apache.commons.validator.ResultPair)[15];
+        $r52 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r52.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("/test1", 1);
+        $r51[0] = $r52;
+        $r53 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r53.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("/t123", 1);
+        $r51[1] = $r53;
+        $r54 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r54.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("/$23", 1);
+        $r51[2] = $r54;
+        $r55 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r55.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("/..", 0);
+        $r51[3] = $r55;
+        $r56 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r56.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("/../", 0);
+        $r51[4] = $r56;
+        $r57 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r57.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("/test1/", 1);
+        $r51[5] = $r57;
+        $r58 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r58.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("/#", 0);
+        $r51[6] = $r58;
+        $r59 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r59.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("", 1);
+        $r51[7] = $r59;
+        $r60 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r60.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("/test1/file", 1);
+        $r51[8] = $r60;
+        $r61 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r61.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("/t123/file", 1);
+        $r51[9] = $r61;
+        $r62 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r62.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("/$23/file", 1);
+        $r51[10] = $r62;
+        $r63 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r63.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("/../file", 0);
+        $r51[11] = $r63;
+        $r64 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r64.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("/..//file", 0);
+        $r51[12] = $r64;
+        $r65 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r65.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("/test1//file", 1);
+        $r51[13] = $r65;
+        $r66 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r66.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("/#/file", 0);
+        $r51[14] = $r66;
+        r0.<org.apache.commons.validator.routines.UrlValidatorTest: org.apache.commons.validator.ResultPair[] testUrlPathOptions> = $r51;
+        $r67 = newarray (org.apache.commons.validator.ResultPair)[3];
+        $r68 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r68.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("?action=view", 1);
+        $r67[0] = $r68;
+        $r69 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r69.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("?action=edit&mode=up", 1);
+        $r67[1] = $r69;
+        $r70 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r70.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("", 1);
+        $r67[2] = $r70;
+        r0.<org.apache.commons.validator.routines.UrlValidatorTest: org.apache.commons.validator.ResultPair[] testUrlQuery> = $r67;
+        $r71 = newarray (java.lang.Object)[5];
+        $r72 = r0.<org.apache.commons.validator.routines.UrlValidatorTest: org.apache.commons.validator.ResultPair[] testUrlScheme>;
+        $r71[0] = $r72;
+        $r73 = r0.<org.apache.commons.validator.routines.UrlValidatorTest: org.apache.commons.validator.ResultPair[] testUrlAuthority>;
+        $r71[1] = $r73;
+        $r74 = r0.<org.apache.commons.validator.routines.UrlValidatorTest: org.apache.commons.validator.ResultPair[] testUrlPort>;
+        $r71[2] = $r74;
+        $r75 = r0.<org.apache.commons.validator.routines.UrlValidatorTest: org.apache.commons.validator.ResultPair[] testPath>;
+        $r71[3] = $r75;
+        $r76 = r0.<org.apache.commons.validator.routines.UrlValidatorTest: org.apache.commons.validator.ResultPair[] testUrlQuery>;
+        $r71[4] = $r76;
+        r0.<org.apache.commons.validator.routines.UrlValidatorTest: java.lang.Object[] testUrlParts> = $r71;
+        $r77 = newarray (java.lang.Object)[5];
+        $r78 = r0.<org.apache.commons.validator.routines.UrlValidatorTest: org.apache.commons.validator.ResultPair[] testUrlScheme>;
+        $r77[0] = $r78;
+        $r79 = r0.<org.apache.commons.validator.routines.UrlValidatorTest: org.apache.commons.validator.ResultPair[] testUrlAuthority>;
+        $r77[1] = $r79;
+        $r80 = r0.<org.apache.commons.validator.routines.UrlValidatorTest: org.apache.commons.validator.ResultPair[] testUrlPort>;
+        $r77[2] = $r80;
+        $r81 = r0.<org.apache.commons.validator.routines.UrlValidatorTest: org.apache.commons.validator.ResultPair[] testUrlPathOptions>;
+        $r77[3] = $r81;
+        $r82 = r0.<org.apache.commons.validator.routines.UrlValidatorTest: org.apache.commons.validator.ResultPair[] testUrlQuery>;
+        $r77[4] = $r82;
+        r0.<org.apache.commons.validator.routines.UrlValidatorTest: java.lang.Object[] testUrlPartsOptions> = $r77;
+        $r83 = newarray (int)[5];
+        r0.<org.apache.commons.validator.routines.UrlValidatorTest: int[] testPartsIndex> = $r83;
+        $r84 = newarray (java.lang.String)[4];
+        $r84[0] = "http";
+        $r84[1] = "gopher";
+        $r84[2] = "g0-To+.";
+        $r84[3] = "not_valid";
+        r0.<org.apache.commons.validator.routines.UrlValidatorTest: java.lang.String[] schemes> = $r84;
+        $r85 = newarray (org.apache.commons.validator.ResultPair)[8];
+        $r86 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r86.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("http", 1);
+        $r85[0] = $r86;
+        $r87 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r87.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("ftp", 0);
+        $r85[1] = $r87;
+        $r88 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r88.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("httpd", 0);
+        $r85[2] = $r88;
+        $r89 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r89.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("gopher", 1);
+        $r85[3] = $r89;
+        $r90 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r90.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("g0-to+.", 1);
+        $r85[4] = $r90;
+        $r91 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r91.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("not_valid", 0);
+        $r85[5] = $r91;
+        $r92 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r92.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("HtTp", 1);
+        $r85[6] = $r92;
+        $r93 = new org.apache.commons.validator.ResultPair;
+        specialinvoke $r93.<org.apache.commons.validator.ResultPair: void <init>(java.lang.String,boolean)>("telnet", 0);
+        $r85[7] = $r93;
+        r0.<org.apache.commons.validator.routines.UrlValidatorTest: org.apache.commons.validator.ResultPair[] testScheme> = $r85;
+        return;
+    }
+
+    protected void setUp()
+    {
+        org.apache.commons.validator.routines.UrlValidatorTest r0;
+        int i0, $i1, $i2;
+        int[] $r1, $r2;
+
+        r0 := @this: org.apache.commons.validator.routines.UrlValidatorTest;
+        i0 = 0;
+        goto label1;
+
+     label0:
+        $r1 = r0.<org.apache.commons.validator.routines.UrlValidatorTest: int[] testPartsIndex>;
+        $r1[i0] = 0;
+        i0 = i0 + 1;
+
+     label1:
+        $r2 = r0.<org.apache.commons.validator.routines.UrlValidatorTest: int[] testPartsIndex>;
+        $i1 = lengthof $r2;
+        $i2 = $i1 - 1;
+        if i0 < $i2 goto label0;
+
+        return;
+    }
+
+    public void testIsValid()
+    {
+        org.apache.commons.validator.routines.UrlValidatorTest r0;
+        long l0;
+        java.lang.Object[] $r1, $r2;
+
+        r0 := @this: org.apache.commons.validator.routines.UrlValidatorTest;
+        $r1 = r0.<org.apache.commons.validator.routines.UrlValidatorTest: java.lang.Object[] testUrlParts>;
+        virtualinvoke r0.<org.apache.commons.validator.routines.UrlValidatorTest: void testIsValid(java.lang.Object[],long)>($r1, 1L);
+        virtualinvoke r0.<org.apache.commons.validator.routines.UrlValidatorTest: void setUp()>();
+        l0 = 7L;
+        $r2 = r0.<org.apache.commons.validator.routines.UrlValidatorTest: java.lang.Object[] testUrlPartsOptions>;
+        virtualinvoke r0.<org.apache.commons.validator.routines.UrlValidatorTest: void testIsValid(java.lang.Object[],long)>($r2, l0);
+        return;
+    }
+
+    public void testIsValidScheme()
+    {
+        org.apache.commons.validator.routines.UrlValidatorTest r0;
+        org.apache.commons.validator.routines.UrlValidator $r1, r2;
+        int i0, $i1;
+        org.apache.commons.validator.ResultPair r3;
+        boolean z0, $z1;
+        java.lang.String[] $r4;
+        org.apache.commons.validator.ResultPair[] $r5, $r8;
+        java.lang.String $r6, $r7;
+
+        r0 := @this: org.apache.commons.validator.routines.UrlValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.UrlValidator;
+        $r4 = r0.<org.apache.commons.validator.routines.UrlValidatorTest: java.lang.String[] schemes>;
+        specialinvoke $r1.<org.apache.commons.validator.routines.UrlValidator: void <init>(java.lang.String[],long)>($r4, 0L);
+        r2 = $r1;
+        i0 = 0;
+        goto label1;
+
+     label0:
+        $r5 = r0.<org.apache.commons.validator.routines.UrlValidatorTest: org.apache.commons.validator.ResultPair[] testScheme>;
+        r3 = $r5[i0];
+        $r6 = r3.<org.apache.commons.validator.ResultPair: java.lang.String item>;
+        z0 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValidScheme(java.lang.String)>($r6);
+        $r7 = r3.<org.apache.commons.validator.ResultPair: java.lang.String item>;
+        $z1 = r3.<org.apache.commons.validator.ResultPair: boolean valid>;
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertEquals(java.lang.String,boolean,boolean)>($r7, $z1, z0);
+        i0 = i0 + 1;
+
+     label1:
+        $r8 = r0.<org.apache.commons.validator.routines.UrlValidatorTest: org.apache.commons.validator.ResultPair[] testScheme>;
+        $i1 = lengthof $r8;
+        if i0 < $i1 goto label0;
+
+        return;
+    }
+
+    public void testIsValid(java.lang.Object[], long)
+    {
+        org.apache.commons.validator.routines.UrlValidatorTest r0;
+        java.lang.Object[] r1;
+        long l0;
+        org.apache.commons.validator.routines.UrlValidator $r2, r3;
+        byte b1;
+        boolean z0, z1, $z2, $z3, $z4, z5, $z6;
+        java.lang.StringBuilder r4, $r6;
+        int i2, i3, $i4;
+        org.apache.commons.validator.ResultPair[] r5;
+        int[] $r7, $r13, $r15;
+        java.lang.Object $r8;
+        org.apache.commons.validator.ResultPair $r9, $r12;
+        java.lang.String $r10, r14;
+
+        r0 := @this: org.apache.commons.validator.routines.UrlValidatorTest;
+        r1 := @parameter0: java.lang.Object[];
+        l0 := @parameter1: long;
+        $r2 = new org.apache.commons.validator.routines.UrlValidator;
+        specialinvoke $r2.<org.apache.commons.validator.routines.UrlValidator: void <init>(java.lang.String[],org.apache.commons.validator.routines.RegexValidator,long)>(null, null, l0);
+        r3 = $r2;
+        $z2 = virtualinvoke r3.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.google.com");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z2);
+        $z3 = virtualinvoke r3.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.google.com/");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z3);
+        b1 = 60;
+        z0 = 0;
+
+     label0:
+        $r6 = new java.lang.StringBuilder;
+        specialinvoke $r6.<java.lang.StringBuilder: void <init>()>();
+        r4 = $r6;
+        z1 = 1;
+        i2 = 0;
+        goto label2;
+
+     label1:
+        $r7 = r0.<org.apache.commons.validator.routines.UrlValidatorTest: int[] testPartsIndex>;
+        i3 = $r7[i2];
+        $r8 = r1[i2];
+        r5 = (org.apache.commons.validator.ResultPair[]) $r8;
+        $r9 = r5[i3];
+        $r10 = $r9.<org.apache.commons.validator.ResultPair: java.lang.String item>;
+        virtualinvoke r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r10);
+        $r12 = r5[i3];
+        $z4 = $r12.<org.apache.commons.validator.ResultPair: boolean valid>;
+        z1 = z1 & $z4;
+        i2 = i2 + 1;
+
+     label2:
+        $r13 = r0.<org.apache.commons.validator.routines.UrlValidatorTest: int[] testPartsIndex>;
+        $i4 = lengthof $r13;
+        if i2 < $i4 goto label1;
+
+        r14 = virtualinvoke r4.<java.lang.StringBuilder: java.lang.String toString()>();
+        z5 = virtualinvoke r3.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>(r14);
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertEquals(java.lang.String,boolean,boolean)>(r14, z1, z5);
+        $r15 = r0.<org.apache.commons.validator.routines.UrlValidatorTest: int[] testPartsIndex>;
+        $z6 = staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: boolean incrementTestPartsIndex(int[],java.lang.Object[])>($r15, r1);
+        if $z6 != 0 goto label0;
+
+        return;
+    }
+
+    public void testValidator202()
+    {
+        org.apache.commons.validator.routines.UrlValidatorTest r0;
+        java.lang.String[] r1, $r3;
+        org.apache.commons.validator.routines.UrlValidator r2, $r4;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.routines.UrlValidatorTest;
+        $r3 = newarray (java.lang.String)[2];
+        $r3[0] = "http";
+        $r3[1] = "https";
+        r1 = $r3;
+        $r4 = new org.apache.commons.validator.routines.UrlValidator;
+        specialinvoke $r4.<org.apache.commons.validator.routines.UrlValidator: void <init>(java.lang.String[],long)>(r1, 4L);
+        r2 = $r4;
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.org");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z0);
+        return;
+    }
+
+    public void testValidator204()
+    {
+        org.apache.commons.validator.routines.UrlValidatorTest r0;
+        java.lang.String[] r1, $r3;
+        org.apache.commons.validator.routines.UrlValidator r2, $r4;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.routines.UrlValidatorTest;
+        $r3 = newarray (java.lang.String)[2];
+        $r3[0] = "http";
+        $r3[1] = "https";
+        r1 = $r3;
+        $r4 = new org.apache.commons.validator.routines.UrlValidator;
+        specialinvoke $r4.<org.apache.commons.validator.routines.UrlValidator: void <init>(java.lang.String[])>(r1);
+        r2 = $r4;
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://tech.yahoo.com/rc/desktops/102;_ylt=Ao8yevQHlZ4On0O3ZJGXLEQFLZA5");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z0);
+        return;
+    }
+
+    public void testValidator218()
+    {
+        org.apache.commons.validator.routines.UrlValidatorTest r0;
+        org.apache.commons.validator.routines.UrlValidator $r1, r2;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.routines.UrlValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.UrlValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.UrlValidator: void <init>(long)>(2L);
+        r2 = $r1;
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://somewhere.com/pathxyz/file(1).html");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(java.lang.String,boolean)>("parentheses should be valid in URLs", $z0);
+        return;
+    }
+
+    public void testValidator235()
+    {
+        org.apache.commons.validator.routines.UrlValidatorTest r0;
+        java.lang.String r1;
+        org.apache.commons.validator.routines.UrlValidator r2, $r4;
+        int $i0;
+        java.io.PrintStream $r3;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5;
+
+        r0 := @this: org.apache.commons.validator.routines.UrlValidatorTest;
+        r1 = staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>("java.version");
+        $i0 = virtualinvoke r1.<java.lang.String: int compareTo(java.lang.String)>("1.6");
+        if $i0 >= 0 goto label0;
+
+        $r3 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke $r3.<java.io.PrintStream: void println(java.lang.String)>("Cannot run Unicode IDN tests");
+        return;
+
+     label0:
+        $r4 = new org.apache.commons.validator.routines.UrlValidator;
+        specialinvoke $r4.<org.apache.commons.validator.routines.UrlValidator: void <init>()>();
+        r2 = $r4;
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://xn--d1abbgf6aiiy.xn--p1ai");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(java.lang.String,boolean)>("xn--d1abbgf6aiiy.xn--p1ai should validate", $z0);
+        $z1 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://\u043f\u0440\u0435\u0437\u0438\u0434\u0435\u043d\u0442.\u0440\u0444");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(java.lang.String,boolean)>("\u043f\u0440\u0435\u0437\u0438\u0434\u0435\u043d\u0442.\u0440\u0444 should validate", $z1);
+        $z2 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.b\u00fccher.ch");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(java.lang.String,boolean)>("www.b\u00fccher.ch should validate", $z2);
+        $z3 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.\ufffd.ch");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertFalse(java.lang.String,boolean)>("www.\ufffd.ch FFFD should fail", $z3);
+        $z4 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("ftp://www.b\u00fccher.ch");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(java.lang.String,boolean)>("www.b\u00fccher.ch should validate", $z4);
+        $z5 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("ftp://www.\ufffd.ch");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertFalse(java.lang.String,boolean)>("www.\ufffd.ch FFFD should fail", $z5);
+        return;
+    }
+
+    public void testValidator248()
+    {
+        org.apache.commons.validator.routines.UrlValidatorTest r0;
+        org.apache.commons.validator.routines.RegexValidator $r1, r2;
+        org.apache.commons.validator.routines.UrlValidator r3, $r5, $r6, r7;
+        java.lang.String[] $r4;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7;
+
+        r0 := @this: org.apache.commons.validator.routines.UrlValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.RegexValidator;
+        $r4 = newarray (java.lang.String)[2];
+        $r4[0] = "localhost";
+        $r4[1] = ".*\\.my-testing";
+        specialinvoke $r1.<org.apache.commons.validator.routines.RegexValidator: void <init>(java.lang.String[])>($r4);
+        r2 = $r1;
+        $r5 = new org.apache.commons.validator.routines.UrlValidator;
+        specialinvoke $r5.<org.apache.commons.validator.routines.UrlValidator: void <init>(org.apache.commons.validator.routines.RegexValidator,long)>(r2, 0L);
+        r3 = $r5;
+        $z0 = virtualinvoke r3.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://localhost/test/index.html");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(java.lang.String,boolean)>("localhost URL should validate", $z0);
+        $z1 = virtualinvoke r3.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://first.my-testing/test/index.html");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(java.lang.String,boolean)>("first.my-testing should validate", $z1);
+        $z2 = virtualinvoke r3.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://sup3r.my-testing/test/index.html");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(java.lang.String,boolean)>("sup3r.my-testing should validate", $z2);
+        $z3 = virtualinvoke r3.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://broke.my-test/test/index.html");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertFalse(java.lang.String,boolean)>("broke.my-test should not validate", $z3);
+        $z4 = virtualinvoke r3.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.apache.org/test/index.html");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(java.lang.String,boolean)>("www.apache.org should still validate", $z4);
+        $r6 = new org.apache.commons.validator.routines.UrlValidator;
+        specialinvoke $r6.<org.apache.commons.validator.routines.UrlValidator: void <init>(long)>(8L);
+        r7 = $r6;
+        $z5 = virtualinvoke r7.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://localhost/test/index.html");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(java.lang.String,boolean)>("localhost URL should validate", $z5);
+        $z6 = virtualinvoke r7.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://machinename/test/index.html");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(java.lang.String,boolean)>("machinename URL should validate", $z6);
+        $z7 = virtualinvoke r7.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.apache.org/test/index.html");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(java.lang.String,boolean)>("www.apache.org should still validate", $z7);
+        return;
+    }
+
+    public void testValidator288()
+    {
+        org.apache.commons.validator.routines.UrlValidatorTest r0;
+        org.apache.commons.validator.routines.UrlValidator $r1, r2, $r3, r4;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8;
+
+        r0 := @this: org.apache.commons.validator.routines.UrlValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.UrlValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.UrlValidator: void <init>(long)>(8L);
+        r2 = $r1;
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://hostname");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(java.lang.String,boolean)>("hostname should validate", $z0);
+        $z1 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://hostname/test/index.html");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(java.lang.String,boolean)>("hostname with path should validate", $z1);
+        $z2 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://localhost/test/index.html");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(java.lang.String,boolean)>("localhost URL should validate", $z2);
+        $z3 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://first.my-testing/test/index.html");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertFalse(java.lang.String,boolean)>("first.my-testing should not validate", $z3);
+        $z4 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://broke.hostname/test/index.html");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertFalse(java.lang.String,boolean)>("broke.hostname should not validate", $z4);
+        $z5 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.apache.org/test/index.html");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(java.lang.String,boolean)>("www.apache.org should still validate", $z5);
+        $r3 = new org.apache.commons.validator.routines.UrlValidator;
+        specialinvoke $r3.<org.apache.commons.validator.routines.UrlValidator: void <init>(long)>(0L);
+        r4 = $r3;
+        $z6 = virtualinvoke r4.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://hostname");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertFalse(java.lang.String,boolean)>("hostname should no longer validate", $z6);
+        $z7 = virtualinvoke r4.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://localhost/test/index.html");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertFalse(java.lang.String,boolean)>("localhost URL should no longer validate", $z7);
+        $z8 = virtualinvoke r4.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.apache.org/test/index.html");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(java.lang.String,boolean)>("www.apache.org should still validate", $z8);
+        return;
+    }
+
+    public void testValidator276()
+    {
+        org.apache.commons.validator.routines.UrlValidatorTest r0;
+        org.apache.commons.validator.routines.UrlValidator $r1, r2, $r3, r5;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10, $z11, $z12, $z13;
+        java.lang.String[] $r4;
+
+        r0 := @this: org.apache.commons.validator.routines.UrlValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.UrlValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.UrlValidator: void <init>()>();
+        r2 = $r1;
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.apache.org/test/index.html");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(java.lang.String,boolean)>("http://apache.org/ should be allowed by default", $z0);
+        $z1 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("file:///C:/some.file");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertFalse(java.lang.String,boolean)>("file:///c:/ shouldn\'t be allowed by default", $z1);
+        $z2 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("file:///C:\\some.file");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertFalse(java.lang.String,boolean)>("file:///c:\\ shouldn\'t be allowed by default", $z2);
+        $z3 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("file:///etc/hosts");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertFalse(java.lang.String,boolean)>("file:///etc/ shouldn\'t be allowed by default", $z3);
+        $z4 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("file://localhost/etc/hosts");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertFalse(java.lang.String,boolean)>("file://localhost/etc/ shouldn\'t be allowed by default", $z4);
+        $z5 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("file://localhost/c:/some.file");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertFalse(java.lang.String,boolean)>("file://localhost/c:/ shouldn\'t be allowed by default", $z5);
+        $r3 = new org.apache.commons.validator.routines.UrlValidator;
+        $r4 = newarray (java.lang.String)[2];
+        $r4[0] = "http";
+        $r4[1] = "file";
+        specialinvoke $r3.<org.apache.commons.validator.routines.UrlValidator: void <init>(java.lang.String[],long)>($r4, 8L);
+        r5 = $r3;
+        $z6 = virtualinvoke r5.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.apache.org/test/index.html");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(java.lang.String,boolean)>("http://apache.org/ should be allowed by default", $z6);
+        $z7 = virtualinvoke r5.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("file:///C:/some.file");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(java.lang.String,boolean)>("file:///c:/ should now be allowed", $z7);
+        $z8 = virtualinvoke r5.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("file:///C:\\some.file");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertFalse(java.lang.String,boolean)>("file:///c:\\ shouldn\'t be allowed", $z8);
+        $z9 = virtualinvoke r5.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("file:///etc/hosts");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(java.lang.String,boolean)>("file:///etc/ should now be allowed", $z9);
+        $z10 = virtualinvoke r5.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("file://localhost/etc/hosts");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(java.lang.String,boolean)>("file://localhost/etc/ should now be allowed", $z10);
+        $z11 = virtualinvoke r5.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("file://localhost/c:/some.file");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(java.lang.String,boolean)>("file://localhost/c:/ should now be allowed", $z11);
+        $z12 = virtualinvoke r5.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("file://C:/some.file");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertFalse(java.lang.String,boolean)>("file://c:/ shouldn\'t ever be allowed, needs file:///c:/", $z12);
+        $z13 = virtualinvoke r5.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("file://C:\\some.file");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertFalse(java.lang.String,boolean)>("file://c:\\ shouldn\'t ever be allowed, needs file:///c:/", $z13);
+        return;
+    }
+
+    public void testValidator309()
+    {
+        org.apache.commons.validator.routines.UrlValidatorTest r0;
+        org.apache.commons.validator.routines.UrlValidator $r1, r2, $r3, r5;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5;
+        java.lang.String[] $r4;
+
+        r0 := @this: org.apache.commons.validator.routines.UrlValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.UrlValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.UrlValidator: void <init>()>();
+        r2 = $r1;
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://sample.ondemand.com/");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z0);
+        $z1 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("hTtP://sample.ondemand.CoM/");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z1);
+        $z2 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("httpS://SAMPLE.ONEMAND.COM/");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z2);
+        $r3 = new org.apache.commons.validator.routines.UrlValidator;
+        $r4 = newarray (java.lang.String)[2];
+        $r4[0] = "HTTP";
+        $r4[1] = "HTTPS";
+        specialinvoke $r3.<org.apache.commons.validator.routines.UrlValidator: void <init>(java.lang.String[])>($r4);
+        r5 = $r3;
+        $z3 = virtualinvoke r5.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://sample.ondemand.com/");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z3);
+        $z4 = virtualinvoke r5.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("hTtP://sample.ondemand.CoM/");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z4);
+        $z5 = virtualinvoke r5.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("httpS://SAMPLE.ONEMAND.COM/");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z5);
+        return;
+    }
+
+    public void testValidator339()
+    {
+        org.apache.commons.validator.routines.UrlValidatorTest r0;
+        org.apache.commons.validator.routines.UrlValidator $r1, r2;
+        boolean $z0, $z1, $z2, $z3, $z4;
+
+        r0 := @this: org.apache.commons.validator.routines.UrlValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.UrlValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.UrlValidator: void <init>()>();
+        r2 = $r1;
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.cnn.com/WORLD/?hpt=sitenav");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z0);
+        $z1 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.cnn.com./WORLD/?hpt=sitenav");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z1);
+        $z2 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.cnn.com../");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertFalse(boolean)>($z2);
+        $z3 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.cnn.invalid/");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertFalse(boolean)>($z3);
+        $z4 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.cnn.invalid./");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertFalse(boolean)>($z4);
+        return;
+    }
+
+    public void testValidator339IDN()
+    {
+        org.apache.commons.validator.routines.UrlValidatorTest r0;
+        org.apache.commons.validator.routines.UrlValidator $r1, r2;
+        boolean $z0, $z1, $z2, $z3, $z4;
+
+        r0 := @this: org.apache.commons.validator.routines.UrlValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.UrlValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.UrlValidator: void <init>()>();
+        r2 = $r1;
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://\u043f\u0440\u0435\u0437\u0438\u0434\u0435\u043d\u0442.\u0440\u0444/WORLD/?hpt=sitenav");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z0);
+        $z1 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://\u043f\u0440\u0435\u0437\u0438\u0434\u0435\u043d\u0442.\u0440\u0444./WORLD/?hpt=sitenav");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z1);
+        $z2 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://\u043f\u0440\u0435\u0437\u0438\u0434\u0435\u043d\u0442.\u0440\u0444..../");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertFalse(boolean)>($z2);
+        $z3 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://\u043f\u0440\u0435\u0437\u0438\u0434\u0435\u043d\u0442.\u0440\u0444.../");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertFalse(boolean)>($z3);
+        $z4 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://\u043f\u0440\u0435\u0437\u0438\u0434\u0435\u043d\u0442.\u0440\u0444../");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertFalse(boolean)>($z4);
+        return;
+    }
+
+    public void testValidator342()
+    {
+        org.apache.commons.validator.routines.UrlValidatorTest r0;
+        org.apache.commons.validator.routines.UrlValidator $r1, r2;
+        boolean $z0, $z1;
+
+        r0 := @this: org.apache.commons.validator.routines.UrlValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.UrlValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.UrlValidator: void <init>()>();
+        r2 = $r1;
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://example.rocks/");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z0);
+        $z1 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://example.rocks");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z1);
+        return;
+    }
+
+    static boolean incrementTestPartsIndex(int[], java.lang.Object[])
+    {
+        int[] r0;
+        java.lang.Object[] r1;
+        boolean z0, z1, $z2, $z3, $z4;
+        int i0, i1, $i2, $i3, $i4, $i5, $i6;
+        org.apache.commons.validator.ResultPair[] r2;
+        java.lang.Object $r3;
+
+        r0 := @parameter0: int[];
+        r1 := @parameter1: java.lang.Object[];
+        z0 = 1;
+        z1 = 1;
+        $i2 = lengthof r0;
+        i0 = $i2 - 1;
+        goto label5;
+
+     label0:
+        i1 = r0[i0];
+        $r3 = r1[i0];
+        r2 = (org.apache.commons.validator.ResultPair[]) $r3;
+        if z0 == 0 goto label2;
+
+        $i3 = lengthof r2;
+        $i4 = $i3 - 1;
+        if i1 >= $i4 goto label1;
+
+        i1 = i1 + 1;
+        r0[i0] = i1;
+        z0 = 0;
+        goto label2;
+
+     label1:
+        r0[i0] = 0;
+        z0 = 1;
+
+     label2:
+        $z2 = z1;
+        $i5 = lengthof r2;
+        $i6 = $i5 - 1;
+        if i1 != $i6 goto label3;
+
+        $z3 = 1;
+        goto label4;
+
+     label3:
+        $z3 = 0;
+
+     label4:
+        z1 = $z2 & $z3;
+        i0 = i0 + -1;
+
+     label5:
+        if i0 >= 0 goto label0;
+
+        if z1 == 0 goto label6;
+
+        $z4 = 0;
+        goto label7;
+
+     label6:
+        $z4 = 1;
+
+     label7:
+        return $z4;
+    }
+
+    private java.lang.String testPartsIndextoString()
+    {
+        org.apache.commons.validator.routines.UrlValidatorTest r0;
+        java.lang.StringBuilder $r1, r2;
+        int i0, $i1, $i2, $i3, $i4;
+        int[] $r3, $r5, $r8;
+        java.lang.String $r9;
+
+        r0 := @this: org.apache.commons.validator.routines.UrlValidatorTest;
+        $r1 = new java.lang.StringBuilder;
+        specialinvoke $r1.<java.lang.StringBuilder: void <init>(java.lang.String)>("{");
+        r2 = $r1;
+        i0 = 0;
+        goto label3;
+
+     label0:
+        $r3 = r0.<org.apache.commons.validator.routines.UrlValidatorTest: int[] testPartsIndex>;
+        $i1 = $r3[i0];
+        virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>($i1);
+        $r5 = r0.<org.apache.commons.validator.routines.UrlValidatorTest: int[] testPartsIndex>;
+        $i2 = lengthof $r5;
+        $i3 = $i2 - 1;
+        if i0 >= $i3 goto label1;
+
+        virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(44);
+        goto label2;
+
+     label1:
+        virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(125);
+
+     label2:
+        i0 = i0 + 1;
+
+     label3:
+        $r8 = r0.<org.apache.commons.validator.routines.UrlValidatorTest: int[] testPartsIndex>;
+        $i4 = lengthof $r8;
+        if i0 < $i4 goto label0;
+
+        $r9 = virtualinvoke r2.<java.lang.StringBuilder: java.lang.String toString()>();
+        return $r9;
+    }
+
+    public void testValidateUrl()
+    {
+        org.apache.commons.validator.routines.UrlValidatorTest r0;
+
+        r0 := @this: org.apache.commons.validator.routines.UrlValidatorTest;
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>(1);
+        return;
+    }
+
+    public void testValidator290()
+    {
+        org.apache.commons.validator.routines.UrlValidatorTest r0;
+        org.apache.commons.validator.routines.UrlValidator $r1, r2;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10, $z11, $z12, $z13, $z14, $z15, $z16, $z17, $z18, $z19, $z20, $z21, $z22, $z23, $z24, $z25, $z26, $z27, $z28, $z29, $z30, $z31;
+
+        r0 := @this: org.apache.commons.validator.routines.UrlValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.UrlValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.UrlValidator: void <init>()>();
+        r2 = $r1;
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://xn--h1acbxfam.idn.icann.org/");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z0);
+        $z1 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://test.xn--lgbbat1ad8j");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z1);
+        $z2 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://test.xn--fiqs8s");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z2);
+        $z3 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://test.xn--fiqz9s");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z3);
+        $z4 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://test.xn--wgbh1c");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z4);
+        $z5 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://test.xn--j6w193g");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z5);
+        $z6 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://test.xn--h2brj9c");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z6);
+        $z7 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://test.xn--mgbbh1a71e");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z7);
+        $z8 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://test.xn--fpcrj9c3d");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z8);
+        $z9 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://test.xn--gecrj9c");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z9);
+        $z10 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://test.xn--s9brj9c");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z10);
+        $z11 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://test.xn--xkc2dl3a5ee0h");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z11);
+        $z12 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://test.xn--45brj9c");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z12);
+        $z13 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://test.xn--mgba3a4f16a");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z13);
+        $z14 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://test.xn--mgbayh7gpa");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z14);
+        $z15 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://test.xn--mgbc0a9azcg");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z15);
+        $z16 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://test.xn--ygbi2ammx");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z16);
+        $z17 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://test.xn--wgbl6a");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z17);
+        $z18 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://test.xn--p1ai");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z18);
+        $z19 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://test.xn--mgberp4a5d4ar");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z19);
+        $z20 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://test.xn--90a3ac");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z20);
+        $z21 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://test.xn--yfro4i67o");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z21);
+        $z22 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://test.xn--clchc0ea0b2g2a9gcd");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z22);
+        $z23 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://test.xn--3e0b707e");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z23);
+        $z24 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://test.xn--fzc2c9e2c");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z24);
+        $z25 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://test.xn--xkc2al3hye2a");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z25);
+        $z26 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://test.xn--ogbpf8fl");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z26);
+        $z27 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://test.xn--kprw13d");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z27);
+        $z28 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://test.xn--kpry57d");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z28);
+        $z29 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://test.xn--o3cw4h");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z29);
+        $z30 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://test.xn--pgbs0dh");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z30);
+        $z31 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://test.xn--mgbaam7a8h");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z31);
+        return;
+    }
+
+    public void testValidator361()
+    {
+        org.apache.commons.validator.routines.UrlValidatorTest r0;
+        org.apache.commons.validator.routines.UrlValidator $r1, r2;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.routines.UrlValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.UrlValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.UrlValidator: void <init>()>();
+        r2 = $r1;
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://hello.tokyo/");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z0);
+        return;
+    }
+
+    public void testValidator363()
+    {
+        org.apache.commons.validator.routines.UrlValidatorTest r0;
+        org.apache.commons.validator.routines.UrlValidator $r1, r2;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10, $z11, $z12, $z13, $z14, $z15;
+
+        r0 := @this: org.apache.commons.validator.routines.UrlValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.UrlValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.UrlValidator: void <init>()>();
+        r2 = $r1;
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.example.org/a/b/hello..world");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z0);
+        $z1 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.example.org/a/hello..world");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z1);
+        $z2 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.example.org/hello.world/");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z2);
+        $z3 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.example.org/hello..world/");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z3);
+        $z4 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.example.org/hello.world");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z4);
+        $z5 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.example.org/hello..world");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z5);
+        $z6 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.example.org/..world");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z6);
+        $z7 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.example.org/.../world");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z7);
+        $z8 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.example.org/../world");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertFalse(boolean)>($z8);
+        $z9 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.example.org/..");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertFalse(boolean)>($z9);
+        $z10 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.example.org/../");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertFalse(boolean)>($z10);
+        $z11 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.example.org/./..");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertFalse(boolean)>($z11);
+        $z12 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.example.org/././..");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertFalse(boolean)>($z12);
+        $z13 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.example.org/...");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z13);
+        $z14 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.example.org/.../");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z14);
+        $z15 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.example.org/.../..");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z15);
+        return;
+    }
+
+    public void testValidator375()
+    {
+        org.apache.commons.validator.routines.UrlValidatorTest r0;
+        org.apache.commons.validator.routines.UrlValidator $r1, r2;
+        java.lang.String r3, $r6, r7, $r10, r11, $r14;
+        java.lang.StringBuilder $r4, $r5, $r8, $r9, $r12, $r13;
+        boolean $z0, $z1, $z2;
+
+        r0 := @this: org.apache.commons.validator.routines.UrlValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.UrlValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.UrlValidator: void <init>()>();
+        r2 = $r1;
+        r3 = "http://[FEDC:BA98:7654:3210:FEDC:BA98:7654:3210]:80/index.html";
+        $r4 = new java.lang.StringBuilder;
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>(java.lang.String)>("IPv6 address URL should validate: ");
+        $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r3);
+        $r6 = virtualinvoke $r5.<java.lang.StringBuilder: java.lang.String toString()>();
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>(r3);
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(java.lang.String,boolean)>($r6, $z0);
+        r7 = "http://[::1]:80/index.html";
+        $r8 = new java.lang.StringBuilder;
+        specialinvoke $r8.<java.lang.StringBuilder: void <init>(java.lang.String)>("IPv6 address URL should validate: ");
+        $r9 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r7);
+        $r10 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.String toString()>();
+        $z1 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>(r7);
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(java.lang.String,boolean)>($r10, $z1);
+        r11 = "http://FEDC:BA98:7654:3210:FEDC:BA98:7654:3210:80/index.html";
+        $r12 = new java.lang.StringBuilder;
+        specialinvoke $r12.<java.lang.StringBuilder: void <init>(java.lang.String)>("IPv6 address without [] should not validate: ");
+        $r13 = virtualinvoke $r12.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r11);
+        $r14 = virtualinvoke $r13.<java.lang.StringBuilder: java.lang.String toString()>();
+        $z2 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>(r11);
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertFalse(java.lang.String,boolean)>($r14, $z2);
+        return;
+    }
+
+    public void testValidator353()
+    {
+        org.apache.commons.validator.routines.UrlValidatorTest r0;
+        org.apache.commons.validator.routines.UrlValidator $r1, r2;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7;
+
+        r0 := @this: org.apache.commons.validator.routines.UrlValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.UrlValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.UrlValidator: void <init>()>();
+        r2 = $r1;
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.apache.org:80/path");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z0);
+        $z1 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://user:pass@www.apache.org:80/path");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z1);
+        $z2 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://user:@www.apache.org:80/path");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z2);
+        $z3 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://us%00er:-._~!$&\'()*+,;=@www.apache.org:80/path");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z3);
+        $z4 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://:pass@www.apache.org:80/path");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertFalse(boolean)>($z4);
+        $z5 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://:@www.apache.org:80/path");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertFalse(boolean)>($z5);
+        $z6 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://user:pa:ss@www.apache.org/path");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertFalse(boolean)>($z6);
+        $z7 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://user:pa@ss@www.apache.org/path");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertFalse(boolean)>($z7);
+        return;
+    }
+
+    public void testValidator382()
+    {
+        org.apache.commons.validator.routines.UrlValidatorTest r0;
+        org.apache.commons.validator.routines.UrlValidator $r1, r2;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.routines.UrlValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.UrlValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.UrlValidator: void <init>()>();
+        r2 = $r1;
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("ftp://username:password@example.com:8042/over/there/index.dtb?type=animal&name=narwhal#nose");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z0);
+        return;
+    }
+
+    public void testValidator380()
+    {
+        org.apache.commons.validator.routines.UrlValidatorTest r0;
+        org.apache.commons.validator.routines.UrlValidator $r1, r2;
+        boolean $z0, $z1, $z2;
+
+        r0 := @this: org.apache.commons.validator.routines.UrlValidatorTest;
+        $r1 = new org.apache.commons.validator.routines.UrlValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.UrlValidator: void <init>()>();
+        r2 = $r1;
+        $z0 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.apache.org:80/path");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z0);
+        $z1 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.apache.org:8/path");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z1);
+        $z2 = virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>("http://www.apache.org:/path");
+        staticinvoke <org.apache.commons.validator.routines.UrlValidatorTest: void assertTrue(boolean)>($z2);
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] r0;
+        org.apache.commons.validator.routines.UrlValidatorTest $r1, r2;
+
+        r0 := @parameter0: java.lang.String[];
+        $r1 = new org.apache.commons.validator.routines.UrlValidatorTest;
+        specialinvoke $r1.<org.apache.commons.validator.routines.UrlValidatorTest: void <init>(java.lang.String)>("url test");
+        r2 = $r1;
+        virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidatorTest: void setUp()>();
+        virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidatorTest: void testIsValid()>();
+        virtualinvoke r2.<org.apache.commons.validator.routines.UrlValidatorTest: void testIsValidScheme()>();
+        return;
+    }
+}

@@ -1,0 +1,550 @@
+public abstract class org.apache.commons.validator.routines.AbstractCalendarValidatorTest extends junit.framework.TestCase
+{
+    protected org.apache.commons.validator.routines.AbstractCalendarValidator validator;
+    protected static final java.util.TimeZone GMT;
+    protected static final java.util.TimeZone EST;
+    protected static final java.util.TimeZone EET;
+    protected static final java.util.TimeZone UTC;
+    protected java.lang.String[] patternValid;
+    protected java.lang.String[] localeValid;
+    protected java.util.Date[] patternExpect;
+    protected java.lang.String[] patternInvalid;
+    protected java.lang.String[] localeInvalid;
+
+    static void <clinit>()
+    {
+        java.util.TimeZone $r0, $r1, $r2, $r3;
+
+        $r0 = staticinvoke <java.util.TimeZone: java.util.TimeZone getTimeZone(java.lang.String)>("GMT");
+        <org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.util.TimeZone GMT> = $r0;
+        $r1 = staticinvoke <java.util.TimeZone: java.util.TimeZone getTimeZone(java.lang.String)>("EST");
+        <org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.util.TimeZone EST> = $r1;
+        $r2 = staticinvoke <java.util.TimeZone: java.util.TimeZone getTimeZone(java.lang.String)>("EET");
+        <org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.util.TimeZone EET> = $r2;
+        $r3 = staticinvoke <java.util.TimeZone: java.util.TimeZone getTimeZone(java.lang.String)>("UTC");
+        <org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.util.TimeZone UTC> = $r3;
+        return;
+    }
+
+    public void <init>(java.lang.String)
+    {
+        org.apache.commons.validator.routines.AbstractCalendarValidatorTest r0;
+        java.lang.String r1;
+        java.lang.String[] $r2, $r3, $r12, $r13;
+        java.util.Date[] $r4;
+        java.util.Date $r5, $r6, $r7, $r8, $r9, $r10, $r11;
+
+        r0 := @this: org.apache.commons.validator.routines.AbstractCalendarValidatorTest;
+        r1 := @parameter0: java.lang.String;
+        specialinvoke r0.<junit.framework.TestCase: void <init>(java.lang.String)>(r1);
+        $r2 = newarray (java.lang.String)[7];
+        $r2[0] = "2005-01-01";
+        $r2[1] = "2005-12-31";
+        $r2[2] = "2004-02-29";
+        $r2[3] = "2005-04-30";
+        $r2[4] = "05-12-31";
+        $r2[5] = "2005-1-1";
+        $r2[6] = "05-1-1";
+        r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.lang.String[] patternValid> = $r2;
+        $r3 = newarray (java.lang.String)[7];
+        $r3[0] = "01/01/2005";
+        $r3[1] = "12/31/2005";
+        $r3[2] = "02/29/2004";
+        $r3[3] = "04/30/2005";
+        $r3[4] = "12/31/05";
+        $r3[5] = "1/1/2005";
+        $r3[6] = "1/1/05";
+        r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.lang.String[] localeValid> = $r3;
+        $r4 = newarray (java.util.Date)[7];
+        $r5 = staticinvoke <org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.util.Date createDate(java.util.TimeZone,int,int)>(null, 20050101, 0);
+        $r4[0] = $r5;
+        $r6 = staticinvoke <org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.util.Date createDate(java.util.TimeZone,int,int)>(null, 20051231, 0);
+        $r4[1] = $r6;
+        $r7 = staticinvoke <org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.util.Date createDate(java.util.TimeZone,int,int)>(null, 20040229, 0);
+        $r4[2] = $r7;
+        $r8 = staticinvoke <org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.util.Date createDate(java.util.TimeZone,int,int)>(null, 20050430, 0);
+        $r4[3] = $r8;
+        $r9 = staticinvoke <org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.util.Date createDate(java.util.TimeZone,int,int)>(null, 20051231, 0);
+        $r4[4] = $r9;
+        $r10 = staticinvoke <org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.util.Date createDate(java.util.TimeZone,int,int)>(null, 20050101, 0);
+        $r4[5] = $r10;
+        $r11 = staticinvoke <org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.util.Date createDate(java.util.TimeZone,int,int)>(null, 20050101, 0);
+        $r4[6] = $r11;
+        r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.util.Date[] patternExpect> = $r4;
+        $r12 = newarray (java.lang.String)[13];
+        $r12[0] = "2005-00-01";
+        $r12[1] = "2005-01-00";
+        $r12[2] = "2005-13-03";
+        $r12[3] = "2005-04-31";
+        $r12[4] = "2005-03-32";
+        $r12[5] = "2005-02-29";
+        $r12[6] = "200X-01-01";
+        $r12[7] = "2005-0X-01";
+        $r12[8] = "2005-01-0X";
+        $r12[9] = "01/01/2005";
+        $r12[10] = "2005-01";
+        $r12[11] = "2005--01";
+        $r12[12] = "2005-01-";
+        r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.lang.String[] patternInvalid> = $r12;
+        $r13 = newarray (java.lang.String)[12];
+        $r13[0] = "01/00/2005";
+        $r13[1] = "00/01/2005";
+        $r13[2] = "13/01/2005";
+        $r13[3] = "04/31/2005";
+        $r13[4] = "03/32/2005";
+        $r13[5] = "02/29/2005";
+        $r13[6] = "01/01/200X";
+        $r13[7] = "01/0X/2005";
+        $r13[8] = "0X/01/2005";
+        $r13[9] = "01-01-2005";
+        $r13[10] = "01/2005";
+        $r13[11] = "01//2005";
+        r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.lang.String[] localeInvalid> = $r13;
+        return;
+    }
+
+    protected void setUp() throws java.lang.Exception
+    {
+        org.apache.commons.validator.routines.AbstractCalendarValidatorTest r0;
+
+        r0 := @this: org.apache.commons.validator.routines.AbstractCalendarValidatorTest;
+        specialinvoke r0.<junit.framework.TestCase: void setUp()>();
+        return;
+    }
+
+    protected void tearDown() throws java.lang.Exception
+    {
+        org.apache.commons.validator.routines.AbstractCalendarValidatorTest r0;
+
+        r0 := @this: org.apache.commons.validator.routines.AbstractCalendarValidatorTest;
+        specialinvoke r0.<junit.framework.TestCase: void tearDown()>();
+        r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: org.apache.commons.validator.routines.AbstractCalendarValidator validator> = null;
+        return;
+    }
+
+    public void testPatternValid()
+    {
+        org.apache.commons.validator.routines.AbstractCalendarValidatorTest r0;
+        int i0, $i1;
+        java.lang.String r1, $r4, $r7, $r12, $r16, $r19, $r22, $r26;
+        java.lang.Object r2;
+        java.lang.StringBuilder $r3, $r5, $r8, $r9, $r13, $r14, $r15, $r17, $r18, $r24, $r25;
+        java.lang.String[] $r6, $r11, $r21, $r29;
+        org.apache.commons.validator.routines.AbstractCalendarValidator $r10, $r20;
+        boolean $z0, $z1;
+        java.util.Calendar $r23;
+        java.util.Date[] $r27;
+        java.util.Date $r28;
+
+        r0 := @this: org.apache.commons.validator.routines.AbstractCalendarValidatorTest;
+        i0 = 0;
+        goto label2;
+
+     label0:
+        $r3 = new java.lang.StringBuilder;
+        $r4 = staticinvoke <java.lang.String: java.lang.String valueOf(int)>(i0);
+        specialinvoke $r3.<java.lang.StringBuilder: void <init>(java.lang.String)>($r4);
+        $r5 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" value=[");
+        $r6 = r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.lang.String[] patternValid>;
+        $r7 = $r6[i0];
+        $r8 = virtualinvoke $r5.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r7);
+        $r9 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("] failed ");
+        r1 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r10 = r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: org.apache.commons.validator.routines.AbstractCalendarValidator validator>;
+        $r11 = r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.lang.String[] patternValid>;
+        $r12 = $r11[i0];
+        r2 = virtualinvoke $r10.<org.apache.commons.validator.routines.AbstractCalendarValidator: java.lang.Object parse(java.lang.String,java.lang.String,java.util.Locale,java.util.TimeZone)>($r12, "yy-MM-dd", null, null);
+        $r13 = new java.lang.StringBuilder;
+        specialinvoke $r13.<java.lang.StringBuilder: void <init>(java.lang.String)>("validateObj() ");
+        $r14 = virtualinvoke $r13.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r1);
+        $r15 = virtualinvoke $r14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(r2);
+        $r16 = virtualinvoke $r15.<java.lang.StringBuilder: java.lang.String toString()>();
+        staticinvoke <org.apache.commons.validator.routines.AbstractCalendarValidatorTest: void assertNotNull(java.lang.String,java.lang.Object)>($r16, r2);
+        $r17 = new java.lang.StringBuilder;
+        specialinvoke $r17.<java.lang.StringBuilder: void <init>(java.lang.String)>("isValid() ");
+        $r18 = virtualinvoke $r17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r1);
+        $r19 = virtualinvoke $r18.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r20 = r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: org.apache.commons.validator.routines.AbstractCalendarValidator validator>;
+        $r21 = r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.lang.String[] patternValid>;
+        $r22 = $r21[i0];
+        $z0 = virtualinvoke $r20.<org.apache.commons.validator.routines.AbstractCalendarValidator: boolean isValid(java.lang.String,java.lang.String)>($r22, "yy-MM-dd");
+        staticinvoke <org.apache.commons.validator.routines.AbstractCalendarValidatorTest: void assertTrue(java.lang.String,boolean)>($r19, $z0);
+        $z1 = r2 instanceof java.util.Calendar;
+        if $z1 == 0 goto label1;
+
+        $r23 = (java.util.Calendar) r2;
+        r2 = virtualinvoke $r23.<java.util.Calendar: java.util.Date getTime()>();
+
+     label1:
+        $r24 = new java.lang.StringBuilder;
+        specialinvoke $r24.<java.lang.StringBuilder: void <init>(java.lang.String)>("compare ");
+        $r25 = virtualinvoke $r24.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r1);
+        $r26 = virtualinvoke $r25.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r27 = r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.util.Date[] patternExpect>;
+        $r28 = $r27[i0];
+        staticinvoke <org.apache.commons.validator.routines.AbstractCalendarValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>($r26, $r28, r2);
+        i0 = i0 + 1;
+
+     label2:
+        $r29 = r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.lang.String[] patternValid>;
+        $i1 = lengthof $r29;
+        if i0 < $i1 goto label0;
+
+        return;
+    }
+
+    public void testPatternInvalid()
+    {
+        org.apache.commons.validator.routines.AbstractCalendarValidatorTest r0;
+        int i0, $i1;
+        java.lang.String r1, $r4, $r7, $r12, $r16, $r19, $r22;
+        java.lang.Object r2;
+        java.lang.StringBuilder $r3, $r5, $r8, $r9, $r13, $r14, $r15, $r17, $r18;
+        java.lang.String[] $r6, $r11, $r21, $r23;
+        org.apache.commons.validator.routines.AbstractCalendarValidator $r10, $r20;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.routines.AbstractCalendarValidatorTest;
+        i0 = 0;
+        goto label1;
+
+     label0:
+        $r3 = new java.lang.StringBuilder;
+        $r4 = staticinvoke <java.lang.String: java.lang.String valueOf(int)>(i0);
+        specialinvoke $r3.<java.lang.StringBuilder: void <init>(java.lang.String)>($r4);
+        $r5 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" value=[");
+        $r6 = r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.lang.String[] patternInvalid>;
+        $r7 = $r6[i0];
+        $r8 = virtualinvoke $r5.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r7);
+        $r9 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("] passed ");
+        r1 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r10 = r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: org.apache.commons.validator.routines.AbstractCalendarValidator validator>;
+        $r11 = r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.lang.String[] patternInvalid>;
+        $r12 = $r11[i0];
+        r2 = virtualinvoke $r10.<org.apache.commons.validator.routines.AbstractCalendarValidator: java.lang.Object parse(java.lang.String,java.lang.String,java.util.Locale,java.util.TimeZone)>($r12, "yy-MM-dd", null, null);
+        $r13 = new java.lang.StringBuilder;
+        specialinvoke $r13.<java.lang.StringBuilder: void <init>(java.lang.String)>("validateObj() ");
+        $r14 = virtualinvoke $r13.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r1);
+        $r15 = virtualinvoke $r14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(r2);
+        $r16 = virtualinvoke $r15.<java.lang.StringBuilder: java.lang.String toString()>();
+        staticinvoke <org.apache.commons.validator.routines.AbstractCalendarValidatorTest: void assertNull(java.lang.String,java.lang.Object)>($r16, r2);
+        $r17 = new java.lang.StringBuilder;
+        specialinvoke $r17.<java.lang.StringBuilder: void <init>(java.lang.String)>("isValid() ");
+        $r18 = virtualinvoke $r17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r1);
+        $r19 = virtualinvoke $r18.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r20 = r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: org.apache.commons.validator.routines.AbstractCalendarValidator validator>;
+        $r21 = r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.lang.String[] patternInvalid>;
+        $r22 = $r21[i0];
+        $z0 = virtualinvoke $r20.<org.apache.commons.validator.routines.AbstractCalendarValidator: boolean isValid(java.lang.String,java.lang.String)>($r22, "yy-MM-dd");
+        staticinvoke <org.apache.commons.validator.routines.AbstractCalendarValidatorTest: void assertFalse(java.lang.String,boolean)>($r19, $z0);
+        i0 = i0 + 1;
+
+     label1:
+        $r23 = r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.lang.String[] patternInvalid>;
+        $i1 = lengthof $r23;
+        if i0 < $i1 goto label0;
+
+        return;
+    }
+
+    public void testLocaleValid()
+    {
+        org.apache.commons.validator.routines.AbstractCalendarValidatorTest r0;
+        int i0, $i1;
+        java.lang.String r1, $r5, $r8, $r13, $r17, $r20, $r23, $r28;
+        java.util.Locale $r2, $r24;
+        java.lang.Object r3;
+        java.lang.StringBuilder $r4, $r6, $r9, $r10, $r14, $r15, $r16, $r18, $r19, $r26, $r27;
+        java.lang.String[] $r7, $r12, $r22, $r31;
+        org.apache.commons.validator.routines.AbstractCalendarValidator $r11, $r21;
+        boolean $z0, $z1;
+        java.util.Calendar $r25;
+        java.util.Date[] $r29;
+        java.util.Date $r30;
+
+        r0 := @this: org.apache.commons.validator.routines.AbstractCalendarValidatorTest;
+        i0 = 0;
+        goto label2;
+
+     label0:
+        $r4 = new java.lang.StringBuilder;
+        $r5 = staticinvoke <java.lang.String: java.lang.String valueOf(int)>(i0);
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>(java.lang.String)>($r5);
+        $r6 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" value=[");
+        $r7 = r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.lang.String[] localeValid>;
+        $r8 = $r7[i0];
+        $r9 = virtualinvoke $r6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r8);
+        $r10 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("] failed ");
+        r1 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r11 = r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: org.apache.commons.validator.routines.AbstractCalendarValidator validator>;
+        $r12 = r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.lang.String[] localeValid>;
+        $r13 = $r12[i0];
+        $r2 = <java.util.Locale: java.util.Locale US>;
+        r3 = virtualinvoke $r11.<org.apache.commons.validator.routines.AbstractCalendarValidator: java.lang.Object parse(java.lang.String,java.lang.String,java.util.Locale,java.util.TimeZone)>($r13, null, $r2, null);
+        $r14 = new java.lang.StringBuilder;
+        specialinvoke $r14.<java.lang.StringBuilder: void <init>(java.lang.String)>("validateObj() ");
+        $r15 = virtualinvoke $r14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r1);
+        $r16 = virtualinvoke $r15.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(r3);
+        $r17 = virtualinvoke $r16.<java.lang.StringBuilder: java.lang.String toString()>();
+        staticinvoke <org.apache.commons.validator.routines.AbstractCalendarValidatorTest: void assertNotNull(java.lang.String,java.lang.Object)>($r17, r3);
+        $r18 = new java.lang.StringBuilder;
+        specialinvoke $r18.<java.lang.StringBuilder: void <init>(java.lang.String)>("isValid() ");
+        $r19 = virtualinvoke $r18.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r1);
+        $r20 = virtualinvoke $r19.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r21 = r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: org.apache.commons.validator.routines.AbstractCalendarValidator validator>;
+        $r22 = r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.lang.String[] localeValid>;
+        $r23 = $r22[i0];
+        $r24 = <java.util.Locale: java.util.Locale US>;
+        $z0 = virtualinvoke $r21.<org.apache.commons.validator.routines.AbstractCalendarValidator: boolean isValid(java.lang.String,java.util.Locale)>($r23, $r24);
+        staticinvoke <org.apache.commons.validator.routines.AbstractCalendarValidatorTest: void assertTrue(java.lang.String,boolean)>($r20, $z0);
+        $z1 = r3 instanceof java.util.Calendar;
+        if $z1 == 0 goto label1;
+
+        $r25 = (java.util.Calendar) r3;
+        r3 = virtualinvoke $r25.<java.util.Calendar: java.util.Date getTime()>();
+
+     label1:
+        $r26 = new java.lang.StringBuilder;
+        specialinvoke $r26.<java.lang.StringBuilder: void <init>(java.lang.String)>("compare ");
+        $r27 = virtualinvoke $r26.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r1);
+        $r28 = virtualinvoke $r27.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r29 = r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.util.Date[] patternExpect>;
+        $r30 = $r29[i0];
+        staticinvoke <org.apache.commons.validator.routines.AbstractCalendarValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>($r28, $r30, r3);
+        i0 = i0 + 1;
+
+     label2:
+        $r31 = r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.lang.String[] localeValid>;
+        $i1 = lengthof $r31;
+        if i0 < $i1 goto label0;
+
+        return;
+    }
+
+    public void testLocaleInvalid()
+    {
+        org.apache.commons.validator.routines.AbstractCalendarValidatorTest r0;
+        int i0, $i1;
+        java.lang.String r1, $r5, $r8, $r13, $r17, $r20, $r23;
+        java.util.Locale $r2, $r24;
+        java.lang.Object r3;
+        java.lang.StringBuilder $r4, $r6, $r9, $r10, $r14, $r15, $r16, $r18, $r19;
+        java.lang.String[] $r7, $r12, $r22, $r25;
+        org.apache.commons.validator.routines.AbstractCalendarValidator $r11, $r21;
+        boolean $z0;
+
+        r0 := @this: org.apache.commons.validator.routines.AbstractCalendarValidatorTest;
+        i0 = 0;
+        goto label1;
+
+     label0:
+        $r4 = new java.lang.StringBuilder;
+        $r5 = staticinvoke <java.lang.String: java.lang.String valueOf(int)>(i0);
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>(java.lang.String)>($r5);
+        $r6 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" value=[");
+        $r7 = r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.lang.String[] localeInvalid>;
+        $r8 = $r7[i0];
+        $r9 = virtualinvoke $r6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r8);
+        $r10 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("] passed ");
+        r1 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r11 = r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: org.apache.commons.validator.routines.AbstractCalendarValidator validator>;
+        $r12 = r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.lang.String[] localeInvalid>;
+        $r13 = $r12[i0];
+        $r2 = <java.util.Locale: java.util.Locale US>;
+        r3 = virtualinvoke $r11.<org.apache.commons.validator.routines.AbstractCalendarValidator: java.lang.Object parse(java.lang.String,java.lang.String,java.util.Locale,java.util.TimeZone)>($r13, null, $r2, null);
+        $r14 = new java.lang.StringBuilder;
+        specialinvoke $r14.<java.lang.StringBuilder: void <init>(java.lang.String)>("validateObj() ");
+        $r15 = virtualinvoke $r14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r1);
+        $r16 = virtualinvoke $r15.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(r3);
+        $r17 = virtualinvoke $r16.<java.lang.StringBuilder: java.lang.String toString()>();
+        staticinvoke <org.apache.commons.validator.routines.AbstractCalendarValidatorTest: void assertNull(java.lang.String,java.lang.Object)>($r17, r3);
+        $r18 = new java.lang.StringBuilder;
+        specialinvoke $r18.<java.lang.StringBuilder: void <init>(java.lang.String)>("isValid() ");
+        $r19 = virtualinvoke $r18.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r1);
+        $r20 = virtualinvoke $r19.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r21 = r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: org.apache.commons.validator.routines.AbstractCalendarValidator validator>;
+        $r22 = r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.lang.String[] localeInvalid>;
+        $r23 = $r22[i0];
+        $r24 = <java.util.Locale: java.util.Locale US>;
+        $z0 = virtualinvoke $r21.<org.apache.commons.validator.routines.AbstractCalendarValidator: boolean isValid(java.lang.String,java.util.Locale)>($r23, $r24);
+        staticinvoke <org.apache.commons.validator.routines.AbstractCalendarValidatorTest: void assertFalse(java.lang.String,boolean)>($r20, $z0);
+        i0 = i0 + 1;
+
+     label1:
+        $r25 = r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.lang.String[] localeInvalid>;
+        $i1 = lengthof $r25;
+        if i0 < $i1 goto label0;
+
+        return;
+    }
+
+    public void testFormat()
+    {
+        org.apache.commons.validator.routines.AbstractCalendarValidatorTest r0;
+        java.lang.Object r1;
+        org.apache.commons.validator.routines.AbstractCalendarValidator $r2, $r3, $r5;
+        java.lang.String $r4, $r7;
+        java.util.Locale $r6;
+
+        r0 := @this: org.apache.commons.validator.routines.AbstractCalendarValidatorTest;
+        $r2 = r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: org.apache.commons.validator.routines.AbstractCalendarValidator validator>;
+        r1 = virtualinvoke $r2.<org.apache.commons.validator.routines.AbstractCalendarValidator: java.lang.Object parse(java.lang.String,java.lang.String,java.util.Locale,java.util.TimeZone)>("2005-11-28", "yyyy-MM-dd", null, null);
+        staticinvoke <org.apache.commons.validator.routines.AbstractCalendarValidatorTest: void assertNotNull(java.lang.String,java.lang.Object)>("Test Date ", r1);
+        $r3 = r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: org.apache.commons.validator.routines.AbstractCalendarValidator validator>;
+        $r4 = virtualinvoke $r3.<org.apache.commons.validator.routines.AbstractCalendarValidator: java.lang.String format(java.lang.Object,java.lang.String)>(r1, "dd.MM.yy");
+        staticinvoke <org.apache.commons.validator.routines.AbstractCalendarValidatorTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("Format pattern", "28.11.05", $r4);
+        $r5 = r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: org.apache.commons.validator.routines.AbstractCalendarValidator validator>;
+        $r6 = <java.util.Locale: java.util.Locale US>;
+        $r7 = virtualinvoke $r5.<org.apache.commons.validator.routines.AbstractCalendarValidator: java.lang.String format(java.lang.Object,java.util.Locale)>(r1, $r6);
+        staticinvoke <org.apache.commons.validator.routines.AbstractCalendarValidatorTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>("Format locale", "11/28/05", $r7);
+        return;
+    }
+
+    public void testSerialization()
+    {
+        org.apache.commons.validator.routines.AbstractCalendarValidatorTest r0;
+        java.io.ByteArrayOutputStream $r1, r2;
+        java.io.ObjectOutputStream r3, $r6;
+        java.io.ByteArrayInputStream r4, $r19;
+        java.io.ObjectInputStream r5, $r21;
+        org.apache.commons.validator.routines.AbstractCalendarValidator $r7, $r11, $r25;
+        java.lang.Exception $r8, r9, $r22, r23;
+        java.lang.StringBuilder $r10, $r15, $r16, $r24, $r29, $r30;
+        java.lang.Class $r12, $r26;
+        java.lang.String $r13, $r14, $r17, $r27, $r28, $r31;
+        java.lang.Object r18;
+        byte[] $r20;
+
+        r0 := @this: org.apache.commons.validator.routines.AbstractCalendarValidatorTest;
+        $r1 = new java.io.ByteArrayOutputStream;
+        specialinvoke $r1.<java.io.ByteArrayOutputStream: void <init>()>();
+        r2 = $r1;
+
+     label0:
+        $r6 = new java.io.ObjectOutputStream;
+        specialinvoke $r6.<java.io.ObjectOutputStream: void <init>(java.io.OutputStream)>(r2);
+        r3 = $r6;
+        $r7 = r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: org.apache.commons.validator.routines.AbstractCalendarValidator validator>;
+        virtualinvoke r3.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>($r7);
+        virtualinvoke r3.<java.io.ObjectOutputStream: void flush()>();
+        virtualinvoke r3.<java.io.ObjectOutputStream: void close()>();
+
+     label1:
+        goto label3;
+
+     label2:
+        $r8 := @caughtexception;
+        r9 = $r8;
+        $r10 = new java.lang.StringBuilder;
+        $r11 = r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: org.apache.commons.validator.routines.AbstractCalendarValidator validator>;
+        $r12 = virtualinvoke $r11.<java.lang.Object: java.lang.Class getClass()>();
+        $r13 = virtualinvoke $r12.<java.lang.Class: java.lang.String getName()>();
+        $r14 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r13);
+        specialinvoke $r10.<java.lang.StringBuilder: void <init>(java.lang.String)>($r14);
+        $r15 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" error during serialization: ");
+        $r16 = virtualinvoke $r15.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(r9);
+        $r17 = virtualinvoke $r16.<java.lang.StringBuilder: java.lang.String toString()>();
+        staticinvoke <org.apache.commons.validator.routines.AbstractCalendarValidatorTest: void fail(java.lang.String)>($r17);
+
+     label3:
+        r18 = null;
+
+     label4:
+        $r19 = new java.io.ByteArrayInputStream;
+        $r20 = virtualinvoke r2.<java.io.ByteArrayOutputStream: byte[] toByteArray()>();
+        specialinvoke $r19.<java.io.ByteArrayInputStream: void <init>(byte[])>($r20);
+        r4 = $r19;
+        $r21 = new java.io.ObjectInputStream;
+        specialinvoke $r21.<java.io.ObjectInputStream: void <init>(java.io.InputStream)>(r4);
+        r5 = $r21;
+        r18 = virtualinvoke r5.<java.io.ObjectInputStream: java.lang.Object readObject()>();
+        virtualinvoke r4.<java.io.ByteArrayInputStream: void close()>();
+
+     label5:
+        goto label7;
+
+     label6:
+        $r22 := @caughtexception;
+        r23 = $r22;
+        $r24 = new java.lang.StringBuilder;
+        $r25 = r0.<org.apache.commons.validator.routines.AbstractCalendarValidatorTest: org.apache.commons.validator.routines.AbstractCalendarValidator validator>;
+        $r26 = virtualinvoke $r25.<java.lang.Object: java.lang.Class getClass()>();
+        $r27 = virtualinvoke $r26.<java.lang.Class: java.lang.String getName()>();
+        $r28 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r27);
+        specialinvoke $r24.<java.lang.StringBuilder: void <init>(java.lang.String)>($r28);
+        $r29 = virtualinvoke $r24.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" error during deserialization: ");
+        $r30 = virtualinvoke $r29.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(r23);
+        $r31 = virtualinvoke $r30.<java.lang.StringBuilder: java.lang.String toString()>();
+        staticinvoke <org.apache.commons.validator.routines.AbstractCalendarValidatorTest: void fail(java.lang.String)>($r31);
+
+     label7:
+        staticinvoke <org.apache.commons.validator.routines.AbstractCalendarValidatorTest: void assertNotNull(java.lang.Object)>(r18);
+        return;
+
+        catch java.lang.Exception from label0 to label1 with label2;
+        catch java.lang.Exception from label4 to label5 with label6;
+    }
+
+    protected static java.util.Calendar createCalendar(java.util.TimeZone, int, int)
+    {
+        java.util.TimeZone r0;
+        int i0, i1, i2, i3, i4, i5, i6, i7, $i8, $i9, $i10, $i11, $i12, $i13, $i14, $i15, $i16, $i17, $i18, $i19, $i20;
+        java.util.Calendar r1, $r2;
+
+        r0 := @parameter0: java.util.TimeZone;
+        i0 := @parameter1: int;
+        i1 := @parameter2: int;
+        if r0 != null goto label0;
+
+        $r2 = staticinvoke <java.util.Calendar: java.util.Calendar getInstance()>();
+        goto label1;
+
+     label0:
+        $r2 = staticinvoke <java.util.Calendar: java.util.Calendar getInstance(java.util.TimeZone)>(r0);
+
+     label1:
+        r1 = $r2;
+        $i8 = i0 / 10000;
+        i2 = $i8 * 10000;
+        $i9 = i0 / 100;
+        $i10 = $i9 * 100;
+        i3 = $i10 - i2;
+        $i11 = i2 + i3;
+        i4 = i0 - $i11;
+        $i12 = i1 / 10000;
+        i5 = $i12 * 10000;
+        $i13 = i1 / 100;
+        $i14 = $i13 * 100;
+        i6 = $i14 - i5;
+        $i15 = i5 + i6;
+        i7 = i1 - $i15;
+        $i16 = i2 / 10000;
+        virtualinvoke r1.<java.util.Calendar: void set(int,int)>(1, $i16);
+        $i17 = i3 / 100;
+        $i18 = $i17 - 1;
+        virtualinvoke r1.<java.util.Calendar: void set(int,int)>(2, $i18);
+        virtualinvoke r1.<java.util.Calendar: void set(int,int)>(5, i4);
+        $i19 = i5 / 10000;
+        virtualinvoke r1.<java.util.Calendar: void set(int,int)>(11, $i19);
+        $i20 = i6 / 100;
+        virtualinvoke r1.<java.util.Calendar: void set(int,int)>(12, $i20);
+        virtualinvoke r1.<java.util.Calendar: void set(int,int)>(13, i7);
+        virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 0);
+        return r1;
+    }
+
+    protected static java.util.Date createDate(java.util.TimeZone, int, int)
+    {
+        java.util.TimeZone r0;
+        int i0, i1;
+        java.util.Calendar r1;
+        java.util.Date $r2;
+
+        r0 := @parameter0: java.util.TimeZone;
+        i0 := @parameter1: int;
+        i1 := @parameter2: int;
+        r1 = staticinvoke <org.apache.commons.validator.routines.AbstractCalendarValidatorTest: java.util.Calendar createCalendar(java.util.TimeZone,int,int)>(r0, i0, i1);
+        $r2 = virtualinvoke r1.<java.util.Calendar: java.util.Date getTime()>();
+        return $r2;
+    }
+}

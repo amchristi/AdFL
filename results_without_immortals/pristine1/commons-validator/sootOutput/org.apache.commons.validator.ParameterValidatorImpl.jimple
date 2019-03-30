@@ -1,0 +1,32 @@
+public class org.apache.commons.validator.ParameterValidatorImpl extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        org.apache.commons.validator.ParameterValidatorImpl r0;
+
+        r0 := @this: org.apache.commons.validator.ParameterValidatorImpl;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        return;
+    }
+
+    public static boolean validateParameter(java.lang.Object, org.apache.commons.validator.Form, org.apache.commons.validator.Field, org.apache.commons.validator.Validator, org.apache.commons.validator.ValidatorAction, org.apache.commons.validator.ValidatorResults, java.util.Locale) throws java.lang.Exception
+    {
+        java.lang.Object r0;
+        org.apache.commons.validator.Form r1;
+        org.apache.commons.validator.Field r2;
+        org.apache.commons.validator.Validator r3;
+        org.apache.commons.validator.ValidatorAction r4;
+        org.apache.commons.validator.ValidatorResults r5;
+        java.util.Locale r6;
+
+        r0 := @parameter0: java.lang.Object;
+        r1 := @parameter1: org.apache.commons.validator.Form;
+        r2 := @parameter2: org.apache.commons.validator.Field;
+        r3 := @parameter3: org.apache.commons.validator.Validator;
+        r4 := @parameter4: org.apache.commons.validator.ValidatorAction;
+        r5 := @parameter5: org.apache.commons.validator.ValidatorResults;
+        r6 := @parameter6: java.util.Locale;
+        return 1;
+    }
+}

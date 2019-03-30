@@ -1,0 +1,565 @@
+public class org.apache.commons.validator.GenericValidator extends java.lang.Object implements java.io.Serializable
+{
+    private static final long serialVersionUID;
+    private static final org.apache.commons.validator.routines.UrlValidator URL_VALIDATOR;
+    private static final org.apache.commons.validator.routines.CreditCardValidator CREDIT_CARD_VALIDATOR;
+
+    static void <clinit>()
+    {
+        org.apache.commons.validator.routines.UrlValidator $r0;
+        org.apache.commons.validator.routines.CreditCardValidator $r1;
+
+        $r0 = new org.apache.commons.validator.routines.UrlValidator;
+        specialinvoke $r0.<org.apache.commons.validator.routines.UrlValidator: void <init>()>();
+        <org.apache.commons.validator.GenericValidator: org.apache.commons.validator.routines.UrlValidator URL_VALIDATOR> = $r0;
+        $r1 = new org.apache.commons.validator.routines.CreditCardValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.CreditCardValidator: void <init>()>();
+        <org.apache.commons.validator.GenericValidator: org.apache.commons.validator.routines.CreditCardValidator CREDIT_CARD_VALIDATOR> = $r1;
+        return;
+    }
+
+    public void <init>()
+    {
+        org.apache.commons.validator.GenericValidator r0;
+
+        r0 := @this: org.apache.commons.validator.GenericValidator;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        return;
+    }
+
+    public static boolean isBlankOrNull(java.lang.String)
+    {
+        java.lang.String r0, $r1;
+        int $i0;
+
+        r0 := @parameter0: java.lang.String;
+        if r0 == null goto label0;
+
+        $r1 = virtualinvoke r0.<java.lang.String: java.lang.String trim()>();
+        $i0 = virtualinvoke $r1.<java.lang.String: int length()>();
+        if $i0 == 0 goto label0;
+
+        return 0;
+
+     label0:
+        return 1;
+    }
+
+    public static boolean matchRegexp(java.lang.String, java.lang.String)
+    {
+        java.lang.String r0, r1;
+        int $i0;
+        boolean $z0;
+
+        r0 := @parameter0: java.lang.String;
+        r1 := @parameter1: java.lang.String;
+        if r1 == null goto label0;
+
+        $i0 = virtualinvoke r1.<java.lang.String: int length()>();
+        if $i0 > 0 goto label1;
+
+     label0:
+        return 0;
+
+     label1:
+        $z0 = staticinvoke <java.util.regex.Pattern: boolean matches(java.lang.String,java.lang.CharSequence)>(r1, r0);
+        return $z0;
+    }
+
+    public static boolean isByte(java.lang.String)
+    {
+        java.lang.String r0;
+        java.lang.Byte $r1;
+
+        r0 := @parameter0: java.lang.String;
+        $r1 = staticinvoke <org.apache.commons.validator.GenericTypeValidator: java.lang.Byte formatByte(java.lang.String)>(r0);
+        if $r1 == null goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public static boolean isShort(java.lang.String)
+    {
+        java.lang.String r0;
+        java.lang.Short $r1;
+
+        r0 := @parameter0: java.lang.String;
+        $r1 = staticinvoke <org.apache.commons.validator.GenericTypeValidator: java.lang.Short formatShort(java.lang.String)>(r0);
+        if $r1 == null goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public static boolean isInt(java.lang.String)
+    {
+        java.lang.String r0;
+        java.lang.Integer $r1;
+
+        r0 := @parameter0: java.lang.String;
+        $r1 = staticinvoke <org.apache.commons.validator.GenericTypeValidator: java.lang.Integer formatInt(java.lang.String)>(r0);
+        if $r1 == null goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public static boolean isLong(java.lang.String)
+    {
+        java.lang.String r0;
+        java.lang.Long $r1;
+
+        r0 := @parameter0: java.lang.String;
+        $r1 = staticinvoke <org.apache.commons.validator.GenericTypeValidator: java.lang.Long formatLong(java.lang.String)>(r0);
+        if $r1 == null goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public static boolean isFloat(java.lang.String)
+    {
+        java.lang.String r0;
+        java.lang.Float $r1;
+
+        r0 := @parameter0: java.lang.String;
+        $r1 = staticinvoke <org.apache.commons.validator.GenericTypeValidator: java.lang.Float formatFloat(java.lang.String)>(r0);
+        if $r1 == null goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public static boolean isDouble(java.lang.String)
+    {
+        java.lang.String r0;
+        java.lang.Double $r1;
+
+        r0 := @parameter0: java.lang.String;
+        $r1 = staticinvoke <org.apache.commons.validator.GenericTypeValidator: java.lang.Double formatDouble(java.lang.String)>(r0);
+        if $r1 == null goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public static boolean isDate(java.lang.String, java.util.Locale)
+    {
+        java.lang.String r0;
+        java.util.Locale r1;
+        org.apache.commons.validator.routines.DateValidator $r2;
+        boolean $z0;
+
+        r0 := @parameter0: java.lang.String;
+        r1 := @parameter1: java.util.Locale;
+        $r2 = staticinvoke <org.apache.commons.validator.routines.DateValidator: org.apache.commons.validator.routines.DateValidator getInstance()>();
+        $z0 = virtualinvoke $r2.<org.apache.commons.validator.routines.DateValidator: boolean isValid(java.lang.String,java.util.Locale)>(r0, r1);
+        return $z0;
+    }
+
+    public static boolean isDate(java.lang.String, java.lang.String, boolean)
+    {
+        java.lang.String r0, r1;
+        boolean z0, $z1;
+        org.apache.commons.validator.DateValidator $r2;
+
+        r0 := @parameter0: java.lang.String;
+        r1 := @parameter1: java.lang.String;
+        z0 := @parameter2: boolean;
+        $r2 = staticinvoke <org.apache.commons.validator.DateValidator: org.apache.commons.validator.DateValidator getInstance()>();
+        $z1 = virtualinvoke $r2.<org.apache.commons.validator.DateValidator: boolean isValid(java.lang.String,java.lang.String,boolean)>(r0, r1, z0);
+        return $z1;
+    }
+
+    public static boolean isInRange(byte, byte, byte)
+    {
+        byte b0, b1, b2;
+
+        b0 := @parameter0: byte;
+        b1 := @parameter1: byte;
+        b2 := @parameter2: byte;
+        if b0 < b1 goto label0;
+
+        if b0 > b2 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public static boolean isInRange(int, int, int)
+    {
+        int i0, i1, i2;
+
+        i0 := @parameter0: int;
+        i1 := @parameter1: int;
+        i2 := @parameter2: int;
+        if i0 < i1 goto label0;
+
+        if i0 > i2 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public static boolean isInRange(float, float, float)
+    {
+        float f0, f1, f2;
+        byte $b0, $b1;
+
+        f0 := @parameter0: float;
+        f1 := @parameter1: float;
+        f2 := @parameter2: float;
+        $b0 = f0 cmpl f1;
+        if $b0 < 0 goto label0;
+
+        $b1 = f0 cmpg f2;
+        if $b1 > 0 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public static boolean isInRange(short, short, short)
+    {
+        short s0, s1, s2;
+
+        s0 := @parameter0: short;
+        s1 := @parameter1: short;
+        s2 := @parameter2: short;
+        if s0 < s1 goto label0;
+
+        if s0 > s2 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public static boolean isInRange(long, long, long)
+    {
+        long l0, l1, l2;
+        byte $b3, $b4;
+
+        l0 := @parameter0: long;
+        l1 := @parameter1: long;
+        l2 := @parameter2: long;
+        $b3 = l0 cmp l1;
+        if $b3 < 0 goto label0;
+
+        $b4 = l0 cmp l2;
+        if $b4 > 0 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public static boolean isInRange(double, double, double)
+    {
+        double d0, d1, d2;
+        byte $b0, $b1;
+
+        d0 := @parameter0: double;
+        d1 := @parameter1: double;
+        d2 := @parameter2: double;
+        $b0 = d0 cmpl d1;
+        if $b0 < 0 goto label0;
+
+        $b1 = d0 cmpg d2;
+        if $b1 > 0 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public static boolean isCreditCard(java.lang.String)
+    {
+        java.lang.String r0;
+        org.apache.commons.validator.routines.CreditCardValidator $r1;
+        boolean $z0;
+
+        r0 := @parameter0: java.lang.String;
+        $r1 = <org.apache.commons.validator.GenericValidator: org.apache.commons.validator.routines.CreditCardValidator CREDIT_CARD_VALIDATOR>;
+        $z0 = virtualinvoke $r1.<org.apache.commons.validator.routines.CreditCardValidator: boolean isValid(java.lang.String)>(r0);
+        return $z0;
+    }
+
+    public static boolean isEmail(java.lang.String)
+    {
+        java.lang.String r0;
+        org.apache.commons.validator.routines.EmailValidator $r1;
+        boolean $z0;
+
+        r0 := @parameter0: java.lang.String;
+        $r1 = staticinvoke <org.apache.commons.validator.routines.EmailValidator: org.apache.commons.validator.routines.EmailValidator getInstance()>();
+        $z0 = virtualinvoke $r1.<org.apache.commons.validator.routines.EmailValidator: boolean isValid(java.lang.String)>(r0);
+        return $z0;
+    }
+
+    public static boolean isUrl(java.lang.String)
+    {
+        java.lang.String r0;
+        org.apache.commons.validator.routines.UrlValidator $r1;
+        boolean $z0;
+
+        r0 := @parameter0: java.lang.String;
+        $r1 = <org.apache.commons.validator.GenericValidator: org.apache.commons.validator.routines.UrlValidator URL_VALIDATOR>;
+        $z0 = virtualinvoke $r1.<org.apache.commons.validator.routines.UrlValidator: boolean isValid(java.lang.String)>(r0);
+        return $z0;
+    }
+
+    public static boolean maxLength(java.lang.String, int)
+    {
+        java.lang.String r0;
+        int i0, $i1;
+
+        r0 := @parameter0: java.lang.String;
+        i0 := @parameter1: int;
+        $i1 = virtualinvoke r0.<java.lang.String: int length()>();
+        if $i1 > i0 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public static boolean maxLength(java.lang.String, int, int)
+    {
+        java.lang.String r0;
+        int i0, i1, i2, $i3, $i4;
+
+        r0 := @parameter0: java.lang.String;
+        i0 := @parameter1: int;
+        i1 := @parameter2: int;
+        i2 = staticinvoke <org.apache.commons.validator.GenericValidator: int adjustForLineEnding(java.lang.String,int)>(r0, i1);
+        $i3 = virtualinvoke r0.<java.lang.String: int length()>();
+        $i4 = $i3 + i2;
+        if $i4 > i0 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public static boolean minLength(java.lang.String, int)
+    {
+        java.lang.String r0;
+        int i0, $i1;
+
+        r0 := @parameter0: java.lang.String;
+        i0 := @parameter1: int;
+        $i1 = virtualinvoke r0.<java.lang.String: int length()>();
+        if $i1 < i0 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public static boolean minLength(java.lang.String, int, int)
+    {
+        java.lang.String r0;
+        int i0, i1, i2, $i3, $i4;
+
+        r0 := @parameter0: java.lang.String;
+        i0 := @parameter1: int;
+        i1 := @parameter2: int;
+        i2 = staticinvoke <org.apache.commons.validator.GenericValidator: int adjustForLineEnding(java.lang.String,int)>(r0, i1);
+        $i3 = virtualinvoke r0.<java.lang.String: int length()>();
+        $i4 = $i3 + i2;
+        if $i4 < i0 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    private static int adjustForLineEnding(java.lang.String, int)
+    {
+        java.lang.String r0;
+        int i0, i1, i2, i3, $i6, $i7, $i8, $i9;
+        char $c4, $c5;
+
+        r0 := @parameter0: java.lang.String;
+        i0 := @parameter1: int;
+        i1 = 0;
+        i2 = 0;
+        i3 = 0;
+        goto label3;
+
+     label0:
+        $c4 = virtualinvoke r0.<java.lang.String: char charAt(int)>(i3);
+        if $c4 != 10 goto label1;
+
+        i1 = i1 + 1;
+
+     label1:
+        $c5 = virtualinvoke r0.<java.lang.String: char charAt(int)>(i3);
+        if $c5 != 13 goto label2;
+
+        i2 = i2 + 1;
+
+     label2:
+        i3 = i3 + 1;
+
+     label3:
+        $i6 = virtualinvoke r0.<java.lang.String: int length()>();
+        if i3 < $i6 goto label0;
+
+        $i7 = i1 * i0;
+        $i8 = i2 + i1;
+        $i9 = $i7 - $i8;
+        return $i9;
+    }
+
+    public static boolean minValue(int, int)
+    {
+        int i0, i1;
+
+        i0 := @parameter0: int;
+        i1 := @parameter1: int;
+        if i0 < i1 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public static boolean minValue(long, long)
+    {
+        long l0, l1;
+        byte $b2;
+
+        l0 := @parameter0: long;
+        l1 := @parameter1: long;
+        $b2 = l0 cmp l1;
+        if $b2 < 0 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public static boolean minValue(double, double)
+    {
+        double d0, d1;
+        byte $b0;
+
+        d0 := @parameter0: double;
+        d1 := @parameter1: double;
+        $b0 = d0 cmpl d1;
+        if $b0 < 0 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public static boolean minValue(float, float)
+    {
+        float f0, f1;
+        byte $b0;
+
+        f0 := @parameter0: float;
+        f1 := @parameter1: float;
+        $b0 = f0 cmpl f1;
+        if $b0 < 0 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public static boolean maxValue(int, int)
+    {
+        int i0, i1;
+
+        i0 := @parameter0: int;
+        i1 := @parameter1: int;
+        if i0 > i1 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public static boolean maxValue(long, long)
+    {
+        long l0, l1;
+        byte $b2;
+
+        l0 := @parameter0: long;
+        l1 := @parameter1: long;
+        $b2 = l0 cmp l1;
+        if $b2 > 0 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public static boolean maxValue(double, double)
+    {
+        double d0, d1;
+        byte $b0;
+
+        d0 := @parameter0: double;
+        d1 := @parameter1: double;
+        $b0 = d0 cmpg d1;
+        if $b0 > 0 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public static boolean maxValue(float, float)
+    {
+        float f0, f1;
+        byte $b0;
+
+        f0 := @parameter0: float;
+        f1 := @parameter1: float;
+        $b0 = f0 cmpg f1;
+        if $b0 > 0 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+}

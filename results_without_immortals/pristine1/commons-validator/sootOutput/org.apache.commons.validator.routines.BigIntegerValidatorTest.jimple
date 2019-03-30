@@ -1,0 +1,218 @@
+public class org.apache.commons.validator.routines.BigIntegerValidatorTest extends org.apache.commons.validator.routines.AbstractNumberValidatorTest
+{
+
+    public void <init>(java.lang.String)
+    {
+        org.apache.commons.validator.routines.BigIntegerValidatorTest r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.routines.BigIntegerValidatorTest;
+        r1 := @parameter0: java.lang.String;
+        specialinvoke r0.<org.apache.commons.validator.routines.AbstractNumberValidatorTest: void <init>(java.lang.String)>(r1);
+        return;
+    }
+
+    protected void setUp() throws java.lang.Exception
+    {
+        org.apache.commons.validator.routines.BigIntegerValidatorTest r0;
+        org.apache.commons.validator.routines.BigIntegerValidator $r1, $r2;
+        java.lang.String[] $r3, $r4, $r7, $r12;
+        java.math.BigInteger $r5, $r6;
+        java.lang.Number[] $r8, $r13;
+        java.lang.Number $r9, $r10, $r11, $r14, $r15, $r16, $r17, $r18, $r21;
+        java.lang.String $r19;
+        java.util.Locale $r20;
+
+        r0 := @this: org.apache.commons.validator.routines.BigIntegerValidatorTest;
+        specialinvoke r0.<org.apache.commons.validator.routines.AbstractNumberValidatorTest: void setUp()>();
+        $r1 = new org.apache.commons.validator.routines.BigIntegerValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.BigIntegerValidator: void <init>(boolean,int)>(0, 0);
+        r0.<org.apache.commons.validator.routines.BigIntegerValidatorTest: org.apache.commons.validator.routines.AbstractNumberValidator validator> = $r1;
+        $r2 = new org.apache.commons.validator.routines.BigIntegerValidator;
+        specialinvoke $r2.<org.apache.commons.validator.routines.BigIntegerValidator: void <init>()>();
+        r0.<org.apache.commons.validator.routines.BigIntegerValidatorTest: org.apache.commons.validator.routines.AbstractNumberValidator strictValidator> = $r2;
+        r0.<org.apache.commons.validator.routines.BigIntegerValidatorTest: java.lang.String testPattern> = "#,###";
+        r0.<org.apache.commons.validator.routines.BigIntegerValidatorTest: java.lang.Number max> = null;
+        r0.<org.apache.commons.validator.routines.BigIntegerValidatorTest: java.lang.Number maxPlusOne> = null;
+        r0.<org.apache.commons.validator.routines.BigIntegerValidatorTest: java.lang.Number min> = null;
+        r0.<org.apache.commons.validator.routines.BigIntegerValidatorTest: java.lang.Number minMinusOne> = null;
+        $r3 = newarray (java.lang.String)[7];
+        $r3[1] = "";
+        $r3[2] = "X";
+        $r3[3] = "X12";
+        $r3[4] = "12X";
+        $r3[5] = "1X2";
+        $r3[6] = "1.2";
+        r0.<org.apache.commons.validator.routines.BigIntegerValidatorTest: java.lang.String[] invalidStrict> = $r3;
+        $r4 = newarray (java.lang.String)[4];
+        $r4[1] = "";
+        $r4[2] = "X";
+        $r4[3] = "X12";
+        r0.<org.apache.commons.validator.routines.BigIntegerValidatorTest: java.lang.String[] invalid> = $r4;
+        $r5 = new java.math.BigInteger;
+        specialinvoke $r5.<java.math.BigInteger: void <init>(java.lang.String)>("1234");
+        r0.<org.apache.commons.validator.routines.BigIntegerValidatorTest: java.lang.Number testNumber> = $r5;
+        $r6 = new java.math.BigInteger;
+        specialinvoke $r6.<java.math.BigInteger: void <init>(java.lang.String)>("0");
+        r0.<org.apache.commons.validator.routines.BigIntegerValidatorTest: java.lang.Number testZero> = $r6;
+        $r7 = newarray (java.lang.String)[3];
+        $r7[0] = "0";
+        $r7[1] = "1234";
+        $r7[2] = "1,234";
+        r0.<org.apache.commons.validator.routines.BigIntegerValidatorTest: java.lang.String[] validStrict> = $r7;
+        $r8 = newarray (java.lang.Number)[3];
+        $r9 = r0.<org.apache.commons.validator.routines.BigIntegerValidatorTest: java.lang.Number testZero>;
+        $r8[0] = $r9;
+        $r10 = r0.<org.apache.commons.validator.routines.BigIntegerValidatorTest: java.lang.Number testNumber>;
+        $r8[1] = $r10;
+        $r11 = r0.<org.apache.commons.validator.routines.BigIntegerValidatorTest: java.lang.Number testNumber>;
+        $r8[2] = $r11;
+        r0.<org.apache.commons.validator.routines.BigIntegerValidatorTest: java.lang.Number[] validStrictCompare> = $r8;
+        $r12 = newarray (java.lang.String)[5];
+        $r12[0] = "0";
+        $r12[1] = "1234";
+        $r12[2] = "1,234";
+        $r12[3] = "1,234.5";
+        $r12[4] = "1234X";
+        r0.<org.apache.commons.validator.routines.BigIntegerValidatorTest: java.lang.String[] valid> = $r12;
+        $r13 = newarray (java.lang.Number)[5];
+        $r14 = r0.<org.apache.commons.validator.routines.BigIntegerValidatorTest: java.lang.Number testZero>;
+        $r13[0] = $r14;
+        $r15 = r0.<org.apache.commons.validator.routines.BigIntegerValidatorTest: java.lang.Number testNumber>;
+        $r13[1] = $r15;
+        $r16 = r0.<org.apache.commons.validator.routines.BigIntegerValidatorTest: java.lang.Number testNumber>;
+        $r13[2] = $r16;
+        $r17 = r0.<org.apache.commons.validator.routines.BigIntegerValidatorTest: java.lang.Number testNumber>;
+        $r13[3] = $r17;
+        $r18 = r0.<org.apache.commons.validator.routines.BigIntegerValidatorTest: java.lang.Number testNumber>;
+        $r13[4] = $r18;
+        r0.<org.apache.commons.validator.routines.BigIntegerValidatorTest: java.lang.Number[] validCompare> = $r13;
+        r0.<org.apache.commons.validator.routines.BigIntegerValidatorTest: java.lang.String testStringUS> = "1,234";
+        r0.<org.apache.commons.validator.routines.BigIntegerValidatorTest: java.lang.String testStringDE> = "1.234";
+        $r19 = r0.<org.apache.commons.validator.routines.BigIntegerValidatorTest: java.lang.String testStringDE>;
+        r0.<org.apache.commons.validator.routines.BigIntegerValidatorTest: java.lang.String localeValue> = $r19;
+        r0.<org.apache.commons.validator.routines.BigIntegerValidatorTest: java.lang.String localePattern> = "#.###";
+        $r20 = <java.util.Locale: java.util.Locale GERMANY>;
+        r0.<org.apache.commons.validator.routines.BigIntegerValidatorTest: java.util.Locale testLocale> = $r20;
+        $r21 = r0.<org.apache.commons.validator.routines.BigIntegerValidatorTest: java.lang.Number testNumber>;
+        r0.<org.apache.commons.validator.routines.BigIntegerValidatorTest: java.lang.Number localeExpected> = $r21;
+        return;
+    }
+
+    public void testBigIntegerValidatorMethods()
+    {
+        org.apache.commons.validator.routines.BigIntegerValidatorTest r0;
+        java.util.Locale r1, $r9, $r23, $r31, $r37;
+        java.lang.String r2, r3, r4, r5, r6, r7;
+        java.math.BigInteger r8, $r10, $r12, $r14, $r16, $r18, $r25, $r27, $r29, $r32;
+        org.apache.commons.validator.routines.BigIntegerValidator $r11, $r13, $r15, $r17, $r19, $r20, $r21, $r22, $r24, $r26, $r28, $r30, $r33, $r34, $r35, $r36;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7;
+
+        r0 := @this: org.apache.commons.validator.routines.BigIntegerValidatorTest;
+        r1 = <java.util.Locale: java.util.Locale GERMAN>;
+        r2 = "0,00,00";
+        r3 = "1,23,45";
+        r4 = "1.23.45";
+        r5 = "12.345";
+        r6 = "12,345";
+        r7 = "XXXX";
+        $r10 = new java.math.BigInteger;
+        specialinvoke $r10.<java.math.BigInteger: void <init>(java.lang.String)>("12345");
+        r8 = $r10;
+        $r11 = staticinvoke <org.apache.commons.validator.routines.BigIntegerValidator: org.apache.commons.validator.routines.BigIntegerValidator getInstance()>();
+        $r12 = virtualinvoke $r11.<org.apache.commons.validator.routines.BigIntegerValidator: java.math.BigInteger validate(java.lang.String)>(r6);
+        staticinvoke <org.apache.commons.validator.routines.BigIntegerValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("validate(A) default", r8, $r12);
+        $r13 = staticinvoke <org.apache.commons.validator.routines.BigIntegerValidator: org.apache.commons.validator.routines.BigIntegerValidator getInstance()>();
+        $r14 = virtualinvoke $r13.<org.apache.commons.validator.routines.BigIntegerValidator: java.math.BigInteger validate(java.lang.String,java.util.Locale)>(r5, r1);
+        staticinvoke <org.apache.commons.validator.routines.BigIntegerValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("validate(A) locale ", r8, $r14);
+        $r15 = staticinvoke <org.apache.commons.validator.routines.BigIntegerValidator: org.apache.commons.validator.routines.BigIntegerValidator getInstance()>();
+        $r16 = virtualinvoke $r15.<org.apache.commons.validator.routines.BigIntegerValidator: java.math.BigInteger validate(java.lang.String,java.lang.String)>(r3, r2);
+        staticinvoke <org.apache.commons.validator.routines.BigIntegerValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("validate(A) pattern", r8, $r16);
+        $r17 = staticinvoke <org.apache.commons.validator.routines.BigIntegerValidator: org.apache.commons.validator.routines.BigIntegerValidator getInstance()>();
+        $r9 = <java.util.Locale: java.util.Locale GERMAN>;
+        $r18 = virtualinvoke $r17.<org.apache.commons.validator.routines.BigIntegerValidator: java.math.BigInteger validate(java.lang.String,java.lang.String,java.util.Locale)>(r4, r2, $r9);
+        staticinvoke <org.apache.commons.validator.routines.BigIntegerValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("validate(A) both", r8, $r18);
+        $r19 = staticinvoke <org.apache.commons.validator.routines.BigIntegerValidator: org.apache.commons.validator.routines.BigIntegerValidator getInstance()>();
+        $z0 = virtualinvoke $r19.<org.apache.commons.validator.routines.BigIntegerValidator: boolean isValid(java.lang.String)>(r6);
+        staticinvoke <org.apache.commons.validator.routines.BigIntegerValidatorTest: void assertTrue(java.lang.String,boolean)>("isValid(A) default", $z0);
+        $r20 = staticinvoke <org.apache.commons.validator.routines.BigIntegerValidator: org.apache.commons.validator.routines.BigIntegerValidator getInstance()>();
+        $z1 = virtualinvoke $r20.<org.apache.commons.validator.routines.BigIntegerValidator: boolean isValid(java.lang.String,java.util.Locale)>(r5, r1);
+        staticinvoke <org.apache.commons.validator.routines.BigIntegerValidatorTest: void assertTrue(java.lang.String,boolean)>("isValid(A) locale ", $z1);
+        $r21 = staticinvoke <org.apache.commons.validator.routines.BigIntegerValidator: org.apache.commons.validator.routines.BigIntegerValidator getInstance()>();
+        $z2 = virtualinvoke $r21.<org.apache.commons.validator.routines.BigIntegerValidator: boolean isValid(java.lang.String,java.lang.String)>(r3, r2);
+        staticinvoke <org.apache.commons.validator.routines.BigIntegerValidatorTest: void assertTrue(java.lang.String,boolean)>("isValid(A) pattern", $z2);
+        $r22 = staticinvoke <org.apache.commons.validator.routines.BigIntegerValidator: org.apache.commons.validator.routines.BigIntegerValidator getInstance()>();
+        $r23 = <java.util.Locale: java.util.Locale GERMAN>;
+        $z3 = virtualinvoke $r22.<org.apache.commons.validator.routines.BigIntegerValidator: boolean isValid(java.lang.String,java.lang.String,java.util.Locale)>(r4, r2, $r23);
+        staticinvoke <org.apache.commons.validator.routines.BigIntegerValidatorTest: void assertTrue(java.lang.String,boolean)>("isValid(A) both", $z3);
+        $r24 = staticinvoke <org.apache.commons.validator.routines.BigIntegerValidator: org.apache.commons.validator.routines.BigIntegerValidator getInstance()>();
+        $r25 = virtualinvoke $r24.<org.apache.commons.validator.routines.BigIntegerValidator: java.math.BigInteger validate(java.lang.String)>(r7);
+        staticinvoke <org.apache.commons.validator.routines.BigIntegerValidatorTest: void assertNull(java.lang.String,java.lang.Object)>("validate(B) default", $r25);
+        $r26 = staticinvoke <org.apache.commons.validator.routines.BigIntegerValidator: org.apache.commons.validator.routines.BigIntegerValidator getInstance()>();
+        $r27 = virtualinvoke $r26.<org.apache.commons.validator.routines.BigIntegerValidator: java.math.BigInteger validate(java.lang.String,java.util.Locale)>(r7, r1);
+        staticinvoke <org.apache.commons.validator.routines.BigIntegerValidatorTest: void assertNull(java.lang.String,java.lang.Object)>("validate(B) locale ", $r27);
+        $r28 = staticinvoke <org.apache.commons.validator.routines.BigIntegerValidator: org.apache.commons.validator.routines.BigIntegerValidator getInstance()>();
+        $r29 = virtualinvoke $r28.<org.apache.commons.validator.routines.BigIntegerValidator: java.math.BigInteger validate(java.lang.String,java.lang.String)>(r7, r2);
+        staticinvoke <org.apache.commons.validator.routines.BigIntegerValidatorTest: void assertNull(java.lang.String,java.lang.Object)>("validate(B) pattern", $r29);
+        $r30 = staticinvoke <org.apache.commons.validator.routines.BigIntegerValidator: org.apache.commons.validator.routines.BigIntegerValidator getInstance()>();
+        $r31 = <java.util.Locale: java.util.Locale GERMAN>;
+        $r32 = virtualinvoke $r30.<org.apache.commons.validator.routines.BigIntegerValidator: java.math.BigInteger validate(java.lang.String,java.lang.String,java.util.Locale)>(r3, r2, $r31);
+        staticinvoke <org.apache.commons.validator.routines.BigIntegerValidatorTest: void assertNull(java.lang.String,java.lang.Object)>("validate(B) both", $r32);
+        $r33 = staticinvoke <org.apache.commons.validator.routines.BigIntegerValidator: org.apache.commons.validator.routines.BigIntegerValidator getInstance()>();
+        $z4 = virtualinvoke $r33.<org.apache.commons.validator.routines.BigIntegerValidator: boolean isValid(java.lang.String)>(r7);
+        staticinvoke <org.apache.commons.validator.routines.BigIntegerValidatorTest: void assertFalse(java.lang.String,boolean)>("isValid(B) default", $z4);
+        $r34 = staticinvoke <org.apache.commons.validator.routines.BigIntegerValidator: org.apache.commons.validator.routines.BigIntegerValidator getInstance()>();
+        $z5 = virtualinvoke $r34.<org.apache.commons.validator.routines.BigIntegerValidator: boolean isValid(java.lang.String,java.util.Locale)>(r7, r1);
+        staticinvoke <org.apache.commons.validator.routines.BigIntegerValidatorTest: void assertFalse(java.lang.String,boolean)>("isValid(B) locale ", $z5);
+        $r35 = staticinvoke <org.apache.commons.validator.routines.BigIntegerValidator: org.apache.commons.validator.routines.BigIntegerValidator getInstance()>();
+        $z6 = virtualinvoke $r35.<org.apache.commons.validator.routines.BigIntegerValidator: boolean isValid(java.lang.String,java.lang.String)>(r7, r2);
+        staticinvoke <org.apache.commons.validator.routines.BigIntegerValidatorTest: void assertFalse(java.lang.String,boolean)>("isValid(B) pattern", $z6);
+        $r36 = staticinvoke <org.apache.commons.validator.routines.BigIntegerValidator: org.apache.commons.validator.routines.BigIntegerValidator getInstance()>();
+        $r37 = <java.util.Locale: java.util.Locale GERMAN>;
+        $z7 = virtualinvoke $r36.<org.apache.commons.validator.routines.BigIntegerValidator: boolean isValid(java.lang.String,java.lang.String,java.util.Locale)>(r3, r2, $r37);
+        staticinvoke <org.apache.commons.validator.routines.BigIntegerValidatorTest: void assertFalse(java.lang.String,boolean)>("isValid(B) both", $z7);
+        return;
+    }
+
+    public void testBigIntegerRangeMinMax()
+    {
+        org.apache.commons.validator.routines.BigIntegerValidatorTest r0;
+        org.apache.commons.validator.routines.BigIntegerValidator r1;
+        java.math.BigInteger r2, r3, r4, r5, r6, r7;
+        org.apache.commons.validator.routines.AbstractNumberValidator $r8;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10;
+
+        r0 := @this: org.apache.commons.validator.routines.BigIntegerValidatorTest;
+        $r8 = r0.<org.apache.commons.validator.routines.BigIntegerValidatorTest: org.apache.commons.validator.routines.AbstractNumberValidator strictValidator>;
+        r1 = (org.apache.commons.validator.routines.BigIntegerValidator) $r8;
+        r2 = virtualinvoke r1.<org.apache.commons.validator.routines.BigIntegerValidator: java.math.BigInteger validate(java.lang.String,java.lang.String)>("9", "#");
+        r3 = virtualinvoke r1.<org.apache.commons.validator.routines.BigIntegerValidator: java.math.BigInteger validate(java.lang.String,java.lang.String)>("10", "#");
+        r4 = virtualinvoke r1.<org.apache.commons.validator.routines.BigIntegerValidator: java.math.BigInteger validate(java.lang.String,java.lang.String)>("11", "#");
+        r5 = virtualinvoke r1.<org.apache.commons.validator.routines.BigIntegerValidator: java.math.BigInteger validate(java.lang.String,java.lang.String)>("19", "#");
+        r6 = virtualinvoke r1.<org.apache.commons.validator.routines.BigIntegerValidator: java.math.BigInteger validate(java.lang.String,java.lang.String)>("20", "#");
+        r7 = virtualinvoke r1.<org.apache.commons.validator.routines.BigIntegerValidator: java.math.BigInteger validate(java.lang.String,java.lang.String)>("21", "#");
+        $z0 = virtualinvoke r1.<org.apache.commons.validator.routines.BigIntegerValidator: boolean isInRange(java.math.BigInteger,long,long)>(r2, 10L, 20L);
+        staticinvoke <org.apache.commons.validator.routines.BigIntegerValidatorTest: void assertFalse(java.lang.String,boolean)>("isInRange() < min", $z0);
+        $z1 = virtualinvoke r1.<org.apache.commons.validator.routines.BigIntegerValidator: boolean isInRange(java.math.BigInteger,long,long)>(r3, 10L, 20L);
+        staticinvoke <org.apache.commons.validator.routines.BigIntegerValidatorTest: void assertTrue(java.lang.String,boolean)>("isInRange() = min", $z1);
+        $z2 = virtualinvoke r1.<org.apache.commons.validator.routines.BigIntegerValidator: boolean isInRange(java.math.BigInteger,long,long)>(r4, 10L, 20L);
+        staticinvoke <org.apache.commons.validator.routines.BigIntegerValidatorTest: void assertTrue(java.lang.String,boolean)>("isInRange() in range", $z2);
+        $z3 = virtualinvoke r1.<org.apache.commons.validator.routines.BigIntegerValidator: boolean isInRange(java.math.BigInteger,long,long)>(r6, 10L, 20L);
+        staticinvoke <org.apache.commons.validator.routines.BigIntegerValidatorTest: void assertTrue(java.lang.String,boolean)>("isInRange() = max", $z3);
+        $z4 = virtualinvoke r1.<org.apache.commons.validator.routines.BigIntegerValidator: boolean isInRange(java.math.BigInteger,long,long)>(r7, 10L, 20L);
+        staticinvoke <org.apache.commons.validator.routines.BigIntegerValidatorTest: void assertFalse(java.lang.String,boolean)>("isInRange() > max", $z4);
+        $z5 = virtualinvoke r1.<org.apache.commons.validator.routines.BigIntegerValidator: boolean minValue(java.math.BigInteger,long)>(r2, 10L);
+        staticinvoke <org.apache.commons.validator.routines.BigIntegerValidatorTest: void assertFalse(java.lang.String,boolean)>("minValue() < min", $z5);
+        $z6 = virtualinvoke r1.<org.apache.commons.validator.routines.BigIntegerValidator: boolean minValue(java.math.BigInteger,long)>(r3, 10L);
+        staticinvoke <org.apache.commons.validator.routines.BigIntegerValidatorTest: void assertTrue(java.lang.String,boolean)>("minValue() = min", $z6);
+        $z7 = virtualinvoke r1.<org.apache.commons.validator.routines.BigIntegerValidator: boolean minValue(java.math.BigInteger,long)>(r4, 10L);
+        staticinvoke <org.apache.commons.validator.routines.BigIntegerValidatorTest: void assertTrue(java.lang.String,boolean)>("minValue() > min", $z7);
+        $z8 = virtualinvoke r1.<org.apache.commons.validator.routines.BigIntegerValidator: boolean maxValue(java.math.BigInteger,long)>(r5, 20L);
+        staticinvoke <org.apache.commons.validator.routines.BigIntegerValidatorTest: void assertTrue(java.lang.String,boolean)>("maxValue() < max", $z8);
+        $z9 = virtualinvoke r1.<org.apache.commons.validator.routines.BigIntegerValidator: boolean maxValue(java.math.BigInteger,long)>(r6, 20L);
+        staticinvoke <org.apache.commons.validator.routines.BigIntegerValidatorTest: void assertTrue(java.lang.String,boolean)>("maxValue() = max", $z9);
+        $z10 = virtualinvoke r1.<org.apache.commons.validator.routines.BigIntegerValidator: boolean maxValue(java.math.BigInteger,long)>(r7, 20L);
+        staticinvoke <org.apache.commons.validator.routines.BigIntegerValidatorTest: void assertFalse(java.lang.String,boolean)>("maxValue() > max", $z10);
+        return;
+    }
+}

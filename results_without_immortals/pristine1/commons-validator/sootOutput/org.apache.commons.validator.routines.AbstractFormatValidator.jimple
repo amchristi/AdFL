@@ -1,0 +1,218 @@
+public abstract class org.apache.commons.validator.routines.AbstractFormatValidator extends java.lang.Object implements java.io.Serializable
+{
+    private static final long serialVersionUID;
+    private final boolean strict;
+
+    static void <clinit>()
+    {
+        long temp$0;
+
+        temp$0 = -4690687565200568258L;
+        <org.apache.commons.validator.routines.AbstractFormatValidator: long serialVersionUID> = temp$0;
+        return;
+    }
+
+    public void <init>(boolean)
+    {
+        org.apache.commons.validator.routines.AbstractFormatValidator this;
+        boolean strict;
+
+        this := @this: org.apache.commons.validator.routines.AbstractFormatValidator;
+        strict := @parameter0: boolean;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        this.<org.apache.commons.validator.routines.AbstractFormatValidator: boolean strict> = strict;
+        return;
+    }
+
+    public boolean isStrict()
+    {
+        org.apache.commons.validator.routines.AbstractFormatValidator this;
+        boolean temp$0;
+
+        this := @this: org.apache.commons.validator.routines.AbstractFormatValidator;
+        temp$0 = this.<org.apache.commons.validator.routines.AbstractFormatValidator: boolean strict>;
+        return temp$0;
+    }
+
+    public boolean isValid(java.lang.String)
+    {
+        org.apache.commons.validator.routines.AbstractFormatValidator this;
+        java.lang.String value;
+        boolean temp$0;
+
+        this := @this: org.apache.commons.validator.routines.AbstractFormatValidator;
+        value := @parameter0: java.lang.String;
+        temp$0 = virtualinvoke this.<org.apache.commons.validator.routines.AbstractFormatValidator: boolean isValid(java.lang.String,java.lang.String,java.util.Locale)>(value, null, null);
+        return temp$0;
+    }
+
+    public boolean isValid(java.lang.String, java.lang.String)
+    {
+        org.apache.commons.validator.routines.AbstractFormatValidator this;
+        java.lang.String value, pattern;
+        boolean temp$0;
+
+        this := @this: org.apache.commons.validator.routines.AbstractFormatValidator;
+        value := @parameter0: java.lang.String;
+        pattern := @parameter1: java.lang.String;
+        temp$0 = virtualinvoke this.<org.apache.commons.validator.routines.AbstractFormatValidator: boolean isValid(java.lang.String,java.lang.String,java.util.Locale)>(value, pattern, null);
+        return temp$0;
+    }
+
+    public boolean isValid(java.lang.String, java.util.Locale)
+    {
+        org.apache.commons.validator.routines.AbstractFormatValidator this;
+        java.lang.String value;
+        java.util.Locale locale;
+        boolean temp$0;
+
+        this := @this: org.apache.commons.validator.routines.AbstractFormatValidator;
+        value := @parameter0: java.lang.String;
+        locale := @parameter1: java.util.Locale;
+        temp$0 = virtualinvoke this.<org.apache.commons.validator.routines.AbstractFormatValidator: boolean isValid(java.lang.String,java.lang.String,java.util.Locale)>(value, null, locale);
+        return temp$0;
+    }
+
+    public abstract boolean isValid(java.lang.String, java.lang.String, java.util.Locale);
+
+    public java.lang.String format(java.lang.Object)
+    {
+        org.apache.commons.validator.routines.AbstractFormatValidator this;
+        java.lang.Object value;
+        java.lang.String temp$0;
+
+        this := @this: org.apache.commons.validator.routines.AbstractFormatValidator;
+        value := @parameter0: java.lang.Object;
+        temp$0 = virtualinvoke this.<org.apache.commons.validator.routines.AbstractFormatValidator: java.lang.String format(java.lang.Object,java.lang.String,java.util.Locale)>(value, null, null);
+        return temp$0;
+    }
+
+    public java.lang.String format(java.lang.Object, java.lang.String)
+    {
+        org.apache.commons.validator.routines.AbstractFormatValidator this;
+        java.lang.Object value;
+        java.lang.String pattern, temp$0;
+
+        this := @this: org.apache.commons.validator.routines.AbstractFormatValidator;
+        value := @parameter0: java.lang.Object;
+        pattern := @parameter1: java.lang.String;
+        temp$0 = virtualinvoke this.<org.apache.commons.validator.routines.AbstractFormatValidator: java.lang.String format(java.lang.Object,java.lang.String,java.util.Locale)>(value, pattern, null);
+        return temp$0;
+    }
+
+    public java.lang.String format(java.lang.Object, java.util.Locale)
+    {
+        org.apache.commons.validator.routines.AbstractFormatValidator this;
+        java.lang.Object value;
+        java.util.Locale locale;
+        java.lang.String temp$0;
+
+        this := @this: org.apache.commons.validator.routines.AbstractFormatValidator;
+        value := @parameter0: java.lang.Object;
+        locale := @parameter1: java.util.Locale;
+        temp$0 = virtualinvoke this.<org.apache.commons.validator.routines.AbstractFormatValidator: java.lang.String format(java.lang.Object,java.lang.String,java.util.Locale)>(value, null, locale);
+        return temp$0;
+    }
+
+    public java.lang.String format(java.lang.Object, java.lang.String, java.util.Locale)
+    {
+        org.apache.commons.validator.routines.AbstractFormatValidator this;
+        java.lang.Object value;
+        java.lang.String pattern, temp$1;
+        java.util.Locale locale;
+        java.text.Format formatter, temp$0;
+
+        this := @this: org.apache.commons.validator.routines.AbstractFormatValidator;
+        value := @parameter0: java.lang.Object;
+        pattern := @parameter1: java.lang.String;
+        locale := @parameter2: java.util.Locale;
+        temp$0 = virtualinvoke this.<org.apache.commons.validator.routines.AbstractFormatValidator: java.text.Format getFormat(java.lang.String,java.util.Locale)>(pattern, locale);
+        formatter = temp$0;
+        temp$1 = virtualinvoke this.<org.apache.commons.validator.routines.AbstractFormatValidator: java.lang.String format(java.lang.Object,java.text.Format)>(value, formatter);
+        return temp$1;
+    }
+
+    protected java.lang.String format(java.lang.Object, java.text.Format)
+    {
+        org.apache.commons.validator.routines.AbstractFormatValidator this;
+        java.lang.Object value;
+        java.text.Format formatter;
+        java.lang.String temp$0;
+
+        this := @this: org.apache.commons.validator.routines.AbstractFormatValidator;
+        value := @parameter0: java.lang.Object;
+        formatter := @parameter1: java.text.Format;
+        temp$0 = virtualinvoke formatter.<java.text.Format: java.lang.String format(java.lang.Object)>(value);
+        return temp$0;
+    }
+
+    protected java.lang.Object parse(java.lang.String, java.text.Format)
+    {
+        org.apache.commons.validator.routines.AbstractFormatValidator this;
+        java.lang.String value;
+        java.text.Format formatter;
+        java.text.ParsePosition pos, temp$0;
+        java.lang.Object parsedValue, temp$1, temp$3, temp$7, temp$8;
+        int temp$2, temp$5, temp$6;
+        boolean temp$4;
+
+        this := @this: org.apache.commons.validator.routines.AbstractFormatValidator;
+        value := @parameter0: java.lang.String;
+        formatter := @parameter1: java.text.Format;
+        temp$0 = new java.text.ParsePosition;
+        specialinvoke temp$0.<java.text.ParsePosition: void <init>(int)>(0);
+        pos = temp$0;
+        temp$1 = virtualinvoke formatter.<java.text.Format: java.lang.Object parseObject(java.lang.String,java.text.ParsePosition)>(value, pos);
+        parsedValue = temp$1;
+        temp$2 = virtualinvoke pos.<java.text.ParsePosition: int getErrorIndex()>();
+        if temp$2 > -1 goto label0;
+
+        goto label1;
+
+     label0:
+        nop;
+        temp$3 = null;
+        return temp$3;
+
+     label1:
+        nop;
+        temp$4 = virtualinvoke this.<org.apache.commons.validator.routines.AbstractFormatValidator: boolean isStrict()>();
+        if temp$4 == 0 goto label4;
+
+        goto label2;
+
+     label2:
+        nop;
+        temp$5 = virtualinvoke pos.<java.text.ParsePosition: int getIndex()>();
+        temp$6 = virtualinvoke value.<java.lang.String: int length()>();
+        if temp$5 < temp$6 goto label3;
+
+        goto label4;
+
+        goto label3;
+
+     label3:
+        nop;
+        temp$7 = null;
+        return temp$7;
+
+     label4:
+        nop;
+        if parsedValue != null goto label5;
+
+        goto label6;
+
+     label5:
+        nop;
+        temp$8 = virtualinvoke this.<org.apache.commons.validator.routines.AbstractFormatValidator: java.lang.Object processParsedValue(java.lang.Object,java.text.Format)>(parsedValue, formatter);
+        parsedValue = temp$8;
+
+     label6:
+        nop;
+        return parsedValue;
+    }
+
+    protected abstract java.lang.Object processParsedValue(java.lang.Object, java.text.Format);
+
+    protected abstract java.text.Format getFormat(java.lang.String, java.util.Locale);
+}

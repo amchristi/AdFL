@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<attributes>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="3" eline="3" spos="0" epos="0"/>
+<text info="ConstantValue: 4319515687976420405" aType="LongConstantValueTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="4" eline="4" spos="0" epos="0"/>
+<text info="ConstantValue: (?:\-|\s)" aType="StringConstantValueTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="5" eline="5" spos="0" epos="0"/>
+<text info="ConstantValue: (\d{1,5})" aType="StringConstantValueTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="6" eline="6" spos="0" epos="0"/>
+<text info="ConstantValue: (\d{1,7})" aType="StringConstantValueTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="7" eline="7" spos="0" epos="0"/>
+<text info="ConstantValue: (\d{1,6})" aType="StringConstantValueTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="8" eline="8" spos="0" epos="0"/>
+<text info="ConstantValue: ^(?:(\d{9}[0-9X])|(?:(\d{1,5})(?:\-|\s)(\d{1,7})(?:\-|\s)(\d{1,6})(?:\-|\s)([0-9X])))$" aType="StringConstantValueTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="9" eline="9" spos="0" epos="0"/>
+<text info="ConstantValue: ^(978|979)(?:(\d{10})|(?:(?:\-|\s)(\d{1,5})(?:\-|\s)(\d{1,7})(?:\-|\s)(\d{1,6})(?:\-|\s)([0-9])))$" aType="StringConstantValueTag"/>
+</attribute>
+</attributes>

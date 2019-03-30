@@ -1,0 +1,237 @@
+public class org.apache.commons.validator.routines.ShortValidatorTest extends org.apache.commons.validator.routines.AbstractNumberValidatorTest
+{
+
+    public void <init>(java.lang.String)
+    {
+        org.apache.commons.validator.routines.ShortValidatorTest r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.routines.ShortValidatorTest;
+        r1 := @parameter0: java.lang.String;
+        specialinvoke r0.<org.apache.commons.validator.routines.AbstractNumberValidatorTest: void <init>(java.lang.String)>(r1);
+        return;
+    }
+
+    protected void setUp() throws java.lang.Exception
+    {
+        org.apache.commons.validator.routines.ShortValidatorTest r0;
+        org.apache.commons.validator.routines.ShortValidator $r1, $r2;
+        java.lang.Short $r3, $r6, $r11, $r12;
+        java.lang.Long $r4, $r7;
+        java.lang.Number $r5, $r8, $r15, $r16, $r17, $r20, $r21, $r22, $r23, $r24, $r27;
+        long $l0, $l1, $l2, $l3;
+        java.lang.String[] $r9, $r10, $r13, $r18;
+        java.lang.Number[] $r14, $r19;
+        java.lang.String $r25;
+        java.util.Locale $r26;
+
+        r0 := @this: org.apache.commons.validator.routines.ShortValidatorTest;
+        specialinvoke r0.<org.apache.commons.validator.routines.AbstractNumberValidatorTest: void setUp()>();
+        $r1 = new org.apache.commons.validator.routines.ShortValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.ShortValidator: void <init>(boolean,int)>(0, 0);
+        r0.<org.apache.commons.validator.routines.ShortValidatorTest: org.apache.commons.validator.routines.AbstractNumberValidator validator> = $r1;
+        $r2 = new org.apache.commons.validator.routines.ShortValidator;
+        specialinvoke $r2.<org.apache.commons.validator.routines.ShortValidator: void <init>()>();
+        r0.<org.apache.commons.validator.routines.ShortValidatorTest: org.apache.commons.validator.routines.AbstractNumberValidator strictValidator> = $r2;
+        r0.<org.apache.commons.validator.routines.ShortValidatorTest: java.lang.String testPattern> = "#,###";
+        $r3 = new java.lang.Short;
+        specialinvoke $r3.<java.lang.Short: void <init>(short)>(32767);
+        r0.<org.apache.commons.validator.routines.ShortValidatorTest: java.lang.Number max> = $r3;
+        $r4 = new java.lang.Long;
+        $r5 = r0.<org.apache.commons.validator.routines.ShortValidatorTest: java.lang.Number max>;
+        $l0 = virtualinvoke $r5.<java.lang.Number: long longValue()>();
+        $l1 = $l0 + 1L;
+        specialinvoke $r4.<java.lang.Long: void <init>(long)>($l1);
+        r0.<org.apache.commons.validator.routines.ShortValidatorTest: java.lang.Number maxPlusOne> = $r4;
+        $r6 = new java.lang.Short;
+        specialinvoke $r6.<java.lang.Short: void <init>(short)>(-32768);
+        r0.<org.apache.commons.validator.routines.ShortValidatorTest: java.lang.Number min> = $r6;
+        $r7 = new java.lang.Long;
+        $r8 = r0.<org.apache.commons.validator.routines.ShortValidatorTest: java.lang.Number min>;
+        $l2 = virtualinvoke $r8.<java.lang.Number: long longValue()>();
+        $l3 = $l2 - 1L;
+        specialinvoke $r7.<java.lang.Long: void <init>(long)>($l3);
+        r0.<org.apache.commons.validator.routines.ShortValidatorTest: java.lang.Number minMinusOne> = $r7;
+        $r9 = newarray (java.lang.String)[7];
+        $r9[1] = "";
+        $r9[2] = "X";
+        $r9[3] = "X12";
+        $r9[4] = "12X";
+        $r9[5] = "1X2";
+        $r9[6] = "1.2";
+        r0.<org.apache.commons.validator.routines.ShortValidatorTest: java.lang.String[] invalidStrict> = $r9;
+        $r10 = newarray (java.lang.String)[4];
+        $r10[1] = "";
+        $r10[2] = "X";
+        $r10[3] = "X12";
+        r0.<org.apache.commons.validator.routines.ShortValidatorTest: java.lang.String[] invalid> = $r10;
+        $r11 = new java.lang.Short;
+        specialinvoke $r11.<java.lang.Short: void <init>(short)>(1234);
+        r0.<org.apache.commons.validator.routines.ShortValidatorTest: java.lang.Number testNumber> = $r11;
+        $r12 = new java.lang.Short;
+        specialinvoke $r12.<java.lang.Short: void <init>(short)>(0);
+        r0.<org.apache.commons.validator.routines.ShortValidatorTest: java.lang.Number testZero> = $r12;
+        $r13 = newarray (java.lang.String)[3];
+        $r13[0] = "0";
+        $r13[1] = "1234";
+        $r13[2] = "1,234";
+        r0.<org.apache.commons.validator.routines.ShortValidatorTest: java.lang.String[] validStrict> = $r13;
+        $r14 = newarray (java.lang.Number)[3];
+        $r15 = r0.<org.apache.commons.validator.routines.ShortValidatorTest: java.lang.Number testZero>;
+        $r14[0] = $r15;
+        $r16 = r0.<org.apache.commons.validator.routines.ShortValidatorTest: java.lang.Number testNumber>;
+        $r14[1] = $r16;
+        $r17 = r0.<org.apache.commons.validator.routines.ShortValidatorTest: java.lang.Number testNumber>;
+        $r14[2] = $r17;
+        r0.<org.apache.commons.validator.routines.ShortValidatorTest: java.lang.Number[] validStrictCompare> = $r14;
+        $r18 = newarray (java.lang.String)[5];
+        $r18[0] = "0";
+        $r18[1] = "1234";
+        $r18[2] = "1,234";
+        $r18[3] = "1,234.5";
+        $r18[4] = "1234X";
+        r0.<org.apache.commons.validator.routines.ShortValidatorTest: java.lang.String[] valid> = $r18;
+        $r19 = newarray (java.lang.Number)[5];
+        $r20 = r0.<org.apache.commons.validator.routines.ShortValidatorTest: java.lang.Number testZero>;
+        $r19[0] = $r20;
+        $r21 = r0.<org.apache.commons.validator.routines.ShortValidatorTest: java.lang.Number testNumber>;
+        $r19[1] = $r21;
+        $r22 = r0.<org.apache.commons.validator.routines.ShortValidatorTest: java.lang.Number testNumber>;
+        $r19[2] = $r22;
+        $r23 = r0.<org.apache.commons.validator.routines.ShortValidatorTest: java.lang.Number testNumber>;
+        $r19[3] = $r23;
+        $r24 = r0.<org.apache.commons.validator.routines.ShortValidatorTest: java.lang.Number testNumber>;
+        $r19[4] = $r24;
+        r0.<org.apache.commons.validator.routines.ShortValidatorTest: java.lang.Number[] validCompare> = $r19;
+        r0.<org.apache.commons.validator.routines.ShortValidatorTest: java.lang.String testStringUS> = "1,234";
+        r0.<org.apache.commons.validator.routines.ShortValidatorTest: java.lang.String testStringDE> = "1.234";
+        $r25 = r0.<org.apache.commons.validator.routines.ShortValidatorTest: java.lang.String testStringDE>;
+        r0.<org.apache.commons.validator.routines.ShortValidatorTest: java.lang.String localeValue> = $r25;
+        r0.<org.apache.commons.validator.routines.ShortValidatorTest: java.lang.String localePattern> = "#.###";
+        $r26 = <java.util.Locale: java.util.Locale GERMANY>;
+        r0.<org.apache.commons.validator.routines.ShortValidatorTest: java.util.Locale testLocale> = $r26;
+        $r27 = r0.<org.apache.commons.validator.routines.ShortValidatorTest: java.lang.Number testNumber>;
+        r0.<org.apache.commons.validator.routines.ShortValidatorTest: java.lang.Number localeExpected> = $r27;
+        return;
+    }
+
+    public void testShortValidatorMethods()
+    {
+        org.apache.commons.validator.routines.ShortValidatorTest r0;
+        java.util.Locale r1, $r9, $r23, $r31, $r37;
+        java.lang.String r2, r3, r4, r5, r6, r7;
+        java.lang.Short r8, $r10, $r12, $r14, $r16, $r18, $r25, $r27, $r29, $r32;
+        org.apache.commons.validator.routines.ShortValidator $r11, $r13, $r15, $r17, $r19, $r20, $r21, $r22, $r24, $r26, $r28, $r30, $r33, $r34, $r35, $r36;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7;
+
+        r0 := @this: org.apache.commons.validator.routines.ShortValidatorTest;
+        r1 = <java.util.Locale: java.util.Locale GERMAN>;
+        r2 = "0,00,00";
+        r3 = "1,23,45";
+        r4 = "1.23.45";
+        r5 = "12.345";
+        r6 = "12,345";
+        r7 = "XXXX";
+        $r10 = new java.lang.Short;
+        specialinvoke $r10.<java.lang.Short: void <init>(short)>(12345);
+        r8 = $r10;
+        $r11 = staticinvoke <org.apache.commons.validator.routines.ShortValidator: org.apache.commons.validator.routines.ShortValidator getInstance()>();
+        $r12 = virtualinvoke $r11.<org.apache.commons.validator.routines.ShortValidator: java.lang.Short validate(java.lang.String)>(r6);
+        staticinvoke <org.apache.commons.validator.routines.ShortValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("validate(A) default", r8, $r12);
+        $r13 = staticinvoke <org.apache.commons.validator.routines.ShortValidator: org.apache.commons.validator.routines.ShortValidator getInstance()>();
+        $r14 = virtualinvoke $r13.<org.apache.commons.validator.routines.ShortValidator: java.lang.Short validate(java.lang.String,java.util.Locale)>(r5, r1);
+        staticinvoke <org.apache.commons.validator.routines.ShortValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("validate(A) locale ", r8, $r14);
+        $r15 = staticinvoke <org.apache.commons.validator.routines.ShortValidator: org.apache.commons.validator.routines.ShortValidator getInstance()>();
+        $r16 = virtualinvoke $r15.<org.apache.commons.validator.routines.ShortValidator: java.lang.Short validate(java.lang.String,java.lang.String)>(r3, r2);
+        staticinvoke <org.apache.commons.validator.routines.ShortValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("validate(A) pattern", r8, $r16);
+        $r17 = staticinvoke <org.apache.commons.validator.routines.ShortValidator: org.apache.commons.validator.routines.ShortValidator getInstance()>();
+        $r9 = <java.util.Locale: java.util.Locale GERMAN>;
+        $r18 = virtualinvoke $r17.<org.apache.commons.validator.routines.ShortValidator: java.lang.Short validate(java.lang.String,java.lang.String,java.util.Locale)>(r4, r2, $r9);
+        staticinvoke <org.apache.commons.validator.routines.ShortValidatorTest: void assertEquals(java.lang.String,java.lang.Object,java.lang.Object)>("validate(A) both", r8, $r18);
+        $r19 = staticinvoke <org.apache.commons.validator.routines.ShortValidator: org.apache.commons.validator.routines.ShortValidator getInstance()>();
+        $z0 = virtualinvoke $r19.<org.apache.commons.validator.routines.ShortValidator: boolean isValid(java.lang.String)>(r6);
+        staticinvoke <org.apache.commons.validator.routines.ShortValidatorTest: void assertTrue(java.lang.String,boolean)>("isValid(A) default", $z0);
+        $r20 = staticinvoke <org.apache.commons.validator.routines.ShortValidator: org.apache.commons.validator.routines.ShortValidator getInstance()>();
+        $z1 = virtualinvoke $r20.<org.apache.commons.validator.routines.ShortValidator: boolean isValid(java.lang.String,java.util.Locale)>(r5, r1);
+        staticinvoke <org.apache.commons.validator.routines.ShortValidatorTest: void assertTrue(java.lang.String,boolean)>("isValid(A) locale ", $z1);
+        $r21 = staticinvoke <org.apache.commons.validator.routines.ShortValidator: org.apache.commons.validator.routines.ShortValidator getInstance()>();
+        $z2 = virtualinvoke $r21.<org.apache.commons.validator.routines.ShortValidator: boolean isValid(java.lang.String,java.lang.String)>(r3, r2);
+        staticinvoke <org.apache.commons.validator.routines.ShortValidatorTest: void assertTrue(java.lang.String,boolean)>("isValid(A) pattern", $z2);
+        $r22 = staticinvoke <org.apache.commons.validator.routines.ShortValidator: org.apache.commons.validator.routines.ShortValidator getInstance()>();
+        $r23 = <java.util.Locale: java.util.Locale GERMAN>;
+        $z3 = virtualinvoke $r22.<org.apache.commons.validator.routines.ShortValidator: boolean isValid(java.lang.String,java.lang.String,java.util.Locale)>(r4, r2, $r23);
+        staticinvoke <org.apache.commons.validator.routines.ShortValidatorTest: void assertTrue(java.lang.String,boolean)>("isValid(A) both", $z3);
+        $r24 = staticinvoke <org.apache.commons.validator.routines.ShortValidator: org.apache.commons.validator.routines.ShortValidator getInstance()>();
+        $r25 = virtualinvoke $r24.<org.apache.commons.validator.routines.ShortValidator: java.lang.Short validate(java.lang.String)>(r7);
+        staticinvoke <org.apache.commons.validator.routines.ShortValidatorTest: void assertNull(java.lang.String,java.lang.Object)>("validate(B) default", $r25);
+        $r26 = staticinvoke <org.apache.commons.validator.routines.ShortValidator: org.apache.commons.validator.routines.ShortValidator getInstance()>();
+        $r27 = virtualinvoke $r26.<org.apache.commons.validator.routines.ShortValidator: java.lang.Short validate(java.lang.String,java.util.Locale)>(r7, r1);
+        staticinvoke <org.apache.commons.validator.routines.ShortValidatorTest: void assertNull(java.lang.String,java.lang.Object)>("validate(B) locale ", $r27);
+        $r28 = staticinvoke <org.apache.commons.validator.routines.ShortValidator: org.apache.commons.validator.routines.ShortValidator getInstance()>();
+        $r29 = virtualinvoke $r28.<org.apache.commons.validator.routines.ShortValidator: java.lang.Short validate(java.lang.String,java.lang.String)>(r7, r2);
+        staticinvoke <org.apache.commons.validator.routines.ShortValidatorTest: void assertNull(java.lang.String,java.lang.Object)>("validate(B) pattern", $r29);
+        $r30 = staticinvoke <org.apache.commons.validator.routines.ShortValidator: org.apache.commons.validator.routines.ShortValidator getInstance()>();
+        $r31 = <java.util.Locale: java.util.Locale GERMAN>;
+        $r32 = virtualinvoke $r30.<org.apache.commons.validator.routines.ShortValidator: java.lang.Short validate(java.lang.String,java.lang.String,java.util.Locale)>(r3, r2, $r31);
+        staticinvoke <org.apache.commons.validator.routines.ShortValidatorTest: void assertNull(java.lang.String,java.lang.Object)>("validate(B) both", $r32);
+        $r33 = staticinvoke <org.apache.commons.validator.routines.ShortValidator: org.apache.commons.validator.routines.ShortValidator getInstance()>();
+        $z4 = virtualinvoke $r33.<org.apache.commons.validator.routines.ShortValidator: boolean isValid(java.lang.String)>(r7);
+        staticinvoke <org.apache.commons.validator.routines.ShortValidatorTest: void assertFalse(java.lang.String,boolean)>("isValid(B) default", $z4);
+        $r34 = staticinvoke <org.apache.commons.validator.routines.ShortValidator: org.apache.commons.validator.routines.ShortValidator getInstance()>();
+        $z5 = virtualinvoke $r34.<org.apache.commons.validator.routines.ShortValidator: boolean isValid(java.lang.String,java.util.Locale)>(r7, r1);
+        staticinvoke <org.apache.commons.validator.routines.ShortValidatorTest: void assertFalse(java.lang.String,boolean)>("isValid(B) locale ", $z5);
+        $r35 = staticinvoke <org.apache.commons.validator.routines.ShortValidator: org.apache.commons.validator.routines.ShortValidator getInstance()>();
+        $z6 = virtualinvoke $r35.<org.apache.commons.validator.routines.ShortValidator: boolean isValid(java.lang.String,java.lang.String)>(r7, r2);
+        staticinvoke <org.apache.commons.validator.routines.ShortValidatorTest: void assertFalse(java.lang.String,boolean)>("isValid(B) pattern", $z6);
+        $r36 = staticinvoke <org.apache.commons.validator.routines.ShortValidator: org.apache.commons.validator.routines.ShortValidator getInstance()>();
+        $r37 = <java.util.Locale: java.util.Locale GERMAN>;
+        $z7 = virtualinvoke $r36.<org.apache.commons.validator.routines.ShortValidator: boolean isValid(java.lang.String,java.lang.String,java.util.Locale)>(r3, r2, $r37);
+        staticinvoke <org.apache.commons.validator.routines.ShortValidatorTest: void assertFalse(java.lang.String,boolean)>("isValid(B) both", $z7);
+        return;
+    }
+
+    public void testShortRangeMinMax()
+    {
+        org.apache.commons.validator.routines.ShortValidatorTest r0;
+        org.apache.commons.validator.routines.ShortValidator r1;
+        java.lang.Short r2, r3, r4, r5, r6, r7;
+        byte b0, b1;
+        org.apache.commons.validator.routines.AbstractNumberValidator $r8;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10;
+
+        r0 := @this: org.apache.commons.validator.routines.ShortValidatorTest;
+        $r8 = r0.<org.apache.commons.validator.routines.ShortValidatorTest: org.apache.commons.validator.routines.AbstractNumberValidator strictValidator>;
+        r1 = (org.apache.commons.validator.routines.ShortValidator) $r8;
+        r2 = virtualinvoke r1.<org.apache.commons.validator.routines.ShortValidator: java.lang.Short validate(java.lang.String,java.lang.String)>("9", "#");
+        r3 = virtualinvoke r1.<org.apache.commons.validator.routines.ShortValidator: java.lang.Short validate(java.lang.String,java.lang.String)>("10", "#");
+        r4 = virtualinvoke r1.<org.apache.commons.validator.routines.ShortValidator: java.lang.Short validate(java.lang.String,java.lang.String)>("11", "#");
+        r5 = virtualinvoke r1.<org.apache.commons.validator.routines.ShortValidator: java.lang.Short validate(java.lang.String,java.lang.String)>("19", "#");
+        r6 = virtualinvoke r1.<org.apache.commons.validator.routines.ShortValidator: java.lang.Short validate(java.lang.String,java.lang.String)>("20", "#");
+        r7 = virtualinvoke r1.<org.apache.commons.validator.routines.ShortValidator: java.lang.Short validate(java.lang.String,java.lang.String)>("21", "#");
+        b0 = 10;
+        b1 = 20;
+        $z0 = virtualinvoke r1.<org.apache.commons.validator.routines.ShortValidator: boolean isInRange(java.lang.Short,short,short)>(r2, b0, b1);
+        staticinvoke <org.apache.commons.validator.routines.ShortValidatorTest: void assertFalse(java.lang.String,boolean)>("isInRange() < min", $z0);
+        $z1 = virtualinvoke r1.<org.apache.commons.validator.routines.ShortValidator: boolean isInRange(java.lang.Short,short,short)>(r3, b0, b1);
+        staticinvoke <org.apache.commons.validator.routines.ShortValidatorTest: void assertTrue(java.lang.String,boolean)>("isInRange() = min", $z1);
+        $z2 = virtualinvoke r1.<org.apache.commons.validator.routines.ShortValidator: boolean isInRange(java.lang.Short,short,short)>(r4, b0, b1);
+        staticinvoke <org.apache.commons.validator.routines.ShortValidatorTest: void assertTrue(java.lang.String,boolean)>("isInRange() in range", $z2);
+        $z3 = virtualinvoke r1.<org.apache.commons.validator.routines.ShortValidator: boolean isInRange(java.lang.Short,short,short)>(r6, b0, b1);
+        staticinvoke <org.apache.commons.validator.routines.ShortValidatorTest: void assertTrue(java.lang.String,boolean)>("isInRange() = max", $z3);
+        $z4 = virtualinvoke r1.<org.apache.commons.validator.routines.ShortValidator: boolean isInRange(java.lang.Short,short,short)>(r7, b0, b1);
+        staticinvoke <org.apache.commons.validator.routines.ShortValidatorTest: void assertFalse(java.lang.String,boolean)>("isInRange() > max", $z4);
+        $z5 = virtualinvoke r1.<org.apache.commons.validator.routines.ShortValidator: boolean minValue(java.lang.Short,short)>(r2, b0);
+        staticinvoke <org.apache.commons.validator.routines.ShortValidatorTest: void assertFalse(java.lang.String,boolean)>("minValue() < min", $z5);
+        $z6 = virtualinvoke r1.<org.apache.commons.validator.routines.ShortValidator: boolean minValue(java.lang.Short,short)>(r3, b0);
+        staticinvoke <org.apache.commons.validator.routines.ShortValidatorTest: void assertTrue(java.lang.String,boolean)>("minValue() = min", $z6);
+        $z7 = virtualinvoke r1.<org.apache.commons.validator.routines.ShortValidator: boolean minValue(java.lang.Short,short)>(r4, b0);
+        staticinvoke <org.apache.commons.validator.routines.ShortValidatorTest: void assertTrue(java.lang.String,boolean)>("minValue() > min", $z7);
+        $z8 = virtualinvoke r1.<org.apache.commons.validator.routines.ShortValidator: boolean maxValue(java.lang.Short,short)>(r5, b1);
+        staticinvoke <org.apache.commons.validator.routines.ShortValidatorTest: void assertTrue(java.lang.String,boolean)>("maxValue() < max", $z8);
+        $z9 = virtualinvoke r1.<org.apache.commons.validator.routines.ShortValidator: boolean maxValue(java.lang.Short,short)>(r6, b1);
+        staticinvoke <org.apache.commons.validator.routines.ShortValidatorTest: void assertTrue(java.lang.String,boolean)>("maxValue() = max", $z9);
+        $z10 = virtualinvoke r1.<org.apache.commons.validator.routines.ShortValidator: boolean maxValue(java.lang.Short,short)>(r7, b1);
+        staticinvoke <org.apache.commons.validator.routines.ShortValidatorTest: void assertFalse(java.lang.String,boolean)>("maxValue() > max", $z10);
+        return;
+    }
+}

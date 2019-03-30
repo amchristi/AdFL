@@ -1,0 +1,236 @@
+public class org.apache.commons.validator.RetrieveFormTest extends junit.framework.TestCase
+{
+    private org.apache.commons.validator.ValidatorResources resources;
+    private static final java.lang.String FORM_PREFIX;
+    private static final java.util.Locale CANADA_FRENCH_XXX;
+
+    static void <clinit>()
+    {
+        java.util.Locale $r0;
+
+        $r0 = new java.util.Locale;
+        specialinvoke $r0.<java.util.Locale: void <init>(java.lang.String,java.lang.String,java.lang.String)>("fr", "CA", "XXX");
+        <org.apache.commons.validator.RetrieveFormTest: java.util.Locale CANADA_FRENCH_XXX> = $r0;
+        return;
+    }
+
+    public void <init>(java.lang.String)
+    {
+        org.apache.commons.validator.RetrieveFormTest r0;
+        java.lang.String r1;
+
+        r0 := @this: org.apache.commons.validator.RetrieveFormTest;
+        r1 := @parameter0: java.lang.String;
+        specialinvoke r0.<junit.framework.TestCase: void <init>(java.lang.String)>(r1);
+        r0.<org.apache.commons.validator.RetrieveFormTest: org.apache.commons.validator.ValidatorResources resources> = null;
+        return;
+    }
+
+    protected void setUp() throws java.io.IOException, org.xml.sax.SAXException
+    {
+        org.apache.commons.validator.RetrieveFormTest r0;
+        java.io.InputStream[] r1, $r2;
+        int i0, $i1;
+        java.lang.Class $r3;
+        java.io.InputStream $r4, $r6;
+        org.apache.commons.validator.ValidatorResources $r5;
+
+        r0 := @this: org.apache.commons.validator.RetrieveFormTest;
+        $r2 = newarray (java.io.InputStream)[1];
+        $r3 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>();
+        $r4 = virtualinvoke $r3.<java.lang.Class: java.io.InputStream getResourceAsStream(java.lang.String)>("RetrieveFormTest-config.xml");
+        $r2[0] = $r4;
+        r1 = $r2;
+        $r5 = new org.apache.commons.validator.ValidatorResources;
+        specialinvoke $r5.<org.apache.commons.validator.ValidatorResources: void <init>(java.io.InputStream[])>(r1);
+        r0.<org.apache.commons.validator.RetrieveFormTest: org.apache.commons.validator.ValidatorResources resources> = $r5;
+        i0 = 0;
+        goto label1;
+
+     label0:
+        $r6 = r1[i0];
+        virtualinvoke $r6.<java.io.InputStream: void close()>();
+        i0 = i0 + 1;
+
+     label1:
+        $i1 = lengthof r1;
+        if i0 < $i1 goto label0;
+
+        return;
+    }
+
+    public void testDefaultForm()
+    {
+        org.apache.commons.validator.RetrieveFormTest r0;
+        java.lang.String r1;
+        java.util.Locale $r2, $r3, $r4, $r5, $r6, $r7;
+
+        r0 := @this: org.apache.commons.validator.RetrieveFormTest;
+        r1 = "testForm_default";
+        $r2 = <java.util.Locale: java.util.Locale US>;
+        specialinvoke r0.<org.apache.commons.validator.RetrieveFormTest: void checkForm(java.util.Locale,java.lang.String,java.lang.String)>($r2, r1, "default");
+        $r3 = <java.util.Locale: java.util.Locale FRENCH>;
+        specialinvoke r0.<org.apache.commons.validator.RetrieveFormTest: void checkForm(java.util.Locale,java.lang.String,java.lang.String)>($r3, r1, "default");
+        $r4 = <java.util.Locale: java.util.Locale FRANCE>;
+        specialinvoke r0.<org.apache.commons.validator.RetrieveFormTest: void checkForm(java.util.Locale,java.lang.String,java.lang.String)>($r4, r1, "default");
+        $r5 = <java.util.Locale: java.util.Locale CANADA>;
+        specialinvoke r0.<org.apache.commons.validator.RetrieveFormTest: void checkForm(java.util.Locale,java.lang.String,java.lang.String)>($r5, r1, "default");
+        $r6 = <java.util.Locale: java.util.Locale CANADA_FRENCH>;
+        specialinvoke r0.<org.apache.commons.validator.RetrieveFormTest: void checkForm(java.util.Locale,java.lang.String,java.lang.String)>($r6, r1, "default");
+        $r7 = <org.apache.commons.validator.RetrieveFormTest: java.util.Locale CANADA_FRENCH_XXX>;
+        specialinvoke r0.<org.apache.commons.validator.RetrieveFormTest: void checkForm(java.util.Locale,java.lang.String,java.lang.String)>($r7, r1, "default");
+        return;
+    }
+
+    public void testLanguageForm()
+    {
+        org.apache.commons.validator.RetrieveFormTest r0;
+        java.lang.String r1;
+        java.util.Locale $r2, $r3, $r4, $r5, $r6, $r7;
+
+        r0 := @this: org.apache.commons.validator.RetrieveFormTest;
+        r1 = "testForm_language";
+        $r2 = <java.util.Locale: java.util.Locale US>;
+        specialinvoke r0.<org.apache.commons.validator.RetrieveFormTest: void checkForm(java.util.Locale,java.lang.String,java.lang.String)>($r2, r1, "default");
+        $r3 = <java.util.Locale: java.util.Locale FRENCH>;
+        specialinvoke r0.<org.apache.commons.validator.RetrieveFormTest: void checkForm(java.util.Locale,java.lang.String,java.lang.String)>($r3, r1, "fr");
+        $r4 = <java.util.Locale: java.util.Locale FRANCE>;
+        specialinvoke r0.<org.apache.commons.validator.RetrieveFormTest: void checkForm(java.util.Locale,java.lang.String,java.lang.String)>($r4, r1, "fr");
+        $r5 = <java.util.Locale: java.util.Locale CANADA>;
+        specialinvoke r0.<org.apache.commons.validator.RetrieveFormTest: void checkForm(java.util.Locale,java.lang.String,java.lang.String)>($r5, r1, "default");
+        $r6 = <java.util.Locale: java.util.Locale CANADA_FRENCH>;
+        specialinvoke r0.<org.apache.commons.validator.RetrieveFormTest: void checkForm(java.util.Locale,java.lang.String,java.lang.String)>($r6, r1, "fr");
+        $r7 = <org.apache.commons.validator.RetrieveFormTest: java.util.Locale CANADA_FRENCH_XXX>;
+        specialinvoke r0.<org.apache.commons.validator.RetrieveFormTest: void checkForm(java.util.Locale,java.lang.String,java.lang.String)>($r7, r1, "fr");
+        return;
+    }
+
+    public void testLanguageCountryForm()
+    {
+        org.apache.commons.validator.RetrieveFormTest r0;
+        java.lang.String r1;
+        java.util.Locale $r2, $r3, $r4, $r5, $r6, $r7;
+
+        r0 := @this: org.apache.commons.validator.RetrieveFormTest;
+        r1 = "testForm_language_country";
+        $r2 = <java.util.Locale: java.util.Locale US>;
+        specialinvoke r0.<org.apache.commons.validator.RetrieveFormTest: void checkForm(java.util.Locale,java.lang.String,java.lang.String)>($r2, r1, "default");
+        $r3 = <java.util.Locale: java.util.Locale FRENCH>;
+        specialinvoke r0.<org.apache.commons.validator.RetrieveFormTest: void checkForm(java.util.Locale,java.lang.String,java.lang.String)>($r3, r1, "fr");
+        $r4 = <java.util.Locale: java.util.Locale FRANCE>;
+        specialinvoke r0.<org.apache.commons.validator.RetrieveFormTest: void checkForm(java.util.Locale,java.lang.String,java.lang.String)>($r4, r1, "fr_FR");
+        $r5 = <java.util.Locale: java.util.Locale CANADA>;
+        specialinvoke r0.<org.apache.commons.validator.RetrieveFormTest: void checkForm(java.util.Locale,java.lang.String,java.lang.String)>($r5, r1, "default");
+        $r6 = <java.util.Locale: java.util.Locale CANADA_FRENCH>;
+        specialinvoke r0.<org.apache.commons.validator.RetrieveFormTest: void checkForm(java.util.Locale,java.lang.String,java.lang.String)>($r6, r1, "fr_CA");
+        $r7 = <org.apache.commons.validator.RetrieveFormTest: java.util.Locale CANADA_FRENCH_XXX>;
+        specialinvoke r0.<org.apache.commons.validator.RetrieveFormTest: void checkForm(java.util.Locale,java.lang.String,java.lang.String)>($r7, r1, "fr_CA");
+        return;
+    }
+
+    public void testLanguageCountryVariantForm()
+    {
+        org.apache.commons.validator.RetrieveFormTest r0;
+        java.lang.String r1;
+        java.util.Locale $r2, $r3, $r4, $r5, $r6, $r7;
+
+        r0 := @this: org.apache.commons.validator.RetrieveFormTest;
+        r1 = "testForm_language_country_variant";
+        $r2 = <java.util.Locale: java.util.Locale US>;
+        specialinvoke r0.<org.apache.commons.validator.RetrieveFormTest: void checkForm(java.util.Locale,java.lang.String,java.lang.String)>($r2, r1, "default");
+        $r3 = <java.util.Locale: java.util.Locale FRENCH>;
+        specialinvoke r0.<org.apache.commons.validator.RetrieveFormTest: void checkForm(java.util.Locale,java.lang.String,java.lang.String)>($r3, r1, "fr");
+        $r4 = <java.util.Locale: java.util.Locale FRANCE>;
+        specialinvoke r0.<org.apache.commons.validator.RetrieveFormTest: void checkForm(java.util.Locale,java.lang.String,java.lang.String)>($r4, r1, "fr_FR");
+        $r5 = <java.util.Locale: java.util.Locale CANADA>;
+        specialinvoke r0.<org.apache.commons.validator.RetrieveFormTest: void checkForm(java.util.Locale,java.lang.String,java.lang.String)>($r5, r1, "default");
+        $r6 = <java.util.Locale: java.util.Locale CANADA_FRENCH>;
+        specialinvoke r0.<org.apache.commons.validator.RetrieveFormTest: void checkForm(java.util.Locale,java.lang.String,java.lang.String)>($r6, r1, "fr_CA");
+        $r7 = <org.apache.commons.validator.RetrieveFormTest: java.util.Locale CANADA_FRENCH_XXX>;
+        specialinvoke r0.<org.apache.commons.validator.RetrieveFormTest: void checkForm(java.util.Locale,java.lang.String,java.lang.String)>($r7, r1, "fr_CA_XXX");
+        return;
+    }
+
+    public void testFormNotFound()
+    {
+        org.apache.commons.validator.RetrieveFormTest r0;
+        java.lang.String r1;
+        java.util.Locale $r2, $r3, $r4, $r5, $r6, $r7;
+
+        r0 := @this: org.apache.commons.validator.RetrieveFormTest;
+        r1 = "INVALID_NAME";
+        $r2 = <java.util.Locale: java.util.Locale US>;
+        specialinvoke r0.<org.apache.commons.validator.RetrieveFormTest: void checkFormNotFound(java.util.Locale,java.lang.String)>($r2, r1);
+        $r3 = <java.util.Locale: java.util.Locale FRENCH>;
+        specialinvoke r0.<org.apache.commons.validator.RetrieveFormTest: void checkFormNotFound(java.util.Locale,java.lang.String)>($r3, r1);
+        $r4 = <java.util.Locale: java.util.Locale FRANCE>;
+        specialinvoke r0.<org.apache.commons.validator.RetrieveFormTest: void checkFormNotFound(java.util.Locale,java.lang.String)>($r4, r1);
+        $r5 = <java.util.Locale: java.util.Locale CANADA>;
+        specialinvoke r0.<org.apache.commons.validator.RetrieveFormTest: void checkFormNotFound(java.util.Locale,java.lang.String)>($r5, r1);
+        $r6 = <java.util.Locale: java.util.Locale CANADA_FRENCH>;
+        specialinvoke r0.<org.apache.commons.validator.RetrieveFormTest: void checkFormNotFound(java.util.Locale,java.lang.String)>($r6, r1);
+        $r7 = <org.apache.commons.validator.RetrieveFormTest: java.util.Locale CANADA_FRENCH_XXX>;
+        specialinvoke r0.<org.apache.commons.validator.RetrieveFormTest: void checkFormNotFound(java.util.Locale,java.lang.String)>($r7, r1);
+        return;
+    }
+
+    private void checkForm(java.util.Locale, java.lang.String, java.lang.String)
+    {
+        org.apache.commons.validator.RetrieveFormTest r0;
+        java.util.Locale r1;
+        java.lang.String r2, r3, $r11, $r17, $r18;
+        org.apache.commons.validator.Form r4;
+        org.apache.commons.validator.Field r5;
+        org.apache.commons.validator.ValidatorResources $r6;
+        java.lang.StringBuilder $r7, $r8, $r9, $r10, $r12, $r13, $r14, $r15, $r16;
+
+        r0 := @this: org.apache.commons.validator.RetrieveFormTest;
+        r1 := @parameter0: java.util.Locale;
+        r2 := @parameter1: java.lang.String;
+        r3 := @parameter2: java.lang.String;
+        $r6 = r0.<org.apache.commons.validator.RetrieveFormTest: org.apache.commons.validator.ValidatorResources resources>;
+        r4 = virtualinvoke $r6.<org.apache.commons.validator.ValidatorResources: org.apache.commons.validator.Form getForm(java.util.Locale,java.lang.String)>(r1, r2);
+        $r7 = new java.lang.StringBuilder;
+        specialinvoke $r7.<java.lang.StringBuilder: void <init>(java.lang.String)>("Form \'");
+        $r8 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r2);
+        $r9 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' null for locale ");
+        $r10 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(r1);
+        $r11 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.String toString()>();
+        staticinvoke <org.apache.commons.validator.RetrieveFormTest: void assertNotNull(java.lang.String,java.lang.Object)>($r11, r4);
+        r5 = virtualinvoke r4.<org.apache.commons.validator.Form: org.apache.commons.validator.Field getField(java.lang.String)>("testProperty");
+        $r12 = new java.lang.StringBuilder;
+        specialinvoke $r12.<java.lang.StringBuilder: void <init>(java.lang.String)>("Incorrect Form \'");
+        $r13 = virtualinvoke $r12.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r2);
+        $r14 = virtualinvoke $r13.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' for locale \'");
+        $r15 = virtualinvoke $r14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(r1);
+        $r16 = virtualinvoke $r15.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\'");
+        $r17 = virtualinvoke $r16.<java.lang.StringBuilder: java.lang.String toString()>();
+        $r18 = virtualinvoke r5.<org.apache.commons.validator.Field: java.lang.String getVarValue(java.lang.String)>("localeVar");
+        staticinvoke <org.apache.commons.validator.RetrieveFormTest: void assertEquals(java.lang.String,java.lang.String,java.lang.String)>($r17, r3, $r18);
+        return;
+    }
+
+    private void checkFormNotFound(java.util.Locale, java.lang.String)
+    {
+        org.apache.commons.validator.RetrieveFormTest r0;
+        java.util.Locale r1;
+        java.lang.String r2, $r9;
+        org.apache.commons.validator.Form r3;
+        org.apache.commons.validator.ValidatorResources $r4;
+        java.lang.StringBuilder $r5, $r6, $r7, $r8;
+
+        r0 := @this: org.apache.commons.validator.RetrieveFormTest;
+        r1 := @parameter0: java.util.Locale;
+        r2 := @parameter1: java.lang.String;
+        $r4 = r0.<org.apache.commons.validator.RetrieveFormTest: org.apache.commons.validator.ValidatorResources resources>;
+        r3 = virtualinvoke $r4.<org.apache.commons.validator.ValidatorResources: org.apache.commons.validator.Form getForm(java.util.Locale,java.lang.String)>(r1, r2);
+        $r5 = new java.lang.StringBuilder;
+        specialinvoke $r5.<java.lang.StringBuilder: void <init>(java.lang.String)>("Form \'");
+        $r6 = virtualinvoke $r5.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r2);
+        $r7 = virtualinvoke $r6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' not null for locale ");
+        $r8 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(r1);
+        $r9 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.String toString()>();
+        staticinvoke <org.apache.commons.validator.RetrieveFormTest: void assertNull(java.lang.String,java.lang.Object)>($r9, r3);
+        return;
+    }
+}

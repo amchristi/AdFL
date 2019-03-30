@@ -1,0 +1,5 @@
+org/apache/commons/digester3/rss/TextInput.class
+org/apache/commons/digester3/rss/Item.class
+org/apache/commons/digester3/rss/Image.class
+org/apache/commons/digester3/rss/Channel.class
+org/apache/commons/digester3/rss/RSSDigester.class

@@ -1,0 +1,302 @@
+public class org.apache.commons.validator.routines.InetAddressValidator extends java.lang.Object implements java.io.Serializable
+{
+    private static final long serialVersionUID;
+    private static final java.lang.String IPV4_REGEX;
+    private static final org.apache.commons.validator.routines.InetAddressValidator VALIDATOR;
+    private final org.apache.commons.validator.routines.RegexValidator ipv4Validator;
+
+    static void <clinit>()
+    {
+        org.apache.commons.validator.routines.InetAddressValidator $r0;
+
+        $r0 = new org.apache.commons.validator.routines.InetAddressValidator;
+        specialinvoke $r0.<org.apache.commons.validator.routines.InetAddressValidator: void <init>()>();
+        <org.apache.commons.validator.routines.InetAddressValidator: org.apache.commons.validator.routines.InetAddressValidator VALIDATOR> = $r0;
+        return;
+    }
+
+    public void <init>()
+    {
+        org.apache.commons.validator.routines.InetAddressValidator r0;
+        org.apache.commons.validator.routines.RegexValidator $r1;
+
+        r0 := @this: org.apache.commons.validator.routines.InetAddressValidator;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        $r1 = new org.apache.commons.validator.routines.RegexValidator;
+        specialinvoke $r1.<org.apache.commons.validator.routines.RegexValidator: void <init>(java.lang.String)>("^(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})$");
+        r0.<org.apache.commons.validator.routines.InetAddressValidator: org.apache.commons.validator.routines.RegexValidator ipv4Validator> = $r1;
+        return;
+    }
+
+    public static org.apache.commons.validator.routines.InetAddressValidator getInstance()
+    {
+        org.apache.commons.validator.routines.InetAddressValidator $r0;
+
+        $r0 = <org.apache.commons.validator.routines.InetAddressValidator: org.apache.commons.validator.routines.InetAddressValidator VALIDATOR>;
+        return $r0;
+    }
+
+    public boolean isValid(java.lang.String)
+    {
+        org.apache.commons.validator.routines.InetAddressValidator r0;
+        java.lang.String r1;
+        boolean $z0, $z1;
+
+        r0 := @this: org.apache.commons.validator.routines.InetAddressValidator;
+        r1 := @parameter0: java.lang.String;
+        $z0 = virtualinvoke r0.<org.apache.commons.validator.routines.InetAddressValidator: boolean isValidInet4Address(java.lang.String)>(r1);
+        if $z0 != 0 goto label0;
+
+        $z1 = virtualinvoke r0.<org.apache.commons.validator.routines.InetAddressValidator: boolean isValidInet6Address(java.lang.String)>(r1);
+        if $z1 != 0 goto label0;
+
+        return 0;
+
+     label0:
+        return 1;
+    }
+
+    public boolean isValidInet4Address(java.lang.String)
+    {
+        org.apache.commons.validator.routines.InetAddressValidator r0;
+        java.lang.String r1, r3;
+        java.lang.String[] r2;
+        int i0, $i1, i2, $i3;
+        boolean z0, $z1;
+        java.lang.NumberFormatException r4, $r6;
+        org.apache.commons.validator.routines.RegexValidator $r5;
+
+        r0 := @this: org.apache.commons.validator.routines.InetAddressValidator;
+        r1 := @parameter0: java.lang.String;
+        $r5 = r0.<org.apache.commons.validator.routines.InetAddressValidator: org.apache.commons.validator.routines.RegexValidator ipv4Validator>;
+        r2 = virtualinvoke $r5.<org.apache.commons.validator.routines.RegexValidator: java.lang.String[] match(java.lang.String)>(r1);
+        if r2 != null goto label0;
+
+        return 0;
+
+     label0:
+        i0 = 0;
+        goto label10;
+
+     label1:
+        r3 = r2[i0];
+        if r3 == null goto label2;
+
+        $i1 = virtualinvoke r3.<java.lang.String: int length()>();
+        if $i1 != 0 goto label3;
+
+     label2:
+        return 0;
+
+     label3:
+        z0 = 0;
+
+     label4:
+        i2 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(r3);
+
+     label5:
+        goto label7;
+
+     label6:
+        $r6 := @caughtexception;
+        r4 = $r6;
+        return 0;
+
+     label7:
+        if i2 <= 255 goto label8;
+
+        return 0;
+
+     label8:
+        $i3 = virtualinvoke r3.<java.lang.String: int length()>();
+        if $i3 <= 1 goto label9;
+
+        $z1 = virtualinvoke r3.<java.lang.String: boolean startsWith(java.lang.String)>("0");
+        if $z1 == 0 goto label9;
+
+        return 0;
+
+     label9:
+        i0 = i0 + 1;
+
+     label10:
+        if i0 <= 3 goto label1;
+
+        return 1;
+
+        catch java.lang.NumberFormatException from label4 to label5 with label6;
+    }
+
+    public boolean isValidInet6Address(java.lang.String)
+    {
+        org.apache.commons.validator.routines.InetAddressValidator r0;
+        java.lang.String r1, r4;
+        boolean z0, z1, $z2, $z3, $z4, $z5, $z6, $z8, $z9, $z10, $z11, $z12;
+        java.lang.String[] r2, $r9;
+        java.util.ArrayList r3, $r6;
+        int i0, i1, $i2, $i3, $i4, $i5, i6, $i7, $i8, $i9, $i10, i11, $i12;
+        java.lang.NumberFormatException r5, $r12;
+        java.util.List $r7;
+        java.lang.Object[] $r10;
+        java.lang.Integer $r11;
+
+        r0 := @this: org.apache.commons.validator.routines.InetAddressValidator;
+        r1 := @parameter0: java.lang.String;
+        z0 = virtualinvoke r1.<java.lang.String: boolean contains(java.lang.CharSequence)>("::");
+        if z0 == 0 goto label0;
+
+        $i2 = virtualinvoke r1.<java.lang.String: int indexOf(java.lang.String)>("::");
+        $i3 = virtualinvoke r1.<java.lang.String: int lastIndexOf(java.lang.String)>("::");
+        if $i2 == $i3 goto label0;
+
+        return 0;
+
+     label0:
+        $z2 = virtualinvoke r1.<java.lang.String: boolean startsWith(java.lang.String)>(":");
+        if $z2 == 0 goto label1;
+
+        $z3 = virtualinvoke r1.<java.lang.String: boolean startsWith(java.lang.String)>("::");
+        if $z3 == 0 goto label2;
+
+     label1:
+        $z4 = virtualinvoke r1.<java.lang.String: boolean endsWith(java.lang.String)>(":");
+        if $z4 == 0 goto label3;
+
+        $z5 = virtualinvoke r1.<java.lang.String: boolean endsWith(java.lang.String)>("::");
+        if $z5 != 0 goto label3;
+
+     label2:
+        return 0;
+
+     label3:
+        r2 = virtualinvoke r1.<java.lang.String: java.lang.String[] split(java.lang.String)>(":");
+        if z0 == 0 goto label6;
+
+        $r6 = new java.util.ArrayList;
+        $r7 = staticinvoke <java.util.Arrays: java.util.List asList(java.lang.Object[])>(r2);
+        specialinvoke $r6.<java.util.ArrayList: void <init>(java.util.Collection)>($r7);
+        r3 = $r6;
+        $z6 = virtualinvoke r1.<java.lang.String: boolean endsWith(java.lang.String)>("::");
+        if $z6 == 0 goto label4;
+
+        interfaceinvoke r3.<java.util.List: boolean add(java.lang.Object)>("");
+        goto label5;
+
+     label4:
+        $z8 = virtualinvoke r1.<java.lang.String: boolean startsWith(java.lang.String)>("::");
+        if $z8 == 0 goto label5;
+
+        $z9 = interfaceinvoke r3.<java.util.List: boolean isEmpty()>();
+        if $z9 != 0 goto label5;
+
+        interfaceinvoke r3.<java.util.List: java.lang.Object remove(int)>(0);
+
+     label5:
+        $i4 = interfaceinvoke r3.<java.util.List: int size()>();
+        $r9 = newarray (java.lang.String)[$i4];
+        $r10 = interfaceinvoke r3.<java.util.List: java.lang.Object[] toArray(java.lang.Object[])>($r9);
+        r2 = (java.lang.String[]) $r10;
+
+     label6:
+        $i5 = lengthof r2;
+        if $i5 <= 8 goto label7;
+
+        return 0;
+
+     label7:
+        i6 = 0;
+        i0 = 0;
+        i1 = 0;
+        goto label23;
+
+     label8:
+        r4 = r2[i1];
+        $i7 = virtualinvoke r4.<java.lang.String: int length()>();
+        if $i7 != 0 goto label9;
+
+        i0 = i0 + 1;
+        if i0 <= 1 goto label21;
+
+        return 0;
+
+     label9:
+        i0 = 0;
+        $z10 = virtualinvoke r4.<java.lang.String: boolean contains(java.lang.CharSequence)>(".");
+        if $z10 == 0 goto label14;
+
+        $z11 = virtualinvoke r1.<java.lang.String: boolean endsWith(java.lang.String)>(r4);
+        if $z11 != 0 goto label10;
+
+        return 0;
+
+     label10:
+        $i8 = lengthof r2;
+        $i9 = $i8 - 1;
+        if i1 > $i9 goto label11;
+
+        if i1 <= 6 goto label12;
+
+     label11:
+        return 0;
+
+     label12:
+        $z12 = virtualinvoke r0.<org.apache.commons.validator.routines.InetAddressValidator: boolean isValidInet4Address(java.lang.String)>(r4);
+        if $z12 != 0 goto label13;
+
+        return 0;
+
+     label13:
+        i6 = i6 + 2;
+        goto label22;
+
+     label14:
+        $i10 = virtualinvoke r4.<java.lang.String: int length()>();
+        if $i10 <= 4 goto label15;
+
+        return 0;
+
+     label15:
+        z1 = 0;
+
+     label16:
+        $r11 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String,int)>(r4, 16);
+        i11 = virtualinvoke $r11.<java.lang.Integer: int intValue()>();
+
+     label17:
+        goto label19;
+
+     label18:
+        $r12 := @caughtexception;
+        r5 = $r12;
+        return 0;
+
+     label19:
+        if i11 < 0 goto label20;
+
+        if i11 <= 65535 goto label21;
+
+     label20:
+        return 0;
+
+     label21:
+        i6 = i6 + 1;
+
+     label22:
+        i1 = i1 + 1;
+
+     label23:
+        $i12 = lengthof r2;
+        if i1 < $i12 goto label8;
+
+        if i6 >= 8 goto label24;
+
+        if z0 != 0 goto label24;
+
+        return 0;
+
+     label24:
+        return 1;
+
+        catch java.lang.NumberFormatException from label16 to label17 with label18;
+    }
+}
