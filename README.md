@@ -20,6 +20,7 @@ Consider UrlValidator.label10 file.
 
 and 3 labeled tests are testHierarchicalUriMutation, testEmpty, testRelativePath.
 
+Selected tests can be derived by computing coverage information. Though selected tests are not important for AdFL paper as long as they remain same across schemes. 
 
 We note that currently few _10 and _20 files are missing. They will be soon updated. 
 
