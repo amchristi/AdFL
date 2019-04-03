@@ -1,0 +1,11 @@
+UrlValidator
+20,1, testValidator342, testValidator248, testIsValid
+20,2, testValidator363, testValidator235, testValidator204, testValidator290, testValidator218, testIsValid
+20,3, testValidator342, testValidator375, testIsValidScheme, testValidator288, testValidator248
+20,4, testValidator202, testValidator235, testValidator248, testValidator339IDN, testValidator382
+20,5, testValidator276, testValidator235, testValidator339IDN, testIsValid
+20,6, testValidator342, testValidator375, testValidator202, testValidator248, testValidator380, testIsValid, testValidator361
+20,7, testValidator276, testValidator353, testIsValidScheme, testValidator288, testValidator290, testIsValid
+20,8, testValidator353, testValidator235, testValidator218, testValidator382
+20,9, testValidator290, testValidator382
+20,10, testValidator342, testValidator288, testValidateUrl, testValidator290, testValidator218, testValidator339, testValidator382, testIsValid

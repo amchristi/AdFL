@@ -1,0 +1,11 @@
+Script
+20,1, testCallableCancel
+20,2, testCancelLoopWait
+20,3, testCancelWaitInterrupt, testCancelWait, testCancelForever
+20,4, testWait, testInterruptVerboseLenient, testCallableClosure, testHangs, testNoWait
+20,5, testInterruptSilentLenient, testCancelLoopWait
+20,6, testCallableClosure, testInterruptCancellable, testCallableCancel, testInterruptVerboseStrict
+20,7, testWait, testHangs, testCancelWaitInterrupt, testFuture, testCallableCancel
+20,8, testCancelWaitInterrupt, testCancelWait, testNoWait
+20,9, testInterruptSilentLenient, testWait
+20,10, testWait, testCancelForever, testFuture

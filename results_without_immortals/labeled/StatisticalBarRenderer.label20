@@ -1,0 +1,11 @@
+StatisticalBarRenderer
+20,1, testDrawWithNullMeanVertical, testSerialization
+20,2, testFindRangeBounds
+20,3, testDrawWithNullDeviationHorizontal, testCloning, testDrawWithNullMeanHorizontal
+20,4, testPublicCloneable, testDrawWithNullDeviationVertical, testDrawWithNullMeanVertical, testDrawWithNullMeanHorizontal, testEquals
+20,5, testDrawWithNullMeanHorizontal, testEquals
+20,6, testDrawWithNullMeanHorizontal, testSerialization, testEquals
+20,7, testCloning, testEquals
+20,8, testCloning, testFindRangeBounds, testPublicCloneable, testDrawWithNullMeanHorizontal, testHashcode
+20,9, testCloning, testPublicCloneable, testDrawWithNullMeanVertical
+20,10, testFindRangeBounds, testPublicCloneable, testDrawWithNullDeviationVertical, testDrawWithNullMeanVertical, testDrawWithNullMeanHorizontal

@@ -1,0 +1,11 @@
+URIBuilder
+10,1, testHierarchicalUriMutation, testEmpty, testRelativePath
+10,2, testAgainstURIEncoded, testEmpty
+10,3, testParameterWithSpecialChar, testEmpty
+10,4, testOpaqueUriMutation, testBuildAddParametersUTF8
+10,5, testQueryAndParameterEncoding, testRelativePathWithAuthority
+10,6, testMutationRemoveUserInfo, testBuildAddParametersUTF8, testPathEncoding, testHierarchicalUriMutation
+10,7, testPathEncoding, testBuildSetParametersISO88591
+10,8, testBuildSetParametersISO88591, testRemoveParameters
+10,9, testMutationRemovePort
+10,10, testBuildSetParametersUTF8, testHierarchicalUriMutation, testBuildAddParametersISO88591, testRelativePathWithAuthority

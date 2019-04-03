@@ -1,0 +1,11 @@
+UrlValidator
+10,1, testIsValid, testValidator361
+10,2, testValidator353, testValidator363, testValidator235, testValidateUrl
+10,3, testValidator382, testValidator361
+10,4, testIsValidScheme
+10,5, testValidator235, testValidator248, testValidator380, testValidator361
+10,6, testValidator202, testIsValid
+10,7, testValidator288
+10,8, testValidator276, testValidator288, testValidator202, testValidator380
+10,9, testValidator276, testValidator218
+10,10, testValidator339IDN, testValidator361

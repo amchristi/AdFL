@@ -1,0 +1,11 @@
+StatisticalBarRenderer
+10,1, testDrawWithNullDeviationHorizontal, testPublicCloneable, testDrawWithNullInfo
+10,2, testDrawWithNullDeviationVertical
+10,3, testDrawWithNullMeanVertical, testDrawWithNullInfo
+10,4, testDrawWithNullDeviationHorizontal
+10,5, testSerialization
+10,6, testDrawWithNullMeanHorizontal, testEquals
+10,7, testDrawWithNullDeviationHorizontal, testDrawWithNullInfo
+10,8, testDrawWithNullDeviationHorizontal
+10,9, testPublicCloneable
+10,10, testPublicCloneable

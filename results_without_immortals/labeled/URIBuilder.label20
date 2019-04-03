@@ -1,0 +1,11 @@
+URIBuilder
+20,1, testAddParameter, testBuildSetParametersUTF8, testHierarchicalUriMutation, testBuildSetParametersISO88591
+20,2, testBuildSetParametersUTF8, testQueryEncoding, testAgainstURIEncoded, testHierarchicalUri, testHierarchicalUriMutation
+20,3, testAgainstURI, testBuildSetParametersISO88591, testBuildAddParametersISO88591, testRemoveParameters
+20,4, testHierarchicalUriMutation, testSetParameter, testRemoveParameters, testRelativePath
+20,5, testAgainstURI, testOpaqueUri, testBuildAddParametersUTF8, testMutationRemoveFragment
+20,6, testAgainstURI, testMutationRemoveUserInfo, testMalformedPath, testBuildSetParametersISO88591, testRelativePathWithAuthority
+20,7, testOpaqueUri, testAgainstURIEncoded, testMutationToRelativeUri, testParameterWithSpecialChar, testRemoveParameters
+20,8, testAddParameter, testOpaqueUri, testMalformedPath, testBuildSetParametersISO88591, testRelativePath
+20,9, testQueryEncoding, testOpaqueUri, testMalformedPath, testPathEncoding, testHierarchicalUriMutation, testRelativePath
+20,10, testOpaqueUri, testAgainstURIEncoded, testHierarchicalUriMutation, testBuildSetParametersISO88591
