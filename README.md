@@ -9,10 +9,15 @@ UrlValidator.java is the original file.
 labeled_ublabeled folder contains labeled and unlabeled tests.
 
 For example:
+
 Consider UrlValidator.label10 file.
+
 10,1, testHierarchicalUriMutation, testEmpty, testRelativePath.
+
 10: is the labeling scheme. 
+
 1 is the run number.
+
 and 3 labeled tests are testHierarchicalUriMutation, testEmpty, testRelativePath.
 
 
