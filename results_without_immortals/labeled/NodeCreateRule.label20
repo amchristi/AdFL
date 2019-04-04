@@ -1,0 +1,11 @@
+NodeCreateRule
+20,1, testElement, testDocumentFragment, testEntityText
+20,2, testInvalidNodeTypes, testNamespacedAttribute
+20,3, testNonNamespacedAttribute
+20,4, testElement, testAttributes, testInvalidNodeTypes
+20,5, testInvalidNodeTypes, testNested, testDocumentFragment
+20,6, testAttributes, testNonNamespacedAttribute
+20,7, testInvalidNodeTypes, testNonNamespacedAttribute
+20,8, testAttributes, testNamespacedAttribute, testDocumentFragment, testNonNamespacedAttribute, testEntityText
+20,9, testAttributes, testNamespacedAttribute
+20,10, testImport, testNamespaces, testAttributes, testNested, testEntityText

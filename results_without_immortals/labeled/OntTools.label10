@@ -1,0 +1,9 @@
+OntTools
+10,3, testShortestPath2
+10,4, testShortestPath4, testIndexLCA14, testIndexLCA9, testIndexLCA4
+10,5, testNamedHierarchyRoots2, testShortestPath4, testShortestPath2, testIndexLCA7, testIndexLCA3
+10,6, testShortestPath8, testIndexLCA1, testIndexLCA7, testIndexLCA9
+10,7, testShortestPath4, testIndexLCA14, testIndexLCA9, testIndexLCA4
+10,8, testNamedHierarchyRoots2, testShortestPath4, testShortestPath2, testIndexLCA7, testIndexLCA3
+10,9, testShortestPath8, testIndexLCA1, testIndexLCA7, testIndexLCA9
+10,10, testShortestPath4, testIndexLCA14, testIndexLCA9, testIndexLCA4

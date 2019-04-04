@@ -1,0 +1,11 @@
+OntModelImpl
+10,1, testGetIntersectionClass, testGetInverseFunctionalProperty, testGetSubgraphs, testGetMinCardinalityRestriction, testGetCardinalityRestriction, testLoadImports0, testPolyadicPrefixMapping, testProfiles, testListOntProperties2, testReadConneg3
+10,2, testListHierarchyRoots1, testGetMinCardinalityRestriction, testRead, testReadConneg3
+10,3, testGetAnnotationProperty, testAddImports0, testGetOntProperty, testPolyadicPrefixMapping, testListOntProperties0
+10,4, testAddImports1, testListDataRange, testGetComplementClass, testWriteOutputStream, testReadConneg2
+10,5, testAddImports1, testWriteWriter, testAddImports0, testBulkAddWorks, testListHierarchyRoots3, testLoadImports1, testGetOntProperty, testListOntProperties0, testListAllOntProperties0, testWriteOutputStream, testGetOntology, testListSubModels0
+10,6, testGetIntersectionClass, testGetInverseFunctionalProperty, testGetSubgraphs, testGetMinCardinalityRestriction, testGetCardinalityRestriction, testLoadImports0, testPolyadicPrefixMapping, testProfiles, testListOntProperties2, testReadConneg3
+10,7, testListHierarchyRoots1, testGetMinCardinalityRestriction, testRead, testReadConneg3
+10,8, testGetAnnotationProperty, testAddImports0, testGetOntProperty, testPolyadicPrefixMapping, testListOntProperties0
+10,9, testAddImports1, testListDataRange, testGetComplementClass, testWriteOutputStream, testReadConneg2
+10,10, testAddImports1, testWriteWriter, testAddImports0, testBulkAddWorks, testListHierarchyRoots3, testLoadImports1, testGetOntProperty, testListOntProperties0, testListAllOntProperties0, testWriteOutputStream, testGetOntology, testListSubModels0

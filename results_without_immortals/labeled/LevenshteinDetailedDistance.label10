@@ -1,0 +1,11 @@
+LevenshteinDetailedDistance
+10,1, testConstructorWithNegativeThreshold
+10,2, testGetLevenshteinDetailedDistance_StringNullInt, testEquals
+10,3, testToString
+10,4, testConstructorWithNegativeThreshold, testHashCode
+10,5, testGetLevenshteinDetailedDistance_StringString, testConstructorWithNegativeThreshold
+10,6, testConstructorWithNegativeThreshold
+10,7, testGetLevenshteinDetailedDistance_StringNullInt, testEquals
+10,8, testToString
+10,9, testConstructorWithNegativeThreshold, testHashCode
+10,10, testGetLevenshteinDetailedDistance_StringString, testConstructorWithNegativeThreshold

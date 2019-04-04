@@ -1,0 +1,11 @@
+LevenshteinDetailedDistance
+20,1, testToString
+20,2, testGetLevenshteinDetailedDistance_StringStringInt
+20,3, testGetLevenshteinDetailedDistance_NullString, testGetLevenshteinDetailedDistance_StringStringInt, testEquals
+20,4, testToString, testGetLevenshteinDetailedDistance_StringStringInt
+20,5, testGetLevenshteinDetailedDistance_StringStringInt, testHashCode
+20,6, testToString
+20,7, testGetLevenshteinDetailedDistance_StringStringInt
+20,8, testGetLevenshteinDetailedDistance_NullString, testGetLevenshteinDetailedDistance_StringStringInt, testEquals
+20,9, testToString, testGetLevenshteinDetailedDistance_StringStringInt
+20,10, testGetLevenshteinDetailedDistance_StringStringInt, testHashCode

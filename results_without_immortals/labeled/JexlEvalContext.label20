@@ -1,0 +1,11 @@
+JexlEvalContext
+20,1, testSize, testNotConditionsWithDots, testNegativeIntComparison, testCalculations, testNull, testConditions
+20,2, testUnicodeSupport, testComment, testDuck, testEmpty, testSizeAsProperty, testCoercionWithComparisionOperators
+20,3, testStringLiterals, testComment, testAssignment, testExpression, testArray, testSize, testNew, testSizeAsProperty, testBadParse, testConditions
+20,4, testAssignment, testProperty, testExpression, testBooleanShortCircuitAnd, testMapDot
+20,5, testBoolean, testProperty, testNotConditions, testEmpty, testVariableNames, testEmptySubListOfMap, testComment, testStringConcatenation, testNegativeIntComparison, testNull, testComparisons, testSizeAsProperty, testCoercionWithComparisionOperators
+20,6, testStringLiterals, testLogicExpressions, testDuck
+20,7, testUnicodeSupport, testStringConcatenation, testIntProperty, testDuck, testProperty, testArray, testSize, testAntPropertiesWithMethods, testBooleanShortCircuitOr, testBlankStrings, testSizeAsProperty
+20,8, testUnicodeSupport, testBoolean, testStringConcatenation, testDuck, testStringLit, testSize, testStringQuoting
+20,9, testUnicodeSupport, testBoolean, testLogicExpressions, testArray, testVariableNames, testMapDot, testComment, testStringConcatenation, testToString, testNegativeIntComparison, testBooleanShortCircuitAnd, testNull, testCoercionWithComparisionOperators
+20,10, testIntProperty, testAntPropertiesWithMethods, testNotConditionsWithDots, testNull, testEmpty, testBadParse, testCoercionWithComparisionOperators

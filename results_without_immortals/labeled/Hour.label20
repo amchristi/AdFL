@@ -1,0 +1,11 @@
+Hour
+20,1, testLastHourNext, testGetEnd
+20,2, testGetLastMillisecondWithCalendar, testParseHour, testFirstHourNext, testHashcode
+20,3, testEqualsSelf, testGetStart, testNext, testGetFirstMillisecond, testFirstHourPrevious
+20,4, testGetLastMillisecondWithCalendar, testGetFirstMillisecondWithCalendar, testFirstHourPrevious, testNotCloneable
+20,5, testDateConstructor1
+20,6, testDateConstructor1, testGetStart, testFirstHourPrevious, testDateConstructor2, testFirstHourNext, testNotCloneable, testEquals
+20,7, testDateConstructor1, testGetStart, testNext
+20,8, testNext, testGetLastMillisecondWithTimeZone, testFirstHourPrevious, testFirstHourNext, testEquals
+20,9, testEqualsSelf, testLastHourNext, testNext, testFirstHourPrevious
+20,10, testGetStart, testLastHourPrevious, testFirstHourNext, testNotCloneable

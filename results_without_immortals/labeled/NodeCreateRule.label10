@@ -1,0 +1,11 @@
+NodeCreateRule
+10,1, testDocumentFragment, testNonNamespacedAttribute
+10,2, testElement
+10,3, testImport, testNonNamespacedAttribute
+10,4, testAttributes, testNamespacedAttribute
+10,5, testImport, testElement, testDocumentFragment
+10,6, testAttributes, testNonNamespacedAttribute, testEntityText
+10,7, testAttributes
+10,8, testNamespacedAttribute, testDocumentFragment
+10,9, testDocumentFragment
+10,10, testImport

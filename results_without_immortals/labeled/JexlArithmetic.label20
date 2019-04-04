@@ -1,0 +1,11 @@
+JexlArithmetic
+20,1, testCoerceInteger, test2DoubleLiterals, testAddWithStringsStrict, testLeftNullOperand, testAtomicBoolean, testBigdOp, testDivClass, testAddWithStringsLenient, testIsFloatingPointPattern, testInfiniteArithmetic, testBigLiterals, testOption, testMinusClass, testUnaryMinus, testCalculations, testMultClass, testXmlArithmetic, testPlusClass
+20,2, test2DoubleLiterals, testBigLiteralValue, testEmptyDouble, testCoercions, testBigExponentLiterals, testOption, testMinusClass, testAtomicBoolean, testCoerceBigDecimal, testDivideByZero, testDivClass, testPlusClass
+20,3, test2DoubleLiterals, testOption, testMinusClass, testUnaryMinus, testAtomicBoolean, testDivideByZero, testNullOperands, testXmlArithmetic, testBigDecimal, testDivClass, testPlusClass
+20,4, test2DoubleLiterals, testAtomicBoolean, testNullOperands, testCoerceLong, testDivClass, testIsFloatingPointPattern, testInfiniteArithmetic, testOption, testMinusClass, testCalculations, testCoerceBigDecimal, testNaN, testPlusClass
+20,5, test2DoubleLiterals, testNullOperand, testAtomicBoolean, testEmpty, testDivClass, testRightNullOperand, testCoerceDouble, testOption, testBigInteger, testArithmeticPlus, testMinusClass, testArithmeticPlusNoCache, testUndefinedVar, testPlusClass
+20,6, testCoerceInteger, test2DoubleLiterals, testBigLiteralValue, testAtomicBoolean, testNullOperands, testEmpty, testDivClass, testCoerceDouble, testIsFloatingPointPattern, testInfiniteArithmetic, testOption, testBigInteger, testMinusClass, testArithmeticPlusNoCache, testBigDecimal, testPlusClass
+20,7, test2DoubleLiterals, testNullOperand, testCoerceBigInteger, testAtomicBoolean, testEmpty, testDivClass, testAddWithStringsLenient, testIsFloatingPointPattern, testOption, testBigInteger, testMinusClass, testArithmeticPlusNoCache, testCoerceBigDecimal, testDivideByZero, testPlusClass
+20,8, testCoerceInteger, test2DoubleLiterals, testOption, testMinusClass, testAtomicBoolean, testMultClass, testCoerceBigDecimal, testDivideByZero, testDivClass, testNaN, testPlusClass
+20,9, test2DoubleLiterals, testCoercions, testOption, testMinusClass, testUnaryMinus, testAtomicBoolean, testEmptyFloat, testBigDecimal, testDivClass, testNaN, testPlusClass
+20,10, test2DoubleLiterals, testCoerceDouble, testOption, testMinusClass, testAtomicBoolean, testEmpty, testDivClass, testNaN, testPlusClass

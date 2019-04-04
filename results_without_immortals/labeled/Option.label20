@@ -1,0 +1,11 @@
+Option
+20,1, testGetValue
+20,2, testBuilderInsufficientParams2
+20,3, testBuilderInsufficientParams1
+20,4, testGetValue, testBuilderInsufficientParams2, testBuilderMethods
+20,5, testClone, testGetValue, testSubclass
+20,6, testBuilderMethods, testBuilderInsufficientParams1
+20,7, testClone
+20,8, testGetValue, testBuilderMethods
+20,9, testClone
+20,10, testClone, testHasArgs

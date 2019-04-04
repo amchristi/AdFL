@@ -1,0 +1,11 @@
+OptionGroup
+20,1, testSingleOptionFromGroup, testTwoValidOptions
+20,2, testTwoValidOptions, testSingleOption
+20,3, testSingleLongOption
+20,4, testSingleOption
+20,5, testTwoLongOptionsFromGroup, testTwoOptionsFromDifferentGroup
+20,6, testToString
+20,7, testSingleOptionFromGroup, testToString, testValidLongOnlyOptions, testTwoOptionsFromGroupWithProperties, testTwoValidLongOptions
+20,8, testTwoLongOptionsFromGroup, testTwoOptionsFromGroupWithProperties, testGetNames, testTwoOptionsFromGroup
+20,9, testTwoOptionsFromDifferentGroup, testTwoOptionsFromGroupWithProperties, testNoOptionsExtraArgs, testGetNames, testTwoValidLongOptions
+20,10, testToString, testGetNames

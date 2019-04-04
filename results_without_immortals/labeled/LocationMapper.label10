@@ -1,0 +1,7 @@
+LocationMapper
+10,1, testLocationMapperEquals2, testLocationMapperClone1
+10,2, testLocationMapperToModel2, testLocationMapperURLtoFile
+10,3, testLocationMapperEquals2
+10,4, testLocationMapperToModel1
+10,5, testLocationMapperMiss
+10,6, testLocationMapperURLtoFile

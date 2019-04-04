@@ -1,0 +1,11 @@
+HttpService
+10,1, testResponseToHead, testMethodNotSupported, testProtocolException, testBasicExecution
+10,2, testMethodNotSupported, testInvalidInitialization
+10,3, testResponseToHead
+10,4, testExecutionEntityEnclosingRequestCustomExpectationVerifier
+10,5, testExecutionEntityEnclosingRequestCustomExpectationVerifier, testConnectionKeepAlive
+10,6, testConnectionKeepAlive
+10,7, testResponseToHead, testNoContentResponse
+10,8, testResponseToHead, testMethodNotSupported, testExecutionExceptionInCustomExpectationVerifier, testBasicExecution
+10,9, testExecutionEntityEnclosingRequestCustomExpectationVerifier, testExecutionEntityEnclosingRequestWithExpectContinue
+10,10, testNoContentResponse

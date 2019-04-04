@@ -1,0 +1,11 @@
+JexlEvalContext
+10,1, testStringConcatenation, testCharAtBug, testSize, testBlankStrings, testMapDot
+10,2, testBlankStrings, testConditions
+10,3, testStringLiterals, testStringConcatenation, testSizeAsProperty
+10,4, testNotConditions, testSize, testNegativeIntComparison, testCalculations
+10,5, testBoolean, testStringConcatenation, testIntProperty, testArray, testBooleanShortCircuitAnd, testSizeAsProperty
+10,6, testBoolean
+10,7, testExpression, testCalculations, testEmpty, testBadParse
+10,8, testDuck, testBooleanShortCircuitOr, testComparisons
+10,9, testUnicodeSupport, testBoolean, testStringLit, testNotConditionsWithDots, testCalculations, testStringQuoting
+10,10, testBoolean, testNew, testNegativeIntComparison, testMapDot

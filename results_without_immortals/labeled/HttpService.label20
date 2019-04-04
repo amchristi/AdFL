@@ -1,0 +1,11 @@
+HttpService
+20,1, testUnsupportedHttpVersionException, testConnectionKeepAlive, testExecutionEntityEnclosingRequestWithExpectContinue, testExecutionExceptionInCustomExpectationVerifier
+20,2, testMethodNotSupported, testExecutionEntityEnclosingRequestCustomExpectationVerifier, testNoContentResponse
+20,3, testMethodNotSupported, testExecutionEntityEnclosingRequestCustomExpectationVerifier
+20,4, testExecutionEntityEnclosingRequestCustomExpectationVerifier, testNoContentResponse, testBasicExecution, testInvalidInitialization
+20,5, testMethodNotSupported, testProtocolException
+20,6, testBasicExecution, testExecutionEntityEnclosingRequest
+20,7, testExecutionExceptionInCustomExpectationVerifier, testBasicExecution
+20,8, testExecutionEntityEnclosingRequestWithExpectContinue, testBasicExecution
+20,9, testUnsupportedHttpVersionException, testBasicExecution
+20,10, testBasicExecution

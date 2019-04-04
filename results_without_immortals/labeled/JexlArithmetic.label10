@@ -1,0 +1,7 @@
+JexlArithmetic
+10,1, test2DoubleLiterals, testOption, testMinusClass, testAtomicBoolean, testDivideByZero, testXmlArithmetic, testDivClass, testPlusClass
+10,2, testCoerceInteger, test2DoubleLiterals, testNullOperand, testIsFloatingPointPattern, testOption, testMinusClass, testAtomicBoolean, testCoerceLong, testDivClass, testPlusClass
+10,3, test2DoubleLiterals, testBigLiteralValue, testLeftNullOperand, testBigExponentLiterals, testAtomicBoolean, testDivClass, testLongLiterals, testOption, testBigInteger, testJexl173, testMinusClass, testCalculations, testMultClass, testPlusClass
+10,4, test2DoubleLiterals, testAddWithStringsStrict, testCoercions, testOption, testMinusClass, testAtomicBoolean, testDivClass, testPlusClass
+10,5, testRightNullOperand, test2DoubleLiterals, testAddWithStringsStrict, testAddWithStringsLenient, testOption, testMinusClass, testAtomicBoolean, testCalculations, testNullOperands, testDivClass, testPlusClass
+10,6, 
