@@ -1,0 +1,43 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2017-03-05T20:58:40-08:00
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 6
+
+Apache Licensed: 6
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  AL    /home/ubuntu/research/jena/jena-fuseki2/jena-fuseki-embedded/pom.xml
+  AL    /home/ubuntu/research/jena/jena-fuseki2/jena-fuseki-embedded/src/test/java/org/apache/jena/fuseki/embedded/FusekiTestServer.java
+  AL    /home/ubuntu/research/jena/jena-fuseki2/jena-fuseki-embedded/src/test/java/org/apache/jena/fuseki/embedded/TestMultipleEmbedded.java
+  AL    /home/ubuntu/research/jena/jena-fuseki2/jena-fuseki-embedded/src/test/java/org/apache/jena/fuseki/embedded/TestEmbeddedFuseki.java
+  AL    /home/ubuntu/research/jena/jena-fuseki2/jena-fuseki-embedded/src/test/java/org/apache/jena/fuseki/embedded/TS_EmbeddedFuseki.java
+  AL    /home/ubuntu/research/jena/jena-fuseki2/jena-fuseki-embedded/src/main/java/org/apache/jena/fuseki/embedded/FusekiEmbeddedServer.java
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 

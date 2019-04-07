@@ -1,0 +1,9 @@
+org/apache/jena/jdbc/tdb/results/TestTdbMemResultSets.class
+org/apache/jena/jdbc/tdb/TestJenaJdbcTdbDriver.class
+org/apache/jena/jdbc/tdb/connections/DebugTdbConnection.class
+org/apache/jena/jdbc/tdb/connections/TestTdbMemConnection.class
+org/apache/jena/jdbc/tdb/connections/TestTdbDiskConnection.class
+org/apache/jena/jdbc/tdb/TS_JdbcDriverTdb.class
+org/apache/jena/jdbc/tdb/metadata/TestTdbConnectionMetadata.class
+org/apache/jena/jdbc/tdb/results/TestTdbDiskResultSets.class
+org/apache/jena/jdbc/tdb/results/AbstractTdbResultSetTests.class

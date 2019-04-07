@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.apache.jena.atlas.iterator.TS_Iterator" time="0.235" tests="86" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.111-b14"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/ubuntu/research/jena"/>
+    <property name="java.runtime.version" value="1.8.0_111-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.2.0-27-generic"/>
+    <property name="user.home" value="/root"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="user.name" value="root"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_111"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="asString_1" classname="org.apache.jena.atlas.iterator.TestIter" time="0.003"/>
+  <testcase name="asString_2" classname="org.apache.jena.atlas.iterator.TestIter" time="0"/>
+  <testcase name="asString_3" classname="org.apache.jena.atlas.iterator.TestIter" time="0"/>
+  <testcase name="asString_4" classname="org.apache.jena.atlas.iterator.TestIter" time="0"/>
+  <testcase name="take_01" classname="org.apache.jena.atlas.iterator.TestIter" time="0.001"/>
+  <testcase name="take_02" classname="org.apache.jena.atlas.iterator.TestIter" time="0"/>
+  <testcase name="take_03" classname="org.apache.jena.atlas.iterator.TestIter" time="0"/>
+  <testcase name="take_04" classname="org.apache.jena.atlas.iterator.TestIter" time="0.002"/>
+  <testcase name="take_05" classname="org.apache.jena.atlas.iterator.TestIter" time="0.001"/>
+  <testcase name="take_06" classname="org.apache.jena.atlas.iterator.TestIter" time="0.001"/>
+  <testcase name="take_07" classname="org.apache.jena.atlas.iterator.TestIter" time="0.001"/>
+  <testcase name="take_08" classname="org.apache.jena.atlas.iterator.TestIter" time="0"/>
+  <testcase name="take_09" classname="org.apache.jena.atlas.iterator.TestIter" time="0"/>
+  <testcase name="map_01" classname="org.apache.jena.atlas.iterator.TestIter" time="0.001"/>
+  <testcase name="filter_01" classname="org.apache.jena.atlas.iterator.TestIter" time="0.001"/>
+  <testcase name="filter_02" classname="org.apache.jena.atlas.iterator.TestIter" time="0"/>
+  <testcase name="filter_03" classname="org.apache.jena.atlas.iterator.TestIter" time="0.001"/>
+  <testcase name="fold_01" classname="org.apache.jena.atlas.iterator.TestIter" time="0"/>
+  <testcase name="fold_02" classname="org.apache.jena.atlas.iterator.TestIter" time="0"/>
+  <testcase name="fold_03" classname="org.apache.jena.atlas.iterator.TestIter" time="0"/>
+  <testcase name="fold_04" classname="org.apache.jena.atlas.iterator.TestIter" time="0.001"/>
+  <testcase name="first_01" classname="org.apache.jena.atlas.iterator.TestIter" time="0"/>
+  <testcase name="first_02" classname="org.apache.jena.atlas.iterator.TestIter" time="0.014"/>
+  <testcase name="first_03" classname="org.apache.jena.atlas.iterator.TestIter" time="0"/>
+  <testcase name="first_04" classname="org.apache.jena.atlas.iterator.TestIter" time="0"/>
+  <testcase name="first_05" classname="org.apache.jena.atlas.iterator.TestIter" time="0"/>
+  <testcase name="first_06" classname="org.apache.jena.atlas.iterator.TestIter" time="0"/>
+  <testcase name="testFilterStack_01" classname="org.apache.jena.atlas.iterator.TestIter" time="0"/>
+  <testcase name="testFilterStack_02" classname="org.apache.jena.atlas.iterator.TestIter" time="0.001"/>
+  <testcase name="last_01" classname="org.apache.jena.atlas.iterator.TestIter" time="0"/>
+  <testcase name="last_02" classname="org.apache.jena.atlas.iterator.TestIter" time="0.001"/>
+  <testcase name="last_03" classname="org.apache.jena.atlas.iterator.TestIter" time="0"/>
+  <testcase name="last_04" classname="org.apache.jena.atlas.iterator.TestIter" time="0"/>
+  <testcase name="last_05" classname="org.apache.jena.atlas.iterator.TestIter" time="0"/>
+  <testcase name="last_06" classname="org.apache.jena.atlas.iterator.TestIter" time="0"/>
+  <testcase name="append_1" classname="org.apache.jena.atlas.iterator.TestIter" time="0"/>
+  <testcase name="append_2" classname="org.apache.jena.atlas.iterator.TestIter" time="0"/>
+  <testcase name="append_3" classname="org.apache.jena.atlas.iterator.TestIter" time="0"/>
+  <testcase name="append_4" classname="org.apache.jena.atlas.iterator.TestIter" time="0"/>
+  <testcase name="append_5" classname="org.apache.jena.atlas.iterator.TestIter" time="0"/>
+  <testcase name="append_6" classname="org.apache.jena.atlas.iterator.TestIter" time="0"/>
+  <testcase name="distinct_01" classname="org.apache.jena.atlas.iterator.TestIter" time="0"/>
+  <testcase name="distinct_02" classname="org.apache.jena.atlas.iterator.TestIter" time="0"/>
+  <testcase name="distinct_03" classname="org.apache.jena.atlas.iterator.TestIter" time="0"/>
+  <testcase name="distinct_04" classname="org.apache.jena.atlas.iterator.TestIter" time="0"/>
+  <testcase name="peek_1" classname="org.apache.jena.atlas.iterator.TestIteratorPeek" time="0.005"/>
+  <testcase name="peek_2" classname="org.apache.jena.atlas.iterator.TestIteratorPeek" time="0"/>
+  <testcase name="peek_3" classname="org.apache.jena.atlas.iterator.TestIteratorPeek" time="0"/>
+  <testcase name="peek_4" classname="org.apache.jena.atlas.iterator.TestIteratorPeek" time="0.001"/>
+  <testcase name="peek_5" classname="org.apache.jena.atlas.iterator.TestIteratorPeek" time="0"/>
+  <testcase name="iter_01" classname="org.apache.jena.atlas.iterator.TestIteratorPeek" time="0"/>
+  <testcase name="arrayIterator_1" classname="org.apache.jena.atlas.iterator.TestIteratorArray" time="0"/>
+  <testcase name="arrayIterator_2" classname="org.apache.jena.atlas.iterator.TestIteratorArray" time="0"/>
+  <testcase name="arrayIterator_3" classname="org.apache.jena.atlas.iterator.TestIteratorArray" time="0.001"/>
+  <testcase name="arrayIterator_4" classname="org.apache.jena.atlas.iterator.TestIteratorArray" time="0"/>
+  <testcase name="arrayIterator_5" classname="org.apache.jena.atlas.iterator.TestIteratorArray" time="0"/>
+  <testcase name="arrayIterator_6" classname="org.apache.jena.atlas.iterator.TestIteratorArray" time="0"/>
+  <testcase name="arrayIterator_7" classname="org.apache.jena.atlas.iterator.TestIteratorArray" time="0"/>
+  <testcase name="pushback01" classname="org.apache.jena.atlas.iterator.TestIteratorPushback" time="0"/>
+  <testcase name="pushback02" classname="org.apache.jena.atlas.iterator.TestIteratorPushback" time="0"/>
+  <testcase name="pushback03" classname="org.apache.jena.atlas.iterator.TestIteratorPushback" time="0.001"/>
+  <testcase name="pushback04" classname="org.apache.jena.atlas.iterator.TestIteratorPushback" time="0"/>
+  <testcase name="pushback05" classname="org.apache.jena.atlas.iterator.TestIteratorPushback" time="0"/>
+  <testcase name="pushback06" classname="org.apache.jena.atlas.iterator.TestIteratorPushback" time="0"/>
+  <testcase name="iterHistory_01" classname="org.apache.jena.atlas.iterator.TestIteratorWithHistory" time="0"/>
+  <testcase name="iterHistory_02" classname="org.apache.jena.atlas.iterator.TestIteratorWithHistory" time="0"/>
+  <testcase name="iterHistory_03" classname="org.apache.jena.atlas.iterator.TestIteratorWithHistory" time="0"/>
+  <testcase name="iterHistory_04" classname="org.apache.jena.atlas.iterator.TestIteratorWithHistory" time="0"/>
+  <testcase name="iterHistory_05" classname="org.apache.jena.atlas.iterator.TestIteratorWithHistory" time="0"/>
+  <testcase name="iterBuffer_01" classname="org.apache.jena.atlas.iterator.TestIteratorWithBuffer" time="0"/>
+  <testcase name="iterBuffer_02" classname="org.apache.jena.atlas.iterator.TestIteratorWithBuffer" time="0"/>
+  <testcase name="iterBuffer_03" classname="org.apache.jena.atlas.iterator.TestIteratorWithBuffer" time="0.001"/>
+  <testcase name="iterBuffer_04" classname="org.apache.jena.atlas.iterator.TestIteratorWithBuffer" time="0"/>
+  <testcase name="iterBuffer_05" classname="org.apache.jena.atlas.iterator.TestIteratorWithBuffer" time="0"/>
+  <testcase name="iter_01[0: hasMore accurate]" classname="org.apache.jena.atlas.iterator.TestIteratorSlotted" time="0"/>
+  <testcase name="iter_02[0: hasMore accurate]" classname="org.apache.jena.atlas.iterator.TestIteratorSlotted" time="0"/>
+  <testcase name="iter_03[0: hasMore accurate]" classname="org.apache.jena.atlas.iterator.TestIteratorSlotted" time="0"/>
+  <testcase name="iter_01[1: hasMore always true]" classname="org.apache.jena.atlas.iterator.TestIteratorSlotted" time="0"/>
+  <testcase name="iter_02[1: hasMore always true]" classname="org.apache.jena.atlas.iterator.TestIteratorSlotted" time="0"/>
+  <testcase name="iter_03[1: hasMore always true]" classname="org.apache.jena.atlas.iterator.TestIteratorSlotted" time="0"/>
+  <testcase name="iter_truncate_00" classname="org.apache.jena.atlas.iterator.TestIteratorTruncate" time="0.001"/>
+  <testcase name="iter_truncate_01" classname="org.apache.jena.atlas.iterator.TestIteratorTruncate" time="0"/>
+  <testcase name="iter_truncate_02" classname="org.apache.jena.atlas.iterator.TestIteratorTruncate" time="0.001"/>
+  <testcase name="iter_truncate_03" classname="org.apache.jena.atlas.iterator.TestIteratorTruncate" time="0"/>
+  <testcase name="iter_truncate_04" classname="org.apache.jena.atlas.iterator.TestIteratorTruncate" time="0.001"/>
+  <testcase name="iter_truncate_05" classname="org.apache.jena.atlas.iterator.TestIteratorTruncate" time="0"/>
+</testsuite>

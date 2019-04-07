@@ -1,0 +1,249 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2017-11-09T18:14:56-08:00
+Notes: 4
+Binaries: 0
+Archives: 0
+Standards: 208
+
+Apache Licensed: 208
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  N     /home/ubuntu/research/jena/jena-base/LICENSE
+  N     /home/ubuntu/research/jena/jena-base/NOTICE
+  AL    /home/ubuntu/research/jena/jena-base/pom.xml
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/iterator/TestIteratorArray.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/iterator/TestIteratorSlotted.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/iterator/TestIter.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/iterator/TestIteratorWithBuffer.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/iterator/TestIteratorWithHistory.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/iterator/TestIteratorPushback.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/iterator/TS_Iterator.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/iterator/TestIteratorTruncate.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/iterator/TestIteratorPeek.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/io/TestBufferingWriter.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/io/TS_IO.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/io/TestPeekInputStreamSource.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/io/TestPrintUtils.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/io/TestInputStreamBuffered.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/io/AbstractTestPeekReader.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/io/TestIndentedWriter.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/io/AbstractTestPeekInputStream.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/io/TestPeekReaderCharSequence.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/io/TestBlockUTF8.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/io/TestPeekReaderSource.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/io/TestStreamUTF8.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/lib/TS_Lib.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/lib/TestCache.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/lib/TestListUtils.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/lib/TestBitsInt.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/lib/TestFileOps.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/lib/TestCollectionUtils.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/lib/persistent/TestPMap.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/lib/persistent/TS_Persistent.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/lib/persistent/TestPSet.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/lib/TestRefCountingMap.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/lib/TestXMLLib.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/lib/TestBytes.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/lib/TestAlarmClock.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/lib/TestSetUtils.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/lib/TestTrie.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/lib/TestDateTimeUtils.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/lib/TestNumberUtils.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/lib/TestEscapeStr.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/lib/TestHex.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/lib/cache/TestCacheSimple.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/lib/cache/CacheSimpleTest.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/lib/TestFilenameProcessing.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/lib/TestBitsLong.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/lib/TestStrUtils.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/lib/TestAlg.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/lib/TestCache2.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/lib/tuple/TS_Tuple.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/lib/tuple/TestTuple.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/lib/tuple/TestTupleMap.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/TC_Atlas.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/junit/TextListener2.java
+  AL    /home/ubuntu/research/jena/jena-base/src/test/java/org/apache/jena/atlas/junit/BaseTest.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/base/Sys.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/AtlasException.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/iterator/WrapperIterator.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/iterator/IteratorInteger.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/iterator/IteratorDelayedInitialization.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/iterator/PushbackIterator.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/iterator/IteratorBlockingQueue.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/iterator/IteratorWrapper.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/iterator/IteratorArray.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/iterator/SingletonIterator.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/iterator/IteratorTruncate.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/iterator/NullIterator.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/iterator/IteratorWithHistory.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/iterator/IteratorCons.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/iterator/FilterDistinctAdjacent.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/iterator/IteratorConcat.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/iterator/Accumulate.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/iterator/ActionCount.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/iterator/PeekIterator.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/iterator/Action.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/iterator/Filter.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/iterator/FilterUnique.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/iterator/FilterStack.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/iterator/Transform.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/iterator/Iter.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/iterator/AccString.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/iterator/IteratorResourceClosing.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/iterator/IteratorWithBuffer.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/iterator/RepeatApplyIterator.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/iterator/IteratorSlotted.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/io/CharStream.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/io/InStreamASCII.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/io/Writer2.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/io/CharStreamSequence.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/io/PrintUtils.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/io/CharStreamBuffered.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/io/Printable.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/io/PeekReader.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/io/InStreamUTF8.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/io/PrintableBase.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/io/CharStreamBasic.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/io/StringWriterI.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/io/AWriterBase.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/io/IO.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/io/OutStreamUTF8.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/io/InputStreamBuffered.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/io/AWriter.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/io/IndentedWriter.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/io/IndentedLineBuffer.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/io/PeekInputStream.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/io/BufferingWriter.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/io/CharStreamReader.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/io/OutputUtils.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/io/BlockUTF8.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/io/NullOutputStream.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/Sink.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/SinkToQueue.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/FileOps.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/SinkWrapper.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/Alg.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/NotImplemented.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/RefCountingMap.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/Alarm.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/SinkLogging.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/Timer.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/Hex.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/BitsInt.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/Pool.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/Cache.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/Creator.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/SinkNull.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/CacheSet.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/Bytes.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/StrUtils.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/ListUtils.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/SystemUtils.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/PoolBase.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/SinkCounting.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/Sync.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/persistent/PSet.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/persistent/PMap.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/persistent/PersistentSet.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/persistent/PersistentMap.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/XMLLib.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/AlarmClock.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/Chars.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/Map2.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/Pair.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/Closeable.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/SinkToCollection.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/Callback.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/SinkSplit.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/PropertyUtils.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/ArrayUtils.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/PoolSync.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/SinkPrint.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/BitsLong.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/InternalErrorException.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/EscapeStr.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/CharSpace.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/CacheFactory.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/ProgressMonitor.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/NumberUtils.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/SetUtils.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/ActionKeyValue.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/RandomLib.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/cache/Cache1.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/cache/CacheSetWrapper.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/cache/CacheSetSync.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/cache/CacheGuava.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/cache/CacheOps.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/cache/CacheSetImpl.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/cache/CacheSimple.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/cache/CacheInfo.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/cache/Cache0.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/cache/CacheWrapper.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/ByteBufferLib.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/PropertiesSorted.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/Registry.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/Lib.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/CollectionUtils.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/Trie.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/DateTimeUtils.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/IRILib.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/Version.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/tuple/TupleMap.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/tuple/Tuple1.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/tuple/TConsumer3.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/tuple/TupleN.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/tuple/TFunction4.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/tuple/TupleList.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/tuple/Tuple3.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/tuple/TupleBase.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/tuple/TConsumer4.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/tuple/TFunction3.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/tuple/Tuple2.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/tuple/Tuple5.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/tuple/Tuple6.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/tuple/Tuple7.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/tuple/Tuple.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/tuple/Tuple0.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/tuple/TupleFactory.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/tuple/Tuple4.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/lib/tuple/Tuple8.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/RuntimeIOException.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/logging/ProgressLogger.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/logging/java/FlatHandler.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/logging/java/FlatFormatter.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/logging/java/ConsoleHandlerStdout.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/logging/java/ConsoleHandlerStream.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/logging/java/TextFormatter.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/logging/LogCtl.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/logging/Log.java
+  AL    /home/ubuntu/research/jena/jena-base/src/main/java/org/apache/jena/atlas/logging/FmtLog.java
+  N     /home/ubuntu/research/jena/jena-base/src/main/resources/LICENSE
+  N     /home/ubuntu/research/jena/jena-base/src/main/resources/NOTICE
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 

@@ -1,0 +1,4 @@
+org.apache.jena.jdbc.remote
+org.apache.jena.jdbc.remote.connections
+org.apache.jena.jdbc.remote.metadata
+org.apache.jena.jdbc.remote.statements

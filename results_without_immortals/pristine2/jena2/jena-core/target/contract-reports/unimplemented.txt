@@ -1,0 +1,21 @@
+Classes that implement an interface that has a Contract test
+but for which no contract suite test implementation is found.
+-------------------------------------------------------------
+
+Filter: True()
+
+org.apache.jena.util.LocatorClassLoader
+org.apache.jena.util.LocatorFile
+org.apache.jena.util.LocatorURL
+org.apache.jena.util.LocatorZip
+org.apache.jena.util.TestIteratorCollection$1
+org.apache.jena.util.TestIteratorCollection$2
+org.apache.jena.util.iterator.FilterIterator
+org.apache.jena.util.iterator.Map1Iterator
+org.apache.jena.util.iterator.MapFilterIterator
+org.apache.jena.util.iterator.NiceIterator
+org.apache.jena.util.iterator.NiceIterator$1
+org.apache.jena.util.iterator.NullIterator
+org.apache.jena.util.iterator.RandomOrderIterator
+org.apache.jena.util.iterator.SingletonIterator
+org.apache.jena.util.iterator.WrappedIterator

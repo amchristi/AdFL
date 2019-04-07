@@ -1,0 +1,290 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2017-03-05T21:01:59-08:00
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 253
+
+Apache Licensed: 253
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/pom.xml
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/thrift/ThriftTripleInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/thrift/ThriftQuadInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/rdfjson/RdfJsonInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/rdfjson/RdfJsonAsTriplesInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/turtle/TurtleAsTriplesInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/turtle/TurtleInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/AbstractNodeTupleInputFormatTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/thrift/DeflatedThriftQuadInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/thrift/DeflatedThriftTripleInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/thrift/AbstractCompressedThriftTripleInputFormatTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/thrift/GZippedThriftQuadInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/thrift/GZippedThriftTripleInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/thrift/AbstractCompressedThriftQuadInputFormatTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/thrift/BZippedThriftTripleInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/thrift/BZippedThriftQuadInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/rdfjson/AbstractCompressedRdfJsonInputFormatTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/rdfjson/GZippedRdfJsonInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/rdfjson/BZippedRdfJsonInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/rdfjson/DeflatedRdfJsonInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/AbstractCompressedQuadsInputFormatTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/turtle/AbstractCompressedTurtleInputFormatTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/turtle/BZippedTurtleInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/turtle/GZippedTurtleInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/turtle/DeflatedTurtleInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/AbstractCompressedTriplesInputFormatTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/AbstractCompressedNodeTupleInputFormatTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/AbstractCompressedWholeFileQuadInputFormatTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/ntriples/AbstractCompressedBlockedNTriplesInputFormatTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/ntriples/AbstractCompressedNTriplesInputFormatTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/ntriples/GZippedNTriplesInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/ntriples/BZippedBlockedNTriplesInput.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/ntriples/DeflatedWholeFileNTriplesInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/ntriples/AbstractCompressedWholeFileNTriplesInputFormatTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/ntriples/BZippedNTriplesInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/ntriples/GZippedBlockedNTriplesInput.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/ntriples/DeflatedNTriplesInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/ntriples/DeflatedBlockedNTriplesInput.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/ntriples/BZippedWholeFileNTriplesInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/ntriples/GZippedWholeFileNTriplesInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/trig/DeflatedTriGInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/trig/BZippedTriGInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/trig/GZippedTriGInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/trig/AbstractCompressedTriGInputFormatTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/rdfxml/BZippedRdfXmlInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/rdfxml/GZippedRdfXmlInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/rdfxml/DeflatedRdfXmlInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/rdfxml/AbstractCompressedRdfXmlInputFormatTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/jsonld/AbstractCompressedJsonLDTripleInputFormatTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/jsonld/DeflatedJsonLDTripleInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/jsonld/GZippedJsonLDTripleInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/jsonld/DeflatedJsonLDQuadInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/jsonld/AbstractCompressedJsonLDQuadInputFormatTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/jsonld/BZippedJsonLDQuadInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/jsonld/BZippedJsonLDTripleInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/jsonld/GZippedJsonLDQuadInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/trix/AbstractCompressedTriXInputFormatTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/trix/BZippedTriXInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/trix/GZippedTriXInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/trix/DeflatedTriXInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/nquads/DeflatedWholeFileNQuadsInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/nquads/AbstractCompressedWholeFileNQuadsInputFormatTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/nquads/AbstractCompressedNQuadsInputFormatTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/nquads/BZipppedWholeFileNQuadsInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/nquads/GZippedWholeFileNQuadsInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/nquads/GZippedNQuadsInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/nquads/BZipppedNQuadsInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/nquads/DeflatedNQuadsInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/compressed/AbstractCompressedWholeFileTripleInputFormatTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/ntriples/WholeFileNTriplesAsTriplesInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/ntriples/WholeFileNTriplesInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/ntriples/NTriplesInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/ntriples/BlockedNTriplesInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/AbstractQuadsInputFormatTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/AbstractWholeFileQuadInputFormatTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/bnodes/NTriplesBlankNodeTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/bnodes/TurtleBlankNodeTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/bnodes/AbstractBlankNodeTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/bnodes/RdfThriftBlankNodeTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/bnodes/RdfJsonBlankNodeTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/bnodes/RdfXmlBlankNodeTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/bnodes/JsonLdTripleBlankNodeTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/bnodes/AbstractTripleBlankNodeTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/AbstractWholeFileTripleInputFormatTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/util/TrackedInputStreamTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/util/AbstractTrackableInputStreamTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/util/BlockInputStreamTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/trig/TriGAsQuadsInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/trig/TriGInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/rdfxml/RdfXmlInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/rdfxml/RdfXmlAsTriplesInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/jsonld/JsonLDTripleInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/jsonld/JsonLDQuadInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/trix/TriXInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/trix/TriXAsQuadsInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/nquads/BlockedNQuadsInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/nquads/WholeFileNQuadsInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/nquads/NQuadsInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/nquads/WholeFileNQuadsAsQuadsInputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/AbstractBlockedQuadInputFormatTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/AbstractTriplesInputFormatTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/input/AbstractBlockedTripleInputFormatTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/RdfTriplesInputTestMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/registry/TestHadoopRdfIORegistry.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/output/thrift/ThriftQuadOutputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/output/thrift/ThriftTripleOutputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/output/rdfjson/RdfJsonOutputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/output/turtle/TurtleBlankNodeOutputTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/output/turtle/StreamedTurtleOutputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/output/turtle/BatchedTurtleOutputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/output/AbstractNodeTupleOutputFormatTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/output/ntriples/NTriplesOutputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/output/AbstractTripleOutputFormatTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/output/trig/BatchedTriGOutputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/output/trig/TriGBlankNodeOutputTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/output/trig/StreamedTriGOutputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/output/rdfxml/RdfXmlOutputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/output/jsonld/JsonLdTripleOutputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/output/jsonld/JsonLdQuadOutputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/output/AbstractQuadOutputFormatTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/output/trix/TriXOutputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/test/java/org/apache/jena/hadoop/rdf/io/output/nquads/NQuadsOutputTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/RdfIOConstants.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/thrift/ThriftQuadInputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/thrift/ThriftTripleInputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/rdfjson/RdfJsonInputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/QuadsInputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/turtle/TurtleInputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/TriplesInputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/ntriples/NTriplesInputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/ntriples/BlockedNTriplesInputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/ntriples/WholeFileNTriplesInputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/util/TrackedPipedTriplesStream.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/util/BlockInputStream.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/util/RdfIOUtils.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/util/TrackedPipedQuadsStream.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/util/TrackableInputStream.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/util/TrackedInputStream.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/util/TrackedPipedRDFStream.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/trig/TriGInputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/AbstractNLineFileInputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/rdfxml/RdfXmlInputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/jsonld/JsonLDTripleInputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/jsonld/JsonLDQuadInputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/trix/TriXInputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/nquads/WholeFileNQuadsInputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/nquads/NQuadsInputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/nquads/BlockedNQuadsInputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/readers/AbstractRdfReader.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/readers/thrift/ThriftQuadReader.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/readers/thrift/ThriftTripleReader.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/readers/AbstractBlockBasedTripleReader.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/readers/rdfjson/RdfJsonReader.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/readers/QuadsReader.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/readers/turtle/TurtleReader.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/readers/AbstractLineBasedQuadReader.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/readers/AbstractWholeFileTripleReader.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/readers/AbstractWholeFileQuadReader.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/readers/AbstractWholeFileNodeTupleReader.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/readers/AbstractBlockBasedQuadReader.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/readers/ntriples/BlockedNTriplesReader.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/readers/ntriples/WholeFileNTriplesReader.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/readers/ntriples/NTriplesReader.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/readers/AbstractBlockBasedNodeTupleReader.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/readers/TriplesOrQuadsReader.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/readers/trig/TriGReader.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/readers/rdfxml/RdfXmlReader.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/readers/jsonld/JsonLDQuadReader.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/readers/jsonld/JsonLDTripleReader.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/readers/TriplesReader.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/readers/TriplesToQuadsReader.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/readers/trix/TriXReader.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/readers/nquads/NQuadsReader.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/readers/nquads/WholeFileNQuadsReader.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/readers/nquads/BlockedNQuadsReader.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/readers/AbstractLineBasedNodeTupleReader.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/readers/AbstractLineBasedTripleReader.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/TriplesOrQuadsInputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/input/AbstractWholeFileInputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/HadoopIOConstants.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/registry/WriterFactory.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/registry/HadoopRdfIORegistry.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/registry/ReaderFactory.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/registry/writers/TriXWriterFactory.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/registry/writers/AbstractQuadsOnlyWriterFactory.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/registry/writers/JsonLDWriterFactory.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/registry/writers/AbstractTriplesOnlyWriterFactory.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/registry/writers/TurtleWriterFactory.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/registry/writers/NQuadsWriterFactory.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/registry/writers/RdfJsonWriterFactory.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/registry/writers/TriGWriterFactory.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/registry/writers/ThriftWriterFactory.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/registry/writers/AbstractWriterFactory.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/registry/writers/RdfXmlWriterFactory.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/registry/writers/NTriplesWriterFactory.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/registry/readers/TriXReaderFactory.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/registry/readers/RdfJsonReaderFactory.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/registry/readers/AbstractQuadsOnlyReaderFactory.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/registry/readers/ThriftReaderFactory.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/registry/readers/JsonLDReaderFactory.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/registry/readers/RdfXmlReaderFactory.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/registry/readers/TriGReaderFactory.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/registry/readers/NQuadsReaderFactory.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/registry/readers/NTriplesReaderFactory.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/registry/readers/AbstractTriplesOnlyReaderFactory.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/registry/readers/TurtleReaderFactory.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/registry/readers/AbstractReaderFactory.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/thrift/ThriftQuadOutputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/thrift/ThriftTripleOutputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/rdfjson/RdfJsonOutputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/AbstractNodeOutputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/QuadsOutputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/turtle/TurtleOutputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/turtle/BatchedTurtleOutputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/AbstractStreamRdfNodeTupleOutputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/AbstractBatchedNodeTupleOutputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/TriplesOutputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/ntriples/NTriplesOutputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/ntriples/NTriplesNodeOutputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/trig/TriGOutputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/trig/BatchedTriGOutputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/TriplesOrQuadsOutputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/rdfxml/RdfXmlOutputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/jsonld/JsonLDTripleOutputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/jsonld/JsonLDQuadOutputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/AbstractNodeTupleOutputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/trix/TriXOutputFormat.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/writers/thrift/ThriftQuadWriter.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/writers/thrift/ThriftTripleWriter.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/writers/StreamRdfQuadWriter.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/writers/AbstractLineBasedQuadWriter.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/writers/rdfjson/RdfJsonWriter.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/writers/AbstractWholeFileNodeTupleWriter.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/writers/AbstractLineBasedNodeTupleWriter.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/writers/turtle/BatchedTurtleWriter.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/writers/QuadsToTriplesWriter.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/writers/AbstractBatchedNodeTupleWriter.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/writers/ntriples/NTriplesNodeWriter.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/writers/ntriples/NTriplesWriter.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/writers/StreamRdfTripleWriter.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/writers/AbstractNodeWriter.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/writers/trig/BatchedTriGWriter.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/writers/AbstractBatchedQuadWriter.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/writers/AbstractBatchedTripleWriter.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/writers/rdfxml/RdfXmlWriter.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/writers/jsonld/JsonLDQuadWriter.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/writers/jsonld/JsonLDTripleWriter.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/writers/AbstractStreamRdfNodeTupleWriter.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/writers/nquads/NQuadsWriter.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/writers/AbstractWholeFileTripleWriter.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/writers/AbstractWholeFileQuadWriter.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/writers/AbstractLineBasedTripleWriter.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-io/src/main/java/org/apache/jena/hadoop/rdf/io/output/nquads/NQuadsOutputFormat.java
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 

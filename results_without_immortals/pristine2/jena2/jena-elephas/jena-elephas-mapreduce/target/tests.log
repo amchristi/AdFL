@@ -1,0 +1,284 @@
+2017-02-27 21:36:57,252 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:36:57,257 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:36:57,257 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:36:57,258 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:36:57,302 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:36:57,310 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:36:57,311 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:36:57,311 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:36:57,638 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:36:57,640 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:36:57,641 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:36:57,641 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:36:58,279 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:36:58,279 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:36:58,279 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:36:58,279 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:00,395 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:00,396 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:00,396 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:00,396 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:00,466 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:00,467 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:00,467 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:00,467 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:00,787 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:00,787 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:00,788 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:00,788 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:01,808 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:01,808 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:01,808 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:01,808 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:02,165 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:02,165 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:02,165 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:02,165 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:02,237 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:02,238 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:02,243 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:02,243 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:02,293 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:02,294 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:02,294 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:02,295 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:02,331 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:02,331 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:02,331 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:02,331 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:02,411 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:02,412 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:02,412 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:02,413 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:02,472 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:02,472 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:02,473 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:02,473 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:02,644 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:02,644 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:02,645 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:02,645 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:03,879 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:03,879 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:03,879 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:03,879 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:04,323 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:04,324 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:04,324 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:04,324 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:04,369 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:04,369 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:04,369 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:04,369 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:04,500 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:04,500 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:04,500 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:04,501 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:05,658 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:05,658 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:05,658 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:05,659 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:05,766 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:05,766 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:05,768 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:05,768 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:07,319 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:07,321 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:07,322 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:07,322 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:07,440 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:07,440 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:07,440 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:07,440 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:09,199 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:09,199 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:09,199 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:09,205 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:09,320 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:09,320 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:09,330 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:09,330 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:09,350 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:09,350 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:09,354 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:09,354 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:09,438 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:09,439 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:09,439 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:09,439 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:09,671 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:09,671 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:09,671 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:09,671 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:09,718 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:09,725 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:09,726 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:09,726 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:09,789 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:09,789 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:09,795 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:09,796 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:09,916 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:09,916 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:09,916 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:09,916 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:10,094 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:10,095 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:10,096 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:10,097 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:10,144 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:10,145 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:10,145 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:10,145 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:10,180 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:10,181 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:10,181 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:10,181 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:10,642 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:10,643 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:10,643 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:10,643 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:10,820 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:10,820 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:10,821 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:10,821 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:10,856 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:10,856 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:10,857 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:10,857 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:10,918 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:10,918 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:10,919 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:10,919 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:11,000 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:11,000 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:11,000 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:11,000 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:11,162 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:11,162 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:11,162 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:11,162 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:11,212 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:11,212 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:11,213 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:11,213 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:11,242 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:11,243 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:11,243 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:11,246 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:11,314 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:11,314 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:11,314 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:11,315 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:11,908 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:11,908 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:11,908 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:11,909 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:11,942 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:11,943 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:11,943 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:11,943 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:11,990 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:11,991 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:11,991 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:11,991 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:12,084 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:12,084 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:12,084 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:12,085 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:12,263 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:12,263 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:12,263 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:12,264 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:12,344 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:12,346 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:12,347 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:12,348 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:12,408 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:12,409 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:12,409 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:12,409 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:12,500 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:12,500 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:12,500 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:12,500 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:12,675 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:12,675 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:12,675 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:12,675 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:12,750 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:12,750 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:12,750 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:12,750 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:12,771 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:12,771 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:12,771 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:12,772 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:12,861 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:12,862 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:12,862 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:12,862 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:13,339 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:13,340 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:13,340 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:13,340 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:13,406 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:13,407 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:13,407 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:13,407 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:13,460 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:13,461 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:13,461 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:13,461 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:13,626 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:13,630 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:13,632 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:13,632 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:13,799 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:13,800 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:13,800 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.QuadWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:13,800 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:13,866 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:13,868 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:13,869 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:13,869 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:13,898 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:13,898 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:13,898 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:13,898 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:13,996 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:13,996 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:13,997 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:13,997 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:14,285 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:14,292 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:14,294 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:14,298 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:14,353 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:14,353 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:14,354 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:14,356 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:14,410 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:14,410 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:14,410 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:14,410 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:14,488 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:14,488 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:14,488 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:14,488 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:15,006 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:15,006 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:15,006 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:15,006 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:15,343 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:15,343 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:15,344 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:15,344 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:15,398 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:15,398 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:15,398 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:15,399 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs
+2017-02-27 21:37:15,594 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.equals(Object) is not being overridden - tests may fail!
+2017-02-27 21:37:15,595 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.hashCode() is not being overridden - tests may fail!
+2017-02-27 21:37:15,595 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - org.apache.jena.hadoop.rdf.types.TripleWritable.toString() is not being overridden - test failures may be difficult to diagnose.
+2017-02-27 21:37:15,595 WARN  mrunit.TestDriver (TestDriver.java:checkOverride) - Consider executing test using run() to access outputs

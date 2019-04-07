@@ -1,0 +1,9 @@
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-mem/src/test/java/org/apache/jena/jdbc/mem/statements/TestMemStatements.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-mem/src/test/java/org/apache/jena/jdbc/mem/results/AbstractMemResultSetTests.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-mem/src/test/java/org/apache/jena/jdbc/mem/TestMemDriver.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-mem/src/test/java/org/apache/jena/jdbc/mem/TestMemDriverWithLogging.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-mem/src/test/java/org/apache/jena/jdbc/mem/metadata/TestDatasetConnectionMetadata.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-mem/src/test/java/org/apache/jena/jdbc/mem/connections/TestDatasetConnection.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-mem/src/test/java/org/apache/jena/jdbc/mem/connections/DebugMemConnection.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-mem/src/test/java/org/apache/jena/jdbc/mem/TS_JdbcDriverMem.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-mem/src/test/java/org/apache/jena/jdbc/mem/results/TestResultSets.java

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.jena.hadoop.rdf.mapreduce.characteristics.CharacteristicSetReducerTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.286 sec - in org.apache.jena.hadoop.rdf.mapreduce.characteristics.CharacteristicSetReducerTest

@@ -1,0 +1,52 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2017-03-05T21:01:01-08:00
+Notes: 2
+Binaries: 0
+Archives: 0
+Standards: 13
+
+Apache Licensed: 13
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  N     /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-tdb/LICENSE
+  N     /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-tdb/NOTICE
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-tdb/pom.xml
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-tdb/src/test/java/org/apache/jena/jdbc/tdb/TS_JdbcDriverTdb.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-tdb/src/test/java/org/apache/jena/jdbc/tdb/TestJenaJdbcTdbDriver.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-tdb/src/test/java/org/apache/jena/jdbc/tdb/metadata/TestTdbConnectionMetadata.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-tdb/src/test/java/org/apache/jena/jdbc/tdb/connections/DebugTdbConnection.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-tdb/src/test/java/org/apache/jena/jdbc/tdb/connections/TestTdbMemConnection.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-tdb/src/test/java/org/apache/jena/jdbc/tdb/connections/TestTdbDiskConnection.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-tdb/src/test/java/org/apache/jena/jdbc/tdb/results/TestTdbDiskResultSets.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-tdb/src/test/java/org/apache/jena/jdbc/tdb/results/AbstractTdbResultSetTests.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-tdb/src/test/java/org/apache/jena/jdbc/tdb/results/TestTdbMemResultSets.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-tdb/src/main/java/org/apache/jena/jdbc/tdb/TDBDriver.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-tdb/src/main/java/org/apache/jena/jdbc/tdb/metadata/TDBDatasetMetadata.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-tdb/src/main/java/org/apache/jena/jdbc/tdb/connections/TDBConnection.java
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 

@@ -1,0 +1,48 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2017-03-05T20:58:22-08:00
+Notes: 3
+Binaries: 0
+Archives: 0
+Standards: 8
+
+Apache Licensed: 8
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  N     /home/ubuntu/research/jena/jena-fuseki2/LICENSE
+  N     /home/ubuntu/research/jena/jena-fuseki2/NOTICE
+  AL    /home/ubuntu/research/jena/jena-fuseki2/pom.xml
+  AL    /home/ubuntu/research/jena/jena-fuseki2/examples/service-tdb-2.ttl
+  AL    /home/ubuntu/research/jena/jena-fuseki2/examples/service-tdb-1.ttl
+  N     /home/ubuntu/research/jena/jena-fuseki2/examples/README
+  AL    /home/ubuntu/research/jena/jena-fuseki2/examples/fuseki-jetty-https.xml
+  AL    /home/ubuntu/research/jena/jena-fuseki2/examples/service-inference-1.ttl
+  AL    /home/ubuntu/research/jena/jena-fuseki2/examples/service-tdb-mem.ttl
+  AL    /home/ubuntu/research/jena/jena-fuseki2/examples/service-inference-2.ttl
+  AL    /home/ubuntu/research/jena/jena-fuseki2/make_links
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 

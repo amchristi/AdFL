@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Osmorc" name="OSGi">
+      <configuration manifestGenerationMode="OsmorcControlled" manifestLocation="" jarfileLocation="jena-osgi-3.3.0-SNAPSHOT.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="org.apache.jena.osgi.Activator" bundleSymbolicName="org.apache.jena.osgi" bundleVersion="3.3.0.SNAPSHOT" ignoreFilePattern="" useProjectDefaultManifestFileLocation="true" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
+        <additionalProperties>
+          <property key="Bundle-Description" value="Embedding the main Jena modules (iri/core/arq/tdb) in a single OSGi bundle." />
+          <property key="Bundle-Vendor" value="The Apache Software Foundation" />
+          <property key="Bundle-DocURL" value="http://www.apache.org/" />
+          <property key="Export-Package" value="org.apache.jena.*,!org.apache.jena.ext.*" />
+          <property key="Embed-Dependency" value="artifactId=jena*;inline=true" />
+          <property key="Embed-Transitive" value="true" />
+          <property key="Import-Package" value="org.osgi.framework.*,org.apache.xml.*,org.apache.xerces.*;version=&quot;2.11.0&quot;,!sun.io,!org.apache.avalon.framework.logger,!com.ibm.uvm.tools,!com.sun.jdmk.comm,!org.apache.log,!org.apache.jena.ext.*,sun.misc;resolution:=optional,*" />
+          <property key="Private-Package" value="org.apache.jena.ext.*" />
+          <property key="Bundle-Name" value="Apache Jena - OSGi bundle" />
+          <property key="Include-Resource" value="@$MODULE_DIR$/../../jena-shaded-guava/pom.xml,@$MODULE_DIR$/../../jena-arq/pom.xml,@$MODULE_DIR$/../../jena-base/pom.xml,@$MODULE_DIR$/../../jena-iri/pom.xml,@$MODULE_DIR$/../../jena-core/pom.xml,@$MODULE_DIR$/../../jena-tdb/pom.xml" />
+        </additionalProperties>
+        <additionalJARContents />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="jena-arq" scope="PROVIDED" />
+    <orderEntry type="module" module-name="jena-core" scope="PROVIDED" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: xerces:xercesImpl:2.11.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-cli:commons-cli:1.3" level="project" />
+    <orderEntry type="module" module-name="jena-base" scope="PROVIDED" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.github.andrewoma.dexx:collection:0.6" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.servicemix.bundles:org.apache.servicemix.bundles.xerces:2.11.0_1" level="project" />
+    <orderEntry type="library" name="Maven: xml-apis:xml-apis:1.4.01" level="project" />
+    <orderEntry type="module" module-name="jena-shaded-guava" scope="PROVIDED" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.google.guava:guava:18.0" level="project" />
+    <orderEntry type="module" module-name="jena-tdb" scope="PROVIDED" />
+    <orderEntry type="module" module-name="jena-iri" scope="PROVIDED" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient-osgi:4.5.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore-osgi:4.4.4" level="project" />
+    <orderEntry type="library" name="Maven: com.github.jsonld-java:jsonld-java:0.9.0" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.7.4" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.7.4" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.7.0" level="project" />
+    <orderEntry type="library" name="Maven: commons-io:commons-io:2.5" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-csv:1.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.thrift:libthrift:0.9.3" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:jcl-over-slf4j:1.7.21" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.21" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.4" level="project" />
+    <orderEntry type="library" name="Maven: org.osgi:org.osgi.core:5.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.12" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-log4j12:1.7.21" level="project" />
+    <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
+  </component>
+</module>

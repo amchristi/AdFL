@@ -1,0 +1,14 @@
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/test/java/org/apache/jena/jdbc/remote/connections/TestRemoteEndpointConnectionWithResultSetTypes.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/test/java/org/apache/jena/jdbc/remote/results/TestRemoteEndpointResultsWithAuth.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/test/java/org/apache/jena/jdbc/remote/connections/AbstractRemoteEndpointConnectionTests.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/test/java/org/apache/jena/jdbc/remote/connections/TestRemoteEndpointConnectionWithGraphUris.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/test/java/org/apache/jena/jdbc/remote/TestRemoteEndpointDriver.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/test/java/org/apache/jena/jdbc/remote/statements/TestRemoteEndpointStatements.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/test/java/org/apache/jena/jdbc/remote/results/TestRemoteEndpointResults.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/test/java/org/apache/jena/jdbc/remote/results/TestRemoteEndpointResultsWithResultSetTypes.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/test/java/org/apache/jena/jdbc/remote/connections/TestRemoteEndpointConnection.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/test/java/org/apache/jena/jdbc/remote/metadata/TestRemoteConnectionMetadata.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/test/java/org/apache/jena/jdbc/remote/TS_JdbcDriverRemote.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/test/java/org/apache/jena/jdbc/remote/results/AbstractRemoteEndpointResultSetTests.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/test/java/org/apache/jena/jdbc/remote/connections/TestRemoteEndpointConnectionWithAuth.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/test/java/org/apache/jena/jdbc/remote/results/TestRemoteEndpointResultsWithGraphUris.java

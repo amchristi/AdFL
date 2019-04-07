@@ -1,0 +1,12 @@
+org/apache/jena/propertytable/lang/TestLangCSV.class
+org/apache/jena/propertytable/graph/GraphCSVTest.class
+org/apache/jena/propertytable/impl/PropertyTableHashMapImplTest.class
+org/apache/jena/propertytable/AbstractPropertyTableTest.class
+org/apache/jena/propertytable/impl/PropertyTableBuilderForArrayImplTest.class
+org/apache/jena/propertytable/AbstractColumnTest.class
+org/apache/jena/propertytable/impl/PropertyTableBuilderForHashMapImplTest.class
+org/apache/jena/propertytable/impl/PropertyTableArrayImplTest.class
+org/apache/jena/propertytable/AbstractRowTest.class
+org/apache/jena/propertytable/impl/AbstractPropertyTableBuilderTest.class
+org/apache/jena/propertytable/TS_PropertyTable.class
+org/apache/jena/propertytable/BaseTest.class

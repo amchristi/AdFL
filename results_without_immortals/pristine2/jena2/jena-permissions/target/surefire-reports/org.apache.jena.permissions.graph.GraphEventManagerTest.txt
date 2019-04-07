@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.jena.permissions.graph.GraphEventManagerTest
+-------------------------------------------------------------------------------
+Tests run: 96, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 sec - in org.apache.jena.permissions.graph.GraphEventManagerTest

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.jena.hadoop.rdf.io.input.compressed.jsonld.DeflatedJsonLDQuadInputTest
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 65.628 sec - in org.apache.jena.hadoop.rdf.io.input.compressed.jsonld.DeflatedJsonLDQuadInputTest

@@ -1,0 +1,52 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2017-03-05T21:00:39-08:00
+Notes: 2
+Binaries: 0
+Archives: 0
+Standards: 13
+
+Apache Licensed: 13
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  N     /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-mem/LICENSE
+  N     /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-mem/NOTICE
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-mem/pom.xml
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-mem/src/test/java/org/apache/jena/jdbc/mem/TestMemDriver.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-mem/src/test/java/org/apache/jena/jdbc/mem/statements/TestMemStatements.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-mem/src/test/java/org/apache/jena/jdbc/mem/TestMemDriverWithLogging.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-mem/src/test/java/org/apache/jena/jdbc/mem/metadata/TestDatasetConnectionMetadata.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-mem/src/test/java/org/apache/jena/jdbc/mem/connections/DebugMemConnection.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-mem/src/test/java/org/apache/jena/jdbc/mem/connections/TestDatasetConnection.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-mem/src/test/java/org/apache/jena/jdbc/mem/results/AbstractMemResultSetTests.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-mem/src/test/java/org/apache/jena/jdbc/mem/results/TestResultSets.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-mem/src/test/java/org/apache/jena/jdbc/mem/TS_JdbcDriverMem.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-mem/src/main/java/org/apache/jena/jdbc/mem/MemDriver.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-mem/src/main/java/org/apache/jena/jdbc/mem/metadata/MemDatasetMetadata.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-mem/src/main/java/org/apache/jena/jdbc/mem/connections/MemConnection.java
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 

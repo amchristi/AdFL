@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.jena.hadoop.rdf.io.input.util.BlockInputStreamTest
+-------------------------------------------------------------------------------
+Tests run: 66, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.314 sec - in org.apache.jena.hadoop.rdf.io.input.util.BlockInputStreamTest

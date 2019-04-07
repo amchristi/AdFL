@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.jena.hadoop.rdf.io.input.bnodes.TurtleBlankNodeTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.755 sec - in org.apache.jena.hadoop.rdf.io.input.bnodes.TurtleBlankNodeTest

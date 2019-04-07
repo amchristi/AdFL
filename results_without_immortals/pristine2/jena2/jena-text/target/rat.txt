@@ -1,0 +1,113 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2017-03-05T20:56:43-08:00
+Notes: 4
+Binaries: 0
+Archives: 0
+Standards: 72
+
+Apache Licensed: 72
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  N     /home/ubuntu/research/jena/jena-text/LICENSE
+  N     /home/ubuntu/research/jena/jena-text/NOTICE
+  AL    /home/ubuntu/research/jena/jena-text/pom.xml
+  AL    /home/ubuntu/research/jena/jena-text/text-config.ttl
+  AL    /home/ubuntu/research/jena/jena-text/src/test/java/org/apache/jena/query/text/AbstractTestDatasetWithLuceneGraphTextIndex.java
+  AL    /home/ubuntu/research/jena/jena-text/src/test/java/org/apache/jena/query/text/TestDatasetWithLuceneGraphTextIndex.java
+  AL    /home/ubuntu/research/jena/jena-text/src/test/java/org/apache/jena/query/text/TestDatasetWithLuceneStoredLiterals.java
+  AL    /home/ubuntu/research/jena/jena-text/src/test/java/org/apache/jena/query/text/TestDatasetWithLowerCaseKeywordAnalyzer.java
+  AL    /home/ubuntu/research/jena/jena-text/src/test/java/org/apache/jena/query/text/TestDatasetWithLocalizedAnalyzer.java
+  AL    /home/ubuntu/research/jena/jena-text/src/test/java/org/apache/jena/query/text/TestDatasetWithLuceneTextIndexWithLangField.java
+  AL    /home/ubuntu/research/jena/jena-text/src/test/java/org/apache/jena/query/text/AbstractTestDatasetWithTextIndex.java
+  AL    /home/ubuntu/research/jena/jena-text/src/test/java/org/apache/jena/query/text/TestDatasetWithSimpleAnalyzer.java
+  AL    /home/ubuntu/research/jena/jena-text/src/test/java/org/apache/jena/query/text/assembler/TestEntityMapAssembler.java
+  AL    /home/ubuntu/research/jena/jena-text/src/test/java/org/apache/jena/query/text/assembler/TestTextIndexSolrAssembler.java
+  AL    /home/ubuntu/research/jena/jena-text/src/test/java/org/apache/jena/query/text/assembler/AbstractTestTextAssembler.java
+  AL    /home/ubuntu/research/jena/jena-text/src/test/java/org/apache/jena/query/text/assembler/TestTextDatasetAssembler.java
+  AL    /home/ubuntu/research/jena/jena-text/src/test/java/org/apache/jena/query/text/assembler/TestTextIndexLuceneAssembler.java
+  AL    /home/ubuntu/research/jena/jena-text/src/test/java/org/apache/jena/query/text/TextSearchUtil.java
+  AL    /home/ubuntu/research/jena/jena-text/src/test/java/org/apache/jena/query/text/TestDatasetWithLuceneMultilingualTextIndex.java
+  AL    /home/ubuntu/research/jena/jena-text/src/test/java/org/apache/jena/query/text/TS_Text.java
+  AL    /home/ubuntu/research/jena/jena-text/src/test/java/org/apache/jena/query/text/TestDatasetWithStandardAnalyzer.java
+  AL    /home/ubuntu/research/jena/jena-text/src/test/java/org/apache/jena/query/text/TestLuceneWithMultipleThreads.java
+  AL    /home/ubuntu/research/jena/jena-text/src/test/java/org/apache/jena/query/text/TestDatasetWithLuceneTextIndexDeletionSupport.java
+  AL    /home/ubuntu/research/jena/jena-text/src/test/java/org/apache/jena/query/text/TestTextTDB.java
+  AL    /home/ubuntu/research/jena/jena-text/src/test/java/org/apache/jena/query/text/AbstractTestDatasetWithAnalyzer.java
+  AL    /home/ubuntu/research/jena/jena-text/src/test/java/org/apache/jena/query/text/AbstractTestDatasetWithTextIndexBase.java
+  AL    /home/ubuntu/research/jena/jena-text/src/test/java/org/apache/jena/query/text/TestDatasetWithKeywordAnalyzer.java
+  AL    /home/ubuntu/research/jena/jena-text/src/test/java/org/apache/jena/query/text/TestDatasetWithConfigurableAnalyzer.java
+  AL    /home/ubuntu/research/jena/jena-text/src/test/java/org/apache/jena/query/text/TestDatasetWithAnalyzingQueryParser.java
+  AL    /home/ubuntu/research/jena/jena-text/src/test/java/org/apache/jena/query/text/TestDatasetWithEmbeddedSolrTextIndex.java
+  AL    /home/ubuntu/research/jena/jena-text/src/test/java/org/apache/jena/query/text/TestBuildTextDataset.java
+  AL    /home/ubuntu/research/jena/jena-text/src/test/java/org/apache/jena/query/text/TestDatasetWithLuceneTextIndex.java
+  AL    /home/ubuntu/research/jena/jena-text/src/test/java/org/apache/jena/query/text/AbstractTestDatasetWithLuceneTextIndexDeletionSupport.java
+  AL    /home/ubuntu/research/jena/jena-text/src/test/java/org/apache/jena/query/text/TestDatasetWithComplexPhraseQueryParser.java
+  AL    /home/ubuntu/research/jena/jena-text/src/test/java/org/apache/jena/query/text/AbstractTestDatasetWithGraphTextIndex.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/TextIndexSolr.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/TextHit.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/TextDocProducerEntities.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/assembler/EntityDefinitionAssembler.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/assembler/KeywordAnalyzerAssembler.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/assembler/SimpleAnalyzerAssembler.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/assembler/StandardAnalyzerAssembler.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/assembler/LowerCaseKeywordAnalyzerAssembler.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/assembler/TextAssembler.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/assembler/TextVocab.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/assembler/TextIndexSolrAssembler.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/assembler/ConfigurableAnalyzerAssembler.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/assembler/TextIndexLuceneAssembler.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/assembler/LocalizedAnalyzerAssembler.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/assembler/TextDatasetAssembler.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/TextIndexLucene.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/TextIndexException.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/EntityDefinition.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/TextDocProducerTriples.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/Entity.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/TextDatasetFactory.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/Indexer.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/TextIndexLuceneMultilingual.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/TextQueryFuncs.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/DatasetGraphText.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/analyzer/ConfigurableAnalyzer.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/analyzer/LowerCaseKeywordAnalyzer.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/analyzer/Util.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/TextDocProducer.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/TextIndex.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/InitJenaText.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/TextIndexParseException.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/TextQueryPF.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/TextIndexConfig.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/org/apache/jena/query/text/TextQuery.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/jena/textindexer.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/jena/textindexdump.java
+  AL    /home/ubuntu/research/jena/jena-text/src/main/java/examples/JenaTextExample1.java
+  N     /home/ubuntu/research/jena/jena-text/src/main/resources/META-INF/LICENSE
+  N     /home/ubuntu/research/jena/jena-text/src/main/resources/META-INF/NOTICE
+  AL    /home/ubuntu/research/jena/jena-text/src/main/resources/org/apache/jena/query/text/properties.xml
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 

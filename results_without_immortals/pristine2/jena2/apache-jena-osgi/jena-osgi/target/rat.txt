@@ -1,0 +1,40 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2017-02-27T21:37:36-08:00
+Notes: 1
+Binaries: 0
+Archives: 0
+Standards: 2
+
+Apache Licensed: 2
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  AL    /home/ubuntu/research/jena/apache-jena-osgi/jena-osgi/pom.xml
+  AL    /home/ubuntu/research/jena/apache-jena-osgi/jena-osgi/src/main/java/org/apache/jena/osgi/Activator.java
+  N     /home/ubuntu/research/jena/apache-jena-osgi/jena-osgi/src/main/resources/META-INF/NOTICE
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 

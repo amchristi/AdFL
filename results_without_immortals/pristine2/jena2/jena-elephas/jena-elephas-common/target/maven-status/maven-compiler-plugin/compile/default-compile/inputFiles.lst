@@ -1,0 +1,9 @@
+/home/ubuntu/research/jena/jena-elephas/jena-elephas-common/src/main/java/org/apache/jena/hadoop/rdf/types/AbstractNodeTupleWritable.java
+/home/ubuntu/research/jena/jena-elephas/jena-elephas-common/src/main/java/org/apache/jena/hadoop/rdf/types/NodeWritable.java
+/home/ubuntu/research/jena/jena-elephas/jena-elephas-common/src/main/java/org/apache/jena/hadoop/rdf/types/TripleWritable.java
+/home/ubuntu/research/jena/jena-elephas/jena-elephas-common/src/main/java/org/apache/jena/hadoop/rdf/types/QuadWritable.java
+/home/ubuntu/research/jena/jena-elephas/jena-elephas-common/src/main/java/org/apache/jena/hadoop/rdf/types/CharacteristicSetWritable.java
+/home/ubuntu/research/jena/jena-elephas/jena-elephas-common/src/main/java/org/apache/jena/hadoop/rdf/types/CharacteristicWritable.java
+/home/ubuntu/research/jena/jena-elephas/jena-elephas-common/src/main/java/org/apache/jena/hadoop/rdf/types/converters/ThriftConverter.java
+/home/ubuntu/research/jena/jena-elephas/jena-elephas-common/src/main/java/org/apache/jena/hadoop/rdf/types/NodeTupleWritable.java
+/home/ubuntu/research/jena/jena-elephas/jena-elephas-common/src/main/java/org/apache/jena/hadoop/rdf/types/comparators/SimpleBinaryComparator.java

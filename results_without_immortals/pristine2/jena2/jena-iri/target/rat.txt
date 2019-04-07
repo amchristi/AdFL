@@ -1,0 +1,120 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2017-11-09T18:14:51-08:00
+Notes: 4
+Binaries: 0
+Archives: 0
+Standards: 79
+
+Apache Licensed: 79
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  N     /home/ubuntu/research/jena/jena-iri/LICENSE
+  AL    /home/ubuntu/research/jena/jena-iri/src-dev/dev/RunIRI.java
+  AL    /home/ubuntu/research/jena/jena-iri/src-dev/dev/ReportsIRI.java
+  AL    /home/ubuntu/research/jena/jena-iri/src-dev/buildlexer/AbsLexerBuilder.java
+  AL    /home/ubuntu/research/jena/jena-iri/src-dev/buildlexer/PatternCompilerBuilder.java
+  AL    /home/ubuntu/research/jena/jena-iri/src-dev/buildlexer/Expansion.java
+  AL    /home/ubuntu/research/jena/jena-iri/src-dev/buildlexer/MainGenerateLexers.java
+  N     /home/ubuntu/research/jena/jena-iri/NOTICE
+  AL    /home/ubuntu/research/jena/jena-iri/pom.xml
+  AL    /home/ubuntu/research/jena/jena-iri/assembly.xml
+  AL    /home/ubuntu/research/jena/jena-iri/src/test/java/org/apache/jena/iri/TestExample.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/test/java/org/apache/jena/iri/Additional.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/test/java/org/apache/jena/iri/TS_IRI.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/test/java/org/apache/jena/iri/MoreTests.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/test/java/org/apache/jena/iri/TestMERelativize.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/test/java/org/apache/jena/iri/TestMoreExamples.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/test/java/org/apache/jena/iri/TestMEResolve.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/test/java/org/apache/jena/iri/TestMEResult.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/test/java/org/apache/jena/iri/TestIRIFactory.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/test/java/org/apache/jena/iri/TestMEIri.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/test/java/org/apache/jena/iri/TestCreator.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/test/java/org/apache/jena/iri/TestErrorMessages.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/ViolationCodes.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/MalformedIDNException.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/IRI.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/IRIException.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/IRIComponents.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/IRIFactory.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/IRIRelativize.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/AbsIRIFactoryImpl.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/ComponentPatternParser.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/LexerXHost.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/HostAction.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/IRIImpl.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/Lexer.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/LexerQuery.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/Force.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/IRIExamples.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/LexerUserinfo.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/violations.xml
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/AbsIRIImpl.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/ViolationImpl.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/SchemeSpecification.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/Specification.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/PatternCompiler.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/LexerFragment.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/IRIImplException.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/LexerHost.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/LexerPort.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/LexerScheme.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/BuildViolationCodes.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/GroupAction.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/ComponentPattern.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/viol2java.xsl
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/IDNP.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/Parser.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/IRIFactoryImpl.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/SchemeSpecificPart.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/ErrorAction.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/VarPattern.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/Main.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/ViolationCodeInfo.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/AbsLexer.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/violations.dtd
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/ResolvedRelativeIRI.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/impl/LexerPath.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/Violation.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/java/org/apache/jena/iri/IRIFactoryI.java
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/jflex/org/apache/jena/iri/impl/xhost.jflex
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/jflex/org/apache/jena/iri/impl/xchar.jflex
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/jflex/org/apache/jena/iri/impl/host.jflex
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/jflex/org/apache/jena/iri/impl/fragment.jflex
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/jflex/org/apache/jena/iri/impl/iri.jflex
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/jflex/org/apache/jena/iri/impl/userinfo.jflex
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/jflex/org/apache/jena/iri/impl/query.jflex
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/jflex/org/apache/jena/iri/impl/path.jflex
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/jflex/org/apache/jena/iri/impl/port.jflex
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/jflex/org/apache/jena/iri/impl/scheme.jflex
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/xml/org/apache/jena/iri/impl/violations.xml
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/xml/org/apache/jena/iri/impl/viol2java.xsl
+  AL    /home/ubuntu/research/jena/jena-iri/src/main/xml/org/apache/jena/iri/impl/violations.dtd
+  N     /home/ubuntu/research/jena/jena-iri/src/main/resources/META-INF/LICENSE
+  N     /home/ubuntu/research/jena/jena-iri/src/main/resources/META-INF/NOTICE
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 

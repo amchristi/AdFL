@@ -1,0 +1,90 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2017-02-27T21:37:50-08:00
+Notes: 1
+Binaries: 0
+Archives: 0
+Standards: 52
+
+Apache Licensed: 52
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  N     /home/ubuntu/research/jena/jena-extras/jena-querybuilder/LICENSE
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/pom.xml
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/test/java/org/apache/jena/arq/querybuilder/AbstractQueryBuilderTest.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/test/java/org/apache/jena/arq/querybuilder/handlers/WhereHandlerTest.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/test/java/org/apache/jena/arq/querybuilder/handlers/SelectHandlerTest.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/test/java/org/apache/jena/arq/querybuilder/handlers/PrologHandlerTest.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/test/java/org/apache/jena/arq/querybuilder/handlers/SolutionModifierHandlerTest.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/test/java/org/apache/jena/arq/querybuilder/handlers/AbstractHandlerTest.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/test/java/org/apache/jena/arq/querybuilder/handlers/ConstructHandlerTest.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/test/java/org/apache/jena/arq/querybuilder/handlers/ValuesHandlerTest.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/test/java/org/apache/jena/arq/querybuilder/handlers/DatasetHandlerTest.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/test/java/org/apache/jena/arq/querybuilder/AskBuilderContractTest.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/test/java/org/apache/jena/arq/querybuilder/ConstructBuilderContractTest.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/test/java/org/apache/jena/arq/querybuilder/ConstructBuilderTest.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/test/java/org/apache/jena/arq/querybuilder/SelectBuilderContractTest.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/test/java/org/apache/jena/arq/querybuilder/AskBuilderTest.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/test/java/org/apache/jena/arq/querybuilder/SelectBuilderTest.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/test/java/org/apache/jena/arq/querybuilder/clauses/AbstractClauseTest.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/test/java/org/apache/jena/arq/querybuilder/clauses/DatasetClauseTest.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/test/java/org/apache/jena/arq/querybuilder/clauses/SelectClauseTest.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/test/java/org/apache/jena/arq/querybuilder/clauses/WhereClauseTest.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/test/java/org/apache/jena/arq/querybuilder/clauses/ValuesClauseTest.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/test/java/org/apache/jena/arq/querybuilder/clauses/SolutionModifierTest.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/test/java/org/apache/jena/arq/querybuilder/clauses/PrologClauseTest.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/test/java/org/apache/jena/arq/AbstractRegexpBasedTest.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/main/java/org/apache/jena/arq/querybuilder/SelectBuilder.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/main/java/org/apache/jena/arq/querybuilder/handlers/AggregationHandler.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/main/java/org/apache/jena/arq/querybuilder/handlers/Handler.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/main/java/org/apache/jena/arq/querybuilder/handlers/ValuesHandler.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/main/java/org/apache/jena/arq/querybuilder/handlers/SelectHandler.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/main/java/org/apache/jena/arq/querybuilder/handlers/ConstructHandler.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/main/java/org/apache/jena/arq/querybuilder/handlers/DatasetHandler.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/main/java/org/apache/jena/arq/querybuilder/handlers/HandlerBlock.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/main/java/org/apache/jena/arq/querybuilder/handlers/SolutionModifierHandler.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/main/java/org/apache/jena/arq/querybuilder/handlers/WhereHandler.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/main/java/org/apache/jena/arq/querybuilder/handlers/PrologHandler.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/main/java/org/apache/jena/arq/querybuilder/AskBuilder.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/main/java/org/apache/jena/arq/querybuilder/AbstractQueryBuilder.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/main/java/org/apache/jena/arq/querybuilder/ConstructBuilder.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/main/java/org/apache/jena/arq/querybuilder/rewriters/AbstractRewriter.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/main/java/org/apache/jena/arq/querybuilder/rewriters/PathRewriter.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/main/java/org/apache/jena/arq/querybuilder/rewriters/NodeValueRewriter.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/main/java/org/apache/jena/arq/querybuilder/rewriters/ElementRewriter.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/main/java/org/apache/jena/arq/querybuilder/rewriters/OpRewriter.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/main/java/org/apache/jena/arq/querybuilder/rewriters/ExprRewriter.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/main/java/org/apache/jena/arq/querybuilder/Order.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/main/java/org/apache/jena/arq/querybuilder/clauses/DatasetClause.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/main/java/org/apache/jena/arq/querybuilder/clauses/PrologClause.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/main/java/org/apache/jena/arq/querybuilder/clauses/ConstructClause.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/main/java/org/apache/jena/arq/querybuilder/clauses/SolutionModifierClause.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/main/java/org/apache/jena/arq/querybuilder/clauses/ValuesClause.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/main/java/org/apache/jena/arq/querybuilder/clauses/WhereClause.java
+  AL    /home/ubuntu/research/jena/jena-extras/jena-querybuilder/src/main/java/org/apache/jena/arq/querybuilder/clauses/SelectClause.java
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 

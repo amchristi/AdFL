@@ -1,0 +1,55 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2017-03-05T20:58:57-08:00
+Notes: 3
+Binaries: 0
+Archives: 0
+Standards: 15
+
+Apache Licensed: 15
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  AL    /home/ubuntu/research/jena/jena-fuseki2/apache-jena-fuseki/backup
+  N     /home/ubuntu/research/jena/jena-fuseki2/apache-jena-fuseki/dist/LICENSE
+  N     /home/ubuntu/research/jena/jena-fuseki2/apache-jena-fuseki/dist/README
+  N     /home/ubuntu/research/jena/jena-fuseki2/apache-jena-fuseki/dist/NOTICE
+  AL    /home/ubuntu/research/jena/jena-fuseki2/apache-jena-fuseki/bin/s-delete
+  AL    /home/ubuntu/research/jena/jena-fuseki2/apache-jena-fuseki/bin/s-update-form
+  AL    /home/ubuntu/research/jena/jena-fuseki2/apache-jena-fuseki/bin/s-query
+  AL    /home/ubuntu/research/jena/jena-fuseki2/apache-jena-fuseki/bin/s-get
+  AL    /home/ubuntu/research/jena/jena-fuseki2/apache-jena-fuseki/bin/s-head
+  AL    /home/ubuntu/research/jena/jena-fuseki2/apache-jena-fuseki/bin/s-put
+  AL    /home/ubuntu/research/jena/jena-fuseki2/apache-jena-fuseki/bin/s-post
+  AL    /home/ubuntu/research/jena/jena-fuseki2/apache-jena-fuseki/bin/soh
+  AL    /home/ubuntu/research/jena/jena-fuseki2/apache-jena-fuseki/bin/s-update
+  AL    /home/ubuntu/research/jena/jena-fuseki2/apache-jena-fuseki/fuseki-server
+  AL    /home/ubuntu/research/jena/jena-fuseki2/apache-jena-fuseki/fuseki-server.bat
+  AL    /home/ubuntu/research/jena/jena-fuseki2/apache-jena-fuseki/assembly-dist.xml
+  AL    /home/ubuntu/research/jena/jena-fuseki2/apache-jena-fuseki/pom.xml
+  AL    /home/ubuntu/research/jena/jena-fuseki2/apache-jena-fuseki/fuseki
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 

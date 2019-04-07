@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.jena:jena-shaded-guava:3.3.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-shaded-guava/3.3.0-SNAPSHOT/jena-shaded-guava-3.3.0-20170227.102119-12.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-shaded-guava/3.3.0-SNAPSHOT/jena-shaded-guava-3.3.0-20170227.102119-12-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-shaded-guava/3.3.0-SNAPSHOT/jena-shaded-guava-3.3.0-20170227.102119-12-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

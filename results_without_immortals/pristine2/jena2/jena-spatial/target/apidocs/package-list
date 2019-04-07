@@ -1,0 +1,6 @@
+examples
+jena
+org.apache.jena.query.spatial
+org.apache.jena.query.spatial.assembler
+org.apache.jena.query.spatial.pfunction
+org.apache.jena.query.spatial.pfunction.library

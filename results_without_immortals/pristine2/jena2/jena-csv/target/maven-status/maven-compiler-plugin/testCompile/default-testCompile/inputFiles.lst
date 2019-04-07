@@ -1,0 +1,12 @@
+/home/ubuntu/research/jena/jena-csv/src/test/java/org/apache/jena/propertytable/AbstractColumnTest.java
+/home/ubuntu/research/jena/jena-csv/src/test/java/org/apache/jena/propertytable/impl/PropertyTableBuilderForArrayImplTest.java
+/home/ubuntu/research/jena/jena-csv/src/test/java/org/apache/jena/propertytable/AbstractRowTest.java
+/home/ubuntu/research/jena/jena-csv/src/test/java/org/apache/jena/propertytable/impl/PropertyTableArrayImplTest.java
+/home/ubuntu/research/jena/jena-csv/src/test/java/org/apache/jena/propertytable/BaseTest.java
+/home/ubuntu/research/jena/jena-csv/src/test/java/org/apache/jena/propertytable/TS_PropertyTable.java
+/home/ubuntu/research/jena/jena-csv/src/test/java/org/apache/jena/propertytable/AbstractPropertyTableTest.java
+/home/ubuntu/research/jena/jena-csv/src/test/java/org/apache/jena/propertytable/impl/PropertyTableBuilderForHashMapImplTest.java
+/home/ubuntu/research/jena/jena-csv/src/test/java/org/apache/jena/propertytable/impl/PropertyTableHashMapImplTest.java
+/home/ubuntu/research/jena/jena-csv/src/test/java/org/apache/jena/propertytable/impl/AbstractPropertyTableBuilderTest.java
+/home/ubuntu/research/jena/jena-csv/src/test/java/org/apache/jena/propertytable/graph/GraphCSVTest.java
+/home/ubuntu/research/jena/jena-csv/src/test/java/org/apache/jena/propertytable/lang/TestLangCSV.java

@@ -1,0 +1,5 @@
+/home/ubuntu/research/jena/jena-rdfconnection/src/test/java/org/apache/jena/rdfconnection/TestRDFConnectionLocalTxnMem.java
+/home/ubuntu/research/jena/jena-rdfconnection/src/test/java/org/apache/jena/rdfconnection/TestLocalIsolation.java
+/home/ubuntu/research/jena/jena-rdfconnection/src/test/java/org/apache/jena/rdfconnection/TestRDFConnectionLocalMRSW.java
+/home/ubuntu/research/jena/jena-rdfconnection/src/test/java/org/apache/jena/rdfconnection/AbstractTestRDFConnection.java
+/home/ubuntu/research/jena/jena-rdfconnection/src/test/java/org/apache/jena/rdfconnection/TS_RDFConnection.java

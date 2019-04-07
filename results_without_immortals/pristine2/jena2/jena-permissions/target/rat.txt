@@ -1,0 +1,142 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2017-03-05T20:59:08-08:00
+Notes: 2
+Binaries: 0
+Archives: 0
+Standards: 103
+
+Apache Licensed: 103
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  N     /home/ubuntu/research/jena/jena-permissions/LICENSE
+  N     /home/ubuntu/research/jena/jena-permissions/NOTICE
+  AL    /home/ubuntu/research/jena/jena-permissions/pom.xml
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/SecurityEvaluatorParameters.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/graph/CrossIDGraphEventManagerTest.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/graph/RecordingGraphListener.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/graph/GraphEventManagerTest.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/graph/TDBGraphTest.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/graph/MemGraphTest.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/graph/SecuredPrefixMappingTest.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/query/DataSetTest.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/query/QueryEngineTest.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/query/rewriter/OpRewriterTest.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/SecuredAssemblerTest.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/MockPrefixMapping.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/EqualityTester.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/model/SecuredSeqTest.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/model/SecuredModelTest.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/model/SecuredBagTest.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/model/SecuredContainerTest.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/model/SecuredPropertyTest.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/model/SecuredRDFListTest.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/model/SecuredStatementTest.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/model/SecuredRDFNodeTest.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/model/SecuredResourceTest.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/model/SecuredReifiedStatementTest.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/model/SecuredModelDetailTest.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/model/SecuredLiteralTest.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/model/SecuredAltTest.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/MockSecurityEvaluator.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/StaticSecurityEvaluator.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/impl/SecuredItemImplTest.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/ModelBasedSecurityEvaluator.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/contract/graph/CachedSecurityEvaluatorTest.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/contract/graph/SecuredGraphContractTests.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/contract/graph/SecuredTDBGraphContractTests.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/contract/graph/SecuredGraphListenerTest.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/contract/model/SecTestReaders.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/contract/model/SecTestReaderEvents.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/contract/model/SecTestPackage.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/contract/model/SecTestLiterals.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/test/java/org/apache/jena/permissions/contract/model/ModelTestSuite.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/example/java/org/apache/jena/permissions/example/ExampleEvaluator.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/example/java/org/apache/jena/permissions/example/ShiroExampleEvaluator.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/example/java/org/apache/jena/permissions/example/SecurityExample.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/example/resources/org/apache/jena/security/example/example.ttl
+  AL    /home/ubuntu/research/jena/jena-permissions/src/example/resources/org/apache/jena/security/example/fuseki/config.ttl
+  AL    /home/ubuntu/research/jena/jena-permissions/src/example/resources/org/apache/jena/security/example/fuseki/shiro.ini
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/SecurityEvaluator.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/graph/SecuredPrefixMapping.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/graph/SecuredCapabilities.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/graph/SecuredGraph.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/graph/impl/Factory.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/graph/impl/SecuredPrefixMappingImpl.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/graph/impl/SecuredGraphImpl.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/graph/SecuredGraphEventManager.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/AssemblerConstants.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/Factory.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/SecuredItem.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/SecurityEvaluatorAssembler.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/query/SecuredQueryEngine.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/query/SecuredQueryEngineFactory.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/query/SecuredQueryEngineConfig.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/query/rewriter/SecuredFunction.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/query/rewriter/OpRewriter.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/model/SecuredModel.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/model/SecuredLiteral.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/model/SecuredStatement.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/model/SecuredContainer.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/model/SecuredProperty.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/model/SecuredUnsupportedPolymorphismException.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/model/SecuredAlt.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/model/SecuredRDFList.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/model/SecuredResource.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/model/SecuredSeq.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/model/impl/SecuredAltImpl.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/model/impl/SecuredModelImpl.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/model/impl/SecuredBagImpl.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/model/impl/SecuredRDFListImpl.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/model/impl/SecuredContainerImpl.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/model/impl/SecuredResIterator.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/model/impl/SecuredReifiedStatementImpl.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/model/impl/SecuredResourceImpl.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/model/impl/SecuredStatementImpl.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/model/impl/SecuredSeqImpl.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/model/impl/SecuredSelector.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/model/impl/SecuredNodeIterator.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/model/impl/SecuredRSIterator.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/model/impl/SecuredPropertyImpl.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/model/impl/SecuredLiteralImpl.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/model/impl/SecuredRDFNodeImpl.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/model/impl/SecuredStatementIterator.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/model/SecuredRDFNode.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/model/SecuredBag.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/model/SecuredReifiedStatement.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/SecuredAssembler.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/impl/CachedSecurityEvaluator.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/impl/ItemHolder.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/impl/SecuredItemImpl.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/impl/SecuredItemInvoker.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/utils/PermStatementFilter.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/utils/PermTripleFilter.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/utils/ContainerFilter.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/utils/RDFListSecFilter.java
+  AL    /home/ubuntu/research/jena/jena-permissions/src/main/java/org/apache/jena/permissions/utils/RDFListIterator.java
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 

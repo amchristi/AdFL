@@ -1,0 +1,158 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2017-03-05T20:56:26-08:00
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 121
+
+Apache Licensed: 121
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  AL    /home/ubuntu/research/jena/jena-cmds/pom.xml
+  AL    /home/ubuntu/research/jena/jena-cmds/src/test/java/arq/qtest.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/test/java/jena/cmd/TS_Cmd.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/test/java/jena/cmd/TestCmdLine.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/test/java/jena/cmd/Test_schemagen.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/test/java/jena/cmd/Test_rdfcat.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/test/java/riotcmd/rdflangtest.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/tdb/tdbquery.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/tdb/tdbupdate.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/tdb/tdbrecovery.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/tdb/tdbstats.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/tdb/tdbbackup.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/tdb/cmdline/ModLocation.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/tdb/cmdline/CmdSub.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/tdb/cmdline/ModTDBDataset.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/tdb/cmdline/ModTDBAssembler.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/tdb/cmdline/ModModel.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/tdb/cmdline/CmdTDBGraph.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/tdb/cmdline/CmdTDB.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/tdb/tdbnode.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/tdb/tdbconfig.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/tdb/bulkloader2/CmdNodeTableBuilder.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/tdb/bulkloader2/CmdRewriteIndex.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/tdb/bulkloader2/CmdIndexBuild.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/tdb/bulkloader2/CmdIndexCopy.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/tdb/tdbreorder.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/tdb/tdbdump.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/tdb/tools/dumpnodetable.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/tdb/tools/dumpbpt.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/tdb/tools/tdbgenindex.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/tdb/tdbloader.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/iri.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/update.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/sse_exec.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/wwwdec.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/rset.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/query.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/cmdline/ModContext.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/cmdline/ModTime.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/cmdline/CmdUpdate.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/cmdline/ModLangOutput.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/cmdline/ModRemote.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/cmdline/ModResultsIn.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/cmdline/ModQueryIn.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/cmdline/ModAssembler.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/cmdline/ModItem.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/cmdline/ModAlgebra.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/cmdline/ModLangParse.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/cmdline/ModDatasetAssembler.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/cmdline/ModDatasetGeneralAssembler.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/cmdline/ModDataset.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/cmdline/ModQueryOut.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/cmdline/ModSymbol.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/cmdline/ModResultsOut.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/cmdline/CmdARQ.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/cmdline/CmdARQ_SSE.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/cmdline/ModEngine.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/cmdline/ModFormat.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/cmdline/ModDatasetGeneral.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/qparse.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/load.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/sse_expr.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/juuid.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/version.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/sparql.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/rupdate.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/qexpr.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/arq.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/rsparql.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/tokens.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/bindings.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/rdfdiff.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/wwwenc.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/sse_query.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/sse.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/utf8.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/arq/uparse.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/jena/rset.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/jena/cmd/CmdLineArgs.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/jena/cmd/CmdException.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/jena/cmd/ModGeneral.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/jena/cmd/CommandLineBase.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/jena/cmd/ModBase.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/jena/cmd/ArgModule.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/jena/cmd/CmdMain.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/jena/cmd/ArgDecl.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/jena/cmd/ArgProc.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/jena/cmd/CmdGeneral.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/jena/cmd/ModVersion.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/jena/cmd/Usage.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/jena/cmd/Invoke.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/jena/cmd/ArgModuleGeneral.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/jena/cmd/Arg.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/jena/cmd/TerminationException.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/jena/cmd/CmdArgModule.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/jena/query.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/jena/rdfcat.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/jena/qparse.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/jena/rdfparse.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/jena/version.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/jena/sparql.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/jena/RuleMap.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/jena/turtle.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/jena/riot.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/jena/rdfcopy.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/jena/schemagen.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/jena/rdfcompare.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/riotcmd/ntriples.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/riotcmd/nquads.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/riotcmd/rdfxml.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/riotcmd/perftokens.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/riotcmd/CmdLangParse.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/riotcmd/infer.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/riotcmd/json.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/riotcmd/turtle.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/riotcmd/printtokens.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/riotcmd/riot.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/riotcmd/trig.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/riotcmd/CmdTokens.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/riotcmd/dumpthrift.java
+  AL    /home/ubuntu/research/jena/jena-cmds/src/main/java/riotcmd/utf8.java
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 

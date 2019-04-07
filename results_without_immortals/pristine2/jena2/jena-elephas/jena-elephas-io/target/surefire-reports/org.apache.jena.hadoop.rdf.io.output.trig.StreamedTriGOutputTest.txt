@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.jena.hadoop.rdf.io.output.trig.StreamedTriGOutputTest
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.746 sec - in org.apache.jena.hadoop.rdf.io.output.trig.StreamedTriGOutputTest

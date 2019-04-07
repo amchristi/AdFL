@@ -1,0 +1,62 @@
+Invoking Maven for the goals: [org.apache.maven.plugins:maven-javadoc-plugin:2.10.3:javadoc] with no properties
+
+M2_HOME=/usr/share/maven
+MAVEN_OPTS=null
+JAVA_HOME=/usr/lib/jvm/java-8-oracle/jre/..
+JAVA_OPTS=null
+
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Jena - Shadowed external libraries 3.3.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> maven-javadoc-plugin:2.10.3:javadoc (default-cli) @ jena-shaded-guava >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce) @ jena-shaded-guava ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (rat-checks) @ jena-shaded-guava ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: **/.project
+[INFO] Exclude: **/.settings/**
+[INFO] Exclude: **/.classpath
+[INFO] Exclude: **/README.*
+[INFO] Exclude: **/META-INF/services/*
+[INFO] Exclude: **/src-examples/data/*
+[INFO] Exclude: **/dist/ABOUT
+[INFO] Exclude: **/SEE_FUSEKI2
+[INFO] Exclude: **/src/main/webapp/css/*
+[INFO] Exclude: **/src/main/webapp/fonts/*
+[INFO] Exclude: **/src/main/webapp/js/**/*
+[INFO] Exclude: **/vocabularies/*
+[INFO] Exclude: **/Vocabularies/*
+[INFO] Exclude: **/src/main/**/*.html
+[INFO] Exclude: **/src/**/package-info.java
+[INFO] Exclude: **/DEPENDENCIES
+[INFO] Exclude: **/*.txt
+[INFO] Exclude: **/*.md
+[INFO] Exclude: **/META-INF/services/*
+[INFO] Exclude: **/src/test/resources/**/*
+[INFO] Exclude: **/testing/**/*
+[INFO] Exclude: **/log4j.properties
+[INFO] Exclude: **/log4j-testing.properties
+[INFO] Exclude: **/derby.log
+[INFO] Exclude: **/DB/**/*
+[INFO] Exclude: **/tdb*.cfg
+[INFO] Exclude: **/run/**/*
+[INFO] Exclude: **/*.classpath
+[INFO] Exclude: **/target/**/*
+[INFO] Exclude: **/dependency-reduced-pom.xml
+[INFO] 2 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 1 licence.
+[INFO] 
+[INFO] <<< maven-javadoc-plugin:2.10.3:javadoc (default-cli) @ jena-shaded-guava <<<
+[INFO] 
+[INFO] --- maven-javadoc-plugin:2.10.3:javadoc (default-cli) @ jena-shaded-guava ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10.165s
+[INFO] Finished at: Mon Feb 27 20:53:33 PST 2017
+[INFO] Final Memory: 16M/92M
+[INFO] ------------------------------------------------------------------------

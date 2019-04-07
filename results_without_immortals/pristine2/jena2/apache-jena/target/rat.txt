@@ -1,0 +1,114 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2017-02-27T21:37:30-08:00
+Notes: 3
+Binaries: 0
+Archives: 0
+Standards: 74
+
+Apache Licensed: 74
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  N     /home/ubuntu/research/jena/apache-jena/dist/LICENSE
+  N     /home/ubuntu/research/jena/apache-jena/dist/README
+  N     /home/ubuntu/research/jena/apache-jena/dist/NOTICE
+  AL    /home/ubuntu/research/jena/apache-jena/bin/tdbbackup
+  AL    /home/ubuntu/research/jena/apache-jena/bin/iri
+  AL    /home/ubuntu/research/jena/apache-jena/bin/qparse
+  AL    /home/ubuntu/research/jena/apache-jena/bin/tdbloader2
+  AL    /home/ubuntu/research/jena/apache-jena/bin/rset
+  AL    /home/ubuntu/research/jena/apache-jena/bin/sparql
+  AL    /home/ubuntu/research/jena/apache-jena/bin/rdfcompare
+  AL    /home/ubuntu/research/jena/apache-jena/bin/turtle
+  AL    /home/ubuntu/research/jena/apache-jena/bin/tdbloader2data
+  AL    /home/ubuntu/research/jena/apache-jena/bin/tdbloader2index
+  AL    /home/ubuntu/research/jena/apache-jena/bin/arq
+  AL    /home/ubuntu/research/jena/apache-jena/bin/rupdate
+  AL    /home/ubuntu/research/jena/apache-jena/bin/update
+  AL    /home/ubuntu/research/jena/apache-jena/bin/ntriples
+  AL    /home/ubuntu/research/jena/apache-jena/bin/utf8
+  AL    /home/ubuntu/research/jena/apache-jena/bin/tdbupdate
+  AL    /home/ubuntu/research/jena/apache-jena/bin/rdfdiff
+  AL    /home/ubuntu/research/jena/apache-jena/bin/wwwenc
+  AL    /home/ubuntu/research/jena/apache-jena/bin/infer
+  AL    /home/ubuntu/research/jena/apache-jena/bin/wwwdec
+  AL    /home/ubuntu/research/jena/apache-jena/bin/riot
+  AL    /home/ubuntu/research/jena/apache-jena/bin/trig
+  AL    /home/ubuntu/research/jena/apache-jena/bin/tdbdump
+  AL    /home/ubuntu/research/jena/apache-jena/bin/rdfxml
+  AL    /home/ubuntu/research/jena/apache-jena/bin/tdbstats
+  AL    /home/ubuntu/research/jena/apache-jena/bin/tdbloader2common
+  AL    /home/ubuntu/research/jena/apache-jena/bin/tdbquery
+  AL    /home/ubuntu/research/jena/apache-jena/bin/rdfparse
+  AL    /home/ubuntu/research/jena/apache-jena/bin/uparse
+  AL    /home/ubuntu/research/jena/apache-jena/bin/nquads
+  AL    /home/ubuntu/research/jena/apache-jena/bin/rdfcopy
+  AL    /home/ubuntu/research/jena/apache-jena/bin/rsparql
+  AL    /home/ubuntu/research/jena/apache-jena/bin/schemagen
+  AL    /home/ubuntu/research/jena/apache-jena/bin/juuid
+  AL    /home/ubuntu/research/jena/apache-jena/bin/rdfcat
+  AL    /home/ubuntu/research/jena/apache-jena/bin/tdbloader
+  AL    /home/ubuntu/research/jena/apache-jena/assembly-jena-zip.xml
+  AL    /home/ubuntu/research/jena/apache-jena/template.bin
+  AL    /home/ubuntu/research/jena/apache-jena/bat/trig.bat
+  AL    /home/ubuntu/research/jena/apache-jena/bat/tdbupdate.bat
+  AL    /home/ubuntu/research/jena/apache-jena/bat/rupdate.bat
+  AL    /home/ubuntu/research/jena/apache-jena/bat/infer.bat
+  AL    /home/ubuntu/research/jena/apache-jena/bat/tdbloader.bat
+  AL    /home/ubuntu/research/jena/apache-jena/bat/rdfxml.bat
+  AL    /home/ubuntu/research/jena/apache-jena/bat/ntriples.bat
+  AL    /home/ubuntu/research/jena/apache-jena/bat/wwwdec.bat
+  AL    /home/ubuntu/research/jena/apache-jena/bat/rdfcompare.bat
+  AL    /home/ubuntu/research/jena/apache-jena/bat/qparse.bat
+  AL    /home/ubuntu/research/jena/apache-jena/bat/rdfparse.bat
+  AL    /home/ubuntu/research/jena/apache-jena/bat/rdfcopy.bat
+  AL    /home/ubuntu/research/jena/apache-jena/bat/tdbstats.bat
+  AL    /home/ubuntu/research/jena/apache-jena/bat/tdbdump.bat
+  AL    /home/ubuntu/research/jena/apache-jena/bat/utf8.bat
+  AL    /home/ubuntu/research/jena/apache-jena/bat/turtle.bat
+  AL    /home/ubuntu/research/jena/apache-jena/bat/arq.bat
+  AL    /home/ubuntu/research/jena/apache-jena/bat/uparse.bat
+  AL    /home/ubuntu/research/jena/apache-jena/bat/rdfdiff.bat
+  AL    /home/ubuntu/research/jena/apache-jena/bat/riot.bat
+  AL    /home/ubuntu/research/jena/apache-jena/bat/tdbbackup.bat
+  AL    /home/ubuntu/research/jena/apache-jena/bat/nquads.bat
+  AL    /home/ubuntu/research/jena/apache-jena/bat/wwwenc.bat
+  AL    /home/ubuntu/research/jena/apache-jena/bat/tdbquery.bat
+  AL    /home/ubuntu/research/jena/apache-jena/bat/update.bat
+  AL    /home/ubuntu/research/jena/apache-jena/bat/schemagen.bat
+  AL    /home/ubuntu/research/jena/apache-jena/bat/iri.bat
+  AL    /home/ubuntu/research/jena/apache-jena/bat/rsparql.bat
+  AL    /home/ubuntu/research/jena/apache-jena/bat/sparql.bat
+  AL    /home/ubuntu/research/jena/apache-jena/bat/rset.bat
+  AL    /home/ubuntu/research/jena/apache-jena/bat/rdfcat.bat
+  AL    /home/ubuntu/research/jena/apache-jena/bat/juuid.bat
+  AL    /home/ubuntu/research/jena/apache-jena/cmd-maker
+  AL    /home/ubuntu/research/jena/apache-jena/pom.xml
+  AL    /home/ubuntu/research/jena/apache-jena/jena-log4j.properties
+  AL    /home/ubuntu/research/jena/apache-jena/template.bat
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 

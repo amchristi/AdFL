@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.jena.tdb.lib.TS_LibTDB
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in org.apache.jena.tdb.lib.TS_LibTDB

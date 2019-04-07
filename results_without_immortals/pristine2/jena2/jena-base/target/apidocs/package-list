@@ -1,0 +1,10 @@
+org.apache.jena.atlas
+org.apache.jena.atlas.io
+org.apache.jena.atlas.iterator
+org.apache.jena.atlas.lib
+org.apache.jena.atlas.lib.cache
+org.apache.jena.atlas.lib.persistent
+org.apache.jena.atlas.lib.tuple
+org.apache.jena.atlas.logging
+org.apache.jena.atlas.logging.java
+org.apache.jena.base

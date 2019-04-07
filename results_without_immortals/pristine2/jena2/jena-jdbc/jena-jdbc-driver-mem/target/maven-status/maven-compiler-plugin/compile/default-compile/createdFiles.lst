@@ -1,0 +1,3 @@
+org/apache/jena/jdbc/mem/connections/MemConnection.class
+org/apache/jena/jdbc/mem/metadata/MemDatasetMetadata.class
+org/apache/jena/jdbc/mem/MemDriver.class

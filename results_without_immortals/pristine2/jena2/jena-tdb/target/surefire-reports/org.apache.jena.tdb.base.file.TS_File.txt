@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.jena.tdb.base.file.TS_File
+-------------------------------------------------------------------------------
+Tests run: 44, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.056 sec - in org.apache.jena.tdb.base.file.TS_File

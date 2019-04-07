@@ -1,0 +1,52 @@
+-classpath
+'/root/.m2/repository/org/apache/jena/jena-base/3.3.0-SNAPSHOT/jena-base-3.3.0-SNAPSHOT.jar:/root/.m2/repository/org/apache/jena/jena-shaded-guava/3.3.0-SNAPSHOT/jena-shaded-guava-3.3.0-SNAPSHOT.jar:/root/.m2/repository/org/apache/jena/jena-iri/3.3.0-SNAPSHOT/jena-iri-3.3.0-SNAPSHOT.jar:/root/.m2/repository/org/apache/commons/commons-csv/1.3/commons-csv-1.3.jar:/root/.m2/repository/org/slf4j/slf4j-log4j12/1.7.21/slf4j-log4j12-1.7.21.jar:/root/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/root/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar:/root/.m2/repository/commons-cli/commons-cli/1.3/commons-cli-1.3.jar:/root/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar:/root/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/root/.m2/repository/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar:/root/.m2/repository/com/github/andrewoma/dexx/collection/0.6/collection-0.6.jar'
+-encoding
+'UTF-8'
+-public
+-quiet
+-sourcepath
+'/home/ubuntu/research/jena/jena-core/src/main/java:/home/ubuntu/research/jena/jena-core/target/generated-sources/annotations'
+-Xdoclint:none
+-author
+-bottom
+'Licenced under the Apache License, Version 2.0'
+-charset
+'UTF-8'
+-d
+'/home/ubuntu/research/jena/jena-core/target/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Apache Jena Core 3.3.0-SNAPSHOT'
+-group
+'API - Application Programming Interface' 'org.apache.jena.db:org.apache.jena.rdf.model:org.apache.jena.rdf.listeners:org.apache.jena.rdf.arp:org.apache.jena.rdf.arp.lang:org.apache.jena.datatypes:org.apache.jena.datatypes.xsd:org.apache.jena.rdql:org.apache.jena.shared:org.apache.jena.vocabulary:org.apache.jena.xmloutput:org.apache.jena.ontology:org.apache.jena.ontology.daml:org.apache.jena.reasoner:org.apache.jena.reasoner.rulesys:org.apache.jena.reasoner.rulesys.builtins:org.apache.jena.reasoner.transitiveReasoner:org.apache.jena.reasoner.dig'
+-group
+'SPI - System Programming Interface' 'org.apache.jena.enhanced:org.apache.jena.graph:org.apache.jena.graph.compose:org.apache.jena.graph.query:org.apache.jena.util:org.apache.jena.util.iterator'
+-group
+'Command line tools' 'jena'
+-group
+'Other Packages' 'org.apache.jena.assembler'
+-link
+'http://jena.apache.org/documentation/javadoc/jena'
+-link
+'http://jena.apache.org/documentation/javadoc/arq'
+-link
+'http://jena.apache.org/documentation/javadoc/tdb'
+-link
+'http://jena.apache.org/documentation/javadoc/text'
+-link
+'http://jena.apache.org/documentation/javadoc/spatial'
+-link
+'http://jena.apache.org/documentation/javadoc/fuseki2'
+-link
+'http://jena.apache.org/documentation/javadoc/permissions'
+-link
+'http://jena.apache.org/documentation/javadoc/jdbc'
+-link
+'http://jena.apache.org/documentation/javadoc/elephas'
+-linkoffline
+'http://docs.oracle.com/javase/8/docs/api' '/home/ubuntu/research/jena/jena-core/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'Apache Jena'

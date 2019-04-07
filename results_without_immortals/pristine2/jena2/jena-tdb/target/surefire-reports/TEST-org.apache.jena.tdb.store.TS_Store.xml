@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.apache.jena.tdb.store.TS_Store" time="2.515" tests="234" errors="0" skipped="1" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.111-b14"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/ubuntu/research/jena"/>
+    <property name="java.runtime.version" value="1.8.0_111-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.2.0-27-generic"/>
+    <property name="user.home" value="/root"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="user.name" value="root"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_111"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="nodeId_date_1" classname="org.apache.jena.tdb.store.TestNodeId" time="0.012"/>
+  <testcase name="nodeId_date_2" classname="org.apache.jena.tdb.store.TestNodeId" time="0.001"/>
+  <testcase name="nodeId_date_3" classname="org.apache.jena.tdb.store.TestNodeId" time="0.002"/>
+  <testcase name="nodeId_date_4" classname="org.apache.jena.tdb.store.TestNodeId" time="0"/>
+  <testcase name="nodeId_date_5" classname="org.apache.jena.tdb.store.TestNodeId" time="0.001"/>
+  <testcase name="nodeId_date_6" classname="org.apache.jena.tdb.store.TestNodeId" time="0"/>
+  <testcase name="nodeId_date_7" classname="org.apache.jena.tdb.store.TestNodeId" time="0"/>
+  <testcase name="nodeId_int_01" classname="org.apache.jena.tdb.store.TestNodeId" time="0"/>
+  <testcase name="nodeId_int_02" classname="org.apache.jena.tdb.store.TestNodeId" time="0"/>
+  <testcase name="nodeId_int_03" classname="org.apache.jena.tdb.store.TestNodeId" time="0"/>
+  <testcase name="nodeId_int_04" classname="org.apache.jena.tdb.store.TestNodeId" time="0"/>
+  <testcase name="nodeId_int_05" classname="org.apache.jena.tdb.store.TestNodeId" time="0"/>
+  <testcase name="nodeId_int_06" classname="org.apache.jena.tdb.store.TestNodeId" time="0"/>
+  <testcase name="nodeId_int_07" classname="org.apache.jena.tdb.store.TestNodeId" time="0.001"/>
+  <testcase name="nodeId_int_08" classname="org.apache.jena.tdb.store.TestNodeId" time="0"/>
+  <testcase name="nodeId_int_09" classname="org.apache.jena.tdb.store.TestNodeId" time="0.001"/>
+  <testcase name="nodeId_int_10" classname="org.apache.jena.tdb.store.TestNodeId" time="0"/>
+  <testcase name="nodeId_int_11" classname="org.apache.jena.tdb.store.TestNodeId" time="0.009"/>
+  <testcase name="nodeId_int_12" classname="org.apache.jena.tdb.store.TestNodeId" time="0"/>
+  <testcase name="nodeId_int_13" classname="org.apache.jena.tdb.store.TestNodeId" time="0"/>
+  <testcase name="nodeId_int_20" classname="org.apache.jena.tdb.store.TestNodeId" time="0.012"/>
+  <testcase name="nodeId_boolean_1" classname="org.apache.jena.tdb.store.TestNodeId" time="0.001"/>
+  <testcase name="nodeId_boolean_2" classname="org.apache.jena.tdb.store.TestNodeId" time="0"/>
+  <testcase name="nodeId_boolean_3" classname="org.apache.jena.tdb.store.TestNodeId" time="0"/>
+  <testcase name="nodeId_boolean_4" classname="org.apache.jena.tdb.store.TestNodeId" time="0.001"/>
+  <testcase name="nodeId_01" classname="org.apache.jena.tdb.store.TestNodeId" time="0"/>
+  <testcase name="nodeId_02" classname="org.apache.jena.tdb.store.TestNodeId" time="0"/>
+  <testcase name="nodeId_decimal_1" classname="org.apache.jena.tdb.store.TestNodeId" time="0.003"/>
+  <testcase name="nodeId_decimal_2" classname="org.apache.jena.tdb.store.TestNodeId" time="0"/>
+  <testcase name="nodeId_decimal_3" classname="org.apache.jena.tdb.store.TestNodeId" time="0"/>
+  <testcase name="nodeId_decimal_4" classname="org.apache.jena.tdb.store.TestNodeId" time="0.001"/>
+  <testcase name="nodeId_decimal_5" classname="org.apache.jena.tdb.store.TestNodeId" time="0.001"/>
+  <testcase name="nodeId_decimal_6" classname="org.apache.jena.tdb.store.TestNodeId" time="0"/>
+  <testcase name="nodeId_decimal_7" classname="org.apache.jena.tdb.store.TestNodeId" time="0.001"/>
+  <testcase name="nodeId_decimal_8" classname="org.apache.jena.tdb.store.TestNodeId" time="0"/>
+  <testcase name="nodeId_dateTime_01" classname="org.apache.jena.tdb.store.TestNodeId" time="0.001"/>
+  <testcase name="nodeId_dateTime_02" classname="org.apache.jena.tdb.store.TestNodeId" time="0.007"/>
+  <testcase name="nodeId_dateTime_03" classname="org.apache.jena.tdb.store.TestNodeId" time="0.001"/>
+  <testcase name="nodeId_dateTime_04" classname="org.apache.jena.tdb.store.TestNodeId" time="0.002"/>
+  <testcase name="nodeId_dateTime_05" classname="org.apache.jena.tdb.store.TestNodeId" time="0.001"/>
+  <testcase name="nodeId_dateTime_06" classname="org.apache.jena.tdb.store.TestNodeId" time="0"/>
+  <testcase name="nodeId_dateTime_07" classname="org.apache.jena.tdb.store.TestNodeId" time="0.002"/>
+  <testcase name="nodeId_dateTime_08" classname="org.apache.jena.tdb.store.TestNodeId" time="0"/>
+  <testcase name="nodeId_dateTime_09" classname="org.apache.jena.tdb.store.TestNodeId" time="0"/>
+  <testcase name="nodeId_dateTime_10" classname="org.apache.jena.tdb.store.TestNodeId" time="0.001"/>
+  <testcase name="nodeId_dateTime_11" classname="org.apache.jena.tdb.store.TestNodeId" time="0"/>
+  <testcase name="nodeId_dateTime_12" classname="org.apache.jena.tdb.store.TestNodeId" time="0.001"/>
+  <testcase name="nodeId_dateTime_13" classname="org.apache.jena.tdb.store.TestNodeId" time="0"/>
+  <testcase name="nodeId_dateTime_14" classname="org.apache.jena.tdb.store.TestNodeId" time="0"/>
+  <testcase name="nodeId_dateTime_15" classname="org.apache.jena.tdb.store.TestNodeId" time="0"/>
+  <testcase name="nodeId_dateTime_16" classname="org.apache.jena.tdb.store.TestNodeId" time="0"/>
+  <testcase name="nodeId_dateTime_17" classname="org.apache.jena.tdb.store.TestNodeId" time="0.001"/>
+  <testcase name="nodeId_dateTime_18" classname="org.apache.jena.tdb.store.TestNodeId" time="0"/>
+  <testcase name="createTripleTable1" classname="org.apache.jena.tdb.store.TestTripleTable" time="0"/>
+  <testcase name="add1" classname="org.apache.jena.tdb.store.TestTripleTable" time="0.001"/>
+  <testcase name="find1" classname="org.apache.jena.tdb.store.TestTripleTable" time="0"/>
+  <testcase name="find2" classname="org.apache.jena.tdb.store.TestTripleTable" time="0.001"/>
+  <testcase name="find3" classname="org.apache.jena.tdb.store.TestTripleTable" time="0.001"/>
+  <testcase name="find4" classname="org.apache.jena.tdb.store.TestTripleTable" time="0.001"/>
+  <testcase name="graph_add_find_01" classname="org.apache.jena.tdb.store.TestGraphTDB" time="0.001"/>
+  <testcase name="graph_add_find_02" classname="org.apache.jena.tdb.store.TestGraphTDB" time="0"/>
+  <testcase name="removeAll_01" classname="org.apache.jena.tdb.store.TestGraphTDB" time="0.001"/>
+  <testcase name="count_01" classname="org.apache.jena.tdb.store.TestGraphTDB" time="0"/>
+  <testcase name="graph_add_delete_01" classname="org.apache.jena.tdb.store.TestGraphTDB" time="0"/>
+  <testcase name="graph_add_delete_02" classname="org.apache.jena.tdb.store.TestGraphTDB" time="0.001"/>
+  <testcase name="graph_add_delete_03" classname="org.apache.jena.tdb.store.TestGraphTDB" time="0.001"/>
+  <testcase name="graph_add_delete_04" classname="org.apache.jena.tdb.store.TestGraphTDB" time="0"/>
+  <testcase name="graph_01" classname="org.apache.jena.tdb.store.TestGraphTDB" time="0"/>
+  <testcase name="remove_01" classname="org.apache.jena.tdb.store.TestGraphTDB" time="0"/>
+  <testcase name="remove_02" classname="org.apache.jena.tdb.store.TestGraphTDB" time="0.001"/>
+  <testcase name="remove_03" classname="org.apache.jena.tdb.store.TestGraphTDB" time="0"/>
+  <testcase name="graph_add_01" classname="org.apache.jena.tdb.store.TestGraphTDB" time="0.002"/>
+  <testcase name="graph_add_02" classname="org.apache.jena.tdb.store.TestGraphTDB" time="0.001"/>
+  <testcase name="graph_add_03" classname="org.apache.jena.tdb.store.TestGraphTDB" time="0"/>
+  <testcase name="graph_add_04" classname="org.apache.jena.tdb.store.TestGraphTDB" time="0.003"/>
+  <testcase name="graph_add_find_01" classname="org.apache.jena.tdb.store.TestGraphNamedTDB" time="0.002"/>
+  <testcase name="graph_add_find_02" classname="org.apache.jena.tdb.store.TestGraphNamedTDB" time="0.001"/>
+  <testcase name="removeAll_01" classname="org.apache.jena.tdb.store.TestGraphNamedTDB" time="0.002"/>
+  <testcase name="count_01" classname="org.apache.jena.tdb.store.TestGraphNamedTDB" time="0.001"/>
+  <testcase name="graph_add_delete_01" classname="org.apache.jena.tdb.store.TestGraphNamedTDB" time="0.001"/>
+  <testcase name="graph_add_delete_02" classname="org.apache.jena.tdb.store.TestGraphNamedTDB" time="0.001"/>
+  <testcase name="graph_add_delete_03" classname="org.apache.jena.tdb.store.TestGraphNamedTDB" time="0.005"/>
+  <testcase name="graph_add_delete_04" classname="org.apache.jena.tdb.store.TestGraphNamedTDB" time="0.002"/>
+  <testcase name="graph_01" classname="org.apache.jena.tdb.store.TestGraphNamedTDB" time="0.001"/>
+  <testcase name="remove_01" classname="org.apache.jena.tdb.store.TestGraphNamedTDB" time="0.006"/>
+  <testcase name="remove_02" classname="org.apache.jena.tdb.store.TestGraphNamedTDB" time="0.002"/>
+  <testcase name="remove_03" classname="org.apache.jena.tdb.store.TestGraphNamedTDB" time="0.001"/>
+  <testcase name="graph_add_01" classname="org.apache.jena.tdb.store.TestGraphNamedTDB" time="0.001"/>
+  <testcase name="graph_add_02" classname="org.apache.jena.tdb.store.TestGraphNamedTDB" time="0.005"/>
+  <testcase name="graph_add_03" classname="org.apache.jena.tdb.store.TestGraphNamedTDB" time="0.001"/>
+  <testcase name="graph_add_04" classname="org.apache.jena.tdb.store.TestGraphNamedTDB" time="0.004"/>
+  <testcase name="dataset1" classname="org.apache.jena.tdb.store.TestDatasetTDBPersist" time="0.039"/>
+  <testcase name="dataset2" classname="org.apache.jena.tdb.store.TestDatasetTDBPersist" time="0.032"/>
+  <testcase name="dataset3" classname="org.apache.jena.tdb.store.TestDatasetTDBPersist" time="0.024"/>
+  <testcase name="dataset4" classname="org.apache.jena.tdb.store.TestDatasetTDBPersist" time="0.024"/>
+  <testcase name="dataset5" classname="org.apache.jena.tdb.store.TestDatasetTDBPersist" time="0.028"/>
+  <testcase name="special1" classname="org.apache.jena.tdb.store.TestDatasetTDB" time="0.035"/>
+  <testcase name="special2" classname="org.apache.jena.tdb.store.TestDatasetTDB" time="0.012"/>
+  <testcase name="special3" classname="org.apache.jena.tdb.store.TestDatasetTDB" time="0.01"/>
+  <testcase name="special4" classname="org.apache.jena.tdb.store.TestDatasetTDB" time="0.081"/>
+  <testcase name="special5" classname="org.apache.jena.tdb.store.TestDatasetTDB" time="0.002"/>
+  <testcase name="generalDataset1" classname="org.apache.jena.tdb.store.TestDatasetTDB" time="0.004"/>
+  <testcase name="generalDataset2" classname="org.apache.jena.tdb.store.TestDatasetTDB" time="0.01"/>
+  <testcase name="generalDataset3" classname="org.apache.jena.tdb.store.TestDatasetTDB" time="0.005"/>
+  <testcase name="query1" classname="org.apache.jena.tdb.store.TestDatasetTDB" time="0.013"/>
+  <testcase name="query2" classname="org.apache.jena.tdb.store.TestDatasetTDB" time="0.014"/>
+  <testcase name="prefix1" classname="org.apache.jena.tdb.store.TestDatasetTDB" time="0.001"/>
+  <testcase name="prefix2" classname="org.apache.jena.tdb.store.TestDatasetTDB" time="0.001"/>
+  <testcase name="find_union_01" classname="org.apache.jena.tdb.store.TestDatasetGraphTDBFind" time="0.005"/>
+  <testcase name="find_specific_01" classname="org.apache.jena.tdb.store.TestDatasetGraphTDBFind" time="0.001"/>
+  <testcase name="find_specific_02" classname="org.apache.jena.tdb.store.TestDatasetGraphTDBFind" time="0.002"/>
+  <testcase name="find_quad_01" classname="org.apache.jena.tdb.store.TestDatasetGraphTDBFind" time="0.001"/>
+  <testcase name="find_quad_02" classname="org.apache.jena.tdb.store.TestDatasetGraphTDBFind" time="0.001"/>
+  <testcase name="find_ng_01" classname="org.apache.jena.tdb.store.TestDatasetGraphTDBFind" time="0.004"/>
+  <testcase name="find_ng_02" classname="org.apache.jena.tdb.store.TestDatasetGraphTDBFind" time="0.002"/>
+  <testcase name="find_dft_01" classname="org.apache.jena.tdb.store.TestDatasetGraphTDBFind" time="0.004"/>
+  <testcase name="find_dft_02" classname="org.apache.jena.tdb.store.TestDatasetGraphTDBFind" time="0.003"/>
+  <testcase name="find_dft_03" classname="org.apache.jena.tdb.store.TestDatasetGraphTDBFind" time="0.003"/>
+  <testcase name="find_dsgFind_union_02" classname="org.apache.jena.tdb.store.TestDatasetGraphTDBFind" time="0.01"/>
+  <testcase name="find_dsgFind_union_03" classname="org.apache.jena.tdb.store.TestDatasetGraphTDBFind" time="0.006"/>
+  <testcase name="find_dsgFind_union_04" classname="org.apache.jena.tdb.store.TestDatasetGraphTDBFind" time="0.003"/>
+  <testcase name="find_dsgFind_union_05" classname="org.apache.jena.tdb.store.TestDatasetGraphTDBFind" time="0.002"/>
+  <testcase name="find_quad_00" classname="org.apache.jena.tdb.store.TestDatasetGraphTDBFindPattern" time="0.006"/>
+  <testcase name="find_pattern_g" classname="org.apache.jena.tdb.store.TestDatasetGraphTDBFindPattern" time="0.003"/>
+  <testcase name="find_pattern_o" classname="org.apache.jena.tdb.store.TestDatasetGraphTDBFindPattern" time="0.002"/>
+  <testcase name="find_pattern_p" classname="org.apache.jena.tdb.store.TestDatasetGraphTDBFindPattern" time="0.002"/>
+  <testcase name="find_pattern_s" classname="org.apache.jena.tdb.store.TestDatasetGraphTDBFindPattern" time="0.002"/>
+  <testcase name="find_pattern_gspo" classname="org.apache.jena.tdb.store.TestDatasetGraphTDBFindPattern" time="0.003"/>
+  <testcase name="find_pattern_go" classname="org.apache.jena.tdb.store.TestDatasetGraphTDBFindPattern" time="0.006"/>
+  <testcase name="find_pattern_gp" classname="org.apache.jena.tdb.store.TestDatasetGraphTDBFindPattern" time="0.002"/>
+  <testcase name="find_pattern_gs" classname="org.apache.jena.tdb.store.TestDatasetGraphTDBFindPattern" time="0.003"/>
+  <testcase name="find_pattern_po" classname="org.apache.jena.tdb.store.TestDatasetGraphTDBFindPattern" time="0.004"/>
+  <testcase name="find_pattern_so" classname="org.apache.jena.tdb.store.TestDatasetGraphTDBFindPattern" time="0.004"/>
+  <testcase name="find_pattern_sp" classname="org.apache.jena.tdb.store.TestDatasetGraphTDBFindPattern" time="0.002"/>
+  <testcase name="find_pattern_gpo" classname="org.apache.jena.tdb.store.TestDatasetGraphTDBFindPattern" time="0.006"/>
+  <testcase name="find_pattern_gso" classname="org.apache.jena.tdb.store.TestDatasetGraphTDBFindPattern" time="0.002"/>
+  <testcase name="find_pattern_gsp" classname="org.apache.jena.tdb.store.TestDatasetGraphTDBFindPattern" time="0.002"/>
+  <testcase name="find_pattern_spo" classname="org.apache.jena.tdb.store.TestDatasetGraphTDBFindPattern" time="0.005"/>
+  <testcase name="load_graph_01" classname="org.apache.jena.tdb.store.TestLoader" time="0.018"/>
+  <testcase name="load_graph_02" classname="org.apache.jena.tdb.store.TestLoader" time="0.013"/>
+  <testcase name="load_graph_03" classname="org.apache.jena.tdb.store.TestLoader" time="0.01"/>
+  <testcase name="load_graph_04" classname="org.apache.jena.tdb.store.TestLoader" time="0.006"/>
+  <testcase name="load_graph_05" classname="org.apache.jena.tdb.store.TestLoader" time="0.004"/>
+  <testcase name="load_graph_06" classname="org.apache.jena.tdb.store.TestLoader" time="0.002"/>
+  <testcase name="load_dataset_01" classname="org.apache.jena.tdb.store.TestLoader" time="0.005"/>
+  <testcase name="load_dataset_02" classname="org.apache.jena.tdb.store.TestLoader" time="0.005"/>
+  <testcase name="load_dataset_03" classname="org.apache.jena.tdb.store.TestLoader" time="0.004"/>
+  <testcase name="TDB-Basic 00" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.052"/>
+  <testcase name="TDB-Basic S" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.01"/>
+  <testcase name="TDB-Basic P" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.022"/>
+  <testcase name="TDB-Basic O" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.01"/>
+  <testcase name="TDB-Basic 1 SP" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.013"/>
+  <testcase name="TDB-Basic 1 SO" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.013"/>
+  <testcase name="TDB-Basic 1 PO" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.011"/>
+  <testcase name="TDB-Basic 1 SPO" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.014"/>
+  <testcase name="TDB-Basic 2 SO" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.012"/>
+  <testcase name="TDB-Basic 3 S" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.007"/>
+  <testcase name="TDB-Basic 3 P" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.009"/>
+  <testcase name="TDB-Basic 3 O" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.009"/>
+  <testcase name="TDB-Basic 3 SP" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.012"/>
+  <testcase name="TDB-Basic 3 SO" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.006"/>
+  <testcase name="TDB-Basic 3 PO" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.007"/>
+  <testcase name="TDB-Pattern 1" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.013"/>
+  <testcase name="TDB-Pattern 2" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.01"/>
+  <testcase name="TDB-Quad-1" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.052"/>
+  <testcase name="TDB-Quad-2" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.021"/>
+  <testcase name="TDB-Value-00" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.023"/>
+  <testcase name="TDB-Value-01" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.013"/>
+  <testcase name="TDB-Value-02" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.015"/>
+  <testcase name="TDB-Value-03" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.016"/>
+  <testcase name="TDB-Value-04" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.015"/>
+  <testcase name="TDB-Value-05" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.028"/>
+  <testcase name="TDB-Value-06" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.009"/>
+  <testcase name="TDB-Value-07" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.018"/>
+  <testcase name="TDB-Value-08" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.021"/>
+  <testcase name="TDB-Value-09" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.012"/>
+  <testcase name="TDB-Merge-1" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.014"/>
+  <testcase name="TDB-Merge-2" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.012"/>
+  <testcase name="TDB-Merge-3" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.012"/>
+  <testcase name="TDB-Merge-4" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.022"/>
+  <testcase name="TDB-Merge-5" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.013"/>
+  <testcase name="TDB-Merge-6" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.014"/>
+  <testcase name="TDB-Merge-A" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.024"/>
+  <testcase name="TDB-Merge-B" classname="org.apache.jena.tdb.junit.QueryTestTDB" time="0.008"/>
+  <testcase name="sparql1" classname="org.apache.jena.tdb.store.Test_SPARQL_TDB" time="0.004"/>
+  <testcase name="sparql2" classname="org.apache.jena.tdb.store.Test_SPARQL_TDB" time="0.001"/>
+  <testcase name="sparql3" classname="org.apache.jena.tdb.store.Test_SPARQL_TDB" time="0.003"/>
+  <testcase name="sparql4" classname="org.apache.jena.tdb.store.Test_SPARQL_TDB" time="0.007"/>
+  <testcase name="sparql5" classname="org.apache.jena.tdb.store.Test_SPARQL_TDB" time="0.003"/>
+  <testcase name="sparql6" classname="org.apache.jena.tdb.store.Test_SPARQL_TDB" time="0.005"/>
+  <testcase name="sparql_txn_1" classname="org.apache.jena.tdb.store.Test_SPARQL_TDB" time="0.026"/>
+  <testcase name="sparql_txn_2" classname="org.apache.jena.tdb.store.Test_SPARQL_TDB" time="0.022"/>
+  <testcase name="sparql_update_unionGraph" classname="org.apache.jena.tdb.store.Test_SPARQL_TDB" time="0.021"/>
+  <testcase name="mrswDataset1" classname="org.apache.jena.tdb.store.TestConcurrentAccess" time="0.002"/>
+  <testcase name="mrswSPARQL1" classname="org.apache.jena.tdb.store.TestConcurrentAccess" time="0.01"/>
+  <testcase name="mrswSPARQL2" classname="org.apache.jena.tdb.store.TestConcurrentAccess" time="0.003"/>
+  <testcase name="mrswGraph1" classname="org.apache.jena.tdb.store.TestConcurrentAccess" time="0.002"/>
+  <testcase name="mrswGraph2" classname="org.apache.jena.tdb.store.TestConcurrentAccess" time="0.001"/>
+  <testcase name="mrswGraph3" classname="org.apache.jena.tdb.store.TestConcurrentAccess" time="0.001"/>
+  <testcase name="mrswGraph4" classname="org.apache.jena.tdb.store.TestConcurrentAccess" time="0.002"/>
+  <testcase name="mrswGraph5" classname="org.apache.jena.tdb.store.TestConcurrentAccess" time="0.001"/>
+  <testcase name="mrswGraph6" classname="org.apache.jena.tdb.store.TestConcurrentAccess" time="0.002"/>
+  <testcase name="dynamic01" classname="org.apache.jena.tdb.store.TestDynamicDatasetTDB" time="0.004"/>
+  <testcase name="dynamic02" classname="org.apache.jena.tdb.store.TestDynamicDatasetTDB" time="0.003"/>
+  <testcase name="dynamic03" classname="org.apache.jena.tdb.store.TestDynamicDatasetTDB" time="0.014"/>
+  <testcase name="dynamic04" classname="org.apache.jena.tdb.store.TestDynamicDatasetTDB" time="0.006"/>
+  <testcase name="dynamic05" classname="org.apache.jena.tdb.store.TestDynamicDatasetTDB" time="0.01"/>
+  <testcase name="dynamic06" classname="org.apache.jena.tdb.store.TestDynamicDatasetTDB" time="0.007"/>
+  <testcase name="dynamic07" classname="org.apache.jena.tdb.store.TestDynamicDatasetTDB" time="0.01"/>
+  <testcase name="dynamic08" classname="org.apache.jena.tdb.store.TestDynamicDatasetTDB" time="0.005"/>
+  <testcase name="dynamic09" classname="org.apache.jena.tdb.store.TestDynamicDatasetTDB" time="0.003"/>
+  <testcase name="dynamic10" classname="org.apache.jena.tdb.store.TestDynamicDatasetTDB" time="0.006"/>
+  <testcase name="dynamic11" classname="org.apache.jena.tdb.store.TestDynamicDatasetTDB" time="0.01"/>
+  <testcase name="dynamic12" classname="org.apache.jena.tdb.store.TestDynamicDatasetTDB" time="0.005"/>
+  <testcase name="dynamic13" classname="org.apache.jena.tdb.store.TestDynamicDatasetTDB" time="0.007"/>
+  <testcase name="dynamic14" classname="org.apache.jena.tdb.store.TestDynamicDatasetTDB" time="0.002"/>
+  <testcase name="store_0" classname="org.apache.jena.tdb.store.TestStoreConnectionsDirect" time="0.028"/>
+  <testcase name="store_1" classname="org.apache.jena.tdb.store.TestStoreConnectionsDirect" time="0.04"/>
+  <testcase name="store_2" classname="org.apache.jena.tdb.store.TestStoreConnectionsDirect" time="0.025"/>
+  <testcase name="store_3" classname="org.apache.jena.tdb.store.TestStoreConnectionsDirect" time="0.032"/>
+  <testcase name="store_4" classname="org.apache.jena.tdb.store.TestStoreConnectionsDirect" time="0.052"/>
+  <testcase name="store_5" classname="org.apache.jena.tdb.store.TestStoreConnectionsDirect" time="0.032"/>
+  <testcase name="store_6" classname="org.apache.jena.tdb.store.TestStoreConnectionsDirect" time="0.039"/>
+  <testcase name="store_7" classname="org.apache.jena.tdb.store.TestStoreConnectionsDirect" time="0.046"/>
+  <testcase name="store_0" classname="org.apache.jena.tdb.store.TestStoreConnectionsMapped" time="0.027"/>
+  <testcase name="store_1" classname="org.apache.jena.tdb.store.TestStoreConnectionsMapped" time="0.048"/>
+  <testcase name="store_2" classname="org.apache.jena.tdb.store.TestStoreConnectionsMapped" time="0.031"/>
+  <testcase name="store_3" classname="org.apache.jena.tdb.store.TestStoreConnectionsMapped" time="0.017"/>
+  <testcase name="store_4" classname="org.apache.jena.tdb.store.TestStoreConnectionsMapped" time="0.04"/>
+  <testcase name="store_5" classname="org.apache.jena.tdb.store.TestStoreConnectionsMapped" time="0.018"/>
+  <testcase name="store_6" classname="org.apache.jena.tdb.store.TestStoreConnectionsMapped" time="0.036"/>
+  <testcase name="store_7" classname="org.apache.jena.tdb.store.TestStoreConnectionsMapped" time="0.033"/>
+  <testcase name="location_lock_store_connection_01" classname="org.apache.jena.tdb.store.TestLocationLockStoreConnection" time="0.017"/>
+  <testcase name="location_lock_store_connection_02" classname="org.apache.jena.tdb.store.TestLocationLockStoreConnection" time="0">
+    <skipped/>
+  </testcase>
+</testsuite>

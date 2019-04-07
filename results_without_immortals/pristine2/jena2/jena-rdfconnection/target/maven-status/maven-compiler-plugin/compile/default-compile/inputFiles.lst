@@ -1,0 +1,15 @@
+/home/ubuntu/research/jena/jena-rdfconnection/src/main/java/org/apache/jena/rdfconnection/SparqlQueryConnection.java
+/home/ubuntu/research/jena/jena-rdfconnection/src/main/java/org/apache/jena/rdfconnection/RDFConnection.java
+/home/ubuntu/research/jena/jena-rdfconnection/src/main/java/org/apache/jena/rdfconnection/RDFDatasetAccessConnection.java
+/home/ubuntu/research/jena/jena-rdfconnection/src/main/java/org/apache/jena/rdfconnection/examples/RDFConnectionExample2.java
+/home/ubuntu/research/jena/jena-rdfconnection/src/main/java/org/apache/jena/rdfconnection/RDFConnectionFactory.java
+/home/ubuntu/research/jena/jena-rdfconnection/src/main/java/org/apache/jena/rdfconnection/RDFConnectionRemote.java
+/home/ubuntu/research/jena/jena-rdfconnection/src/main/java/org/apache/jena/rdfconnection/JenaConnectionException.java
+/home/ubuntu/research/jena/jena-rdfconnection/src/main/java/org/apache/jena/rdfconnection/RDFDatasetConnection.java
+/home/ubuntu/research/jena/jena-rdfconnection/src/main/java/org/apache/jena/rdfconnection/RDFConn.java
+/home/ubuntu/research/jena/jena-rdfconnection/src/main/java/org/apache/jena/rdfconnection/examples/RDFConnectionExample3.java
+/home/ubuntu/research/jena/jena-rdfconnection/src/main/java/org/apache/jena/rdfconnection/Isolation.java
+/home/ubuntu/research/jena/jena-rdfconnection/src/main/java/org/apache/jena/rdfconnection/RDFConnectionLocal.java
+/home/ubuntu/research/jena/jena-rdfconnection/src/main/java/org/apache/jena/rdfconnection/SparqlUpdateConnection.java
+/home/ubuntu/research/jena/jena-rdfconnection/src/main/java/org/apache/jena/rdfconnection/examples/RDFConnectionExample1.java
+/home/ubuntu/research/jena/jena-rdfconnection/src/main/java/org/apache/jena/rdfconnection/RDFConnectionModular.java

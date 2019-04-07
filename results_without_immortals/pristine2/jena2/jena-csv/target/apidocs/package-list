@@ -1,0 +1,5 @@
+org.apache.jena.propertytable
+org.apache.jena.propertytable.graph
+org.apache.jena.propertytable.impl
+org.apache.jena.propertytable.lang
+riotcmdx

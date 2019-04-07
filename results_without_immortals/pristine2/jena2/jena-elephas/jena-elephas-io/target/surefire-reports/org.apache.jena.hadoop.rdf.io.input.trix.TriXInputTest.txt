@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.jena.hadoop.rdf.io.input.trix.TriXInputTest
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 70.903 sec - in org.apache.jena.hadoop.rdf.io.input.trix.TriXInputTest

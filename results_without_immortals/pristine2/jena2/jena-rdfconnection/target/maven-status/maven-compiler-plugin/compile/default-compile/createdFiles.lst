@@ -1,0 +1,17 @@
+org/apache/jena/rdfconnection/RDFDatasetConnection.class
+org/apache/jena/rdfconnection/RDFConnectionFactory.class
+org/apache/jena/rdfconnection/JenaConnectionException.class
+org/apache/jena/rdfconnection/examples/RDFConnectionExample3.class
+org/apache/jena/rdfconnection/RDFConnectionRemote.class
+org/apache/jena/rdfconnection/Isolation.class
+org/apache/jena/rdfconnection/RDFConnectionLocal$1.class
+org/apache/jena/rdfconnection/examples/RDFConnectionExample1.class
+org/apache/jena/rdfconnection/RDFConnectionModular.class
+org/apache/jena/rdfconnection/SparqlUpdateConnection.class
+org/apache/jena/rdfconnection/RDFDatasetAccessConnection.class
+org/apache/jena/rdfconnection/RDFConnectionLocal.class
+org/apache/jena/rdfconnection/RDFConnection.class
+org/apache/jena/rdfconnection/RDFConnectionRemote$TxnLifecycle.class
+org/apache/jena/rdfconnection/RDFConn.class
+org/apache/jena/rdfconnection/examples/RDFConnectionExample2.class
+org/apache/jena/rdfconnection/SparqlQueryConnection.class

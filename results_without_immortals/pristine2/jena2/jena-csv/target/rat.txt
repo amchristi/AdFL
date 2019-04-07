@@ -1,0 +1,72 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2017-03-05T20:57:16-08:00
+Notes: 3
+Binaries: 0
+Archives: 0
+Standards: 32
+
+Apache Licensed: 32
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  N     /home/ubuntu/research/jena/jena-csv/LICENSE
+  N     /home/ubuntu/research/jena/jena-csv/NOTICE
+  AL    /home/ubuntu/research/jena/jena-csv/pom.xml
+  AL    /home/ubuntu/research/jena/jena-csv/src/test/java/org/apache/jena/propertytable/graph/GraphCSVTest.java
+  AL    /home/ubuntu/research/jena/jena-csv/src/test/java/org/apache/jena/propertytable/AbstractColumnTest.java
+  AL    /home/ubuntu/research/jena/jena-csv/src/test/java/org/apache/jena/propertytable/AbstractRowTest.java
+  AL    /home/ubuntu/research/jena/jena-csv/src/test/java/org/apache/jena/propertytable/AbstractPropertyTableTest.java
+  AL    /home/ubuntu/research/jena/jena-csv/src/test/java/org/apache/jena/propertytable/impl/PropertyTableBuilderForHashMapImplTest.java
+  AL    /home/ubuntu/research/jena/jena-csv/src/test/java/org/apache/jena/propertytable/impl/PropertyTableBuilderForArrayImplTest.java
+  AL    /home/ubuntu/research/jena/jena-csv/src/test/java/org/apache/jena/propertytable/impl/PropertyTableHashMapImplTest.java
+  AL    /home/ubuntu/research/jena/jena-csv/src/test/java/org/apache/jena/propertytable/impl/AbstractPropertyTableBuilderTest.java
+  AL    /home/ubuntu/research/jena/jena-csv/src/test/java/org/apache/jena/propertytable/impl/PropertyTableArrayImplTest.java
+  AL    /home/ubuntu/research/jena/jena-csv/src/test/java/org/apache/jena/propertytable/lang/TestLangCSV.java
+  AL    /home/ubuntu/research/jena/jena-csv/src/test/java/org/apache/jena/propertytable/BaseTest.java
+  AL    /home/ubuntu/research/jena/jena-csv/src/test/java/org/apache/jena/propertytable/TS_PropertyTable.java
+  AL    /home/ubuntu/research/jena/jena-csv/src/main/java/org/apache/jena/propertytable/graph/RowMatch.java
+  AL    /home/ubuntu/research/jena/jena-csv/src/main/java/org/apache/jena/propertytable/graph/GraphCSV.java
+  AL    /home/ubuntu/research/jena/jena-csv/src/main/java/org/apache/jena/propertytable/graph/QueryIterPropertyTableRow.java
+  AL    /home/ubuntu/research/jena/jena-csv/src/main/java/org/apache/jena/propertytable/graph/GraphPropertyTable.java
+  AL    /home/ubuntu/research/jena/jena-csv/src/main/java/org/apache/jena/propertytable/graph/QueryIterPropertyTable.java
+  AL    /home/ubuntu/research/jena/jena-csv/src/main/java/org/apache/jena/propertytable/graph/StageGeneratorPropertyTable.java
+  AL    /home/ubuntu/research/jena/jena-csv/src/main/java/org/apache/jena/propertytable/Row.java
+  AL    /home/ubuntu/research/jena/jena-csv/src/main/java/org/apache/jena/propertytable/Column.java
+  AL    /home/ubuntu/research/jena/jena-csv/src/main/java/org/apache/jena/propertytable/impl/PropertyTableHashMapImpl.java
+  AL    /home/ubuntu/research/jena/jena-csv/src/main/java/org/apache/jena/propertytable/impl/PropertyTableArrayImpl.java
+  AL    /home/ubuntu/research/jena/jena-csv/src/main/java/org/apache/jena/propertytable/impl/ColumnImpl.java
+  AL    /home/ubuntu/research/jena/jena-csv/src/main/java/org/apache/jena/propertytable/impl/PropertyTableBuilder.java
+  AL    /home/ubuntu/research/jena/jena-csv/src/main/java/org/apache/jena/propertytable/impl/InitJenaCSV.java
+  AL    /home/ubuntu/research/jena/jena-csv/src/main/java/org/apache/jena/propertytable/lang/ReaderRIOTLangCSV.java
+  AL    /home/ubuntu/research/jena/jena-csv/src/main/java/org/apache/jena/propertytable/lang/LangCSV.java
+  AL    /home/ubuntu/research/jena/jena-csv/src/main/java/org/apache/jena/propertytable/lang/ReaderRIOTFactoryCSV.java
+  AL    /home/ubuntu/research/jena/jena-csv/src/main/java/org/apache/jena/propertytable/lang/CSV2RDF.java
+  AL    /home/ubuntu/research/jena/jena-csv/src/main/java/org/apache/jena/propertytable/PropertyTable.java
+  AL    /home/ubuntu/research/jena/jena-csv/src/main/java/riotcmdx/csv2rdf.java
+  N     /home/ubuntu/research/jena/jena-csv/src/main/resources/META-INF/NOTICE
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 

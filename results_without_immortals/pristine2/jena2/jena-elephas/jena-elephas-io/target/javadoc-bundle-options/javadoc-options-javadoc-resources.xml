@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<javadocOptions>
+  <docletArtifacts>
+    <docletArtifact />
+  </docletArtifacts>
+  <tagletArtifacts>
+    <tagletArtifact />
+  </tagletArtifacts>
+  <links>
+    <link>http://jena.apache.org/documentation/javadoc/jena/</link>
+    <link>http://jena.apache.org/documentation/javadoc/arq/</link>
+    <link>http://jena.apache.org/documentation/javadoc/elephas/common/</link>
+  </links>
+  <javadocResourcesDirectory>src/main/javadoc</javadocResourcesDirectory>
+</javadocOptions>

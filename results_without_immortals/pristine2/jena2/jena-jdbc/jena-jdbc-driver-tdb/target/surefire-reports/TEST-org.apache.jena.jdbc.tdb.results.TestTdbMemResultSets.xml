@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="1.8" tests="221" errors="0" skipped="2" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.111-b14"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/ubuntu/research/jena"/>
+    <property name="java.runtime.version" value="1.8.0_111-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.2.0-27-generic"/>
+    <property name="user.home" value="/root"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="user.name" value="root"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_111"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="results_select_numeric_01" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.047"/>
+  <testcase name="results_select_numeric_02" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.016"/>
+  <testcase name="results_construct_numerics_01" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.005"/>
+  <testcase name="results_construct_numerics_02" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.015"/>
+  <testcase name="results_select_strings_01" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.018"/>
+  <testcase name="results_select_strings_02" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.011"/>
+  <testcase name="results_select_strings_03" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.007"/>
+  <testcase name="results_select_strings_04" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.008"/>
+  <testcase name="results_select_floats_01" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.017"/>
+  <testcase name="results_select_floats_02" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.005"/>
+  <testcase name="results_warnings_01" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.008"/>
+  <testcase name="results_warnings_02" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_warnings_03" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.008"/>
+  <testcase name="results_warnings_04" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.008"/>
+  <testcase name="results_warnings_05" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.005"/>
+  <testcase name="results_select_shorts_01" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.008"/>
+  <testcase name="results_select_shorts_02" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.015"/>
+  <testcase name="results_construct_strings_01" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.009"/>
+  <testcase name="results_construct_strings_02" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.014"/>
+  <testcase name="results_construct_strings_03" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.011"/>
+  <testcase name="results_construct_strings_04" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.01"/>
+  <testcase name="results_ask_true" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_construct_integers_01" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.005"/>
+  <testcase name="results_construct_integers_02" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.016"/>
+  <testcase name="results_ask_false" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.001"/>
+  <testcase name="results_select_boolean_01" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.016"/>
+  <testcase name="results_select_boolean_02" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.015"/>
+  <testcase name="results_select_urls_01" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_select_urls_02" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.007"/>
+  <testcase name="results_select_movement_01" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.011"/>
+  <testcase name="results_select_movement_02" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.004"/>
+  <testcase name="results_select_movement_03" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_select_movement_04" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.008"/>
+  <testcase name="results_select_movement_05" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.004"/>
+  <testcase name="results_select_movement_06" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.072"/>
+  <testcase name="results_select_movement_07" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.005"/>
+  <testcase name="results_select_movement_08" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_select_movement_09" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.009"/>
+  <testcase name="results_construct_dates_01" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.01"/>
+  <testcase name="results_construct_dates_02" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.006"/>
+  <testcase name="results_construct_dates_03" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.007"/>
+  <testcase name="results_bad_wrapper_01" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.004"/>
+  <testcase name="results_bad_wrapper_02" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.008"/>
+  <testcase name="results_construct_longs_01" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.005"/>
+  <testcase name="results_construct_longs_02" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.011"/>
+  <testcase name="results_bad_updates_01" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.004"/>
+  <testcase name="results_bad_updates_02" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_bad_updates_03" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.005"/>
+  <testcase name="results_bad_updates_04" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_bad_updates_05" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.005"/>
+  <testcase name="results_bad_updates_06" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_bad_updates_07" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.03"/>
+  <testcase name="results_bad_updates_08" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_bad_updates_09" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_bad_updates_10" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.005"/>
+  <testcase name="results_bad_updates_11" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.005"/>
+  <testcase name="results_bad_updates_12" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_bad_updates_13" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.006"/>
+  <testcase name="results_bad_updates_14" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_bad_updates_15" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.005"/>
+  <testcase name="results_bad_updates_16" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.005"/>
+  <testcase name="results_bad_updates_17" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.006"/>
+  <testcase name="results_bad_updates_18" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_bad_updates_19" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_bad_updates_20" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.004"/>
+  <testcase name="results_bad_updates_21" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.007"/>
+  <testcase name="results_bad_updates_22" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.01"/>
+  <testcase name="results_bad_updates_23" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.004"/>
+  <testcase name="results_bad_updates_24" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.051"/>
+  <testcase name="results_bad_updates_25" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.004"/>
+  <testcase name="results_bad_updates_26" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.007"/>
+  <testcase name="results_bad_updates_27" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_bad_updates_28" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_bad_updates_29" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.007"/>
+  <testcase name="results_bad_updates_30" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_bad_updates_31" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.004"/>
+  <testcase name="results_bad_updates_32" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.015"/>
+  <testcase name="results_bad_updates_33" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_bad_updates_34" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_bad_updates_35" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_bad_updates_36" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_bad_updates_37" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_bad_updates_38" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.004"/>
+  <testcase name="results_bad_updates_39" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_bad_updates_40" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.007"/>
+  <testcase name="results_bad_updates_41" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.059"/>
+  <testcase name="results_bad_updates_42" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_bad_updates_43" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.005"/>
+  <testcase name="results_bad_updates_44" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_bad_updates_45" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_bad_updates_46" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_bad_updates_47" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_bad_updates_48" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_bad_updates_49" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_bad_updates_50" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_bad_updates_51" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.001"/>
+  <testcase name="results_bad_updates_52" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_bad_updates_53" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.01"/>
+  <testcase name="results_bad_updates_54" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_bad_updates_55" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.006"/>
+  <testcase name="results_bad_updates_56" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_bad_updates_57" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_bad_updates_58" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.016"/>
+  <testcase name="results_bad_updates_59" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.001"/>
+  <testcase name="results_bad_updates_60" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_bad_updates_61" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.005"/>
+  <testcase name="results_bad_updates_62" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.001"/>
+  <testcase name="results_bad_updates_63" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.006"/>
+  <testcase name="results_bad_updates_64" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_bad_updates_65" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_bad_updates_66" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.004"/>
+  <testcase name="results_bad_updates_67" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_bad_updates_68" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_bad_updates_69" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.001"/>
+  <testcase name="results_bad_updates_70" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_bad_updates_71" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.006"/>
+  <testcase name="results_bad_updates_72" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_bad_updates_73" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_bad_updates_74" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.006"/>
+  <testcase name="results_bad_updates_75" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.062"/>
+  <testcase name="results_bad_updates_76" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_bad_updates_77" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_bad_updates_78" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.006"/>
+  <testcase name="results_bad_updates_79" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_bad_updates_80" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.006"/>
+  <testcase name="results_bad_updates_81" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_bad_updates_82" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_bad_updates_83" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_bad_updates_84" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_bad_updates_85" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.006"/>
+  <testcase name="results_bad_updates_86" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.01"/>
+  <testcase name="results_bad_updates_87" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_bad_updates_88" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.004"/>
+  <testcase name="results_bad_updates_89" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.001"/>
+  <testcase name="results_bad_updates_90" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.001"/>
+  <testcase name="results_bad_updates_91" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_bad_updates_92" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.073"/>
+  <testcase name="results_bad_updates_93" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.004"/>
+  <testcase name="results_select_doubles_01" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.01"/>
+  <testcase name="results_select_doubles_02" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.005"/>
+  <testcase name="results_select_integers_01" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.005"/>
+  <testcase name="results_select_integers_02" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.009"/>
+  <testcase name="results_getters_unsupported_01" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_getters_unsupported_02" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_getters_unsupported_03" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.007"/>
+  <testcase name="results_getters_unsupported_04" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_getters_unsupported_05" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_getters_unsupported_06" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.009"/>
+  <testcase name="results_getters_unsupported_07" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_getters_unsupported_08" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.006"/>
+  <testcase name="results_getters_unsupported_09" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.004"/>
+  <testcase name="results_getters_unsupported_10" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.005"/>
+  <testcase name="results_getters_unsupported_11" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_getters_unsupported_12" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.011"/>
+  <testcase name="results_getters_unsupported_13" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_getters_unsupported_14" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_getters_unsupported_15" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.004"/>
+  <testcase name="results_getters_unsupported_16" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_getters_unsupported_17" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.006"/>
+  <testcase name="results_getters_unsupported_18" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.007"/>
+  <testcase name="results_getters_unsupported_19" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.001"/>
+  <testcase name="results_getters_unsupported_20" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.005"/>
+  <testcase name="results_getters_unsupported_21" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_getters_unsupported_22" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.001"/>
+  <testcase name="results_getters_unsupported_23" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_getters_unsupported_24" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.006"/>
+  <testcase name="results_getters_unsupported_25" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_getters_unsupported_26" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_getters_unsupported_27" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_getters_unsupported_28" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_getters_unsupported_29" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.014"/>
+  <testcase name="results_getters_unsupported_30" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_getters_unsupported_31" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_getters_unsupported_32" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.004"/>
+  <testcase name="results_getters_unsupported_33" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_getters_unsupported_34" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.007"/>
+  <testcase name="results_getters_unsupported_35" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_getters_unsupported_36" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.004"/>
+  <testcase name="results_getters_unsupported_37" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.006"/>
+  <testcase name="results_getters_unsupported_38" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.009"/>
+  <testcase name="results_construct_bytes_01" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.004"/>
+  <testcase name="results_construct_bytes_02" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_select_objects_01" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.008"/>
+  <testcase name="results_select_objects_02" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_select_objects_03" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_select_objects_04" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_select_objects_05" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.007"/>
+  <testcase name="results_select_objects_06" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.012"/>
+  <testcase name="results_select_objects_07" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_select_objects_08" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_select_objects_09" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.006"/>
+  <testcase name="results_select_objects_10" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="results_select_objects_11" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="results_construct_doubles_01" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.006"/>
+  <testcase name="results_construct_doubles_02" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.006"/>
+  <testcase name="results_select_dates_01" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.004"/>
+  <testcase name="results_select_dates_02" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.007"/>
+  <testcase name="results_select_dates_03" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.008"/>
+  <testcase name="results_select_dates_04" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_select_dates_05" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_select_dates_06" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.005"/>
+  <testcase name="results_bad_creation_01" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0"/>
+  <testcase name="results_construct_floats_01" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_construct_floats_02" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.005"/>
+  <testcase name="results_select_longs_01" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.005"/>
+  <testcase name="results_select_longs_02" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_construct_shorts_01" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.012"/>
+  <testcase name="results_construct_shorts_02" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_construct_movement_01" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_construct_movement_02" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_construct_movement_03" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.003"/>
+  <testcase name="results_construct_movement_04" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_construct_movement_05" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_construct_movement_06" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.005"/>
+  <testcase name="results_construct_movement_07" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_construct_movement_08" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.005"/>
+  <testcase name="results_construct_movement_09" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_select_bytes_01" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.009"/>
+  <testcase name="results_select_bytes_02" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.01"/>
+  <testcase name="results_construct_urls_01" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.002"/>
+  <testcase name="results_construct_urls_02" classname="org.apache.jena.jdbc.tdb.results.TestTdbMemResultSets" time="0.006"/>
+</testsuite>

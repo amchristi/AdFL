@@ -1,0 +1,11 @@
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/test/java/org/apache/jena/jdbc/metadata/results/TestMetaResultSet.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/test/java/org/apache/jena/jdbc/results/AbstractResultSetTests.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/test/java/org/apache/jena/jdbc/utils/TestUtils.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/test/java/org/apache/jena/jdbc/preprocessing/Echo.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/test/java/org/apache/jena/jdbc/TestCompatibility.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/test/java/org/apache/jena/jdbc/postprocessing/ResultsEcho.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/test/java/org/apache/jena/jdbc/AbstractJenaDriverTests.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/test/java/org/apache/jena/jdbc/metadata/results/AbstractDatabaseMetadataTests.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/test/java/org/apache/jena/jdbc/connections/AbstractJenaConnectionTests.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/test/java/org/apache/jena/jdbc/statements/AbstractJenaStatementTests.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/test/java/org/apache/jena/jdbc/TS_JdbcCore.java

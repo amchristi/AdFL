@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.jena.jdbc.remote.results.TestRemoteEndpointResultsWithGraphUris
+-------------------------------------------------------------------------------
+Tests run: 221, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.76 sec - in org.apache.jena.jdbc.remote.results.TestRemoteEndpointResultsWithGraphUris

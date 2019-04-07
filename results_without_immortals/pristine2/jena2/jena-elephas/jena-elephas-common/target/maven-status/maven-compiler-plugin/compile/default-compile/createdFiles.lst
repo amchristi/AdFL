@@ -1,0 +1,9 @@
+org/apache/jena/hadoop/rdf/types/CharacteristicWritable.class
+org/apache/jena/hadoop/rdf/types/AbstractNodeTupleWritable.class
+org/apache/jena/hadoop/rdf/types/NodeWritable.class
+org/apache/jena/hadoop/rdf/types/TripleWritable.class
+org/apache/jena/hadoop/rdf/types/NodeTupleWritable.class
+org/apache/jena/hadoop/rdf/types/converters/ThriftConverter.class
+org/apache/jena/hadoop/rdf/types/QuadWritable.class
+org/apache/jena/hadoop/rdf/types/CharacteristicSetWritable.class
+org/apache/jena/hadoop/rdf/types/comparators/SimpleBinaryComparator.class

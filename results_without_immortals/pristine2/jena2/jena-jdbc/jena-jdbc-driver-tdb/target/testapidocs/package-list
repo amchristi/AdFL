@@ -1,0 +1,4 @@
+org.apache.jena.jdbc.tdb
+org.apache.jena.jdbc.tdb.connections
+org.apache.jena.jdbc.tdb.metadata
+org.apache.jena.jdbc.tdb.results

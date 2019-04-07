@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.jena.jdbc.remote.connections.TestRemoteEndpointConnectionWithGraphUris
+-------------------------------------------------------------------------------
+Tests run: 99, Failures: 0, Errors: 0, Skipped: 8, Time elapsed: 1.125 sec - in org.apache.jena.jdbc.remote.connections.TestRemoteEndpointConnectionWithGraphUris

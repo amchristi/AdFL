@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.jena.rdfconnection.TS_RDFConnection
+-------------------------------------------------------------------------------
+Tests run: 60, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 2.03 sec - in org.apache.jena.rdfconnection.TS_RDFConnection

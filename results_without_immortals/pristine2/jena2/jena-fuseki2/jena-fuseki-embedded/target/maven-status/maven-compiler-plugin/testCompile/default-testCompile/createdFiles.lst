@@ -1,0 +1,7 @@
+org/apache/jena/fuseki/embedded/TestMultipleEmbedded$1.class
+org/apache/jena/fuseki/embedded/TS_EmbeddedFuseki.class
+org/apache/jena/fuseki/embedded/TestEmbeddedFuseki$1.class
+org/apache/jena/fuseki/embedded/TestMultipleEmbedded.class
+org/apache/jena/fuseki/embedded/FusekiTestServer$ServerScope.class
+org/apache/jena/fuseki/embedded/FusekiTestServer.class
+org/apache/jena/fuseki/embedded/TestEmbeddedFuseki.class

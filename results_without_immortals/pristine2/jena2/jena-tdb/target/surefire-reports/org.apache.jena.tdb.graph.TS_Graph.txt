@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.jena.tdb.graph.TS_Graph
+-------------------------------------------------------------------------------
+Tests run: 86, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 2.338 sec - in org.apache.jena.tdb.graph.TS_Graph

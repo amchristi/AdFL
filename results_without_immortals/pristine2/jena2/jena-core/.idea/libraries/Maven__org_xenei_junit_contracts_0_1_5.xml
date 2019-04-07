@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.xenei:junit-contracts:0.1.5">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/xenei/junit-contracts/0.1.5/junit-contracts-0.1.5.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/xenei/junit-contracts/0.1.5/junit-contracts-0.1.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/xenei/junit-contracts/0.1.5/junit-contracts-0.1.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

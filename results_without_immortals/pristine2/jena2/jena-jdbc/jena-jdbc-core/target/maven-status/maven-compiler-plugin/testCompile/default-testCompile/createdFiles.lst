@@ -1,0 +1,11 @@
+org/apache/jena/jdbc/statements/AbstractJenaStatementTests.class
+org/apache/jena/jdbc/metadata/results/TestMetaResultSet.class
+org/apache/jena/jdbc/AbstractJenaDriverTests.class
+org/apache/jena/jdbc/preprocessing/Echo.class
+org/apache/jena/jdbc/metadata/results/AbstractDatabaseMetadataTests.class
+org/apache/jena/jdbc/results/AbstractResultSetTests.class
+org/apache/jena/jdbc/TestCompatibility.class
+org/apache/jena/jdbc/connections/AbstractJenaConnectionTests.class
+org/apache/jena/jdbc/utils/TestUtils.class
+org/apache/jena/jdbc/postprocessing/ResultsEcho.class
+org/apache/jena/jdbc/TS_JdbcCore.class

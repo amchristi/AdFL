@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<javadocOptions>
+  <groups>
+    <group>
+      <title>JDBC Core</title>
+      <packages>org.apache.jena.jdbc*</packages>
+    </group>
+    <group>
+      <title>In-Memory Driver</title>
+      <packages>org.apache.jena.jdbc.mem*</packages>
+    </group>
+    <group>
+      <title>TDB Driver</title>
+      <packages>org.apache.jena.jdbc.tdb*</packages>
+    </group>
+    <group>
+      <title>Remote Endpoint Driver</title>
+      <packages>org.apache.jena.jdbc.remote*</packages>
+    </group>
+  </groups>
+  <docletArtifacts>
+    <docletArtifact />
+  </docletArtifacts>
+  <tagletArtifacts>
+    <tagletArtifact />
+  </tagletArtifacts>
+  <links>
+    <link>http://jena.apache.org/documentation/javadoc/jena/</link>
+    <link>http://jena.apache.org/documentation/javadoc/arq/</link>
+    <link>http://jena.apache.org/documentation/javadoc/tdb/</link>
+    <link>http://jena.apache.org/documentation/javadoc/text/</link>
+    <link>http://jena.apache.org/documentation/javadoc/spatial/</link>
+    <link>http://jena.apache.org/documentation/javadoc/fuseki2/</link>
+    <link>http://jena.apache.org/documentation/javadoc/permissions/</link>
+    <link>http://jena.apache.org/documentation/javadoc/jdbc/</link>
+    <link>http://jena.apache.org/documentation/javadoc/elephas/</link>
+  </links>
+  <javadocResourcesDirectory>src/main/javadoc</javadocResourcesDirectory>
+</javadocOptions>

@@ -1,0 +1,49 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2017-03-05T21:01:54-08:00
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 12
+
+Apache Licensed: 12
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-common/pom.xml
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-common/src/test/java/org/apache/jena/hadoop/rdf/io/types/RdfTypesTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-common/src/test/java/org/apache/jena/hadoop/rdf/io/types/CharacteristicTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-common/src/main/java/org/apache/jena/hadoop/rdf/types/comparators/SimpleBinaryComparator.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-common/src/main/java/org/apache/jena/hadoop/rdf/types/TripleWritable.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-common/src/main/java/org/apache/jena/hadoop/rdf/types/NodeTupleWritable.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-common/src/main/java/org/apache/jena/hadoop/rdf/types/CharacteristicSetWritable.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-common/src/main/java/org/apache/jena/hadoop/rdf/types/CharacteristicWritable.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-common/src/main/java/org/apache/jena/hadoop/rdf/types/NodeWritable.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-common/src/main/java/org/apache/jena/hadoop/rdf/types/QuadWritable.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-common/src/main/java/org/apache/jena/hadoop/rdf/types/AbstractNodeTupleWritable.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-common/src/main/java/org/apache/jena/hadoop/rdf/types/converters/ThriftConverter.java
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 

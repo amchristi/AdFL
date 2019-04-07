@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<javadocOptions>
+  <groups>
+    <group>
+      <title>API - Application Programming Interface</title>
+      <packages>org.apache.jena.db:org.apache.jena.rdf.model:org.apache.jena.rdf.listeners:org.apache.jena.rdf.arp:org.apache.jena.rdf.arp.lang:org.apache.jena.datatypes:org.apache.jena.datatypes.xsd:org.apache.jena.rdql:org.apache.jena.shared:org.apache.jena.vocabulary:org.apache.jena.xmloutput:org.apache.jena.ontology:org.apache.jena.ontology.daml:org.apache.jena.reasoner:org.apache.jena.reasoner.rulesys:org.apache.jena.reasoner.rulesys.builtins:org.apache.jena.reasoner.transitiveReasoner:org.apache.jena.reasoner.dig</packages>
+    </group>
+    <group>
+      <title>SPI - System Programming Interface</title>
+      <packages>org.apache.jena.enhanced:org.apache.jena.graph:org.apache.jena.graph.compose:org.apache.jena.graph.query:org.apache.jena.util:org.apache.jena.util.iterator</packages>
+    </group>
+    <group>
+      <title>Command line tools</title>
+      <packages>jena</packages>
+    </group>
+    <group>
+      <title>Other Packages</title>
+      <packages>org.apache.jena.assembler</packages>
+    </group>
+  </groups>
+  <docletArtifacts>
+    <docletArtifact />
+  </docletArtifacts>
+  <tagletArtifacts>
+    <tagletArtifact />
+  </tagletArtifacts>
+  <links>
+    <link>http://jena.apache.org/documentation/javadoc/jena/</link>
+    <link>http://jena.apache.org/documentation/javadoc/arq/</link>
+    <link>http://jena.apache.org/documentation/javadoc/tdb/</link>
+    <link>http://jena.apache.org/documentation/javadoc/text/</link>
+    <link>http://jena.apache.org/documentation/javadoc/spatial/</link>
+    <link>http://jena.apache.org/documentation/javadoc/fuseki2/</link>
+    <link>http://jena.apache.org/documentation/javadoc/permissions/</link>
+    <link>http://jena.apache.org/documentation/javadoc/jdbc/</link>
+    <link>http://jena.apache.org/documentation/javadoc/elephas/</link>
+  </links>
+  <excludePackageNames>
+    <excludePackageName>org.apache.jena.n3</excludePackageName>
+    <excludePackageName>org.apache.jena.n3.*</excludePackageName>
+  </excludePackageNames>
+  <javadocResourcesDirectory>src/main/javadoc</javadocResourcesDirectory>
+</javadocOptions>

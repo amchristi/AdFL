@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.jena.tdb.index.TS_Index
+-------------------------------------------------------------------------------
+Tests run: 89, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.181 sec - in org.apache.jena.tdb.index.TS_Index

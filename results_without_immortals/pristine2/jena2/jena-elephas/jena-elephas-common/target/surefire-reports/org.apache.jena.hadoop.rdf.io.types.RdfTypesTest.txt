@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.jena.hadoop.rdf.io.types.RdfTypesTest
+-------------------------------------------------------------------------------
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 1.243 sec - in org.apache.jena.hadoop.rdf.io.types.RdfTypesTest

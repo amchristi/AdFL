@@ -1,0 +1,12 @@
+org.apache.jena.fuseki
+org.apache.jena.fuseki.async
+org.apache.jena.fuseki.authz
+org.apache.jena.fuseki.build
+org.apache.jena.fuseki.cmd
+org.apache.jena.fuseki.conneg
+org.apache.jena.fuseki.jetty
+org.apache.jena.fuseki.mgt
+org.apache.jena.fuseki.migrate
+org.apache.jena.fuseki.server
+org.apache.jena.fuseki.servlets
+org.apache.jena.fuseki.validation

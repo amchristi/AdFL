@@ -1,0 +1,5 @@
+org/apache/jena/jdbc/remote/RemoteEndpointDriver.class
+org/apache/jena/jdbc/remote/statements/RemoteEndpointStatement.class
+org/apache/jena/jdbc/remote/statements/RemoteEndpointPreparedStatement.class
+org/apache/jena/jdbc/remote/connections/RemoteEndpointConnection.class
+org/apache/jena/jdbc/remote/metadata/RemoteEndpointMetadata.class

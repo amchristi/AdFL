@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.jena.jdbc.remote.metadata.TestRemoteConnectionMetadata
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.105 sec - in org.apache.jena.jdbc.remote.metadata.TestRemoteConnectionMetadata

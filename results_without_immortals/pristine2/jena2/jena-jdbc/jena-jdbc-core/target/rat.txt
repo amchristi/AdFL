@@ -1,0 +1,101 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2017-03-05T20:59:37-08:00
+Notes: 2
+Binaries: 0
+Archives: 0
+Standards: 62
+
+Apache Licensed: 62
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  N     /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/LICENSE
+  N     /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/NOTICE
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/pom.xml
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/test/java/org/apache/jena/jdbc/postprocessing/ResultsEcho.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/test/java/org/apache/jena/jdbc/statements/AbstractJenaStatementTests.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/test/java/org/apache/jena/jdbc/TestCompatibility.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/test/java/org/apache/jena/jdbc/AbstractJenaDriverTests.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/test/java/org/apache/jena/jdbc/metadata/results/TestMetaResultSet.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/test/java/org/apache/jena/jdbc/metadata/results/AbstractDatabaseMetadataTests.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/test/java/org/apache/jena/jdbc/TS_JdbcCore.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/test/java/org/apache/jena/jdbc/connections/AbstractJenaConnectionTests.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/test/java/org/apache/jena/jdbc/preprocessing/Echo.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/test/java/org/apache/jena/jdbc/results/AbstractResultSetTests.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/test/java/org/apache/jena/jdbc/utils/TestUtils.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/MethodTraceLogger.aj
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/postprocessing/ResultsPostProcessor.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/JenaDriver.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/JdbcCompatibility.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/statements/DatasetStatement.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/statements/metadata/JenaParameterMetadata.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/statements/DatasetPreparedStatement.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/statements/JenaPreparedStatement.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/statements/JenaStatement.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/metadata/MetadataSchema.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/metadata/DatasetMetadata.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/metadata/JenaMetadata.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/metadata/results/MetaResultSetMetadata.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/metadata/results/MetaResultSet.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/connections/DatasetConnection.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/connections/JenaConnection.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/preprocessing/CommandPreProcessor.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/results/TripleListResults.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/results/QueryExecutionResults.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/results/MaterializedResults.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/results/AskResults.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/results/MaterializedSelectResults.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/results/JenaResultSet.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/results/metadata/TripleResultsMetadata.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/results/metadata/SelectResultsMetadata.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/results/metadata/AskResultsMetadata.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/results/metadata/JenaResultsMetadata.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/results/metadata/AbstractResultsMetadata.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/results/metadata/columns/ColumnInfo.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/results/metadata/columns/DecimalColumn.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/results/metadata/columns/IntegerColumn.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/results/metadata/columns/LongIntegerColumn.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/results/metadata/columns/FloatColumn.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/results/metadata/columns/SparqlColumnInfo.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/results/metadata/columns/StringColumn.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/results/metadata/columns/ShortIntegerColumn.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/results/metadata/columns/TimeColumn.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/results/metadata/columns/DateColumn.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/results/metadata/columns/ByteColumn.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/results/metadata/columns/NumericColumn.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/results/metadata/columns/BooleanColumn.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/results/metadata/columns/DoubleColumn.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/results/metadata/columns/DateTimeColumn.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/results/TripleIteratorResults.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/results/StreamedResults.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/results/SelectResults.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/utils/JdbcNodeUtils.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/java/org/apache/jena/jdbc/JenaJDBC.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/resources/jena-jdbc-log4j.properties
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-core/src/main/resources/org/apache/jena/jdbc/jdbc-properties.xml
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 

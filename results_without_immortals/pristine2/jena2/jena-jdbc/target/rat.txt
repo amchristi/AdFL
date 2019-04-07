@@ -1,0 +1,41 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2017-03-05T20:59:36-08:00
+Notes: 3
+Binaries: 0
+Archives: 0
+Standards: 1
+
+Apache Licensed: 1
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  N     /home/ubuntu/research/jena/jena-jdbc/LICENSE
+  N     /home/ubuntu/research/jena/jena-jdbc/README
+  N     /home/ubuntu/research/jena/jena-jdbc/NOTICE
+  AL    /home/ubuntu/research/jena/jena-jdbc/pom.xml
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 

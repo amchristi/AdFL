@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.jena.jdbc.mem.statements.TestMemStatements
+-------------------------------------------------------------------------------
+Tests run: 183, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.584 sec - in org.apache.jena.jdbc.mem.statements.TestMemStatements

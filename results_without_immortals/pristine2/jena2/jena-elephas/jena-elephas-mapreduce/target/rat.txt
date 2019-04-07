@@ -1,0 +1,152 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2017-02-27T21:36:33-08:00
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 115
+
+Apache Licensed: 115
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/pom.xml
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/count/AbstractNodeTupleNodeCountReducedTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/count/QuadNodeCountMapReduceTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/count/TripleNodeCountMapReduceTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/count/TripleNodeCountMapperTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/count/AbstractNodeTupleNodeCountTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/count/QuadNodeCountMapperTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/split/AbstractNodeTupleSplitWithNodesTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/split/TripleSplitWithNodesMapperTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/split/AbstractTripleSplitWithNodesTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/split/AbstractQuadSplitToNodesTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/split/AbstractQuadSplitWithNodesTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/split/QuadSplitWithNodesMapperTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/split/QuadSplitToNodesMapperTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/split/TripleSplitToNodesMapperTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/split/AbstractTripleSplitToNodesTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/split/AbstractNodeTupleSplitToNodesTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/AbstractMapperTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/transform/TriplesToQuadsBySubjectMapperTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/transform/TriplesToQuadsConstantGraphMapperTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/transform/QuadsToTriplesMapperTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/group/QuadGroupBySubjectMapperTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/group/QuadGroupByObjectMapperTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/group/TripleGroupByPredicateMapperTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/group/TripleGroupBySubjectMapperTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/group/TripleGroupByObjectMapperTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/group/AbstractNodeTupleGroupingTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/group/AbstractQuadGroupingTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/group/AbstractTripleGroupingTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/group/QuadGroupByPredicateMapperTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/group/QuadGroupByGraphMapperTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/filter/ValidTripleFilterMapperTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/filter/TripleFilterByNoPredicateMapperTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/filter/AbstractQuadValidityFilterTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/filter/ValidQuadFilterMapperTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/filter/TripleInvertedFilterByPredicateMapperTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/filter/TripleInvertedFilterByNoPredicateMapperTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/filter/AbstractNodeTupleFilterTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/filter/TripleFilterByPredicateMapperTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/filter/AbstractTripleValidityFilterTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/AbstractMapReduceTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/characteristics/TripleCharacteristicSetGeneratingReducerTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/characteristics/CharacteristicSetReducerTest.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/characteristics/AbstractCharacteristicSetGeneratingReducerTests.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/test/java/org/apache/jena/hadoop/rdf/mapreduce/TestDistinctTriples.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/count/NodeCountReducer.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/count/positional/QuadPredicateCountMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/count/positional/QuadObjectCountMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/count/positional/QuadSubjectCountMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/count/positional/TripleSubjectCountMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/count/positional/TriplePredicateCountMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/count/positional/QuadGraphCountMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/count/positional/TripleObjectCountMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/count/AbstractNodeTupleNodeCountMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/count/TripleNodeCountMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/count/QuadNodeCountMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/count/datatypes/QuadDataTypeCountMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/count/datatypes/TripleDataTypeCountMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/count/namespaces/QuadNamespaceCountMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/count/namespaces/TripleNamespaceCountMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/count/namespaces/AbstractNodeTupleNamespaceCountMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/split/TripleSplitToNodesMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/split/AbstractNodeTupleSplitToNodesMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/split/QuadSplitToNodesMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/split/AbstractNodeTupleSplitWithNodesMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/split/QuadSplitWithNodesMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/split/TripleSplitWithNodesMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/KeyMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/KeyReducer.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/NullPlusValueReducer.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/transform/QuadsToTriplesMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/transform/TriplesToQuadsConstantGraphMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/transform/AbstractTriplesToQuadsMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/transform/TriplesToQuadsBySubjectMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/TextCountReducer.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/KeyPlusNullMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/NullPlusKeyReducer.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/NullPlusKeyMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/group/TripleGroupByPredicateMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/group/AbstractQuadGroupingMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/group/TripleGroupBySubjectMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/group/QuadGroupBySubjectMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/group/QuadGroupByGraphMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/group/AbstractTripleGroupingMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/group/TripleGroupByObjectMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/group/AbstractNodeTupleGroupingMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/group/QuadGroupByObjectMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/group/QuadGroupByPredicateMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/NullPlusValueMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/ValuePlusNullMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/filter/GroundTripleFilterMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/filter/GroundQuadFilterMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/filter/AbstractTripleFilterMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/filter/AbstractQuadFilterMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/filter/AbstractNodeTupleFilterMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/filter/positional/TripleFilterBySubjectUriMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/filter/positional/AbstractQuadFilterByPositionMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/filter/positional/QuadFilterByPredicateMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/filter/positional/QuadFilterByGraphUriMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/filter/positional/AbstractTripleFilterByPositionMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/filter/positional/QuadFilterByObjectUriMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/filter/positional/QuadFilterBySubjectUriMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/filter/positional/TripleFilterByObjectUriMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/filter/positional/TripleFilterByPredicateUriMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/filter/ValidQuadFilterMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/filter/ValidTripleFilterMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/SwapMapper.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/characteristics/AbstractCharacteristicSetGeneratingReducer.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/characteristics/CharacteristicSetReducer.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/characteristics/QuadCharacteristicSetGeneratingReducer.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/characteristics/TripleCharacteristicSetGeneratingReducer.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/SwapReducer.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/ValueReducer.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/RdfMapReduceConstants.java
+  AL    /home/ubuntu/research/jena/jena-elephas/jena-elephas-mapreduce/src/main/java/org/apache/jena/hadoop/rdf/mapreduce/ValueMapper.java
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 

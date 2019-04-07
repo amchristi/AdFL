@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.apache.jena.sparql.modify.TS_Update" time="0.676" tests="69" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.111-b14"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/ubuntu/research/jena"/>
+    <property name="java.runtime.version" value="1.8.0_111-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.2.0-27-generic"/>
+    <property name="user.home" value="/root"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="user.name" value="root"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_111"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testUpdateScript1" classname="org.apache.jena.sparql.modify.TestUpdateGraphMem" time="0.19"/>
+  <testcase name="testUpdateScript2" classname="org.apache.jena.sparql.modify.TestUpdateGraphMem" time="0.004"/>
+  <testcase name="testUpdateScript3" classname="org.apache.jena.sparql.modify.TestUpdateGraphMem" time="0.003"/>
+  <testcase name="testUpdateScript4" classname="org.apache.jena.sparql.modify.TestUpdateGraphMem" time="0.005"/>
+  <testcase name="testUpdateScript5" classname="org.apache.jena.sparql.modify.TestUpdateGraphMem" time="0.008"/>
+  <testcase name="testUpdateScript6" classname="org.apache.jena.sparql.modify.TestUpdateGraphMem" time="0.004"/>
+  <testcase name="testUpdateScript7" classname="org.apache.jena.sparql.modify.TestUpdateGraphMem" time="0.012"/>
+  <testcase name="testUpdateScript8" classname="org.apache.jena.sparql.modify.TestUpdateGraphMem" time="0.117"/>
+  <testcase name="testDeleteData1" classname="org.apache.jena.sparql.modify.TestUpdateGraphMem" time="0.001"/>
+  <testcase name="testDeleteData2" classname="org.apache.jena.sparql.modify.TestUpdateGraphMem" time="0"/>
+  <testcase name="testCopy" classname="org.apache.jena.sparql.modify.TestUpdateGraphMem" time="0.03"/>
+  <testcase name="testUpdateBad1" classname="org.apache.jena.sparql.modify.TestUpdateGraphMem" time="0.003"/>
+  <testcase name="testUpdateBad2" classname="org.apache.jena.sparql.modify.TestUpdateGraphMem" time="0.03"/>
+  <testcase name="testUpdateBad3" classname="org.apache.jena.sparql.modify.TestUpdateGraphMem" time="0.005"/>
+  <testcase name="testInsertData1" classname="org.apache.jena.sparql.modify.TestUpdateGraphMem" time="0.001"/>
+  <testcase name="testModifyInitialBindings" classname="org.apache.jena.sparql.modify.TestUpdateGraphMem" time="0.028"/>
+  <testcase name="testModify1" classname="org.apache.jena.sparql.modify.TestUpdateGraphMem" time="0.005"/>
+  <testcase name="testModify2" classname="org.apache.jena.sparql.modify.TestUpdateGraphMem" time="0.011"/>
+  <testcase name="testDelete1" classname="org.apache.jena.sparql.modify.TestUpdateGraphMem" time="0.004"/>
+  <testcase name="testDelete2" classname="org.apache.jena.sparql.modify.TestUpdateGraphMem" time="0.002"/>
+  <testcase name="testDelete3" classname="org.apache.jena.sparql.modify.TestUpdateGraphMem" time="0"/>
+  <testcase name="testDelete4" classname="org.apache.jena.sparql.modify.TestUpdateGraphMem" time="0.001"/>
+  <testcase name="testDelete5" classname="org.apache.jena.sparql.modify.TestUpdateGraphMem" time="0.003"/>
+  <testcase name="testInsert1" classname="org.apache.jena.sparql.modify.TestUpdateGraphMem" time="0"/>
+  <testcase name="testInsert2" classname="org.apache.jena.sparql.modify.TestUpdateGraphMem" time="0.001"/>
+  <testcase name="testInsert3" classname="org.apache.jena.sparql.modify.TestUpdateGraphMem" time="0"/>
+  <testcase name="testInsert4" classname="org.apache.jena.sparql.modify.TestUpdateGraphMem" time="0.006"/>
+  <testcase name="testCreateDrop1" classname="org.apache.jena.sparql.modify.TestUpdateGraphMgtMem" time="0.001"/>
+  <testcase name="testCreateDrop2" classname="org.apache.jena.sparql.modify.TestUpdateGraphMgtMem" time="0.001"/>
+  <testcase name="testCreateDrop3" classname="org.apache.jena.sparql.modify.TestUpdateGraphMgtMem" time="0.002"/>
+  <testcase name="testCreateDrop4" classname="org.apache.jena.sparql.modify.TestUpdateGraphMgtMem" time="0.004"/>
+  <testcase name="delete_insert_where_01" classname="org.apache.jena.sparql.modify.TestUpdateOperations" time="0.018"/>
+  <testcase name="insert_where_01" classname="org.apache.jena.sparql.modify.TestUpdateOperations" time="0.005"/>
+  <testcase name="load1" classname="org.apache.jena.sparql.modify.TestUpdateOperations" time="0.009"/>
+  <testcase name="load2" classname="org.apache.jena.sparql.modify.TestUpdateOperations" time="0.003"/>
+  <testcase name="load3" classname="org.apache.jena.sparql.modify.TestUpdateOperations" time="0.004"/>
+  <testcase name="load4" classname="org.apache.jena.sparql.modify.TestUpdateOperations" time="0.002"/>
+  <testcase name="load5" classname="org.apache.jena.sparql.modify.TestUpdateOperations" time="0.001"/>
+  <testcase name="updateCompare01" classname="org.apache.jena.sparql.modify.TestUpdateCompare" time="0.006"/>
+  <testcase name="updateCompare02" classname="org.apache.jena.sparql.modify.TestUpdateCompare" time="0.002"/>
+  <testcase name="updateCompare03" classname="org.apache.jena.sparql.modify.TestUpdateCompare" time="0.002"/>
+  <testcase name="updateCompare04" classname="org.apache.jena.sparql.modify.TestUpdateCompare" time="0.002"/>
+  <testcase name="updateCompare05" classname="org.apache.jena.sparql.modify.TestUpdateCompare" time="0.001"/>
+  <testcase name="updateCompare06" classname="org.apache.jena.sparql.modify.TestUpdateCompare" time="0.002"/>
+  <testcase name="updateCompare07" classname="org.apache.jena.sparql.modify.TestUpdateCompare" time="0.001"/>
+  <testcase name="updateCompare08" classname="org.apache.jena.sparql.modify.TestUpdateCompare" time="0.001"/>
+  <testcase name="updateCompare09" classname="org.apache.jena.sparql.modify.TestUpdateCompare" time="0.002"/>
+  <testcase name="updateCompare10" classname="org.apache.jena.sparql.modify.TestUpdateCompare" time="0"/>
+  <testcase name="updateCompare11" classname="org.apache.jena.sparql.modify.TestUpdateCompare" time="0.001"/>
+  <testcase name="updateCompare20" classname="org.apache.jena.sparql.modify.TestUpdateCompare" time="0.002"/>
+  <testcase name="updateCompare21" classname="org.apache.jena.sparql.modify.TestUpdateCompare" time="0.002"/>
+  <testcase name="updateCompare22" classname="org.apache.jena.sparql.modify.TestUpdateCompare" time="0.001"/>
+  <testcase name="updateCompare23" classname="org.apache.jena.sparql.modify.TestUpdateCompare" time="0.002"/>
+  <testcase name="updateCompare24" classname="org.apache.jena.sparql.modify.TestUpdateCompare" time="0.003"/>
+  <testcase name="updateCompare25" classname="org.apache.jena.sparql.modify.TestUpdateCompare" time="0.001"/>
+  <testcase name="updateWrite01" classname="org.apache.jena.sparql.modify.TestUpdateWriter" time="0.001"/>
+  <testcase name="updateWrite02" classname="org.apache.jena.sparql.modify.TestUpdateWriter" time="0"/>
+  <testcase name="updateWrite03" classname="org.apache.jena.sparql.modify.TestUpdateWriter" time="0.001"/>
+  <testcase name="updateWrite04" classname="org.apache.jena.sparql.modify.TestUpdateWriter" time="0.003"/>
+  <testcase name="updateWrite05" classname="org.apache.jena.sparql.modify.TestUpdateWriter" time="0.002"/>
+  <testcase name="updateWrite06" classname="org.apache.jena.sparql.modify.TestUpdateWriter" time="0.001"/>
+  <testcase name="updateWrite07" classname="org.apache.jena.sparql.modify.TestUpdateWriter" time="0.002"/>
+  <testcase name="updateWrite08" classname="org.apache.jena.sparql.modify.TestUpdateWriter" time="0.002"/>
+  <testcase name="updateWrite09" classname="org.apache.jena.sparql.modify.TestUpdateWriter" time="0.001"/>
+  <testcase name="updateWrite10" classname="org.apache.jena.sparql.modify.TestUpdateWriter" time="0.002"/>
+  <testcase name="updateWrite20" classname="org.apache.jena.sparql.modify.TestUpdateWriter" time="0.001"/>
+  <testcase name="updateWrite21" classname="org.apache.jena.sparql.modify.TestUpdateWriter" time="0.001"/>
+  <testcase name="updateWrite22" classname="org.apache.jena.sparql.modify.TestUpdateWriter" time="0.001"/>
+  <testcase name="updateWrite23" classname="org.apache.jena.sparql.modify.TestUpdateWriter" time="0.001"/>
+</testsuite>

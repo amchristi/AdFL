@@ -1,0 +1,43 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2017-03-05T20:59:02-08:00
+Notes: 2
+Binaries: 0
+Archives: 0
+Standards: 4
+
+Apache Licensed: 4
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  N     /home/ubuntu/research/jena/jena-integration-tests/LICENSE
+  N     /home/ubuntu/research/jena/jena-integration-tests/NOTICE
+  AL    /home/ubuntu/research/jena/jena-integration-tests/pom.xml
+  AL    /home/ubuntu/research/jena/jena-integration-tests/src/test/java/org/apache/jena/test/rdfconnection/TestRDFConnectionRemote.java
+  AL    /home/ubuntu/research/jena/jena-integration-tests/src/test/java/org/apache/jena/test/rdfconnection/TestRDFConnectionLocalTDB.java
+  AL    /home/ubuntu/research/jena/jena-integration-tests/src/test/java/org/apache/jena/test/rdfconnection/TS_RDFConnection2.java
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 

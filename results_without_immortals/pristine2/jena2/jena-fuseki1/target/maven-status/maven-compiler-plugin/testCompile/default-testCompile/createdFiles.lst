@@ -1,0 +1,10 @@
+org/apache/jena/fuseki/http/TestDatasetGraphAccessorHTTP.class
+org/apache/jena/fuseki/ServerCtl.class
+org/apache/jena/fuseki/TS_Fuseki.class
+org/apache/jena/fuseki/TestAuth.class
+org/apache/jena/fuseki/http/TestDatasetAccessorHTTP.class
+org/apache/jena/fuseki/TestQuery.class
+org/apache/jena/fuseki/ServerCtl$ServerScope.class
+org/apache/jena/fuseki/ServerTestData.class
+org/apache/jena/fuseki/TestSPARQLProtocol.class
+org/apache/jena/fuseki/http/TestHttpOp.class

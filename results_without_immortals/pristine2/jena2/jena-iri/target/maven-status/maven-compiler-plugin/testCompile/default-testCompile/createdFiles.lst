@@ -1,0 +1,13 @@
+org/apache/jena/iri/TestMoreExamples$TestReader.class
+org/apache/jena/iri/Additional.class
+org/apache/jena/iri/TestMERelativize.class
+org/apache/jena/iri/TestMEResult.class
+org/apache/jena/iri/TestMoreExamples.class
+org/apache/jena/iri/TestExample.class
+org/apache/jena/iri/TestMEResolve.class
+org/apache/jena/iri/TestIRIFactory.class
+org/apache/jena/iri/TS_IRI.class
+org/apache/jena/iri/TestCreator.class
+org/apache/jena/iri/TestMEIri.class
+org/apache/jena/iri/MoreTests.class
+org/apache/jena/iri/TestErrorMessages.class

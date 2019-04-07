@@ -1,0 +1,166 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2017-03-05T20:58:01-08:00
+Notes: 7
+Binaries: 1
+Archives: 0
+Standards: 121
+
+Apache Licensed: 118
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  AL    /home/ubuntu/research/jena/jena-fuseki1/config-examples.ttl
+  N     /home/ubuntu/research/jena/jena-fuseki1/dist/LICENSE
+  N     /home/ubuntu/research/jena/jena-fuseki1/dist/README
+  N     /home/ubuntu/research/jena/jena-fuseki1/dist/NOTICE
+  AL    /home/ubuntu/research/jena/jena-fuseki1/jetty-fuseki.xml
+  N     /home/ubuntu/research/jena/jena-fuseki1/LICENSE
+  AL    /home/ubuntu/research/jena/jena-fuseki1/s-delete
+  AL    /home/ubuntu/research/jena/jena-fuseki1/run-fuseki
+  AL    /home/ubuntu/research/jena/jena-fuseki1/fuseki-server
+  AL    /home/ubuntu/research/jena/jena-fuseki1/config-tdb.ttl
+  AL    /home/ubuntu/research/jena/jena-fuseki1/s-update-form
+  AL    /home/ubuntu/research/jena/jena-fuseki1/fuseki-server.bat
+  AL    /home/ubuntu/research/jena/jena-fuseki1/s-query
+  AL    /home/ubuntu/research/jena/jena-fuseki1/config.ttl
+  B     /home/ubuntu/research/jena/jena-fuseki1/pages/favicon.ico
+  AL    /home/ubuntu/research/jena/jena-fuseki1/pages/iri-validator.html
+  AL    /home/ubuntu/research/jena/jena-fuseki1/pages/fuseki.html
+  AL    /home/ubuntu/research/jena/jena-fuseki1/pages/sparql.tpl
+  AL    /home/ubuntu/research/jena/jena-fuseki1/pages/query-validator.html
+  W3C   /home/ubuntu/research/jena/jena-fuseki1/pages/xml-to-html-plain.xsl
+  AL    /home/ubuntu/research/jena/jena-fuseki1/pages/data-validator.html
+  AL    /home/ubuntu/research/jena/jena-fuseki1/pages/fuseki.css
+  AL    /home/ubuntu/research/jena/jena-fuseki1/pages/books.ttl
+  W3C   /home/ubuntu/research/jena/jena-fuseki1/pages/xml-to-html.xsl
+  AL    /home/ubuntu/research/jena/jena-fuseki1/pages/sparql.html
+  AL    /home/ubuntu/research/jena/jena-fuseki1/pages/control-panel.tpl
+  AL    /home/ubuntu/research/jena/jena-fuseki1/pages/update-validator.html
+  W3C   /home/ubuntu/research/jena/jena-fuseki1/pages/xml-to-html-links.xsl
+  N     /home/ubuntu/research/jena/jena-fuseki1/NOTICE
+  AL    /home/ubuntu/research/jena/jena-fuseki1/assembly-dist.xml
+  AL    /home/ubuntu/research/jena/jena-fuseki1/s-get
+  AL    /home/ubuntu/research/jena/jena-fuseki1/Data/test_tbox.ttl
+  AL    /home/ubuntu/research/jena/jena-fuseki1/Data/test_data_rdfs.ttl
+  AL    /home/ubuntu/research/jena/jena-fuseki1/Data/test_abox.ttl
+  AL    /home/ubuntu/research/jena/jena-fuseki1/Data/books.ttl
+  AL    /home/ubuntu/research/jena/jena-fuseki1/s-head
+  AL    /home/ubuntu/research/jena/jena-fuseki1/make_cp_mvn
+  AL    /home/ubuntu/research/jena/jena-fuseki1/s-put
+  AL    /home/ubuntu/research/jena/jena-fuseki1/s-post
+  AL    /home/ubuntu/research/jena/jena-fuseki1/soh
+  AL    /home/ubuntu/research/jena/jena-fuseki1/pom.xml
+  AL    /home/ubuntu/research/jena/jena-fuseki1/assembly-soh.xml
+  AL    /home/ubuntu/research/jena/jena-fuseki1/tdb.ttl
+  AL    /home/ubuntu/research/jena/jena-fuseki1/s-update
+  AL    /home/ubuntu/research/jena/jena-fuseki1/config-tdb-text.ttl
+  AL    /home/ubuntu/research/jena/jena-fuseki1/fuseki
+  AL    /home/ubuntu/research/jena/jena-fuseki1/make_links
+  AL    /home/ubuntu/research/jena/jena-fuseki1/config-inf-tdb.ttl
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/test/java/org/apache/jena/fuseki/TestQuery.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/test/java/org/apache/jena/fuseki/TS_Fuseki.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/test/java/org/apache/jena/fuseki/http/TestDatasetAccessorHTTP.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/test/java/org/apache/jena/fuseki/http/TestHttpOp.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/test/java/org/apache/jena/fuseki/http/TestDatasetGraphAccessorHTTP.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/test/java/org/apache/jena/fuseki/ServerCtl.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/test/java/org/apache/jena/fuseki/ServerTestData.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/test/java/org/apache/jena/fuseki/TestAuth.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/test/java/org/apache/jena/fuseki/TestSPARQLProtocol.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/FusekiCmd.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/EmbeddedFusekiServer1.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/FusekiNotFoundException.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/FusekiConfigException.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/FusekiRequestException.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/mgt/ManagementServer.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/mgt/ActionBackup.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/mgt/PageNames.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/mgt/MgtCmdServlet.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/mgt/ActionDataset.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/mgt/MgtFunctions.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/mgt/PingServlet.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/mgt/StatsServlet.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/Fuseki.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/FusekiLib.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/conneg/WebLib.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/conneg/ConNeg.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/migrate/GraphLoadUtils.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/migrate/SinkRDFLimited.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/Test.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/server/CounterMXBean.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/server/SPARQLServer.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/server/Counters.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/server/FusekiErrorHandler.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/server/Counter.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/server/ServiceRef.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/server/CounterSet.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/server/DatasetRef.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/server/FusekiVocab.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/server/CounterName.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/server/FusekiServletContextListener.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/server/ServerConfig.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/server/DatasetRegistry.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/server/FusekiConfig.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/server/ServiceMXBean.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/server/DatasetMXBean.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/HttpNames.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/FusekiException.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/servlets/SimpleVelocity.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/servlets/REST_Quads.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/servlets/HttpAction.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/servlets/SPARQL_Query.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/servlets/SPARQL_UberServlet.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/servlets/SPARQL_REST_RW.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/servlets/ResponseOps.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/servlets/ResponseResultSet.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/servlets/SPARQL_QueryDataset.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/servlets/SPARQL_REST.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/servlets/SPARQL_Protocol.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/servlets/ServletBase.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/servlets/SPARQL_Update.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/servlets/SPARQL_QueryGeneral.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/servlets/SPARQL_ServletBase.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/servlets/ResponseCallback.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/servlets/HttpServletResponseTracker.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/servlets/SPARQL_REST_R.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/servlets/ActionErrorException.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/servlets/SPARQL_Upload.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/servlets/ResponseModel.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/servlets/ConcurrencyPolicyMRSW.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/servlets/DumpServlet.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/servlets/SimpleVelocityServlet.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/servlets/NullOutputStream.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/validation/UpdateValidator.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/validation/IRIValidator.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/validation/QueryValidator.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/validation/DataValidator.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/validation/ValidatorBase.java
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/java/org/apache/jena/fuseki/DEF.java
+  N     /home/ubuntu/research/jena/jena-fuseki1/src/main/resources/META-INF/LICENSE
+  N     /home/ubuntu/research/jena/jena-fuseki1/src/main/resources/META-INF/NOTICE
+  AL    /home/ubuntu/research/jena/jena-fuseki1/src/main/resources/org/apache/jena/fuseki/fuseki-properties.xml
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 

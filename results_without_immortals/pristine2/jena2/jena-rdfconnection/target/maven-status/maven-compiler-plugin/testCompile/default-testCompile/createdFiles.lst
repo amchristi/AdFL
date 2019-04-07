@@ -1,0 +1,5 @@
+org/apache/jena/rdfconnection/TestRDFConnectionLocalTxnMem.class
+org/apache/jena/rdfconnection/TS_RDFConnection.class
+org/apache/jena/rdfconnection/TestLocalIsolation.class
+org/apache/jena/rdfconnection/AbstractTestRDFConnection.class
+org/apache/jena/rdfconnection/TestRDFConnectionLocalMRSW.class

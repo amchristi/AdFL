@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.jena.jdbc.remote.results.TestRemoteEndpointResultsWithResultSetTypes
+-------------------------------------------------------------------------------
+Tests run: 221, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.057 sec - in org.apache.jena.jdbc.remote.results.TestRemoteEndpointResultsWithResultSetTypes

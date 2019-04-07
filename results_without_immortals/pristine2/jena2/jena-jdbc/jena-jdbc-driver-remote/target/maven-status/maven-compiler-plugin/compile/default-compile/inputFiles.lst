@@ -1,0 +1,5 @@
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/main/java/org/apache/jena/jdbc/remote/RemoteEndpointDriver.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/main/java/org/apache/jena/jdbc/remote/statements/RemoteEndpointPreparedStatement.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/main/java/org/apache/jena/jdbc/remote/connections/RemoteEndpointConnection.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/main/java/org/apache/jena/jdbc/remote/statements/RemoteEndpointStatement.java
+/home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/main/java/org/apache/jena/jdbc/remote/metadata/RemoteEndpointMetadata.java

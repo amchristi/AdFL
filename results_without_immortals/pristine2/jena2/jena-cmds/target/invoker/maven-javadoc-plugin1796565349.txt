@@ -1,0 +1,108 @@
+Invoking Maven for the goals: [org.apache.maven.plugins:maven-javadoc-plugin:2.10.3:javadoc] with no properties
+
+M2_HOME=/usr/share/maven
+MAVEN_OPTS=null
+JAVA_HOME=/usr/lib/jvm/java-8-oracle/jre/..
+JAVA_OPTS=null
+
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Jena - Libraries POM 3.3.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> maven-javadoc-plugin:2.10.3:javadoc (default-cli) @ apache-jena-libs >>>
+Downloading: http://repository.apache.org/snapshots/org/apache/jena/jena-tdb/3.3.0-SNAPSHOT/maven-metadata.xml
+Downloaded: http://repository.apache.org/snapshots/org/apache/jena/jena-tdb/3.3.0-SNAPSHOT/maven-metadata.xml (2 KB at 2.0 KB/sec)
+Downloading: http://repository.apache.org/snapshots/org/apache/jena/jena-tdb/3.3.0-SNAPSHOT/jena-tdb-3.3.0-20170227.102734-9.pom
+Downloaded: http://repository.apache.org/snapshots/org/apache/jena/jena-tdb/3.3.0-SNAPSHOT/jena-tdb-3.3.0-20170227.102734-9.pom (6 KB at 8.3 KB/sec)
+Downloading: http://repository.apache.org/snapshots/org/apache/jena/jena-parent/19-SNAPSHOT/maven-metadata.xml
+Downloaded: http://repository.apache.org/snapshots/org/apache/jena/jena-parent/19-SNAPSHOT/maven-metadata.xml (599 B at 0.8 KB/sec)
+Downloading: http://repository.apache.org/snapshots/org/apache/jena/jena-parent/19-SNAPSHOT/jena-parent-19-20170227.102104-12.pom
+Downloaded: http://repository.apache.org/snapshots/org/apache/jena/jena-parent/19-SNAPSHOT/jena-parent-19-20170227.102104-12.pom (28 KB at 32.9 KB/sec)
+Downloading: http://repository.apache.org/snapshots/org/apache/jena/jena-arq/3.3.0-SNAPSHOT/maven-metadata.xml
+Downloaded: http://repository.apache.org/snapshots/org/apache/jena/jena-arq/3.3.0-SNAPSHOT/maven-metadata.xml (2 KB at 3.3 KB/sec)
+Downloading: http://repository.apache.org/snapshots/org/apache/jena/jena-arq/3.3.0-SNAPSHOT/jena-arq-3.3.0-20170227.102618-9.pom
+Downloaded: http://repository.apache.org/snapshots/org/apache/jena/jena-arq/3.3.0-SNAPSHOT/jena-arq-3.3.0-20170227.102618-9.pom (8 KB at 10.9 KB/sec)
+Downloading: http://repository.apache.org/snapshots/org/apache/jena/jena-core/3.3.0-SNAPSHOT/maven-metadata.xml
+Downloaded: http://repository.apache.org/snapshots/org/apache/jena/jena-core/3.3.0-SNAPSHOT/maven-metadata.xml (2 KB at 2.7 KB/sec)
+Downloading: http://repository.apache.org/snapshots/org/apache/jena/jena-core/3.3.0-SNAPSHOT/jena-core-3.3.0-20170227.102436-12.pom
+Downloaded: http://repository.apache.org/snapshots/org/apache/jena/jena-core/3.3.0-SNAPSHOT/jena-core-3.3.0-20170227.102436-12.pom (10 KB at 15.1 KB/sec)
+Downloading: http://repository.apache.org/snapshots/org/apache/jena/jena-iri/3.3.0-SNAPSHOT/maven-metadata.xml
+Downloaded: http://repository.apache.org/snapshots/org/apache/jena/jena-iri/3.3.0-SNAPSHOT/maven-metadata.xml (2 KB at 2.1 KB/sec)
+Downloading: http://repository.apache.org/snapshots/org/apache/jena/jena-iri/3.3.0-SNAPSHOT/jena-iri-3.3.0-20170227.102139-12.pom
+Downloaded: http://repository.apache.org/snapshots/org/apache/jena/jena-iri/3.3.0-SNAPSHOT/jena-iri-3.3.0-20170227.102139-12.pom (4 KB at 6.3 KB/sec)
+Downloading: http://repository.apache.org/snapshots/org/apache/jena/jena-base/3.3.0-SNAPSHOT/maven-metadata.xml
+Downloaded: http://repository.apache.org/snapshots/org/apache/jena/jena-base/3.3.0-SNAPSHOT/maven-metadata.xml (2 KB at 2.8 KB/sec)
+Downloading: http://repository.apache.org/snapshots/org/apache/jena/jena-base/3.3.0-SNAPSHOT/jena-base-3.3.0-20170227.102308-12.pom
+Downloaded: http://repository.apache.org/snapshots/org/apache/jena/jena-base/3.3.0-SNAPSHOT/jena-base-3.3.0-20170227.102308-12.pom (5 KB at 9.6 KB/sec)
+Downloading: http://repository.apache.org/snapshots/org/apache/jena/jena-shaded-guava/3.3.0-SNAPSHOT/maven-metadata.xml
+Downloaded: http://repository.apache.org/snapshots/org/apache/jena/jena-shaded-guava/3.3.0-SNAPSHOT/maven-metadata.xml (1000 B at 2.0 KB/sec)
+Downloading: http://repository.apache.org/snapshots/org/apache/jena/jena-shaded-guava/3.3.0-SNAPSHOT/jena-shaded-guava-3.3.0-20170227.102119-12.pom
+Downloaded: http://repository.apache.org/snapshots/org/apache/jena/jena-shaded-guava/3.3.0-SNAPSHOT/jena-shaded-guava-3.3.0-20170227.102119-12.pom (4 KB at 7.2 KB/sec)
+Downloading: http://repository.apache.org/snapshots/org/apache/jena/jena-rdfconnection/3.3.0-SNAPSHOT/maven-metadata.xml
+Downloaded: http://repository.apache.org/snapshots/org/apache/jena/jena-rdfconnection/3.3.0-SNAPSHOT/maven-metadata.xml (2 KB at 1.8 KB/sec)
+Downloading: http://repository.apache.org/snapshots/org/apache/jena/jena-rdfconnection/3.3.0-SNAPSHOT/jena-rdfconnection-3.3.0-20170227.102645-9.pom
+Downloaded: http://repository.apache.org/snapshots/org/apache/jena/jena-rdfconnection/3.3.0-SNAPSHOT/jena-rdfconnection-3.3.0-20170227.102645-9.pom (5 KB at 10.4 KB/sec)
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce) @ apache-jena-libs ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (rat-checks) @ apache-jena-libs ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: **/.project
+[INFO] Exclude: **/.settings/**
+[INFO] Exclude: **/.classpath
+[INFO] Exclude: **/README.*
+[INFO] Exclude: **/META-INF/services/*
+[INFO] Exclude: **/src-examples/data/*
+[INFO] Exclude: **/dist/ABOUT
+[INFO] Exclude: **/SEE_FUSEKI2
+[INFO] Exclude: **/src/main/webapp/css/*
+[INFO] Exclude: **/src/main/webapp/fonts/*
+[INFO] Exclude: **/src/main/webapp/js/**/*
+[INFO] Exclude: **/vocabularies/*
+[INFO] Exclude: **/Vocabularies/*
+[INFO] Exclude: **/src/main/**/*.html
+[INFO] Exclude: **/src/**/package-info.java
+[INFO] Exclude: **/DEPENDENCIES
+[INFO] Exclude: **/*.txt
+[INFO] Exclude: **/*.md
+[INFO] Exclude: **/META-INF/services/*
+[INFO] Exclude: **/src/test/resources/**/*
+[INFO] Exclude: **/testing/**/*
+[INFO] Exclude: **/log4j.properties
+[INFO] Exclude: **/log4j-testing.properties
+[INFO] Exclude: **/derby.log
+[INFO] Exclude: **/DB/**/*
+[INFO] Exclude: **/tdb*.cfg
+[INFO] Exclude: **/run/**/*
+[INFO] Exclude: **/*.classpath
+[INFO] Exclude: **/target/**/*
+[INFO] Exclude: **/dependency-reduced-pom.xml
+[INFO] 1 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 1 licence.
+[INFO] 
+[INFO] <<< maven-javadoc-plugin:2.10.3:javadoc (default-cli) @ apache-jena-libs <<<
+Downloading: http://repository.apache.org/snapshots/org/apache/jena/jena-tdb/3.3.0-SNAPSHOT/jena-tdb-3.3.0-20170227.102734-9.jar
+Downloading: http://repository.apache.org/snapshots/org/apache/jena/jena-arq/3.3.0-SNAPSHOT/jena-arq-3.3.0-20170227.102618-9.jar
+Downloading: http://repository.apache.org/snapshots/org/apache/jena/jena-core/3.3.0-SNAPSHOT/jena-core-3.3.0-20170227.102436-12.jar
+Downloading: http://repository.apache.org/snapshots/org/apache/jena/jena-iri/3.3.0-SNAPSHOT/jena-iri-3.3.0-20170227.102139-12.jar
+Downloading: http://repository.apache.org/snapshots/org/apache/jena/jena-base/3.3.0-SNAPSHOT/jena-base-3.3.0-20170227.102308-12.jar
+Downloaded: http://repository.apache.org/snapshots/org/apache/jena/jena-iri/3.3.0-SNAPSHOT/jena-iri-3.3.0-20170227.102139-12.jar (135 KB at 98.5 KB/sec)
+Downloading: http://repository.apache.org/snapshots/org/apache/jena/jena-shaded-guava/3.3.0-SNAPSHOT/jena-shaded-guava-3.3.0-20170227.102119-12.jar
+Downloaded: http://repository.apache.org/snapshots/org/apache/jena/jena-base/3.3.0-SNAPSHOT/jena-base-3.3.0-20170227.102308-12.jar (213 KB at 155.0 KB/sec)
+Downloading: http://repository.apache.org/snapshots/org/apache/jena/jena-rdfconnection/3.3.0-SNAPSHOT/jena-rdfconnection-3.3.0-20170227.102645-9.jar
+Downloaded: http://repository.apache.org/snapshots/org/apache/jena/jena-tdb/3.3.0-SNAPSHOT/jena-tdb-3.3.0-20170227.102734-9.jar (516 KB at 334.7 KB/sec)
+Downloaded: http://repository.apache.org/snapshots/org/apache/jena/jena-core/3.3.0-SNAPSHOT/jena-core-3.3.0-20170227.102436-12.jar (1384 KB at 804.2 KB/sec)
+Downloaded: http://repository.apache.org/snapshots/org/apache/jena/jena-arq/3.3.0-SNAPSHOT/jena-arq-3.3.0-20170227.102618-9.jar (2801 KB at 1622.6 KB/sec)
+Downloaded: http://repository.apache.org/snapshots/org/apache/jena/jena-rdfconnection/3.3.0-SNAPSHOT/jena-rdfconnection-3.3.0-20170227.102645-9.jar (40 KB at 59.8 KB/sec)
+Downloaded: http://repository.apache.org/snapshots/org/apache/jena/jena-shaded-guava/3.3.0-SNAPSHOT/jena-shaded-guava-3.3.0-20170227.102119-12.jar (2309 KB at 990.7 KB/sec)
+[INFO] 
+[INFO] --- maven-javadoc-plugin:2.10.3:javadoc (default-cli) @ apache-jena-libs ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 18.890s
+[INFO] Finished at: Mon Feb 27 21:04:10 PST 2017
+[INFO] Final Memory: 20M/92M
+[INFO] ------------------------------------------------------------------------

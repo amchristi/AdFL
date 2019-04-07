@@ -1,0 +1,9 @@
+org/apache/jena/jdbc/mem/TestMemDriver.class
+org/apache/jena/jdbc/mem/metadata/TestDatasetConnectionMetadata.class
+org/apache/jena/jdbc/mem/statements/TestMemStatements.class
+org/apache/jena/jdbc/mem/TestMemDriverWithLogging.class
+org/apache/jena/jdbc/mem/results/TestResultSets.class
+org/apache/jena/jdbc/mem/connections/TestDatasetConnection.class
+org/apache/jena/jdbc/mem/results/AbstractMemResultSetTests.class
+org/apache/jena/jdbc/mem/connections/DebugMemConnection.class
+org/apache/jena/jdbc/mem/TS_JdbcDriverMem.class

@@ -1,0 +1,12 @@
+Interfaces that are defined in the list of packages but that
+do not have contract tests and are not annotated with NoContractTest.
+---------------------------------------------------------------------
+
+Filter: True()
+
+org.apache.jena.util.Locator
+org.apache.jena.util.iterator.ClosableIterator
+org.apache.jena.util.iterator.ExtendedIterator
+org.apache.jena.util.iterator.Map1
+org.apache.jena.util.iterator.MapFilter
+org.apache.jena.util.junit.ManifestItemHandler

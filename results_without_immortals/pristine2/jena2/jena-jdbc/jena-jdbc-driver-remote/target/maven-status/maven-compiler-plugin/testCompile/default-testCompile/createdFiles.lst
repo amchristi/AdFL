@@ -1,0 +1,14 @@
+org/apache/jena/jdbc/remote/metadata/TestRemoteConnectionMetadata.class
+org/apache/jena/jdbc/remote/results/TestRemoteEndpointResultsWithGraphUris.class
+org/apache/jena/jdbc/remote/TS_JdbcDriverRemote.class
+org/apache/jena/jdbc/remote/results/AbstractRemoteEndpointResultSetTests.class
+org/apache/jena/jdbc/remote/results/TestRemoteEndpointResults.class
+org/apache/jena/jdbc/remote/results/TestRemoteEndpointResultsWithAuth.class
+org/apache/jena/jdbc/remote/connections/AbstractRemoteEndpointConnectionTests.class
+org/apache/jena/jdbc/remote/TestRemoteEndpointDriver.class
+org/apache/jena/jdbc/remote/statements/TestRemoteEndpointStatements.class
+org/apache/jena/jdbc/remote/connections/TestRemoteEndpointConnectionWithAuth.class
+org/apache/jena/jdbc/remote/connections/TestRemoteEndpointConnection.class
+org/apache/jena/jdbc/remote/connections/TestRemoteEndpointConnectionWithGraphUris.class
+org/apache/jena/jdbc/remote/results/TestRemoteEndpointResultsWithResultSetTypes.class
+org/apache/jena/jdbc/remote/connections/TestRemoteEndpointConnectionWithResultSetTypes.class

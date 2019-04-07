@@ -1,0 +1,9 @@
+/home/ubuntu/research/jena/jena-fuseki1/src/test/java/org/apache/jena/fuseki/ServerTestData.java
+/home/ubuntu/research/jena/jena-fuseki1/src/test/java/org/apache/jena/fuseki/http/TestDatasetGraphAccessorHTTP.java
+/home/ubuntu/research/jena/jena-fuseki1/src/test/java/org/apache/jena/fuseki/TestAuth.java
+/home/ubuntu/research/jena/jena-fuseki1/src/test/java/org/apache/jena/fuseki/TestQuery.java
+/home/ubuntu/research/jena/jena-fuseki1/src/test/java/org/apache/jena/fuseki/http/TestDatasetAccessorHTTP.java
+/home/ubuntu/research/jena/jena-fuseki1/src/test/java/org/apache/jena/fuseki/TS_Fuseki.java
+/home/ubuntu/research/jena/jena-fuseki1/src/test/java/org/apache/jena/fuseki/TestSPARQLProtocol.java
+/home/ubuntu/research/jena/jena-fuseki1/src/test/java/org/apache/jena/fuseki/http/TestHttpOp.java
+/home/ubuntu/research/jena/jena-fuseki1/src/test/java/org/apache/jena/fuseki/ServerCtl.java

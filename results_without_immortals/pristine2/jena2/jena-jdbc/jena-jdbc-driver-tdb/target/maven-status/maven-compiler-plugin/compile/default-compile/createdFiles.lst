@@ -1,0 +1,3 @@
+org/apache/jena/jdbc/tdb/metadata/TDBDatasetMetadata.class
+org/apache/jena/jdbc/tdb/TDBDriver.class
+org/apache/jena/jdbc/tdb/connections/TDBConnection.class

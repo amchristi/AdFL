@@ -1,0 +1,118 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2017-03-05T20:57:04-08:00
+Notes: 3
+Binaries: 0
+Archives: 0
+Standards: 78
+
+Apache Licensed: 78
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  N     /home/ubuntu/research/jena/jena-spatial/LICENSE
+  N     /home/ubuntu/research/jena/jena-spatial/NOTICE
+  AL    /home/ubuntu/research/jena/jena-spatial/pom.xml
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/TestSpatialPredicatePairValue.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/SpatialSearchUtil.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/TestIndexingSpatialDataWithSolr.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/TestIndexingSpatialDataWithLucene.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/assembler/AbstractTestSpatialAssembler.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/assembler/TestEntityDefinitionAssembler.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/assembler/TestSpatialIndexSolrAssembler.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/assembler/TestSpatialIndexLuceneAssembler.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/assembler/TestSpatialDatasetAssembler.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/pfunction/solr/TestIsWithinCirclePFWithEmbeddedSolrSpatialIndex.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/pfunction/solr/TestIntersectsBoxPFWithEmbeddedSolrSpatialIndex.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/pfunction/solr/TestEastPFWithEmbeddedSolrSpatialIndex.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/pfunction/solr/TestIsNearByPFWithEmbeddedSolrSpatialIndex.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/pfunction/solr/TestIsWithinBoxPFWithEmbeddedSolrSpatialIndex.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/pfunction/solr/TestSouthPFWithEmbeddedSolrSpatialIndex.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/pfunction/solr/TestNorthPFWithEmbeddedSolrSpatialIndex.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/pfunction/solr/TestWestPFWithEmbeddedSolrSpatialIndex.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/pfunction/lucene/TestIsWithinBoxPFWithLuceneSpatialIndex.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/pfunction/lucene/TestIntersectsBoxPFWithLuceneSpatialIndex.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/pfunction/lucene/TestSouthPFWithLuceneSpatialIndex.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/pfunction/lucene/TestIsNearByPFWithLuceneSpatialIndex.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/pfunction/lucene/TestEastPFWithLuceneSpatialIndex.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/pfunction/lucene/TestNorthPFWithLuceneSpatialIndex.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/pfunction/lucene/TestWestPFWithLuceneSpatialIndex.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/pfunction/lucene/TestIsWithinCirclePFWithLuceneSpatialIndex.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/pfunction/AbstractTestIsNearByPF.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/pfunction/AbstractTestEastPF.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/pfunction/AbstractTestIntersectsBoxPF.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/pfunction/AbstractTestNorthPF.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/pfunction/AbstractTestSouthPF.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/pfunction/AbstractTestIsWithinCirclePF.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/pfunction/AbstractTestWestPF.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/pfunction/AbstractTestIsWithinBoxPF.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/TS_Spatial.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/AbstractTestIndexingSpatialData.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/AbstractTestDatasetWithSpatialIndex.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/test/java/org/apache/jena/query/spatial/TestTDBDatasetWithLuceneSpatialIndex.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/SpatialDocProducer.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/SpatialDocProducerTriples.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/assembler/SpatialVocab.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/assembler/EntityDefinitionAssembler.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/assembler/SpatialDatasetAssembler.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/assembler/SpatialIndexLuceneAssembler.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/assembler/SpatialIndexSolrAssembler.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/assembler/SpatialAssembler.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/SpatialValueUtil.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/pfunction/DirectionWithPointPFBase.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/pfunction/SpatialOperationWithCircleBase.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/pfunction/SpatialMatch.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/pfunction/library/EastPF.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/pfunction/library/IntersectsBoxPF.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/pfunction/library/NorthPF.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/pfunction/library/IsNearByPF.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/pfunction/library/WestPF.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/pfunction/library/IsWithinCirclePF.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/pfunction/library/SouthPF.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/pfunction/library/IsWithinBoxPF.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/pfunction/SpatialOperationPFBase.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/pfunction/SpatialOperationWithBoxPFBase.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/EntityDefinition.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/InitJenaSpatial.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/SpatialQuery.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/SpatialIndexLucene.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/SpatialIndexContext.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/DistanceUnitsUtils.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/SpatialIndex.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/SpatialPredicatePair.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/SpatialPredicatePairValue.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/SpatialIndexException.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/DatasetGraphSpatial.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/SpatialQueryFuncs.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/SpatialDatasetFactory.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/org/apache/jena/query/spatial/SpatialIndexSolr.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/jena/spatialindexdump.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/jena/spatialindexer.java
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/java/examples/JenaSpatialExample1.java
+  N     /home/ubuntu/research/jena/jena-spatial/src/main/resources/META-INF/NOTICE
+  AL    /home/ubuntu/research/jena/jena-spatial/src/main/resources/org/apache/jena/query/spatial/properties.xml
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 

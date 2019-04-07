@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.jena.query.text.TS_Text
+-------------------------------------------------------------------------------
+Tests run: 170, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.713 sec - in org.apache.jena.query.text.TS_Text

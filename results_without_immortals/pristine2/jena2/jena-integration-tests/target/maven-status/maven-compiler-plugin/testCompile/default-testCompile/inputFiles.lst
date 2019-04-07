@@ -1,0 +1,3 @@
+/home/ubuntu/research/jena/jena-integration-tests/src/test/java/org/apache/jena/test/rdfconnection/TS_RDFConnection2.java
+/home/ubuntu/research/jena/jena-integration-tests/src/test/java/org/apache/jena/test/rdfconnection/TestRDFConnectionRemote.java
+/home/ubuntu/research/jena/jena-integration-tests/src/test/java/org/apache/jena/test/rdfconnection/TestRDFConnectionLocalTDB.java

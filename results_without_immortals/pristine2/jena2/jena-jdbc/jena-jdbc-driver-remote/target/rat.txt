@@ -1,0 +1,59 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2017-03-05T21:00:04-08:00
+Notes: 2
+Binaries: 0
+Archives: 0
+Standards: 20
+
+Apache Licensed: 20
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  N     /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/LICENSE
+  N     /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/NOTICE
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/pom.xml
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/test/java/org/apache/jena/jdbc/remote/statements/TestRemoteEndpointStatements.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/test/java/org/apache/jena/jdbc/remote/TS_JdbcDriverRemote.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/test/java/org/apache/jena/jdbc/remote/TestRemoteEndpointDriver.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/test/java/org/apache/jena/jdbc/remote/metadata/TestRemoteConnectionMetadata.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/test/java/org/apache/jena/jdbc/remote/connections/TestRemoteEndpointConnection.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/test/java/org/apache/jena/jdbc/remote/connections/TestRemoteEndpointConnectionWithAuth.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/test/java/org/apache/jena/jdbc/remote/connections/TestRemoteEndpointConnectionWithResultSetTypes.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/test/java/org/apache/jena/jdbc/remote/connections/TestRemoteEndpointConnectionWithGraphUris.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/test/java/org/apache/jena/jdbc/remote/connections/AbstractRemoteEndpointConnectionTests.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/test/java/org/apache/jena/jdbc/remote/results/TestRemoteEndpointResults.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/test/java/org/apache/jena/jdbc/remote/results/AbstractRemoteEndpointResultSetTests.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/test/java/org/apache/jena/jdbc/remote/results/TestRemoteEndpointResultsWithResultSetTypes.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/test/java/org/apache/jena/jdbc/remote/results/TestRemoteEndpointResultsWithGraphUris.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/test/java/org/apache/jena/jdbc/remote/results/TestRemoteEndpointResultsWithAuth.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/main/java/org/apache/jena/jdbc/remote/statements/RemoteEndpointPreparedStatement.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/main/java/org/apache/jena/jdbc/remote/statements/RemoteEndpointStatement.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/main/java/org/apache/jena/jdbc/remote/metadata/RemoteEndpointMetadata.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/main/java/org/apache/jena/jdbc/remote/RemoteEndpointDriver.java
+  AL    /home/ubuntu/research/jena/jena-jdbc/jena-jdbc-driver-remote/src/main/java/org/apache/jena/jdbc/remote/connections/RemoteEndpointConnection.java
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 

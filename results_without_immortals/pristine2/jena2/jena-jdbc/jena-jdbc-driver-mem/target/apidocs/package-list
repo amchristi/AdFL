@@ -1,0 +1,3 @@
+org.apache.jena.jdbc.mem
+org.apache.jena.jdbc.mem.connections
+org.apache.jena.jdbc.mem.metadata

@@ -1,0 +1,62 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2017-03-05T20:55:56-08:00
+Notes: 4
+Binaries: 0
+Archives: 0
+Standards: 21
+
+Apache Licensed: 21
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  N     /home/ubuntu/research/jena/jena-rdfconnection/LICENSE
+  N     /home/ubuntu/research/jena/jena-rdfconnection/NOTICE
+  AL    /home/ubuntu/research/jena/jena-rdfconnection/pom.xml
+  AL    /home/ubuntu/research/jena/jena-rdfconnection/src/test/java/org/apache/jena/rdfconnection/AbstractTestRDFConnection.java
+  AL    /home/ubuntu/research/jena/jena-rdfconnection/src/test/java/org/apache/jena/rdfconnection/TS_RDFConnection.java
+  AL    /home/ubuntu/research/jena/jena-rdfconnection/src/test/java/org/apache/jena/rdfconnection/TestRDFConnectionLocalMRSW.java
+  AL    /home/ubuntu/research/jena/jena-rdfconnection/src/test/java/org/apache/jena/rdfconnection/TestLocalIsolation.java
+  AL    /home/ubuntu/research/jena/jena-rdfconnection/src/test/java/org/apache/jena/rdfconnection/TestRDFConnectionLocalTxnMem.java
+  AL    /home/ubuntu/research/jena/jena-rdfconnection/src/main/java/org/apache/jena/rdfconnection/RDFConnectionRemote.java
+  AL    /home/ubuntu/research/jena/jena-rdfconnection/src/main/java/org/apache/jena/rdfconnection/RDFConnectionModular.java
+  AL    /home/ubuntu/research/jena/jena-rdfconnection/src/main/java/org/apache/jena/rdfconnection/RDFConn.java
+  AL    /home/ubuntu/research/jena/jena-rdfconnection/src/main/java/org/apache/jena/rdfconnection/SparqlQueryConnection.java
+  AL    /home/ubuntu/research/jena/jena-rdfconnection/src/main/java/org/apache/jena/rdfconnection/RDFConnectionLocal.java
+  AL    /home/ubuntu/research/jena/jena-rdfconnection/src/main/java/org/apache/jena/rdfconnection/Isolation.java
+  AL    /home/ubuntu/research/jena/jena-rdfconnection/src/main/java/org/apache/jena/rdfconnection/SparqlUpdateConnection.java
+  AL    /home/ubuntu/research/jena/jena-rdfconnection/src/main/java/org/apache/jena/rdfconnection/JenaConnectionException.java
+  AL    /home/ubuntu/research/jena/jena-rdfconnection/src/main/java/org/apache/jena/rdfconnection/RDFDatasetConnection.java
+  AL    /home/ubuntu/research/jena/jena-rdfconnection/src/main/java/org/apache/jena/rdfconnection/examples/RDFConnectionExample3.java
+  AL    /home/ubuntu/research/jena/jena-rdfconnection/src/main/java/org/apache/jena/rdfconnection/examples/RDFConnectionExample2.java
+  AL    /home/ubuntu/research/jena/jena-rdfconnection/src/main/java/org/apache/jena/rdfconnection/examples/RDFConnectionExample1.java
+  AL    /home/ubuntu/research/jena/jena-rdfconnection/src/main/java/org/apache/jena/rdfconnection/RDFConnection.java
+  AL    /home/ubuntu/research/jena/jena-rdfconnection/src/main/java/org/apache/jena/rdfconnection/RDFDatasetAccessConnection.java
+  AL    /home/ubuntu/research/jena/jena-rdfconnection/src/main/java/org/apache/jena/rdfconnection/RDFConnectionFactory.java
+  N     /home/ubuntu/research/jena/jena-rdfconnection/src/main/resources/LICENSE
+  N     /home/ubuntu/research/jena/jena-rdfconnection/src/main/resources/NOTICE
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 

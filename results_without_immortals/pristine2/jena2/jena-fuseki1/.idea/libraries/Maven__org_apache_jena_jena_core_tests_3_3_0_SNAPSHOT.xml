@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.jena:jena-core:tests:3.3.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-core/3.3.0-SNAPSHOT/jena-core-3.3.0-20170227.102436-12-tests.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-core/3.3.0-SNAPSHOT/jena-core-3.3.0-20170227.102436-12-test-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-core/3.3.0-SNAPSHOT/jena-core-3.3.0-20170227.102436-12-test-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

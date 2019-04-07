@@ -1,0 +1,3 @@
+org/apache/jena/test/rdfconnection/TS_RDFConnection2.class
+org/apache/jena/test/rdfconnection/TestRDFConnectionRemote.class
+org/apache/jena/test/rdfconnection/TestRDFConnectionLocalTDB.class
