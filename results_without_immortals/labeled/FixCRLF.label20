@@ -1,0 +1,9 @@
+FixCRLF
+20,1, test9, testFilter6, testOutputEncoding, test1
+20,2, test2, testFilter8, test7, testCreateParentDirs, testCrCrLfSequenceDos, testFilter1
+20,3, testFilter4, testFilter2, test3, test6, testPreserveLastModified
+20,4, testFilter6, test7, testCrCrLfSequenceUnix, testPreserveLastModified, testCreateParentDirs, test1, testFilter1
+20,5, testFilter5, testFilter3, test3, testFilter9, test6, testCrCrLfSequenceUnix, test1
+20,6, test4, testCannotDoubleEof, testFilter2, test8, testFixlastFalseMac, testPreserveLastModified, testCreateParentDirs
+20,7, test4, testFixFile, testCannotDoubleEof, testFilter2, test3, testCrCrLfSequenceMac, testFilter8, test8, testFixlastFalseMac, testLongLines
+20,8, 

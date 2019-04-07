@@ -1,0 +1,11 @@
+EmailValidator
+20,1, testValidator374, testEmailWithBogusCharacter, testEmailWithCommas, testEmailWithSlashes, testValidator293, testEmail, testEmailWithDotEnd
+20,2, testValidator235, testEmailWithDotEnd
+20,3, testEmailWithNumericAddress, testEmailLocalhost
+20,4, testEmailWithNumericAddress, testEmailWithBogusCharacter
+20,5, testVALIDATOR_278, testEmailWithSlashes, testValidator293
+20,6, testEmailUserName, testEmailWithControlChars, testEmailWithDash, testEmailWithDotEnd
+20,7, testValidator365, testEmailWithSpaces, testEmailLocalhost, testEmailWithDash, testEmailWithSlashes, testEmailWithDotEnd
+20,8, testEmailWithSpaces
+20,9, testValidator374, testEmailLocalhost
+20,10, testEmailWithBogusCharacter, testValidator293

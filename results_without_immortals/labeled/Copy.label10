@@ -1,0 +1,7 @@
+Copy
+10,1, testFilterChain, testResourcePlainWithMapper
+10,2, testDirset
+10,3, testFilterTest, testInfiniteFilter, testFilterSet
+10,4, test2, testFileResourceWithMapper, testFileResourceWithFilter, testOnlineResources, testFileResourcePlain
+10,5, testDirset, testOnlineResources
+10,6, 

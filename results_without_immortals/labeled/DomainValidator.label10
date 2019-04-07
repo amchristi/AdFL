@@ -1,0 +1,11 @@
+DomainValidator
+10,1, testValidator306
+10,2, testIsIDNtoASCIIBroken
+10,3, testIDN, testValidator306, testIDNJava6OrLater, testIsValid, testIsIDNtoASCIIBroken
+10,4, testUpdateCountryCode, testDomainNoDots, testRFC2396domainlabel, testCannotUpdate, testIsIDNtoASCIIBroken
+10,5, testAllowLocal
+10,6, testUpdateGeneric
+10,7, testValidDomains
+10,8, testValidator297, test_GENERIC_TLDS_sortedAndLowerCase, testValidator306
+10,9, testUpdateCountryCode, testTopLevelDomains, test_INFRASTRUCTURE_TLDS_sortedAndLowerCase
+10,10, 

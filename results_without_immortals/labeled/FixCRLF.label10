@@ -1,0 +1,11 @@
+FixCRLF
+10,1, testTabInLiteralInComment, testFilter5
+10,2, testFilter8, testFilter7, testPreserveLastModified
+10,3, testFilter3, test6
+10,4, test8, testFilter6
+10,5, testTabInLiteralInComment, test2, testFilter7, testCrCrLfSequenceUnix
+10,6, testEncoding
+10,7, test4, test5, test3
+10,8, testCrCrLfSequenceMac, testEncoding, testFixlastDos, testLongLines
+10,9, test4, testMacLines, test2, testFilter7, testCreateParentDirs, testCrCrLfSequenceDos
+10,10, test1

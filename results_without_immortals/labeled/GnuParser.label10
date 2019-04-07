@@ -1,0 +1,11 @@
+GnuParser
+10,1, testLongWithEqualSingleDash, testLongWithoutEqualDoubleDash, testPropertyOptionFlags, testStopAtNonOptionLong, testNegativeArgument
+10,2, testAmbiguousPartialLongOption2, testDoubleDash2, testLongWithoutEqualDoubleDash, testLongWithEqualDoubleDash, testStopAtUnexpectedArg, testPropertyOptionGroup, testStopBursting2
+10,3, testAmbiguousPartialLongOption2, testStopAtUnexpectedArg, testAmbiguousPartialLongOption4, testReuseOptionsTwice, testUnambiguousPartialLongOption2, testOptionGroup
+10,4, testStopAtNonOptionLong, testSimpleLong, testPropertyOptionGroup, testStopAtExpectedArg
+10,5, testPropertyOptionSingularValue, testPropertiesOption1, testOptionGroupLong, testLongWithUnexpectedArgument1, testAmbiguousPartialLongOption1, testAmbiguousPartialLongOption4, testMissingRequiredOption
+10,6, testLongWithEqualSingleDash, testAmbiguousLongWithoutEqualSingleDash, testMissingRequiredOptions
+10,7, testDoubleDash2, testAmbiguousLongWithoutEqualSingleDash, testNegativeOption, testShortWithoutEqual, testMultiple, testLongWithUnexpectedArgument2
+10,8, testPropertyOptionSingularValue, testDoubleDash2, testDoubleDash1, testSimpleShort, testUnrecognizedOptionWithBursting, testPropertyOptionUnexpected, testUnlimitedArgs, testLongWithUnexpectedArgument2, testShortWithUnexpectedArgument
+10,9, testLongWithEqualSingleDash, testWithRequiredOption, testPropertyOptionFlags, testShortWithEqual, testLongWithoutEqualSingleDash, testMissingArgWithBursting
+10,10, testSimpleLong, testUnlimitedArgs, testMultiple, testPropertiesOption2

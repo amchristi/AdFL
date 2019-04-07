@@ -1,0 +1,11 @@
+DefaultIntervalCategoryDataset
+10,1, testSetCategoryKeys
+10,2, testSerialization, testGetCategoryIndex
+10,3, testGetColumnIndex, testGetCategoryIndex, testGetColumnKeys
+10,4, testGetRowKeys
+10,5, testGetCategoryIndex
+10,6, testGetSeriesIndex, testEquals
+10,7, testGetValue, testGetColumnCount, testGetCategoryCount, testGetRowKeys
+10,8, testGetSeriesIndex
+10,9, testCloning
+10,10, testGetRowIndex, testGetSeriesCount, testSetCategoryKeys

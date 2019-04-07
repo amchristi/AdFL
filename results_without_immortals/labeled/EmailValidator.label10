@@ -1,0 +1,12 @@
+EmailValidator
+10,1, testEmailWithNumericAddress, testEmailWithBogusCharacter
+10,2, testEmailWithNumericAddress, testEmailLocalhost, testEmailWithControlChars, testEmailWithCommas
+10,3, testEmailLocalhost
+10,4, testVALIDATOR_315, testEmailWithDash, testValidator293, testEmail
+10,5, testEmailWithNumericAddress, testValidator293, testEmail
+10,6, testEmailWithDotEnd
+10,7, testValidator374
+10,8, testEmailLocalhost
+10,9, testEmailLocalhost, testEmailWithControlChars, testEmailWithCommas, testEmailExtension
+10,10, testEmailLocalhost, testVALIDATOR_278, testEmailWithSlashes
+10,11, 

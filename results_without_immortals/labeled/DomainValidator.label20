@@ -1,0 +1,11 @@
+DomainValidator
+20,1, testUpdateCountryCode, testUnicodeToASCII, test_COUNTRY_CODE_TLDS_sortedAndLowerCase, testTopLevelDomains, testRFC2396toplabel, testIsIDNtoASCIIBroken
+20,2, test_GENERIC_TLDS_sortedAndLowerCase, testDomainNoDots, testCannotUpdate
+20,3, testValidDomains, test_GENERIC_TLDS_sortedAndLowerCase, testAllowLocal
+20,4, test_GENERIC_TLDS_sortedAndLowerCase, testIDN, testDomainNoDots, test_INFRASTRUCTURE_TLDS_sortedAndLowerCase
+20,5, test_LOCAL_TLDS_sortedAndLowerCase, testValidDomains, test_GENERIC_TLDS_sortedAndLowerCase, testIDNJava6OrLater, testIsIDNtoASCIIBroken, testUpdateGeneric
+20,6, testValidator297, testValidDomains, testValidator306, test_INFRASTRUCTURE_TLDS_sortedAndLowerCase
+20,7, testValidator306, testTopLevelDomains, testIDNJava6OrLater
+20,8, testInvalidDomains, testIDN, testRFC2396toplabel, testAllowLocal, testIsIDNtoASCIIBroken, testUpdateGeneric
+20,9, testDomainNoDots, testTopLevelDomains, testRFC2396toplabel
+20,10, test_LOCAL_TLDS_sortedAndLowerCase, testInvalidDomains, testIDN, testTopLevelDomains, testIDNJava6OrLater

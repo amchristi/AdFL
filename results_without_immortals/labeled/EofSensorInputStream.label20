@@ -1,0 +1,11 @@
+EofSensorInputStream
+20,1, testReleaseConnection, testAbortConnection
+20,2, testReadAfterAbort
+20,3, testReadIOError, testReadAfterAbort, testReadByteArrayIOError, testReadByteArray
+20,4, testReadAfterAbort, testReadByteArray
+20,5, testReleaseConnection, testAbortConnectionIOError, testReadByteArrayIOError
+20,6, testAbortConnection
+20,7, testReleaseConnection, testAbortConnection, testReadAfterAbort
+20,8, testReadIOError
+20,9, testAbortConnection
+20,10, testReadIOError, testRead, testReadByteArray

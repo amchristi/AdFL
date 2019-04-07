@@ -1,0 +1,11 @@
+Digester
+20,1, testBasicSubstitution, testStackMethods, testRulesBase, testNullReaderParse
+20,2, testNullStringParse
+20,3, testNamedStackIsEmpty, testNullStringParse, testNamedIndependence
+20,4, testNullFileParse, testStackMethods, testRules, testRulesBase
+20,5, testOnceAndOnceOnly, testNullURLParse
+20,6, testNullInputStreamParse, testNamedStackPushPeekPop, testNullStringParse, testOnceAndOnceOnly
+20,7, testBasicSubstitution, testNullFileParse, testOnceAndOnceOnly, testRulesBase, testNullURLParse
+20,8, testBasicSubstitution, testStackMethods, testNamedStackIsEmpty, testStackAction, testProperties
+20,9, testNullInputSourceParse, testNamedIndependence, testStackAction
+20,10, testNullFileParse, testRules, testNamedStackIsEmpty, testOnceAndOnceOnly

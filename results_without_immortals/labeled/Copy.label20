@@ -1,0 +1,7 @@
+Copy
+20,1, testFilterChain, testMissingFileBail
+20,2, testFilterChain, testMissingDirIgnore, testZipfileset, testOnlineResources, testTranscoding, testFileResourcePlain
+20,3, testPathAsResource, testSingleFileFileset, testZipfileset, testFileResourceWithFilter, test1, testMissingFileIgnore
+20,4, testDirset, testResourcePlain, testFilterSet, testMissingFileBail, testResourcePlainWithMapper, testFileResourcePlain
+20,5, testFileResourceWithMapper, testZipfileset, testMissingFileIgnore
+20,6, testMissingDirIgnore, testFileResourceWithMapper, testFilterSet

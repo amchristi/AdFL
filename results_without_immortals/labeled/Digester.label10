@@ -1,0 +1,11 @@
+Digester
+10,1, testStackMethods
+10,2, testPopNamedStackNotPushed, testRulesBase, testStackAction
+10,3, testPopNamedStackNotPushed, testRules, testNullStringParse, testOnceAndOnceOnly
+10,4, testStackAction, testNullURLParse
+10,5, testNullFileParse, testRegistrations
+10,6, testBasicSubstitution, testNullFileParse
+10,7, testStackMethods
+10,8, testRules, testProperties
+10,9, testBasicSubstitution
+10,10, testOnceAndOnceOnly, testStackAction, testProperties
