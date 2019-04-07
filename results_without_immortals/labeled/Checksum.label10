@@ -1,0 +1,11 @@
+Checksum
+10,1, testVerifyFromProperty, testVerifyTotal
+10,2, testVerifyAsTask
+10,3, testCreateMD5SUMformat, testCreatePattern, testVerifyAsTask
+10,4, testVerifyAsCondition, testVerifyChecksumdirNoTotal
+10,5, testVerifyChecksumdirNoTotal
+10,6, testVerifyTotalRC, testVerifyAsTask
+10,7, testVerifyAsCondition, testCreateMd5, testSetProperty
+10,8, testSetProperty
+10,9, testVerifyAsCondition, testVerifyFromProperty, testVerifyChecksumdirNoTotal, testVerifyChecksumdir
+10,10, testCreateMd5, testSetProperty, testVerifyTotalRC

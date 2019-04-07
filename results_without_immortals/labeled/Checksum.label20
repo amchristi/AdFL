@@ -1,0 +1,11 @@
+Checksum
+20,1, testCreateSVFformat, testCreatePattern, testVerifyFromProperty, testVerifyAsTask, testVerifyChecksumdir
+20,2, testCreateMd5
+20,3, testCreateSVFformat
+20,4, testCreateSVFformat, testVerifyAsCondition, testVerifyFromProperty, testVerifyChecksumdir
+20,5, testVerifyAsCondition, testSetProperty, testVerifyChecksumdirNoTotal
+20,6, testCreateMD5SUMformat, testSetProperty, testVerifyFromProperty, testVerifyTotal, testVerifyAsTask
+20,7, testVerifyTotalRC, testVerifyChecksumdir
+20,8, testCreateMd5, testCreatePattern, testVerifyChecksumdir
+20,9, testCreateMD5SUMformat, testVerifyAsCondition, testSetProperty, testCreatePattern
+20,10, testCreateSVFformat, testVerifyTotalRC, testCreatePattern, testVerifyFromProperty, testVerifyAsTask

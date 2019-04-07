@@ -1,0 +1,11 @@
+BinderClassLoader
+20,1, loadFloat
+20,2, loadDouble
+20,3, loadDouble
+20,4, loadShort
+20,5, loadFloat, testGetPrefixedResource, loadLong
+20,6, loadChar, loadByte, loadLong
+20,7, loadShort, loadLong, testLoadClass
+20,8, loadBoolean, testLoadClass
+20,9, loadDouble, loadChar, loadBoolean, testGetPrefixedResource
+20,10, testGetResource, loadBoolean

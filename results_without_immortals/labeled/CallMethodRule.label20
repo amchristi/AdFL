@@ -1,0 +1,11 @@
+CallMethodRule
+20,1, testCallNext, testPrimitiveReading, testSettingProperties
+20,2, testTwoCalls, testCallMethodOnly, testOrderNestedPartB
+20,3, testCallNext, testNestedBody, testOrderNestedPartB
+20,4, testPathCallParam, testParamsFromStack, testProcessingHook, testSettingProperties
+20,5, testCallNext, testOrderNestedPartA
+20,6, testTwoCalls, testPathCallParam
+20,7, testTwoCalls, testNestedBody
+20,8, testPathCallParam, testCallNext
+20,9, testBasic, testOrderNestedPartA, testSettingProperties
+20,10, testTwoCalls, testPathCallParam, testCallNext, testCallMethodOnly, testOrderNestedPartB, testFromStack, testPrimitiveReading

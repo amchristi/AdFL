@@ -1,0 +1,11 @@
+CallMethodRule
+10,1, testCallNext, testPrimitiveReading, testSettingProperties
+10,2, testSettingProperties
+10,3, testParamsFromStack
+10,4, testTwoCalls, testOrderNestedPartB
+10,5, testNestedBody, testBasic, testPrimitiveReading
+10,6, testParamsFromStack, testCallInvalidTarget
+10,7, testParamsFromStack, testCallNext, testFromStack
+10,8, testFromStack
+10,9, testPathCallParam, testCallNext
+10,10, testCallNext, testPrimitiveReading
