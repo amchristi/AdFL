@@ -30,6 +30,9 @@ annotated files: annotated files contains every statement of the java file annot
 
 Pristine folder contains pristine java projects that we used for running our tests. These java projects gets updated fast so we recommend using same projects to get exact same results. Some of them may be few years old.
 
+NetBeand IDE labels 3 tests as related to undo-redo functionality: 
+testUndoDeliversChangesWithTooManyEdits, 
+
 
 
 
